@@ -17,6 +17,8 @@ layout: base
   <section>
     <div class="container">
 
+          <div class="row">
+
           <!-- author -->
           <div class="col-md-3">
 
@@ -45,6 +47,8 @@ layout: base
           </div>
           <!-- annotations -->
 
+          </div>
+
     </div>  
   </section>
 <!-- CONTENT -->
@@ -65,6 +69,21 @@ layout: base
         <hr>
 
         <!-- related articles grid -->
+        <div class="row">
+
+            <ul><li>
+            <div class="col-md-6">
+
+            {% for post in site.posts %}
+              <img width="76px" src="http://code4sa.org/images/team/team_greg.jpg" />
+              <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+              <p><small>{{ post.excerpt }}</small></p>      
+            {% endfor %}
+
+            </div>
+            </li></ul>
+
+        </div>
 
         <!-- related articles grid -->
 
