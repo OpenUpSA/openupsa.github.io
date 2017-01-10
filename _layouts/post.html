@@ -2,12 +2,43 @@
 layout: base
 ---
 
-<h1>{{page.title}}</h1>
-<!-- article content -->
-<article>
-{{content}}
-</article>
+<!-- TOP CONTENT -->
+  <section>
+    <div class="container">
+          <h1>{{page.title}}</h1>
+          <h2>{{page.excerpt}}</h2>
+          <h3>by {{page.author}}</h3>
+    </div>
+  </section>
+<!-- TOP CONTENT -->
 
-            
 
-      
+<!-- CONTENT-->
+  <section>
+    <div class="container">
+
+          <!-- AUTHOR -->
+          <div class="col-md-3">
+              <p>Dummy text author</p>
+          </div>
+          <!-- AUTHOR -->
+
+          <!-- ARTICLE -->
+          <div class="col-md-6">
+
+              <article>
+                {{content}}
+              </article>
+
+          </div>
+          <!-- ARTICLE -->
+               
+          <!-- ANNOTATIONS -->
+          <div class="col-md-3">
+              <p>Dummy text annotations</p>
+          </div>
+          <!-- ANNOTATIONS -->
+
+    </div>  
+  </section>
+<!-- CONTENT -->
