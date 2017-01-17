@@ -69,24 +69,19 @@ layout: base
         <hr>
 
         <!-- related articles grid -->
-        <div class="row">
-
-            <ul>
-              <li>
+        
+        <div class="post-order row">
+          <ul>
+          {% for post in site.posts %}
+          <li class="col-md-6 col-xs-12">
                 <div class="row">
-                    <div class="col-md-6">
-
-                        {% for post in site.posts %}
-                          <img width="76px" src="http://code4sa.org/images/team/team_greg.jpg" />
-                          <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
-                          <p><small>{{ post.excerpt }}</small></p>      
-                        {% endfor %}
-
-                    </div>
+                <div class="col-xs-2"><img width="76px" src="http://code4sa.org/images/team/team_greg.jpg" /></div>
+                <div class="col-xs-10">
+                <a href="{{ post.url }}">{{ post.title }}</a><p><small>{{ post.excerpt }}</small></p>
                 </div>
-              </li>
-            </ul>
-
+          </li>
+          {% endfor %}
+          </ul>
         </div>
 
         <!-- related articles grid -->
