@@ -4,10 +4,13 @@ layout: base
 
 <!-- TOP CONTENT -->
   <section>
-    <div class="container">
+    <div class="container topContent">
           <h1>{{page.title}}</h1>
+          <span><small>by {{page.author}}, </small></span>
+          <span class="date">
+              {{page.date | date: "%d"}} <small>{{page.date | date: "%B %Y"}}</small>
+          </span>
           <h2>{{page.excerpt}}</h2>
-          <h3>by {{page.author}}</h3>
     </div>
   </section>
 <!-- TOP CONTENT -->
@@ -76,7 +79,7 @@ layout: base
           <li class="col-md-6 col-xs-12">
                 <div class="row">
                 <div class="col-xs-2"><img width="76px" src="http://code4sa.org/images/team/team_greg.jpg" /></div>
-                <div class="col-xs-10">
+                <div class="col-xs-10 post-grid-excerpt">
                 <a href="{{ post.url }}">{{ post.title }}</a><p><small>{{ post.excerpt }}</small></p>
                 </div>
           </li>
