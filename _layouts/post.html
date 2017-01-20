@@ -22,22 +22,10 @@ layout: base
 
           <div class="row">
 
-          <!-- author -->
-          <!--<div class="col-md-3">
-
-              <img width="50%" src="http://code4sa.org/images/team/team_greg.jpg" />
-              <div class="author-card">
-                  <p>{{page.author}}<br>{{page.authorpos}}, Open Up</p>
-                  <p>{{page.authordetail}}</p>
-              </div>
-
-          </div>-->
-          <!-- author -->
-
           <!-- article -->
           <div class="col-md-8">
 
-              <article>
+              <article class="post">
                 {{content}}
               </article>
 
@@ -92,7 +80,7 @@ layout: base
         
         <div class="post-order row">
           <ul>
-          {% for post in site.posts %}
+          {% for post in site.posts limit: 4 %}
           <li class="col-md-6 col-xs-12">
                 <div class="row">
                 <div class="col-xs-2"><img width="76px" src="http://code4sa.org/images/team/team_greg.jpg" /></div>
