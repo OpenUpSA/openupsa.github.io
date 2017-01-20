@@ -16,7 +16,10 @@
 	<script src="/js/jquery.sidenotes.min.js"></script>
 
 	<script>
-			$('.post').sidenotes('show');
+			$('.post').sidenotes({
+  'removeRefMarkRegex':     /-sn$/,
+  'initiallyHidden':        true
+});
 	</script>
 
   </body>

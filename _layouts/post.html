@@ -23,7 +23,7 @@ layout: base
           <div class="row">
 
           <!-- author -->
-          <div class="col-md-3">
+          <!--<div class="col-md-3">
 
               <img width="50%" src="http://code4sa.org/images/team/team_greg.jpg" />
               <div class="author-card">
@@ -31,11 +31,11 @@ layout: base
                   <p>{{page.authordetail}}</p>
               </div>
 
-          </div>
+          </div>-->
           <!-- author -->
 
           <!-- article -->
-          <div class="col-md-6">
+          <div class="col-md-8">
 
               <article>
                 {{content}}
@@ -45,7 +45,7 @@ layout: base
           <!-- article -->
                
           <!-- annotations -->
-          <div class="col-md-3">
+          <div class="col-md-4">
               <p>Dummy text annotations</p>
           </div>
           <!-- annotations -->
@@ -61,13 +61,30 @@ layout: base
 <section>
   <div class="container">
 
+        <div class="categories-section">
         <!-- categories -->
         <p>MORE: 
               <a href="#">CASE STUDIES</a>,
               <a href="#">WHITE PAPERS</a>,
               <a href="#">DEVTALK</a>
         </p>
+        </div>
         <!-- categories -->
+
+        <!-- author -->
+        <div class="row author-section">
+        <div class="col-md-2">
+            <img width="100%" src="http://code4sa.org/images/team/team_greg.jpg" />
+        </div>
+        <div class="col-md-10">
+            <div class="author-card">
+                  <p>{{page.author}}<br>{{page.authorpos}}, Open Up</p>
+                  <p>{{page.authordetail}}</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- author -->
 
         <hr>
 
