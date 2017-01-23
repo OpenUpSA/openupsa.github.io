@@ -19,7 +19,7 @@ gems:
   - jekyll-seo-tag
 
 collections:
-  gazettes:
+  tools:
     output: true
 
 defaults:

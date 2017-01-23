@@ -1,0 +1,96 @@
+---
+layout: base
+---
+
+<!-- TOP CONTENT -->
+  <section>
+    <div class="container topContent">
+          <h1>{{page.title}}</h1>
+          <span><small>by {{page.author}}, </small></span>
+          <span class="date">
+              {{page.date | date: "%d"}} <small>{{page.date | date: "%B %Y"}}</small>
+          </span>
+          <h2>{{page.excerpt}}</h2>
+    </div>
+  </section>
+<!-- TOP CONTENT -->
+
+
+<!-- CONTENT-->
+  <section>
+    <div class="container">
+
+          <div class="row">
+
+          <!-- author -->
+          <div class="col-md-3">
+
+              <img width="50%" src="http://code4sa.org/images/team/team_greg.jpg" />
+              <div class="author-card">
+                  <p>{{page.author}}<br>{{page.authorpos}}, Open Up</p>
+                  <p>{{page.authordetail}}</p>
+              </div>
+
+          </div>
+          <!-- author -->
+
+          <!-- article -->
+          <div class="col-md-6">
+
+              <article>
+                {{content}}
+              </article>
+
+          </div>
+          <!-- article -->
+               
+          <!-- annotations -->
+          <div class="col-md-3">
+              <p>Dummy text annotations</p>
+          </div>
+          <!-- annotations -->
+
+          </div>
+
+    </div>  
+  </section>
+<!-- CONTENT -->
+
+
+<!-- BOTTOM CONTENT -->
+<section>
+  <div class="container">
+
+        <!-- categories -->
+        <p>MORE: 
+              <a href="#">CASE STUDIES</a>,
+              <a href="#">WHITE PAPERS</a>,
+              <a href="#">DEVTALK</a>
+        </p>
+        <!-- categories -->
+
+        <hr>
+
+        <!-- related articles grid -->
+        
+        <div class="post-order row">
+          <ul>
+          {% for post in site.posts %}
+          <li class="col-md-6 col-xs-12">
+                <div class="row">
+                <div class="col-xs-2"><img width="76px" src="http://code4sa.org/images/team/team_greg.jpg" /></div>
+                <div class="col-xs-10 post-grid-excerpt">
+                <a href="{{ post.url }}">{{ post.title }}</a><p><small>{{ post.excerpt }}</small></p>
+                </div>
+          </li>
+          {% endfor %}
+          </ul>
+        </div>
+
+        <!-- related articles grid -->
+
+  </div>
+</section>
+<!-- BOTTOM CONTENT -->
+
+

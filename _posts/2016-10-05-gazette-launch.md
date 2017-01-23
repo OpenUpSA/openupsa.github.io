@@ -6,6 +6,8 @@ excerpt: |
     A new website, opengazettes.org.za, is making official government gazettes available online and searchable, so you no longer have to sift through or download heaps of publications to source important, public information.
 image: /images/blog/gazette-launch.png
 image-tn: /images/blog/gazette-launch-tn.png
+tool: opengazettes
+category: Launch
 ---
 
 <img src="/images/blog/gazette-launch.png" style="width:100%;">

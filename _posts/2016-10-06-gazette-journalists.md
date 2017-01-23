@@ -6,6 +6,8 @@ excerpt: |
     Open Gazettes changes the way journalists use government gazettes to do stories, by allowing users to search and track important public information. 
 image: /images/blog/gazette-journalists.jpg
 image-tn: /images/blog/gazette-journalists-tn.jpg
+tool: opengazettes
+category: Other
 ---
 
 <img src="/images/blog/gazette-journalists.jpg" style="width:100%;">
