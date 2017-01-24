@@ -75,6 +75,26 @@ body {
   }
 }
 
+figure {
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+figure img {
+  width: 80%;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+.figcredit {
+  font-style: normal;
+  text-transform:
+  font-size: 10px;
+  color: #B0B0B0;
+}
+
 .collapse-box {
   background-color: #f7f7f7;
   color: #333;
@@ -137,5 +157,6 @@ ul.share-buttons .sr-only {
 }
 
 ul.share-buttons img {
-  width: 20px;
+  width: 25px;
+  margin-right: 10px;
 }

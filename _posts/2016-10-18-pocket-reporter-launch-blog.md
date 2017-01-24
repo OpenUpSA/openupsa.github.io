@@ -4,10 +4,13 @@ author: Lenina Rassool
 title: "Pocket Reporter: A News Editor in your Pocket"
 excerpt: |
     Meet Pocket Reporter, a new Android app for journalists, activists and anyone interested in storytelling that guides you through the newsgathering process.
-image: /images/blog/pocket-reporter.png
+image: /img/blog/pocket-reporter.png
 ---
 
-<img src="/images/blog/pocket-reporter.png" style="width: 100%;">
+<figure class="">
+<img src="/img/blog/pocket-reporter.png" style="width: 100%;">
+<figcaption>APP: The new Pocket Reporter app is pictured above. <br><span class="figcredit">Photo by NAME SURNAME</span></figcaption>
+</figure>
 
 Meet [Pocket Reporter](http://pocketreporter.co.za/): a new, free Android app for journalists, activists and anyone interested in storytelling. It’s available for Android mobile devices in the [Google Play store](https://play.google.com/store/apps/details?id=com.phonegap.pocketreporter).
 
@@ -17,13 +20,13 @@ Just choose your story type, give it a name, and fill in the answers in the box 
 
 <div class="row">
 	<div class="col-sm-4">
-		<img src="/images/blog/pr-app-install.jpg" style="width:100%">
+		<img src="/img/blog/pr-app-install.jpg" style="width:100%">
 	</div>
 	<div class="col-sm-4">
-		<img src="/images/blog/pr-type.jpg" style="width:100%">
+		<img src="/img/blog/pr-type.jpg" style="width:100%">
 	</div>
 	<div class="col-sm-4">
-		<img src="/images/blog/pr-thuli.jpg" style="width:100%">
+		<img src="/img/blog/pr-thuli.jpg" style="width:100%">
 	</div>
 </div>
 
@@ -33,13 +36,13 @@ Don’t worry if you can’t answer a question, your story is always saved in th
 
 <div class="row">
 	<div class="col-sm-4">
-		<img src="/images/blog/pr-questions.jpg" style="width:100%">
+		<img src="/img/blog/pr-questions.jpg" style="width:100%">
 	</div>
 	<div class="col-sm-4">
-		<img src="/images/blog/pr-stories.jpg" style="width:100%">
+		<img src="/img/blog/pr-stories.jpg" style="width:100%">
 	</div>
 	<div class="col-sm-4">
-		<img src="/images/blog/pr-about.jpg" style="width:100%">
+		<img src="/img/blog/pr-about.jpg" style="width:100%">
 	</div>
 </div>
 
