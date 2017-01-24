@@ -2,95 +2,61 @@
 layout: base
 ---
 
-<!-- TOP CONTENT -->
-  <section>
-    <div class="container topContent">
-          <h1>{{page.title}}</h1>
-          <span><small>by {{page.author}}, </small></span>
-          <span class="date">
-              {{page.date | date: "%d"}} <small>{{page.date | date: "%B %Y"}}</small>
-          </span>
-          <h2>{{page.excerpt}}</h2>
-    </div>
-  </section>
-<!-- TOP CONTENT -->
-
-
 <!-- CONTENT-->
-  <section>
-    <div class="container">
-
-          <div class="row">
-
-          <!-- author -->
-          <div class="col-md-3">
-
-              <img width="50%" src="http://code4sa.org/images/team/team_greg.jpg" />
-              <div class="author-card">
-                  <p>{{page.author}}<br>{{page.authorpos}}, Open Up</p>
-                  <p>{{page.authordetail}}</p>
-              </div>
-
-          </div>
-          <!-- author -->
-
-          <!-- article -->
-          <div class="col-md-6">
-
-              <article>
-                {{content}}
-              </article>
-
-          </div>
-          <!-- article -->
-               
-          <!-- annotations -->
-          <div class="col-md-3">
-              <p>Dummy text annotations</p>
-          </div>
-          <!-- annotations -->
-
-          </div>
-
-    </div>  
-  </section>
-<!-- CONTENT -->
-
-
-<!-- BOTTOM CONTENT -->
-<section>
+<section class="individual-tool">
   <div class="container">
-
-        <!-- categories -->
-        <p>MORE: 
-              <a href="#">CASE STUDIES</a>,
-              <a href="#">WHITE PAPERS</a>,
-              <a href="#">DEVTALK</a>
-        </p>
-        <!-- categories -->
-
-        <hr>
-
-        <!-- related articles grid -->
-        
-        <div class="post-order row">
-          <ul>
-          {% for post in site.posts %}
-          <li class="col-md-6 col-xs-12">
-                <div class="row">
-                <div class="col-xs-2"><img width="76px" src="http://code4sa.org/images/team/team_greg.jpg" /></div>
-                <div class="col-xs-10 post-grid-excerpt">
-                <a href="{{ post.url }}">{{ post.title }}</a><p><small>{{ post.excerpt }}</small></p>
-                </div>
-          </li>
-          {% endfor %}
-          </ul>
+    <div class="header">
+      <h2 class="oneliner">{{ page.oneliner }}</h2>
+      <h1 class="title">{% if page.logo %}<img src="../img/tools/{{ page.logo }}">{% endif %} {{ page.name }}</h1>
+    </div>
+    <div class="tool-info">
+      {{content}}
+    </div>
+    <div class="external-url">
+      <h3>Go to <a target="_blank" href="{{ page.external-url }}">{{ page.external-url }}</a></h3>
+    </div>
+    <div class="conversation">
+      <h4>Explore the <b>conversation</b></h4>
+      {% for post in site.posts %}
+        {% if post.tool contains 'Medicine Price Registry' %}
+          <div class="article row">
+            <div class="col-sm-2 hidden-xs">
+              <img src="">
+            </div>
+            <div class="col-sm-10">
+              <p class="title">{{ post.title }}</p>
+              <p class="author">by {{ post.author }}</p>
+              <p class="excerpt">{{ post.excerpt }}</p>
+              <hr>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+      <div class="text-center">
+        <a class="btn btn-default text-center" href="">More articles about {{ page.name }}</a>
+      </div>
+      <h4>Explore the <b>conversation</b> further</h4>
+    </div>
+    <div class="contact">
+      <h3>Get in touch</h3>
+      <p>Have you used {{ page.name }}? Email and tell us how</p>
+      <form>
+        <div class="inline-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="email" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email">
+          </div>
         </div>
-
-        <!-- related articles grid -->
-
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" class="form-control" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Send</button>
+      </form>
+    </div>
   </div>
 </section>
-<!-- BOTTOM CONTENT -->
-
-

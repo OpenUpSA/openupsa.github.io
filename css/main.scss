@@ -36,3 +36,87 @@
 		height: 780px;
 	}
 }
+
+.individual-tool {
+	.header {
+		margin-bottom: 30px;
+
+		.title {
+			font-weight: 600;
+			text-transform: uppercase;
+			margin-top: 30px;
+
+			img {
+				height: 35px;
+			}
+		}
+
+		.oneliner {
+			font-family: 'Open Sans Light', sans-serif;
+			font-style: italic;
+			text-transform: uppercase;
+		}
+	}
+
+	.tool-info {
+		margin: 40px 0;
+	}
+
+	.external-url {
+		margin: 40px 0;
+
+		h3 {
+			font-weight: bold;
+		}
+	}
+
+	.conversation {
+		h4 {
+			margin-bottom: 40px;
+		}
+
+		.title {
+			margin-bottom: 2px;
+			font-weight: bold;
+		}
+
+		.author {
+			font-style: italic;
+		}
+
+		.excerpt {
+			margin-bottom: 20px;
+		}
+	}
+
+	.contact {
+		@media (min-width: 970px) {
+
+			.form-group {
+				width: calc(80% + 19px);
+			}
+
+			.inline-form {
+
+				.form-group {
+					width: 40%;
+					display: inline-block;
+				}
+
+				.form-group:nth-child(1) {
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+
+	label {
+		text-transform: uppercase;
+		color: #bbb;
+		font-size: 11px;
+	}
+
+	.form-control {
+		border-radius: 0;
+	}
+}
