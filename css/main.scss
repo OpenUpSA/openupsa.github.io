@@ -93,18 +93,18 @@
 		@media (min-width: 970px) {
 
 			.form-group {
-				width: calc(80% + 19px);
+				width: calc(99% + 4px);
 			}
 
 			.inline-form {
 
 				.form-group {
-					width: 40%;
+					width: 49%;
 					display: inline-block;
 				}
 
 				.form-group:nth-child(1) {
-					margin-right: 15px;
+					margin-right: 1%;
 				}
 			}
 		}
