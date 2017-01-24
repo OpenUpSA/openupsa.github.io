@@ -7,23 +7,22 @@ layout: base
     <div class="container topContent">
           <!-- social sharing -->
           <ul class="share-buttons">
-            <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="img/social-icon/Facebook.png"></a></li>
-            <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img alt="Tweet" src="img/social-icon//Twitter.png"></a></li>
-            <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="img/social-icon/Google+.png"></a></li>
-            <li><a href="https://getpocket.com/save?url=&title=" target="_blank" title="Add to Pocket"><img alt="Add to Pocket" src="img/social-icon/Pocket.png"></a></li>
-            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="img/social-icon/LinkedIn.png"></a></li>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/img/social-icon/Facebook.png"></a></li>
+            <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img alt="Tweet" src="/img/social-icon//Twitter.png"></a></li>
+            <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="/img/social-icon/Google+.png"></a></li>
+            <li><a href="https://getpocket.com/save?url=&title=" target="_blank" title="Add to Pocket"><img alt="Add to Pocket" src="/img/social-icon/Pocket.png"></a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/img/social-icon/LinkedIn.png"></a></li>
           </ul>
           <!-- social sharing -->
           <h1>{{page.title}}</h1>
           <span><small>by {{page.author}}, </small></span>
           <span class="date">
-              {{page.date | date: "%d"}} <small>{{page.date | date: "%B %Y"}}</small>
+              <small>{{page.date | date: "%d"}} {{page.date | date: "%B %Y"}}</small>
           </span>
           <h2>{{page.excerpt}}</h2>
     </div>
   </section>
 <!-- TOP CONTENT -->
-
 
 <!-- CONTENT-->
   <section>
@@ -32,7 +31,7 @@ layout: base
           <div class="row">
 
           <!-- article -->
-          <div class="col-md-8">
+          <div class="col-md-12">
 
               <article class="post">
                 {{content}}
@@ -41,11 +40,6 @@ layout: base
           </div>
           <!-- article -->
                
-          <!-- annotations -->
-          <div class="col-md-4">
-              <p>Dummy text annotations</p>
-          </div>
-          <!-- annotations -->
 
           </div>
 
@@ -87,18 +81,14 @@ layout: base
 
         <!-- related articles grid -->
         
-        <div class="post-order row">
-          <ul>
+        <div class="relate-post">
+          <h2>What else?</h2>
           {% for post in site.posts limit: 4 %}
-          <li class="col-md-6 col-xs-12">
-                <div class="row">
-                <div class="col-xs-2"><img width="76px" src="http://code4sa.org/images/team/team_greg.jpg" /></div>
-                <div class="col-xs-10 post-grid-excerpt">
-                <a href="{{ post.url }}">{{ post.title }}</a><p><small>{{ post.excerpt }}</small></p>
-                </div>
-          </li>
+            <div class="col-xs-8 post-grid-excerpt">
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              <p><small>{{ post.excerpt  | truncatewords: 20 }}</small></p>
+            </div>
           {% endfor %}
-          </ul>
         </div>
 
         <!-- related articles grid -->
