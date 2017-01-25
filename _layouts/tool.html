@@ -15,6 +15,24 @@ layout: base
     <div class="external-url">
       <h3>Go to <a target="_blank" href="{{ page.external-url }}">{{ page.external-url }}</a></h3>
     </div>
+    <div class="slideshow">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          {% for image in page.images limit:1 %}
+            <img class="full-image" src="../{{ image.location }}">
+          {% endfor %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+          {% for image in page.images %}
+          <div class="col-xs-4 thumbnail-wrap">
+            <a class="thumbnail-link"><img class="thumbnail image-{{ image.name }}" src="../{{ image.location }}"></a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
     <div class="conversation">
       <h4>Explore the <b>conversation</b></h4>
       {% for post in site.posts %}
@@ -60,3 +78,16 @@ layout: base
     </div>
   </div>
 </section>
+
+{% for image in page.images %}
+  <script type="text/javascript">
+    $(".image-{{ image.name }}").click(function() {
+      $('.full-image').fadeOut(200, function() {
+        $(".full-image").attr("src","../{{ image.location }}");
+        $('.full-image').fadeIn(200);
+      });
+      $(".thumbnail").removeClass("selected");
+      $(".image-{{ image.name }}").addClass("selected");
+    });
+  </script>
+{% endfor %}

@@ -70,6 +70,29 @@
 		}
 	}
 
+	.slideshow {
+		
+		.full-image {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		.thumbnail-wrap {
+			padding: 0 5px;
+
+			.thumbnail {
+				border-bottom: 3px solid #efefef;
+				width: 100%;
+				opacity: 0.5;
+			}
+
+			.selected {
+				border-bottom: 3px solid #ccc;
+				opacity: 1;
+			}
+		}
+	}
+
 	.conversation {
 		h4 {
 			margin-bottom: 40px;
@@ -120,3 +143,4 @@
 		border-radius: 0;
 	}
 }
+

@@ -3,7 +3,7 @@ layout: tool
 name: Wazimap
 logo: wazimap-logo.png
 external-url: http://wazimap.co.za
-oneliner: Election and census results for your ward, city or province across South Africa
+oneliner: Election and Census results for your ward, city or province across South Africa
 category: Learn
 images:
 - location: img/tools/wazimap1.jpg
