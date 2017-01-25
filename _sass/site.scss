@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 .page-title {
@@ -75,6 +76,11 @@ body {
   }
 }
 
+.post-excerpt {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
 figure {
   margin-bottom: 30px;
   font-size: 12px;
@@ -90,7 +96,6 @@ figcaption {
 
 .figcredit {
   font-style: normal;
-  text-transform:
   font-size: 10px;
   color: #B0B0B0;
 }
@@ -100,6 +105,18 @@ figcaption {
   color: #333;
   padding: 15px;
   margin: 10px 0px;
+}
+
+.relate-post {
+  margin-bottom: 30px;
+}
+
+.relate-post-title {
+  font-size: 20px;
+}
+
+blockquote {
+  font-size: 10px;
 }
 
 .post-grid-excerpt {
@@ -118,15 +135,20 @@ figcaption {
 }
 
 .categories-section {
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .author-section {
   margin-top: 30px;
-  margin-bottom: 30px;
-  border: solid #f7f7f7 1px;
-  padding: 15px;
+}
+
+.byline {
+  color: #B0B0B0;
+}
+
+.author-lead {
+  font-weight: 700;
+
 }
 
 .footnotes {
@@ -159,4 +181,13 @@ ul.share-buttons .sr-only {
 ul.share-buttons img {
   width: 25px;
   margin-right: 10px;
+}
+
+.post-list-style {
+  margin: 15px 0px;
+}
+
+.post-list-style ul li {
+  /*border-bottom: 1px solid #f7f7f7;*/
+  padding: 5px 0px;
 }
