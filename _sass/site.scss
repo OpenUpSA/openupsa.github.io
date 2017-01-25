@@ -79,6 +79,7 @@ body {
 .post-excerpt {
   margin-top: 10px;
   font-size: 20px;
+
 }
 
 figure {
@@ -116,11 +117,7 @@ figcaption {
 }
 
 blockquote {
-  font-size: 10px;
-}
 
-.post-grid-excerpt {
-  padding-left: 20px;
 }
 
 .post-order ul li {
@@ -145,6 +142,7 @@ blockquote {
 }
 
 .byline {
+  margin-top: 30px;
   color: #B0B0B0;
 }
 
@@ -152,7 +150,6 @@ blockquote {
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
-
 }
 
 .footnotes {
@@ -195,4 +192,12 @@ ul.share-buttons img {
 .post-list-style ul li {
   /*border-bottom: 1px solid #f7f7f7;*/
   padding: 5px 0px;
+}
+
+.post-order ul {
+  margin-left: -50px;
+}
+
+.post-grid-excerpt {
+  height: 200px;
 }
