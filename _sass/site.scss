@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 .page-title {
@@ -180,4 +181,13 @@ ul.share-buttons .sr-only {
 ul.share-buttons img {
   width: 25px;
   margin-right: 10px;
+}
+
+.post-list-style {
+  margin: 15px 0px;
+}
+
+.post-list-style ul li {
+  /*border-bottom: 1px solid #f7f7f7;*/
+  padding: 5px 0px;
 }

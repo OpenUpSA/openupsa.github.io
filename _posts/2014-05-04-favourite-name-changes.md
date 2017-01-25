@@ -9,6 +9,8 @@ image: none
 
 People legally change their names all the time. Sometimes what they choose for themselves is very amusing. We read through the government gazette and found the top 10 most entertaining examples.
 
+<div class="post-list-style" markdown="1">
+
 * As an early birthday present before his 29th birthday, _Worst Cynette Monashane_ understandably changed her name to _Lebone Cynette_.
 * _Violet Selebaleng Muhammed_, also 28 simplified her name to _Asia_
 * _Handsome_ become _Hansom_
@@ -18,6 +20,8 @@ People legally change their names all the time. Sometimes what they choose for t
 * _Elizabeth Mahlalo Modiba_ become her favourite car _Fortuner_
 * _Jappie Mashamba Tepanyika_ prefers _Favour Divine_
 * _Loganathan (Log) Chinniah_ understandably became _Pierce_
+
+</div>
 
 And finally, the best of the bunch
 _Mistake Martha Bilankulu_, after 60 years became plain old Martha.
