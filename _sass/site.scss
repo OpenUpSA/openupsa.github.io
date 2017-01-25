@@ -135,7 +135,9 @@ blockquote {
 }
 
 .categories-section {
+  font-size: 12px;
   margin-bottom: 30px;
+
 }
 
 .author-section {
@@ -148,6 +150,8 @@ blockquote {
 
 .author-lead {
   font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
 
 }
 
@@ -161,6 +165,7 @@ blockquote {
 ul.share-buttons{
   list-style: none;
   padding: 0;
+  margin-bottom:30px;
 }
 
 ul.share-buttons li{
