@@ -19,7 +19,7 @@ gems:
   - jekyll-seo-tag
 
 collections:
-  gazettes:
+  tools:
     output: true
 
 defaults:
@@ -28,6 +28,9 @@ defaults:
       path: ""
     values:
       image: /img/banner_5.png
+
+sass:
+  style: compressed
 
 # Build settings
 markdown: kramdown

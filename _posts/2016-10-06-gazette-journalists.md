@@ -4,8 +4,10 @@ author: Roxanne Joseph
 title: "Read all about it, use Open Gazettes"
 excerpt: |
     Open Gazettes changes the way journalists use government gazettes to do stories, by allowing users to search and track important public information. 
-image: /img/blog/gazette-journalists.jpg
-image-tn: /img/blog/gazette-journalists-tn.jpg
+image: /images/blog/gazette-journalists.jpg
+image-tn: /images/blog/gazette-journalists-tn.jpg
+tool: opengazettes
+category: Other
 ---
 
 <img src="/img/blog/gazette-journalists.jpg" style="width:100%;">
