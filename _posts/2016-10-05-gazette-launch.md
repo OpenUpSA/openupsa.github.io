@@ -8,7 +8,6 @@ image: /images/blog/gazette-launch.png
 image-tn: /images/blog/gazette-launch-tn.png
 tool: opengazettes
 category: Launch
-=======
 ---
 
 <img src="/img/blog/gazette-launch.png" style="width:100%;">
