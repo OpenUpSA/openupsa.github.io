@@ -11,8 +11,22 @@ images:
   name: 2
 - location: img/tools/mpr3.png
   name: 3
+articles:
+- link:  http://code4sa.org/2013/10/15/comparing-medicine-prices.html
+  author: Adi Eyal
+  title: How much should you be paying for your medicines?
+  excerpt: Here's how you can use the Medicine Price Registry to manage your medication costs
+- link: http://code4sa.org/2014/09/22/cheaper-medicines-unexpected-user.html
+  author: Adi Eyal
+  title: Cheaper Medicines - an unexpected user 
+  excerpt: How Doctors are using MPR to save patients' money
+- link: http://code4sa.org/2014/04/25/generic-medicines-ftw.html
+  author: Adi Eyal
+  title: Open Data FTW
+  excerpt: See how to calculate your medicine prices using our Medicine Price Registry
 ---
 Did you know that medicine prices are regulated in South Africa? This means that you can
+
 - Check the price of your medicines before you fill your prescription
 - Find possible generics for a branded medicine. Ask your doctor if these medicines are viable alternatives
 - Ensure that you are not being overcharged for your medicine

@@ -29,6 +29,9 @@ defaults:
     values:
       image: /img/banner_5.png
 
+sass:
+  style: compressed
+
 # Build settings
 markdown: kramdown
 exclude: [vendor]

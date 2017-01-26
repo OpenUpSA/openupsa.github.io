@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 .page-title {
@@ -75,11 +76,47 @@ body {
   }
 }
 
+.post-excerpt {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+figure {
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+figure img {
+  width: 80%;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+.figcredit {
+  font-style: normal;
+  font-size: 10px;
+  color: #B0B0B0;
+}
+
 .collapse-box {
   background-color: #f7f7f7;
   color: #333;
   padding: 15px;
   margin: 10px 0px;
+}
+
+.relate-post {
+  margin-bottom: 30px;
+}
+
+.relate-post-title {
+  font-size: 20px;
+}
+
+blockquote {
+  font-size: 10px;
 }
 
 .post-grid-excerpt {
@@ -95,4 +132,67 @@ body {
 .topContent {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.categories-section {
+  font-size: 12px;
+  margin-bottom: 30px;
+
+}
+
+.author-section {
+  margin-top: 30px;
+}
+
+.byline {
+  color: #B0B0B0;
+}
+
+.author-lead {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+
+}
+
+.footnotes {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* social sharing */
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+  margin-bottom:30px;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+ul.share-buttons img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.post-list-style {
+  margin: 15px 0px;
+}
+
+.post-list-style ul li {
+  /*border-bottom: 1px solid #f7f7f7;*/
+  padding: 5px 0px;
 }

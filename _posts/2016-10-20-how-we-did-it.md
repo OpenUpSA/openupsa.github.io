@@ -15,7 +15,7 @@ Government gazettes are valuable entities in and of themselves. They’ve been c
 
 Currently, government gazettes still look like they’re produced on the printing presses of the 1800s. Their text flows neatly from page to page, and whether it’s a 50-word liquidation notice or a 400-page green paper, it will be published in the same format as gazettes always have been.
 
-<img src="/images/blog/how-gazette-1.png" style="width: 100%">
+<img src="/img/blog/how-gazette-1.png" style="width: 100%">
 
 This is why before building the Open Gazettes resource, we needed to have some idea of what additional value we could provide. The majority of people who use gazettes tend to be lawyers, librarians and special interest groups. So we asked ourselves, “How can gazettes be made available to the general public in a way that helps them to participate in policy-making and governance?”
 
@@ -82,7 +82,7 @@ While Google and DocumentCloud do a reasonable job of making these types of docu
 
 In addition to searching for something - for example, “driving permit paarl” - you can set an alert so that you’re notified by email within a few days of when a gazette matching the search is published. This means that you don’t need to check each week for new information, such as newly issued permits in your area.
 
-<img src="/images/blog/how-gazette-2.png" style="width: 100%">
+<img src="/img/blog/how-gazette-2.png" style="width: 100%">
 
 Aleph uses the text embedded in the gazette PDF files to support text search. While PDFs look like text documents, they’re mostly focused on looking good and do not necessarily contain text in a form that is usable by a computer. To make a scanned PDF searchable, the text found using OCR (Optical Character Recognition) is overlaid on the image in the PDF.
 
