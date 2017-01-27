@@ -9,7 +9,7 @@
 title: Open Up
 email: mail@openup.org.za
 url: http://openup.org.za
-baseurl: 
+baseurl:
 description: Being Open Up
 twitter:
   username: openupsa
@@ -20,6 +20,10 @@ gems:
 
 collections:
   tools:
+    output: true
+  team:
+    output: true
+  articles:
     output: true
 
 defaults:

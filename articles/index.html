@@ -1,0 +1,21 @@
+---
+layout: base
+---
+<div class="container">
+	{% for article in site.articles %}
+		<div class="well">
+			<p>
+				author: {{ article.author }}
+			</p>
+			<p>
+				title: {{ article.title }}
+			</p>
+			<p>
+				excerpt: {{ article.excerpt }}
+			</p>
+			<p>
+				tool: {{ article.tool }}
+			</p>
+		</div>
+	{% endfor %}
+</div>

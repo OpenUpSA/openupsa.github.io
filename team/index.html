@@ -1,0 +1,24 @@
+---
+layout: base
+---
+<div class="container">
+	{% for member in site.team %}
+		<div class="well">
+			<p>
+				name: <a href="{{ member.short-name }}.html">{{ member.name }}</a>
+			</p>
+			<p>
+				position: {{ member.position }}
+			</p>
+			<p>
+				email: {{ member.email }}
+			</p>
+			<p>
+				twitter: {{ member.twitter }}
+			</p>
+			<p>
+				linkedin: {{ member.linkedin }}
+			</p>
+		</div>
+	{% endfor %}
+</div>

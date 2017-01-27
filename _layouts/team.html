@@ -1,0 +1,20 @@
+---
+layout: base
+---
+<!-- CONTENT-->
+<section class="team-member">
+  <div class="container">
+    <h1>{{ page.name }}</h1>
+    <p>currently: {{ page.current }}</p>
+    <p>{{ page.statement }}</p>
+    <p>{{ page.email }}</p>
+    <hr>
+    <div class="worked-on">
+      {% for tool in site.tools %}
+        {% if tool.creators['name'] == 'adi' %}
+          <p>{{ tool.name }}</p>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
