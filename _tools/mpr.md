@@ -11,7 +11,8 @@ summary:
 - bullet: Ensure that you are not being overcharged for your medicine
 category: category 1
 creators:
-adi: role
+- name: adi
+  role: role
 images:
 - location: img/tools/mpr1.png
   name: 1

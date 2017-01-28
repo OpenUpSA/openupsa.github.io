@@ -8,12 +8,13 @@ layout: base
     <p>currently: {{ page.current }}</p>
     <p>{{ page.statement }}</p>
     <p>{{ page.email }}</p>
-    <hr>
     <div class="worked-on">
       {% for tool in site.tools %}
-        {% if tool.creators['name'] == 'adi' %}
-          <p>{{ tool.name }}</p>
-        {% endif %}
+        {% for creator in tool.creators %}
+          {% if creator.name == page.short-name %}
+            <p>{{ tool.name }} | {{ creator.role }}</p>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     </div>
   </div>
