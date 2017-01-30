@@ -27,7 +27,7 @@ layout: base
         <div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
           {% for image in page.images %}
           <div class="col-xs-4 thumbnail-wrap">
-            <a class="thumbnail-link"><img class="thumbnail image-{{ image.name }}" src="../{{ image.location }}"></a>
+            <img class="thumbnail image-{{ image.name }}" src="../{{ image.location }}">
           </div>
           {% endfor %}
         </div>
@@ -49,9 +49,18 @@ layout: base
         </div>
       {% endfor %}
       <div class="text-center">
-        <a class="btn btn-default text-center" href="">More articles about {{ page.name }}</a>
+        <a class="btn btn-default text-center" href="#">More articles about {{ page.name }}</a>
       </div>
-      <h4>Explore the <b>conversation</b> further</h4>
+    </div>
+    <div class="creators">
+      <h4>The people behind {{ page.name }}</h4>
+      <ul>
+        {% for creator in page.creators %}
+          <li>
+            {{ creator.name }}: {{ creator.role }}
+          </li>
+        {% endfor %}
+      </ul>
     </div>
     <div class="contact">
       <h3>Get in touch</h3>
@@ -80,15 +89,16 @@ layout: base
   </div>
 </section>
 
-{% for image in page.images %}
-  <script type="text/javascript">
-    $(".image-{{ image.name }}").click(function() {
-      $('.full-image').fadeOut(200, function() {
-        $(".full-image").attr("src","../{{ image.location }}");
-        $('.full-image').fadeIn(200);
-      });
-      $(".thumbnail").removeClass("selected");
-      $(".image-{{ image.name }}").addClass("selected");
+<script type="text/javascript">
+  $('.thumbnail-wrap img').first().addClass('selected');
+
+  $('.thumbnail-wrap img').click(function() {
+    var clicked = $(this).attr('src');
+    $('.full-image').fadeOut(200, function() {
+      $('.full-image').attr('src', clicked);
+      $('.full-image').fadeIn(200);
     });
-  </script>
-{% endfor %}
+    $('.thumbnail-wrap img').removeClass('selected');
+    $($(this)).addClass('selected');
+  });
+</script>

@@ -81,13 +81,12 @@
 			padding: 0 5px;
 
 			.thumbnail {
-				border-bottom: 3px solid #efefef;
 				width: 100%;
 				opacity: 0.5;
+				cursor: pointer
 			}
 
 			.selected {
-				border-bottom: 3px solid #ccc;
 				opacity: 1;
 			}
 		}

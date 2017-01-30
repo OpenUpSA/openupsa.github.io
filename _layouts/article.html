@@ -1,0 +1,103 @@
+---
+layout: base
+---
+
+<!-- TOP CONTENT -->
+<section>
+  <div class="container">
+  <div class="topContent row">
+  <div class="col-md-8 col-md-offset-2 col-xs-12">
+
+    <h1>{{page.title}}</h1>
+    <p class="post-excerpt">{{page.excerpt}}</p>
+    <span class="byline">
+      <small>{{page.author}} |</small>
+    </span>
+    <span class="byline date">
+      <small>{{page.date | date: "%d"}} {{page.date | date: "%B %Y"}}</small>
+    </span>
+
+  </div>
+  </div>
+  </div>
+</section>
+<!-- TOP CONTENT -->
+
+<!-- CONTENT-->
+  <section>
+    <div class="container">
+
+          <div class="row">
+
+          <!-- article -->
+          <div class="col-md-8 col-md-offset-2 col-xs-12">
+
+              <article class="post">
+                {{content}}
+              </article>
+
+              <div class="byline">                
+                <p>
+                  <small>by <span class="author-lead">{{page.author}}, {{page.authorpos}} (Open Up)</span>. {{page.authordetail}}</small>
+                </p>
+              </div>
+
+              <!-- categories -->
+              <div class="categories-section">
+                <p>MORE: 
+                  <a href="#">CASE STUDIES</a>,
+                  <a href="#">WHITE PAPERS</a>,
+                  <a href="#">DEVTALK</a>
+                </p>
+              </div>
+              <!-- categories -->
+
+              <!-- social sharing -->
+              <div class="row">
+              <div class="col-md-8 col-md-offset-4">
+              <ul class="share-buttons">
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/img/social-icon/Facebook.png"></a></li>
+                <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img alt="Tweet" src="/img/social-icon//Twitter.png"></a></li>
+                <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="/img/social-icon/Google+.png"></a></li>
+                <li><a href="https://getpocket.com/save?url=&title=" target="_blank" title="Add to Pocket"><img alt="Add to Pocket" src="/img/social-icon/Pocket.png"></a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/img/social-icon/LinkedIn.png"></a></li>
+              </ul>
+              </div>
+              </div>
+              <!-- social sharing -->
+
+
+          </div>
+          <!-- article -->
+
+          </div>
+
+    </div>  
+  </section>
+<!-- CONTENT -->
+
+
+<!-- BOTTOM CONTENT -->
+<section>
+  <div class="container">
+
+        <hr>
+
+        <!-- related articles grid -->
+        <div class="relate-post">
+          <h2>What else?</h2>
+          {% for post in site.posts limit: 4 %}
+          <div>
+            <a href="{{ post.url }}">
+              <span class="relate-post-title">{{ post.title }}</span>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <!-- related articles grid -->
+
+  </div>
+</section>
+<!-- BOTTOM CONTENT -->
+
+

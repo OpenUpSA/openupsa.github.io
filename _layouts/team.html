@@ -1,0 +1,21 @@
+---
+layout: base
+---
+<!-- CONTENT-->
+<section class="team-member">
+  <div class="container">
+    <h1>{{ page.name }}</h1>
+    <div>currently: {{ page.current }}</div>
+    <div>{{ page.statement }}</div>
+    <a href="mailt:{{ page.email }}">{{ page.email }}</a>
+    <div>
+      {% for tool in site.tools %}
+        {% for creator in tool.creators %}
+          {% if creator.name == page.name %}
+            <div><a href="{{ tool.url }}">{{ tool.name }}</a>: {{ creator.role }}</div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
