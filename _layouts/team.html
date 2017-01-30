@@ -5,14 +5,14 @@ layout: base
 <section class="team-member">
   <div class="container">
     <h1>{{ page.name }}</h1>
-    <p>currently: {{ page.current }}</p>
-    <p>{{ page.statement }}</p>
-    <p>{{ page.email }}</p>
+    <div>currently: {{ page.current }}</div>
+    <div>{{ page.statement }}</div>
+    <div>{{ page.email }}</div>
     <div class="worked-on">
       {% for tool in site.tools %}
         {% for creator in tool.creators %}
-          {% if creator.name == page.short-name %}
-            <p>{{ tool.name }} | {{ creator.role }}</p>
+          {% if creator.name == page.name %}
+            <div>{{ tool.name }}: {{ creator.role }}</div>
           {% endif %}
         {% endfor %}
       {% endfor %}
