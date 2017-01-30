@@ -4,11 +4,11 @@ layout: base
 <div class="container">
 	{% for category in site.categories %}
 		<div class="well">
-			<a href="{{ category.short-name }}.html">{{ category.name }}</a>
+			<a href="{{ category.url }}">{{ category.name }}</a>
 			<div>{{ category.description }}</div>
 			{% for tool in site.tools %}
 				{% if tool.category == category.name %}
-					<span>{{ tool.name }}</span>
+					<a href="{{ tool.url }}">{{ tool.name }}</a>
 				{% endif %}
 			{% endfor %}
 		</div>

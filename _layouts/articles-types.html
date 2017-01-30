@@ -7,9 +7,9 @@ layout: base
     <div>{{ page.name }}</div>
     <div>{{ page.description }}</div>
     <div>
-      {% for tool in site.tools %}
-        {% if tool.category == page.name %}
-          <a href="{{ tool.url }}">{{ tool.name }}</a>
+      {% for article in site.articles %}
+        {% if article.type == page.name %}
+          <a href="{{ article.url }}">{{ article.title }}</a>
         {% endif %}
       {% endfor %}
     </div>

@@ -3,13 +3,13 @@ layout: tool
 name: Medicine Price Registry
 logo: 
 external-url: https://mpr.code4sa.org/
+category: Category 2
 oneliner: What should your medicines cost? 
 summary:
 - opener: Did you know that medicine prices are regulated in South Africa? This means that you can
 - bullet: Check the price of your medicines before you fill your prescription
 - bullet: Find possible generics for a branded medicine. Ask your doctor if these medicines are viable alternatives
 - bullet: Ensure that you are not being overcharged for your medicine
-category: Category 1
 creators:
 - name: Adi Eyal
   role: role

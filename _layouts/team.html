@@ -7,12 +7,12 @@ layout: base
     <h1>{{ page.name }}</h1>
     <div>currently: {{ page.current }}</div>
     <div>{{ page.statement }}</div>
-    <div>{{ page.email }}</div>
+    <a href="mailt:{{ page.email }}">{{ page.email }}</a>
     <div>
       {% for tool in site.tools %}
         {% for creator in tool.creators %}
           {% if creator.name == page.name %}
-            <div>{{ tool.name }}: {{ creator.role }}</div>
+            <div><a href="{{ tool.url }}">{{ tool.name }}</a>: {{ creator.role }}</div>
           {% endif %}
         {% endfor %}
       {% endfor %}

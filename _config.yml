@@ -25,6 +25,9 @@ collections:
     output: true
   articles:
     output: true
+  articles-types:
+    output: true
+    permalink: /articles/:name.html
   categories:
     output: true
 
