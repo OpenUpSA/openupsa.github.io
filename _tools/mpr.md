@@ -9,7 +9,7 @@ summary:
 - bullet: Check the price of your medicines before you fill your prescription
 - bullet: Find possible generics for a branded medicine. Ask your doctor if these medicines are viable alternatives
 - bullet: Ensure that you are not being overcharged for your medicine
-category: category 1
+category: Category 1
 creators:
 - name: Adi Eyal
   role: role

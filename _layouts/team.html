@@ -8,7 +8,7 @@ layout: base
     <div>currently: {{ page.current }}</div>
     <div>{{ page.statement }}</div>
     <div>{{ page.email }}</div>
-    <div class="worked-on">
+    <div>
       {% for tool in site.tools %}
         {% for creator in tool.creators %}
           {% if creator.name == page.name %}

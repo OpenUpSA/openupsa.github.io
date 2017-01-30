@@ -4,21 +4,21 @@ layout: base
 <div class="container">
 	{% for member in site.team %}
 		<div class="well">
-			<p>
+			<div>
 				name: <a href="{{ member.short-name }}.html">{{ member.name }}</a>
-			</p>
-			<p>
+			</div>
+			<div>
 				position: {{ member.position }}
-			</p>
-			<p>
+			</div>
+			<div>
 				email: {{ member.email }}
-			</p>
-			<p>
+			</div>
+			<div>
 				twitter: {{ member.twitter }}
-			</p>
-			<p>
+			</div>
+			<div>
 				linkedin: {{ member.linkedin }}
-			</p>
+			</div>
 		</div>
 	{% endfor %}
 </div>

@@ -54,11 +54,13 @@ layout: base
     </div>
     <div class="creators">
       <h4>The people behind {{ page.name }}</h4>
-      {% for creator in page.creators %}
-        <ul>
-          {{ creator.name }}: {{ creator.role }}
-        </ul>
-      {% endfor %}
+      <ul>
+        {% for creator in page.creators %}
+          <li>
+            {{ creator.name }}: {{ creator.role }}
+          </li>
+        {% endfor %}
+      </ul>
     </div>
     <div class="contact">
       <h3>Get in touch</h3>

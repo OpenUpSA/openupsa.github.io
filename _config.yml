@@ -25,6 +25,8 @@ collections:
     output: true
   articles:
     output: true
+  categories:
+    output: true
 
 defaults:
   -
