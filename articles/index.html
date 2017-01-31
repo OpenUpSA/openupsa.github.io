@@ -1,0 +1,34 @@
+---
+layout: base
+---
+<div class="container">
+	{% for article in site.articles %}
+		<div class="well">
+			<div>
+				Author:
+				<a href="{{ site.baseurl }}/team/{{ article.author | truncatewords: 1 | downcase | remove: '.' }}">{{ article.author }}</a>
+			</div>
+			<div>
+				Title: 
+				<a href="{{ article.url }}">{{ article.title }}</a>
+			</div>
+			<div>excerpt: {{ article.excerpt }}</div>
+			<div>
+				Tool:
+				<a href="{{ site.baseurl }}/tools/{{ article.tool | downcase | remove: ' ' }}.html">{{ article.tool }}</a>
+			</div>
+			<div>
+				Type:
+				<a href="{{ article.type | downcase | remove: ' ' }}.html">{{ article.type }}</a>
+			</div>
+			<div>
+				Category:
+				{% for tool in site.tools %}
+					{% if tool.name == article.tool %}
+						<a href="{{ site.baseurl }}/categories/{{ tool.category | downcase | remove: ' ' }}.html">{{ tool.category }}</a>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	{% endfor %}
+</div>

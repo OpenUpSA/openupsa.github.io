@@ -9,7 +9,7 @@
 title: Open Up
 email: mail@openup.org.za
 url: http://openup.org.za
-baseurl: 
+baseurl:
 description: Being Open Up
 twitter:
   username: openupsa
@@ -19,7 +19,16 @@ gems:
   - jekyll-seo-tag
 
 collections:
-  gazettes:
+  tools:
+    output: true
+  team:
+    output: true
+  articles:
+    output: true
+  articles-types:
+    output: true
+    permalink: /articles/:name.html
+  categories:
     output: true
 
 defaults:
@@ -28,6 +37,9 @@ defaults:
       path: ""
     values:
       image: /img/banner_5.png
+
+sass:
+  style: compressed
 
 # Build settings
 markdown: kramdown

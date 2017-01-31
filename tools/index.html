@@ -11,27 +11,23 @@ layout: base
 	<div class="row featured-tool">
 		<div class="col-md-6 image">
 			<div class="bubble">Featured</div>
-			<img style="width: 100%" src="/img/box.png">
+			<img style="width: 100%" src="/img/tools/opengazettes.png">
 		</div>
+
 		<div class="col-md-6">
-			<div class="article">
-				<p class="category">Category</p>
-				<p class="title">Get access to your government gazette online - for free</p>
-				<p class="author">by Lenina Rassool</p>
-				<div class="arrow">›</div>
-			</div>
-			<div class="article">
-				<p class="category">Category</p>
-				<p class="title">How we built opengazettes.org.za</p>
-				<p class="author">by JD Bothma</p>
-				<div class="arrow">›</div>
-			</div>
-			<div class="article">
-				<p class="category">Category</p>
-				<p class="title">Read all about it, use Open Gazettes</p>
-				<p class="author">by Roxanne Joseph</p>
-				<div class="arrow">›</div>
-			</div>
+			{% for post in site.posts %}
+				{% if post.tool contains 'opengazettes' %}
+					{% capture number %}{% increment number %}{% endcapture %}
+					{% if number < '3' %}
+						<div class="article">
+							<p class="category">{{ post.category }}</p>
+							<p class="title">{{ post.title }}</p>
+							<p class="author">{{ post.author }}</p>
+							<div class="arrow">›</div>
+						</div>
+					{% endif %}
+				{% endif %}
+			{% endfor %}	
 			<p class="pull-right learnmore">Learn more</p>
 		</div>
 	</div>

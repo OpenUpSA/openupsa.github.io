@@ -4,6 +4,7 @@ title: Cheaper medicines - an unexpected user
 author: Adi Eyal
 excerpt: Sometimes you can't anticipate how your work is going to be used. Here is a story that really motivates me to continue doing what we do.
 image: none
+tool: Medicine Price Registry
 ---
 
 > To Whom It May Concern,
