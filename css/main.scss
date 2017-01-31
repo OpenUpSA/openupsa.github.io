@@ -143,3 +143,17 @@
 	}
 }
 
+.sidenote {
+	position: absolute;
+	right: 0;
+	width: 185px;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #555;
+	background-color: #ddd;
+	-webkit-transform: translate(100%,5px);
+	-ms-transform: translate(100%,5px);
+	transform: translate(100%,5px);
+}
