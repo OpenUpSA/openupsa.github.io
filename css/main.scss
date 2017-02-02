@@ -8,6 +8,10 @@
   "site"
 ;
 
+p {
+	line-height: 1.6;
+}
+
 .alltools {
 	#munimoney {
 		background-image: url(../img/tools/munimoney.png);
@@ -55,6 +59,7 @@
 			font-family: 'Open Sans Light', sans-serif;
 			font-style: italic;
 			text-transform: uppercase;
+			line-height: 1.5;
 		}
 	}
 
@@ -161,5 +166,28 @@
 			color: #23527c !important;
 		}
 	}
+}
 
+.about {
+	.oneliner {
+		font-family: 'Open Sans Light', sans-serif;
+		font-style: italic;
+		text-transform: uppercase;
+		line-height: 1.5;
+	}
+
+	.content {
+		img {
+			width: 100%;
+		}
+	}
+
+	.team {
+		.team-photos {
+			img {
+				width: 100%;
+				margin-bottom: 30px;
+			}
+		}
+	}
 }

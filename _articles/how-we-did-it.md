@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 author: JD Bothma
 title: "How we built opengazettes.org.za"
 excerpt: |
@@ -26,7 +26,7 @@ Our long-term goal is to extract as much [information relevant to accountability
 Instead, they should be supported in finding potential connections via common business partners and dealings by simply entering their names into a search function.
 
 ### Getting gazettes
-Today, government gazettes are made available by the national and provincial government as PDF documents containing searchable text. Everyone except the Free State makes their gazettes available online, free of charge. We wrote a couple of computer programs, called web scrapers, to find and download gazettes from the Government Printing Works (GWP) and Western Cape Government websites where they are released publicly. These run daily to find new gazettes as they are published, and store them online. This uses the <a class="define" href="https://scrapy.org/">Scrapy platform</a><a class="sidenote" href="https://scrapy.org/">Scrapy is an open source and collaborative framework for extracting the data you need from websites.</a>, which makes sure we only download files once. Below is an example of Python code to scrape the GWP for gazettes:
+Today, government gazettes are made available by the national and provincial government as PDF documents containing searchable text. Everyone except the Free State makes their gazettes available online, free of charge. We wrote a couple of computer programs, called web scrapers, to find and download gazettes from the Government Printing Works (GWP) and Western Cape Government websites where they are released publicly. These run daily to find new gazettes as they are published, and store them online. This uses the <a href="https://scrapy.org/"><span class="define">Scrapy platform</span><span class="sidenote" href="https://scrapy.org/">Scrapy is an open source and collaborative framework for extracting the data you need from websites.</span></a>, which makes sure we only download files once. Below is an example of Python code to scrape the GWP for gazettes:
 
 ```
 class GpwSpider(scrapy.Spider):

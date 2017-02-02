@@ -54,13 +54,14 @@ layout: base
     </div>
     <div class="creators">
       <h4>The people behind {{ page.name }}</h4>
-      <ul>
+      <div class="row">
         {% for creator in page.creators %}
-          <li>
-            {{ creator.name }}: {{ creator.role }}
-          </li>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            
+            <a href="/team/{{ creator.short-name }}.html"><img style="width:100%;" src="/img/team/{{ creator.short-name }}.jpg">{{ creator.name }}: {{ creator.role }}</a>
+          </div>
         {% endfor %}
-      </ul>
+      </div>
     </div>
     <div class="contact">
       <h3>Get in touch</h3>
