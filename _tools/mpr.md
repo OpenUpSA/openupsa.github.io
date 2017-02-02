@@ -12,6 +12,7 @@ summary:
 - bullet: Ensure that you are not being overcharged for your medicine
 creators:
 - name: Adi Eyal
+  short-name: adi
   role: role
 images:
 - location: img/tools/mpr1.png
