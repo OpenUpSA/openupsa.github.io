@@ -35,6 +35,9 @@ layout: base
 <div class="alltools">
 	<div class="container">
 		<h2>Title (optional)</h2>
+		{% for tool in site.tools %}
+			<div><a href="{{ tool.url }}">{{ tool.name }}</a></div>
+		{% endfor %}
 		<p>Here will reside a short description if necessary</p>
 		<p>- optional extra information</p>
 		<div class="row">

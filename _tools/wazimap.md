@@ -6,9 +6,11 @@ external-url: http://wazimap.co.za
 oneliner: Election and Census results for your ward, city or province across South Africa
 category: category 2
 creators:
-- name: greg
+- name: Greg Kempe
+  short-name: greg
   role: role
-- name: jd
+- name: JD Bothma
+  short-name: jd
   role: role
 images:
 - location: img/tools/wazimap1.jpg

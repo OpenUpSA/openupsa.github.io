@@ -8,6 +8,10 @@
   "site"
 ;
 
+p {
+	line-height: 1.6;
+}
+
 .alltools {
 	#munimoney {
 		background-image: url(../img/tools/munimoney.png);
@@ -55,6 +59,7 @@
 			font-family: 'Open Sans Light', sans-serif;
 			font-style: italic;
 			text-transform: uppercase;
+			line-height: 1.5;
 		}
 	}
 
@@ -143,3 +148,46 @@
 	}
 }
 
+.post {
+	.sidenote {
+		position: absolute;
+		right: 0;
+		width: 185px;
+		padding: 10px;
+		font-size: 13px;
+		background-color: #f5f5f5;
+		-webkit-transform: translate(100%,5px);
+		-ms-transform: translate(100%,5px);
+		transform: translate(100%,5px);
+		color: #555;
+		text-decoration: none;
+
+		&:hover {
+			color: #23527c !important;
+		}
+	}
+}
+
+.about {
+	.oneliner {
+		font-family: 'Open Sans Light', sans-serif;
+		font-style: italic;
+		text-transform: uppercase;
+		line-height: 1.5;
+	}
+
+	.content {
+		img {
+			width: 100%;
+		}
+	}
+
+	.team {
+		.team-photos {
+			img {
+				width: 100%;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

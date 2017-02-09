@@ -122,4 +122,12 @@ layout: base
 </section>
 <!-- BOTTOM CONTENT -->
 
-
+<script>
+  $('.define').hover(
+    function() {
+      $(this).next('.sidenote').css("color", "#23527c");
+    }, function() {
+      $(this).next('.sidenote').css("color", "#555");
+    }
+  );
+</script>
