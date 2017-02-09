@@ -5,12 +5,17 @@ title: "Read all about it, use Open Gazettes"
 excerpt: |
     Open Gazettes changes the way journalists use government gazettes to do stories, by allowing users to search and track important public information. 
 image: /images/blog/gazette-journalists.jpg
-image-tn: /images/blog/gazette-journalists-tn.jpg
 tool: opengazettes
 category: Other
 ---
 
-<img src="/img/blog/gazette-journalists.jpg" style="width:100%;">
+<figure>
+	<img src="/img/styleguide/landscape-525x350.jpg">
+	<figcaption>
+		Example of caption. by Name Surname
+	</figcaption>
+</figure>
+
  
 For veteran journalist [Raymond Joseph](https://twitter.com/rayjoe), working your way through the week's offerings of government gazettes was just another part of a  junior newsroom reporter's job, more than thirty years ago. Each week, he was tasked with going through them and looking for possible stories. 
 
@@ -20,7 +25,14 @@ Government gazettes are a critical source of information about government busine
 
 The term ‘watchdog journalism' comes to mind when looking at the relationship between government gazettes and the media. Its main purpose, to inform the public about the going-ons in institutions and society - including, very importantly, the State itself - is what led newsrooms to have journalists like Joseph and his peers spend a significant amount of time digging through official public documents. Government gazettes were also, as Joseph says,   an excellent place to find stories. 
 
-Joseph's favourite discovery was when he found a tender from the South African Defence Forces (SADF) for millions of condoms. "It started a whole discussion in the office; we were intrigued." It turned out, he explains, the SADF was experiencing problems in rainy areas, where the insides of their rifles were getting wet and rusting; the condoms were to cover the tops of the rifles and keep moisture out. 
+Joseph's favourite discovery was when he found a tender from the South African Defence Forces (SADF) for millions of condoms. "It started a whole discussion in the office; we were intrigued." It turned out, he explains, the SADF was experiencing problems in rainy areas, where the insides of their rifles were getting wet and rusting; the condoms were to cover the tops of the rifles and keep moisture out.
+
+<figure>
+	<img src="/img/styleguide/portrait-525x788.jpg">
+	<figcaption>
+		Example of caption. by Name Surname
+	</figcaption>
+</figure>
 
 It was useful to have all of that information in one place, but often difficult to decode the "government and tender speak" gazettes are published in. Another challenge journalists faced when working with gazettes was that there was no way of searching - in the digital sense of the word - through all of that paper, which made it difficult to "join the dots". Joseph says that if they found something, they had to make a copy with the date and if you wanted to start making correlations, you landed up following a literal papertrail. 
 
@@ -30,7 +42,7 @@ Nowadays, with almost everything available at the flip of a switch or the click 
 
 This is what makes the [Open Gazettes](http://opengazettes.org.za/) resource and campaign such an important tool for journalists. As Joseph says, being able to search and go back historically, its searchability function will make things like tracking the development (or lack thereof) of a piece of legislation and searching for individuals using their ID numbers possible. 
 
-Because access to the resource and its collection of government gazettes is entirely free, it also solves the problem of previously having to have a subscription for weekly access. For freelancers especially, this will be particularly important. 
+Because access to the resource and its collection of government gazettes is entirely free, it also solves the problem of previously having to have a subscription for weekly access. For freelancers especially, this will be particularly important.
 
 A more recent example is using government gazettes to track the Eskom nuclear procurement saga. Earlier this year, [Eskom was accused of trying to hide the fact it had applied for site licences for the construction of two nuclear facilities](http://www.htxt.co.za/2016/08/24/eskom-slips-nuclear-plants-past-public/). Instead of publishing the notice for public comment in the national gazette, it placed notices in the provincial gazette. Critics, including the Organisation Undoing Tax Abuse (Outa), have said that they should have been published nationally. Eskom also set a deadline for public comment that was shorter than the required thirty days. This is after years of an already complex debate around the country's nuclear procurement plan. 
 
