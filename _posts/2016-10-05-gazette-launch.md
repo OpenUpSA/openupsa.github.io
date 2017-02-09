@@ -40,7 +40,15 @@ Considering that national and provincial copies are printed weekly, along with s
  
 In addition, search functionality and access to digital copies prior to 2012 have a price tag attached as commercial providers charge for this service. Since the government gazette dates back to the Union of South Africa, this prevents the majority of South Africans from benefitting from an important record of the history of South Africa.
 
-As the official mouthpiece of government, the Government Gazette is the one platform that citizens can use to make sure that government is acting in our best interests. But we can only do this if we can access it. 
+As the official mouthpiece of government, the Government Gazette is the one platform that citizens can use to make sure that government is acting in our best interests. But we can only do this if we can access it.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0Hegd4xNfRo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+<figure>
+	<figcaption>
+		Example of caption. by Name Surname
+	</figcaption>
+</figure>
 
 [Join us](http://opengazettes.org.za/join) in building the biggest collection of freely available and searchable government gazettes. We are looking for gazettes, national and provincial, from before 2012. 
 
