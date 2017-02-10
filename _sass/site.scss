@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Gudea|Lato|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Gudea|Lato:300,400|Open+Sans:300,300i,400,400i,700,700i');
 
 body {
   font-family: 'Lato', sans-serif;
@@ -196,4 +196,67 @@ body {
 }
 .post-grid-excerpt {
   height: 200px;
+}
+
+
+
+.services {
+  
+  h1 {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 44px;
+  }
+  p.lead { 
+    font-size: 21px;
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    font-weight:300;
+    text-align: center;
+    line-height: 1.3em;
+  }
+  ul {
+    list-style-image: url('/img/styleguide/right-arrow-7.png');
+  }
+  .service-box {
+    margin-top: 30px;
+    padding: 100px;
+    .service-box-head{
+      text-align:center;
+      font-size: 24px;
+    }
+  }
+  .service-box-1 {
+    background-color: #E8F3F8;
+  }
+  .service-box-2 {
+    background-color: #DBE6EC;
+  }
+  .service-box-3 {
+    background-color: #C2CBCE;
+  }
+
+
+
+  .service-head, .service-subhead {
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    font-weight: 300;
+  }
+  .service-head {
+    font-size: 32px;
+  }
+  .service-subhead {
+    font-size: 26px;
+  }
+
+
+
+
+  .course-ticket {
+    background-color: #efefef;
+  }
+
+
+
+
 }
