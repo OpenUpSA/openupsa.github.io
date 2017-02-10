@@ -38,7 +38,7 @@ layout: base
 
               <div class="byline">                
                 <p>
-                  <small>by <span class="author-lead">{{page.author}}, {{page.authorpos}} (Open Up)</span>. {{page.authordetail}}</small>
+                  <small>by <span class="author-lead">{{page.author}}</span> {{page.authordetail}}</small>
                 </p>
               </div>
 
@@ -95,6 +95,28 @@ layout: base
           {% endfor %}
         </div>
         <!-- related articles grid -->
+
+
+
+ <!-- related articles grid -->
+        
+        <div class="post-order">
+          <ul class="row">
+          {% for post in site.posts limit: 6 %}
+          <li class="col-md-4 col-xs-12">
+                <div class="row">
+                <div class="col-md-10 col-xs-12 post-grid-excerpt">
+                <a href="{{ post.url }}">{{ post.title }}</a><p><small>{{ post.excerpt | truncatewords: 20 }}</small></p>
+                </div>
+          </li>
+          {% endfor %}
+          </ul>
+        </div>
+
+        <!-- related articles grid -->
+
+
+
 
   </div>
 </section>
