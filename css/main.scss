@@ -1,23 +1,266 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "bootstrap",
-  "site"
+  "bootstrap"
 ;
+
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Gudea|Lato:300,400|Open+Sans:300,300i,400,400i,700,700i');
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.page-intro {
+	h1 {
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  font-weight: 600;
+	}
+}
+
+.tools-page {
+	.featured-tool {
+	  img {
+	    padding-top: 20px;
+	    width: 100%;
+	  }
+	  .bubble {
+	    border-radius: 100px;
+	    background-color: #ababab;
+	    bottom: 45%;
+	    left: -30px;
+	    height: 90px;
+	    width: 90px;
+	    text-align: center;
+	    color: #fff;
+	    text-transform: uppercase;
+	    line-height: 90px;
+	    position: absolute;
+	    font-weight: bold;
+	    @media (max-width:1240px) {
+	      bottom: -45px;
+	      left: 55%;
+	    }
+	  }
+	  .category {
+	    text-transform: uppercase;
+	    color: #ababab;
+	    font-style: italic;
+	    margin-bottom: 5px;
+	  }
+	  .title {
+	    text-transform: uppercase;
+	    font-size: 1.2em;
+	    margin-bottom: 5px;
+	    width: 90%;
+	  }
+	  .author {
+	    color: #ababab;
+	    font-style: italic;
+	    margin-bottom: 20px;
+	  }
+	  .arrow {
+	    position: absolute;
+	    right: 10px;
+	    top: 20%;
+	    font-size: 4em;
+	  }
+	  .article {
+	    border-bottom: 1px solid #ccc;
+	    padding-top: 20px;
+	    position: relative;
+	  }
+	  .learnmore {
+	    text-transform: uppercase;
+	    margin-top: 20px;
+	    font-size: 1.7em;
+	  }
+	}
+	.all-tools {
+	  margin-top: 25px;
+	  .row {
+	    margin-bottom: 30px;
+	  }
+	}
+}	
+
+.post {
+  figure {
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+  figure img {
+    max-width: 100%;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  figcaption {
+    font-style: italic;
+    font-style: normal;
+    font-size: 10px;
+    color: #B0B0B0;
+    margin-top:15px
+  }
+  /*blockquote {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 0;
+    padding: 0;
+    border:none;
+  }*/
+  .collapse-box {
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 15px;
+    margin: 10px 0px;
+  }
+  .footnotes {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  pre code {
+    font-family: 'Cutive Mono', monospace;
+  }
+  pre {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 0px;
+    font-size: 14px;
+  }
+  ul {
+    list-style-image: url('/img/styleguide/right-arrow-7.png');
+  }
+}
+
+    ul.share-buttons{
+      list-style: none;
+      padding: 0;
+      margin-bottom:30px;
+    }
+    ul.share-buttons li{
+      display: inline;
+    }
+    ul.share-buttons .sr-only {
+      position: absolute;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0;
+      border: 0;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+    }
+    ul.share-buttons img {
+      width: 25px;
+      margin-right: 10px;
+    }
+
+.post-excerpt {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.relate-post {
+  margin-bottom: 30px;
+}
+.relate-post-title {
+  font-size: 20px;
+}
+.post-order ul li {
+  list-style-type: none;
+  display: inline;
+  float: left;
+}
+.topContent {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.categories-section {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.author-section {
+  margin-top: 30px;
+}
+.byline {
+  margin-top: 30px;
+  color: #B0B0B0;
+}
+.author-lead {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.post-list-style {
+  margin: 15px 0px;
+}
+.post-list-style ul li {
+  /*border-bottom: 1px solid #f7f7f7;*/
+  padding: 5px 0px;
+}
+.post-order ul {
+  margin-left: -50px;
+}
+.post-grid-excerpt {
+  height: 200px;
+}
+
+.services {
+  
+  h1 {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 44px;
+  }
+  p.lead { 
+    font-size: 21px;
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    font-weight:300;
+    text-align: center;
+    line-height: 1.3em;
+  }
+  ul {
+    list-style-image: url('/img/styleguide/right-arrow-7.png');
+  }
+  .service-box {
+    margin-top: 30px;
+    padding: 100px;
+    .service-box-head{
+      text-align:center;
+      font-size: 24px;
+    }
+  }
+  .service-box-1 {
+    background-color: #E8F3F8;
+  }
+  .service-box-2 {
+    background-color: #DBE6EC;
+  }
+  .service-box-3 {
+    background-color: #C2CBCE;
+  }
+
+  .service-head, .service-subhead {
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    font-weight: 300;
+  }
+  .service-head {
+    font-size: 32px;
+  }
+  .service-subhead {
+    font-size: 26px;
+  }
+
+  .course-ticket {
+    background-color: #efefef;
+  }
+
+}
 
 p {
 	line-height: 1.6;
-}
-
-.alltools {
-	#munimoney {
-		background-image: url(../img/tools/munimoney.png);
-		background-size: cover;
-		width: 100%;
-	}
 }
 
 @media(min-width: 768px) {
@@ -56,7 +299,6 @@ p {
 		}
 
 		.oneliner {
-			font-family: 'Open Sans Light', sans-serif;
 			font-style: italic;
 			text-transform: uppercase;
 			line-height: 1.5;
@@ -169,12 +411,6 @@ p {
 }
 
 .about {
-	.oneliner {
-		font-family: 'Open Sans Light', sans-serif;
-		font-style: italic;
-		text-transform: uppercase;
-		line-height: 1.5;
-	}
 
 	.content {
 		img {

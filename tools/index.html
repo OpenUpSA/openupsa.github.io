@@ -1,39 +1,46 @@
 ---
 layout: base
+featured-tool: Open Gazettes
 ---
-<div class="container">
-	<div class="row">
-		<div class="col-sm-10">
-			<h1 class="page-title">Tools</h1>
-			<p>At <strong>Open Up</strong>, we believe that 'open' is more than just making data available. Data is meaningless unless you can understand it, which is why we build online tools to help contextualise data for government, civil society and human beings. We believe open is easy to understand, simple to navigate and functional.</p>
-		</div>
-	</div>
-	<div class="row featured-tool">
-		<div class="col-md-6 image">
-			<div class="bubble">Featured</div>
-			<img style="width: 100%" src="/img/tools/opengazettes.png">
-		</div>
+<div class="container tools-page">
+	<section class="page-intro">
+		<h1>Tools</h1>
+		<p>At <strong>Open Up</strong>, we believe that 'open' is more than just making data available. Data is meaningless unless you can understand it, which is why we build online tools to help contextualise data for government, civil society and human beings. We believe open is easy to understand, simple to navigate and functional.</p>
+	</section>
 
-		<div class="col-md-6">
-			{% for post in site.posts %}
-				{% if post.tool contains 'opengazettes' %}
-					{% capture number %}{% increment number %}{% endcapture %}
-					{% if number < '3' %}
-						<div class="article">
-							<p class="category">{{ post.category }}</p>
-							<p class="title">{{ post.title }}</p>
-							<p class="author">{{ post.author }}</p>
-							<div class="arrow">›</div>
-						</div>
+	<section class="featured-tool">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="bubble">Featured</div>
+				{% for tool in site.tools %}
+					{% if tool.name == page.featured-tool %}
+						<img src="/img/tools/{{ tool.image }}">
 					{% endif %}
-				{% endif %}
-			{% endfor %}	
-			<p class="pull-right learnmore">Learn more</p>
+				{% endfor %}
+			</div>
+
+			<div class="col-md-6">
+				{% for article in site.articles %}
+					{% if article.tool == page.featured-tool %}
+						{% if article.featured == true %}
+							{% capture number %}{% increment number %}{% endcapture %}
+							{% if number < '3' %}
+								<div class="article">
+									<a class="category"">{{ article.category }}</a>
+									<a class="title" href="{{ article.url }}" >{{ article.title }}</a>
+									<a class="author" href="../team/{{ article.author-short }}.html" >{{ article.author }}</a>
+									<a class="arrow" href="{{ article.url }}">›</a>
+								</div>
+							{% endif %}
+						{% endif %}
+					{% endif %}
+				{% endfor %}	
+				<p class="pull-right learnmore">Learn more</p>
+			</div>
 		</div>
-	</div>
-</div>
-<div class="alltools">
-	<div class="container">
+	</section>
+
+	<section class="all-tools">
 		<h2>Title (optional)</h2>
 		{% for tool in site.tools %}
 			<div><a href="{{ tool.url }}">{{ tool.name }}</a></div>
@@ -73,14 +80,8 @@ layout: base
 				<img style="width: 100%" src="/img/box.png">
 			</div>
 		</div>
-	</div>
-</div>
-<div class="container">
-	<div class="row" style="margin-top: 20px; margin-bottom: 20px;">
-		<div class="col-xs-12">
-			<h4 class="pull-right">
-				What else have we done? View the rest of <strong>our tools</strong>
-			</h4>
-		</div>
-	</div>
-</div>
+	</section>
+
+	<h4 class="pull-right">
+		What else have we done? View the rest of <strong>our tools</strong>
+	</h4>
