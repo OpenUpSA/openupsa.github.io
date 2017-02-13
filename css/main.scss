@@ -5,7 +5,7 @@
   "bootstrap"
 ;
 
-@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Gudea|Lato:300,400|Open+Sans:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:300,300i,400,400i,700,700i');
 
 body {
   font-family: 'Lato', sans-serif;
@@ -22,8 +22,8 @@ body {
 
 .tools-page {
 	.featured-tool {
+		margin-top: 20px;
 	  img {
-	    padding-top: 20px;
 	    width: 100%;
 	  }
 	  .bubble {
@@ -44,49 +44,65 @@ body {
 	      left: 55%;
 	    }
 	  }
-	  .category {
-	    text-transform: uppercase;
-	    color: #ababab;
-	    font-style: italic;
-	    margin-bottom: 5px;
-	  }
-	  .title {
-	    text-transform: uppercase;
-	    font-size: 1.2em;
-	    margin-bottom: 5px;
-	    width: 90%;
-	  }
-	  .author {
-	    color: #ababab;
-	    font-style: italic;
-	    margin-bottom: 20px;
-	  }
-	  .arrow {
-	    position: absolute;
-	    right: 10px;
-	    top: 20%;
-	    font-size: 4em;
-	  }
-	  .article {
-	    border-bottom: 1px solid #ccc;
-	    padding-top: 20px;
-	    position: relative;
-	  }
-	  .learnmore {
-	    text-transform: uppercase;
-	    margin-top: 20px;
-	    font-size: 1.7em;
-	  }
-	}
+	  .featured-article {
+		 	ul {
+		 		position: relative;
+		 		border-bottom: 1px solid #ddd;
+		 		margin-bottom: 20px;
+		 	}
+
+		  .type {
+		    text-transform: uppercase;
+		    font-style: italic;
+	    	color: #ababab;
+	    	li {
+	    		margin-bottom: 5px;
+	    	}
+		  }
+		  .title {
+		    text-transform: uppercase;
+		    font-size: 1.2em;
+		    color: #000;
+		    li {
+		    	margin-bottom: 5px;
+		    	width: 90%;
+		    }
+		  }
+		  .author {
+		    font-style: italic;
+	    	color: #ababab;
+	    	li {
+	    		margin-bottom: 20px;
+	    	}
+		  }
+		  .arrow {
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		    font-size: 4em;
+	    	color: #000;
+	    	text-decoration: none;
+		  }
+		  .article {
+		    border-bottom: 1px solid #ccc;
+		    padding-top: 20px;
+		  }
+		  .learnmore {
+		    text-transform: uppercase;
+		    margin-top: 20px;
+		    font-size: 1.7em;
+		  }
+		}
+	}	
 	.all-tools {
 	  margin-top: 25px;
 	  .row {
 	    margin-bottom: 30px;
 	  }
 	}
-}	
-
-.post {
+	
+}
+.single-article {
   figure {
     margin-bottom: 30px;
     font-size: 12px;
@@ -119,9 +135,6 @@ body {
   .footnotes {
     margin-top: 30px;
     margin-bottom: 30px;
-  }
-  pre code {
-    font-family: 'Cutive Mono', monospace;
   }
   pre {
     background-color: #f1f1f1;

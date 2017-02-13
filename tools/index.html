@@ -10,6 +10,7 @@ featured-tool: Open Gazettes
 
 	<section class="featured-tool">
 		<div class="row">
+
 			<div class="col-md-6">
 				<div class="bubble">Featured</div>
 				{% for tool in site.tools %}
@@ -19,24 +20,25 @@ featured-tool: Open Gazettes
 				{% endfor %}
 			</div>
 
-			<div class="col-md-6">
+			<div class="col-md-6 featured-article">
 				{% for article in site.articles %}
 					{% if article.tool == page.featured-tool %}
 						{% if article.featured == true %}
 							{% capture number %}{% increment number %}{% endcapture %}
 							{% if number < '3' %}
-								<div class="article">
-									<a class="category"">{{ article.category }}</a>
-									<a class="title" href="{{ article.url }}" >{{ article.title }}</a>
-									<a class="author" href="../team/{{ article.author-short }}.html" >{{ article.author }}</a>
+								<ul class="list-unstyled">
+									<a class="type" href="#"><li>{{ article.type }}</li></a>
+									<a class="title" href="{{ article.url }}" ><li>{{ article.title }}</li></a>
+									<a class="author" href="/team/{{ article.author-short }}.html"><li>{{ article.author }}</li></a>
 									<a class="arrow" href="{{ article.url }}">›</a>
-								</div>
+								</ul>
 							{% endif %}
 						{% endif %}
 					{% endif %}
 				{% endfor %}	
-				<p class="pull-right learnmore">Learn more</p>
+				<a href="#" class="pull-right learnmore">Learn more</a>
 			</div>
+
 		</div>
 	</section>
 
