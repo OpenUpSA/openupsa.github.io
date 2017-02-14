@@ -47,7 +47,7 @@ featured-tool: Open Gazettes
 		<h2>Our tools</h2>
 		<div class="row">
 			{% for tool in site.tools %}
-				<a href="{{ tool.url }}" class="col-md-3">
+				<a href="{{ site.baseurl }}{{ tool.url }}" class="col-md-3">
 					<img src="{{ site.baseurl }}/img/tools/{{ tool.image }}">
 					<div class="tool-name">{{ tool.title }}</div>
 				</a>
