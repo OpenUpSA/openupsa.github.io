@@ -9,7 +9,7 @@
 title: Open Up
 email: mail@openup.org.za
 url: http://openup.org.za
-baseurl:
+baseurl: /openup.github.io
 description: Being Open Up
 twitter:
   username: openupsa
