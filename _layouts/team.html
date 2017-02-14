@@ -2,8 +2,8 @@
 layout: base
 ---
 <!-- CONTENT-->
-<section class="team-member">
-  <div class="container">
+<div class="container">
+  <section class="team-member">
     <h1>{{ page.name }}</h1>
     <div>currently: {{ page.current }}</div>
     <div>{{ page.statement }}</div>
@@ -17,5 +17,12 @@ layout: base
         {% endfor %}
       {% endfor %}
     </div>
-  </div>
-</section>
+    <div>
+      {% for article in site.articles %}
+        {% if article.author == page.name %}
+          <div><a href="{{ article.url }}">{{ article.title }}</a></div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</div>

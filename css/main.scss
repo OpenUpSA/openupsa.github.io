@@ -97,204 +97,139 @@ body {
 	.all-tools {
 	  margin-top: 25px;
 	  .row {
-	    margin-bottom: 30px;
+	    a {
+	    	margin-bottom: 30px;
+	    	img {
+	    		width: 100%;
+	    	}
+	    	.tool-name {
+	    		position: absolute;
+	    		bottom: 5px;
+	    		right: 25px;
+	    	}
+	    }
 	  }
+
 	}
 	
 }
 .single-article {
-  figure {
-    margin-bottom: 30px;
-    font-size: 12px;
-  }
-  figure img {
-    max-width: 100%;
-    margin-left:auto!important;
-    margin-right:auto!important;
-  }
-  figcaption {
-    font-style: italic;
-    font-style: normal;
-    font-size: 10px;
-    color: #B0B0B0;
-    margin-top:15px
-  }
-  /*blockquote {
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 0;
-    padding: 0;
-    border:none;
-  }*/
-  .collapse-box {
-    background-color: #f7f7f7;
-    color: #333;
-    padding: 15px;
-    margin: 10px 0px;
-  }
-  .footnotes {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  pre {
-    background-color: #f1f1f1;
-    border: none;
-    border-radius: 0px;
-    font-size: 14px;
-  }
-  ul {
-    list-style-image: url('/img/styleguide/right-arrow-7.png');
-  }
+	article {
+		.post-excerpt {
+		  margin-top: 10px;
+		  font-size: 20px;
+		}
+		.author-date {
+		  padding-bottom: 10px;
+		  margin-bottom: 10px;
+		  color: #B0B0B0;
+		  border-bottom: 1px solid #eee;
+		}
+		figure {
+		  margin-bottom: 30px;
+		  font-size: 12px;
+		}
+		figure img {
+		  max-width: 100%;
+		  margin-left:auto!important;
+		  margin-right:auto!important;
+		}
+		figcaption {
+		  font-style: italic;
+		  font-style: normal;
+		  font-size: 10px;
+		  color: #B0B0B0;
+		  margin-top:15px
+		}
+		/*blockquote {
+		  font-size: 20px;
+		  font-weight: 700;
+		  margin-left: 0;
+		  padding: 0;
+		  border:none;
+		}*/
+		.collapse-box {
+		  background-color: #f7f7f7;
+		  color: #333;
+		  padding: 15px;
+		  margin: 10px 0px;
+		}
+		.footnotes {
+		  margin-top: 30px;
+		  margin-bottom: 30px;
+		}
+		pre {
+		  background-color: #f1f1f1;
+		  border: none;
+		  border-radius: 0px;
+		  font-size: 14px;
+		}
+	}
+
+	.social-sharing {
+	  ul {
+			&.share-buttons{
+			  list-style: none;
+			  padding: 0;
+			  margin-bottom:30px;
+				li {
+				  display: inline;
+				}
+				.sr-only {
+				  position: absolute;
+				  clip: rect(1px 1px 1px 1px);
+				  clip: rect(1px, 1px, 1px, 1px);
+				  padding: 0;
+				  border: 0;
+				  height: 1px;
+				  width: 1px;
+				  overflow: hidden;
+				}
+				img {
+				  width: 25px;
+				  margin-right: 10px;
+				}
+			}
+	  }
+	}
 }
 
-    ul.share-buttons{
-      list-style: none;
-      padding: 0;
-      margin-bottom:30px;
-    }
-    ul.share-buttons li{
-      display: inline;
-    }
-    ul.share-buttons .sr-only {
-      position: absolute;
-      clip: rect(1px 1px 1px 1px);
-      clip: rect(1px, 1px, 1px, 1px);
-      padding: 0;
-      border: 0;
-      height: 1px;
-      width: 1px;
-      overflow: hidden;
-    }
-    ul.share-buttons img {
-      width: 25px;
-      margin-right: 10px;
-    }
-
-.post-excerpt {
-  margin-top: 10px;
-  font-size: 20px;
-}
-.relate-post {
-  margin-bottom: 30px;
-}
-.relate-post-title {
-  font-size: 20px;
-}
-.post-order ul li {
-  list-style-type: none;
-  display: inline;
-  float: left;
-}
-.topContent {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.categories-section {
-  font-size: 12px;
-  margin-bottom: 30px;
-}
-.author-section {
-  margin-top: 30px;
-}
-.byline {
-  margin-top: 30px;
-  color: #B0B0B0;
-}
-.author-lead {
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.post-list-style {
-  margin: 15px 0px;
-}
-.post-list-style ul li {
-  /*border-bottom: 1px solid #f7f7f7;*/
-  padding: 5px 0px;
-}
-.post-order ul {
-  margin-left: -50px;
-}
-.post-grid-excerpt {
-  height: 200px;
-}
-
-.services {
-  
-  h1 {
-    text-align: center;
-    font-family: 'Open Sans';
-    font-weight: 300;
-    font-size: 44px;
-  }
-  p.lead { 
-    font-size: 21px;
-    font-family: 'Open Sans', 'Lato', sans-serif;
-    font-weight:300;
-    text-align: center;
-    line-height: 1.3em;
-  }
-  ul {
-    list-style-image: url('/img/styleguide/right-arrow-7.png');
-  }
-  .service-box {
-    margin-top: 30px;
-    padding: 100px;
-    .service-box-head{
-      text-align:center;
-      font-size: 24px;
-    }
-  }
-  .service-box-1 {
-    background-color: #E8F3F8;
-  }
-  .service-box-2 {
-    background-color: #DBE6EC;
-  }
-  .service-box-3 {
-    background-color: #C2CBCE;
+.services-page {
+  .header {
+  	text-align: center;
+  	font-family: 'Open Sans', 'Lato', sans-serif;
+	  h1 {
+	    font-size: 44px;
+	    font-weight: 300;
+	  }
+	  .lead { 
+	    font-size: 21px;
+	    font-weight: 300;
+	    line-height: 1.3em;
+	  }
   }
 
-  .service-head, .service-subhead {
-    font-family: 'Open Sans', 'Lato', sans-serif;
-    font-weight: 300;
+  .service-boxes {
+	  a {
+	    margin-top: 30px;
+	    padding: 100px;
+	    text-align:center;
+	    font-size: 24px;
+	  }
+	  .service-box-1 {
+	    background-color: #E8F3F8;
+	  }
+	  .service-box-2 {
+	    background-color: #DBE6EC;
+	  }
+	  .service-box-3 {
+	    background-color: #C2CBCE;
+	  }
   }
-  .service-head {
-    font-size: 32px;
-  }
-  .service-subhead {
-    font-size: 26px;
-  }
-
-  .course-ticket {
-    background-color: #efefef;
-  }
-
 }
 
 p {
 	line-height: 1.6;
-}
-
-@media(min-width: 768px) {
-	#munimoney {
-		width: 375px;
-		height: 750px;
-	}
-}
-
-@media(min-width: 992px) {
-	#munimoney {
-		width: 323.33px;
-		height: 646.66px;
-	}
-}
-
-@media(min-width: 1200px) {
-	#munimoney {
-		width: 390px;
-		height: 780px;
-	}
 }
 
 .individual-tool {
@@ -403,36 +338,9 @@ p {
 	}
 }
 
-.post {
-	.sidenote {
-		position: absolute;
-		right: 0;
-		width: 185px;
-		padding: 10px;
-		font-size: 13px;
-		background-color: #f5f5f5;
-		-webkit-transform: translate(100%,5px);
-		-ms-transform: translate(100%,5px);
-		transform: translate(100%,5px);
-		color: #555;
-		text-decoration: none;
-
-		&:hover {
-			color: #23527c !important;
-		}
-	}
-}
-
-.about {
-
-	.content {
-		img {
-			width: 100%;
-		}
-	}
-
+.about-page {
 	.team {
-		.team-photos {
+		.photos {
 			img {
 				width: 100%;
 				margin-bottom: 30px;

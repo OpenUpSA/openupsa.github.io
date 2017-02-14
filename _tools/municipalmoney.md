@@ -1,6 +1,7 @@
 ---
 layout: tool
 name: Municipal Money
+image: municipalmoney.png
 logo: 
 external-url: http://municipalmoney.gov.za/
 oneliner: How is your municipality managing your money?
