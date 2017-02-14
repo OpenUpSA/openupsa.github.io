@@ -253,12 +253,10 @@ p {
 .individual-tool {
 	.header {
 		margin-bottom: 30px;
-
 		.title {
 			font-weight: 600;
 			text-transform: uppercase;
 			margin-top: 30px;
-
 			img {
 				height: 35px;
 			}
@@ -270,7 +268,6 @@ p {
 			line-height: 1.5;
 		}
 	}
-
 	.tool-info {
 		margin: 40px 0;
 		.external-url {
@@ -280,21 +277,17 @@ p {
 	}
 
 	.slideshow {
-		
 		.full-image {
 			width: 100%;
 			margin-bottom: 20px;
 		}
-
 		.thumbnail-wrap {
 			padding: 0 5px;
-
 			.thumbnail {
 				width: 100%;
 				opacity: 0.5;
 				cursor: pointer
 			}
-
 			.selected {
 				opacity: 1;
 			}
@@ -305,18 +298,21 @@ p {
 		h4 {
 			margin-bottom: 40px;
 		}
-
 		.title {
 			margin-bottom: 2px;
 			font-weight: bold;
 		}
-
 		.author {
 			font-style: italic;
 		}
-
 		.excerpt {
 			margin-bottom: 20px;
+		}
+	}
+
+	.creators {
+		img {
+			width: 100%;
 		}
 	}
 

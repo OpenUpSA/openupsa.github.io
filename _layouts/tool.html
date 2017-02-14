@@ -63,8 +63,13 @@ layout: base
     <h4>The people behind {{ page.title }}</h4>
     <div class="row">
       {% for creator in page.creators %}
-        <a href="/team/{{ creator.short-name }}.html" class="col-xs-6 col-sm-4 col-md-2">
-          <img style="width:100%;" src="/img/team/{{ creator.short-name }}.jpg">{{ creator.title }}
+        <a href="/team/{{ creator.short-name }}.html" class="col-xs-6 col-sm-4 col-md-2" data-toggle="tooltip" data-placement="bottom" title="{{ creator.name }}">
+          <img src="/img/team/{{ creator.short-name }}.jpg">
+        </a>
+      {% endfor %}
+      {% for creator in page.external-creators %}
+        <a target="_blank" href="{{ creator.external-url }}" class="col-xs-6 col-sm-4 col-md-2" data-toggle="tooltip" data-placement="bottom" title="{{ creator.name }}">
+          <img src="/img/team/external/{{ creator.image }}">
         </a>
       {% endfor %}
     </div>
@@ -109,5 +114,9 @@ layout: base
     });
     $('.thumbnail-wrap img').removeClass('selected');
     $($(this)).addClass('selected');
+  });
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
   });
 </script>

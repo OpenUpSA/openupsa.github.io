@@ -6,12 +6,18 @@ image: pocketreporter.png
 logo: 
 oneliner: A news editor in your pocket
 creators:
-- name: Greg
+- name: Greg Kempe
   short-name: greg
 external-creators:
 - name: Raymond Joseph
+  image: ray.jpg
+  external-url: #
 - name: Lion Summerbell
+  image: lion.jpg
+  external-url: #
 - name: Peter Koen
+  image: peter.jpg
+  external-url: http://pondo.co
 slideshow:
 - image:
 - image:
