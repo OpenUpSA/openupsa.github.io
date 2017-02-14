@@ -7,12 +7,12 @@ layout: base
     <h1>{{ page.name }}</h1>
     <div>currently: {{ page.current }}</div>
     <div>{{ page.statement }}</div>
-    <a href="mailt:{{ page.email }}">{{ page.email }}</a>
+    <a href="mailto:{{ page.email }}">{{ page.email }}</a>
     <div>
       {% for tool in site.tools %}
         {% for creator in tool.creators %}
           {% if creator.name == page.name %}
-            <div><a href="{{ tool.url }}">{{ tool.name }}</a>: {{ creator.role }}</div>
+            <div><a href="{{ site.baseurl }}{{ tool.url }}">{{ tool.title }}</a></div>
           {% endif %}
         {% endfor %}
       {% endfor %}
@@ -20,7 +20,7 @@ layout: base
     <div>
       {% for article in site.articles %}
         {% if article.author == page.name %}
-          <div><a href="{{ article.url }}">{{ article.title }}</a></div>
+          <div><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></div>
         {% endif %}
       {% endfor %}
     </div>

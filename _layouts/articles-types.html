@@ -9,7 +9,7 @@ layout: base
     <div>
       {% for article in site.articles %}
         {% if article.type == page.name %}
-          <a href="{{ article.url }}">{{ article.title }}</a>
+          <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
         {% endif %}
       {% endfor %}
     </div>
