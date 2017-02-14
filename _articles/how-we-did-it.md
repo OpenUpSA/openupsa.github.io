@@ -18,7 +18,7 @@ Government gazettes are valuable entities in and of themselves. They’ve been c
 
 Currently, government gazettes still look like they’re produced on the printing presses of the 1800s. Their text flows neatly from page to page, and whether it’s a 50-word liquidation notice or a 400-page green paper, it will be published in the same format as gazettes always have been.
 
-<img src="/img/blog/how-gazette-1.png" style="width: 100%">
+<img src="{{ site.baseurl }}/img/blog/how-gazette-1.png" style="width: 100%">
 
 This is why before building the Open Gazettes resource, we needed to have some idea of what additional value we could provide. The majority of people who use gazettes tend to be lawyers, librarians and special interest groups. So we asked ourselves, “How can gazettes be made available to the general public in a way that helps them to participate in policy-making and governance?”
 
