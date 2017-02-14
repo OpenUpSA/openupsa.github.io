@@ -1,6 +1,6 @@
 ---
 layout: tool
-name: Medicine Price Registry
+title: Medicine Price Registry
 external-url: https://mpr.code4sa.org/
 image: mpr.png
 logo: 

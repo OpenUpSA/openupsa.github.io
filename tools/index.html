@@ -14,8 +14,9 @@ featured-tool: Open Gazettes
 			<div class="col-md-6">
 				<div class="bubble">Featured</div>
 				{% for tool in site.tools %}
-					{% if tool.name == page.featured-tool %}
-						<img src="/img/tools/{{ tool.image }}">
+					{% if tool.title == page.featured-tool %}
+						<a href="{{ tool.url }}"><img src="/img/tools/{{ tool.image }}"></a>
+						<h2 class="tool-name">{{ tool.title }}</h2>
 					{% endif %}
 				{% endfor %}
 			</div>
@@ -48,7 +49,7 @@ featured-tool: Open Gazettes
 			{% for tool in site.tools %}
 				<a href="{{ tool.url }}" class="col-md-4">
 					<img src="/img/tools/{{ tool.image }}">
-					<div class="tool-name">{{ tool.name }}</div>
+					<div class="tool-name">{{ tool.title }}</div>
 				</a>
 			{% endfor %}
 		</div>

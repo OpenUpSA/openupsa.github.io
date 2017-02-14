@@ -1,6 +1,6 @@
 ---
 layout: tool
-name: Open Gazettes
+title: Open Gazettes
 logo: 
 external-url: http://opengazettes.org.za/
 oneliner: The biggest collection of freely available gazettes in South Africa

@@ -1,6 +1,6 @@
 ---
 layout: tool
-name: Open By-laws
+title: Open By-laws
 image: openbylaws.png
 logo: 
 external-url: http://municipalmoney.gov.za/

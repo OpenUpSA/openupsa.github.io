@@ -1,11 +1,21 @@
 ---
 layout: tool
-name: Pocket Reporter
+title: Pocket Reporter
+external-url: http://pocketreporter.co.za/
 image: pocketreporter.png
 logo: 
-external-url: http://pocketreporter.co.za/
 oneliner: A news editor in your pocket
-category: Category 1
+creators:
+- name: Greg
+  short-name: greg
+external-creators:
+- name: Raymond Joseph
+- name: Lion Summerbell
+- name: Peter Koen
+slideshow:
+- image:
+- image:
+- image:
 opener: Pocket Reporter helps you be a better reporter by guiding you through the news gathering process
 tool-info:
 - bullet: Guides you through the news-gathering process

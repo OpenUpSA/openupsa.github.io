@@ -1,6 +1,6 @@
 ---
 layout: tool
-name: Municipal Money
+title: Municipal Money
 image: municipalmoney.png
 logo: 
 external-url: http://municipalmoney.gov.za/

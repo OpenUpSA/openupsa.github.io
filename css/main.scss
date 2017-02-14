@@ -26,7 +26,17 @@ body {
 	  img {
 	    width: 100%;
 	  }
+	  .tool-name {
+	  	position: absolute;
+	  	bottom: 35px;
+	  	right: 15px;
+	  	background-color: #333;
+	  	color: #fff;
+	  	padding: 5px 10px;
+	  	pointer-events: none;
+	  }
 	  .bubble {
+	  	pointer-events: none;
 	    border-radius: 100px;
 	    background-color: #ababab;
 	    bottom: 45%;
@@ -101,11 +111,19 @@ body {
 	    	margin-bottom: 30px;
 	    	img {
 	    		width: 100%;
+	    		opacity: 0.8;
+	    		&:hover {
+	    			opacity: 1;
+	    		}
 	    	}
 	    	.tool-name {
 	    		position: absolute;
-	    		bottom: 5px;
-	    		right: 25px;
+	    		bottom: 35px;
+	    		right: 15px;
+	    		background-color: #333;
+	    		color: #fff;
+	    		padding: 5px 10px;
+	    		pointer-events: none;
 	    	}
 	    }
 	  }
@@ -255,14 +273,10 @@ p {
 
 	.tool-info {
 		margin: 40px 0;
-	}
-
-	.external-url {
-		margin: 40px 0;
-
-		h3 {
+		.external-url {
+			margin: 40px 0;
 			font-weight: bold;
-		}
+			}
 	}
 
 	.slideshow {

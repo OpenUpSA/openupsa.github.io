@@ -1,6 +1,6 @@
 ---
 layout: tool
-name: Wazimap
+title: Wazimap
 image: wazimap.png
 logo: wazimap-logo.png
 external-url: http://wazimap.co.za
