@@ -15,7 +15,7 @@ featured-tool: Open Gazettes
 				<div class="bubble">Featured</div>
 				{% for tool in site.tools %}
 					{% if tool.title == page.featured-tool %}
-						<a href="{{ tool.url }}"><img src="{{ site.baseurl }}/img/tools/{{ tool.image }}"></a>
+						<a href="{{ site.baseurl }}{{ tool.url }}"><img src="{{ site.baseurl }}/img/tools/{{ tool.image }}"></a>
 						<h2 class="tool-name">{{ tool.title }}</h2>
 					{% endif %}
 				{% endfor %}
@@ -29,9 +29,9 @@ featured-tool: Open Gazettes
 							{% if number < '3' %}
 								<ul class="list-unstyled">
 									<a class="type" href="#"><li>{{ article.type }}</li></a>
-									<a class="title" href="{{ article.url }}" ><li>{{ article.title }}</li></a>
+									<a class="title" href="{{ site.baseurl }}{{ article.url }}" ><li>{{ article.title }}</li></a>
 									<a class="author" href="{{ site.baseurl }}/team/{{ article.author-short }}.html"><li>{{ article.author }}</li></a>
-									<a class="arrow" href="{{ article.url }}">›</a>
+									<a class="arrow" href="{{ site.baseurl }}{{ article.url }}">›</a>
 								</ul>
 							{% endif %}
 						{% endif %}

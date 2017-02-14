@@ -34,9 +34,9 @@ layout: base
 		</p>
 		<div class="row photos">
 			{% for member in site.team %}
-				<div class="col-sm-3">
-					<a href="{{ site.baseurl }}/team/{{ member.short-name }}.html"><img src="{{ site.baseurl }}/img/team/{{ member.short-name }}.jpg"></a>
-				</div>
+				<a class="col-sm-3 col-md-2" href="{{ site.baseurl }}/team/{{ member.short-name }}.html">
+					<img src="{{ site.baseurl }}/img/team/{{ member.short-name }}.jpg">
+				</a>
 			{% endfor %}
 		</div>
 	</section>

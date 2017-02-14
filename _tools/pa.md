@@ -1,8 +1,8 @@
 ---
 layout: tool
-title: Mapit
-external-url: http://mapit.code4sa.org/
-image: mapit.png
+title: People's Assembly
+external-url: http://www.pa.org.za/
+image: pa.png
 logo: 
 oneliner:
 creators:
