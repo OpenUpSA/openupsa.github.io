@@ -1,86 +1,60 @@
 ---
 layout: base
+featured-tool: Open Gazettes
 ---
-<div class="container">
-	<div class="row">
-		<div class="col-sm-10">
-			<h1 class="page-title">Tools</h1>
-			<p>At <strong>Open Up</strong>, we believe that 'open' is more than just making data available. Data is meaningless unless you can understand it, which is why we build online tools to help contextualise data for government, civil society and human beings. We believe open is easy to understand, simple to navigate and functional.</p>
-		</div>
-	</div>
-	<div class="row featured-tool">
-		<div class="col-md-6 image">
-			<div class="bubble">Featured</div>
-			<img style="width: 100%" src="/img/tools/opengazettes.png">
-		</div>
+<div class="container tools-page">
+	<section class="page-intro">
+		<h1>Tools</h1>
+		<p>At <strong>Open Up</strong>, we believe that 'open' is more than just making data available. Data is meaningless unless you can understand it, which is why we build online tools to help contextualise data for government, civil society and human beings. We believe open is easy to understand, simple to navigate and functional.</p>
+	</section>
 
-		<div class="col-md-6">
-			{% for post in site.posts %}
-				{% if post.tool contains 'opengazettes' %}
-					{% capture number %}{% increment number %}{% endcapture %}
-					{% if number < '3' %}
-						<div class="article">
-							<p class="category">{{ post.category }}</p>
-							<p class="title">{{ post.title }}</p>
-							<p class="author">{{ post.author }}</p>
-							<div class="arrow">›</div>
-						</div>
+	<section class="featured-tool">
+		<div class="row">
+
+			<div class="col-md-6">
+				<div class="bubble">Featured</div>
+				{% for tool in site.tools %}
+					{% if tool.title == page.featured-tool %}
+						<a href="{{ tool.url }}"><img src="/img/tools/{{ tool.image }}"></a>
+						<h2 class="tool-name">{{ tool.title }}</h2>
 					{% endif %}
-				{% endif %}
-			{% endfor %}	
-			<p class="pull-right learnmore">Learn more</p>
+				{% endfor %}
+			</div>
+
+			<div class="col-md-6 featured-article">
+				{% for article in site.articles %}
+					{% if article.tool == page.featured-tool %}
+						{% if article.featured == true %}
+							{% capture number %}{% increment number %}{% endcapture %}
+							{% if number < '3' %}
+								<ul class="list-unstyled">
+									<a class="type" href="#"><li>{{ article.type }}</li></a>
+									<a class="title" href="{{ article.url }}" ><li>{{ article.title }}</li></a>
+									<a class="author" href="/team/{{ article.author-short }}.html"><li>{{ article.author }}</li></a>
+									<a class="arrow" href="{{ article.url }}">›</a>
+								</ul>
+							{% endif %}
+						{% endif %}
+					{% endif %}
+				{% endfor %}	
+				<a href="#" class="pull-right learnmore">Learn more</a>
+			</div>
+
 		</div>
-	</div>
-</div>
-<div class="alltools">
-	<div class="container">
-		<h2>Title (optional)</h2>
-		{% for tool in site.tools %}
-			<div><a href="{{ tool.url }}">{{ tool.name }}</a></div>
-		{% endfor %}
-		<p>Here will reside a short description if necessary</p>
-		<p>- optional extra information</p>
+	</section>
+
+	<section class="all-tools">
+		<h2>Our tools</h2>
 		<div class="row">
-			<div class="col-md-4">
-				<img style="width: 100%" src="/img/box.png">
-			</div>
-			<div class="col-md-4">
-				<img style="width: 100%" src="/img/box.png">
-			</div>
-			<div class="col-md-4">
-				<img style="width: 100%" src="/img/box.png">
-			</div>
+			{% for tool in site.tools %}
+				<a href="{{ tool.url }}" class="col-md-3">
+					<img src="/img/tools/{{ tool.image }}">
+					<div class="tool-name">{{ tool.title }}</div>
+				</a>
+			{% endfor %}
 		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<img style="width: 100%" src="/img/box.png">
-			</div>
-			<div class="col-md-4">
-				<img style="width: 100%" src="/img/box.png">
-			</div>
-			<div class="col-md-4">
-				<img style="width: 100%" src="/img/box.png">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<img style="width: 100%" src="/img/box.png">
-			</div>
-			<div class="col-md-4">
-				<img style="width: 100%" src="/img/box.png">
-			</div>
-			<div class="col-md-4">
-				<img style="width: 100%" src="/img/box.png">
-			</div>
-		</div>
-	</div>
-</div>
-<div class="container">
-	<div class="row" style="margin-top: 20px; margin-bottom: 20px;">
-		<div class="col-xs-12">
-			<h4 class="pull-right">
-				What else have we done? View the rest of <strong>our tools</strong>
-			</h4>
-		</div>
-	</div>
-</div>
+	</section>
+
+	<h4 class="pull-right">
+		What else have we done? View the rest of <strong>our tools</strong>
+	</h4>

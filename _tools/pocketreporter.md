@@ -1,11 +1,30 @@
 ---
 layout: tool
-name: Pocket Reporter
+title: Pocket Reporter
+external-url: http://pocketreporter.co.za/
+image: pocketreporter.png
 logo: 
-external-url: http://municipalmoney.gov.za/
 oneliner: A news editor in your pocket
-category: Category 1
+creators:
+- name: Greg Kempe
+  short-name: greg
+external-creators:
+- name: Raymond Joseph
+  image: ray.jpg
+  external-url: #
+- name: Lion Summerbell
+  image: lion.jpg
+  external-url: #
+- name: Peter Koen
+  image: peter.jpg
+  external-url: http://pondo.co
+slideshow:
+- image:
+- image:
+- image:
+opener: Pocket Reporter helps you be a better reporter by guiding you through the news gathering process
+tool-info:
+- bullet: Guides you through the news-gathering process
+- bullet: Helps make sure you gather all the facts for your story
+- bullet: All your information in one place, and can be emailed to yourself
 ---
-- Guides you through the news-gathering process
-- Helps make sure you gather all the facts for your story
-- All your information in one place, and can be emailed to yourself

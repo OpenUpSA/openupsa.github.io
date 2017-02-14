@@ -1,10 +1,11 @@
 ---
 layout: tool
-name: Open Gazettes
+title: Open Gazettes
 logo: 
 external-url: http://opengazettes.org.za/
 oneliner: The biggest collection of freely available gazettes in South Africa
 category: Category 1
+image: opengazettes.png
 ---
 Gazettes are a critical source of information and record of South African history. They should be easy to find and use, and freely available to everyone.
 

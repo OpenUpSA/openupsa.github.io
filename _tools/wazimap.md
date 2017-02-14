@@ -1,6 +1,7 @@
 ---
 layout: tool
-name: Wazimap
+title: Wazimap
+image: wazimap.png
 logo: wazimap-logo.png
 external-url: http://wazimap.co.za
 oneliner: Election and Census results for your ward, city or province across South Africa
@@ -12,13 +13,14 @@ creators:
 - name: JD Bothma
   short-name: jd
   role: role
-images:
-- location: img/tools/wazimap1.jpg
-- location: img/tools/wazimap2.jpg
-- location: img/tools/wazimap3.jpg
+slideshow:
+- image: wazimap1.jpg
+- image: wazimap2.jpg
+- image: wazimap3.jpg
+opener: Wazimap, from the Xhosa word ulwazi for knowledge, provides easy access to South African census and elenctions data.
+tool-info:
+- bullet: National and Provincial election results from 2011 and 2014
+- bullet: Racial, income, education, unemployment and access to basic services down to ward level
+- bullet: Compare income, education, unemployment and access to basic services between different wards, cities, and provinces
 ---
-Wazimap, from the Xhosa word ulwazi for knowledge, provides easy access to South African census and elenctions data.
 
-- National and Provincial election results from 2011 and 2014
-- Racial, income, education, unemployment and access to basic services down to ward level
-- Compare income, education, unemployment and access to basic services between different wards, cities, and provinces

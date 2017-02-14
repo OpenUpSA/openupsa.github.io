@@ -1,45 +1,44 @@
 ---
 layout: base
 ---
-<section class="about">
-	<div class="container">
-		<div class="col-md-6 col-md-offset-3">
-			<div class="header">
-			  <h2 class="oneliner">We believe that access to data empowers people</h2>
-			  <p>
-			  	We are a community of people who believe that an integral part of building an empowered society is providing access to data and information that allows denizens to participate in democracy.
-			  </p>
-			  <p>
-			  	OpenUp was started with the mission of liberating data so that people could actively engage with what is happening in society and contribute to decisions that affect their lives on a personal, local and national level. 
-			  </p>
-			  <p>
-			  	What we learned is that just making data available is not enough. To those who need this information the most - ordinary denizens - the data is useless if they can’t find it, understand it or use it.  
-			  </p>
-			  <p>
-			  	So we started building tools that make the data more accessible: easy to understand, easy to share, easy to engage with. 
-			  </p>
-			  <p>
-			  	We believe that with access to the right and relevant information, people are empowered to participate by adding their voice, highlighting issues that affect them and finding solutions to problems.  
-			  </p>
-			</div>
-			<div class="vision">
-				<img src="/img/landscape.png">
-				<p>We believe that an informaed person is an empowered person. Want to work with us to build a more informaed society? <a href="#">Click here to see how.</a></p>
-			</div>
-			<div class="team">
-				<h3>Meet the team</h3>
-				<p>
-					OpenUp has a group of passionate people that invest their time into making our vision for na informed and empowered society a reality.
-				</p>
-				<div class="row team-photos">
-					{% for member in site.team %}
-						<div class="col-sm-3">
-							<img src="/img/team/{{ member.short-name }}.jpg">
-						</div>
-					{% endfor %}
-				</div>
-			</div>
+<div class="container about-page">
 
+	<h1>About OpenUp</h1>
+
+	<section class="vision">
+	  <h2>We believe that access to data empowers people</h2>
+	  <p>
+	  	We are a community of people who believe that an integral part of building an empowered society is providing access to data and information that allows denizens to participate in democracy.
+	  </p>
+	  <p>
+	  	OpenUp was started with the mission of liberating data so that people could actively engage with what is happening in society and contribute to decisions that affect their lives on a personal, local and national level. 
+	  </p>
+	  <p>
+	  	What we learned is that just making data available is not enough. To those who need this information the most - ordinary denizens - the data is useless if they can’t find it, understand it or use it.  
+	  </p>
+	  <p>
+	  	So we started building tools that make the data more accessible: easy to understand, easy to share, easy to engage with. 
+	  </p>
+	  <p>
+	  	We believe that with access to the right and relevant information, people are empowered to participate by adding their voice, highlighting issues that affect them and finding solutions to problems.  
+	  </p>
+		<blockquote>
+			<p>We believe that an informed person is an empowered person. Want to work with us to build a more informed society? <a href="#">Click here to see how.</a></p>
+		</blockquote>
+	</section>
+
+	<section class="team">
+		<h2>Meet the team</h2>
+		<p>
+			OpenUp has a group of passionate people that invest their time into making our vision for na informed and empowered society a reality.
+		</p>
+		<div class="row photos">
+			{% for member in site.team %}
+				<div class="col-sm-3">
+					<a href="/team/{{ member.short-name }}.html"><img src="/img/team/{{ member.short-name }}.jpg"></a>
+				</div>
+			{% endfor %}
 		</div>
-	</div>
-</section>
+	</section>
+
+</div>
