@@ -12,7 +12,7 @@ slideshow:
 - image:
 - image:
 - image:
-opener: process
+opener:
 tool-info:
 - bullet:
 - bullet:
