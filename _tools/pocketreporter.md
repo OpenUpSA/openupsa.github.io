@@ -19,9 +19,9 @@ external-creators:
   image: peter.jpg
   external-url: http://pondo.co
 slideshow:
-- image:
-- image:
-- image:
+- image: slideshow1.svg
+- image: slideshow2.svg
+- image: slideshow3.svg
 opener: Pocket Reporter helps you be a better reporter by guiding you through the news gathering process
 tool-info:
 - bullet: Guides you through the news-gathering process
