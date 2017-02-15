@@ -7,6 +7,11 @@ layout: base
     <h1>{{ page.name }}</h1>
     <div>currently: {{ page.current }}</div>
     <div>{{ page.statement }}</div>
+    <ul>
+      {% for item in page.biography %}
+        <li>{{ item.highlight }}</li>
+      {% endfor %}
+    </ul>
     <a href="mailto:{{ page.email }}">{{ page.email }}</a>
     <div>
       {% for tool in site.tools %}
