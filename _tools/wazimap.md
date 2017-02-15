@@ -22,5 +22,12 @@ tool-info:
 - bullet: National and Provincial election results from 2011 and 2014
 - bullet: Racial, income, education, unemployment and access to basic services down to ward level
 - bullet: Compare income, education, unemployment and access to basic services between different wards, cities, and provinces
+collaborators:
+- name: Open Society Foundations
+  image: osf.png
+  external-url: https://www.opensocietyfoundations.org/
+- name: Media Monitoring Africa
+  image: mma.png
+  external-url: http://www.mediamonitoringafrica.org/
 ---
 

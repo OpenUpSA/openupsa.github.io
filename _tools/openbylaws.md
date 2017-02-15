@@ -11,4 +11,8 @@ tool-info:
 - bullet: Freely available in open formats
 - bullet: Easy to read HTML format and machine readable
 - bullet: Easy to share, link to, including directly to parts, chapters and sections
+slideshow:
+- image: slideshow1.svg
+- image: slideshow2.svg
+- image: slideshow3.svg
 ---

@@ -11,9 +11,9 @@ creators:
 external-creators:
 - name:
 slideshow:
-- image:
-- image:
-- image:
+- image: slideshow1.svg
+- image: slideshow2.svg
+- image: slideshow3.svg
 opener: 
 tool-info:
 - bullet:
