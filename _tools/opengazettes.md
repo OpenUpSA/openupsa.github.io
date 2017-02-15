@@ -6,6 +6,9 @@ external-url: http://opengazettes.org.za/
 oneliner: The biggest collection of freely available gazettes in South Africa
 category: Category 1
 image: opengazettes.png
+creators:
+- name: JD Bothma
+  short-name: jd
 ---
 Gazettes are a critical source of information and record of South African history. They should be easy to find and use, and freely available to everyone.
 

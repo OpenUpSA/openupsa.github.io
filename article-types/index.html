@@ -1,0 +1,16 @@
+---
+layout: base
+---
+<div class="container">
+	{% for type in site.article-types %}
+		<div class="well">
+			<a href="{{ site.baseurl }}{{ type.url }}">{{ type.name }}</a>
+			<p>{{ type.description }}</p>
+			{% for article in site.articles %}
+				{% if article.type == type.name %}
+					<a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
+				{% endif %}
+			{% endfor %}
+		</div>
+	{% endfor %}
+</div>

@@ -4,35 +4,61 @@ layout: base
 
 <!-- TOP CONTENT -->
 <div class="container single-article">
-  <div class="row">
 
-    <div class="col-md-8 col-md-offset-2 col-xs-12">
-
-      <article class="article-content">
+  <article>
+    <div class="row header">
+      <div class="col-md-10">
         <h1>{{ page.title }}</h1>
-        <p class="post-excerpt">{{ page.excerpt }}</p>
         <div class="author-date">
-          <small><a href="{{ site.baseurl }}/team/{{ page.author-short }}.html">{{ page.author }}</a> |</small>
-          <small>{{ page.date | date: "%-d %B %Y" }}</small>
+          <small>by <a href="{{ site.baseurl }}/team/{{ page.author-short }}.html">{{ page.author }}</a>, {{ page.date | date: "%-d %B %Y" }} | 
+
+          {% for tool in site.tools %}
+            {% if tool.title == page.tool %}
+              <a href="{{ site.baseurl }}{{ tool.url }}">{{ tool.title }}</a>
+            {% endif %}
+          {% endfor %}
+
+           | 
+
+          {% for type in site.article-types %}
+            {% if type.name == page.type %}
+              <a href="{{ site.baseurl }}{{ type.url }}">{{ page.type }}</a>
+            {% endif %}
+          {% endfor %}
+
+          </small>
         </div>
-
-        {{content}}
-
-      </article>
-
-      <section class="social-sharing">
-        <ul class="share-buttons">
-          <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/img/social-icon/Facebook.png"></a></li>
-          <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img alt="Tweet" src="/img/social-icon//Twitter.png"></a></li>
-          <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="/img/social-icon/Google+.png"></a></li>
-          <li><a href="https://getpocket.com/save?url=&title=" target="_blank" title="Add to Pocket"><img alt="Add to Pocket" src="/img/social-icon/Pocket.png"></a></li>
-          <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/img/social-icon/LinkedIn.png"></a></li>
-        </ul>
-      </section>
-
+        <p class="post-excerpt">{{ page.excerpt }}</p>
+      </div>
     </div>
+    <div class="row article-content">
+      <div class="col-md-2">
+        <a href="{{ site.baseurl }}/team/{{ page.author-short }}.html"><img src="{{ site.baseurl }}/img/team/{{ page.author-short }}.jpg"></a>
+        <a class="author-name" href="{{ site.baseurl }}/team/{{ page.author-short }}.html">{{ page.author }}</a>
+        {% for member in site.team %}
+          {% if page.author == member.name %}
+            <span class="author-position">{{ member.position }}, Open Up</span>
+          {% else %}
+            <span class="author-position">{{ page.position }}</span>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="col-md-7 col-md-offset-1">
+        {{content}}
+      </div>
+    </div>
+  </article>
 
-  </div>
+  <section class="social-sharing">
+    <ul class="share-buttons">
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/img/social-icon/Facebook.png"></a></li>
+      <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img alt="Tweet" src="/img/social-icon//Twitter.png"></a></li>
+      <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="/img/social-icon/Google+.png"></a></li>
+      <li><a href="https://getpocket.com/save?url=&title=" target="_blank" title="Add to Pocket"><img alt="Add to Pocket" src="/img/social-icon/Pocket.png"></a></li>
+      <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/img/social-icon/LinkedIn.png"></a></li>
+    </ul>
+  </section>
+
 </div>
 
 <script>

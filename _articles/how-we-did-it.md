@@ -2,19 +2,19 @@
 layout: article
 author: JD Bothma
 author-short: jd
-title: "How we built sdfio ajsdof ijasdof jasdfo ijasdf oisd opengazettes.org.za"
+title: "How we built opengazettes.org.za"
 date: 2016-10-05
 excerpt: |
     Before we could build Open Gazettes South Africa, we needed to figure out what additional value we could provide by putting the resource together. By building a series of programs used to source, scrape and index government gazettes, we now have a growing collection of over 12,000 free and searchable publications.
 image: /images/blog/how-gazette-0.jpg
 tool: Open Gazettes
-type: Type 1
+type: White paper
 featured: true
 ---
 
 Before we could build [Open Gazettes South Africa](http://opengazettes.org.za/), we needed to figure out what additional value we could provide by putting the resource together. By building a series of programs used to source, scrape and index government gazettes, we now have a growing collection of over 12,000 free and searchable publications.
 
-Government gazettes are valuable entities in and of themselves. They’ve been consumed, published and archived in this form for centuries; their style, language and appearance more suited to newspaper adverts than modern information dissemination.
+<blockquote>Government gazettes are valuable entities in and of themselves. They’ve been consumed, published and archived in this form for centuries; their style, language and appearance more suited to newspaper adverts than modern information dissemination.</blockquote>
 
 Currently, government gazettes still look like they’re produced on the printing presses of the 1800s. Their text flows neatly from page to page, and whether it’s a 50-word liquidation notice or a 400-page green paper, it will be published in the same format as gazettes always have been.
 
