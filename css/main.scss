@@ -78,25 +78,25 @@ body {
 		  .type {
 		    text-transform: uppercase;
 		    font-style: italic;
-	    	color: #ababab;
-	    	li {
-	    		margin-bottom: 5px;
+    		margin-bottom: 5px;
+	    	a {
+		    	color: #ababab;
 	    	}
 		  }
 		  .title {
 		    text-transform: uppercase;
 		    font-size: 1.2em;
-		    color: #000;
-		    li {
-		    	margin-bottom: 5px;
-		    	width: 90%;
+	    	margin-bottom: 5px;
+	    	width: 90%;
+		    a {
+			    color: #000;
 		    }
 		  }
 		  .author {
 		    font-style: italic;
-	    	color: #ababab;
-	    	li {
-	    		margin-bottom: 20px;
+    		margin-bottom: 20px;
+	    	a {
+		    	color: #ababab;
 	    	}
 		  }
 		  .arrow {
@@ -104,8 +104,10 @@ body {
 		    right: 0;
 		    top: 0;
 		    font-size: 4em;
-	    	color: #000;
-	    	text-decoration: none;
+		    a {
+		    	color: #000;
+		    	text-decoration: none;
+		    }
 		  }
 		  .article {
 		    border-bottom: 1px solid #ccc;
@@ -121,7 +123,7 @@ body {
 	.all-tools {
 	  margin-top: 25px;
 	  .row {
-	    a {
+	    .toolbox {
 	    	margin-bottom: 30px;
 	    	img {
 	    		width: 100%;
@@ -185,11 +187,11 @@ body {
 				font-size: 12px;
 			}
 			blockquote {
-				font-size: 30px;
+				font-size: 25px;
 				margin: 30px 0;
 				padding: 0;
 				border: none;
-				font-family: 'Cormorant Upright', serif;
+				font-family: 'Droid Serif', serif;
 				text-align: center;
 			}
 		}
@@ -396,9 +398,11 @@ p {
 .about-page {
 	.team {
 		.photos {
+			a {
+				margin-bottom: 30px;
+			}
 			img {
 				width: 100%;
-				margin-bottom: 30px;
 			}
 		}
 	}

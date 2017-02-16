@@ -1,8 +1,8 @@
 ---
 layout: tool
-title: Youth Explorer
-external-url: https://youthexplorer.org.za/
-image: youthexplorer.png
+name: Cape Town Budget Project
+external-url: http://capetownbudgetproject.org.za/
+image: capetownbudgetproject.png
 logo: 
 oneliner:
 creators:
@@ -12,7 +12,7 @@ slideshow:
 - image: slideshow1.svg
 - image: slideshow2.svg
 - image: slideshow3.svg
-opener:
+opener: 
 tool-info:
 - bullet:
 - bullet:

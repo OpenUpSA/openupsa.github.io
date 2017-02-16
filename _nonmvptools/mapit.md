@@ -1,8 +1,8 @@
 ---
 layout: tool
-title: Tax clock
-external-url: http://code4sa.org/taxclock/
-image: taxclock.png
+name: Mapit
+external-url: http://mapit.code4sa.org/
+image: mapit.png
 logo: 
 oneliner:
 creators:

@@ -1,7 +1,7 @@
 ---
 layout: team
-name: Greg Kempe
-short-name: greg
+full-name: Greg Kempe
+name: greg
 position: Head of Technology
 current: currently working on
 email: greg@openupsa.org

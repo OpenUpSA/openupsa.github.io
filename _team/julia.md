@@ -1,7 +1,7 @@
 ---
 layout: team
-name: Julia Renouprez
-short-name: julia
+full-name: Julia Renouprez
+name: julia
 position: position
 current: currently working on
 email: julia@openupsa.org

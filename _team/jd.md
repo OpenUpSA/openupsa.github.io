@@ -1,7 +1,7 @@
 ---
 layout: team
-name: JD Bothma
-short-name: jd
+full-name: JD Bothma
+name: jd
 position: Software Developer
 current: currently working on
 email: jd@openupsa.org

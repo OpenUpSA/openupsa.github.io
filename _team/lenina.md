@@ -1,7 +1,7 @@
 ---
 layout: team
-name: Lenina Rassool
-short-name: lenina
+full-name: Lenina Rassool
+name: lenina
 position: Communications Manager
 current: currently working on
 email: lenina@openupsa.org

@@ -1,8 +1,8 @@
 ---
 layout: tool
-title: People's Assembly
-external-url: http://www.pa.org.za/
-image: pa.png
+name: Parliamentary Monitoring Group
+external-url: http://pmg.org.za/
+image: pmg.png
 logo: 
 oneliner:
 creators:

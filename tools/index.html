@@ -1,6 +1,6 @@
 ---
 layout: base
-featured-tool: Open Gazettes
+featured-tool: opengazettes
 ---
 <div class="container tools-page">
 	<section class="page-intro">
@@ -13,9 +13,10 @@ featured-tool: Open Gazettes
 
 			<div class="col-md-6">
 				<div class="bubble">Featured</div>
+
 				{% for tool in site.tools %}
-					{% if tool.title == page.featured-tool %}
-						<a href="{{ site.baseurl }}{{ tool.url }}"><img src="{{ site.baseurl }}/img/tools/{{ tool.image }}"></a>
+					{% if tool.name == page.featured-tool %}
+						<a href="{{ site.baseurl }}{{ tool.url }}"><img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}"></a>
 						<h2 class="tool-name">{{ tool.title }}</h2>
 					{% endif %}
 				{% endfor %}
@@ -23,21 +24,34 @@ featured-tool: Open Gazettes
 
 			<div class="col-md-6 featured-article">
 				{% for article in site.articles %}
-					{% if article.tool == page.featured-tool %}
-						{% if article.featured == true %}
-							{% capture number %}{% increment number %}{% endcapture %}
-							{% if number < '3' %}
-								<ul class="list-unstyled">
-									<a class="type" href="#"><li>{{ article.type }}</li></a>
-									<a class="title" href="{{ site.baseurl }}{{ article.url }}" ><li>{{ article.title }}</li></a>
-									<a class="author" href="{{ site.baseurl }}/team/{{ article.author-short }}.html"><li>{{ article.author }}</li></a>
-									<a class="arrow" href="{{ site.baseurl }}{{ article.url }}">›</a>
-								</ul>
+					{% for tool in article.tools %}
+						{% if tool.name == page.featured-tool %}
+							{% if article.featured == true %}
+								{% capture number %}{% increment number %}{% endcapture %}
+								{% if number < '3' %}
+									<ul class="list-unstyled">
+										<li class="type">
+										{% for article-type in site.article-types %}
+										  {% for type in article.types %}
+										    {% if article-type.name == type.name %}
+										       <a href="{{ site.baseurl }}{{ article-type.url }}">{{ article-type.title }}</a>
+										    {% endif %}
+										  {% endfor %}
+										{% endfor %}
+										</li>
+										<li class="title"><a href="{{ site.baseurl }}{{ article.url }}" >{{ article.title }}</a></li>
+										{% for member in site.team %}
+										  {% if article.author == member.name %}
+										  	<li class="author"><a href="{{ site.baseurl }}{{ member.url }}">{{ member.full-name }}</a></li>
+										  {% endif %}
+										{% endfor %}
+										<li class="arrow"><a href="{{ site.baseurl }}{{ article.url }}">›</a></li>
+									</ul>
+								{% endif %}
 							{% endif %}
 						{% endif %}
-					{% endif %}
+					{% endfor %}
 				{% endfor %}	
-				<a href="#" class="pull-right learnmore">Learn more</a>
 			</div>
 
 		</div>
@@ -47,16 +61,20 @@ featured-tool: Open Gazettes
 		<h2>Our tools</h2>
 		<div class="row">
 			{% for tool in site.tools %}
-				<a href="{{ site.baseurl }}{{ tool.url }}" class="col-md-3">
-					<img src="{{ site.baseurl }}/img/tools/{{ tool.image }}">
-					<div class="tool-name">{{ tool.title }}</div>
-				</a>
+				{% unless tool.name == page.featured-tool %}
+					<a href="{{ site.baseurl }}{{ tool.url }}" class="col-sm-6 col-sm-4 col-md-3 toolbox">
+						<img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}">
+						<div class="tool-name">{{ tool.title }}</div>
+					</a>
+				{% endunless %}
 			{% endfor %}
 		</div>
 	</section>
 
+	<!--
 	<h4 class="pull-right">
 		What else have we done? View the rest of <strong>our tools</strong>
 	</h4>
+	-->
 
 </div>

@@ -1,6 +1,6 @@
 ---
 layout: tool
-title: Informal Settlements Matrix
+name: Informal Settlements Matrix
 external-url: http://ismaps.org.za/
 image: informalsettlementsmatrix.png
 logo: 

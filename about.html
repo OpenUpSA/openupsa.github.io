@@ -22,9 +22,6 @@ layout: base
 	  <p>
 	  	We believe that with access to the right and relevant information, people are empowered to participate by adding their voice, highlighting issues that affect them and finding solutions to problems.  
 	  </p>
-		<blockquote>
-			<p>We believe that an informed person is an empowered person. Want to work with us to build a more informed society? <a href="#">Click here to see how.</a></p>
-		</blockquote>
 	</section>
 
 	<section class="team">
@@ -34,11 +31,16 @@ layout: base
 		</p>
 		<div class="row photos">
 			{% for member in site.team %}
-				<a class="col-xs-6 col-sm-3 col-md-2" href="{{ site.baseurl }}/team/{{ member.short-name }}.html">
-					<img src="{{ site.baseurl }}/img/team/{{ member.short-name }}.jpg">
+				<a class="col-xs-6 col-sm-3 col-md-2" href="{{ site.baseurl }}/team/{{ member.name }}.html">
+					<img src="{{ site.baseurl }}/img/team/{{ member.name }}.jpg">
+					<div>{{ member.full-name }}</div>
+					<div>{{ member.position }}</div>
 				</a>
 			{% endfor %}
 		</div>
 	</section>
 
+	<blockquote>
+		<p>We believe that an informed person is an empowered person. Want to work with us to build a more informed society? <a href="#">Click here to see how.</a></p>
+	</blockquote>
 </div>

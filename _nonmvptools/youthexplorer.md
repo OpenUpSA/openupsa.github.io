@@ -1,13 +1,13 @@
 ---
 layout: tool
-title: Health-E
-external-url:
-image: healthe.png
+name: Youth Explorer
+external-url: https://youthexplorer.org.za/
+image: youthexplorer.png
 logo: 
 oneliner:
 creators:
-- name: 
-  short-name: 
+- name:
+  short-name:
 slideshow:
 - image: slideshow1.svg
 - image: slideshow2.svg

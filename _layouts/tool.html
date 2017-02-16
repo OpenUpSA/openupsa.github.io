@@ -45,7 +45,7 @@ layout: base
       {% if article.tool == page.title %}
         <div class="article row">
           <div class="col-sm-2 hidden-xs">
-            <img src="">
+            <img src="{{ article.image }}">
           </div>
           <div class="col-sm-10">
             <p class="title"><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></p>
@@ -56,9 +56,11 @@ layout: base
         </div>
       {% endif %}
     {% endfor %}
+    <!--
     <div class="text-center">
       <a class="btn btn-default text-center" href="#">More articles about {{ page.title }}</a>
     </div>
+    -->
   </section>
 
   <section class="creators">
@@ -77,6 +79,7 @@ layout: base
     </div>
   </section>
 
+  <!--
   <section class="contact">
     <h3>Get in touch</h3>
     <p>Have you used {{ page.title }}? Email and tell us how</p>
@@ -98,6 +101,7 @@ layout: base
       <button type="submit" class="btn btn-default">Send</button>
     </form>
   </section>
+  -->
 
   {% if page.collaborators %}
     <section class="collaborators">

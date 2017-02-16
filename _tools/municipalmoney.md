@@ -1,14 +1,12 @@
 ---
 layout: tool
+name: municipalmoney
 title: Municipal Money
+external-url: http://municipalmoney.gov.za/
 image: municipalmoney.png
 logo: 
-external-url: http://municipalmoney.gov.za/
 oneliner: How is your municipality managing your money?
-creators:
-- name: Adi Eyal
-  short-name: adi
-opener: 
+opener: Municipal Money is a web-based tool designed to inform citizens on their local authority's financial performance and allows comparisons between municipalities.
 tool-info:
 - bullet: See financial statements for your municipality
 - bullet: Compare your municipalities budget and spend with another
@@ -17,4 +15,17 @@ slideshow:
 - image: slideshow1.svg
 - image: slideshow2.svg
 - image: slideshow3.svg
+creators:
+- name: greg
+  short-name: greg
+- name: jd
+  short-name: jd
+external-creators:
+- name: Damian
+  image: damian.jpg
+  external-url: #
+collaborators:
+- name: Treasury
+  image: treasury.png
+  external-url: #
 ---
