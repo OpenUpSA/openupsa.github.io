@@ -1,18 +1,20 @@
 ---
 layout: tool
-title: Living Wage
-external-url: http://living-wage.co.za/
-image: livingwage.png
+name: Community-Based Monitoring
+external-url: https://cbm.code4sa.org/
+image: cbm.png
 logo: 
 oneliner:
 creators:
 - name:
   short-name:
+external-creators:
+- name:
 slideshow:
 - image: slideshow1.svg
 - image: slideshow2.svg
 - image: slideshow3.svg
-opener:
+opener: 
 tool-info:
 - bullet:
 - bullet:

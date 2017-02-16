@@ -1,8 +1,8 @@
 ---
 layout: tool
-title: Mapit
-external-url: http://mapit.code4sa.org/
-image: mapit.png
+name: Living Wage
+external-url: http://living-wage.co.za/
+image: livingwage.png
 logo: 
 oneliner:
 creators:

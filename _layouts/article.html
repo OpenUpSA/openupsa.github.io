@@ -10,21 +10,31 @@ layout: base
       <div class="col-md-10">
         <h1>{{ page.title }}</h1>
         <div class="author-date">
-          <small>by <a href="{{ site.baseurl }}/team/{{ page.author-short }}.html">{{ page.author }}</a>, {{ page.date | date: "%-d %B %Y" }} | 
-
-          {% for tool in site.tools %}
-            {% if tool.title == page.tool %}
-              <a href="{{ site.baseurl }}{{ tool.url }}">{{ tool.title }}</a>
+          {% for member in site.team %}
+            {% if page.author == member.name %}
+              <small>by <a href="{{ site.baseurl }}{{ member.url }}">{{ member.full-name }}</a>, {{ page.date | date: "%-d %B %Y" }}
             {% endif %}
           {% endfor %}
 
-           | 
+          {% if page.tools %}
+            {% for tool in site.tools %}
+              {% for article-tool in page.tools %}
+                {% if article-tool.name == tool.name %}
+                  | <a href="{{ site.baseurl }}{{ tool.url }}">{{ tool.title }}</a>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          {% endif %}
 
-          {% for type in site.article-types %}
-            {% if type.name == page.type %}
-              <a href="{{ site.baseurl }}{{ type.url }}">{{ page.type }}</a>
-            {% endif %}
-          {% endfor %}
+          {% if page.types %}
+            {% for article-type in site.article-types %}
+              {% for type in page.types %}
+                {% if article-type.name == type.name %}
+                  | <a href="{{ site.baseurl }}{{ article-type.url }}">{{ article-type.title }}</a>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          {% endif %}
 
           </small>
         </div>
@@ -32,11 +42,11 @@ layout: base
       </div>
     </div>
     <div class="row article-content">
-      <div class="col-md-2">
-        <a href="{{ site.baseurl }}/team/{{ page.author-short }}.html"><img src="{{ site.baseurl }}/img/team/{{ page.author-short }}.jpg"></a>
-        <a class="author-name" href="{{ site.baseurl }}/team/{{ page.author-short }}.html">{{ page.author }}</a>
+      <div class="col-md-2 hidden-sm hidden-xs">
         {% for member in site.team %}
           {% if page.author == member.name %}
+            <a href="{{ site.baseurl }}{{ member.url }}"><img src="{{ site.baseurl }}/img/team/{{ member.name }}.jpg"></a>
+            <a class="author-name" href="{{ site.baseurl }}{{ member.url }}">{{ member.full-name }}</a>
             <span class="author-position">{{ member.position }}, Open Up</span>
           {% else %}
             <span class="author-position">{{ page.position }}</span>

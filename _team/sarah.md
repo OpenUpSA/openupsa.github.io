@@ -1,7 +1,7 @@
 ---
 layout: team
-name: Sarah Evans
-short-name: sarah
+full-name: Sarah Evans
+name: sarah
 position: position
 current: currently working on
 email: sarah@openupsa.org

@@ -1,7 +1,7 @@
 ---
 layout: team
-name: Jennifer Walker
-short-name: jennifer
+full-name: Jennifer Walker
+name: jennifer
 position: position
 current: currently working on
 email: jennifer@openupsa.org

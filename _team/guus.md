@@ -1,7 +1,7 @@
 ---
 layout: team
-name: Guus Hoekman
-short-name: guus
+full-name: Guus Hoekman
+name: guus
 position: Developer
 current: currently working on
 email: guus@openupsa.org

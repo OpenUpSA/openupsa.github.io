@@ -1,8 +1,8 @@
 ---
 layout: tool
-title: Protest Map
-external-url: http://protest-map.code4sa.org/
-image: protestmap.png
+name: Tax clock
+external-url: http://code4sa.org/taxclock/
+image: taxclock.png
 logo: 
 oneliner:
 creators:

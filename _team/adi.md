@@ -1,7 +1,7 @@
 ---
 layout: team
-name: Adi Eyal
-short-name: adi
+full-name: Adi Eyal
+name: adi
 position: Director
 current: currently working on
 email: adi@openupsa.org

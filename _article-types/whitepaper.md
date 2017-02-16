@@ -1,5 +1,6 @@
 ---
 layout: article-type
-name: White paper
+name: whitepaper
+title: White paper
 description: Description for white paper
 ---
