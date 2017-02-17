@@ -69,6 +69,9 @@ body {
 	    }
 	  }
 	  .featured-article {
+	  	@media (max-width:970px) {
+	  		margin-top: 50px;
+	  	}
 		 	ul {
 		 		position: relative;
 		 		border-bottom: 1px solid #ddd;

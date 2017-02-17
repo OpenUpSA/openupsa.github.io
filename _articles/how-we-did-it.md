@@ -1,27 +1,26 @@
 ---
 layout: article
 author: jd
-title: "2. open gazettes | visualisation | active citizenry"
-date: 2016-10-05
+title: "How we built opengazettes.org.za"
 excerpt: |
     Before we could build Open Gazettes South Africa, we needed to figure out what additional value we could provide by putting the resource together. By building a series of programs used to source, scrape and index government gazettes, we now have a growing collection of over 12,000 free and searchable publications.
 image: how-gazette-0.jpg
 tools:
 - name: opengazettes
 types:
-- name: visualisation
+- name: howwedidit
 themes:
-- name: activecitizenry
+- name: tech
 featured: true
 ---
 
 Before we could build [Open Gazettes South Africa](http://opengazettes.org.za/), we needed to figure out what additional value we could provide by putting the resource together. By building a series of programs used to source, scrape and index government gazettes, we now have a growing collection of over 12,000 free and searchable publications.
 
-<blockquote>Government gazettes are valuable entities in and of themselves. They’ve been consumed, published and archived in this form for centuries; their style, language and appearance more suited to newspaper adverts than modern information dissemination.</blockquote>
+Government gazettes are valuable entities in and of themselves. They’ve been consumed, published and archived in this form for centuries; their style, language and appearance more suited to newspaper adverts than modern information dissemination.
 
 Currently, government gazettes still look like they’re produced on the printing presses of the 1800s. Their text flows neatly from page to page, and whether it’s a 50-word liquidation notice or a 400-page green paper, it will be published in the same format as gazettes always have been.
 
-<img src="{{ site.baseurl }}/img/blog/how-gazette-1.png">
+<img src="/images/blog/how-gazette-1.png" style="width: 100%">
 
 This is why before building the Open Gazettes resource, we needed to have some idea of what additional value we could provide. The majority of people who use gazettes tend to be lawyers, librarians and special interest groups. So we asked ourselves, “How can gazettes be made available to the general public in a way that helps them to participate in policy-making and governance?”
 
@@ -32,7 +31,7 @@ Our long-term goal is to extract as much [information relevant to accountability
 Instead, they should be supported in finding potential connections via common business partners and dealings by simply entering their names into a search function.
 
 ### Getting gazettes
-Today, government gazettes are made available by the national and provincial government as PDF documents containing searchable text. Everyone except the Free State makes their gazettes available online, free of charge. We wrote a couple of computer programs, called web scrapers, to find and download gazettes from the Government Printing Works (GWP) and Western Cape Government websites where they are released publicly. These run daily to find new gazettes as they are published, and store them online. This uses the <span class="define">Scrapy platform</span><span class="sidenote">Scrapy is an open source and collaborative framework for extracting the data you need from websites.</span>, which makes sure we only download files once. Below is an example of Python code to scrape the GWP for gazettes:
+Today, government gazettes are made available by the national and provincial government as PDF documents containing searchable text. Everyone except the Free State makes their gazettes available online, free of charge. We wrote a couple of computer programs, called web scrapers, to find and download gazettes from the Government Printing Works (GWP) and Western Cape Government websites where they are released publicly. These run daily to find new gazettes as they are published, and store them online. This uses the [Scrapy platform](https://scrapy.org/), which makes sure we only download files once. Below is an example of Python code to scrape the GWP for gazettes:
 
 ```
 class GpwSpider(scrapy.Spider):
@@ -88,7 +87,7 @@ While Google and DocumentCloud do a reasonable job of making these types of docu
 
 In addition to searching for something - for example, “driving permit paarl” - you can set an alert so that you’re notified by email within a few days of when a gazette matching the search is published. This means that you don’t need to check each week for new information, such as newly issued permits in your area.
 
-<img src="{{ site.baseurl }}/img/blog/how-gazette-2.png">
+<img src="/images/blog/how-gazette-2.png" style="width: 100%">
 
 Aleph uses the text embedded in the gazette PDF files to support text search. While PDFs look like text documents, they’re mostly focused on looking good and do not necessarily contain text in a form that is usable by a computer. To make a scanned PDF searchable, the text found using OCR (Optical Character Recognition) is overlaid on the image in the PDF.
 

@@ -69,7 +69,7 @@ featured-tool: opengazettes
 		<div class="row">
 			{% for tool in site.tools %}
 				{% unless tool.name == page.featured-tool %}
-					<a href="{{ site.baseurl }}{{ tool.url }}" class="col-sm-6 col-sm-4 col-md-3 toolbox">
+					<a href="{{ site.baseurl }}{{ tool.url }}" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 toolbox">
 						<img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}">
 						<div class="tool-name">{{ tool.title }}</div>
 					</a>
