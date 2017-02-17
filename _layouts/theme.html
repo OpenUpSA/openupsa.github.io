@@ -1,0 +1,22 @@
+---
+layout: base
+---
+<div class="container">
+  <section class="theme">
+    <div class="well">
+      <div>{{ page.title }}</div>
+      <div>{{ page.description }}</div>
+      <div>
+        <ul>
+          {% for article in site.articles %}
+            {% for theme in article.themes %}
+              {% if theme.name == page.name %}
+                <li><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>

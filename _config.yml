@@ -28,7 +28,7 @@ collections:
   article-types:
     output: true
     permalink: /articles/:name.html
-  categories:
+  themes:
     output: true
 
 defaults:
@@ -36,7 +36,7 @@ defaults:
     scope:
       path: ""
     values:
-      image: /img/banner_5.png
+      image:
 
 sass:
   style: compressed

@@ -31,7 +31,7 @@ layout: base
 		</p>
 		<div class="row photos">
 			{% for member in site.team %}
-				<a class="col-xs-6 col-sm-3 col-md-2" href="{{ site.baseurl }}/team/{{ member.name }}.html">
+				<a class="col-xs-6 col-sm-3 col-md-2" href="{{ site.baseurl }}{{ member.url }}">
 					<img src="{{ site.baseurl }}/img/team/{{ member.name }}.jpg">
 					<div>{{ member.full-name }}</div>
 					<div>{{ member.position }}</div>

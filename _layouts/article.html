@@ -1,8 +1,6 @@
 ---
 layout: base
 ---
-
-<!-- TOP CONTENT -->
 <div class="container single-article">
 
   <article>
@@ -36,6 +34,16 @@ layout: base
             {% endfor %}
           {% endif %}
 
+          {% if page.themes %}
+            {% for theme in site.themes %}
+              {% for article-theme in page.themes %}
+                {% if article-theme.name == theme.name %}
+                  | <a href="{{ site.baseurl }}{{ theme.url }}">{{ theme.title }}</a>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          {% endif %}
+
           </small>
         </div>
         <p class="post-excerpt">{{ page.excerpt }}</p>
@@ -59,6 +67,66 @@ layout: base
     </div>
   </article>
 
+  <section class="related-articles">
+    <div class="row">
+      <div class="col-md-7 col-md-offset-3">
+        <h2>Related articles</h2>
+        {% for tool in page.tools %}
+          {{ tool.name }}
+        {% endfor %} |
+        {% for type in page.types %}
+          {{ type.name }}
+        {% endfor %} |
+        {% for theme in page.themes %}
+          {{ theme.name }}
+        {% endfor %}
+        <div class="tool">
+          same tool: 
+          {% for article in site.articles %}
+            {% for tool in article.tools %}
+              {% for article-tool in page.tools %}
+                {% if tool.name contains article-tool.name %}
+                  {% unless article.title == page.title %}
+                    <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+        <div class="type">
+          same type: 
+          {% for article in site.articles %}
+            {% for type in article.types %}
+              {% for article-type in page.types %}
+                {% if type.name contains article-type.name %}
+                  {% unless article.title == page.title %}
+                    <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+        <div class="theme">
+          same theme: 
+          {% for article in site.articles %}
+            {% for theme in article.themes %}
+              {% for article-theme in page.themes %}
+                {% if theme.name contains article-theme.name %}
+                  {% unless article.title == page.title %}
+                    <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
   <section class="social-sharing">
     <ul class="share-buttons">
       <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/img/social-icon/Facebook.png"></a></li>
@@ -68,6 +136,7 @@ layout: base
       <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/img/social-icon/LinkedIn.png"></a></li>
     </ul>
   </section>
+  -->
 
 </div>
 

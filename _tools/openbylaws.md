@@ -17,7 +17,6 @@ slideshow:
 - image: obl3.jpg
 creators:
 - name: greg
-  short-name: greg
 collaborators:
 - name: AMI
   image: ami.png

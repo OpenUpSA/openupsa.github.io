@@ -15,8 +15,7 @@ slideshow:
 - image: pr1.jpg
 - image: pr2.jpg
 creators:
-- name: Greg Kempe
-  short-name: greg
+- name: greg
 external-creators:
 - name: Raymond Joseph
   image: ray.jpg

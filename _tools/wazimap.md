@@ -16,10 +16,8 @@ slideshow:
 - image: wm2.jpg
 - image: wm3.jpg
 creators:
-- name: Greg Kempe
-  short-name: greg
-- name: JD Bothma
-  short-name: jd
+- name: greg
+- name: jd
 collaborators:
 - name: Open Society Foundations
   image: osf.jpg

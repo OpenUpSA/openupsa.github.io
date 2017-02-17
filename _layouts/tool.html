@@ -42,19 +42,27 @@ layout: base
   <section class="conversation">
     <h4>Explore the <b>conversation</b></h4>
     {% for article in site.articles %}
-      {% if article.tool == page.title %}
-        <div class="article row">
-          <div class="col-sm-2 hidden-xs">
-            <img src="{{ article.image }}">
+      {% for tool in article.tools %}
+        {% if tool.name == page.name %}
+          <div class="article row">
+            <div class="col-sm-2 hidden-xs">
+              <a href="{{ site.baseurl }}{{ article.url }}"><img src="{{ site.baseurl }}/img/blog/{{ article.image }}"></a>
+            </div>
+            <div class="col-sm-10">
+              <p class="title"><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></p>
+              <p class="author">by 
+              {% for member in site.team %}
+                {% if member.name == article.author %}
+                  <a href="{{ site.baseurl }}{{ member.url }}">{{ member.full-name }}</a>
+                {% endif %}
+              {% endfor %}
+              </p>
+              <p class="excerpt">{{ article.excerpt }}</p>
+              <hr>
+            </div>
           </div>
-          <div class="col-sm-10">
-            <p class="title"><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></p>
-            <p class="author">by {{ article.author }}</p>
-            <p class="excerpt">{{ article.excerpt }}</p>
-            <hr>
-          </div>
-        </div>
-      {% endif %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
     <!--
     <div class="text-center">
@@ -67,9 +75,13 @@ layout: base
     <h4>The people behind {{ page.title }}</h4>
     <div class="row">
       {% for creator in page.creators %}
-        <a href="{{ site.baseurl }}/team/{{ creator.short-name }}.html" class="col-xs-6 col-sm-4 col-md-3 col-lg-2" data-toggle="tooltip" data-placement="bottom" title="{{ creator.name }}">
-          <img src="{{ site.baseurl }}/img/team/{{ creator.short-name }}.jpg">
-        </a>
+        {% for member in site.team %}
+          {% if member.name == creator.name %}
+            <a href="{{ site.baseurl }}{{ member.url }}" class="col-xs-6 col-sm-4 col-md-3 col-lg-2" data-toggle="tooltip" data-placement="bottom" title="{{ member.full-name }}">
+              <img src="{{ site.baseurl }}/img/team/{{ member.name }}.jpg">
+            </a>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
       {% for creator in page.external-creators %}
         <a target="_blank" href="{{ creator.external-url }}" class="col-xs-6 col-sm-4 col-md-2" data-toggle="tooltip" data-placement="bottom" title="{{ creator.name }}">
@@ -78,6 +90,12 @@ layout: base
       {% endfor %}
     </div>
   </section>
+
+  {% for member in site.team %}
+    {% if member.name == article.author %}
+      <a href="{{ site.baseurl }}{{ member.url }}">{{ member.full-name }}</a>
+    {% endif %}
+  {% endfor %}
 
   <!--
   <section class="contact">

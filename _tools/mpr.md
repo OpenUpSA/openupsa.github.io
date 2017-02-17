@@ -16,8 +16,7 @@ slideshow:
 - image: mpr2.jpg
 - image: mpr3.jpg
 creators:
-- name: Adi Eyal
-  short-name: adi
+- name: adi
 collaborators:
 - name: Code for South Africa
   image: code4sa.png

@@ -1,17 +1,20 @@
 ---
 layout: base
 ---
-<!-- CONTENT-->
-<section class="team-member">
-  <div class="container">
-    <div>{{ page.name }}</div>
-    <div>{{ page.description }}</div>
-    <div>
-      {% for article in site.articles %}
-        {% if article.type == page.name %}
-          <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
-        {% endif %}
-      {% endfor %}
+<div class="container">
+  <section class="theme">
+    <div class="well">
+      <div>{{ page.title }}</div>
+      <div>{{ page.description }}</div>
+      <ul>
+        {% for article in site.articles %}
+          {% for type in article.types %}
+            {% if type.name == page.name %}
+              <li><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
     </div>
-  </div>
-</section>
+  </section>
+</div>

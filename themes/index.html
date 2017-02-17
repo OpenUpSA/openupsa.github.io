@@ -1,15 +1,16 @@
 ---
 layout: base
+title: Themes
 ---
 <div class="container">
-	{% for type in site.article-types %}
+	{% for theme in site.themes %}
 		<div class="well">
-			<a href="{{ site.baseurl }}{{ type.url }}">{{ type.title }}</a>
-			<div>{{ type.description }}</div>
+			<a href="{{ site.baseurl }}{{ theme.url }}">{{ theme.title }}</a>
+			<div>{{ theme.description }}</div>
 			<ul>
 			  {% for article in site.articles %}
-		      {% for article-type in article.types %}
-		        {% if article-type.name == type.name %}
+		      {% for article-theme in article.themes %}
+		        {% if article-theme.name == theme.name %}
 		          <li><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></li>
 			      {% endif %}
 			    {% endfor %}
