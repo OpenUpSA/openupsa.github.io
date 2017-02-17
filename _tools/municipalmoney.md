@@ -12,9 +12,9 @@ tool-info:
 - bullet: Compare your municipalities budget and spend with another
 - bullet: Access municipal finance data for municiplaities across South Africa
 slideshow:
-- image: slideshow1.svg
-- image: slideshow2.svg
-- image: slideshow3.svg
+- image: mm1.jpg
+- image: mm2.jpg
+- image: mm3.jpg
 creators:
 - name: greg
   short-name: greg
