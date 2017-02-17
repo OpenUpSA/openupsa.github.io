@@ -15,7 +15,7 @@ themes:
 featured: true
 ---
 
-<img src="/images/blog/gazette-journalists.jpg" style="width:100%;">
+<img src="/img/blog/gazette-journalists.jpg">
  
 For veteran journalist [Raymond Joseph](https://twitter.com/rayjoe), working your way through the week's offerings of government gazettes was just another part of a  junior newsroom reporter's job, more than thirty years ago. Each week, he was tasked with going through them and looking for possible stories. 
 

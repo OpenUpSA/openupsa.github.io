@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Tools
-featured-tool: opengazettes
+featured-tool: openbylaws
 ---
 <div class="container tools-page">
 	<section class="page-intro">
@@ -17,7 +17,6 @@ featured-tool: opengazettes
 				{% for tool in site.tools %}
 					{% if tool.name == page.featured-tool %}
 						<a href="{{ site.baseurl }}{{ tool.url }}"><img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}"></a>
-						<h2 class="tool-name">{{ tool.title }}</h2>
 					{% endif %}
 				{% endfor %}
 			</div>
@@ -71,7 +70,6 @@ featured-tool: opengazettes
 				{% unless tool.name == page.featured-tool %}
 					<a href="{{ site.baseurl }}{{ tool.url }}" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 toolbox">
 						<img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}">
-						<div class="tool-name">{{ tool.title }}</div>
 					</a>
 				{% endunless %}
 			{% endfor %}
