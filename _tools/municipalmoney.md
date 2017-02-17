@@ -15,6 +15,7 @@ slideshow:
 - image: mm1.jpg
 - image: mm2.jpg
 - image: mm3.jpg
+- image: mm4.jpg
 creators:
 - name: greg
   short-name: greg
