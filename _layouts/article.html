@@ -71,23 +71,13 @@ layout: base
     <div class="row">
       <div class="col-md-7 col-md-offset-3">
         <h2>Related articles</h2>
-        {% for tool in page.tools %}
-          {{ tool.name }}
-        {% endfor %} |
-        {% for type in page.types %}
-          {{ type.name }}
-        {% endfor %} |
-        {% for theme in page.themes %}
-          {{ theme.name }}
-        {% endfor %}
         <div class="tool">
-          same tool: 
           {% for article in site.articles %}
             {% for tool in article.tools %}
               {% for article-tool in page.tools %}
                 {% if tool.name contains article-tool.name %}
                   {% unless article.title == page.title %}
-                    <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
+                    <div><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></div>
                   {% endunless %}
                 {% endif %}
               {% endfor %}
@@ -95,13 +85,12 @@ layout: base
           {% endfor %}
         </div>
         <div class="type">
-          same type: 
           {% for article in site.articles %}
             {% for type in article.types %}
               {% for article-type in page.types %}
                 {% if type.name contains article-type.name %}
                   {% unless article.title == page.title %}
-                    <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
+                    <div><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></div>
                   {% endunless %}
                 {% endif %}
               {% endfor %}
@@ -109,13 +98,12 @@ layout: base
           {% endfor %}
         </div>
         <div class="theme">
-          same theme: 
           {% for article in site.articles %}
             {% for theme in article.themes %}
               {% for article-theme in page.themes %}
                 {% if theme.name contains article-theme.name %}
                   {% unless article.title == page.title %}
-                    <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
+                    <div><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></div>
                   {% endunless %}
                 {% endif %}
               {% endfor %}
