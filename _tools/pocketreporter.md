@@ -12,9 +12,8 @@ tool-info:
 - bullet: Helps make sure you gather all the facts for your story
 - bullet: All your information in one place, and can be emailed to yourself
 slideshow:
-- image: slideshow1.svg
-- image: slideshow2.svg
-- image: slideshow3.svg
+- image: pr1.jpg
+- image: pr2.jpg
 creators:
 - name: Greg Kempe
   short-name: greg
