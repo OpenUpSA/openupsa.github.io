@@ -12,7 +12,6 @@ tool-info:
 - bullet: Compare your municipalities budget and spend with another
 - bullet: Access municipal finance data for municiplaities across South Africa
 slideshow:
-- image: mm1.jpg
 - image: mm2.jpg
 - image: mm3.jpg
 - image: mm4.jpg
