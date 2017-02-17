@@ -344,15 +344,20 @@ p {
 		h4 {
 			margin-bottom: 40px;
 		}
-		.title {
-			margin-bottom: 2px;
-			font-weight: bold;
-		}
-		.author {
-			font-style: italic;
-		}
-		.excerpt {
-			margin-bottom: 20px;
+		.article {
+			.title {
+				margin-bottom: 2px;
+				font-weight: bold;
+			}
+			.author {
+				font-style: italic;
+			}
+			.excerpt {
+				margin-bottom: 20px;
+			}
+			img {
+				width: 100%;
+			}
 		}
 	}
 

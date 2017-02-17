@@ -5,7 +5,7 @@ layout: base
 	{% for type in site.article-types %}
 		<div class="well">
 			<a href="{{ site.baseurl }}{{ type.url }}">{{ type.title }}</a>
-			<p>{{ type.description }}</p>
+			<div>{{ type.description }}</div>
 			<ul>
 			  {% for article in site.articles %}
 		      {% for article-type in article.types %}
