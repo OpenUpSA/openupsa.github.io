@@ -12,9 +12,9 @@ tool-info:
 - bullet: Racial, income, education, unemployment and access to basic services down to ward level
 - bullet: Compare income, education, unemployment and access to basic services between different wards, cities, and provinces
 slideshow:
-- image: slideshow1.svg
-- image: slideshow2.svg
-- image: slideshow3.svg
+- image: wm1.jpg
+- image: wm2.jpg
+- image: wm3.jpg
 creators:
 - name: Greg Kempe
   short-name: greg

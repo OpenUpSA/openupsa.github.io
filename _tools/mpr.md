@@ -12,9 +12,9 @@ tool-info:
 - bullet: Find possible generics for a branded medicine. Ask your doctor if these medicines are viable alternatives
 - bullet: Ensure that you are not being overcharged for your medicine
 slideshow:
-- image: mpr1.png
-- image: mpr2.png
-- image: mpr3.png
+- image: mpr1.jpg
+- image: mpr2.jpg
+- image: mpr3.jpg
 creators:
 - name: Adi Eyal
   short-name: adi

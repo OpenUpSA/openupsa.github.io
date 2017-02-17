@@ -12,9 +12,9 @@ tool-info:
 - bullet: Find death notices, name changes and follow progress on laws with keyword search
 - bullet: Easy to share and link to, including directly to individual pages
 slideshow:
-- image: slideshow1.svg
-- image: slideshow2.svg
-- image: slideshow3.svg
+- image: og1.jpg
+- image: og2.jpg
+- image: og3.jpg
 creators:
 - name: jd
   short-name: jd
