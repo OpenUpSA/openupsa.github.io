@@ -13,7 +13,6 @@ featured-tool: opengazettes
 
 			<div class="col-md-6">
 				<div class="bubble">Featured</div>
-
 				{% for tool in site.tools %}
 					{% if tool.name == page.featured-tool %}
 						<a href="{{ site.baseurl }}{{ tool.url }}"><img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}"></a>
@@ -30,11 +29,18 @@ featured-tool: opengazettes
 								{% capture number %}{% increment number %}{% endcapture %}
 								{% if number < '3' %}
 									<ul class="list-unstyled">
-										<li class="type">
+										<li class="tags">
 										{% for article-type in site.article-types %}
 										  {% for type in article.types %}
 										    {% if article-type.name == type.name %}
-										       <a href="{{ site.baseurl }}{{ article-type.url }}">{{ article-type.title }}</a>
+										       <a class="badge type" href="{{ site.baseurl }}{{ article-type.url }}">{{ article-type.title }}</a>
+										    {% endif %}
+										  {% endfor %}
+										{% endfor %}
+										{% for article-theme in site.themes %}
+										  {% for theme in article.themes %}
+										    {% if article-theme.name == theme.name %}
+										       <a class="badge theme" href="{{ site.baseurl }}{{ article-theme.url }}">{{ article-theme.title }}</a>
 										    {% endif %}
 										  {% endfor %}
 										{% endfor %}

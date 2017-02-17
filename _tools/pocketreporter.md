@@ -16,8 +16,7 @@ slideshow:
 - image: slideshow2.svg
 - image: slideshow3.svg
 creators:
-- name: Greg Kempe
-  short-name: greg
+- name: greg
 external-creators:
 - name: Raymond Joseph
   image: ray.jpg

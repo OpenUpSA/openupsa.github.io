@@ -75,13 +75,18 @@ body {
 		 		margin-bottom: 20px;
 		 	}
 
-		  .type {
+		  .tags {
 		    text-transform: uppercase;
-		    font-style: italic;
     		margin-bottom: 5px;
-	    	a {
-		    	color: #ababab;
-	    	}
+    		a {
+    			border-radius: 0;
+    		}
+    		.type {
+    			background-color: #3c763d;
+    		}
+    		.theme {
+    			background-color: #31708f;
+    		}
 		  }
 		  .title {
 		    text-transform: uppercase;

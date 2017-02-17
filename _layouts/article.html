@@ -36,6 +36,16 @@ layout: base
             {% endfor %}
           {% endif %}
 
+          {% if page.themes %}
+            {% for theme in site.themes %}
+              {% for article-theme in page.themes %}
+                {% if article-theme.name == theme.name %}
+                  | <a href="{{ site.baseurl }}{{ theme.url }}">{{ theme.title }}</a>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          {% endif %}
+
           </small>
         </div>
         <p class="post-excerpt">{{ page.excerpt }}</p>

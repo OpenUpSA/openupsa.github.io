@@ -17,9 +17,7 @@ slideshow:
 - image: slideshow3.svg
 creators:
 - name: greg
-  short-name: greg
 - name: jd
-  short-name: jd
 external-creators:
 - name: Damian
   image: damian.jpg

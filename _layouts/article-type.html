@@ -7,11 +7,15 @@ layout: base
     <div>{{ page.name }}</div>
     <div>{{ page.description }}</div>
     <div>
-      {% for article in site.articles %}
-        {% if article.type == page.name %}
-          <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
-        {% endif %}
-      {% endfor %}
+      <ul>
+        {% for article in site.articles %}
+          {% for article-type in article.types %}
+            {% if article-type.name == type.name %}
+              <li><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </section>

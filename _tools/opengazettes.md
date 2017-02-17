@@ -17,13 +17,9 @@ slideshow:
 - image: slideshow3.svg
 creators:
 - name: jd
-  short-name: jd
 - name: greg
-  short-name: greg
 - name: roxanne
-  short-name: roxanne
 - name: lailah
-  short-name: lailah
 external-creators:
 - name: Lion Summerbell
   image: lion.jpg

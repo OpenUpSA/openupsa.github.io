@@ -12,7 +12,8 @@ types:
 - name: whitepaper
 - name: howto
 themes:
-- name: 
+- name: tech
+- name: education
 featured: true
 ---
 

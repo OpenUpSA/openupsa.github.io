@@ -17,7 +17,6 @@ slideshow:
 - image: slideshow3.svg
 creators:
 - name: greg
-  short-name: greg
 collaborators:
 - name: AMI
   image: ami.png
