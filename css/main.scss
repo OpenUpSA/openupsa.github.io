@@ -440,12 +440,15 @@ footer {
 		padding: 20px 0px;
 		background-color: #333;
 		color: #fff;
-		font-size: 12px;
+		font-size: 14px;
 
 		.footer-item {
 			border-left: 1px solid #777;
     		padding-left: 20px;
     		height: 96px;
+    		.footer-title {
+    			font-size: 16px;
+    		}
 		}
 
 		ul li {
