@@ -413,26 +413,41 @@ p {
 }
 
 footer {
-	position: absolute;
-	bottom: 0;
+	position:absolute;
+	bottom:0;
 	width: 100%;
+	background-color: #999;
+
+	a {
+		color: #efefef;
+	}
+	a:hover {
+	}
 
 	.footer-top {
 		padding: 20px 0px;
 		background-color: #333;
 		color: #fff;
+		font-size: 12px;
+
+		.footer-item {
+			border-left: 1px solid #777;
+    		padding-left: 20px;
+    		height: 96px;
+		}
 
 		ul li {
-		
+			list-style-type: none;
+			margin-left:-40px;
+			
 		}
 	}
 
-	.footer-bottom {
-		padding: 5px 0px;
-		background-color: #fff;
+	.footer-copyright {
+		padding: 20px 0px;
 		font-size: 12px;
-		color: #ddd;
+		color: #333;
+		text-align: center;
 	}
-
 
 }
