@@ -252,6 +252,9 @@ body {
 }
 
 .services-page {
+	margin-top: 30px;
+	margin-bottom: 30px;
+
   .header {
   	text-align: center;
   	font-family: 'Open Sans', 'Lato', sans-serif;
@@ -411,6 +414,12 @@ p {
 	}
 }
 
+.contact-page {
+	.map {
+		margin-bottom: 30px;
+	}
+}
+
 .about-page {
 	.team {
 		.photos {
@@ -425,8 +434,7 @@ p {
 }
 
 footer {
-	position:absolute;
-	bottom:0;
+	position:relative;
 	width: 100%;
 	background-color: #999;
 
