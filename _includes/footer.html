@@ -7,22 +7,20 @@
 				<div class="col-md-3 col-xs-12">
 					<!--<p class="footer-title">Thought Leadership</p>-->
 					<ul>
-						<li><a href="#">Open Data</a></li>
-						<li><a href="#">Active Citizenry</a></li>
-						<li><a href="#">Civic Technology</a></li>
-						<li><a href="#">Co-Governance</a></li>
-						<li><a href="#">Learn/Education</a></li>
+						{% for theme in site.themes %}
+							<li><a href="{{ site.baseurl }}{{ theme.url }}">{{ theme.title }}</a></li>
+						{% endfor %}
 					</ul>
 				</div>
 
 				<div class="col-md-3 col-xs-12 footer-item">
 					<!--<p class="footer-title">Sitemap</p>-->
 					<ul>
-						<li><a href="#">About us</a></li>
-						<li><a href="#">Tools</a></li>
-						<li><a href="#">Data Portal</a></li>
+						<li><a href="{{ site.baseurl }}/about.html">About us</a></li>
 						<li><a href="#">Career</a></li>
-						<li><a href="#">Contact us</a></li>
+						<li><a href="{{ site.baseurl }}/contact.html">Contact us</a></li>
+						<li><a href="#">Data Portal</a></li>
+						<li><a href="{{ site.baseurl }}/tools">Tools</a></li>
 					</ul>
 				</div>
 
