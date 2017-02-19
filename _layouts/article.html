@@ -10,7 +10,7 @@ layout: base
         <div class="author-date">
           {% for member in site.team %}
             {% if page.author == member.name %}
-              <small>by <a href="{{ site.baseurl }}{{ member.url }}">{{ member.full-name }}</a>, {{ page.date | date: "%-d %B %Y" }}
+              <small>by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a>, {{ page.date | date: "%-d %B %Y" }}
             {% endif %}
           {% endfor %}
 
@@ -18,7 +18,7 @@ layout: base
             {% for tool in site.tools %}
               {% for article-tool in page.tools %}
                 {% if article-tool.name == tool.name %}
-                  | <a href="{{ site.baseurl }}{{ tool.url }}">{{ tool.title }}</a>
+                  | <a href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a>
                 {% endif %}
               {% endfor %}
             {% endfor %}
@@ -28,7 +28,7 @@ layout: base
             {% for article-type in site.article-types %}
               {% for type in page.types %}
                 {% if article-type.name == type.name %}
-                  | <a href="{{ site.baseurl }}{{ article-type.url }}">{{ article-type.title }}</a>
+                  | <a href="{{ article-type | prepend: site.baseurl.url }}">{{ article-type.title }}</a>
                 {% endif %}
               {% endfor %}
             {% endfor %}
@@ -38,7 +38,7 @@ layout: base
             {% for theme in site.themes %}
               {% for article-theme in page.themes %}
                 {% if article-theme.name == theme.name %}
-                  | <a href="{{ site.baseurl }}{{ theme.url }}">{{ theme.title }}</a>
+                  | <a href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a>
                 {% endif %}
               {% endfor %}
             {% endfor %}
@@ -53,8 +53,8 @@ layout: base
       <div class="col-md-2 hidden-sm hidden-xs">
         {% for member in site.team %}
           {% if page.author == member.name %}
-            <a href="{{ site.baseurl }}{{ member.url }}"><img src="{{ site.baseurl }}/img/team/{{ member.name }}.jpg"></a>
-            <a class="author-name" href="{{ site.baseurl }}{{ member.url }}">{{ member.full-name }}</a>
+            <a href="{{ member.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/team/{{ member.name }}.jpg"></a>
+            <a class="author-name" href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a>
             <span class="author-position">{{ member.position }}, Open Up</span>
           {% else %}
             <span class="author-position">{{ page.position }}</span>
@@ -77,7 +77,7 @@ layout: base
               {% for article-tool in page.tools %}
                 {% if tool.name contains article-tool.name %}
                   {% unless article.title == page.title %}
-                    <div><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></div>
+                    <div><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></div>
                   {% endunless %}
                 {% endif %}
               {% endfor %}
@@ -90,7 +90,7 @@ layout: base
               {% for article-type in page.types %}
                 {% if type.name contains article-type.name %}
                   {% unless article.title == page.title %}
-                    <div><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></div>
+                    <div><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></div>
                   {% endunless %}
                 {% endif %}
               {% endfor %}
@@ -103,7 +103,7 @@ layout: base
               {% for article-theme in page.themes %}
                 {% if theme.name contains article-theme.name %}
                   {% unless article.title == page.title %}
-                    <div><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></div>
+                    <div><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></div>
                   {% endunless %}
                 {% endif %}
               {% endfor %}

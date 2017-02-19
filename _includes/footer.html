@@ -7,9 +7,10 @@
 				<div class="col-md-3 col-xs-12">
 					<!--<p class="footer-title">Thought Leadership</p>-->
 					<ul>
-						{% for theme in site.themes %}
-							<li><a href="{{ site.baseurl }}{{ theme.url }}">{{ theme.title }}</a></li>
-						{% endfor %}
+						{% assign alphabetical = site.themes | sort: 'title' %}
+							{% for theme in alphabetical %}
+								<li><a href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></li>
+							{% endfor %}
 					</ul>
 				</div>
 

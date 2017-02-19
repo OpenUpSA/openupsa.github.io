@@ -11,7 +11,7 @@ layout: base
           {% for article in site.articles %}
             {% for theme in article.themes %}
               {% if theme.name == page.name %}
-                <li><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></li>
+                <li><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></li>
               {% endif %}
             {% endfor %}
           {% endfor %}
