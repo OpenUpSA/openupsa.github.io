@@ -28,7 +28,7 @@ layout: base
             {% for article-type in site.article-types %}
               {% for type in page.types %}
                 {% if article-type.name == type.name %}
-                  | <a href="{{ article-type | prepend: site.baseurl.url }}">{{ article-type.title }}</a>
+                  | <a href="{{ article-type.url | prepend: site.baseurl }}">{{ article-type.title }}</a>
                 {% endif %}
               {% endfor %}
             {% endfor %}
