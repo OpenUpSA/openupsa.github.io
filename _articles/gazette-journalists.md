@@ -4,7 +4,7 @@ author: roxanne
 title: "Read all about it, use Open Gazettes"
 excerpt: |
     Open Gazettes changes the way journalists use government gazettes to do stories, by allowing users to search and track important public information. 
-image: gazette-journalists.jpg
+image: placeholder.png
 tools:
 - name: opengazettes
 types:
@@ -15,7 +15,7 @@ themes:
 featured: true
 ---
 
-<img src="/img/blog/gazette-journalists.jpg">
+<img src="/img/articles/gazette-journalists.jpg">
  
 For veteran journalist [Raymond Joseph](https://twitter.com/rayjoe), working your way through the week's offerings of government gazettes was just another part of a  junior newsroom reporter's job, more than thirty years ago. Each week, he was tasked with going through them and looking for possible stories. 
 

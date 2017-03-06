@@ -4,7 +4,7 @@ author: adi
 title: Open Data FTW!
 excerpt: |
     Open Data for the win! How to save on your medicines bill using open data.
-image: none
+image: placeholder.png
 tools:
 - name: mpr
 types:

@@ -15,8 +15,6 @@ themes:
 featured: true
 ---
 
-<img src="/images/blog/gazette-launch.png" style="width:100%;">
-
 We've launched a new website, [opengazettes.org.za](http://opengazettes.org.za/), which makes the official government gazettes available online and for the first time, searchable, for free. This means  you no longer have to sift through or download heaps of publications to source legal notices, calls for comments on national and provincial matters, and updates on civic issues. 
  
 The project is a collaboration between [Code for South Africa](http://code4sa.org), the [Southern African Legal Information Institute](http://www.saflii.org) (SAFLII), and the [African Networks of Centers for Investigative Reporting](https://www.investigativecenters.org), with support from [The Indigo Trust](http://www.indigotrust.org.uk) and [Code for Africa](https://codeforafrica.org). The initiative aims to promote citizen access to government information and increase civic participation in government processes.

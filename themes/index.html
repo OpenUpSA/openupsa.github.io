@@ -1,21 +1,78 @@
 ---
 layout: base
 title: Themes
+featured-theme: activecitizenry
 ---
-<div class="container">
-	{% for theme in site.themes %}
-		<div class="well">
-			<a href="{{ site.baseurl }}{{ theme.url }}">{{ theme.title }}</a>
-			<div>{{ theme.description }}</div>
-			<ul>
-			  {% for article in site.articles %}
-		      {% for article-theme in article.themes %}
-		        {% if article-theme.name == theme.name %}
-		          <li><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></li>
-			      {% endif %}
-			    {% endfor %}
-			  {% endfor %}
-			</ul>
+<div class="container themes-page">
+	<section class="page-intro">
+		<h1>Themes</h1>
+	</section>
+
+	<section class="featured-theme">
+		<div class="row">
+
+			<div class="col-md-6">
+				<div class="bubble">Featured</div>
+				{% for theme in site.themes %}
+					{% if theme.name == page.featured-theme %}
+						<a href="{{ site.baseurl }}{{ theme.url }}"><img alt="{{ theme.image }}" src="{{ site.baseurl }}/img/themes/{{ theme.image }}"></a>
+					{% endif %}
+				{% endfor %}
+			</div>
+
+			<div class="col-md-6 featured-theme">
+				{% for article in site.articles %}
+					{% for theme in article.themes %}
+						{% if theme.name == page.featured-theme %}
+							{% if article.featured == true %}
+								{% capture number %}{% increment number %}{% endcapture %}
+								{% if number < '3' %}
+									<ul class="list-unstyled">
+										<li class="tags">
+										{% for article-type in site.article-types %}
+										  {% for type in article.types %}
+										    {% if article-type.name == type.name %}
+										       <a class="badge type" href="{{ site.baseurl }}{{ article-type.url }}">{{ article-type.title }}</a>
+										    {% endif %}
+										  {% endfor %}
+										{% endfor %}
+										{% for article-theme in site.themes %}
+										  {% for theme in article.themes %}
+										    {% if article-theme.name == theme.name %}
+										       <a class="badge theme" href="{{ site.baseurl }}{{ article-theme.url }}">{{ article-theme.title }}</a>
+										    {% endif %}
+										  {% endfor %}
+										{% endfor %}
+										</li>
+										<li class="title"><a href="{{ site.baseurl }}{{ article.url }}" >{{ article.title }}</a></li>
+										{% for member in site.team %}
+										  {% if article.author == member.name %}
+										  	<li class="author"><a href="{{ site.baseurl }}{{ member.url }}">{{ member.full-name }}</a></li>
+										  {% endif %}
+										{% endfor %}
+										<li class="arrow"><a href="{{ site.baseurl }}{{ article.url }}">›</a></li>
+									</ul>
+								{% endif %}
+							{% endif %}
+						{% endif %}
+					{% endfor %}
+				{% endfor %}	
+			</div>
+
 		</div>
-	{% endfor %}
+	</section>
+
+	<section class="all-themes">
+		<h2>Our themes</h2>
+		<div class="row">
+			{% for theme in site.themes %}
+				{% unless theme.name == page.featured-theme %}
+					<a href="{{ site.baseurl }}{{ theme.url }}" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 toolbox">
+						<img alt="{{ theme.image }}" src="{{ site.baseurl }}/img/themes/{{ theme.image }}">
+					</a>
+				{% endunless %}
+			{% endfor %}
+		</div>
+	</section>
+
 </div>

@@ -4,7 +4,7 @@ author: adi
 title: Top 10 Name Changes in April, 2014
 excerpt: |
     People legally change their names all the time. Sometimes what they choose for themselves is very amusing. We read through the government gazette and found the top 10 most entertaining examples.
-image: none
+image: placeholder.png
 tools:
 - name: opengazettes
 themes:
