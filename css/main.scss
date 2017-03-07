@@ -334,11 +334,24 @@ body {
 	}
 
 	.related-articles {
-		.row {
+		.related-duo {
 			margin-bottom: 20px;
 			img {
 				width: 100%;
 			}
+		  .tags {
+		    text-transform: uppercase;
+    		margin-bottom: 5px;
+    		a {
+    			border-radius: 0;
+    		}
+    		.type {
+    			background-color: #3c763d;
+    		}
+    		.theme {
+    			background-color: #31708f;
+    		}
+		  }
 		}
 	}
 

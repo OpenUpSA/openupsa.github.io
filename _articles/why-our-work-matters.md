@@ -24,18 +24,16 @@ Occasionally I wonder why our work matters. How does it make our lives easier an
 Guerilla Gardening
 ------------------
 
-I coordinate a group called [Guerilla Gardening](http://www.meetup.com/Guerilla-Gardening-Owning-neglected-spaces/). We are a group of nutters who meet up on the weekend with picks and spades and plant gardens in neglected public spaces. We replace building rubble with soil and compost, plant indigenous plants and create outside spaces, complete with sitting areas from which you can stare out at rush hour traffic
+I coordinate a group called [Guerilla Gardening](http://www.meetup.com/Guerilla-Gardening-Owning-neglected-spaces/). We are a group of nutters who meet up on the weekend with picks and spades and plant gardens in neglected public spaces. We replace building rubble with soil and compost, plant indigenous plants and create outside spaces, complete with sitting areas from which you can stare out at rush hour traffic or gaze at the ducks in the Black River:
 
-<p class="img">
-    <img src="http://photos1.meetupstatic.com/photos/event/4/4/e/0/600_323117632.jpeg">
-</p>
-
-or gaze at the ducks in the Black River:
-
-<p class="img">
-    <img src="http://photos2.meetupstatic.com/photos/event/b/1/9/6/highres_326865462.jpeg">
-</p>
-
+<div class="row">
+	<div class="col-sm-6" style="margin-bottom: 20px;">
+		<img src="{{ site.baseurl }}/img/articles/our-work-matters-1.jpg">
+	</div>
+	<div class="col-sm-6">
+		<img src="{{ site.baseurl }}/img/articles/our-work-matters-2.jpg">
+	</div>
+</div>
 
 Is it legal?
 ------------
@@ -47,17 +45,18 @@ Yay! There's no reason for us to stop our gardening. Without Open Bylaws, I woul
 Disaster
 --------
 
-It was predictable, but frustrating nonetheless. The garden that we planted last Saturday was destroyed. This is what it looked like before:
+It was predictable, but frustrating nonetheless. The garden that we planted last Saturday was destroyed.
 
-<p class="img">
-    <img src="http://photos1.meetupstatic.com/photos/event/a/f/1/6/600_326864822.jpeg">
-</p>
-
-and this is what it looked like two days later:
-
-<p class="img">
-    <img src="http://photos1.meetupstatic.com/photos/event/9/5/a/8/highres_328298312.jpeg">
-</p>
+<div class="row">
+	<div class="col-sm-6" style="margin-bottom: 20px;">
+		This is what it looked like before:
+		<img src="{{ site.baseurl }}/img/articles/our-work-matters-3.jpg">
+	</div>
+	<div class="col-sm-6">
+		and this is what it looked like two days later:
+		<img src="{{ site.baseurl }}/img/articles/our-work-matters-4.jpg">
+	</div>
+</div>
 
 After speaking with one of the local Rastas, it turns out a Council truck came along, destroyed our garden and then dumped a bunch of waste on top of it. 
 

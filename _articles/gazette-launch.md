@@ -45,9 +45,9 @@ If you have any government gazettes, in any format (hard copy, PDF, scan, etc), 
 
 The collection is freely available for anyone to use. Gazettes are available on [opengazettes.org.za](http://opengazettes.org.za/), individually and in bulk.
 
-Do not hesitate to [contact us](http://opengazettes.org.za/about#contact-us) if you have any further queries or if you would like to contribute government gazettes.<br><br>
+Do not hesitate to [contact us](http://opengazettes.org.za/about#contact-us) if you have any further queries or if you would like to contribute government gazettes.
 
-#### PARTNER CONTACTS:
+### Partner contacts:
 
 [Code for South Africa](http://code4sa.org/)<br>
 Lenina Rassool - [lenina@code4sa.org](mailto:lenina@code4sa.org)   
