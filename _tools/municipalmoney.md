@@ -21,7 +21,7 @@ creators:
 external-creators:
 - name: Damian Schlechter
   image: damian.jpg
-  external-url: #
+  external-url: https://github.com/xybrnet
 collaborators:
 - name: National Treasury
   image: treasury.png
