@@ -2,9 +2,10 @@
 layout: article
 author: adi
 title: Open Data FTW!
+date: 2014-04-25
 excerpt: |
     Open Data for the win! How to save on your medicines bill using open data.
-image: none
+image: placeholder.png
 tools:
 - name: mpr
 types:

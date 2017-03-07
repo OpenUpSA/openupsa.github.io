@@ -2,9 +2,10 @@
 layout: article
 author: adi
 title: How much should you be paying for your medicines?
+date: 2013-10-15
 excerpt: |
    Did you know that medicine prices are regulated in South Africa? Most people don't. We've built an application that makes price comparisons between branded medicines and their generic equivalents easier.
-image: none
+image: placeholder.png
 tools:
 - name: mpr
 types:

@@ -7,7 +7,7 @@ excerpt: |
     The Indigo Legislation Platform now powers Open By-laws South Africa,
     a big jump forward for re-use, free access to law, and open source
     legislation software.
-image: none
+image: placeholder.png
 tools:
 - name: openbylaws
 types:

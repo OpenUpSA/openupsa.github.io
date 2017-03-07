@@ -1,9 +1,10 @@
 ---
 layout: article
-title: Cheaper medicines - an unexpected user
 author: adi
+title: Cheaper medicines - an unexpected user
+date: 2014-09-22
 excerpt: Sometimes you can't anticipate how your work is going to be used. Here is a story that really motivates me to continue doing what we do.
-image: none
+image: placeholder.png
 tools:
 - name: mpr
 types:
