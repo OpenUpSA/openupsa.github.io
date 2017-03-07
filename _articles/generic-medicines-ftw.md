@@ -36,8 +36,8 @@ What's the bottom line? I walked out of the pharmacy only paying R130.00 instead
 
 Apart from saving me a ton of money every month, there's a deeper moral here. That is that there was an unexpected outcome of making that large 40mb file available on a public website. Its intended purpose was to fulfil a legal requirement to publish single exit prices. The unexpected use-cases that we found were:
 
-* You can now ensure that you're not being overcharged by your pharmacy. (I'm not sure if overcharging actual happens but it's good to check).
-* More importantly, using this database, we are able to find generics and alternatives to our medicines which result in better decision making. 
+- You can now ensure that you're not being overcharged by your pharmacy. (I'm not sure if overcharging actual happens but it's good to check).
+- More importantly, using this database, we are able to find generics and alternatives to our medicines which result in better decision making. 
 
 When asking government officials to release data, I am often asked what the data will be used for. I often don't know but I'm confident that we can't anticipate the value of data unleashed into the world. In my case, I feel happier every time I walk into my pharmacy. 
 

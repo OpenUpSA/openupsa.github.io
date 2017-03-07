@@ -1,5 +1,5 @@
 ---
-layout: article-type
+layout: type
 name: other
 title: Other
 description: Description for other

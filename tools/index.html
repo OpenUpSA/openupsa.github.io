@@ -30,28 +30,28 @@ featured-tool: openbylaws
 								{% if number < '3' %}
 									<ul class="list-unstyled">
 										<li class="tags">
-										{% for article-type in site.article-types %}
+										{% for article-type in site.types %}
 										  {% for type in article.types %}
 										    {% if article-type.name == type.name %}
-										       <a class="badge type" href="{{ site.baseurl }}{{ article-type.url }}">{{ article-type.title }}</a>
+										      <a class="badge type" href="{{ article-type.url | prepend: site.baseurl }}">{{ article-type.title }}</a>
 										    {% endif %}
 										  {% endfor %}
 										{% endfor %}
 										{% for article-theme in site.themes %}
 										  {% for theme in article.themes %}
 										    {% if article-theme.name == theme.name %}
-										       <a class="badge theme" href="{{ site.baseurl }}{{ article-theme.url }}">{{ article-theme.title }}</a>
+										      <a class="badge theme" href="{{ article-theme.url | prepend: site.baseurl }}">{{ article-theme.title }}</a>
 										    {% endif %}
 										  {% endfor %}
 										{% endfor %}
 										</li>
-										<li class="title"><a href="{{ site.baseurl }}{{ article.url }}" >{{ article.title }}</a></li>
+										<li class="title"><a href="{{ article.url | prepend: site.baseurl }}" >{{ article.title }}</a></li>
 										{% for member in site.team %}
 										  {% if article.author == member.name %}
-										  	<li class="author"><a href="{{ site.baseurl }}{{ member.url }}">{{ member.full-name }}</a></li>
+										  	<li class="author"><a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></li>
 										  {% endif %}
 										{% endfor %}
-										<li class="arrow"><a href="{{ site.baseurl }}{{ article.url }}">›</a></li>
+										<li class="arrow"><a href="{{ article.url | prepend: site.baseurl }}">›</a></li>
 									</ul>
 								{% endif %}
 							{% endif %}

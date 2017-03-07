@@ -4,7 +4,7 @@ name: pocketreporter
 title: Pocket Reporter
 image: pocketreporter.png
 external-url: http://pocketreporter.co.za/
-logo: 
+logo: pocketreporter-logo.svg
 oneliner: A news editor in your pocket
 opener: Pocket Reporter helps you be a better reporter by guiding you through the news gathering process
 tool-info:

@@ -5,7 +5,7 @@ title: "Pocket Reporter: A News Editor in your Pocket"
 date: 2016-10-18
 excerpt: |
     Meet Pocket Reporter, a new Android app for journalists, activists and anyone interested in storytelling that guides you through the newsgathering process.
-image: placeholder.png
+image: pocket-reporter.png
 tools:
 - name: pocketreporter
 types:
@@ -16,8 +16,6 @@ themes:
 featured: true
 ---
 
-<img src="/images/blog/pocket-reporter.png" style="width: 100%;">
-
 Meet [Pocket Reporter](http://pocketreporter.co.za/): a new, free Android app for journalists, activists and anyone interested in storytelling. It’s available for Android mobile devices in the [Google Play store](https://play.google.com/store/apps/details?id=com.phonegap.pocketreporter).
 
 Pocket Reporter acts as a news editor in your pocket to guide you through the newsgathering process. Its easy-to-use templates for different types of stories pose a series of questions to make sure you gather all the information you need to report your story accurately. 
@@ -26,13 +24,13 @@ Just choose your story type, give it a name, and fill in the answers in the box 
 
 <div class="row">
 	<div class="col-sm-4">
-		<img src="/images/blog/pr-app-install.jpg" style="width:100%">
+		<img src="{{ site.baseurl }}/img/articles/pr-app-install.jpg">
 	</div>
 	<div class="col-sm-4">
-		<img src="/images/blog/pr-type.jpg" style="width:100%">
+		<img src="{{ site.baseurl }}/img/articles/pr-type.jpg">
 	</div>
 	<div class="col-sm-4">
-		<img src="/images/blog/pr-thuli.jpg" style="width:100%">
+		<img src="{{ site.baseurl }}/img/articles/pr-thuli.jpg">
 	</div>
 </div>
 
@@ -42,13 +40,13 @@ Don’t worry if you can’t answer a question, your story is always saved in th
 
 <div class="row">
 	<div class="col-sm-4">
-		<img src="/images/blog/pr-questions.jpg" style="width:100%">
+		<img src="{{ site.baseurl }}/img/articles/pr-questions.jpg">
 	</div>
 	<div class="col-sm-4">
-		<img src="/images/blog/pr-stories.jpg" style="width:100%">
+		<img src="{{ site.baseurl }}/img/articles/pr-stories.jpg">
 	</div>
 	<div class="col-sm-4">
-		<img src="/images/blog/pr-about.jpg" style="width:100%">
+		<img src="{{ site.baseurl }}/img/articles/pr-about.jpg">
 	</div>
 </div>
 
