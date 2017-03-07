@@ -20,8 +20,8 @@ creators:
 collaborators:
 - name: AMI
   image: ami.png
-  external-url: #
+  external-url: http://africanmediainitiative.org/
 - name: Shuttleworth Foundation
   image: shuttleworth.png
-  external-url: #
+  external-url: https://shuttleworthfoundation.org/
 ---
