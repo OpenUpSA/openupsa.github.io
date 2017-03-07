@@ -19,10 +19,10 @@ creators:
 external-creators:
 - name: Raymond Joseph
   image: ray.jpg
-  external-url: #
+  external-url: https://twitter.com/rayjoe
 - name: Lion Summerbell
   image: lion.jpg
-  external-url: #
+  external-url: https://twitter.com/LionSummerbell
 - name: Peter Koen
   image: peter.jpg
   external-url: http://pondo.co
