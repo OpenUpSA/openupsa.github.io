@@ -2,6 +2,7 @@
 layout: article
 author: roxanne
 title: "Read all about it, use Open Gazettes"
+date: 2016-10-06
 excerpt: |
     Open Gazettes changes the way journalists use government gazettes to do stories, by allowing users to search and track important public information. 
 image: placeholder.png

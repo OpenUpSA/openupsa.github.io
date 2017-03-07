@@ -22,7 +22,7 @@ featured-tool: openbylaws
 			</div>
 
 			<div class="col-md-6 featured-article">
-				{% for article in site.articles %}
+				{% for article in site.articles reversed %}
 					{% for tool in article.tools %}
 						{% if tool.name == page.featured-tool %}
 							{% if article.featured == true %}

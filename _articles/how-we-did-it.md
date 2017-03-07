@@ -2,6 +2,7 @@
 layout: article
 author: jd
 title: "How we built opengazettes.org.za"
+date: 2016-10-20
 excerpt: |
     Before we could build Open Gazettes South Africa, we needed to figure out what additional value we could provide by putting the resource together. By building a series of programs used to source, scrape and index government gazettes, we now have a growing collection of over 12,000 free and searchable publications.
 image: placeholder.png

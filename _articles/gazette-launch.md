@@ -2,6 +2,7 @@
 layout: article
 author: lenina
 title: "Get access to your government gazette online - for free"
+date: 2016-10-05
 excerpt: |
     A new website, opengazettes.org.za, is making official government gazettes available online and searchable, so you no longer have to sift through or download heaps of publications to source important, public information.
 image: gazette-launch.png

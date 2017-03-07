@@ -267,9 +267,12 @@ body {
 			  font-size: 20px;
 			}
 			.author-date {
-			  padding-bottom: 10px;
-			  margin-bottom: 10px;
 			  color: #B0B0B0;
+			}
+			.tool-type-theme {
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+				color: #B0B0B0;
 			}
 			.featured-image {
 				width: 100%;
@@ -299,14 +302,6 @@ body {
 				display: block;
 				font-style: italic;
 				font-size: 12px;
-			}
-			blockquote {
-				font-size: 25px;
-				margin: 30px 0;
-				padding: 0;
-				border: none;
-				font-family: 'Droid Serif', serif;
-				text-align: center;
 			}
 		}
 

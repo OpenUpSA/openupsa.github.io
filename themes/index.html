@@ -21,7 +21,7 @@ featured-theme: activecitizenry
 			</div>
 
 			<div class="col-md-6 featured-theme">
-				{% for article in site.articles %}
+				{% for article in site.articles reversed %}
 					{% for theme in article.themes %}
 						{% if theme.name == page.featured-theme %}
 							{% if article.featured == true %}
