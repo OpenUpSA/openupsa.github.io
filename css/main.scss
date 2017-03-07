@@ -523,6 +523,8 @@ p {
 	.collaborators {
 		img {
 			width: 100%;
+			padding: 10px;
+			border: 1px solid #ddd
 		}
 	}
 
@@ -581,6 +583,7 @@ footer {
 	position:relative;
 	width: 100%;
 	background-color: #999;
+	margin-top: 30px;
 
 	a {
 		color: #efefef;

@@ -19,11 +19,11 @@ creators:
 - name: greg
 - name: jd
 external-creators:
-- name: Damian
+- name: Damian Schlechter
   image: damian.jpg
   external-url: #
 collaborators:
-- name: Treasury
+- name: National Treasury
   image: treasury.png
-  external-url: #
+  external-url: http://www.treasury.gov.za
 ---

@@ -20,8 +20,8 @@ creators:
 - name: jd
 collaborators:
 - name: Open Society Foundations
-  image: osf.jpg
-  external-url: https://www.opensocietyfoundations.org/
+  image: osf.png
+  external-url: http://www.osf.org.za/
 - name: Media Monitoring Africa
   image: mma.png
   external-url: http://www.mediamonitoringafrica.org/
