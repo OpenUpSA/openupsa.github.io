@@ -386,6 +386,12 @@ body {
 	.related-articles {
 		.related-duo {
 			margin-bottom: 20px;
+			@media (max-width: 768px) {
+				margin-bottom: 0;
+				.related-single {
+					margin-bottom: 20px;
+				}
+			}
 			img {
 				width: 100%;
 			}
