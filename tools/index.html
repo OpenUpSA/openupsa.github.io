@@ -30,20 +30,13 @@ featured-tool: openbylaws
 								{% if number < '3' %}
 									<ul class="list-unstyled">
 										<li class="tags">
-										{% for article-type in site.types %}
-										  {% for type in article.types %}
-										    {% if article-type.name == type.name %}
-										      <a class="badge type" href="{{ article-type.url | prepend: site.baseurl }}">{{ article-type.title }}</a>
-										    {% endif %}
-										  {% endfor %}
-										{% endfor %}
-										{% for article-theme in site.themes %}
-										  {% for theme in article.themes %}
-										    {% if article-theme.name == theme.name %}
-										      <a class="badge theme" href="{{ article-theme.url | prepend: site.baseurl }}">{{ article-theme.title }}</a>
-										    {% endif %}
-										  {% endfor %}
-										{% endfor %}
+											{% for article-theme in site.themes %}
+											  {% for theme in article.themes %}
+											    {% if article-theme.name == theme.name %}
+											      <a class="badge theme" href="{{ article-theme.url | prepend: site.baseurl }}">{{ article-theme.title }}</a>
+											    {% endif %}
+											  {% endfor %}
+											{% endfor %}
 										</li>
 										<li class="title"><a href="{{ article.url | prepend: site.baseurl }}" >{{ article.title }}</a></li>
 										{% for member in site.team %}
