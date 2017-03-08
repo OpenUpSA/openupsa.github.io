@@ -18,23 +18,13 @@ layout: base
           </small>
         </div>
 
-        <div class="tool-type-theme">
+        <div class="tool-theme">
           <small>
           {% if page.tools %}
             {% for tool in site.tools %}
               {% for article-tool in page.tools %}
                 {% if article-tool.name == tool.name %}
-                  <a href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a>
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-          {% endif %}
-
-          {% if page.types %}
-            {% for article-type in site.types %}
-              {% for type in page.types %}
-                {% if article-type.name == type.name %}
-                  | <a href="{{ article-type.url | prepend: site.baseurl }}">{{ article-type.title }}</a>
+                  <a class="tool badge" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a>
                 {% endif %}
               {% endfor %}
             {% endfor %}
@@ -44,7 +34,7 @@ layout: base
             {% for theme in site.themes %}
               {% for article-theme in page.themes %}
                 {% if article-theme.name == theme.name %}
-                  | <a href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a>
+                  <a class="theme badge" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a>
                 {% endif %}
               {% endfor %}
             {% endfor %}
