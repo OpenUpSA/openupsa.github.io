@@ -7,16 +7,13 @@
 
 # Site settings
 title: Open Up
-email: mail@openup.org.za
-url: http://openup.org.za
+email: info@openup.org.za
+url: https://openup.org.za
 baseurl: /openup.github.io
 description: Being Open Up
 twitter:
   username: openupsa
 logo: /img/logo.png
-
-gems:
-  - jekyll-seo-tag
 
 collections:
   tools:

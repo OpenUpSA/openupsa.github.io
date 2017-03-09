@@ -9,6 +9,7 @@ layout: base
 
   <section class="theme-info">
     <p>{{ page.description }}</p>
+    {{ page.content }}
   </section>
 
   <section class="theme-articles">
@@ -21,7 +22,7 @@ layout: base
           </div>
           <div class="article-box col-md-10">
             <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
-            <p>{{ article.excerpt }}</p>
+            <p>{{ article.short }}</p>
           </div>
         </div>
         {% endif %}
