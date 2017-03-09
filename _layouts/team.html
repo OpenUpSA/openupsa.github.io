@@ -2,33 +2,102 @@
 layout: base
 ---
 <!-- CONTENT-->
-<div class="container">
-  <section class="team-member">
-    <h1>{{ page.full-name }}</h1>
-    <div>{{ page.position }}</div>
-    <div>currently: {{ page.current }}</div>
-    <div>{{ page.statement }}</div>
+<div class="container team-member">
+  <section class="basic-details">
+    <h1>{{ page.full-name }}<div><small>{{ page.position }}</small></div></h1>
+    <p>{{ page.statement }}</p>
+    <h3>Highlights</h3>
     <ul>
       {% for item in page.biography %}
         <li>{{ item.highlight }}</li>
       {% endfor %}
     </ul>
-    <a href="mailto:{{ page.email }}">{{ page.email }}</a>
-    <div>
+    <p>I'm currently working on {{ page.current }}</p>
+    <p>You can email me at <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+
+    {% assign toolcounter = 0 %}
+
+    {% for tool in site.tools %}
+      {% for creator in tool.creators %}
+        {% if creator.name == page.name %}
+          {% assign toolcounter = toolcounter | plus:1 %}   
+          {% if toolcounter == 1 %}
+            <h3>Tools I've worked on</h3>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    <div class="tools row">
       {% for tool in site.tools %}
         {% for creator in tool.creators %}
           {% if creator.name == page.name %}
-            <div><a href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a></div>
+            <a href="{{ site.baseurl }}{{ tool.url }}" class="col-xs-6 col-sm-4 col-md-3 col-lg-2 toolbox">
+              <img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}">
+            </a>
           {% endif %}
         {% endfor %}
       {% endfor %}
     </div>
-    <div>
-      {% for article in site.articles %}
-        {% if article.author == page.name %}
-          <div><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></div>
+
+    {% assign articlecounter = 0 %}
+    {% for article in site.articles %}
+      {% if article.author == page.name %}
+        {% assign articlecounter = articlecounter | plus:1 %}   
+        {% if articlecounter == 1 %}
+          <h3>Articles I've written</h3>
         {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign secondarticlecounter = 0 %}
+    <div class="articles row">
+      {% for article in site.articles reversed %}
+        {% for tool in site.tools %}
+          {% for articletool in article.tools %}
+            {% if article.author == page.name %}
+              {% if tool.name == articletool.name %}
+                {% if secondarticlecounter == 0 or secondarticlecounter == 1 %}
+                  <div class="col-md-2 hidden-xs hidden-sm col-image">
+                    <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+                  </div>
+                  <div class="col-md-4">
+                    <div><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></div>
+                    <div class="tags"><a class="badge tool" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a></div>
+                  </div>
+                {% endif %}
+                {% assign secondarticlecounter = secondarticlecounter | plus:1 %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
       {% endfor %}
     </div>
+
+
+    {% assign thirdarticlecounter = 0 %}
+    <div class="articles row">
+      {% for article in site.articles reversed %}
+        {% for tool in site.tools %}
+          {% for articletool in article.tools %}
+            {% if article.author == page.name %}
+              {% if tool.name == articletool.name %}
+                {% if thirdarticlecounter == 2 or thirdarticlecounter == 3 %}
+                  <div class="col-md-2 hidden-xs hidden-sm col-image">
+                    <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+                  </div>
+                  <div class="col-md-4">
+                    <div><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></div>
+                    <div class="tags"><a class="badge tool" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a></div>
+                  </div>
+                {% endif %}
+                {% assign thirdarticlecounter = thirdarticlecounter | plus:1 %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+
+
   </section>
 </div>
