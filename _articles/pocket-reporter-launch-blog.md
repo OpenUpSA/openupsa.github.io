@@ -3,7 +3,7 @@ layout: article
 author: lenina
 title: "Pocket Reporter: A News Editor in your Pocket"
 date: 2016-10-18
-excerpt: |
+short: |
     Meet Pocket Reporter, a new Android app for journalists, activists and anyone interested in storytelling that guides you through the newsgathering process.
 image: pocket-reporter.png
 tools:
