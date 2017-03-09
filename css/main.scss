@@ -654,8 +654,11 @@ p {
 	h1, h2 {
 		font-weight: 600;
 	}
+	h1 {
+		text-align:center;
+	}
 	section {
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 	}
 	.lead {
 		font-family: 'News Cycle', sans-serif;
@@ -663,6 +666,7 @@ p {
 		margin-bottom: 30px;
     	border-bottom: 1px solid #777;
     	padding-bottom: 30px;
+    	text-align:center;
 	}
 	.theory-of-change {
 		margin: 30px 0px;
