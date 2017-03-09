@@ -3,15 +3,10 @@ layout: base
 ---
 <div class="container about-page">
 
-	<h1>About Open Up</h1>
-
-	<section class="theory-of-change">
-	  <h3>Our Theory of Change</h3>
-	  <blockquote><h2>If people are given information about their situation, how change can be achieved and the means to do so, they will often take action to effect change</h2></blockquote>
-	</section>
+	<h1>We're on a mission,</h1>
 
 	<section class="mission">
-		<p>We're on a mission to open up information that will empower people to improve their lives and their communities.</p>
+		<p class="lead">to open up information that will empower people to improve their lives and their communities.</p>
 
 		<p>We believe that an equal society starts with equal access to information, and that access to relevant information creates an active citizenry. You cannot change something if you don't know what it is, how it works, or that it even exists. This is why we are opening data. And then building tools to make the data available and understandable to society.</p>
 
@@ -21,7 +16,9 @@ layout: base
 	</section>
 
 	<section class="beliefs">
-		<h2>Our beliefs</h2>
+		<h2>Our theory of change says,</h2>
+		<p class="lead">if people are given information about their situation, how change can be achieved and the means to do so, they will often take action to effect change</p>
+
 		<div class="row">
 			<div class="col-md-6">
 				<h3>Open data</h3>
@@ -44,9 +41,10 @@ layout: base
 
 	<section class="team">
 		<h2>Meet the team</h2>
-		<p>
+		<p class="lead">
 			OpenUp has a group of passionate people that invest their time into making our vision for na informed and empowered society a reality.
 		</p>
+		
 		<div class="row photos">
 			{% for member in site.team %}
 				<a class="col-xs-6 col-sm-3 col-md-2" href="{{ site.baseurl }}{{ member.url }}">
