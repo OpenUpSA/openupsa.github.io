@@ -5,7 +5,10 @@
   "bootstrap"
 ;
 
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Upright|Droid+Serif|Lato:300,400|Open+Sans:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=News+Cycle|Libre+Franklin|Cormorant+Upright|Droid+Serif|Lato:300,400|Open+Sans:300,300i,400,400i,700,700i');
+
+// Fonts for testing typography
+
 
 html {
   height: 100%;
@@ -19,7 +22,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 16px;
   position: relative;
   min-height: 100%;
@@ -27,9 +30,10 @@ body {
 
 .page-intro {
 	h1 {
-  text-transform: uppercase;
-  padding-bottom: 25px;
-  font-weight: 600;
+		font-family: 'Open Sans', sans-serif;
+		text-transform: uppercase;
+		padding-bottom: 25px;
+		font-weight: 600;
 	}
 }
 
@@ -301,7 +305,12 @@ body {
 	article {
 		.header {
 			margin-bottom: 25px;
+			h1 {
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 600;
+			}
 			.post-short {
+			  font-family: 'News Cycle', sans-serif;
 			  margin-top: 10px;
 			  font-size: 20px;
 			}
@@ -339,7 +348,7 @@ body {
 			  font-size: 14px;
 			}
 			h1, h2, h3, h4, h5 {
-				font-family: 'Droid Serif', serif;
+				font-family: 'Open Sans', sans-serif;
 			}
 			.author-name {
 				display: block;
@@ -444,13 +453,14 @@ body {
 	margin-bottom: 30px;
 
   .header {
-  	text-align: center;
-  	font-family: 'Open Sans', 'Lato', sans-serif;
+  	font-family: 'Open Sans', sans-serif;
 	  h1 {
+	  	font-family: 'Open Sans', sans-serif;
 	    font-size: 44px;
-	    font-weight: 300;
+	    font-weight: 600;
 	  }
-	  .lead { 
+	  .lead {
+	  	font-family: 'News Cycle', sans-serif;
 	    font-size: 21px;
 	    font-weight: 300;
 	    line-height: 1.3em;
@@ -496,9 +506,10 @@ p {
 	.header {
 		margin-bottom: 30px;
 		.title {
-			font-weight: 600;
+			font-family: 'Open Sans', sans-serif;
 			text-transform: uppercase;
 			margin-top: 30px;
+			font-weight: 600;
 			img {
 				height: 35px;
 			}
@@ -521,9 +532,10 @@ p {
 	.header {
 		margin-bottom: 30px;
 		.title {
-			font-weight: 600;
+			font-family: 'Open Sans', sans-serif;
 			text-transform: uppercase;
 			margin-top: 30px;
+			font-weight: 600;
 			img {
 				height: 35px;
 			}
@@ -636,6 +648,10 @@ p {
 }
 
 .about-page {
+	h1 {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+	}
 	.team {
 		.photos {
 			a {
