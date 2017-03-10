@@ -15,7 +15,7 @@ layout: base
               {% for tool in site.tools %}
                 {% for article-tool in page.tools %}
                   {% if article-tool.name == tool.name %}
-                    <a class="tool badge" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a>
+                    <a class="tool badge {{ tool.name }}" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a>
                   {% endif %}
                 {% endfor %}
               {% endfor %}
@@ -25,7 +25,7 @@ layout: base
               {% for theme in site.themes %}
                 {% for article-theme in page.themes %}
                   {% if article-theme.name == theme.name %}
-                    <a class="theme badge" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a>
+                    <a class="theme badge {{ theme.name }}" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a>
                   {% endif %}
                 {% endfor %}
               {% endfor %}
@@ -39,11 +39,15 @@ layout: base
 
         <div class="author-date">
           <small>
-          {% for member in site.team %}
-            {% if page.author == member.name %}
-              by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a>, {{ page.date | date: "%-d %B %Y" }}
+            {% if page.author-external %}
+              by <a href="{{ page.author-external-url }}">{{ page.author-external }}</a>, {{ page.date | date: "%-d %B %Y" }}
+            {% else %}
+              {% for member in site.team %}
+                {% if page.author == member.name %}
+                  by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a>, {{ page.date | date: "%-d %B %Y" }}
+                {% endif %}
+              {% endfor %}
             {% endif %}
-          {% endfor %}
           </small>
         </div>
 
@@ -178,4 +182,5 @@ layout: base
       $(this).next('.sidenote').css("color", "#555");
     }
   );
+  $(".badge.none").remove();
 </script>
