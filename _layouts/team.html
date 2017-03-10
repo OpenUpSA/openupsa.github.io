@@ -4,40 +4,59 @@ layout: base
 <!-- CONTENT-->
 <div class="container team-member">
   <section class="basic-details">
-    <h1>{{ page.full-name }}<div><small>{{ page.position }}</small></div></h1>
-    <p>{{ page.statement }}</p>
-    <h3>Highlights</h3>
-    <ul>
-      {% for item in page.biography %}
-        <li>{{ item.highlight }}</li>
-      {% endfor %}
-    </ul>
-    <p>I'm currently working on {{ page.current }}</p>
-    <p>You can email me at <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+    
 
-    {% assign toolcounter = 0 %}
+  <div class="row split">
+    <div class="col-md-4 bio-panel">
+      <img src="{{ site.baseurl }}/img/team/greg.jpg">
+      <h1>{{ page.full-name }}<div><small>{{ page.position }}</small></div></h1>
 
-    {% for tool in site.tools %}
-      {% for creator in tool.creators %}
-        {% if creator.name == page.name %}
-          {% assign toolcounter = toolcounter | plus:1 %}   
-          {% if toolcounter == 1 %}
-            <h3>Tools I've worked on</h3>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
-    <div class="tools row">
+      <p>I'm currently working on:<br><strong>{{ page.current }}</strong></p>
+
+      <h3>Highlights</h3>
+      <ul>
+        {% for item in page.biography %}
+          <li>{{ item.highlight }}</li>
+        {% endfor %}
+      </ul>
+
+      <p>You can email me at <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+
+    </div>
+
+    <div class="col-md-8 bio-assets">
+      <p>{{ page.statement }}</p>
+
+      {% assign toolcounter = 0 %}
+
       {% for tool in site.tools %}
         {% for creator in tool.creators %}
           {% if creator.name == page.name %}
-            <a href="{{ site.baseurl }}{{ tool.url }}" class="col-xs-6 col-sm-4 col-md-3 col-lg-2 toolbox">
-              <img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}">
-            </a>
+            {% assign toolcounter = toolcounter | plus:1 %}   
+            {% if toolcounter == 1 %}
+              <h3>Tools I've worked on</h3>
+            {% endif %}
           {% endif %}
         {% endfor %}
       {% endfor %}
-    </div>
+
+      <div class="tools row">
+        {% for tool in site.tools %}
+          {% for creator in tool.creators %}
+            {% if creator.name == page.name %}
+              <a href="{{ site.baseurl }}{{ tool.url }}" class="col-xs-6 col-sm-3 toolbox">
+                <img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}">
+              </a>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </div>
+
+
+
+
+
+
 
     {% assign articlecounter = 0 %}
     {% for article in site.articles %}
@@ -97,6 +116,24 @@ layout: base
         {% endfor %}
       {% endfor %}
     </div>
+
+
+
+    </div>
+  </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
 
 
   </section>
