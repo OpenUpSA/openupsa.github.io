@@ -622,7 +622,6 @@ p {
 	}
 	h1, h2 {
 		font-weight: 600;
-		text-align: center;
 	}
 	section {
 		margin-bottom: 50px;
@@ -631,23 +630,31 @@ p {
 		font-family: 'News Cycle', sans-serif;
 		font-size: 21px;
 		margin-bottom: 30px;
-    	border-bottom: 1px solid #777;
     	padding-bottom: 30px;
-    	text-align:center;
 	}
 	.theory-of-change {
-		margin: 30px 0px;
-		.theory {
-			font-family: 'News Cycle', sans-serif;
-			font-size: 26px;
-			text-align:center;
-			border-bottom: 1px solid #333;
-    		padding-bottom: 15px;
-    		padding-top: 15px;
-    		border-top: 1px solid #333;
-    		h2 {
-    			margin-bottom: 30px;
-    		}
+		background-color: #a4da22;
+		color: #fff;
+		padding: 20px;
+		margin-top: -20px;
+		margin-bottom: 30px;
+    	h2 {
+    		font-family: 'News Cycle', sans-serif;
+    		margin-bottom: 30px;
+    		font-weight: 400;
+    		line-height: 1.3em;
+    	}
+    	.fa-quote-left {
+    		padding-right: 15px;
+    	}
+    	.theory-credit {
+	   		text-transform:uppercase;
+	    	font-size: 21px;
+    	}
+	}
+	.mission {
+		h2 {
+			margin-bottom: 30px;
 		}
 	}
 	.team {
@@ -659,6 +666,22 @@ p {
 				width: 100%;
 				margin-bottom: 10px;
 			}
+		}
+	}
+	.belief {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.col-belief-right {
+		border-right: 1px solid #ededed;
+	}
+	.col-belief-bottom {
+		border-bottom: 1px solid #ededed;
+	}
+
+	@media (min-width: 0px) and (max-width: 992px) {
+		.col-belief-right, .col-belief-bottom {
+			border: none;
 		}
 	}
 }
