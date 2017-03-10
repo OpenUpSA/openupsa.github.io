@@ -4,7 +4,7 @@ full-name: Jameelah Parker
 name: jameelah
 position: Financial Manager
 current: currently working on
-email: jameelah@openupsa.org
+email: jameelah@openup.org.za
 biography:
 - highlight: Qualified in Financial & Business Administration, SAICA member as well as Industrial Relations, Business Intelligence Tools, HR & Labour Relations.
 - highlight: Financial Manager in the Renewable Energy Sector, part of the construction and operational phase of the Gouda 138MW Wind Farm

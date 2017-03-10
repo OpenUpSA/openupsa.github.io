@@ -4,7 +4,7 @@ full-name: Jennifer Walker
 name: jennifer
 position: Head of Operations
 current: currently working on
-email: jennifer@openupsa.org
+email: jennifer@openup.org.za
 biography:
 - highlight: Bachelor of Arts (English and Information Science) from the University of Pretoria, Diploma in Business Analysis from Faculty Training Institute
 - highlight: Spent 4 years paying my dues as a middleware developer at Woolworths before the need to understand all the things took me down the business analysis path

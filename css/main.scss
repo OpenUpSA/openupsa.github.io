@@ -26,6 +26,12 @@ body {
   font-size: 16px;
   position: relative;
   min-height: 100%;
+  a {
+  	color: #91c318;
+  	&:hover {
+  		color: #91c318;
+  	}
+  }
 }
 
 .page-intro {
@@ -133,12 +139,13 @@ body {
     		a {
     			border-radius: 0;
     		}
-    		.type {
-    			background-color: #3c763d;
-    		}
     		.theme {
     			padding: 5px 7px;
     			background-color: #a4da22;
+    			&:hover {
+    				background-color: #91c318;
+    				color: #fff;
+    			}
     		}
 		  }
 		  .title {
@@ -223,7 +230,7 @@ body {
 						color: #fff;
 					}
 					&.theme {
-						background-color: #31708f;
+						background-color: #a4da22;
 						color: #fff;
 					}
 				}
@@ -310,7 +317,11 @@ body {
     			background-color: #3c763d;
     		}
     		.theme {
-    			background-color: #31708f;
+    			background-color: #a4da22;
+    			&:hover {
+    				background-color: #91c318;
+    				color: #fff;
+    			}
     		}
 		  }
 		}
@@ -431,7 +442,11 @@ p {
 	  			background-color: #3c763d;
 	  		}
 	  		.theme {
-	  			background-color: #31708f;
+	  			background-color: #a4da22;
+	  			&:hover {
+	  				background-color: #91c318;
+	  				color: #fff;
+	  			}
 	  		}
 		  }
 		}
@@ -465,12 +480,17 @@ p {
 	  		margin-bottom: 5px;
 	  		a {
 	  			border-radius: 0;
+	  			padding: 5px 10px;
 	  		}
 	  		.type {
 	  			background-color: #3c763d;
 	  		}
 	  		.theme {
-	  			background-color: #31708f;
+	  			background-color: #a4da22;
+	  			&:hover {
+	  				background-color: #91c318;
+	  				color: #fff;
+	  			}
 	  		}
 		  }
 		}
@@ -722,12 +742,17 @@ footer {
   		margin-bottom: 5px;
   		a {
   			border-radius: 0;
+  			padding: 5px 10px;
   		}
   		.type {
   			background-color: #3c763d;
   		}
   		.theme {
-  			background-color: #31708f;
+  			background-color: #a4da22;
+  			&:hover {
+  				background-color: #91c318;
+  				color: #fff;
+  			}
   		}
 	  }
 	}

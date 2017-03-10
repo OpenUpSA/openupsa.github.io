@@ -4,7 +4,7 @@ full-name: Sarah Evans
 name: sarah
 position: "Project lead: corporate data liberation campaign"
 current: currently working on
-email: sarah@openupsa.org
+email: sarah@openup.org.za
 biography:
 - highlight: Former amaBhungane Centre for Investigative Journalism fellowm
 - highlight: Former reporter for the Mail & Guardian

@@ -4,7 +4,7 @@ full-name: Adi Eyal
 name: adi
 position: Director
 current: currently working on
-email: adi@openupsa.org
+email: adi@openup.org.za
 biography:
 - highlight: Honours Degree in Computer Science from Wits
 - highlight: Masters degree (thesis not submitted) at the Hebrew University at the Hebrew University in Jerusalem

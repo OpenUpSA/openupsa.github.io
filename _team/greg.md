@@ -4,7 +4,7 @@ full-name: Greg Kempe
 name: greg
 position: Head of Technology
 current: currently working on
-email: greg@openupsa.org
+email: greg@openup.org.za
 biography:
 - highlight: Honours degree at UCT in Computer Science
 - highlight: Master's degree in Computer Science from UBC, Vancouver, Canada
