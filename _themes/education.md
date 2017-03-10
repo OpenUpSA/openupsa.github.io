@@ -1,7 +1,7 @@
 ---
 layout: theme
 name: education
-title: Literacy/Education
+title: Learn
 image: education.png
-description: Description for Literacy/Education
+description: Description for Learn
 ---
