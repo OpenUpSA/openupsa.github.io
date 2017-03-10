@@ -3,11 +3,40 @@ layout: base
 ---
 <div class="container single-article">
 
+
   <article>
     <div class="row header">
       <div class="col-md-8 col-md-offset-2">
+
+
+          <div class="tool-theme">
+            <small>
+            {% if page.tools %}
+              {% for tool in site.tools %}
+                {% for article-tool in page.tools %}
+                  {% if article-tool.name == tool.name %}
+                    <a class="tool badge" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            {% endif %}
+
+            {% if page.themes %}
+              {% for theme in site.themes %}
+                {% for article-theme in page.themes %}
+                  {% if article-theme.name == theme.name %}
+                    <a class="theme badge" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            {% endif %}    
+            </small>
+          </div>
+
+
         <h1>{{ page.title }}</h1>
-        <p>{{ page.short }}</p>
+        <p class="short">{{ page.short }}</p>
+
         <div class="author-date">
           <small>
           {% for member in site.team %}
@@ -18,29 +47,6 @@ layout: base
           </small>
         </div>
 
-        <div class="tool-theme">
-          <small>
-          {% if page.tools %}
-            {% for tool in site.tools %}
-              {% for article-tool in page.tools %}
-                {% if article-tool.name == tool.name %}
-                  <a class="tool badge" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a>
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-          {% endif %}
-
-          {% if page.themes %}
-            {% for theme in site.themes %}
-              {% for article-theme in page.themes %}
-                {% if article-theme.name == theme.name %}
-                  <a class="theme badge" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a>
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-          {% endif %}    
-          </small>
-        </div>
 
         <img class="featured-image" src="{{ site.baseurl }}/img/articles/{{ page.image }}">
       </div>
