@@ -1,7 +1,7 @@
 ---
 layout: theme
 name: tech
-title: Civic/Social Technology
+title: Civic Technology
 image: tech.png
-description: Description for Civic/Social Technology
+description: Description for Civic Technology
 ---

@@ -51,11 +51,15 @@ layout: base
             <div class="col-sm-10">
               <p class="title"><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></p>
               <p class="author">by 
-              {% for member in site.team %}
-                {% if member.name == article.author %}
-                  <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a>
-                {% endif %}
-              {% endfor %}
+              {% if article.author-external %}
+                <a href="{{ article.author-external-url }}">{{ article.author-external }}</a>
+              {% else %}
+                {% for member in site.team %}
+                  {% if member.name == article.author %}
+                    <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
               </p>
               <p>{{ article.short }}</p>
               <hr>

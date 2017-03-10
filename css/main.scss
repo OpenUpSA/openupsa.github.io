@@ -26,6 +26,12 @@ body {
   font-size: 16px;
   position: relative;
   min-height: 100%;
+  a {
+  	color: #91c318;
+  	&:hover {
+  		color: #91c318;
+  	}
+  }
 }
 
 .page-intro {
@@ -40,13 +46,18 @@ body {
 .site-header {
 	.global-nav {
 		margin-bottom: 0;
-		background-color: #a94442;
+		background-color: #fff;
 		border-bottom: none;
 		box-shadow: 0 0 5px rgba(115,115,115,.8), 0 2px 6px rgba(115,115,115,.7);
     display: inline-block;
     width: 100%;
+    	.navbar-nav li a {
+    		color: #777;
+    		font-family: 'Open Sans', sans-serif;
+    	}
 		.navbar-brand {
-			color: #fff;
+			font-family: 'Open Sans', sans-serif;
+			color: #777;
 		}
 		.nav {
 			a {
@@ -58,25 +69,36 @@ body {
 		}
 	}
 	.theme-nav {
-		background-color: #fff;
+		background-color: #f8f8f8;
 		.nav {
 			a {
 				border-radius: 0;
-		    text-transform: uppercase;
-				background-color: #31708f;
-		    padding: 3px 7px;
+		    	text-transform: uppercase;
+				background-color: #a4da22;
+		    	padding: 5px 10px;
 				margin: 12px 5px;
 				color: #fff;
 				&:hover {
-					background-color: #31708f;
+					background-color: #91c318;
 					color: #fff;
 				}
 			}	
+		}
+		.navbar-brand {
+			font-family: 'Libre Franklin', sans-serif;
 		}
 	}
 }
 
 .tools-page {
+	h1 {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+	}
+	.tool-intro {
+		font-family: 'Open Sans', sans-serif;
+		margin-bottom:30px;
+	}
 	.featured-tool {
 		margin-top: 20px;
 	  img {
@@ -117,11 +139,13 @@ body {
     		a {
     			border-radius: 0;
     		}
-    		.type {
-    			background-color: #3c763d;
-    		}
     		.theme {
-    			background-color: #31708f;
+    			padding: 5px 7px;
+    			background-color: #a4da22;
+    			&:hover {
+    				background-color: #91c318;
+    				color: #fff;
+    			}
     		}
 		  }
 		  .title {
@@ -162,7 +186,7 @@ body {
 		}
 	}	
 	.all-tools {
-	  margin-top: 25px;
+	  margin-top: 30px;
 	  .row {
 	    .toolbox {
 	    	margin-bottom: 30px;
@@ -183,18 +207,22 @@ body {
 				font-family: 'Open Sans', sans-serif;
 				font-weight: 600;
 			}
-			.post-short {
+			.short {
 			  font-family: 'News Cycle', sans-serif;
 			  margin-top: 10px;
 			  font-size: 20px;
 			}
 			.author-date {
 			  color: #B0B0B0;
+			  margin-bottom: 20px;
 			}
 			.tool-theme {
 				padding-bottom: 10px;
 				margin-bottom: 10px;
 				color: #B0B0B0;
+				small .badge {
+					padding: 5px 10px;
+				}
 				a {
 					text-transform: uppercase;
 					border-radius: 0px;
@@ -202,7 +230,7 @@ body {
 						color: #fff;
 					}
 					&.theme {
-						background-color: #31708f;
+						background-color: #a4da22;
 						color: #fff;
 					}
 				}
@@ -282,13 +310,18 @@ body {
 		    text-transform: uppercase;
     		margin-bottom: 5px;
     		a {
+    			padding: 5px 10px;
     			border-radius: 0;
     		}
     		.type {
     			background-color: #3c763d;
     		}
     		.theme {
-    			background-color: #31708f;
+    			background-color: #a4da22;
+    			&:hover {
+    				background-color: #91c318;
+    				color: #fff;
+    			}
     		}
 		  }
 		}
@@ -402,13 +435,62 @@ p {
 		    text-transform: uppercase;
 	  		margin-bottom: 5px;
 	  		a {
+	  			padding:5px 10px;
 	  			border-radius: 0;
 	  		}
 	  		.type {
 	  			background-color: #3c763d;
 	  		}
 	  		.theme {
-	  			background-color: #31708f;
+	  			background-color: #a4da22;
+	  			&:hover {
+	  				background-color: #91c318;
+	  				color: #fff;
+	  			}
+	  		}
+		  }
+		}
+	}
+}
+
+.individual-type {
+	.header {
+		margin-bottom: 30px;
+		.title {
+			font-family: 'Open Sans', sans-serif;
+			text-transform: uppercase;
+			margin-top: 30px;
+			font-weight: 600;
+			img {
+				height: 35px;
+			}
+		}
+	}
+	.type-info {
+		margin: 40px 0;
+	}
+	.type-articles {
+		.article-box {
+			margin-bottom: 20px;
+			img {
+				width: 100%;
+			}
+		  .tags {
+		    text-transform: uppercase;
+	  		margin-bottom: 5px;
+	  		a {
+	  			border-radius: 0;
+	  			padding: 5px 10px;
+	  		}
+	  		.type {
+	  			background-color: #3c763d;
+	  		}
+	  		.theme {
+	  			background-color: #a4da22;
+	  			&:hover {
+	  				background-color: #91c318;
+	  				color: #fff;
+	  			}
 	  		}
 		  }
 		}
@@ -625,6 +707,18 @@ footer {
 }
 
 .team-member {
+	
+	.split {
+		margin-bottom:50px;
+		img {
+			width: 100%;
+		}
+	.tags .badge {
+		padding: 5px 10px;
+	}
+	}
+	
+
 	.tools {
 	  margin-top: 25px;
 	  &.row {
@@ -648,12 +742,17 @@ footer {
   		margin-bottom: 5px;
   		a {
   			border-radius: 0;
+  			padding: 5px 10px;
   		}
   		.type {
   			background-color: #3c763d;
   		}
   		.theme {
-  			background-color: #31708f;
+  			background-color: #a4da22;
+  			&:hover {
+  				background-color: #91c318;
+  				color: #fff;
+  			}
   		}
 	  }
 	}

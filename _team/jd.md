@@ -4,7 +4,7 @@ full-name: JD Bothma
 name: jd
 position: Software Developer
 current: currently working on
-email: jd@openupsa.org
+email: jd@openup.org.za
 biography:
 - highlight: Worked on <a href="https://kivra.com">kivra.com</a>, a secure digital mail system
 - highlight: Worked on <a href="https://klarna.com">klarna.com</a>, an online retail payment system
