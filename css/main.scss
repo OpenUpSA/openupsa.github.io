@@ -85,8 +85,12 @@ body {
 }
 
 .tools-page {
+	h1 {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+	}
 	.tool-intro {
-		font-family: 'Libre Franklin', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		margin-bottom:30px;
 	}
 	.featured-tool {
@@ -175,7 +179,7 @@ body {
 		}
 	}	
 	.all-tools {
-	  margin-top: 25px;
+	  margin-top: 30px;
 	  .row {
 	    .toolbox {
 	    	margin-bottom: 30px;
