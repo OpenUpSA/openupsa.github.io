@@ -5,8 +5,12 @@ featured-tool: openbylaws
 ---
 <div class="container tools-page">
 	<section class="page-intro">
-		<h1>Tools</h1>
-		<p class="tool-intro">At Open Up, we believe that 'open' is more than just making data available. Data is meaningless unless you can understand it, which is why we build online tools to help contextualise data for government, civil society and human beings. We believe open is easy to understand, simple to navigate and functional.</p>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<h1>Tools</h1>
+				<p class="tool-intro">At Open Up, we believe that 'open' is more than just making data available. Data is meaningless unless you can understand it, which is why we build online tools to help contextualise data for government, civil society and human beings. We believe open is easy to understand, simple to navigate and functional.</p>
+			</div>
+		</div>
 	</section>
 
 	<section class="featured-tool">
@@ -57,14 +61,18 @@ featured-tool: openbylaws
 	</section>
 
 	<section class="all-tools">
-		<h2>Our tools</h2>
+		<!--<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<h1>Our tools</h1>
+			</div>
+		</div>-->
 		<div class="row">
 			{% for tool in site.tools %}
-				{% unless tool.name == page.featured-tool %}
-					<a href="{{ site.baseurl }}{{ tool.url }}" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 toolbox">
-						<img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}">
-					</a>
-				{% endunless %}
+			{% unless tool.name == page.featured-tool %}
+			<a href="{{ site.baseurl }}{{ tool.url }}" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 toolbox">
+			<img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}">
+			</a>
+			{% endunless %}
 			{% endfor %}
 		</div>
 	</section>
