@@ -4,7 +4,7 @@ full-name: Lenina Rassool
 name: lenina
 position: Communications Manager
 current: currently working on
-email: lenina@openupsa.org
+email: lenina@openup.org.za
 biography:
 - highlight: "National Diploma: Journalism"
 - highlight: Features writer at Femina & Cosmopolitan Magazine (2004-2010)

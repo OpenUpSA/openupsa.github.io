@@ -2,7 +2,7 @@
 layout: tool
 name: openbylaws
 title: Open By-laws
-external-url: http://municipalmoney.gov.za/
+external-url: http://openbylaws.org.za/
 image: openbylaws.png
 logo: 
 oneliner: By-laws for Cape Town, JHB and Durban - online and searchable

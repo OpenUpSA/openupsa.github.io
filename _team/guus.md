@@ -4,7 +4,7 @@ full-name: Guus Hoekman
 name: guus
 position: Developer
 current: currently working on
-email: guus@openupsa.org
+email: guus@openup.org.za
 biography:
 - highlight: BA in Politics with International Relations from the University of York
 - highlight: MPhil in Development Studies from UCT
