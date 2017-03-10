@@ -40,13 +40,18 @@ body {
 .site-header {
 	.global-nav {
 		margin-bottom: 0;
-		background-color: #a94442;
+		background-color: #fff;
 		border-bottom: none;
 		box-shadow: 0 0 5px rgba(115,115,115,.8), 0 2px 6px rgba(115,115,115,.7);
     display: inline-block;
     width: 100%;
+    	.navbar-nav li a {
+    		color: #777;
+    		font-family: 'Open Sans', sans-serif;
+    	}
 		.navbar-brand {
-			color: #fff;
+			font-family: 'Open Sans', sans-serif;
+			color: #777;
 		}
 		.nav {
 			a {
@@ -58,20 +63,23 @@ body {
 		}
 	}
 	.theme-nav {
-		background-color: #fff;
+		background-color: #f8f8f8;
 		.nav {
 			a {
 				border-radius: 0;
-		    text-transform: uppercase;
-				background-color: #31708f;
-		    padding: 3px 7px;
+		    	text-transform: uppercase;
+				background-color: #a4da22;
+		    	padding: 5px 10px;
 				margin: 12px 5px;
 				color: #fff;
 				&:hover {
-					background-color: #31708f;
+					background-color: #91c318;
 					color: #fff;
 				}
 			}	
+		}
+		.navbar-brand {
+			font-family: 'Libre Franklin', sans-serif;
 		}
 	}
 }
@@ -121,7 +129,8 @@ body {
     			background-color: #3c763d;
     		}
     		.theme {
-    			background-color: #31708f;
+    			padding: 5px 7px;
+    			background-color: #a4da22;
     		}
 		  }
 		  .title {
@@ -190,11 +199,15 @@ body {
 			}
 			.author-date {
 			  color: #B0B0B0;
+			  margin-bottom: 20px;
 			}
 			.tool-theme {
 				padding-bottom: 10px;
 				margin-bottom: 10px;
 				color: #B0B0B0;
+				small .badge {
+					padding: 5px 10px;
+				}
 				a {
 					text-transform: uppercase;
 					border-radius: 0px;
