@@ -4,6 +4,7 @@ name: dataportal
 title: Data Portal
 external-url: data.code4sa.org
 image: dataportal.png
+homepage: true
 logo: 
 oneliner: 
 opener: 

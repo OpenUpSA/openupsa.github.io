@@ -7,7 +7,7 @@ current: currently working on
 email: julia@openup.org.za
 biography:
 - highlight: B Comm Industrial Psychology (UNISA)
-- highlight: Geographic Information Analysts +17 years
+- highlight: Geographic Information Analyst +17 years
 - highlight: <a href="https://data.code4sa.org/dataset/Resources-for-South-African-Women/euc9-cu8y">Women's Resources Data</a>
 - highlight: Geocoded <a href="http://ismaps.org.za">ismaps.org.za</a> data
 - highlight: Single mother of a 10 year old
