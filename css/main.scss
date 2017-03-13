@@ -43,6 +43,30 @@ body {
 	}
 }
 
+.article-list {
+	img {
+		width: 100%;
+	}
+	.tags {
+	  text-transform: uppercase;
+		margin-bottom: 5px;
+		a {
+			padding:5px 10px;
+			border-radius: 0;
+		}
+		.type {
+			background-color: #3c763d;
+		}
+		.theme {
+			background-color: #a4da22;
+			&:hover {
+				background-color: #91c318;
+				color: #fff;
+			}
+		}
+	}
+}
+
 .site-header {
 	.global-nav {
 		margin-bottom: 0;
@@ -107,7 +131,14 @@ body {
 			border: 4px solid #fff;
 		}
 		margin-top: -130px;
-	}	
+	}
+	.funders {
+		img {
+			width: 100%;
+			border: 1px solid #ddd;
+			padding: 10px;
+		}
+	}
 }
 
 .tools-page {
@@ -152,22 +183,6 @@ body {
 		 		border-bottom: 1px solid #ddd;
 		 		margin-bottom: 20px;
 		 	}
-
-		  .tags {
-		    text-transform: uppercase;
-    		margin-bottom: 5px;
-    		a {
-    			border-radius: 0;
-    		}
-    		.theme {
-    			padding: 5px 7px;
-    			background-color: #a4da22;
-    			&:hover {
-    				background-color: #91c318;
-    				color: #fff;
-    			}
-    		}
-		  }
 		  .title {
 		    text-transform: uppercase;
 		    font-size: 1.2em;
@@ -326,24 +341,6 @@ body {
 			img {
 				width: 100%;
 			}
-		  .tags {
-		    text-transform: uppercase;
-    		margin-bottom: 5px;
-    		a {
-    			padding: 5px 10px;
-    			border-radius: 0;
-    		}
-    		.type {
-    			background-color: #3c763d;
-    		}
-    		.theme {
-    			background-color: #a4da22;
-    			&:hover {
-    				background-color: #91c318;
-    				color: #fff;
-    			}
-    		}
-		  }
 		}
 	}
 
@@ -448,27 +445,6 @@ p {
 	.theme-articles {
 		.article-box {
 			margin-bottom: 20px;
-			img {
-				width: 100%;
-			}
-		  .tags {
-		    text-transform: uppercase;
-	  		margin-bottom: 5px;
-	  		a {
-	  			padding:5px 10px;
-	  			border-radius: 0;
-	  		}
-	  		.type {
-	  			background-color: #3c763d;
-	  		}
-	  		.theme {
-	  			background-color: #a4da22;
-	  			&:hover {
-	  				background-color: #91c318;
-	  				color: #fff;
-	  			}
-	  		}
-		  }
 		}
 	}
 }
@@ -492,27 +468,6 @@ p {
 	.type-articles {
 		.article-box {
 			margin-bottom: 20px;
-			img {
-				width: 100%;
-			}
-		  .tags {
-		    text-transform: uppercase;
-	  		margin-bottom: 5px;
-	  		a {
-	  			border-radius: 0;
-	  			padding: 5px 10px;
-	  		}
-	  		.type {
-	  			background-color: #3c763d;
-	  		}
-	  		.theme {
-	  			background-color: #a4da22;
-	  			&:hover {
-	  				background-color: #91c318;
-	  				color: #fff;
-	  			}
-	  		}
-		  }
 		}
 	}
 }
@@ -756,12 +711,8 @@ footer {
 		img {
 			width: 100%;
 		}
-	.tags .badge {
-		padding: 5px 10px;
-	}
 	}
 	
-
 	.tools {
 	  margin-top: 25px;
 	  &.row {
@@ -771,32 +722,6 @@ footer {
 	    		width: 100%;
 	    	}
 	    }
-	  }
-	}
-	.articles {
-		img {
-			width: 100%;
-		}
-		.col-image {
-			margin-bottom: 15px;
-		}
-	  .tags {
-	    text-transform: uppercase;
-  		margin-bottom: 5px;
-  		a {
-  			border-radius: 0;
-  			padding: 5px 10px;
-  		}
-  		.type {
-  			background-color: #3c763d;
-  		}
-  		.theme {
-  			background-color: #a4da22;
-  			&:hover {
-  				background-color: #91c318;
-  				color: #fff;
-  			}
-  		}
 	  }
 	}
 }
