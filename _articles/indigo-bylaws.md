@@ -4,9 +4,7 @@ author: greg
 title: By-laws on the Indigo Legislation Platform
 date: 2015-09-14
 short: |
-    The Indigo Legislation Platform now powers Open By-laws South Africa,
-    a big jump forward for re-use, free access to law, and open source
-    legislation software.
+    The Indigo Legislation Platform now powers Open By-laws South Africa, a big jump forward for re-use, free access to law, and open source legislation software.
 image: placeholder.png
 tools:
 - name: openbylaws
