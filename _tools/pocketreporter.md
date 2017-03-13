@@ -29,5 +29,5 @@ external-creators:
 collaborators:
 - name: Code for South Africa
   image: code4sa.png
-  external-url: #
+  external-url: http://code4sa.org
 ---

@@ -24,12 +24,12 @@ creators:
 external-creators:
 - name: Lion Summerbell
   image: lion.jpg
-  external-url: #
+  external-url: https://twitter.com/LionSummerbell
 collaborators:
 - name: Code for Africa
   image: c4a.png
-  external-url: #
+  external-url: https://codeforafrica.org/
 - name: Indigo
   image: indigo.png
-  external-url: #
+  external-url: https://indigotrust.org.uk/
 ---

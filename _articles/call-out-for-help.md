@@ -6,7 +6,7 @@ date: 2017-02-06
 homepage: true
 short: |
     Code for South Africa and SAFLII (Southern African Legal Information Institute) are currently creating the largest digital repository of freely available gazettes online. It might be surprising to hear but you can only access gazettes at a number of libraries and only in paper format. Digital versions are only available behind paywalls and cost a fortune to access. We need help digitising them so that we can preserve South Africa's history.
-image: placeholder.png
+image: help.jpg
 tools:
 - name: opengazettes
 types:
