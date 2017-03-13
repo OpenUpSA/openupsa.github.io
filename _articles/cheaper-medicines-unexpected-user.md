@@ -4,7 +4,7 @@ author: adi
 title: Cheaper medicines - an unexpected user
 date: 2014-09-22
 short: Sometimes you can't anticipate how your work is going to be used. Here is a story that really motivates me to continue doing what we do.
-image: placeholder.png
+image: mpr-user.jpg
 tools:
 - name: mpr
 types:

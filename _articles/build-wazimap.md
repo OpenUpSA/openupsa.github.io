@@ -5,7 +5,7 @@ title: Build your own Wazimap
 date: 2016-04-15
 short: |
   It's now much easier to build your own Wazimap and help more people find the story behind the data.
-image: placeholder.png
+image: build-wazimap.jpg
 tools:
 - name: wazimap
 types:

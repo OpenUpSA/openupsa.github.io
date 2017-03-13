@@ -7,7 +7,7 @@ date: 2015-11-23
 homepage: true
 short: |
   All too often powerful, simple-to-use data tools for journalists are built and, after an initial buzz, they end up hardly being used by the very users they target.
-image: placeholder.png
+image: building-not-enough.jpg
 types:
 - name: opinion
 themes:
