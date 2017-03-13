@@ -72,7 +72,6 @@ body {
 		margin-bottom: 0;
 		background-color: #fff;
 		border-bottom: none;
-		box-shadow: 0 0 5px rgba(115,115,115,.8), 0 2px 6px rgba(115,115,115,.7);
     display: inline-block;
     width: 100%;
     	.navbar-nav li a {
@@ -94,6 +93,10 @@ body {
 	}
 	.theme-nav {
 		background-color: #f8f8f8;
+		-webkit-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+		-moz-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+		box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+
 		.nav {
 			a {
 				border-radius: 0;
@@ -672,27 +675,35 @@ p {
 footer {
 	position:relative;
 	width: 100%;
-	background-color: #999;
+	background-color: #a4da22;
 	margin-top: 30px;
 
 	a {
-		color: #efefef;
+		color: #999;
 	}
 	a:hover {
 	}
 
 	.footer-top {
 		padding: 20px 0px;
-		background-color: #333;
-		color: #fff;
+		background-color: #f8f8f8;
+		color: #999;
 		font-size: 14px;
 
+		-webkit-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+-moz-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+
+
 		.footer-item {
-			border-left: 1px solid #777;
+			border-left: 1px solid #f3f3f3;
     		padding-left: 20px;
     		height: 96px;
+    		.smicon {
+    			padding-right: 15px;
+    		}
     		.footer-title {
-    			font-size: 16px;
+    			font-size: 21px;
     		}
     		a:hover {
     			text-decoration: none;
@@ -702,6 +713,9 @@ footer {
 		ul li {
 			list-style-type: none;
 			margin-left:-40px;
+			a {
+				text-decoration: none;
+			}
 			
 		}
 	}
@@ -709,7 +723,7 @@ footer {
 	.footer-copyright {
 		padding: 20px 0px;
 		font-size: 12px;
-		color: #333;
+		color: #f8f8f8;
 		text-align: center;
 	}
 
