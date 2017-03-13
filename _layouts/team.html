@@ -11,9 +11,7 @@ layout: base
       <img src="{{ site.baseurl }}/img/team/{{page.name}}.jpg">
       <h1>{{ page.full-name }}<div><small>{{ page.position }}</small></div></h1>
 
-      <p>I'm currently working on:<br><strong>{{ page.current }}</strong></p>
-
-      <h3>Highlights</h3>
+      <h3>Bio</h3>
       <ul>
         {% for item in page.biography %}
           <li>{{ item.highlight }}</li>

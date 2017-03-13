@@ -4,6 +4,7 @@ name: municipalmoney
 title: Municipal Money
 external-url: http://municipalmoney.gov.za/
 image: municipalmoney.png
+homepage: true
 logo: 
 oneliner: How is your municipality managing your money?
 opener: Municipal Money is a web-based tool designed to inform citizens on their local authority's financial performance and allows comparisons between municipalities.
