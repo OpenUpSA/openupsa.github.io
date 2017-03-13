@@ -5,13 +5,20 @@ layout: base
 
 	<div class="banner">
 		<div class="container">
+
+		<div class="row"><div class="col-md-10 col-md-offset-1">
+
 			<h1>We empower citizens to improve their lives and communities.</h1>
 			<h3>We build tools, open up data, and provide training that support active citizenry and help communities and government work together.</h3>
+
+			</div></div>
+
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="tools row">
+
 			{% for tool in site.tools %}
 				{% if tool.homepage %}
 					<div class="col-sm-3">
@@ -20,6 +27,7 @@ layout: base
 					</div>
 				{% endif %}
 			{% endfor %}
+
 		</div>
 		<a class="btn btn-default" href="{{ site.baseurl }}/tools">More</a>
 
