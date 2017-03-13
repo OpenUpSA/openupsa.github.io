@@ -7,7 +7,7 @@ current: currently working on
 email: adi@openup.org.za
 biography:
 - highlight: Honours Degree in Computer Science from Wits
-- highlight: Masters degree (thesis not submitted) at the Hebrew University at the Hebrew University in Jerusalem
+- highlight: Masters degree (thesis not submitted) at the Hebrew University in Jerusalem
 - highlight: Dropped out of university at the end of my 2nd year to join a start-up during the early stages of the dot com boom
 - highlight: Ran a special projects hit squad at a machine learning / artificial intelligence company
 - highlight: Ran a project that promoted access to medicines in Southern Africa through information transparency

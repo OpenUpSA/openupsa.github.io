@@ -12,7 +12,7 @@ layout: base
     {{ page.content }}
   </section>
 
-  <section class="theme-articles">
+  <section class="theme-articles article-list">
     {% for article in site.articles reversed %}
       {% for theme in article.themes %}
         {% if theme.name == page.name %}
