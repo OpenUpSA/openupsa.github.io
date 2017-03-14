@@ -2,7 +2,7 @@
 layout: tool
 name: dataportal
 title: Open Data Portal
-external-url: data.code4sa.org
+external-url: http://data.code4sa.org
 image: dataportal.png
 homepage: true
 logo: 
