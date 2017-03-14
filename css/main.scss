@@ -176,6 +176,16 @@ body {
 		padding-top: 20px;
 		padding-bottom:30px;
 		margin-bottom:20px;
+		.article-title {
+			padding: 10px;
+			background-color: #a4da22;
+			a, a:hover {
+				color: #fff;
+			}
+		}
+		.article-author {
+			padding: 10px 0px;
+		}
 	}
 	.contact {
 		.contact-well {
