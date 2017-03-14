@@ -4,7 +4,7 @@ author: roxanne
 title: "Why should you care about Open Data?"
 date: 2017-03-10
 short: |
-    For Open Data Day 2017, we asked the Code for South Africa staff to weigh in on why Open Data is important and what it means to them. 
+    For Open Data Day 2017, we asked the OpenUp staff to weigh in on why Open Data is important and what it means to them. 
 image: why-care-about-open-data.jpg
 themes:
 - name: opendata

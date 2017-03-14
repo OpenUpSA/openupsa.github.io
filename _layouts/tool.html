@@ -41,7 +41,7 @@ layout: base
 
   <section class="conversation">
     <h4>Explore the <b>conversation</b></h4>
-    {% for article in site.articles %}
+    {% for article in site.articles reversed %}
       {% for tool in article.tools %}
         {% if tool.name == page.name %}
           <div class="article row article-list">

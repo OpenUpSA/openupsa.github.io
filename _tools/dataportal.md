@@ -17,6 +17,8 @@ slideshow:
 - image: dataportal2.jpg
 - image: dataportal3.jpg
 - image: dataportal4.jpg
+creators:
+- name: adi
 collaborators:
 - name: Socrata
   image: socrata.png

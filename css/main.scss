@@ -46,6 +46,7 @@ body {
 .article-list {
 	img {
 		width: 100%;
+		padding-top: 5px;
 	}
 	.tags {
 	  text-transform: uppercase;
@@ -448,6 +449,7 @@ p {
 	.theme-articles {
 		.article-box {
 			margin-bottom: 20px;
+			min-height: 200px;
 		}
 	}
 }
