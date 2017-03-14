@@ -5,7 +5,7 @@ title: Open Letter from Director, Adi Eyal
 date: 2017-03-13
 short: |
   Dear friends, I want to share with you an important announcement
-image: placeholder.png
+image: adi-letter.png
 homepage: true
 ---
 
@@ -19,7 +19,7 @@ We put a call out to our friends asking for suggestions for a new name. The most
 
 After much internal voting, counting and re-counting, complaints about irregularities at the polls and going back to the drawing board we settled on our new name:
 
-<img src="{{ site.baseurl }}/img/logo.png">
+<img src="{{ site.baseurl }}/img/articles/adi-letter2.png">
 
 Open is a powerful word, it refers to the Open Movement and its related submovements: open data, open source, open access, open government and others. OpenUp is not so much about kicking down doors than it is about a vision for a new way of doing things. We hope that this name will take us into the future and ensure that we keep moving in the right direction.
 
