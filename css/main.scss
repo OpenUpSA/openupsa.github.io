@@ -175,6 +175,7 @@ body {
 			width: 100%;
 			border: 1px solid #ddd;
 			padding: 10px;
+			margin-bottom: 30px;
 		}
 	}
 }
@@ -658,7 +659,6 @@ p {
 		font-family: 'News Cycle', sans-serif;
 		font-size: 21px;
 		margin-bottom: 30px;
-    	padding-bottom: 30px;
 	}
 	.theory-of-change {
 		background-color: #a4da22;
@@ -686,14 +686,15 @@ p {
 		}
 	}
 	.team {
-		.photos {
-			a {
-				margin-bottom: 30px;
-			}
+		.image {
+			margin-bottom: 15px;
+			padding-right: 5px;
 			img {
 				width: 100%;
-				margin-bottom: 10px;
 			}
+		}
+		.name-title {
+			padding-left: 5px;
 		}
 	}
 	.belief {
@@ -717,6 +718,7 @@ p {
 			width: 100%;
 			border: 1px solid #ddd;
 			padding: 10px;
+			margin-bottom: 30px;
 		}
 	}
 }

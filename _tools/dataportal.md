@@ -3,7 +3,7 @@ layout: tool
 name: dataportal
 title: Open Data Portal
 external-url: http://data.code4sa.org
-image: dataportal.png
+image: dataportal.jpg
 homepage: true
 logo: 
 oneliner: A wide range of datasets from medicine prices to civil marriages
