@@ -6,7 +6,7 @@ date: 2017-02-06
 homepage: true
 short: |
     Code for South Africa and SAFLII (Southern African Legal Information Institute) are currently creating the largest digital repository of freely available gazettes online. It might be surprising to hear but you can only access gazettes at a number of libraries and only in paper format. Digital versions are only available behind paywalls and cost a fortune to access. We need help digitising them so that we can preserve South Africa's history.
-image: help.jpg
+image: old-gazettes.jpg
 tools:
 - name: opengazettes
 types:
@@ -17,8 +17,6 @@ featured: true
 ---
 
 Code for South Africa and [SAFLII](http://www.saflii.org) (South African Legal Information Institute) are currently creating the largest digital repository of freely available gazettes online. We’re making some excellent progress but now we need your help digitising a critical part of South Africa’s history: we need support with computing power, cloud storage, and OCR. If you can help, please email us at [gazettes@code4sa.org](mailto:gazettes@code4sa.org).
-
-<img src="/images/blog/old-gazettes-small.jpg"/>
 
 It might be surprising to know but you can only access gazettes at a number of libraries and only in paper format. Digital versions are only available behind paywalls and cost a fortune to access. It might also be surprising that even government pays for expensive subscriptions to gazettes, even though they are not subject to copyright and should be available to all South Africans.
 
@@ -36,13 +34,13 @@ It's important to note, we don't believe that we are the owners of this corpus, 
 
 As I mentioned above, we are scanning the Transvaal gazettes. To do this, there are two options: The first is to scan in full colour at archival quality where you can see the texture of the page, wrinkles and 50 year-old coffee stains. It’s the closest we can get to capturing the original documents and preserving them for future generations. 
 
-<img src="/images/blog/gazettes-fullcolour.png"/>
+<img style="max-width: 500px" class="center-block" src="{{ site.baseurl }}/img/articles/gazette-colour.jpg"/>
 
 Download the entire file [here](https://www.dropbox.com/s/bk4fvfjtyrg1460/colour-2-original.pdf?dl=0)
 
 The second is to scan at a much lower quality which still allows us to OCR the text and make it searchable but is a poor reproduction of the original and doesn’t meet ISO archival standards. 
 
-<img src="/images/blog/gazette-bw.png"/>
+<img style="max-width: 500px" class="center-block" src="{{ site.baseurl }}/img/articles/gazette-bw.jpg"/>
 
 Download the entire file [here](https://www.dropbox.com/s/8kmnhsefr7rkog3/text-1.PDF?dl=0)
 
