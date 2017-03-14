@@ -5,7 +5,11 @@ layout: base
 
 	<div class="banner-notice">
 		<div class="container">
-			<p>Adi's Letter</p>
+			<div class="row">
+				<div class="col-md-10 col-sm-10 col-xs-12">
+					<p>Dear friends, we want to share with you an important announcement. <a href="#">Read here <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -71,6 +75,8 @@ layout: base
 		        </div>
 		        <!-- === -->
 
+		        <p>{{ article.short }}</p>
+
 		        <!-- article tags -->
 		        {% if article.tools %}
 		              {% for tool in site.tools %}
@@ -100,9 +106,6 @@ layout: base
 		              {% endfor %}
 		            {% endif %}
 		        <!-- === -->
-
-		        <p>{{ article.short }}</p>
-
 
 			    </div>
 			    
