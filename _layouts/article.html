@@ -49,7 +49,9 @@ layout: base
           </small>
         </div>
 
-        <img class="featured-image" src="{{ site.baseurl }}/img/articles/{{ page.image }}">
+        {% unless page.hide-image %}
+          <img class="featured-image" src="{{ site.baseurl }}/img/articles/{{ page.image }}">
+        {% endunless %}
       </div>
     </div>
     <div class="row article-content">

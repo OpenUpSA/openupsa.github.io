@@ -4,76 +4,108 @@ layout: base
 
 <div class="about-page">
 
-<section class="theory-of-change">
-<div class="container">
-	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
-			<h2><i class="fa fa-quote-left" aria-hidden="true"></i> If people are given information about their situation, how change can be achieved and the means to do so, they will often take action to effect change</h2>
-			<p class="theory-credit">Our Theory of Change</p>
+	<section class="theory-of-change">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<h2><i class="fa fa-quote-left" aria-hidden="true"></i> If people are given information about their situation, how change can be achieved and the means to do so, they will often take action to effect change</h2>
+				<p class="theory-credit">Our Theory of Change</p>
+			</div>
 		</div>
 	</div>
-</div>
-</section>
-
-<div class="container">
-
-<div class="row">
-<div class="col-md-10 col-md-offset-1">
-
-	<section class="mission">
-
-		<h2>We're on a mission to open up information that will empower people to improve their lives and their communities.</h2>
-		
-		<p>We believe that an equal society starts with equal access to information, and that access to relevant information creates an active citizenry. You cannot change something if you don't know what it is, how it works, or that it even exists. This is why we are opening data. And then building tools to make the data available and understandable to society.</p>
-
-		<p>As a team, we are a group of post-corporate, tech and media professionals who cut our teeth in the commercial sector and now want to use our skills for social good.</p>
-
-		<p>For most of us, it's the first time working in an NGO space, and while we're still figuring our way around, we are pioneering our own way and challenging ourselves and the world to do things that no one else has done.</p>
-
 	</section>
 
-	<section class="beliefs">
-		<h2>Our beliefs</h2>
+	<div class="container">
 
 		<div class="row">
-			<div class="col-md-6 belief col-belief-right col-belief-bottom">
-				<h3>Open data</h3>
-				<p>Data, especially government data, should be freely available and open. It should be free to be  used, modified, and shared by anyone for any purpose. We promote the release of data under <a href="http://opendatacommons.org/licenses/odbl/">open data licences</a> to make it available to everyone who wants and needs it.</p>
-			</div>
-			<div class="col-md-6 belief col-belief-bottom">
-				<h3>Co-governance</h3>
-				<p>Societies are successful when communities and governments work together. We promote collaboration between government and the public to increase participation. We do this by advocating for the effective use of technology and data both by governments and civil society.</p>
-			</div>
-			<div class="col-md-6 belief col-belief-right">
-				<h3>Active citizenry</h3>
-				<p>Only an informed society can proactively use the mechanisms of governance to affect change. Being a citizen means having both rights and responsibilities. Access to information is crucial to understanding what this means, making informed decisions, and taking effective action.</p>
-			</div>
-			<div class="col-md-6 belief">
-				<h3>Community</h3>
-				<p>Without a community of data consumers, or the support of data producers, open data won't become part of the national discourse. We work closely with government, civil society, and media to open data, disseminate it, and build a more data-literate society.</p>
+			<div class="col-md-10 col-md-offset-1">
+
+				<section class="mission">
+
+					<h2>We're on a mission to open up information that will empower people to improve their lives and their communities.</h2>
+					
+					<p>We believe that an equal society starts with equal access to information, and that access to relevant information creates an active citizenry. You cannot change something if you don't know what it is, how it works, or that it even exists. This is why we are opening data. And then building tools to make the data available and understandable to society.</p>
+
+					<p>As a team, we are a group of post-corporate, tech and media professionals who cut our teeth in the commercial sector and now want to use our skills for social good.</p>
+
+					<p>For most of us, it's the first time working in an NGO space, and while we're still figuring our way around, we are pioneering our own way and challenging ourselves and the world to do things that no one else has done.</p>
+
+				</section>
+
+				<section class="beliefs">
+					<h2>Our beliefs</h2>
+
+					<div class="row">
+						<div class="col-md-6 belief col-belief-right col-belief-bottom">
+							<h3>Open data</h3>
+							<p>Data, especially government data, should be freely available and open. It should be free to be  used, modified, and shared by anyone for any purpose. We promote the release of data under <a href="http://opendatacommons.org/licenses/odbl/">open data licences</a> to make it available to everyone who wants and needs it.</p>
+						</div>
+						<div class="col-md-6 belief col-belief-bottom">
+							<h3>Co-governance</h3>
+							<p>Societies are successful when communities and governments work together. We promote collaboration between government and the public to increase participation. We do this by advocating for the effective use of technology and data both by governments and civil society.</p>
+						</div>
+						<div class="col-md-6 belief col-belief-right">
+							<h3>Active citizenry</h3>
+							<p>Only an informed society can proactively use the mechanisms of governance to affect change. Being a citizen means having both rights and responsibilities. Access to information is crucial to understanding what this means, making informed decisions, and taking effective action.</p>
+						</div>
+						<div class="col-md-6 belief">
+							<h3>Community</h3>
+							<p>Without a community of data consumers, or the support of data producers, open data won't become part of the national discourse. We work closely with government, civil society, and media to open data, disseminate it, and build a more data-literate society.</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="team">
+					<h2>Meet the OpenUp team</h2>
+					<p class="lead">
+						We're a group of passionate people trying to make our vision for an informed and empowered society a reality
+					</p>
+
+					<div class="row">
+						{% for member in site.team %}
+							<div class="col-sm-6 col-md-4">
+								<div class="row">
+									<div class="col-xs-6 image">
+										<a href="{{ site.baseurl }}{{ member.url }}"><img src="{{ site.baseurl }}/img/team/{{ member.name }}.jpg"></a>
+									</div>
+									<div class="col-xs-6 name-title">
+										<a href="{{ site.baseurl }}{{ member.url }}"><div class="member-name">{{ member.full-name }}</div></a>
+										<div class="member-position">{{ member.position }}</div>
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</section>
+
+				<section class="funders">
+					<h2>Our funders</h2>
+					<div class="row">
+			      <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="http://www.omidyar.com/"><img src="{{ site.baseurl }}/img/collaborators/omidyar.png"></a>  
+			      <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="https://indigotrust.org.uk/"><img src="{{ site.baseurl }}/img/collaborators/indigo.png"></a>  
+			      <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="http://www.makingallvoicescount.org/"><img src="{{ site.baseurl }}/img/collaborators/mavc.svg"></a>  
+			      <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="https://codeforafrica.org/"><img src="{{ site.baseurl }}/img/collaborators/c4a.png"></a>
+			      <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="http://www.innovationedge.org.za/"><img src="{{ site.baseurl }}/img/collaborators/innovationedge.png"></a>
+			      <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="http://www.osf.org.za/"><img src="{{ site.baseurl }}/img/collaborators/osf.png"></a>
+			    </div>
+				</section>
+
+				<section class="thanks-to">
+				<h2>With thanks to</h2>
+				<div class="row">
+			    <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="https://aws.amazon.com/"><img src="{{ site.baseurl }}/img/collaborators/aws.png"></a>
+			    <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="https://github.com/"><img src="{{ site.baseurl }}/img/collaborators/github.svg"></a>
+			    <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="https://www.pivotaltracker.com"><img src="{{ site.baseurl }}/img/collaborators/pivotal.svg"></a>
+			    <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="https://slack.com/"><img src="{{ site.baseurl }}/img/collaborators/slack.svg"></a>
+			    <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="https://socrata.com/"><img src="{{ site.baseurl }}/img/collaborators/socrata.png"></a>
+			    <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="https://trello.com"><img src="{{ site.baseurl }}/img/collaborators/trello.png"></a>
+			    <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="https://www.xero.com"><img src="{{ site.baseurl }}/img/collaborators/xero.svg"></a>
+			  </div>
+				</section>
+
 			</div>
 		</div>
-	</section>
 
-	<section class="team">
-		<h2>Meet the team</h2>
-		<p class="lead">
-			OpenUp has a group of passionate people that invest their time into making our vision for na informed and empowered society a reality
-		</p>
-
-		<div class="row photos">
-			{% for member in site.team %}
-				<a class="col-xs-6 col-sm-3 col-md-2" href="{{ site.baseurl }}{{ member.url }}">
-					<img src="{{ site.baseurl }}/img/team/{{ member.name }}.jpg">
-					<div>{{ member.full-name }}</div>
-					<div>{{ member.position }}</div>
-				</a>
-			{% endfor %}
-		</div>
-	</section>
-
-</div>
+	</div>
 </div>
 
-</div>
-</div>

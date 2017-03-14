@@ -2,8 +2,8 @@
 layout: tool
 name: dataportal
 title: Open Data Portal
-external-url: data.code4sa.org
-image: dataportal.png
+external-url: http://data.code4sa.org
+image: dataportal.jpg
 homepage: true
 logo: 
 oneliner: A wide range of datasets from medicine prices to civil marriages
@@ -17,6 +17,8 @@ slideshow:
 - image: dataportal2.jpg
 - image: dataportal3.jpg
 - image: dataportal4.jpg
+creators:
+- name: adi
 collaborators:
 - name: Socrata
   image: socrata.png

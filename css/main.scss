@@ -46,6 +46,7 @@ body {
 .article-list {
 	img {
 		width: 100%;
+		padding-top: 5px;
 	}
 	.tags {
 	  text-transform: uppercase;
@@ -206,6 +207,7 @@ body {
 			width: 100%;
 			border: 1px solid #ddd;
 			padding: 10px;
+			margin-bottom: 30px;
 		}
 	}
 }
@@ -514,6 +516,7 @@ p {
 	.theme-articles {
 		.article-box {
 			margin-bottom: 20px;
+			min-height: 200px;
 		}
 	}
 }
@@ -664,7 +667,13 @@ p {
 		font-weight: 600;
 	}
 	.map {
+		margin-top: 20px;
 		margin-bottom: 30px;
+	}
+	.codebridge-photo {
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -682,7 +691,6 @@ p {
 		font-family: 'News Cycle', sans-serif;
 		font-size: 21px;
 		margin-bottom: 30px;
-    	padding-bottom: 30px;
 	}
 	.theory-of-change {
 		background-color: #a4da22;
@@ -710,14 +718,15 @@ p {
 		}
 	}
 	.team {
-		.photos {
-			a {
-				margin-bottom: 30px;
-			}
+		.image {
+			margin-bottom: 15px;
+			padding-right: 5px;
 			img {
 				width: 100%;
-				margin-bottom: 10px;
 			}
+		}
+		.name-title {
+			padding-left: 5px;
 		}
 	}
 	.belief {
@@ -734,6 +743,14 @@ p {
 	@media (min-width: 0px) and (max-width: 992px) {
 		.col-belief-right, .col-belief-bottom {
 			border: none;
+		}
+	}
+	.funders, .thanks-to {
+		img {
+			width: 100%;
+			border: 1px solid #ddd;
+			padding: 10px;
+			margin-bottom: 30px;
 		}
 	}
 }
