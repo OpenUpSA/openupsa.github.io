@@ -56,18 +56,24 @@ layout: base
 	</section>
 
 	<section class="team">
-		<h2>Meet the team</h2>
+		<h2>Meet the OpenUp team</h2>
 		<p class="lead">
-			OpenUp has a group of passionate people that invest their time into making our vision for na informed and empowered society a reality
+			We're a group of passionate people trying to make our vision for an informed and empowered society a reality
 		</p>
 
-		<div class="row photos">
+		<div class="row">
 			{% for member in site.team %}
-				<a class="col-xs-6 col-sm-3 col-md-2" href="{{ site.baseurl }}{{ member.url }}">
-					<img src="{{ site.baseurl }}/img/team/{{ member.name }}.jpg">
-					<div>{{ member.full-name }}</div>
-					<div>{{ member.position }}</div>
-				</a>
+				<div class="col-sm-6 col-md-4">
+					<div class="row">
+						<div class="col-xs-6 image">
+							<a href="{{ site.baseurl }}{{ member.url }}"><img src="{{ site.baseurl }}/img/team/{{ member.name }}.jpg"></a>
+						</div>
+						<div class="col-xs-6 name-title">
+							<a href="{{ site.baseurl }}{{ member.url }}"><div class="member-name">{{ member.full-name }}</div></a>
+							<div class="member-position">{{ member.position }}</div>
+						</div>
+					</div>
+				</div>
 			{% endfor %}
 		</div>
 	</section>
