@@ -123,6 +123,11 @@ body {
 		font-weight: 600;
 		margin-bottom: 30px;
 	}
+	.banner-notice {
+			background-color: #f8f8f8;
+			height: 150px;
+			margin-top: -20px;
+	}
 	.banner {
 		background-color: #a4da22;
 		padding: 20px;
@@ -168,6 +173,23 @@ body {
 	}
 	.articles {
 		background-color:#f8f8f8;
+		padding-top: 20px;
+		padding-bottom:30px;
+		margin-bottom:20px;
+	}
+	.contact {
+		.contact-well {
+			background-color: #f8f8f8;
+			padding: 15px;
+			width: 48%;
+			img {
+				width:100%;
+			}
+		}
+		.contact-title {
+			font-size:21px;
+			font-weight: 600;
+		}
 	}
 	.funders {
 		img {
