@@ -118,22 +118,56 @@ body {
 }
 
 .homepage {
+	h1 {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
 	.banner {
 		background-color: #a4da22;
 		padding: 20px;
 		margin-top: -20px;
 		padding-bottom: 180px;
-		h1, h3 {
-			font-family: 'News Cycle', sans-serif;
+		h1 {
 			color: #fff;
+		    font-size: 42px;
+		}
+		h3 {
+			font-family: 'News Cycle', sans-serif;
+			font-size: 26px;
+			color: #e8ffda;
 		}
 	}
 	.tools {
+		margin-bottom: 30px;
+		p {
+			font-family: 'News Cycle', 'Open Sans', sans-serif;
+			font-size: 21px;
+			padding: 5px 10px 5px 0px;
+		}
 		img {
 			width: 100%;
 			border: 4px solid #fff;
 		}
 		margin-top: -130px;
+	}
+	.moretools {
+		margin-bottom: 30px;
+		text-align:right;
+		a {
+			color: #a4da22;
+		}
+		a:hover {
+				color: #91c318;
+			}
+		p {
+			font-size: 24px;
+    		font-weight: 600;
+    		font-family: 'open sans', sans-serif;
+		}
+	}
+	.articles {
+		background-color:#f8f8f8;
 	}
 	.funders {
 		img {
