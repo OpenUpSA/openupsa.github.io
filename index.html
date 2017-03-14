@@ -3,14 +3,18 @@ layout: base
 ---
 <div class="homepage">
 
+	<div class="banner-notice">
+		<div class="container">
+			<p>Adi's Letter</p>
+		</div>
+	</div>
+
 	<div class="banner">
 	<div class="container">
 
 		<div class="row"><div class="col-md-8">
-
 			<h1>We empower citizens to improve their lives and communities.</h1>
 			<h3>We build tools, open up data, and provide training that support active citizenry and help communities and government work together.</h3>
-
 		</div></div>
 
 	</div>
@@ -39,15 +43,23 @@ layout: base
 		<div class="container">
 
 			<h1>Featured articles</h1>
+
+			<div class="row">
 			{% for article in site.articles reversed %}
 		    {% if article.homepage %}
-		      <div class="row">
-		        <div class="article-box col-md-2 hidden-xs hidden-sm">
-		          <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
-		        </div>
-		        <div class="article-box col-md-10">
-		          <div><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></div>
-		          {% if article.author-external %}
+			    
+			    <div class="col-md-4">
+
+			    <!-- img -->
+			    <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+
+			    <!-- article info -->
+			    <div class="article-title"><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></div>
+			    <!-- === -->
+
+			    <!-- article author -->
+			    <div class="article-author">
+			    {% if article.author-external %}
 		            <div>by <a href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
 		          {% else %}
 		            {% for member in site.team %}
@@ -56,8 +68,11 @@ layout: base
 		              {% endif %}
 		            {% endfor %}
 		          {% endif %}
-		          <div>
-		            {% if article.tools %}
+		        </div>
+		        <!-- === -->
+
+		        <!-- article tags -->
+		        {% if article.tools %}
 		              {% for tool in site.tools %}
 		                {% for articletool in article.tools %}
 		                  {% if tool.name == articletool.name %}
@@ -84,29 +99,41 @@ layout: base
 		                {% endfor %}
 		              {% endfor %}
 		            {% endif %}
-		          </div>
-		          <p>{{ article.short }}</p>
-		        </div>
-		      </div>
-		    {% endif %}
-			{% endfor %}      
-		</div>
-		</div>
+		        <!-- === -->
 
+		        <p>{{ article.short }}</p>
+
+
+			    </div>
+			    
+		    {% endif %}
+			{% endfor %}
+			</div>
+
+		</div></div>
 
 
 		<div class="contact">
 		<div class="container">
 
 			<h1>Get in touch</h1>
-			<p>
-				Intent: call to action to come and work with us.
-				Work with us
-				How can we help you? (link to email)
-				Support our efforts 
-				We are a non-profit organisation and rely on funding to continue our work. You can help by using our tools (let us know if you find any bugs) and spreading the word on social media.  
-			</p>
 
+			<div class="row">
+
+				<div class="col-md-6 pull-left contact-well col-xs-12"><div class="row">
+					<div class="col-md-4"><img src="{{ site.baseurl }}/img/graphics/email.png" /></div>
+					<div class="col-md-8"><p class="contact-title">Work with us</p><p>We work with data and technology to help South Africans. If you’d like to partner with us, <a href="{{ site.baseurl }}/contact">please get in touch</a>.</p></div>
+				</div></div>
+
+				<div class="col-md-6 pull-right contact-well col-xs-12"><div class="row">
+					<div class="col-md-4"><img src="{{ site.baseurl }}/img/graphics/reunion.png" /></div>
+					<div class="col-md-8">
+					<p class="contact-title">Support our efforts</p>
+					<p>We are a non-profit organisation and rely on funding to continue our work. You can help by <a href="{{ site.baseurl }}/tools">using our tools</a> and spreading the word on <a href="https://www.facebook.com/openupsa" target="_blank">Facebook</a> and <a href="https://twitter.com/openupsa" target="_blank">Twitter</a>.</p>
+					</div>
+				</div></div>
+
+			</div>
 		</div>
 		</div>
 
