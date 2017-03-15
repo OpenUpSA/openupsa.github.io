@@ -1,10 +1,10 @@
 ---
 layout: article
 author: sarah
-title: New online tool makes municipal budgets more transparent
+title: How well is your municipality spending your money?
 date: 2016-10-26
 short: |
-  Announcing MunicipalMoney.gov.za, a website to help you understand how well your municipality is spending your money.
+  Announcing MunicipalMoney.gov.za, a website that makes municipal financial performance and budgets more transparent.
 image: munimoney-1.jpg
 tools:
 - name: municipalmoney
