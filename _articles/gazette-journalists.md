@@ -5,7 +5,7 @@ title: "Read all about it, use Open Gazettes"
 date: 2016-10-06
 short: |
     Open Gazettes changes the way journalists use government gazettes to do stories, by allowing users to search and track important public information. 
-image: gazette-journalists-tn.jpg
+image: gazette-journalists.jpg
 tools:
 - name: opengazettes
 types:

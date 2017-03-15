@@ -13,50 +13,56 @@ layout: base
   </section>
 
   <section class="theme-articles article-list">
-    {% for article in site.articles reversed %}
-      {% for theme in article.themes %}
-        {% if theme.name == page.name %}
-          <div class="row">
-            <div class="article-box col-md-2 hidden-xs hidden-sm">
+    <div class="row">
+      {% for article in site.articles reversed %}
+        {% for theme in article.themes %}
+          {% if theme.name == page.name %}
+            <div class="one-article col-md-4 col-sm-6 col-xs-12">
+
               <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
-            </div>
-            <div class="article-box col-md-10">
-              <div><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></div>
-              {% if article.author-external %}
-                <div>by <a href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
-              {% else %}
-                {% for member in site.team %}
-                  {% if member.name == article.author %}
-                    <div>by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></div>
-                  {% endif %}
-                {% endfor %}
-              {% endif %}
-              <div>
-                {% if article.tools %}
-                  {% for tool in site.tools %}
-                    {% for articletool in article.tools %}
-                      {% if tool.name == articletool.name %}
-                        <span class="tags"><a class="badge tool" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a></span>
-                      {% endif %}
-                    {% endfor %}
-                  {% endfor %}
-                {% endif %}
-                {% if article.types %}
-                  {% for type in site.types %}
-                    {% for articletype in article.types %}
-                      {% if type.name == articletype.name %}
-                        <span class="tags"><a class="badge type" href="{{ type.url | prepend: site.baseurl }}">{{ type.title }}</a></span>
-                      {% endif %}
-                    {% endfor %}
+              
+              <div class="article-title">
+                <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+              </div>
+
+              <div class="article-author">
+                {% if article.author-external %}
+                  <div>by <a href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
+                {% else %}
+                  {% for member in site.team %}
+                    {% if member.name == article.author %}
+                      <div>by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></div>
+                    {% endif %}
                   {% endfor %}
                 {% endif %}
               </div>
+
               <p>{{ article.short }}</p>
+
+              {% if article.tools %}
+                {% for tool in site.tools %}
+                  {% for articletool in article.tools %}
+                    {% if tool.name == articletool.name %}
+                      <span class="tags"><a class="badge tool" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a></span>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              {% endif %}
+              {% if article.types %}
+                {% for type in site.types %}
+                  {% for articletype in article.types %}
+                    {% if type.name == articletype.name %}
+                      <span class="tags"><a class="badge type" href="{{ type.url | prepend: site.baseurl }}">{{ type.title }}</a></span>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              {% endif %}
             </div>
-          </div>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}      
+
+          {% endif %}
+        {% endfor %}
+      {% endfor %}      
+    </div>
   </section>
 
 </div>
