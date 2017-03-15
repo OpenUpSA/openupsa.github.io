@@ -27,7 +27,7 @@ external-creators:
   image: peter.jpg
   external-url: http://pondo.co
 collaborators:
-- name: Code for South Africa
-  image: code4sa.png
-  external-url: http://code4sa.org
+- name: OpenUp
+  image: openup.svg
+  external-url: https://openup.org.za
 ---
