@@ -100,14 +100,14 @@ layout: base
       {% for creator in page.creators %}
         {% for member in site.team %}
           {% if member.name == creator.name %}
-            <a href="{{ member.url | prepend: site.baseurl }}" class="col-xs-6 col-sm-4 col-md-3 col-lg-2" data-toggle="tooltip" data-placement="bottom" title="{{ member.full-name }}">
+            <a href="{{ member.url | prepend: site.baseurl }}" class="col-xs-6 col-sm-4 col-md-3 col-lg-2 creator" data-toggle="tooltip" data-placement="bottom" title="{{ member.full-name }}">
               <img src="{{ site.baseurl }}/img/team/{{ member.name }}.jpg">
             </a>
           {% endif %}
         {% endfor %}
       {% endfor %}
       {% for creator in page.external-creators %}
-        <a target="_blank" href="{{ creator.external-url }}" class="col-xs-6 col-sm-4 col-md-2" data-toggle="tooltip" data-placement="bottom" title="{{ creator.name }}">
+        <a target="_blank" href="{{ creator.external-url }}" class="col-xs-6 col-sm-4 col-md-2 creator" data-toggle="tooltip" data-placement="bottom" title="{{ creator.name }}">
           <img src="{{ site.baseurl }}/img/team/external/{{ creator.image }}">
         </a>
       {% endfor %}
@@ -149,7 +149,7 @@ layout: base
       <h3>Donors and partners</h3>
       <div class="row">
         {% for collaborator in page.collaborators %}
-          <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="{{ collaborator.external-url }}"><img src="{{ site.baseurl }}/img/collaborators/{{ collaborator.image }}"></a>
+          <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2 collaborator" href="{{ collaborator.external-url }}"><img src="{{ site.baseurl }}/img/collaborators/{{ collaborator.image }}"></a>
         {% endfor %}
       </div>
     </section>

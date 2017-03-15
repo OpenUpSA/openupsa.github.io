@@ -642,6 +642,9 @@ p {
     img {
       width: 100%;
     }
+    .creator {
+      margin-bottom: 30px;
+    }
   }
 
   .collaborators {
@@ -649,6 +652,9 @@ p {
       width: 100%;
       padding: 10px;
       border: 1px solid #ddd
+    }
+    .collaborator {
+      margin-bottom: 30px;
     }
   }
 
