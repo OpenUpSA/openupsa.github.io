@@ -31,7 +31,7 @@ body {
   a {
     color: $green-darker;
     &:hover {
-      color: $green-darker;
+      color: $green;
     }
   }
 }
@@ -61,6 +61,7 @@ body {
   }
   .tool {
     background-color: #999;
+    transition: background-color 150ms ease-out;
     &:hover {
       background-color: #777;
       color: #fff;
@@ -68,6 +69,7 @@ body {
   }
   .type {
     background-color: #3c763d;
+    transition: background-color 150ms ease-out;
     &:hover {
       background-color: #2a592a;
       color: #fff;
@@ -75,6 +77,7 @@ body {
   }
   .theme {
     background-color: $green;
+    transition: background-color 150ms ease-out;
     &:hover {
       background-color: $green-darker;
       color: #fff;
@@ -115,11 +118,12 @@ body {
     .nav {
       a {
         border-radius: 0;
-          text-transform: uppercase;
+        text-transform: uppercase;
         background-color: $green;
-          padding: 5px 10px;
+        padding: 5px 10px;
         margin: 12px 5px;
         color: #fff;
+        transition: background-color 150ms ease-out;
         &:hover {
           background-color: $green-darker;
           color: #fff;
@@ -787,8 +791,6 @@ footer {
   a {
     color: #999;
   }
-  a:hover {
-  }
 
   .footer-top {
     padding: 20px 0px;
@@ -797,8 +799,8 @@ footer {
     font-size: 12px;
 
     -webkit-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
--moz-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+    -moz-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+    box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
 
 
     .footer-item {
