@@ -5,22 +5,26 @@ layout: base
 
 	<div class="banner-notice">
 		<div class="container">
-			<p>Adi's Letter</p>
+			<div class="row announcement">
+				<div class="col-md-10 col-sm-10 col-xs-12">
+					<span>Dear friends, we want to share with you an important announcement. <a href="{{ site.baseurl }}/articles/new-name.html">Read here <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></span>
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<div class="banner">
-	<div class="container">
-
-		<div class="row"><div class="col-md-8">
-			<h1>We empower citizens to improve their lives and communities.</h1>
-			<h3>We build tools, open up data, and provide training that support active citizenry and help communities and government work together.</h3>
-		</div></div>
-
-	</div>
-	</div>
-
 		<div class="container">
+
+			<div class="row"><div class="col-md-8">
+				<h1>We empower citizens to improve their lives and communities.</h1>
+				<h3>We build tools, open up data, and provide training that support active citizenry and help communities and government work together.</h3>
+			</div></div>
+
+		</div>
+	</div>
+
+	<div class="container">
 		<div class="tools row">
 		
 			{% for tool in site.tools %}
@@ -32,17 +36,15 @@ layout: base
 				{% endif %}
 			{% endfor %}
 
+			<div class="moretools">
+				<a href="{{ site.baseurl }}/tools"><p>see all our tools <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p></a>
+			</div>
 		</div>
-		</div>
+	</div>
 
-		<div class="container"><div class="moretools">
-		<a href="{{ site.baseurl }}/tools"><p>see all tools <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p></a>
-		</div></div>
 
-		<div class="articles article-list">
+	<div class="articles article-list">
 		<div class="container">
-
-			<h1>Featured articles</h1>
 
 			<div class="row">
 			{% for article in site.articles reversed %}
@@ -70,6 +72,8 @@ layout: base
 		          {% endif %}
 		        </div>
 		        <!-- === -->
+
+		        <p>{{ article.short }}</p>
 
 		        <!-- article tags -->
 		        {% if article.tools %}
@@ -101,45 +105,42 @@ layout: base
 		            {% endif %}
 		        <!-- === -->
 
-		        <p>{{ article.short }}</p>
-
-
 			    </div>
 			    
 		    {% endif %}
 			{% endfor %}
 			</div>
 
-		</div></div>
+		</div>
+	</div>
 
-
-		<div class="contact">
+	<div class="contact">
 		<div class="container">
-
-			<h1>Get in touch</h1>
 
 			<div class="row">
 
-				<div class="col-md-6 col-sm-6 col-xs-12 pull-left contact-well"><div class="row">
-					<div class="col-md-4"><img src="{{ site.baseurl }}/img/graphics/email.png" /></div>
-					<div class="col-md-8"><p class="contact-title">Work with us</p><p>We work with data and technology to help South Africans. If you’d like to partner with us, <a href="{{ site.baseurl }}/contact">please get in touch</a>.</p></div>
-				</div></div>
+				<div class="col-md-2">
+					<img src="{{ site.baseurl }}/img/graphics/email.png" />
+				</div>
+				<div class="col-md-4">
+					<p class="contact-title">Work with us</p>
+					<p>We work with data and technology to help South Africans. If you’d like to partner with us, <a href="{{ site.baseurl }}/contact">please get in touch</a>.</p>
+				</div>
 
-				<div class="col-md-6 col-sm-6 col-xs-12 pull-right contact-well"><div class="row">
-					<div class="col-md-4"><img src="{{ site.baseurl }}/img/graphics/reunion.png" /></div>
-					<div class="col-md-8">
+				<div class="col-md-2">
+					<img src="{{ site.baseurl }}/img/graphics/reunion.png" />
+				</div>
+				<div class="col-md-4">
 					<p class="contact-title">Support our efforts</p>
 					<p>We are a non-profit organisation and rely on funding to continue our work. You can help by <a href="{{ site.baseurl }}/tools">using our tools</a> and spreading the word on <a href="https://www.facebook.com/openupsa" target="_blank">Facebook</a> and <a href="https://twitter.com/openupsa" target="_blank">Twitter</a>.</p>
-					</div>
-				</div></div>
+				</div>
 
 			</div>
+
 		</div>
-		</div>
+	</div>
 
-
-
-		<div class="funders">
+	<div class="funders">
 		<div class="container">
 
 			<h1>Our funders</h1>
@@ -153,8 +154,6 @@ layout: base
       </div>
 
 		</div>
-		</div>
-
-
+	</div>
 
 </div>

@@ -1,11 +1,11 @@
 ---
 layout: article
 author: adi
-title: "Open Gazettes: We don't usually ask but we'd really appreciate some help."
+title: "Open Gazettes: We'd really appreciate some help."
 date: 2017-02-06
 homepage: true
 short: |
-    Code for South Africa and SAFLII (Southern African Legal Information Institute) are currently creating the largest digital repository of freely available gazettes online.
+    Code for South Africa and SAFLII are currently creating the largest digital repository of freely available gazettes online.
 image: old-gazettes.jpg
 
 tools:

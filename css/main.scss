@@ -125,14 +125,14 @@ body {
 		margin-bottom: 30px;
 	}
 	.banner-notice {
-			background-color: #f8f8f8;
-			height: 150px;
-			margin-top: -20px;
+		margin-top: -20px;
+		.announcement {
+			padding: 10px 0; 
+		}
 	}
 	.banner {
 		background-color: #a4da22;
 		padding: 20px;
-		margin-top: -20px;
 		padding-bottom: 180px;
 		h1 {
 			color: #fff;
@@ -145,7 +145,7 @@ body {
 		}
 	}
 	.tools {
-		margin-bottom: 30px;
+		padding-bottom: 30px;
 		p {
 			font-family: 'News Cycle', 'Open Sans', sans-serif;
 			font-size: 21px;
@@ -158,7 +158,7 @@ body {
 		margin-top: -130px;
 	}
 	.moretools {
-		margin-bottom: 30px;
+		margin: 30px 0;
 		text-align:right;
 		a {
 			color: #a4da22;
@@ -174,8 +174,7 @@ body {
 	}
 	.articles {
 		background-color:#f8f8f8;
-		padding-top: 20px;
-		padding-bottom:30px;
+		padding: 50px 0;
 		margin-bottom:20px;
 		.article-title {
 			padding: 10px;
@@ -189,13 +188,12 @@ body {
 		}
 	}
 	.contact {
-		.contact-well {
-			background-color: #f8f8f8;
-			padding: 15px;
-			width: 48%;
+		padding: 50px 0;
 			img {
 				width:100%;
 			}
+		.contact-well {
+			background-color: #f8f8f8;
 		}
 		.contact-title {
 			font-size:21px;
@@ -203,6 +201,7 @@ body {
 		}
 	}
 	.funders {
+		padding: 50px 0;
 		img {
 			width: 100%;
 			border: 1px solid #ddd;
