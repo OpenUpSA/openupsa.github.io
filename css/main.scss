@@ -780,7 +780,7 @@ box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
 
 		.footer-item {
 			border-left: 1px solid #f3f3f3;
-    		padding-left: 20px;
+    		padding-right: 20px;
     		height: 96px;
     		.smicon {
     			padding-right: 15px;
@@ -793,13 +793,17 @@ box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
     		}
 		}
 
-		ul li {
-			list-style-type: none;
-			margin-left:-30px;
-			a {
-				text-decoration: none;
-			}
-			
+		ul {
+		  padding-left: 0px;
+		  margin-left: 0px;
+
+		  li {
+		    list-style-type: none;
+
+		    a {
+		      text-decoration: none;
+		    }
+		  }
 		}
 	}
 
