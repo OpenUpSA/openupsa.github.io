@@ -12,7 +12,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@openupsa">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
-  <meta name="twitter:description" content="{% if page.short %}{{ page.short }}{% elsif page.oneliner %}{{ page.oneliner }}{% else %}{{ site.description }}{% endif %}"">
+  <meta name="twitter:description" content="{% if page.short %}{{ page.short }}{% elsif page.oneliner %}{{ page.oneliner }}{% else %}{{ site.description }}{% endif %}">
   <meta name="twitter:creator" content="@openupsa">
   <meta name="twitter:image" content="{% if page.layout == 'article' %}{{ site.url }}/img/articles/{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}">
 
@@ -21,7 +21,7 @@
   <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}" />
   <meta property="og:url" content="{{ site.url }}" />
   <meta property="og:image" content="{% if page.layout == 'article' %}{{ site.url }}/img/articles/{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}" />
-  <meta property="og:description" content="{% if page.short %}{{ page.short }}{% elsif page.oneliner %}{{ page.oneliner }}{% else %}{{ site.description }}{% endif %}"" />
+  <meta property="og:description" content="{% if page.short %}{{ page.short }}{% elsif page.oneliner %}{{ page.oneliner }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -30,6 +30,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 </head>
