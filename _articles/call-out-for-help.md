@@ -16,8 +16,6 @@ themes:
 featured: true
 ---
 
-Code for South Africa and [SAFLII](http://www.saflii.org) (South African Legal Information Institute) are currently creating the largest digital repository of freely available gazettes online. It might be surprising to hear but you can only access gazettes at a number of libraries and only in paper format. Digital versions are only available behind paywalls and cost a fortune to access. We need help digitising them so that we can preserve South Africa's history. We’re making some excellent progress but now we need your help digitising a critical part of South Africa’s history: we need support with computing power, cloud storage, and OCR. If you can help, please email us at [gazettes@code4sa.org](mailto:gazettes@code4sa.org).
-
 It might be surprising to know but you can only access gazettes at a number of libraries and only in paper format. Digital versions are only available behind paywalls and cost a fortune to access. It might also be surprising that even government pays for expensive subscriptions to gazettes, even though they are not subject to copyright and should be available to all South Africans.
 
 Enter [OpenGazettes](http://opengazettes.org.za). A fully free, fully searchable, collection of gazettes online. Use the [API](https://search.opengazettes.org.za/help/api) or just [search](http://search.opengazettes.org.za/) across approximately 13,000 national and provincial gazettes. 

@@ -13,10 +13,10 @@ tool-info:
 - bullet: Explore, analyse, visualise and download data
 - bullet: Add new datasets by emailing info@openup.org.za
 slideshow:
-- image: dataportal1.jpg
-- image: dataportal2.jpg
-- image: dataportal3.jpg
-- image: dataportal4.jpg
+- image: dataportal1.png
+- image: dataportal2.png
+- image: dataportal3.png
+- image: dataportal4.png
 creators:
 - name: adi
 collaborators:
