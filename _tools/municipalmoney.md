@@ -23,6 +23,9 @@ external-creators:
 - name: Damian Schlechter
   image: damian.jpg
   external-url: https://github.com/xybrnet
+- name: Fritz Jooste
+  image: fritz.jpg
+  external-url: http://fritzjooste.com
 collaborators:
 - name: National Treasury
   image: treasury.png
