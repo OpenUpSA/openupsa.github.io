@@ -612,20 +612,19 @@ p {
 		h4 {
 			margin-bottom: 40px;
 		}
-		.article {
-			.title {
-				margin-bottom: 2px;
-				font-weight: bold;
+		.article-title {
+			padding: 10px;
+			background-color: #a4da22;
+			a, a:hover {
+				color: #fff;
 			}
-			.author {
-				font-style: italic;
-			}
-			.short {
-				margin-bottom: 20px;
-			}
-			img {
-				width: 100%;
-			}
+		}
+		.article-author {
+			padding: 10px 0px;
+		}
+		.one-article {
+			min-height: 500px;
+			margin-bottom: 30px;
 		}
 	}
 
@@ -853,5 +852,21 @@ box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
 	    	}
 	    }
 	  }
+	}
+	.article-list {
+		.article-title {
+			padding: 10px;
+			background-color: #a4da22;
+			a, a:hover {
+				color: #fff;
+			}
+		}
+		.article-author {
+			padding: 10px 0px;
+		}
+		.one-article {
+			min-height: 450px;
+			margin-bottom: 30px;
+		}
 	}
 }
