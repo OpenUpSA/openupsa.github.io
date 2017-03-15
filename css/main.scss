@@ -545,8 +545,19 @@ p {
 		margin: 40px 0;
 	}
 	.type-articles {
-		.article-box {
-			margin-bottom: 20px;
+		.article-title {
+			padding: 10px;
+			background-color: #a4da22;
+			a, a:hover {
+				color: #fff;
+			}
+		}
+		.article-author {
+			padding: 10px 0px;
+		}
+		.one-article {
+			min-height: 500px;
+			margin-bottom: 30px;
 		}
 	}
 }
