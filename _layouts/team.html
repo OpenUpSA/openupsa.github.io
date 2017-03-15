@@ -74,35 +74,36 @@ layout: base
                     <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
                   </div>
 
-                  <p>{{ article.short }}</p>
-
-                  {% if article.tools %}
-                    {% for tool in site.tools %}
-                      {% for articletool in article.tools %}
-                        {% if tool.name == articletool.name %}
-                          <span class="tags"><a class="badge tool" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a></span>
-                        {% endif %}
+                  <div class="tag-wrapper">
+                    {% if article.tools %}
+                      {% for tool in site.tools %}
+                        {% for articletool in article.tools %}
+                          {% if tool.name == articletool.name %}
+                            <span class="tags"><a class="badge tool" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a></span>
+                          {% endif %}
+                        {% endfor %}
                       {% endfor %}
-                    {% endfor %}
-                  {% endif %}
-                  {% if article.themes %}
-                    {% for theme in site.themes %}
-                      {% for articletheme in article.themes %}
-                        {% if theme.name == articletheme.name %}
-                          <span class="tags"><a class="badge theme" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></span>
-                        {% endif %}
+                    {% endif %}
+                    {% if article.themes %}
+                      {% for theme in site.themes %}
+                        {% for articletheme in article.themes %}
+                          {% if theme.name == articletheme.name %}
+                            <span class="tags"><a class="badge theme" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></span>
+                          {% endif %}
+                        {% endfor %}
                       {% endfor %}
-                    {% endfor %}
-                  {% endif %}
-                  {% if article.types %}
-                    {% for type in site.types %}
-                      {% for articletype in article.types %}
-                        {% if type.name == articletype.name %}
-                          <span class="tags"><a class="badge type" href="{{ type.url | prepend: site.baseurl }}">{{ type.title }}</a></span>
-                        {% endif %}
+                    {% endif %}
+                    {% if article.types %}
+                      {% for type in site.types %}
+                        {% for articletype in article.types %}
+                          {% if type.name == articletype.name %}
+                            <span class="tags"><a class="badge type" href="{{ type.url | prepend: site.baseurl }}">{{ type.title }}</a></span>
+                          {% endif %}
+                        {% endfor %}
                       {% endfor %}
-                    {% endfor %}
-                  {% endif %}
+                    {% endif %}
+                  </div>
+                  
                 </div>
 
               {% endif %}
