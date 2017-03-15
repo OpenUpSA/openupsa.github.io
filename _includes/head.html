@@ -14,18 +14,17 @@
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
   <meta name="twitter:description" content="{% if page.short %}{{ page.short }}{% elsif page.oneliner %}{{ page.oneliner }}{% else %}{{ site.description }}{% endif %}">
   <meta name="twitter:creator" content="@openupsa">
-  <meta name="twitter:image" content="{% if page.layout == 'article' %}{{ site.url }}/img/articles/{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.layout == 'article' %}{{ site.url }}/img/articles/{{ page.image }}{% elsif page.layout == 'tool' %}{{ site.url }}/img/tools/{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}">
 
   <!-- Open Graph data -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
   <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}" />
   <meta property="og:url" content="{{ site.url }}" />
-  <meta property="og:image" content="{% if page.layout == 'article' %}{{ site.url }}/img/articles/{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}" />
+  <meta property="og:image" content="{% if page.layout == 'article' %}{{ site.url }}/img/articles/{{ page.image }}{% elsif page.layout == 'tool' %}{{ site.url }}/img/tools/{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}" />
   <meta property="og:description" content="{% if page.short %}{{ page.short }}{% elsif page.oneliner %}{{ page.oneliner }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/atom+xml" title="Recently added gazettes" href="http://code4sa-gazettes.s3.amazonaws.com/archive/recently-added.atom">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
