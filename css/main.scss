@@ -55,8 +55,19 @@ body {
 			padding:5px 10px;
 			border-radius: 0;
 		}
+		.tool {
+			background-color: #999;
+			&:hover {
+				background-color: #777;
+				color: #fff;
+			}
+		}
 		.type {
 			background-color: #3c763d;
+			&:hover {
+				background-color: #2a592a;
+				color: #fff;
+			}
 		}
 		.theme {
 			background-color: #a4da22;
@@ -126,8 +137,13 @@ body {
 	}
 	.banner-notice {
 		margin-top: -20px;
+		background-color: #91c318;
 		.announcement {
-			padding: 10px 0; 
+			padding: 10px 0;
+			color: #fff;
+			a {
+				color: white;
+			}
 		}
 	}
 	.banner {
@@ -162,14 +178,14 @@ body {
 		text-align:right;
 		a {
 			color: #a4da22;
-		}
-		a:hover {
+			&:hover {
 				color: #91c318;
 			}
+		}
 		p {
 			font-size: 24px;
-    		font-weight: 600;
-    		font-family: 'open sans', sans-serif;
+  		font-weight: 600;
+  		font-family: 'open sans', sans-serif;
 		}
 	}
 	.articles {
@@ -514,8 +530,7 @@ p {
 	}
 	.theme-articles {
 		.article-box {
-			margin-bottom: 20px;
-			min-height: 200px;
+			margin-bottom: 50px;
 		}
 	}
 }
