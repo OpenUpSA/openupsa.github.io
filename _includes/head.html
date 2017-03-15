@@ -3,8 +3,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:image" content="{% if page.layout == 'article' %}{{ site.url }}/img/articles/{{ page.image }}{% else %}{{ site.url }}/img/logo.png{% endif %}" />
-
   <title>{{ site.title | escape }}{% if page.title %} | {{ page.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.short %}{{ page.short }}{% elsif page.oneliner %}{{ page.oneliner }}{% else %}{{ site.description }}{% endif %}" />
 
