@@ -10,7 +10,7 @@ oneliner: How is your municipality managing your money?
 opener: Municipal Money is a web-based tool designed to inform citizens on their local authority's financial performance and allows comparisons between municipalities.
 tool-info:
 - bullet: See financial statements for your municipality
-- bullet: Compare your municipalities budget and spend with another
+- bullet: Compare your municipality's budget and spend with another
 - bullet: Access municipal finance data for municiplaities across South Africa
 slideshow:
 - image: mm2.jpg
