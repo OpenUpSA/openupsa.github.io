@@ -4,7 +4,7 @@ author: adi
 title: Open Letter from Director, Adi Eyal
 date: 2017-03-13
 short: |
-  Dear friends, I want to share with you an important announcement.
+  Dear friends, I want to share an important announcement with you.
 image: adi-letter.png
 homepage: true
 ---

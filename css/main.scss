@@ -54,7 +54,6 @@ body {
 
 .tags {
   text-transform: uppercase;
-  margin-bottom: 5px;
   a {
     padding:5px 10px;
     border-radius: 0;
@@ -408,17 +407,27 @@ body {
   }
 
   .related-articles {
-    .related-duo {
-      margin-bottom: 20px;
-      @media (max-width: 768px) {
-        margin-bottom: 0;
-        .related-single {
-          margin-bottom: 20px;
-        }
+    img {
+      width: 100%;
+    }
+    .article-title {
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      width: calc(100% - 30px);
+      padding: 10px;
+      background-color: $green;
+      a, a:hover {
+        color: #fff;
       }
-      img {
-        width: 100%;
-      }
+    }
+    .one-article {
+      margin-bottom: 25px;
+    }
+    .tags {
+      position: absolute;
+      top: 15px;
+      left: 25px;
     }
   }
 
@@ -869,6 +878,11 @@ footer {
   }
   .article-list {
     .article-title {
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      width: calc(100% - 30px);
+      bottom: 0;
       padding: 10px;
       background-color: $green;
       a, a:hover {
@@ -879,8 +893,13 @@ footer {
       padding: 10px 0px;
     }
     .one-article {
-      min-height: 450px;
       margin-bottom: 30px;
+    }
+    .tag-wrapper {
+      position: absolute;
+      top: 15px;
+      left: 25px;
+      width: calc(100% - 50px);
     }
   }
 }
