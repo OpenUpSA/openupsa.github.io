@@ -34,6 +34,18 @@ body {
       color: $green;
     }
   }
+  .btn {
+    background-color: $green;
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+    font-weight: 700;
+    transition: background-color 150ms ease-out;
+    &:hover {
+      background-color: $green-darker;
+      color: #fff;
+    }
+  }
 }
 
 .page-intro {
@@ -127,7 +139,7 @@ body {
           background-color: $green-darker;
           color: #fff;
         }
-      } 
+      }
     }
     .navbar-brand {
       font-family: 'Libre Franklin', sans-serif;
@@ -315,7 +327,7 @@ body {
         font-size: 1.7em;
       }
     }
-  } 
+  }
   .all-tools {
     margin-top: 30px;
     .row {
@@ -328,7 +340,7 @@ body {
     }
 
   }
-  
+
 }
 .single-article {
   article {
@@ -486,7 +498,7 @@ body {
       line-height: 1.3em;
    }
    .nakeddata-archive {
-    
+
    }
   }
 
@@ -857,14 +869,14 @@ footer {
 }
 
 .team-member {
-  
+
   .split {
     margin-bottom:50px;
     img {
       width: 100%;
     }
   }
-  
+
   .tools {
     margin-top: 25px;
     &.row {
