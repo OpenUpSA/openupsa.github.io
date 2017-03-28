@@ -15,12 +15,19 @@ $(function() {
         self.searchUrlTemplate = "https://data.code4sa.org/resource/" + code + ".json?$q={0}";
         self.searchMoreUrlTemplate = "https://data.code4sa.org/" + extra + "/data?q={0}";
         break;
+      case "socrata_private":
+        self.searchUrlTemplate = "http://127.0.0.1:8000/portalproxy/resource/" + code + ".json?$q={0}";
+        self.searchMoreUrlTemplate = "http://127.0.0.1:8000/portalproxy/resource/" + code + ".csv?$q={0}";
+        break;
       case "sourceafrica":
         self.searchUrlTemplate = "https://dc.sourceafrica.net/api/search.json?q=projectid%3A404-sens+{0}&page=0&sections=true&mentions=3";
         self.searchMoreUrlTemplate = "https://sourceafrica.net/search.html#q=projectid%3A404-sens%20{0}";
         break;
     }
 
+    self.handleError = function() {
+      self.error = true;
+    };
     self.parse_socrata = function(resp) {
       self.total_hits = resp.length;
       self.hits = [];
@@ -40,6 +47,7 @@ $(function() {
         });
       }
     };
+    self.parse_socrata_private = self.parse_socrata;
 
     self.parse_sourceafrica = function(resp) {
       self.total_hits = resp.total;
@@ -102,6 +110,7 @@ $(function() {
         })
         .fail(function(jqXHR, textStatus, errorThrown) {
           self.searching = false;
+          self.handleError.call(this)
           error(jqXHR, textStatus, errorThrown);
           result.fail();
         });
@@ -111,7 +120,7 @@ $(function() {
   };
 
   var datasets = [
-    new Dataset("socrata", "CIPC", "x6jj-hasw", "Business/SA-CIPC-Company-Names-Registration-Numbers-and-Det/f9mi-hay7"),
+    new Dataset("socrata_private", "CIPC", "5erp-fahs", "dataset/CIPC-attempt-2/5erp-fahs"),
     new Dataset("socrata", "UK Land Registry", "qxgb-avr5", "Business/UK-Land-Registry/n7gy-as2q"),
     new Dataset("socrata", "Tender Awards 2015-2016", "9vmn-5tnb", "Government/Tender-Awards-2015-2016/kvv2-xrvr"),
     new Dataset("sourceafrica", "SENS", "404-sens"),
