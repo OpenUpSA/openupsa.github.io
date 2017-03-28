@@ -112,7 +112,7 @@ $(function() {
           self.searching = false;
           self.handleError.call(this)
           error(jqXHR, textStatus, errorThrown);
-          result.fail();
+          result.resolve();
         });
 
       return result;
