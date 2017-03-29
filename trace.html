@@ -92,6 +92,11 @@ extra_js:
 		<h3 class="panel-title">{{ name }}</h3>
 	      </div>
 	      <div class="panel-body">
+                {{#if hint}}
+                <div class="hint">
+                  {{hint}}
+                </div>
+                {{/if}}
 		{{#if hits}}
 		  <ul class="hits">
 		  {{#each hits}}
@@ -106,7 +111,9 @@ extra_js:
 		  {{/unless}}
 		{{/if}}
 		{{#if error}}
-		  <p>Woops! Something went wrong. Please try again or get in touch.</p>
+		  <div class="error">
+                    Woops! Something went wrong. Please try again or get in touch.
+                  </div>
 		{{/if}}
 	      </div>
 	    </div>

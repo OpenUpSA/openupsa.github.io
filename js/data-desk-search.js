@@ -1,6 +1,6 @@
 $(function() {
 
-  var Dataset = function(type, name, code, extra, hitTemplate) {
+  var Dataset = function(type, name, code, extra, hitTemplate, hintFun) {
     var self = this;
 
     self.type = type;
@@ -91,6 +91,12 @@ $(function() {
       }
     };
 
+    if (hintFun) {
+      self.makeHint = hintFun;
+    } else {
+      self.makeHint = function(query) { return null; };
+    }
+
     self.markText = function(text, query) {
       var tmp = $.parseHTML("<div>" + text + "</div>")[0];
       new Mark(tmp).mark(stemmer(query), {separateWordSearch: true});
@@ -98,6 +104,7 @@ $(function() {
     };
 
     self.reset = function() {
+      self.hint = null;
       self.hits = [];
       self.total_hits = 0;
       self.searching = true;
@@ -112,6 +119,7 @@ $(function() {
 
       self.searchMoreURL = self.searchMoreUrlTemplate.replace("{0}", escapedQuery);
       self.q = query;
+      self.hint = self.makeHint(query);
 
       $.ajax(url)
         .done(function(resp) {
@@ -135,8 +143,29 @@ $(function() {
     };
   };
 
+  var cipcHint = function(query) {
+    var SAIDMatches = /(\d{6})\d{4}(\d{2})\d/.exec(query);
+    var CIDMatches = /(\d{4})\/?(\d{6})\/?(\d{2})/.exec(query);
+    var hint = "";
+    if (SAIDMatches) {
+      hint += ["It looks like you're trying to search for an SA ID ",
+               SAIDMatches[0],
+               ". SA IDs in this dataset are usually written like ",
+               SAIDMatches[1], " XXXX ", SAIDMatches[2], " X or just the date of birth ",
+               SAIDMatches[1], ". Try also searching for those. "].join('');
+    }
+    if (CIDMatches) {
+      hint += ["It looks like you're trying to search for a company number ",
+               CIDMatches[0],
+               ". Company numbers in this dataset are usually written like ",
+               CIDMatches[1], " / ", CIDMatches[2], " / ", CIDMatches[3],
+               ". Try also searching with spaces and slashes in that form. "].join('');
+    }
+    return hint;
+  };
+
   var datasets = [
-    new Dataset("socrata_private", "CIPC", "5erp-fahs", "dataset/CIPC-attempt-2/5erp-fahs", Handlebars.compile($("#cipc-hit-template").html())),
+    new Dataset("socrata_private", "CIPC", "5erp-fahs", null, Handlebars.compile($("#cipc-hit-template").html()), cipcHint),
     new Dataset("socrata", "UK Land Registry", "qxgb-avr5", "Business/UK-Land-Registry/n7gy-as2q"),
     new Dataset("socrata", "Tender Awards 2015-2016", "9vmn-5tnb", "Government/Tender-Awards-2015-2016/kvv2-xrvr"),
     new Dataset("sourceafrica", "SENS", "404-sens"),
