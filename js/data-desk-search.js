@@ -1,7 +1,4 @@
 $(function() {
-  var error = function(jqXHR, textStatus, errorThrown) {
-    console.log(textStatus, errorThrown, jqXHR);
-  };
 
   var Dataset = function(type, name, code, extra) {
     var self = this;
@@ -109,7 +106,11 @@ $(function() {
         .fail(function(jqXHR, textStatus, errorThrown) {
           self.searching = false;
           self.error = true;
-          error(jqXHR, textStatus, errorThrown);
+          console.log(textStatus, errorThrown, jqXHR);
+          if ('ga' in window) {
+            logMsg = self.type + " query: \"" + self.q + "\" " + textStatus + ": " + errorThrown;
+            ga('send', 'event', 'corporate-data-search', 'error', logMsg);
+          }
           result.resolve();
         });
 
@@ -142,7 +143,7 @@ $(function() {
         });
     });
 
-    if ('ga' in window) ga('send', 'event', 'corporate-data-search', q);
+    if ('ga' in window) ga('send', 'event', 'corporate-data-search', 'request', q);
   });
 
 });
