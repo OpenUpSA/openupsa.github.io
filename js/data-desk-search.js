@@ -130,16 +130,25 @@ $(function() {
 
   $("#corporate-data-search form").on('submit', function(e) {
     e.preventDefault();
-    resultsContainer.empty();
-    var q = $(this).find('[name=q]').val();
 
-    datasets.forEach(function(dataset) {
+    var q = $(this).find('[name=q]').val(),
+        perCol = Math.ceil(datasets.length / 2);
+
+    resultsContainer
+      .show()
+      .find('.panel').remove();
+
+    datasets.forEach(function(dataset, i) {
+      // column it should go in
+      var col = Math.floor(i / perCol) + 1,
+          $output = resultsContainer.find('.col-' + col);
+
       dataset.reset();
-      resultsContainer.append(datasetTemplate(dataset));
+      $output.append(datasetTemplate(dataset));
 
       dataset.search(q)
         .then(function() {
-          resultsContainer.find("#" + dataset.id).replaceWith(datasetTemplate(dataset));
+          $output.find("#" + dataset.id).replaceWith(datasetTemplate(dataset));
         });
     });
 
