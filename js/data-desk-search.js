@@ -1,7 +1,6 @@
 $(function() {
 
   var Dataset = function(type, name, code, extra, hitTemplate, hintFun) {
-  var Dataset = function(type, name, code, extra, hintFun) {
     var self = this;
 
     self.type = type;
