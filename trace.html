@@ -4,6 +4,7 @@ extra_stylesheets:
   - /css/search.css
 extra_js:
  - https://cdn.jsdelivr.net/g/mark.js@8.8.2(mark.min.js+jquery.mark.js
+ - /js/underscore-1.8.3-min.js
  - /js/handlebars-v4.0.5.js
  - /js/PorterStemmer1980.min.js
  - /js/data-desk-search.js
@@ -58,58 +59,76 @@ extra_js:
 	  <a target="_blank" class="btn btn-default" href="https://sourceafrica.net/search.html#q=projectid%3A404-sens">SENS</a>
 	  <a target="_blank" class="btn btn-default" href="https://data.code4sa.org/">Code for South Africa data portal</a>
 	</p>
-
       </div>
 
       <div id="corporate-data-search">
-	<h4 class="text-center">Search our Collection</h4>
+	<div class="container">
+	  <h4 class="text-center">Search our Collection</h4>
 
-	<div class="row">
-	  <div class="col-md-8 col-md-offset-2">
-	    <form method="get" action="#">
-	      <div class="input-group">
-		<input id="search-query-input" class="form-control" name="q" placeholder="Search for corporate data" type="text" autocomplete="off">
-		<span class="input-group-btn">
-		  <button class="btn btn-primary" type="submit">Search</button>
-		</span>
-	      </div>
-	    </form>
+	  <form method="get" action="#">
+	    <div class="input-group">
+	      <input id="search-query-input" class="form-control" name="q" placeholder="Search for corporate data" type="text" autocomplete="off">
+	      <span class="input-group-btn">
+		<button class="btn btn-primary" type="submit">Search</button>
+	      </span>
+	    </div>
+	  </form>
 
-	    <div class="search-results"></div>
-
-	    <script id="search-dataset-template" type="text/x-handlebars-template">
-	      {% raw %}
-
-	      <div class="panel panel-default {{#if searching}}searching{{/if}}" id="{{ id }}">
-		<div class="panel-heading">
-		  <h3 class="panel-title">{{ name }}</h3>
-		</div>
-		<div class="panel-body">
-		  {{#if hits}}
-		    <ul class="hits">
-		    {{#each hits}}
-		      <li>{{{ summary }}}</li>
-		    {{/each}}
-		    </ul>
-
-		    <div><a href="{{ searchMoreURL }}" target="_blank">All {{ total_hits }} results from {{ name }} →</a></div>
-		  {{else}}
-		    {{#unless searching}}
-		    <i>nothing found</i>
-		    {{/unless}}
-		  {{/if}}
-		  {{#if error}}
-		    <p>Woops! Something went wrong. Please try again or get in touch.</p>
-		  {{/if}}
-		</div>
+	  <div class="search-results">
+	    <div class="row">
+	      <div class="col-md-6 col-1">
 	      </div>
 
-	      {% endraw %}
-	    </script>
-
+	      <div class="col-md-6 col-2">
+	      </div>
+	    </div>
 	  </div>
-	</div>
 
+	  <script id="search-dataset-template" type="text/x-handlebars-template">
+	    {% raw %}
+
+	    <div class="panel panel-default {{#if searching}}searching{{/if}}" id="{{ id }}">
+	      <div class="panel-heading">
+		<h3 class="panel-title">{{ name }}</h3>
+	      </div>
+	      <div class="panel-body">
+		{{#if hits}}
+		  <ul class="hits">
+		  {{#each hits}}
+		    <li>{{{ summary }}}</li>
+		  {{/each}}
+		  </ul>
+
+		  <div><a href="{{ searchMoreURL }}" target="_blank">All {{ total_hits }} results from {{ name }} →</a></div>
+		{{else}}
+		  {{#unless searching}}
+		  <i>nothing found</i>
+		  {{/unless}}
+		{{/if}}
+		{{#if error}}
+		  <p>Woops! Something went wrong. Please try again or get in touch.</p>
+		{{/if}}
+	      </div>
+	    </div>
+
+	    {% endraw %}
+	  </script>
+
+	  <script id="cipc-hit-template" type="text/x-handlebars-template">
+	    {% raw %}
+
+	    <div class="name">{{ name }}</div>
+	    <div class="regno">{{ regno }} ({{ type }})</div>
+	    <div class="addr">{{ physaddress }}</div>
+	    <div class="addr">{{ postaddress }}</div>
+	    {{#each directors}}
+	    <div class="director"><strong>{{ director_position }}</strong>: {{ director_first_names }} {{ director_last_name }} {{ director_id }}</div>
+	    {{/each}}
+
+	    {% endraw %}
+	  </script>
+
+	</div>
       </div>
     </section>
 
