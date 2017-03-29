@@ -92,6 +92,11 @@ extra_js:
 		<h3 class="panel-title">{{ name }}</h3>
 	      </div>
 	      <div class="panel-body">
+                {{#if hint}}
+                <div class="hint">
+                  {{hint}}
+                </div>
+                {{/if}}
 		{{#if hits}}
 		  <ul class="hits">
 		  {{#each hits}}

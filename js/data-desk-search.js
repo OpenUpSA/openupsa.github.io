@@ -1,6 +1,7 @@
 $(function() {
 
-  var Dataset = function(type, name, code, extra, hitTemplate) {
+  var Dataset = function(type, name, code, extra, hitTemplate, hintFun) {
+  var Dataset = function(type, name, code, extra, hintFun) {
     var self = this;
 
     self.type = type;
@@ -91,6 +92,12 @@ $(function() {
       }
     };
 
+    if (hintFun) {
+      self.makeHint = hintFun;
+    } else {
+      self.makeHint = function(query) { return null; };
+    }
+
     self.markText = function(text, query) {
       var tmp = $.parseHTML("<div>" + text + "</div>")[0];
       new Mark(tmp).mark(stemmer(query), {separateWordSearch: true});
@@ -98,6 +105,7 @@ $(function() {
     };
 
     self.reset = function() {
+      self.hint = null;
       self.hits = [];
       self.total_hits = 0;
       self.searching = true;
@@ -112,6 +120,7 @@ $(function() {
 
       self.searchMoreURL = self.searchMoreUrlTemplate.replace("{0}", escapedQuery);
       self.q = query;
+      self.hint = self.makeHint(query);
 
       $.ajax(url)
         .done(function(resp) {
@@ -135,8 +144,21 @@ $(function() {
     };
   };
 
+  var cipcHint = function(query) {
+    var matches = /(\d{6})\d{4}(\d{2})\d/.exec(query);
+    if (matches) {
+      return ["It looks like you're trying to search for an SA ID ",
+              matches[0],
+              ". SA IDs in this dataset are usually written like ",
+              matches[1], " XXXX ", matches[2], " X or just the date of birth ",
+              matches[1], ". Try also searching for those."].join('');
+    } else {
+      return null;
+    }
+  };
+
   var datasets = [
-    new Dataset("socrata_private", "CIPC", "5erp-fahs", "dataset/CIPC-attempt-2/5erp-fahs", Handlebars.compile($("#cipc-hit-template").html())),
+    new Dataset("socrata_private", "CIPC", "5erp-fahs", null, Handlebars.compile($("#cipc-hit-template").html()), cipcHint),
     new Dataset("socrata", "UK Land Registry", "qxgb-avr5", "Business/UK-Land-Registry/n7gy-as2q"),
     new Dataset("socrata", "Tender Awards 2015-2016", "9vmn-5tnb", "Government/Tender-Awards-2015-2016/kvv2-xrvr"),
     new Dataset("sourceafrica", "SENS", "404-sens"),
