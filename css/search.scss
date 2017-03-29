@@ -19,6 +19,12 @@
       border-color: #ddd;
     }
 
+    .panel .hint, .panel .error {
+        background-color: #edf8d3;
+        font-size: 13px;
+        padding: 3px;
+    }
+
     .panel.searching {
       .panel-body {
 	padding: 30px;
