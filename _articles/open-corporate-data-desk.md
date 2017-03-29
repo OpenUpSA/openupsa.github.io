@@ -5,7 +5,7 @@ title: "Introducing Code for South Africa’s Data Desk: help us to help you mak
 date: 2016-11-28
 short: |
     We simply don't know enough about who owns what in the corporate world, or beneficial ownership, and this allows companies to get away with corruption, theft, even dodgy dealings with Sierra Leonian warlords. This is not the only reason, but it’s a big part of why Code for South Africa is going after corporate data.
-image: gazette-journalists.jpg
+image: open-corporates.jpg
 tools:
 - name: 
 types:
