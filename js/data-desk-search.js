@@ -145,16 +145,24 @@ $(function() {
   };
 
   var cipcHint = function(query) {
-    var matches = /(\d{6})\d{4}(\d{2})\d/.exec(query);
-    if (matches) {
-      return ["It looks like you're trying to search for an SA ID ",
-              matches[0],
-              ". SA IDs in this dataset are usually written like ",
-              matches[1], " XXXX ", matches[2], " X or just the date of birth ",
-              matches[1], ". Try also searching for those."].join('');
-    } else {
-      return null;
+    var SAIDMatches = /(\d{6})\d{4}(\d{2})\d/.exec(query);
+    var CIDMatches = /(\d{4})\/?(\d{6})\/?(\d{2})/.exec(query);
+    var hint = "";
+    if (SAIDMatches) {
+      hint += ["It looks like you're trying to search for an SA ID ",
+               SAIDMatches[0],
+               ". SA IDs in this dataset are usually written like ",
+               SAIDMatches[1], " XXXX ", SAIDMatches[2], " X or just the date of birth ",
+               SAIDMatches[1], ". Try also searching for those. "].join('');
     }
+    if (CIDMatches) {
+      hint += ["It looks like you're trying to search for a company number ",
+               CIDMatches[0],
+               ". Company numbers in this dataset are usually written like ",
+               CIDMatches[1], " / ", CIDMatches[2], " / ", CIDMatches[3],
+               ". Try also searching with spaces and slashes in that form. "].join('');
+    }
+    return hint;
   };
 
   var datasets = [
