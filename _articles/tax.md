@@ -4,7 +4,7 @@ author: roxanne
 title: Tax havens and evasions
 date: 2017-03-10
 short: In the second of our series introducing Code for South Africa's Transparent Corporates project, we look at tax evasion; what is it and what does it actually mean to call somewhere a tax haven?
-image: gazette-journalists.jpg
+image: tax.jpg
 tools:
 - name: opengazettes
 types:

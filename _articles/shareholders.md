@@ -4,7 +4,7 @@ author: roxanne
 title: Shareholder requests and the access battle
 date: 2017-03-07
 short: In the first of our series introducing Code for South Africa's Transparent Corporates project, we look at the state of transparency within company ownership and how the law facilitates access to this type of information.
-image: gazette-journalists.jpg
+image: shareholders.jpg
 tools:
 - name: 
 types:
