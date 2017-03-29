@@ -1,11 +1,11 @@
 $(function() {
 
-  var Dataset = function(type, name, code, extra) {
+  var Dataset = function(type, name, code, extra, hitTemplate) {
     var self = this;
 
     self.type = type;
     self.name = name;
-    self.id = Math.random().toString(36).substring(7);
+    self.id = name.toLowerCase().replace(/[^a-zA-Z0-9-]+/g, "-").replace(/-+/g, "-");
 
     switch (self.type) {
       case "socrata":
@@ -22,24 +22,45 @@ $(function() {
         break;
     }
 
+    self.hitTemplate = hitTemplate || function(hit) {
+      var summary = "";
+
+      $.each(hit, function(key, val) {
+        summary += " " + Handlebars.escapeExpression(val);
+      });
+
+      return summary;
+    };
+
     self.parse_socrata = function(resp) {
       self.total_hits = resp.length;
       self.hits = [];
 
-      resp = resp.slice(0, 5);
+      if (self.id == "cipc") {
+        // clump the same companies together with multiple director entries
+        resp = _.map(_.groupBy(resp, 'regno'), function(hits) {
+          var company = {};
 
-      for (var i = 0; i < resp.length; i++) {
-        var hit = resp[i];
-        var summary = "";
+          // core company info from first entry
+          _.each(hits[0], function(value, key) {
+            if (key.slice(0, 8) != "director") {
+              company[key] = value;
+            }
+          });
 
-        $.each(hit, function(key, val) {
-          summary += " " + Handlebars.escapeExpression(val);
-        });
+          // directors
+          company.directors = _.filter(hits, function(hit) { return !!hit.director_status; });
 
-        self.hits.push({
-          summary: self.markText(summary, self.q),
+          return company;
         });
       }
+
+      resp = resp.slice(0, 5);
+      resp.forEach(function(hit) {
+        self.hits.push({
+          summary: self.markText(self.hitTemplate(hit), self.q),
+        });
+      });
     };
     self.parse_socrata_private = self.parse_socrata;
 
@@ -71,12 +92,8 @@ $(function() {
     };
 
     self.markText = function(text, query) {
-      var tmp = document.createElement('div');
-
-      // mark() turns newlines into br
-      tmp.innerText = text.replace(/\n/, ' ');
+      var tmp = $.parseHTML("<div>" + text + "</div>")[0];
       new Mark(tmp).mark(stemmer(query), {separateWordSearch: true});
-
       return tmp.innerHTML;
     };
 
@@ -119,7 +136,7 @@ $(function() {
   };
 
   var datasets = [
-    new Dataset("socrata_private", "CIPC", "5erp-fahs", "dataset/CIPC-attempt-2/5erp-fahs"),
+    new Dataset("socrata_private", "CIPC", "5erp-fahs", "dataset/CIPC-attempt-2/5erp-fahs", Handlebars.compile($("#cipc-hit-template").html())),
     new Dataset("socrata", "UK Land Registry", "qxgb-avr5", "Business/UK-Land-Registry/n7gy-as2q"),
     new Dataset("socrata", "Tender Awards 2015-2016", "9vmn-5tnb", "Government/Tender-Awards-2015-2016/kvv2-xrvr"),
     new Dataset("sourceafrica", "SENS", "404-sens"),
@@ -130,16 +147,25 @@ $(function() {
 
   $("#corporate-data-search form").on('submit', function(e) {
     e.preventDefault();
-    resultsContainer.empty();
-    var q = $(this).find('[name=q]').val();
 
-    datasets.forEach(function(dataset) {
+    var q = $(this).find('[name=q]').val(),
+        perCol = Math.ceil(datasets.length / 2);
+
+    resultsContainer
+      .show()
+      .find('.panel').remove();
+
+    datasets.forEach(function(dataset, i) {
+      // column it should go in
+      var col = Math.floor(i / perCol) + 1,
+          $output = resultsContainer.find('.col-' + col);
+
       dataset.reset();
-      resultsContainer.append(datasetTemplate(dataset));
+      $output.append(datasetTemplate(dataset));
 
       dataset.search(q)
         .then(function() {
-          resultsContainer.find("#" + dataset.id).replaceWith(datasetTemplate(dataset));
+          $output.find("#" + dataset.id).replaceWith(datasetTemplate(dataset));
         });
     });
 
