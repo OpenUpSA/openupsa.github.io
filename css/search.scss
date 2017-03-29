@@ -30,10 +30,22 @@
 
     ul.hits {
       padding-left: 20px;
+      font-size: 14px;
 
       & > li {
         line-height: 1.4;
 	margin-bottom: 5px;
+      }
+    }
+
+    #cipc {
+      .hits > li {
+	list-style: none;
+
+	.name {
+	  font-weight: bold;
+	  margin-left: -20px;
+	}
       }
     }
   }

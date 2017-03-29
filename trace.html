@@ -4,6 +4,7 @@ extra_stylesheets:
   - /css/search.css
 extra_js:
  - https://cdn.jsdelivr.net/g/mark.js@8.8.2(mark.min.js+jquery.mark.js
+ - /js/underscore-1.8.3-min.js
  - /js/handlebars-v4.0.5.js
  - /js/PorterStemmer1980.min.js
  - /js/data-desk-search.js
@@ -109,6 +110,20 @@ extra_js:
 		{{/if}}
 	      </div>
 	    </div>
+
+	    {% endraw %}
+	  </script>
+
+	  <script id="cipc-hit-template" type="text/x-handlebars-template">
+	    {% raw %}
+
+	    <div class="name">{{ name }}</div>
+	    <div class="regno">{{ regno }} ({{ type }})</div>
+	    <div class="addr">{{ physaddress }}</div>
+	    <div class="addr">{{ postaddress }}</div>
+	    {{#each directors}}
+	    <div class="director">{{ director_position }}: {{ director_first_names }} {{ director_last_name }} {{ director_id }}</div>
+	    {{/each}}
 
 	    {% endraw %}
 	  </script>
