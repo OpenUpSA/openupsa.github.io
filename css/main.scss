@@ -926,8 +926,9 @@ footer {
   .hero {
     background-color: #666;
     padding: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
     margin-top: -20px;
+    color: #fff;
     h1.header {
       color: #fff;
       font-size: 42px;
@@ -935,7 +936,6 @@ footer {
     h3.header {
       font-family: 'News Cycle', sans-serif;
       font-size: 26px;
-      color: #e8ffda;
     }
     .hero-callout {
       margin-top: 20px;
@@ -1006,6 +1006,9 @@ footer {
       }
     }
   }
+  .mission {
+    margin-top: 20px;
+  }
   .callouts {
     padding-bottom: 30px;
     margin-top: -70px;
@@ -1035,14 +1038,16 @@ footer {
   }
   .corporate-data-matters {
     margin-top: 50px;
+    .example-box {
+      border: 1px solid #ddd;
+      padding: 5px 15px 15px 15px;
+      margin-bottom: 30px;
+    }
   }
-  .articles {
+  .article-list {
     margin-top: 50px;
     .article {
       margin-bottom: 20px;
-      img {
-        width: 100%;
-      } 
     }
   }
 }
