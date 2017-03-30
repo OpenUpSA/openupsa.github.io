@@ -97,12 +97,12 @@ extra_js:
 				  <li>The relationship between the company and communities (i.e. environmental impact, social responsibility, fair business practises.</li>
 				</ul>
 			</div>
-			
+
 		</div>
 	</div>
 
-	<section class="links container">
-    <div class="text-center collection">
+	<section class="collection container">
+    <div class="text-center">
 			<h2>Our Corporate Data Collection</h2>
 			  <a class="btn btn-default" href="#search-query-input" title="Search company names, numbers and director details from CIPC">CIPC</a>
 			  <a target="_blank" class="btn btn-default" href="https://data.code4sa.org/Government/Tender-Awards-2015-2016/kvv2-xrvr/data">Tenders</a>
@@ -110,31 +110,43 @@ extra_js:
 			  <a target="_blank" class="btn btn-default" href="https://sourceafrica.net/search.html#q=projectid%3A404-sens">SENS</a>
 			  <a target="_blank" class="btn btn-default" href="https://data.code4sa.org/">Code for South Africa data portal</a>
     </div>
+  </section>
 
-    <div class="corporate-data-matters">
-		  <h2 class="text-center">Why Corporate Data Matters</h2>
-		  <p class="lead text-center">Here are some examples of why Corporate Data matters.</p>
-
-			<div class="row">
-				<div class="col-sm-4">
+  <div class="container">
+	  <div class="row">
+		  <section class="col-md-6 corporate-data-matters">
+			  <h2 class="text-center">Why Corporate Data matters</h2>
+			  <p class="lead text-center">Here are some examples of why Corporate Data matters</p>
 				  <div class="well corporate-data-well">
 				    <h4>CER Full Disclosure Report</h4>
 				    <p>An investigation into corporate environmental compliance in South Africa. The report shows that some companies are committing serious compliance violations.</p>
 				    <p><a target="_blank" class="btn btn-default" href="http://cer.org.za/download/CER-Full-Disclosure.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download</a></p>
-				  </div>
-				</div>
+					</div>
 
-				<div class="col-sm-4">
 				  <div class="well corporate-data-well">
 				    <h4>OSF Extractive Companies and Transparency Working Paper Two</h4>
 				    <p>The Open Society Foundation is conducting ongoing research into South African disclosure practice and the drivers behind it.</p>
 				    <p><a target="_blank" class="btn btn-default" href="http://www.osf.org.za/wp-content/uploads/2017/01/OSF-Extractives-Working-Paper_Drivers-of-Disclosure-in-South-Africas-Extractive-Sector.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download</a></p>
 				  </div>
-				</div>
-			</div>
-    </div>
+		  </section>
 
-	</section>
+		  <section class="col-md-6 articles">
+			  <h2 class="text-center">Interesting articles</h2>
+			  <p class="lead text-center">Here are some articles you might be interested in</p>
+		  	{% for article in site.trace %}
+		  		<div class="row article">
+				    <div class="col-xs-4">
+				    	<a href="{{ article.external-url }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+				    </div>
+		  			<div class="col-xs-8">
+				    	<a href="{{ article.external-url }}">{{ article.title }}</a>
+				    	{{ article.content }}
+		  			</div>
+		  		</div>
+		    {% endfor %}
+		  </section>
+	  </div>
+  </div>
 
 </div>
 

@@ -998,12 +998,19 @@ footer {
       }
     }
   }
-  .links {
-    .collection {
-      margin-top: 50px;
-    }
-    .corporate-data-matters {
-      margin-top: 50px;
+  .collection {
+    margin-top: 50px;
+  }
+  .corporate-data-matters {
+    margin-top: 50px;
+  }
+  .articles {
+    margin-top: 50px;
+    .article {
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+      } 
     }
   }
 }
