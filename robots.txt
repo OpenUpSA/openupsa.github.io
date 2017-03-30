@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: https://openup.org.za/sitemap.xml
