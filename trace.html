@@ -12,19 +12,8 @@ extra_js:
 
 	<div class="hero">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-7">
-					<h1>Transparent Corporates</h1>
-					<h3>We're making corporate data freely and publically available, to empower you to hold the right people in the corporate sector accountable when they do things that affect your everyday life.</h3>
-				</div>
-				<div class="col-md-4 col-md-offset-1 hero-callout">
-					<h2>We're here to help</h2>
-
-					<p>We can help you find the important corporate data you're missing. Just send us a Data Request.</p>
-
-					<a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfC7tVCXIDjQzOF54MsUsdG4zJQIzka9PT7rnfRXXZG9lBTuw/viewform">Request Data</a>
-				</div>
-			</div>
+			<h1>TRACE</h1>
+			<h2>Transparent corporates</h2>
       <div id="corporate-data-search">
 				<h2 class="text-center">Search our Collection</h2>
 				<div class="row">
@@ -38,9 +27,6 @@ extra_js:
 							</div>
 				    </form>
 		      </div>
-			    <div class="row">
-				    <div class="search-results"></div>
-			    </div>
 			    <script id="search-dataset-template" type="text/x-handlebars-template">
 			      {% raw %}
 				      <div class="panel panel-default {{#if searching}}searching{{/if}}" id="{{ id }}">
@@ -72,8 +58,12 @@ extra_js:
 			    </script>
 			  </div>
 			</div>
-    </div>
+		</div>
 	</div>
+
+  <div class="row">
+    <div id="corporate-search-results"></div>
+  </div>
 
 	<div class="container">
 		<div class="callouts row">

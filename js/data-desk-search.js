@@ -124,7 +124,7 @@ $(function() {
     new Dataset("sourceafrica", "SENS", "404-sens"),
   ];
 
-  var resultsContainer = $('#corporate-data-search .search-results');
+  var resultsContainer = $('#corporate-search-results');
   var datasetTemplate = Handlebars.compile($('#search-dataset-template').html());
 
   $("#corporate-data-search form").on('submit', function(e) {
