@@ -40,3 +40,6 @@ sass:
 # Build settings
 markdown: kramdown
 exclude: [vendor]
+
+gems:
+  - jekyll-sitemap

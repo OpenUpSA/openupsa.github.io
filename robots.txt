@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://openup.org.za/sitemap.xml

@@ -119,6 +119,7 @@ $(function() {
 
       self.searchMoreURL = self.searchMoreUrlTemplate.replace("{0}", escapedQuery);
       self.q = query;
+
       self.hint = self.makeHint(query);
 
       $.ajax(url)
@@ -174,13 +175,9 @@ $(function() {
 
   var resultsContainer = $('#corporate-data-search .search-results');
   var datasetTemplate = Handlebars.compile($('#search-dataset-template').html());
-
-  $("#corporate-data-search form").on('submit', function(e) {
-    e.preventDefault();
-
-    var q = $(this).find('[name=q]').val(),
-        perCol = Math.ceil(datasets.length / 2);
-
+  var queryInput = $(this).find('[name=q]');
+  var startSearch = function(q) {
+    var perCol = Math.ceil(datasets.length / 2);
     resultsContainer
       .show()
       .find('.panel').remove();
@@ -198,8 +195,23 @@ $(function() {
           $output.find("#" + dataset.id).replaceWith(datasetTemplate(dataset));
         });
     });
+  };
 
+  $("#corporate-data-search form").on('submit', function(e) {
+    e.preventDefault();
+    var q = queryInput.val();
+    if ('pushState' in history)
+      history.pushState(q, "TRACE search: " + q, "trace.html?q=" + encodeURIComponent(q));
+    startSearch(q);
     if ('ga' in window) ga('send', 'event', 'corporate-data-search', 'request', q);
   });
+
+  window.onpopstate = function(event) {
+    if (event.state) {
+      var q = event.state;
+      queryInput.val(q);
+      startSearch(q);
+    }
+  }
 
 });
