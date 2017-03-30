@@ -137,6 +137,24 @@ extra_js:
 	    {% endraw %}
 	  </script>
 
+	  <script id="deceased-estate-hit-template" type="text/x-handlebars-template">
+	    {% raw %}
+
+	    <div class="">{{ id }}</div>
+	    <div class="">{{ file_number }}</div>
+	    <div class="">{{ name }}, {{ surname }}</div>
+	    <div class="">{{ date_of_death }}</div>
+            <div class="">{{ idno }}</div>
+            <div class="">{{ estate_tyoe }}</div>
+            <div class="">{{ masters_office }}</div>
+            <div title="Note: you may need to complete the captcha code on the home page if you get an error when visiting these notices. Older notices are also not always available any more.">
+              <div class=""><a href="{{ executor_url }}" target="_blank">Executor</a></div>
+              <div class=""><a href="{{ death_notice_url }}" target="_blank">Death Notice</a></div>
+            </div>
+
+	    {% endraw %}
+	  </script>
+
 	</div>
       </div>
     </section>
