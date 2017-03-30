@@ -1,143 +1,198 @@
 ---
 layout: base
+title: Transparent Corporates (TRACE)
+short: We're making corporate data freely and publically available, to empower you to hold the right people in the corporate sector accountable when they do things that affect your everyday life.
 extra_stylesheets:
   - /css/search.css
 extra_js:
  - https://cdn.jsdelivr.net/g/mark.js@8.8.2(mark.min.js+jquery.mark.js
+ - /js/underscore-1.8.3-min.js
  - /js/handlebars-v4.0.5.js
  - /js/PorterStemmer1980.min.js
  - /js/data-desk-search.js
 ---
-<div class="trace">
-
-	<div class="hero">
+<div class="trace-page">
+	<section class="hero">
 		<div class="container">
-			<h1>TRACE</h1>
-			<h2>Transparent corporates</h2>
-      <div id="corporate-data-search">
-				<h2 class="text-center">Search our Collection</h2>
-				<div class="row">
-				  <div class="col-md-8 col-md-offset-2">
-				    <form method="get" action="#">
-				      <div class="input-group">
-								<input id="search-query-input" class="form-control" name="q" placeholder="Search for corporate data" type="text" autocomplete="off">
-								<span class="input-group-btn">
-								  <button class="btn btn-primary" type="submit">Search</button>
-								</span>
-							</div>
-				    </form>
-		      </div>
-			    <script id="search-dataset-template" type="text/x-handlebars-template">
-			      {% raw %}
-				      <div class="panel panel-default {{#if searching}}searching{{/if}}" id="{{ id }}">
-								<div class="panel-heading">
-								  <h3 class="panel-title">{{ name }}</h3>
-								</div>
-								<div class="panel-body">
-								  {{#if hits}}
-								    <ul class="hits">
-									    {{#each hits}}
-									      <li>{{{ summary }}}</li>
-									    {{/each}}
-								    </ul>
+			<h1 class="text-center header">TRACE</h1>
+			<h2 class="text-center header">Transparent corporates</h2>
 
-								    <div>
-									    <a href="{{ searchMoreURL }}" target="_blank">All {{ total_hits }} results from {{ name }} →</a>
-								    </div>
-									  {{else}}
-									    {{#unless searching}}
-										    <i>nothing found</i>
-									    {{/unless}}
-									  {{/if}}
-									  {{#if error}}
-									    <p>Woops! Something went wrong. Please try again or get in touch.</p>
-									  {{/if}}
-								</div>
-				      </div>
-			      {% endraw %}
-			    </script>
-			  </div>
+      <div id="corporate-data-search">
+			  <h3 class="text-center header">Search for corporate data</h3>
+
+			  <form method="get" action="#">
+			    <div class="input-group">
+			      <input id="search-query-input" class="form-control" name="q" type="text" autocomplete="off">
+			      <span class="input-group-btn">
+							<button class="btn" type="submit">Search</button>
+			      </span>
+			    </div>
+			  </form>
+			  <script id="search-dataset-template" type="text/x-handlebars-template">
+			    {% raw %}
+
+			    <div class="panel panel-default {{#if searching}}searching{{/if}}" id="{{ id }}">
+			      <div class="panel-heading">
+							<h3 class="panel-title">{{ name }}</h3>
+			      </div>
+			      <div class="panel-body">
+              {{#if hint}}
+                <div class="hint">
+                  {{hint}}
+                </div>
+              {{/if}}
+							{{#if hits}}
+							  <ul class="hits">
+								  {{#each hits}}
+								    <li>{{{ summary }}}</li>
+								  {{/each}}
+							  </ul>
+						  <div><a href="{{ searchMoreURL }}" target="_blank">All {{ total_hits }} results from {{ name }} →</a></div>
+							{{else}}
+							  {{#unless searching}}
+								  <i>nothing found</i>
+							  {{/unless}}
+							{{/if}}
+							{{#if error}}
+							  <div class="error">
+                  Woops! Something went wrong. Please try again or get in touch.
+	              </div>
+							{{/if}}
+			      </div>
+			    </div>
+
+			    {% endraw %}
+			  </script>
+
+			  <script id="cipc-hit-template" type="text/x-handlebars-template">
+			    {% raw %}
+
+			    <div class="name">{{ name }}</div>
+			    <div class="regno">{{ regno }} ({{ type }}) - {{ status }}</div>
+			    <div class="addr">{{ physaddress }}</div>
+			    <div class="addr">{{ postaddress }}</div>
+			    {{#each directors}}
+				    <div class="director"><strong>{{ director_position }}</strong>: {{ director_first_names }} {{ director_last_name }} {{ director_id }}</div>
+			    {{/each}}
+
+			    {% endraw %}
+			  </script>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<h2>&nbsp;</h2>
+					<p>We're making corporate data freely and publically available, to empower you to hold the right people in the corporate sector accountable when they do things that affect your everyday life.</p>
+				</div>
+
+				<div class="col-md-6">
+					<h2>We're here to help</h2>
+					<p>We can help you find the important corporate data you're missing. Just send us a data request.</p>
+					<a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfC7tVCXIDjQzOF54MsUsdG4zJQIzka9PT7rnfRXXZG9lBTuw/viewform">Request data</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="search-results" class="container">
+	  <div class="row">
+	    <div class="col-md-6 col-1">
+	    </div>
+
+	    <div class="col-md-6 col-2">
+	    </div>
+	  </div>
+	</section>
+
+	<section class="callouts container">		
+    <div class="row">
+			<div class="col-sm-6 callout">
+			  <h2>What is this corporate data you speak of?</h2>
+			  <p>We have datasets and have done work around tender information, beneficial ownership, company shareholder registries, illicit financial flows, potential conflicts of interest in the private sector, and the environmental and social impacts that the decisions corporates make have on everyday life. You can read more about our work and the work other organisations are doing to improve corporate transparency and accountability here:</p>
 			</div>
 		</div>
-	</div>
+	</section>
 
-  <div class="row">
-    <div id="corporate-search-results"></div>
-  </div>
+	<section class="collection">
+		<div class="container">
+			<h2>Our corporate data collection</h2>
+			<div class="row">
+				<div class="col-sm-4 col-md-3">
+					<div class="item">
+						<a href="#search-query-input"><h3>CIPC</h3></a>
+						<p>Companies and Intellectual Property Commission database, including company names, registration numbers and director details.</p>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-md-3">
+					<div class="item">
+						<a href="https://data.code4sa.org/Government/Tender-Awards-2015-2016/kvv2-xrvr/data"><h3>Tenders</h3></a>
+						<p>A rough OCR of tender bulletins for 2015 and 2016</p>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-md-3">
+					<div class="item">
+						<a href="https://data.code4sa.org/Business/UK-Land-Registry/n7gy-as2q/data"><h3>UK Land Registry</h3></a>
+						<p>The latest list of properties from the UK Land Registry.</p>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-md-3">
+					<div class="item">
+						<a href="https://sourceafrica.net/search.html#q=projectid%3A404-sens"><h3>SENS</h3></a>
+						<p>Market announcements from publicly listed companies.</p>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-md-3">
+					<div class="item">
+						<a href="#"><h3>Restricted suppliers</h3></a>
+						<p>A list of blacklisted suppliers in all provinces from XX to XX.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 	<div class="container">
-		<div class="callouts row">
-			<div class="col-sm-4 callout">
-				<h2>Why Corporate Data?</h2>
-
-				<p>Our mission is simple: To make corporate data freely and publically available, and to empower you to hold the right people in the corporate sector accountable when they do things that affect your everyday life.</p>
-				<p>We believe you shouldn't have to pay for company information that should legally and legitimately be public.</p>
-				<p>Data Desk is a place where you can ask us to help you find information about corporates that affects you. We want to help you find it.</p>			
+		<div class="row">
+			<div class="col-md-6">
+				<section class="corporate-data-matters">
+					<h2>Why corporate data matters</h2>
+					<p>Here are some examples of why corporate data matters</p>
+					<div class="well corporate-data-well">
+					  <h4>CER Full Disclosure Report</h4>
+					  <p>An investigation into corporate environmental compliance in South Africa. The report shows that some companies are committing serious compliance violations.</p>
+					  <p><a target="_blank" class="btn btn-default" href="http://cer.org.za/download/CER-Full-Disclosure.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download</a></p>
+					</div>
+					<div class="well corporate-data-well">
+					  <h4>OSF Extractive Companies and Transparency Working Paper Two</h4>
+					  <p>The Open Society Foundation is conducting ongoing research into South African disclosure practice and the drivers behind it.</p>
+					  <p><a target="_blank" class="btn btn-default" href="http://www.osf.org.za/wp-content/uploads/2017/01/OSF-Extractives-Working-Paper_Drivers-of-Disclosure-in-South-Africas-Extractive-Sector.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download</a></p>
+					</div>
+				</section>			
 			</div>
-
-			<div class="col-sm-4 col-sm-offset-1 callout">
-				<h2>What is Corporate Data?</h2>
-
-				<p>We've defined corporate data in four ways, although we’d love to hear from you if there’s more we should be looking for.</p>
-
-				<ul>
-				  <li>Corporate structure. (i.e. corporate ownership, activity, key actors)</li>
-				  <li>The relationship between the company and the state (i.e. tender information, ownership, potential conflicts of interest)</li>
-				  <li>The relationship between the company and its shareholders (i.e. shareholder structure, reported information, financial information)</li>
-				  <li>The relationship between the company and communities (i.e. environmental impact, social responsibility, fair business practises.</li>
-				</ul>
+			<div class="col-md-6">
+				<section class="articles">
+					<h2>Some interesting articles</h2>
+					<p>Here are some articles you might care about</p>
+					{% for article in site.trace %}
+						<div class="row article">
+							<div class="col-xs-4">
+		            <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+							</div>
+							<div class="col-xs-8">
+								<a href="{{ article.external-url }}">{{ article.title }}</a>
+								{{ article.content }}
+							</div>
+						</div>
+					{% endfor %}
+				</section>
 			</div>
-
 		</div>
 	</div>
 
-	<section class="collection container">
-    <div class="text-center">
-			<h2>Our Corporate Data Collection</h2>
-			  <a class="btn btn-default" href="#search-query-input" title="Search company names, numbers and director details from CIPC">CIPC</a>
-			  <a target="_blank" class="btn btn-default" href="https://data.code4sa.org/Government/Tender-Awards-2015-2016/kvv2-xrvr/data">Tenders</a>
-			  <a target="_blank" class="btn btn-default" href="https://data.code4sa.org/Business/UK-Land-Registry/n7gy-as2q/data">UK Land Registry</a>
-			  <a target="_blank" class="btn btn-default" href="https://sourceafrica.net/search.html#q=projectid%3A404-sens">SENS</a>
-			  <a target="_blank" class="btn btn-default" href="https://data.code4sa.org/">Code for South Africa data portal</a>
-    </div>
-  </section>
-
-  <div class="container">
-	  <div class="row">
-		  <section class="col-md-6 corporate-data-matters">
-			  <h2 class="text-center">Why Corporate Data matters</h2>
-			  <p class="lead text-center">Here are some examples of why Corporate Data matters</p>
-				  <div class="well corporate-data-well">
-				    <h4>CER Full Disclosure Report</h4>
-				    <p>An investigation into corporate environmental compliance in South Africa. The report shows that some companies are committing serious compliance violations.</p>
-				    <p><a target="_blank" class="btn btn-default" href="http://cer.org.za/download/CER-Full-Disclosure.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download</a></p>
-					</div>
-
-				  <div class="well corporate-data-well">
-				    <h4>OSF Extractive Companies and Transparency Working Paper Two</h4>
-				    <p>The Open Society Foundation is conducting ongoing research into South African disclosure practice and the drivers behind it.</p>
-				    <p><a target="_blank" class="btn btn-default" href="http://www.osf.org.za/wp-content/uploads/2017/01/OSF-Extractives-Working-Paper_Drivers-of-Disclosure-in-South-Africas-Extractive-Sector.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download</a></p>
-				  </div>
-		  </section>
-
-		  <section class="col-md-6 articles">
-			  <h2 class="text-center">Interesting articles</h2>
-			  <p class="lead text-center">Here are some articles you might be interested in</p>
-		  	{% for article in site.trace %}
-		  		<div class="row article">
-				    <div class="col-xs-4">
-				    	<a href="{{ article.external-url }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
-				    </div>
-		  			<div class="col-xs-8">
-				    	<a href="{{ article.external-url }}">{{ article.title }}</a>
-				    	{{ article.content }}
-		  			</div>
-		  		</div>
-		    {% endfor %}
-		  </section>
-	  </div>
-  </div>
-
 </div>
-
-
