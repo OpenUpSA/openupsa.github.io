@@ -200,7 +200,8 @@ $(function() {
   $("#corporate-data-search form").on('submit', function(e) {
     e.preventDefault();
     var q = queryInput.val();
-    history.pushState(q, "TRACE search: " + q, "trace.html?q=" + q);
+    if ('pushState' in history)
+      history.pushState(q, "TRACE search: " + q, "trace.html?q=" + encodeURIComponent(q));
     startSearch(q);
     if ('ga' in window) ga('send', 'event', 'corporate-data-search', 'request', q);
   });
