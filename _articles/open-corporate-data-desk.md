@@ -12,7 +12,7 @@ types:
 - name: launch
 themes:
 - name: opendata
-- name: education
+- name: trace
 featured: true
 ---
 
