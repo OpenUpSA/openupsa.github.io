@@ -1,5 +1,7 @@
 ---
 layout: base
+title: Transparent Corporates (TRACE)
+short: We're making corporate data freely and publically available, to empower you to hold the right people in the corporate sector accountable when they do things that affect your everyday life.
 extra_stylesheets:
   - /css/search.css
 extra_js:
@@ -125,7 +127,7 @@ extra_js:
 	    {% raw %}
 
 	    <div class="name">{{ name }}</div>
-	    <div class="regno">{{ regno }} ({{ type }})</div>
+	    <div class="regno">{{ regno }} ({{ type }}) - {{ status }}</div>
 	    <div class="addr">{{ physaddress }}</div>
 	    <div class="addr">{{ postaddress }}</div>
 	    {{#each directors}}
