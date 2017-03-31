@@ -1,7 +1,8 @@
 (function() {
-  var $searchForm = $("#search-form"),
-      $q = $searchForm.find("[name=q]"),
-      resultsTemplate = Handlebars.compile($("#search-result-template").html());
+  var $form = $("#search-form"),
+      $q = $form.find("[name=q]"),
+      resultsTemplate = Handlebars.compile($("#search-result-template").html()),
+      $results = $("#search-results");
 
   // Initalize lunr with the fields it will be searching on. I've given title
   // a boost of 10 to indicate matches on this field are more important.
@@ -24,7 +25,7 @@
     });
   }
 
-  $searchForm.on('submit', function(e) {
+  $form.on('submit', function(e) {
     e.preventDefault();
     // TODO: push state
     doSearch($q.val());
@@ -35,6 +36,12 @@
   }, 200));
 
   function doSearch(q) {
+    q = q.trim();
+    if (q.length === 0) {
+      $results.empty();
+      return;
+    }
+
     var results = _.map(searchIndex.search(q), function(r) {
       hit = SITE_CONTENT[r.ref];
       hit.path = hit.url;
@@ -42,7 +49,7 @@
       return hit;
     });
 
-    $("#search-results").html(resultsTemplate({
+    $results.html(resultsTemplate({
       n: results.length,
       plural: results.length == 1 ? '' : 's',
       hits: results,
