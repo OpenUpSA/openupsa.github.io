@@ -7,12 +7,11 @@ short: |
     We don’t know enough about who owns what in corporates, which allows corruption, theft and dodgy dealings to happen. That’s why we’re going after the data. 
 image: open-corporates.jpg
 tools:
-- name: 
+- name: trace
 types:
 - name: launch
 themes:
 - name: opendata
-- name: trace
 featured: true
 ---
 
