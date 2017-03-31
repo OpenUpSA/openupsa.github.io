@@ -45,7 +45,7 @@
     var results = _.map(searchIndex.search(q), function(r) {
       hit = SITE_CONTENT[r.ref];
       hit.path = hit.url;
-      hit.snippet = hit.content.substring(0, 150) + "...";
+      hit.snippet = hit.content.length < 150 ? hit.content : hit.content.substring(0, 150) + "...";
       return hit;
     });
 

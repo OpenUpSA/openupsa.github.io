@@ -1062,6 +1062,23 @@ footer {
     list-style: none;
     margin-left: 0px;
     margin-bottom: 10px;
+    clear: both;
+
+    img {
+      float: left;
+      height: 85px; /* makes the width 142px for articles */
+      width: auto;
+      margin-bottom: 10px;
+    }
+
+    &.hit-tool img {
+      margin-left: 57px;
+    }
+
+    .info {
+      margin-left: 160px;
+    }
+
     h4 {
       margin-bottom: 0px;
     }
