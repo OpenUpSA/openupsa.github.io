@@ -12,6 +12,7 @@ $green: #9ed421;
 $green-darker: #8ab91d;
 $trace: #0f77bc;
 $trace-darker: #04609e;
+$trace-lighter: #8cc9f2;
 
 
 html {
@@ -1007,7 +1008,7 @@ footer {
     display: none;
     padding-top: 40px;
     mark {
-      background-color: $trace;
+      background-color: $trace-lighter;
       padding: 0em;
     }
 
