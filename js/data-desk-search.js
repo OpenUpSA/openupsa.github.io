@@ -170,6 +170,8 @@ $(function() {
     new Dataset("socrata", "Tender Awards 2015-2016", "9vmn-5tnb", "Government/Tender-Awards-2015-2016/kvv2-xrvr"),
     new Dataset("socrata", "Restricted Suppliers", "rvqa-n6ju", "Government/Database-of-Restricted-Suppliers/rvqa-n6ju"),
     new Dataset("sourceafrica", "SENS", "404-sens"),
+    new Dataset("socrata", "Deceased Estates", "x5eb-ewki", "dataset/Deceased-Estates/s2gz-zxmc", Handlebars.compile($("#deceased-estate-hit-template").html())),
+    new Dataset("socrata", "Trusts", "3jhi-ewix", "dataset/Trusts/3jhi-ewix"),
     new Dataset("socrata", "UK Land Registry", "qxgb-avr5", "Business/UK-Land-Registry/n7gy-as2q"),
   ];
 
