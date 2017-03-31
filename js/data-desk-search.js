@@ -28,7 +28,7 @@ $(function() {
       case "socrata_private":
         self.searchUrlTemplate = "https://backchat.code4sa.org/portalproxy/resource/" + code + ".json?$q={0}";
         self.searchMoreUrlTemplate = "https://backchat.code4sa.org/portalproxy/resource/" + code + ".csv?$q={0}";
-        self.metadataUrl = "http://localhost:8000/portalproxy/api/views/" + code + ".json";
+        self.metadataUrl = "https://backchat.code4sa.org/portalproxy/api/views/" + code + ".json";
         break;
       case "sourceafrica":
         self.searchUrlTemplate = "https://dc.sourceafrica.net/api/search.json?q=projectid%3A404-sens+{0}&page=0&sections=true&mentions=3";
