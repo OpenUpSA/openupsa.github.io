@@ -1049,3 +1049,21 @@ footer {
     }
   }
 }
+
+#search-results {
+  padding-top: 20px;
+  min-height: 80px;
+
+  ul {
+    padding-left: 0px;
+  }
+
+  li {
+    list-style: none;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    h4 {
+      margin-bottom: 0px;
+    }
+  }
+}

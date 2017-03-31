@@ -1,0 +1,60 @@
+---
+layout: base
+title: Search
+extra_js:
+- /js/lunr-1.0.0-min.js
+- /js/underscore-1.8.3-min.js
+- /js/handlebars-v4.0.5.js
+- /js/search.js
+---
+<div class="search-page">
+  <div class="container">
+
+    <form method="get" action="/search.html" id="search-form">
+      <div class="input-group">
+        <input id="search-box" class="form-control input-lg" type="text" name="q" placeholder="Search...">
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-default input-lg" value="search">Search</button>
+        </div>
+      </div>
+    </form>
+
+    <div id="search-results"></div>
+
+    <script>
+      var SITE_CONTENT = {
+        {% for post in site.articles %}
+        "{{ post.url | slugify }}": {
+          "title": "{{ post.title | xml_escape }}",
+          "author": "{{ post.author | xml_escape }}",
+          "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+          "url": "{{ post.url | xml_escape }}"
+        }
+        {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      };
+    </script>
+
+    <script id="search-result-template" type="text/handlebars">
+    {% raw %}
+
+    {{#if hits}}
+    <div class="text-muted">Found {{ n }} item{{ plural }}</div>
+    <ul>
+      {{#each hits}}
+      <li>
+        <h4><a href="{{ url }}">{{ title }}</a></h4>
+        <small class="text-muted">{{ url }}</small>
+        <p>{{ snippet }}</p>
+      </li>
+      {{/each}}
+    </ul>
+    {{else}}
+    <em>We couldn't find anything about that.</em>
+    {{/if}}
+
+    {% endraw %}
+    </script>
+
+  </div>
+</div>
