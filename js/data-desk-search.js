@@ -1,4 +1,16 @@
 $(function() {
+  Handlebars.registerHelper("debug", function(optionalValue) {
+
+    if (optionalValue) {
+      console.log("Value");
+      console.log("====================");
+      console.log(optionalValue);
+    } else {
+      console.log("Current Context");
+      console.log("====================");
+      console.log(this);
+    }
+  });
 
   var Dataset = function(type, name, code, extra, hitTemplate, hintFun) {
     var self = this;
@@ -19,6 +31,11 @@ $(function() {
       case "sourceafrica":
         self.searchUrlTemplate = "https://dc.sourceafrica.net/api/search.json?q=projectid%3A404-sens+{0}&page=0&sections=true&mentions=3";
         self.searchMoreUrlTemplate = "https://sourceafrica.net/search.html#q=projectid%3A404-sens%20{0}";
+        break;
+      case "aleph":
+        self.host = code;
+        self.searchUrlTemplate = code + "/api/1/query?q={0}";
+        self.searchMoreUrlTemplate = code + "/search?q={0}";
         break;
     }
 
@@ -91,11 +108,26 @@ $(function() {
       }
     };
 
-    if (hintFun) {
-      self.makeHint = hintFun;
-    } else {
-      self.makeHint = function(query) { return null; };
-    }
+    self.parse_aleph = function(resp) {
+      self.total_hits = resp.total;
+
+      resp.results.slice(0, 5).forEach(function(hit) {
+        if (hit.records.results.length === 1) {
+          hit.countString = "1 hit";
+        } else if (hit.records.results.length < 5) {
+          hit.countString = hit.records.results.length + " hits";
+        } else {
+          hit.countString = "5+ hits";
+        }
+        hit.host = self.host;
+        hit.query = encodeURIComponent(self.q);
+        self.hits.push({
+          summary: self.markText(self.hitTemplate(hit), self.q),
+        });
+      });
+    };
+
+    self.makeHint = hintFun || function(query) { return null; };
 
     self.markText = function(text, query) {
       var tmp = $.parseHTML("<div>" + text + "</div>")[0];
@@ -173,11 +205,13 @@ $(function() {
     new Dataset("socrata", "Deceased Estates", "x5eb-ewki", "dataset/Deceased-Estates/s2gz-zxmc", Handlebars.compile($("#deceased-estate-hit-template").html())),
     new Dataset("socrata", "Trusts", "3jhi-ewix", "dataset/Trusts/3jhi-ewix"),
     new Dataset("socrata", "UK Land Registry", "qxgb-avr5", "Business/UK-Land-Registry/n7gy-as2q"),
+    new Dataset("aleph", "Open Gazettes", "https://search.opengazettes.org.za", null, Handlebars.compile($("#aleph-hit-template").html())),
   ];
 
   var resultsContainer = $('#search-results');
   var datasetTemplate = Handlebars.compile($('#search-dataset-template').html());
-  var queryInput = $(this).find('[name=q]');
+  var $form = $("#corporate-data-search form");
+  var queryInput = $form.find('[name=q]');
   var startSearch = function(q) {
     var perCol = Math.ceil(datasets.length / 2);
     resultsContainer
@@ -199,7 +233,7 @@ $(function() {
     });
   };
 
-  $("#corporate-data-search form").on('submit', function(e) {
+  $form.on('submit', function(e) {
     e.preventDefault();
     var q = queryInput.val();
     if ('pushState' in history)
