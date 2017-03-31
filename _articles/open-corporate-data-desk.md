@@ -1,7 +1,7 @@
 ---
 layout: article
 author: sarah
-title: "Introducing Code for South Africa’s Data Desk: help us to help you make corporate data open"
+title: "Introducing OpenUp’s Data Desk: help us to help you make corporate data open"
 date: 2016-11-28
 short: |
     We don’t know enough about who owns what in corporates, which allows corruption, theft and dodgy dealings to happen. That’s why we’re going after the data. 
@@ -15,10 +15,10 @@ themes:
 featured: true
 ---
 
-Welcome to Code for South Africa’s Data Desk. Our mission is simple: To make corporate data freely and publically available, and to empower you to hold the right people in the corporate sector accountable when they do things that affect your everyday life. 
+Welcome to OpenUp’s Data Desk. Our mission is simple: To make corporate data freely and publically available, and to empower you to hold the right people in the corporate sector accountable when they do things that affect your everyday life. 
 
 
-Think of it as a corporate data hotline. Email us on <a href="mailto:datadesk@code4sa.org">datadesk@code4sa.org</a>, and ask us for the corporate data you’re after, and we’ll do whatever we can to help you out. We believe that you should not have to pay for information about companies that’s held by the state, affects your life, and should legitimately be public. 
+Think of it as a corporate data hotline. Email us on <a href="mailto:datadesk@openup.org.za">datadesk@code4sa.org</a>, and ask us for the corporate data you’re after, and we’ll do whatever we can to help you out. We believe that you should not have to pay for information about companies that’s held by the state, affects your life, and should legitimately be public. 
 
 
 What do we mean by corporate data? This is data that empowers you with the information you need to hold the private sector accountable. You could be a community member, wanting to know who owns the company that is developing a piece of land near your house. Or perhaps there’s a mine near your house and there seems to be some opacity around who its shareholders are. 
@@ -62,7 +62,7 @@ We’ve also opened up some <a href="https://data.code4sa.org/Business/SA-CIPC-C
 
 
 This is just the start. But we need your help. 
-We’d love to hear from you, so please get in touch with us on Twitter, <a href="https://twitter.com/@Code4SA">@Code4SA</a> email <a href="mailto:datadesk@code4sa.org">datadesk@code4sa.org</a>, or join our <a href="http://discuss.codebridge.org.za/t/cipc-data/72/3">discussion forum</a> and talk to us about what data we should be collecting, how we can help you find the data you need, and explore what we’ve already put out there.
+We’d love to hear from you, so please get in touch with us on Twitter, <a href="https://twitter.com/@OpenUpSA">@OpenUpSA</a> email <a href="mailto:datadesk@openup.org.za">datadesk@openup.org.za</a>, or join our <a href="http://discuss.codebridge.org.za/t/cipc-data/72/3">discussion forum</a> and talk to us about what data we should be collecting, how we can help you find the data you need, and explore what we’ve already put out there.
 Together, we can lift the lid on the murky world of corporate data.
 
 <hr>
