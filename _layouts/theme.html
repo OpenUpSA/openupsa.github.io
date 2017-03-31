@@ -43,7 +43,7 @@ layout: base
                 {% for tool in site.tools %}
                   {% for articletool in article.tools %}
                     {% if tool.name == articletool.name %}
-                      <span class="tags"><a class="badge tool" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a></span>
+                      <span class="tags"><a class="badge tool" href="{% if tool.skip-own-page %}{{ tool.external-url }}{% else %}{{ tool.url | prepend: site.baseurl }}{% endif %}">{{ tool.title }}</a></span>
                     {% endif %}
                   {% endfor %}
                 {% endfor %}

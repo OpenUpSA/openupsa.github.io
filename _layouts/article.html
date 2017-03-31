@@ -13,7 +13,7 @@ layout: base
               {% for tool in site.tools %}
                 {% for article-tool in page.tools %}
                   {% if article-tool.name == tool.name %}
-                    <a class="tool badge {{ tool.name }}" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a>
+                    <a class="tool badge {{ tool.name }}" href="{% if tool.skip-own-page %}{{ tool.external-url }}{% else %}{{ tool.url | prepend: site.baseurl }}{% endif %}">{{ tool.title }}</a>
                   {% endif %}
                 {% endfor %}
               {% endfor %}
@@ -79,7 +79,7 @@ layout: base
                           <div class="article-title">
                             <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
                           </div>
-                          <div class="tags"><a class="badge tool" href="{{ sitetool.url | prepend: site.baseurl }}">{{ sitetool.title }}</a></div>
+                          <div class="tags"><a class="badge tool" href="{% if sitetool.skip-own-page %}{{ sitetool.external-url }}{% else %}{{ tool.url | prepend: site.baseurl }}{% endif %}">{{ sitetool.title }}</a></div>
                         </div>
                         {% assign sameToolCount = sameToolCount | plus: 1 %}
                       {% endunless %}
