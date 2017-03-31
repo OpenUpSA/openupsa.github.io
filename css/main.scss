@@ -1015,6 +1015,15 @@ footer {
       border-color: #ddd;
     }
 
+    .panel-title {
+        display: inline;
+    }
+
+    .updated-date {
+        float: right;
+        color: #777;
+    }
+
     .panel .hint, .panel .error {
         background-color: #edf8d3;
         font-size: 13px;
