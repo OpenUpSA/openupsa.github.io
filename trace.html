@@ -155,6 +155,20 @@ extra_js:
 	    {% endraw %}
 	  </script>
 
+	  <script id="aleph-hit-template" type="text/x-handlebars-template">
+	    {% raw %}
+	    <div class="name">
+              <a href="{{ host }}/text/{{ id }}?dq={{ query }}&page={{ records.results.0.page }}" target="_blank">{{ title }}</a>
+              <span class="hits">{{ countString }}</span>
+            </div>
+
+            <div class="snippet">Page {{ records.results.0.page }}: {{{ records.results.0.text }}}</div>
+            {{#if records.results.[1]}}
+            <div class="snippet">Page {{ records.results.1.page }}: {{{ records.results.1.text }}}</div>
+            {{/if}}
+
+	    {% endraw %}
+	  </script>
 	</div>
       </div>
     </section>
