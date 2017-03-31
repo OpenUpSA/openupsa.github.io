@@ -1078,4 +1078,13 @@ footer {
       margin-top: -5px;
     }
   }
+  .external-articles {
+    .article {
+      margin-top: 0;
+    }
+    img {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+  }
 }
