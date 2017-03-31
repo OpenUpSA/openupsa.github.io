@@ -64,33 +64,6 @@ extra_js:
 
 			    {% endraw %}
 			  </script>
-
-			  <script id="cipc-hit-template" type="text/x-handlebars-template">
-			    {% raw %}
-
-			    <div class="name">{{ name }}</div>
-			    <div class="regno">{{ regno }} ({{ type }}) - {{ status }}</div>
-			    <div class="addr">{{ physaddress }}</div>
-			    <div class="addr">{{ postaddress }}</div>
-			    {{#each directors}}
-				    <div class="director"><strong>{{ director_position }}</strong>: {{ director_first_names }} {{ director_last_name }} {{ director_id }}</div>
-			    {{/each}}
-
-			    {% endraw %}
-			  </script>
-	                  <script id="aleph-hit-template" type="text/x-handlebars-template">
-	                    {% raw %}
-	                    <div class="name">
-                              <a href="{{ host }}/text/{{ id }}?dq={{ query }}&amp;page={{ records.results.0.page }}" target="_blank">{{ title }}</a>
-                              <span class="hits">{{ countString }}</span>
-                            </div>
-
-                            <div class="snippet">Page {{ records.results.0.page }}: {{{ records.results.0.text }}}</div>
-                            {{#if records.results.[1]}}
-                            <div class="snippet">Page {{ records.results.1.page }}: {{{ records.results.1.text }}}</div>
-                            {{/if}}
-                            {{ endraw }}
-                          </script>
 			</div>
 		</div>
 	</section>
@@ -225,6 +198,20 @@ extra_js:
           </div>
 
     {% endraw %}
+  </script>
+
+  <script id="aleph-hit-template" type="text/x-handlebars-template">
+    {% raw %}
+    <div class="name">
+      <a href="{{ host }}/text/{{ id }}?dq={{ query }}&amp;page={{ records.results.0.page }}" target="_blank">{{ title }}</a>
+      <span class="hits">{{ countString }}</span>
+    </div>
+
+    <div class="snippet">Page {{ records.results.0.page }}: {{{ records.results.0.text }}}</div>
+    {{#if records.results.[1]}}
+    <div class="snippet">Page {{ records.results.1.page }}: {{{ records.results.1.text }}}</div>
+    {{/if}}
+    {{ endraw }}
   </script>
 
 	<div class="container">
