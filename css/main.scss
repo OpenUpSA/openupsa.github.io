@@ -151,6 +151,12 @@ body {
       font-family: 'Libre Franklin', sans-serif;
     }
   }
+
+  .search-form {
+    input[name=q]:focus {
+      min-width: 300px;
+    }
+  }
 }
 
 .homepage {
