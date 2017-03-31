@@ -946,6 +946,10 @@ footer {
       color: $trace-darker;
     }
   }
+  h2 {
+    font-weight: 600;
+    color: #0f77bc;
+  }
   .hero {
     background-color: $trace;
     padding: 20px;
@@ -958,6 +962,8 @@ footer {
       font-weight: 600;
     }
     h2.header {
+      color: #fff;
+      font-weight: 500;
       margin-top:10px;
       margin-bottom: 20px;
     }
@@ -1056,6 +1062,10 @@ footer {
       width: 100%;
       border: 4px solid #fff;
     }
+  }
+
+  .mission-requests {
+    margin-top: 30px;
   }
 
   .collection {
