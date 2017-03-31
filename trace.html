@@ -37,7 +37,9 @@ extra_js:
 
 			    <div class="panel panel-default {{#if searching}}searching{{/if}}" id="{{ id }}">
 			      <div class="panel-heading">
-							<h3 class="panel-title">{{ name }}</h3>
+				<h3 class="panel-title">{{ name }}</h3>
+                                <span class="updated-date">{{ updatedDateString }}</span>
+                                <div style="clear: both"><!-- force left- and right-floated siblings above to force the height of the heading panel to fit when they break onto a new line. --></div>
 			      </div>
 			      <div class="panel-body">
               {{#if hint}}

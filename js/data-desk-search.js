@@ -23,22 +23,41 @@ $(function() {
       case "socrata":
         self.searchUrlTemplate = "https://data.code4sa.org/resource/" + code + ".json?$q={0}";
         self.searchMoreUrlTemplate = "https://data.code4sa.org/" + extra + "/data?q={0}";
+        self.metadataUrl = "https://data.code4sa.org/api/views/" + code + ".json";
         break;
       case "socrata_private":
         self.searchUrlTemplate = "https://backchat.code4sa.org/portalproxy/resource/" + code + ".json?$q={0}";
         self.searchMoreUrlTemplate = "https://backchat.code4sa.org/portalproxy/resource/" + code + ".csv?$q={0}";
+        self.metadataUrl = "http://localhost:8000/portalproxy/api/views/" + code + ".json";
         break;
       case "sourceafrica":
         self.searchUrlTemplate = "https://dc.sourceafrica.net/api/search.json?q=projectid%3A404-sens+{0}&page=0&sections=true&mentions=3";
         self.searchMoreUrlTemplate = "https://sourceafrica.net/search.html#q=projectid%3A404-sens%20{0}";
+        self.metadataUrl = null;
         break;
       case "aleph":
         self.host = code;
         self.searchUrlTemplate = code + "/api/1/query?q={0}";
         self.searchMoreUrlTemplate = code + "/search?q={0}";
+        self.metadataUrl = null;
         break;
     }
 
+    if (self.metadataUrl) {
+      $.ajax(self.metadataUrl)
+        .done(function(resp) {
+          var timestamp = resp.indexUpdatedAt || resp.publicationDate;
+          var date = new Date(timestamp*1000);
+          self.updatedDateString = "Updated: " + date.toLocaleDateString("en-ZA");
+          /* if this completes before the first search, it'll be set in the
+             dataset template, otherwise it'll be set in the page by jQuery: */
+          var container = $('#' + self.id + ' updated-date');
+          container.html(self.updatedDateString);
+        })
+        .fail(function(jqXHR, textStatus, errorThrown) {
+          console.log(textStatus, errorThrown, jqXHR);
+        });
+    }
     self.hitTemplate = hitTemplate || function(hit) {
       var summary = "";
 
