@@ -210,7 +210,8 @@ $(function() {
 
   var resultsContainer = $('#search-results');
   var datasetTemplate = Handlebars.compile($('#search-dataset-template').html());
-  var queryInput = $(this).find('[name=q]');
+  var $form = $("#corporate-data-search form");
+  var queryInput = $form.find('[name=q]');
   var startSearch = function(q) {
     var perCol = Math.ceil(datasets.length / 2);
     resultsContainer
@@ -232,7 +233,7 @@ $(function() {
     });
   };
 
-  $("#corporate-data-search form").on('submit', function(e) {
+  $form.on('submit', function(e) {
     e.preventDefault();
     var q = queryInput.val();
     if ('pushState' in history)
