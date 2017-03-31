@@ -61,26 +61,15 @@ featured-tool: opengazettes
 	</section>
 
 	<section class="all-tools">
-		<!--<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<h1>Our tools</h1>
-			</div>
-		</div>-->
 		<div class="row">
 			{% for tool in site.tools %}
 			{% unless tool.name == page.featured-tool %}
-			<a href="{{ site.baseurl }}{{ tool.url }}" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 toolbox">
-			<img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}">
+			<a href="{% if tool.skip-own-page %}{{ tool.external-url }}{% else %}{{ site.baseurl }}{{ tool.url }}{% endif %}" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 toolbox">
+				<img alt="{{ tool.image }}" src="{{ site.baseurl }}/img/tools/{{ tool.image }}">
 			</a>
 			{% endunless %}
 			{% endfor %}
 		</div>
 	</section>
-
-	<!--
-	<h4 class="pull-right">
-		What else have we done? View the rest of <strong>our tools</strong>
-	</h4>
-	-->
 
 </div>

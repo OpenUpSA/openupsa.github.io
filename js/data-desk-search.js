@@ -175,7 +175,7 @@ $(function() {
     new Dataset("socrata", "UK Land Registry", "qxgb-avr5", "Business/UK-Land-Registry/n7gy-as2q"),
   ];
 
-  var resultsContainer = $('#corporate-data-search .search-results');
+  var resultsContainer = $('#search-results');
   var datasetTemplate = Handlebars.compile($('#search-dataset-template').html());
   var queryInput = $(this).find('[name=q]');
   var startSearch = function(q) {
