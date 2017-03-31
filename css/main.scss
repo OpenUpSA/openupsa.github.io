@@ -1066,7 +1066,9 @@ footer {
   }
 
   .mission-requests {
-    margin-top: 30px;
+    background-color: #f5fafd;
+    padding-top: 30px;
+    padding-bottom:30px;
   }
 
   .collection {
@@ -1086,8 +1088,11 @@ footer {
       margin-bottom: 30px;
     }
   }
+  .what {
+    margin-top: 30px;
+  }
   .article-list {
-    margin-top: 50px;
+    margin-top: 30px;
     .article {
       margin-bottom: 20px;
       margin-top: -5px;
