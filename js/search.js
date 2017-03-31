@@ -27,16 +27,18 @@
 
   $form.on('submit', function(e) {
     e.preventDefault();
-    // TODO: push state
     doSearch($q.val());
   });
 
   $q.on('change keyup', _.debounce(function(e) {
     doSearch($q.val());
-  }, 200));
+  }, 250));
 
   function doSearch(q) {
     q = q.trim();
+    if ('pushState' in history)
+      history.pushState(q, "OpenUp Search: " + q, "search.html?q=" + encodeURIComponent(q));
+
     if (q.length === 0) {
       $results.empty();
       return;
@@ -74,4 +76,11 @@
   if (searchTerm) {
     $q.val(searchTerm).trigger('change');
   }
+
+  window.onpopstate = function(event) {
+    if (event.state) {
+      var q = event.state;
+      $q.val(q).trigger('change');
+    }
+  };
 })();
