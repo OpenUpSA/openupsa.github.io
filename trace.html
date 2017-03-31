@@ -66,20 +66,6 @@ extra_js:
 
 			    {% endraw %}
 			  </script>
-
-			  <script id="cipc-hit-template" type="text/x-handlebars-template">
-			    {% raw %}
-
-			    <div class="name">{{ name }}</div>
-			    <div class="regno">{{ regno }} ({{ type }}) - {{ status }}</div>
-			    <div class="addr">{{ physaddress }}</div>
-			    <div class="addr">{{ postaddress }}</div>
-			    {{#each directors}}
-				    <div class="director"><strong>{{ director_position }}</strong>: {{ director_first_names }} {{ director_last_name }} {{ director_id }}</div>
-			    {{/each}}
-
-			    {% endraw %}
-			  </script>
 			</div>
 		</div>
 	</section>
@@ -151,7 +137,7 @@ extra_js:
 		</div>
 	</section>
 
-	<section class="container">		
+	<section class="container">
     <div class="row">
 			<div class="col-sm-6">
 			  <h2>What is this corporate data you speak of?</h2>
@@ -178,8 +164,8 @@ extra_js:
 					      	</div>
 								</div>
 				    {% endif %}
-				  {% endfor %}      
-			  {% endfor %}      
+				  {% endfor %}
+			  {% endfor %}
 			</div>
 		</div>
 	</section>
@@ -216,6 +202,20 @@ extra_js:
     {% endraw %}
   </script>
 
+  <script id="aleph-hit-template" type="text/x-handlebars-template">
+    {% raw %}
+    <div class="name">
+      <a href="{{ host }}/text/{{ id }}?dq={{ query }}&amp;page={{ records.results.0.page }}" target="_blank">{{ title }}</a>
+      <span class="hits">{{ countString }}</span>
+    </div>
+
+    <div class="snippet">Page {{ records.results.0.page }}: {{{ records.results.0.text }}}</div>
+    {{#if records.results.[1]}}
+    <div class="snippet">Page {{ records.results.1.page }}: {{{ records.results.1.text }}}</div>
+    {{/if}}
+    {{ endraw }}
+  </script>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
@@ -232,7 +232,7 @@ extra_js:
 					  <p>The Open Society Foundation is conducting ongoing research into South African disclosure practice and the drivers behind it.</p>
 					  <a target="_blank" class="btn" href="http://www.osf.org.za/wp-content/uploads/2017/01/OSF-Extractives-Working-Paper_Drivers-of-Disclosure-in-South-Africas-Extractive-Sector.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
 					</div>
-				</section>			
+				</section>
 			</div>
 			<div class="col-md-6">
 				<section class="article-list external-articles">
@@ -262,5 +262,3 @@ extra_js:
 	</div>
 
 </div>
-
-     
