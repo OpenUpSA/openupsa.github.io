@@ -208,7 +208,7 @@ $(function() {
     new Dataset("aleph", "Open Gazettes", "https://search.opengazettes.org.za", null, Handlebars.compile($("#aleph-hit-template").html())),
   ];
 
-  var resultsContainer = $('#corporate-data-search .search-results');
+  var resultsContainer = $('#search-results');
   var datasetTemplate = Handlebars.compile($('#search-dataset-template').html());
   var queryInput = $(this).find('[name=q]');
   var startSearch = function(q) {
