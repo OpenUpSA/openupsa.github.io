@@ -10,6 +10,7 @@ extra_js:
  - /js/data-desk-search.js
 ---
 <div class="trace-page">
+
 	<section class="hero">
 		<div class="container">
 			<h1 class="text-center header">TRACE</h1>
@@ -79,17 +80,19 @@ extra_js:
 	  </div>
 	</section>
 
-	<section class="container mission-requests">
-		<div class="row">
-			<div class="col-md-6">
-				<h2>Our mission</h2>
-				<p>We want to make corporate data truly accessible, because we believe you shouldn’t have to pay for company information that should legally and legitimately be public. We’re interrogating data around corporate structures and the relationships corporates have with the state, shareholders and communities.</p>
-			</div>
+	<section class="mission-requests">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Our mission</h2>
+					<p>We want to make corporate data truly accessible, because we believe you shouldn’t have to pay for company information that should legally and legitimately be public. We’re interrogating data around corporate structures and the relationships corporates have with the state, shareholders and communities.</p>
+				</div>
 
-			<div class="col-md-6">
-				<h2>We're here to help</h2>
-				<p>We can help you find the important corporate data you're missing. Just send us a data request.</p>
-				<a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfC7tVCXIDjQzOF54MsUsdG4zJQIzka9PT7rnfRXXZG9lBTuw/viewform">Request data</a>
+				<div class="col-md-6">
+					<h2>We're here to help</h2>
+					<p>We can help you find the important corporate data you're missing. Just send us a data request.</p>
+					<a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfC7tVCXIDjQzOF54MsUsdG4zJQIzka9PT7rnfRXXZG9lBTuw/viewform">Request data</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -137,7 +140,15 @@ extra_js:
 		</div>
 	</section>
 
-	<section class="container">
+	<section class="corporate-articles">
+  <div class="container">
+		
+    <div class="row">
+			<div class="col-sm-10">
+				<h2>What is this corporate data you speak of?</h2>
+			</div>
+		</div>
+    
     <div class="row">
 			<div class="col-sm-6">
 			  <h2>What is this corporate data you speak of?</h2>
@@ -167,7 +178,8 @@ extra_js:
 				  {% endfor %}
 			  {% endfor %}
 			</div>
-		</div>
+    </div>
+    </div>
 	</section>
 
   <script id="cipc-hit-template" type="text/x-handlebars-template">
