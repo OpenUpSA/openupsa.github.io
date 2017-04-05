@@ -3,7 +3,7 @@ layout: tool
 name: wazimap
 title: Wazimap
 image: wazimap.png
-external-url: http://wazimap.co.za
+external-url: https://wazimap.co.za
 logo: wazimap-logo.png
 oneliner: Election and Census results for your ward, city or province across South Africa
 opener: Wazimap, from the Xhosa word ulwazi for knowledge, provides easy access to South African census and elenctions data.
