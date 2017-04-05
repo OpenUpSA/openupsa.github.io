@@ -21,8 +21,20 @@ external-creators:
   image: damian.jpg
   external-url: https://github.com/xybrnet
 collaborators:
+- name: UCT
+  image: uct.png
+  external-url: http://www.povertyandinequality.uct.ac.za/
 - name: Poverty and Inequality Initiative (PII) at UCT
   image: pii.png
   external-url: http://www.povertyandinequality.uct.ac.za/
+- name: Western Cape Government
+  image: wc-gov.png
+  external-url: https://www.westerncape.gov.za/
+- name: City of Cape Town
+  image: coct.png
+  external-url: https://www.capetown.gov.za/en/Pages/default.aspx
+- name: Stats SA
+  image: statssa.png
+  external-url: http://www.statssa.gov.za/
 ---
 
