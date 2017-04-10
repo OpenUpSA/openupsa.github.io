@@ -88,7 +88,7 @@ While Google and DocumentCloud do a reasonable job of making these types of docu
 
 In addition to searching for something - for example, “driving permit paarl” - you can set an alert so that you’re notified by email within a few days of when a gazette matching the search is published. This means that you don’t need to check each week for new information, such as newly issued permits in your area.
 
-<img src="{{ site.baseurl }}/img/articles/how-gazette-2.jpg">
+![Sample Gazette]({{ site.baseurl }}/img/articles/how-gazette-2.jpg)
 
 Aleph uses the text embedded in the gazette PDF files to support text search. While PDFs look like text documents, they’re mostly focused on looking good and do not necessarily contain text in a form that is usable by a computer. To make a scanned PDF searchable, the text found using OCR (Optical Character Recognition) is overlaid on the image in the PDF.
 
