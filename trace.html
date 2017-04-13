@@ -147,40 +147,104 @@ extra_js:
 		
     <div class="row">
 			<div class="col-sm-10">
-				<h2>What is this corporate data you speak of?</h2>
+				<h2>Why corporate data matters</h2>
 			</div>
 		</div>
     
     <div class="row">
 			<div class="col-sm-6 what">
-			  <p>We have datasets and have done work around tender information, beneficial ownership, company shareholder registries, illicit financial flows, potential conflicts of interest in the private sector, and the environmental and social impacts that the decisions corporates make have on everyday life. You can read more about our work and the work other organisations are doing to improve corporate transparency and accountability here:</p>
+			  <p>We have datasets and have done work around tender information, beneficial ownership, company shareholder registries, illicit financial flows, potential conflicts of interest in the private sector, and the environmental and social impacts that the decisions corporates make have on everyday life. Read more about our work and the work other organisations are doing to improve corporate transparency and accountability here:</p>
+			  <div class="featured-article article-list">
+			    {% assign featuredarticlecounter = 0 %}
+			    {% for article in site.articles reversed %}
+			    	{% if featuredarticlecounter == 1 %}
+			    	  {% break %}
+			    	{% endif %}
+			  	  	{% for tool in article.tools %}
+			  		    {% if tool.name == "trace" %}
+			  		    	{% if article.featured %}
+			  						<div class="row article">
+			  			      	<div class="col-md-7">
+			  				        <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+			  			      	</div>
+			  			      	<div class="col-md-5">
+			  			          <strong><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></strong>
+			  			          <div>
+			  				          {{ article.short }}
+			  			          </div>
+			  			      	</div>
+			  						</div>
+			  					  {% assign featuredarticlecounter = featuredarticlecounter | plus:1 %}
+			  		    	{% endif %}
+			  		    {% endif %}
+			  		  {% endfor %}
+				    {% endfor %}
+			  </div>
 			</div>
 			<div class="col-sm-6 article-list">
 			  {% assign articlecounter = 0 %}
 			  {% for article in site.articles reversed %}
-			  	{% for tool in article.tools %}
-				    {% if tool.name == "trace" %}
-				      {% if articlecounter == 4 %}
-				        {% break %}
-				      {% endif %}
-				      {% assign articlecounter = articlecounter | plus:1 %}
-								<div class="row article">
-					      	<div class="col-sm-4">
-						        <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
-					      	</div>
-					      	<div class="col-sm-8">
-					          <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
-					          <div>
-						          {{ article.short }}
-					          </div>
-					      	</div>
-								</div>
-				    {% endif %}
-				  {% endfor %}
+			  	{% if articlecounter == 3 %}
+			  	  {% break %}
+			  	{% endif %}
+			  	{% if article.trace %}
+						<div class="row article external-articles">
+			      	<div class="col-sm-4">
+				        <a href="{{ article.external-url }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+			      	</div>
+			      	<div class="col-sm-8">
+			          <a href="{{ article.external-url }}">{{ article.title }}</a>
+			          <div>
+				          {{ article.content }}
+				          <div><small>An article by {{ article.author }}</small></div>
+			          </div>
+			      	</div>
+						</div>
+					  {% assign articlecounter = articlecounter | plus:1 %}
+			  	{% else %}
+				  	{% for tool in article.tools %}
+					    {% if tool.name == "trace" %}
+					    	{% unless article.featured %}
+									<div class="row article">
+						      	<div class="col-sm-4">
+							        <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+						      	</div>
+						      	<div class="col-sm-8">
+						          <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+						          <div>
+							          {{ article.short }}
+						          </div>
+						      	</div>
+									</div>
+								  {% assign articlecounter = articlecounter | plus:1 %}
+					    	{% endunless %}
+					    {% endif %}
+					  {% endfor %}
+			    {% endif %}
 			  {% endfor %}
 			</div>
     </div>
     </div>
+	</section>
+
+	<section class="container corporate-data-resources">
+		<h2>Corporate data resources</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="example-box">
+				  <h4>Centre for Environmental Rights Full Disclosure Report</h4>
+				  <p>An investigation into corporate environmental compliance in South Africa. The report shows that some companies are committing serious compliance violations.</p>
+				 	<a target="_blank" class="btn" href="http://cer.org.za/download/CER-Full-Disclosure.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="example-box">
+				  <h4>Open Society Foundations Extractive Companies and Transparency Working Paper Two</h4>
+				  <p>The Open Society Foundation is conducting ongoing research into South African disclosure practice and the drivers behind it.</p>
+				  <a target="_blank" class="btn" href="http://www.osf.org.za/wp-content/uploads/2017/01/OSF-Extractives-Working-Paper_Drivers-of-Disclosure-in-South-Africas-Extractive-Sector.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+				</div>
+			</div>
+		</div>
 	</section>
 
   <script id="cipc-hit-template" type="text/x-handlebars-template">
@@ -228,50 +292,5 @@ extra_js:
     {{/if}}
     {% endraw %}
   </script>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<section class="corporate-data-matters">
-					<h2>Why corporate data matters</h2>
-					<p>Here are some examples of why corporate data matters</p>
-					<div class="example-box">
-					  <h4>Centre for Environmental Rights Full Disclosure Report</h4>
-					  <p>An investigation into corporate environmental compliance in South Africa. The report shows that some companies are committing serious compliance violations.</p>
-					 	<a target="_blank" class="btn" href="http://cer.org.za/download/CER-Full-Disclosure.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-					</div>
-					<div class="example-box">
-					  <h4>Open Society Foundations Extractive Companies and Transparency Working Paper Two</h4>
-					  <p>The Open Society Foundation is conducting ongoing research into South African disclosure practice and the drivers behind it.</p>
-					  <a target="_blank" class="btn" href="http://www.osf.org.za/wp-content/uploads/2017/01/OSF-Extractives-Working-Paper_Drivers-of-Disclosure-in-South-Africas-Extractive-Sector.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
-					</div>
-				</section>
-			</div>
-			<div class="col-md-6">
-				<section class="article-list external-articles">
-					<h2>Corporate data in the media</h2>
-					<p>Relevant articles worth reading</p>
-				  {% assign externalarticlecounter = 0 %}
-				  {% for article in site.trace reversed %}
-			      {% if externalarticlecounter == 4 %}
-			        {% break %}
-			      {% endif %}
-			      {% assign externalarticlecounter = externalarticlecounter | plus:1 %}
-							<div class="row article">
-				      	<div class="col-sm-4">
-					        <a href="{{ article.external-url }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
-				      	</div>
-				      	<div class="col-sm-8">
-				          <a href="{{ article.external-url }}">{{ article.title }}</a>
-				          <div>
-					          {{ article.content }}
-				          </div>
-				      	</div>
-							</div>
-			    {% endfor %}
-				</section>
-			</div>
-		</div>
-	</div>
 
 </div>

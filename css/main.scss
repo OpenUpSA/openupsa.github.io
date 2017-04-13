@@ -1087,15 +1087,21 @@ footer {
   }
   .collection {
     margin-top: 50px;
-    .item {
-      border: 1px solid #ddd;
-      padding: 5px 10px;
-      margin-bottom: 30px;
-      min-height: 200px;
+    .row {
+      margin-top: 15px;
+      .item {
+        border: 1px solid #ddd;
+        padding: 5px 10px;
+        margin-bottom: 30px;
+        min-height: 200px;
+      }
     }
   }
-  .corporate-data-matters {
+  .corporate-data-resources {
     margin-top: 50px;
+    .row {
+      margin-top: 15px;
+    }
     .example-box {
       border: 1px solid #ddd;
       padding: 5px 15px 15px 15px;
@@ -1105,26 +1111,27 @@ footer {
   .corporate-articles {
     padding: 30px 0px;
     background-color: #f5fafd;
-    .what {
-      margin-top: 30px;
-    }
     .article-list {
-      margin-top: 30px;
       .article {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         margin-top: -5px;
       }
     }
   }
   .external-articles {
-    margin-top: 50px;
-    .article {
-      margin-top: 0;
-    }
     img {
       border: 1px solid #ddd;
       padding: 10px;
     }
+    p {
+      margin-bottom: 0;
+    }
+    small {
+      color: #999;
+    }
+  }
+  .featured-article {
+    padding-top: 20px;
   }
 }
 
