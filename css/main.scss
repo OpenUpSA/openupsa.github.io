@@ -941,7 +941,6 @@ footer {
 
 .shortcourse-page {
  .btn {
-    border: 1px solid #fff;
     background-color: $shortcourse;
     color: #fff;
     &:hover {
@@ -990,14 +989,30 @@ footer {
     padding-bottom:30px;
   }
   .courses {
-    margin-top: 20px;
+    margin-top: 30px;
     h2 {
       margin-bottom: 30px;
     }
     .course-box {
-      padding: 15px;
       margin-bottom: 30px;
       background-color: #efefef;
+      p {
+        padding: 0px 15px;
+      }
+      a {
+        margin-bottom: 15px;
+        margin-left: 15px;
+      }
+      h4 {
+        padding: 15px;
+        color: #fff;
+        background-color: $shortcourse;
+      }
+    }
+    .number-of-modules {
+      font-size: 12px;
+      font-weight: bold;
+      color: #999;
     }
   }
 }
