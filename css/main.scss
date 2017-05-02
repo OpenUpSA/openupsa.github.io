@@ -14,6 +14,7 @@ $trace: #0f77bc;
 $trace-darker: #04609e;
 $trace-lighter: #8cc9f2;
 $shortcourse: #911ccc;
+$shortcourse-light: #f9f5fd;
 $shortcourse-darker: #511c87;
 
 
@@ -984,7 +985,7 @@ footer {
     }
   }
   .shortcourse-intro {
-    background-color: #f9f5fd;
+    background-color: $shortcourse-light;
     padding-top: 30px;
     padding-bottom:30px;
   }
