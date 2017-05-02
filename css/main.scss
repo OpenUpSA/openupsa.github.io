@@ -13,7 +13,8 @@ $green-darker: #8ab91d;
 $trace: #0f77bc;
 $trace-darker: #04609e;
 $trace-lighter: #8cc9f2;
-$shortcourse: #f1f1f1;
+$shortcourse: #911ccc;
+$shortcourse-darker: #511c87;
 
 
 html {
@@ -935,6 +936,58 @@ footer {
       left: 25px;
       width: calc(100% - 50px);
     }
+  }
+}
+
+.shortcourse-page {
+ .btn {
+    border: 1px solid #fff;
+    background-color: $shortcourse;
+    color: #fff;
+    &:hover {
+      background-color: $shortcourse-darker;
+      color: #fff;
+    }
+  }
+  a {
+    color: $trace;
+    &:hover {
+      color: $trace-darker;
+    }
+  }
+  h2 {
+    font-weight: 600;
+    color: $shortcourse;
+  }
+  .hero {
+    background-color: $shortcourse;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    color: #fff;
+    h1.header {
+      color: #fff;
+      font-size: 42px;
+      font-weight: 600;
+    }
+    h2.header {
+      color: #fff;
+      font-weight: 500;
+      margin-top:10px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 21px;
+      color: #fff;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+  .shortcourse-intro {
+    background-color: #f9f5fd;
+    padding-top: 30px;
+    padding-bottom:30px;
   }
 }
 
