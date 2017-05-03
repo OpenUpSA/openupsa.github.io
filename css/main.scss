@@ -13,6 +13,9 @@ $green-darker: #8ab91d;
 $trace: #0f77bc;
 $trace-darker: #04609e;
 $trace-lighter: #8cc9f2;
+$shortcourse: #911ccc;
+$shortcourse-light: #f9f5fd;
+$shortcourse-darker: #511c87;
 
 
 html {
@@ -935,6 +938,101 @@ footer {
       width: calc(100% - 50px);
     }
   }
+}
+
+.shortcourse-page {
+
+ .btn {
+    background-color: $shortcourse;
+    color: #fff;
+    &:hover {
+      background-color: $shortcourse-darker;
+      color: #fff;
+    }
+  }
+  a {
+    color: $trace;
+    &:hover {
+      color: $trace-darker;
+    }
+  }
+  h2 {
+    font-weight: 600;
+    color: $shortcourse;
+  }
+
+  .hero {
+    background-color: $shortcourse;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    color: #fff;
+    h1.header {
+      color: #fff;
+      font-size: 42px;
+      font-weight: 600;
+    }
+    h2.header {
+      color: #fff;
+      font-weight: 500;
+      margin-top:10px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 21px;
+      color: #fff;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+
+  .shortcourse-intro {
+    background-color: $shortcourse-light;
+    padding-top: 30px;
+    padding-bottom:30px;
+  }
+
+  .facilitators {
+    background-color: $shortcourse-light;
+    padding-top: 30px;
+    padding-bottom:30px;
+    .image {
+      margin-bottom: 15px;
+      padding-right: 5px;
+      img {
+        width: 100%;
+      }
+    } 
+  }
+
+  .courses {
+    margin-top: 30px;
+    h2 {
+      margin-bottom: 30px;
+    }
+    .course-box {
+      margin-bottom: 30px;
+      background-color: #efefef;
+      p {
+        padding: 0px 15px;
+      }
+      a {
+        margin-bottom: 15px;
+        margin-left: 15px;
+      }
+      h4 {
+        padding: 15px;
+        background-color: #efefef;
+      }
+    }
+    .number-of-modules {
+      font-size: 12px;
+      font-weight: bold;
+      color: #999;
+    }
+  }
+
 }
 
 .trace-page {

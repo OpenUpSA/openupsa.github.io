@@ -5,6 +5,7 @@ name: adi
 position: Director
 current: currently working on
 email: adi@openup.org.za
+facilitator: true
 biography:
 - highlight: Honours Degree in Computer Science from Wits
 - highlight: Masters coursework in Computer Science at the Hebrew University in Jerusalem
