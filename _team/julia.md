@@ -7,6 +7,7 @@ current: currently working on
 email: julia@openup.org.za
 external: true
 external-url: https://twitter.com/julia_renouprez
+facilitator: true
 biography:
 - highlight: B Comm Industrial Psychology (UNISA)
 - highlight: Geographic Information Analyst +17 years
