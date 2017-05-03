@@ -21,7 +21,7 @@ Delaware, known as the First State, is one of a few tax havens in the country, a
 
 As you would expect, some of the biggest names in the corporate world have incorporated entities in Delaware, including US President Donald Trump. When he announced that he was running for president, he had to disclose a full list of entities where he is the named executive. The list includes over 500 different entities, mainly registered in Delaware, which, as we’ll explain, guarantees almost 100% privacy.
 
-##What makes somewhere a tax haven?
+## What makes somewhere a tax haven?
 There are a few things that make somewhere a tax haven. Namely, minimal or no taxes on specific types of income, financial secrecy laws, a lack of transparency and zero requirements for substantial activities. In other words, all you really need to do is form your entity, pay the minimum fees in upkeep and _voilà_, you can safely store your money, move it around and avoid losing parts of it to the taxman.  
 
 And what about this particular tax haven? Well, it has extremely advanced and flexible business formation laws, and much of US corporation law was written by the Delaware Court of Chancery. This makes for more predictable litigation, as all Chancery judges have a background in corporate law, and they decide on the outcome of a case without the help of a jury. Delaware Corporation Privacy allows the incorporation of an entity to take place without listing shareholders, directors or officers on public record. And when it comes to taxes, corporations aren’t taxed a thing if business is conducted outside of the state. It also takes less than an hour to incorporate a company, making for a quick and painless process. 
@@ -38,7 +38,7 @@ Okay, so why is all of this such a big deal? Because of its almost 100% guarante
 
 There’s been an attempt to increase transparency, and in 2014, the state passed legislation that requires a registered agent to identify a person at the company that has a list of the entity’s legal owners. But the only way this can be accessed is through a subpoena, meaning that it would never be made publicly accessible. In [Global Shell Games](http://www.gfintegrity.org/wp-content/uploads/2014/05/Global-Shell-Games-2012.pdf), an experiment in attempting to unveil shell corporation trade secrets, it was found that it’s easier to set up an anonymous company in the US than in most of the well-known tax havens. 
 
-##Some tax havens are more equal than others
+## Some tax havens are more equal than others
 
 But, as has become clear, not all tax havens are created equal. According to the [Financial Secrecy Index](http://www.financialsecrecyindex.com/introduction/fsi-2015-results) (FSI), a tool launched by the [Tax Justice Network](http://www.taxjustice.net/) in 2015, South Africa ranked significantly low as a secretive financial jurisdiction (at 61), which, in comparison to the Cayman Islands and the US, indicates that it isn’t much of a tax haven at all. The index looked at tax efficiency, company ownership, banking secrecy and international cooperation. In South Africa, the biggest red flag was a lack of compliance in corporate transparency regulation. We don’t require company ownership details or company accounts to be made publicly available online and despite the FSI identifying us as performing well in terms of tax financial regulation, we fell R11.6-billion short in tax revenue, according to last year’s (2016/17) budget. This doesn’t necessarily point to tax evasion, but it doesn’t rule it out either. 
 
