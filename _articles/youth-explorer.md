@@ -1,6 +1,7 @@
 ---
 layout: article
-author: lenina
+author-external: Lenina Rassool
+author-external-url: https://twitter.com/Nina_210
 title: "Data explores the story of Western Cape Youth"
 date: 2012-11-03
 short: |

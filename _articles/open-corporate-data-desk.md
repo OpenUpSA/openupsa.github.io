@@ -1,6 +1,7 @@
 ---
 layout: article
-author: sarah
+author-external: Sarah Evans
+author-external-url: https://twitter.com/SarahPeace6
 title: "Introducing OpenUp’s Data Desk: help us to help you make corporate data open"
 date: 2016-11-28
 short: |

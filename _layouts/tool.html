@@ -108,7 +108,7 @@ layout: base
       {% endfor %}
       {% for creator in page.external-creators %}
         <a target="_blank" href="{{ creator.external-url }}" class="col-xs-6 col-sm-4 col-md-2 creator" data-toggle="tooltip" data-placement="bottom" title="{{ creator.name }}">
-          <img src="{{ site.baseurl }}/img/team/external/{{ creator.image }}">
+          <img src="{{ site.baseurl }}/img/team/{{ creator.image }}">
         </a>
       {% endfor %}
     </div>
