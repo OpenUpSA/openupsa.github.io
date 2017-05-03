@@ -1,6 +1,7 @@
 ---
 layout: article
-author: lenina
+author-external: Lenina Rassool
+author-external-url: https://twitter.com/Nina_210
 title: "Pocket Reporter: A News Editor in your Pocket"
 date: 2016-10-18
 short: |

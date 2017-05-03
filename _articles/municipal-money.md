@@ -1,6 +1,7 @@
 ---
 layout: article
-author: sarah
+author-external: Sarah Evans
+author-external-url: https://twitter.com/SarahPeace6
 title: How well is your municipality spending your money?
 date: 2016-10-26
 short: |

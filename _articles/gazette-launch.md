@@ -1,6 +1,7 @@
 ---
 layout: article
-author: lenina
+author-external: Lenina Rassool
+author-external-url: https://twitter.com/Nina_210
 title: "Get access to your government gazette online - for free"
 date: 2016-10-05
 short: |
