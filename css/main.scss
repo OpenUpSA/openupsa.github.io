@@ -959,6 +959,7 @@ footer {
     font-weight: 600;
     color: $shortcourse;
   }
+
   .hero {
     background-color: $shortcourse;
     padding: 20px;
@@ -984,38 +985,26 @@ footer {
       font-weight: 300;
     }
   }
+
   .shortcourse-intro {
     background-color: $shortcourse-light;
     padding-top: 30px;
     padding-bottom:30px;
   }
-  .courses {
-    margin-top: 30px;
-    h2 {
-      margin-bottom: 30px;
-    }
-    .course-box {
-      margin-bottom: 30px;
-      background-color: #efefef;
-      p {
-        padding: 0px 15px;
+
+  .facilitators {
+    background-color: $shortcourse-light;
+    padding-top: 30px;
+    padding-bottom:30px;
+    .image {
+      margin-bottom: 15px;
+      padding-right: 5px;
+      img {
+        width: 100%;
       }
-      a {
-        margin-bottom: 15px;
-        margin-left: 15px;
-      }
-      h4 {
-        padding: 15px;
-        color: #fff;
-        background-color: $shortcourse;
-      }
-    }
-    .number-of-modules {
-      font-size: 12px;
-      font-weight: bold;
-      color: #999;
-    }
+    } 
   }
+
 }
 
 .trace-page {
