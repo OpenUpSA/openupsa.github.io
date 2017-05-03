@@ -5,6 +5,7 @@ name: lailah
 position: Digital Storyteller
 current: currently working on
 email: lailah@openup.org.za
+facilitator: true
 biography:
 - highlight: BA in Interactive Multimedia Production & Film (UCT) BA (Hons) in Media, Theory and Practice from (UCT)
 - highlight: Iziko Museum - The King’s Map (2013), developed interactive digital version to accompany physical map
