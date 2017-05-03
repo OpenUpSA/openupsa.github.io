@@ -4,7 +4,7 @@ author: jennifer
 title: "Customer support glee - who would have thought?!"
 date: 2017-04-19
 short: "Unpacking the joy of doing live customer support at OpenUp"
-Image: CustSupport.jpg
+image: CustSupport.jpg
 types:
 - name: other
 themes:
@@ -16,7 +16,7 @@ Something strange has happened to me - I caught myself enjoying and actually loo
 
 Let’s take a few steps back and allow me paint the full picture for you. 
 
-I’ve spent 16 years working in various parts of the tech world and I can strongly attest to customer support being one of the least liked aspects of this industry. And I completely understand it too - I’ve been that irate customer on the other side of an email/live chat/phone call - filled with barely bridled self-righteous rage, clenching my jaw as I painstakingly tell the support agent my woes, for the fifth time, hoping for something to be different in their response.
+I’ve spent 16 years working in various parts of the tech world and I can strongly attest to customer support being one of the least liked aspects of this industry, even though the people doing it are often [superheroes](https://www.slideshare.net/customersthatstick/cts-slideshare-whatisacshero_). And I completely understand it too - I’ve been that irate customer on the other side of an email/live chat/phone call - filled with barely bridled self-righteous rage, clenching my jaw as I painstakingly tell the support agent my woes, for the fifth time, hoping for something to be different in their response.
 
 Why then, when we at OpenUp decided to implement a live chat widget on some of our products, did I jump at the opportunity to ‘man the desk’ so to speak, but more than that, I surprised myself along the way by really enjoying it and getting deep satisfaction from it?
 
@@ -24,7 +24,9 @@ The answer to the first part of that question is easy - why did I jump at the op
 
 The answer to the second part of that question really took me by surprise and I had to spend a little time thinking about it. Why do I enjoy it so much? 
 
-The answer here lies squarely with the type of products OpenUp builds. All my previous experience has been in the commercial sector - all product support was aligned to users being able to do something and ultimately being charged for it. Typical customer service then, so what makes this different? Well, the products we build have no commercial funnel to them. We are not trying to sell services or a product. Instead a lot of what we offer are informational products - take [Wazimap](https://wazimap.co.za/) for instance. Under that sexy interface is a bunch of data (IEC and Census data) which is actually freely available for anyone to use, we just make it that much easier by providing an interface to these (now combined) datasets along with some additional functionality, like mini analyses and ward-level comparisons. [Open By-laws](https://openbylaws.org.za/) is another example - these are simply municipal by-laws that have been collated in a single place and made searchable, allowing this information to suddenly be a lot more accessible to most.
+The answer here lies squarely with the type of products OpenUp builds. All my previous experience has been in the commercial sector - all product support was aligned to users being able to do something and ultimately being charged for it. Typical customer service then, so what makes this different? 
+
+Well, the products we build have no commercial funnel to them. We are not trying to sell services or a product. Instead, a lot of what we offer are informational products - take [Wazimap](https://wazimap.co.za/) for instance. Under that sexy interface is a bunch of data (IEC and Census data) which is actually freely available for anyone to use, we just make it that much easier by providing an interface to these (now combined) datasets along with some additional functionality, like mini analyses and ward-level comparisons. [Open By-laws](https://openbylaws.org.za/) is another example - these are simply municipal by-laws that have been collated in a single place and made searchable, allowing this information to suddenly be a lot more accessible to most. Interestingly enough we expected queries relating to finding specific by-laws, which hasn't turned out to be the case. Instead we receive glimpses into serious issues being experienced by citizens - what to do about a shebeen being run out of a neighbour's house? How to get help for the elderly neighbour being verbally abused all hours of the day? 
 
 I realised my satisfaction in providing support to people who use our products is because they have a real-life problem that we could potentially help them to solve. 
 
