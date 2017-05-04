@@ -109,7 +109,7 @@ layout: base
                           <div class="article-title">
                             <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
                           </div>
-                          <div class="tags"><a class="badge theme" href="{{ sitetheme.url | prepend: site.baseurl }}">{{ sitetheme.title }}</a></div>
+                          <div class="tags"><a class="badge theme {{ theme.name }}" href="{{ sitetheme.url | prepend: site.baseurl }}">{{ sitetheme.title }}</a></div>
                         </div>
                         {% assign sameThemeCount = sameThemeCount | plus: 1 %}
                       {% endunless %}

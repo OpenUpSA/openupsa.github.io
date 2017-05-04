@@ -9,14 +9,35 @@
 
 // Fonts for testing typography
 $green: #9ed421;
-$green-darker: #8ab91d;
+$green-dark: #8ab91d;
+
 $trace: #0f77bc;
-$trace-darker: #04609e;
-$trace-lighter: #8cc9f2;
+$trace-light: #8cc9f2;
+$trace-dark: #04609e;
+
 $shortcourse: #911ccc;
 $shortcourse-light: #f9f5fd;
-$shortcourse-darker: #511c87;
+$shortcourse-dark: #511c87;
 
+$activecitizenry: red;
+$activecitizenry-light: #9ed421;
+$activecitizenry-dark: #8ab91d;
+
+$tech: blue;
+$tech-light: #9ed421;
+$tech-dark: #8ab91d;
+
+$cogovernance: orange;
+$cogovernance-light: #9ed421;
+$cogovernance-dark: #8ab91d;
+
+$education: purple;
+$education-light: #9ed421;
+$education-dark: #8ab91d;
+
+$opendata: cyan;
+$opendata-light: #9ed421;
+$opendata-dark: #8ab91d;
 
 html {
   height: 100%;
@@ -35,7 +56,7 @@ body {
   position: relative;
   min-height: 100%;
   a {
-    color: $green-darker;
+    color: $green-dark;
     &:hover {
       color: $green;
     }
@@ -48,15 +69,15 @@ body {
     font-weight: 700;
     transition: background-color 150ms ease-out;
     &:hover {
-      background-color: $green-darker;
+      background-color: $green-dark;
       color: #fff;
     }
   }
   .btn-default {
-      background: transparent;
-      border: 1px solid black;
-      color: #333;
-      font-weight: 500;
+    background: transparent;
+    border: 1px solid black;
+    color: #333;
+    font-weight: 500;
   }
 }
 
@@ -99,12 +120,43 @@ body {
     }
   }
   .theme {
-    background-color: $green;
     transition: background-color 150ms ease-out;
-    &:hover {
-      background-color: $green-darker;
-      color: #fff;
+    &.activecitizenry {
+      background-color: $activecitizenry;
+      &:hover {
+        background-color: $activecitizenry-dark;
+        color: #fff;
+      }
     }
+    &.tech {
+      background-color: $tech;
+      &:hover {
+        background-color: $tech-dark;
+        color: #fff;
+      }
+    }
+    &.cogovernance {
+      background-color: $cogovernance;
+      &:hover {
+        background-color: $cogovernance-dark;
+        color: #fff;
+      }
+    }
+    &.education {
+      background-color: $education;
+      &:hover {
+        background-color: $education-dark;
+        color: #fff;
+      }
+    }
+    &.opendata {
+      background-color: $opendata;
+      &:hover {
+        background-color: $opendata-dark;
+        color: #fff;
+      }
+    }
+
   }
 }
 
@@ -116,8 +168,8 @@ body {
     display: inline-block;
     width: 100%;
     .navbar-nav li a {
-      color: #777;
       font-family: 'Open Sans', sans-serif;
+      color: #777;
     }
     .navbar-brand {
       font-family: 'Open Sans', sans-serif;
@@ -148,14 +200,44 @@ body {
       a {
         border-radius: 0;
         text-transform: uppercase;
-        background-color: $green;
         padding: 5px 10px;
         margin: 12px 5px;
         color: #fff;
         transition: background-color 150ms ease-out;
-        &:hover {
-          background-color: $green-darker;
-          color: #fff;
+        &.activecitizenry {
+          background-color: $activecitizenry;
+          &:hover {
+            background-color: $activecitizenry-dark;
+            color: #fff;
+          }
+        }
+        &.tech {
+          background-color: $tech;
+          &:hover {
+            background-color: $tech-dark;
+            color: #fff;
+          }
+        }
+        &.cogovernance {
+          background-color: $cogovernance;
+          &:hover {
+            background-color: $cogovernance-dark;
+            color: #fff;
+          }
+        }
+        &.education {
+          background-color: $education;
+          &:hover {
+            background-color: $education-dark;
+            color: #fff;
+          }
+        }
+        &.opendata {
+          background-color: $opendata;
+          &:hover {
+            background-color: $opendata-dark;
+            color: #fff;
+          }
         }
       }
     }
@@ -179,7 +261,7 @@ body {
   }
   .banner-notice {
     margin-top: -20px;
-    background-color: $green-darker;
+    background-color: $green-dark;
     .announcement {
       padding: 10px 0;
       color: #fff;
@@ -221,7 +303,7 @@ body {
     a {
       color: $green;
       &:hover {
-        color: $green-darker;
+        color: $green-dark;
       }
     }
     p {
@@ -568,7 +650,6 @@ p {
   .theme-articles {
     .article-title {
       padding: 10px;
-      background-color: $green;
       a, a:hover {
         color: #fff;
       }
@@ -579,6 +660,46 @@ p {
     .one-article {
       min-height: 500px;
       margin-bottom: 30px;
+    }
+  }
+  &.activecitizenry {
+    .author {
+      color: $activecitizenry;  
+    }
+    .article-title {
+      background-color: $activecitizenry;
+    }
+  }
+  &.tech {
+    .author {
+      color: $tech;  
+    }
+    .article-title {
+      background-color: $tech;
+    }
+  }
+  &.cogovernance {
+    .author {
+      color: $cogovernance;  
+    }
+    .article-title {
+      background-color: $cogovernance;
+    }
+  }
+  &.education {
+    .author {
+      color: $education;  
+    }
+    .article-title {
+      background-color: $education;
+    }
+  }
+  &.opendata {
+    .author {
+      color: $opendata;  
+    }
+    .article-title {
+      background-color: $opendata;
     }
   }
 }
@@ -954,14 +1075,14 @@ footer {
     background-color: $shortcourse;
     color: #fff;
     &:hover {
-      background-color: $shortcourse-darker;
+      background-color: $shortcourse-dark;
       color: #fff;
     }
   }
   a {
     color: $trace;
     &:hover {
-      color: $trace-darker;
+      color: $trace-dark;
     }
   }
   h2 {
@@ -1049,14 +1170,14 @@ footer {
     background-color: $trace;
     color: #fff;
     &:hover {
-      background-color: $trace-darker;
+      background-color: $trace-dark;
       color: #fff;
     }
   }
   a {
     color: $trace;
     &:hover {
-      color: $trace-darker;
+      color: $trace-dark;
     }
   }
   h2 {
@@ -1114,7 +1235,7 @@ footer {
     display: none;
     padding-top: 40px;
     mark {
-      background-color: $trace-lighter;
+      background-color: $trace-light;
       padding: 0em;
     }
 
