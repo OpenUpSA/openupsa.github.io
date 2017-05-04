@@ -5,6 +5,22 @@
 
   <body>
 
+    <!-- schema -->
+    <span class="hidden" itemscope itemtype="http://schema.org/NGO">
+      <span itemprop="name">OpenUp</span>
+      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">1 Thicket St, Newlands</span>
+        <span itemprop="addressLocality">Cape Town</span>,
+        <span itemprop="addressRegion">Western Cape</span>
+        <span itemprop="postalCode">7725</span>
+      </span>
+      <span itemprop="telephone">+27216716306</span>
+      <span itemprop="email">info@openup.org.za</span>
+      <span itemprop="url">https://openup.org.za</span>
+      <span itemprop="description">We empower citizens to improve their lives and communities.</span>
+      <img itemprop="logo" src="https://openup.org.za/img/logo.png"/>
+    </span>
+
     {% include header.html %}
 
     {{ content }}
