@@ -1,5 +1,4 @@
 ---
-layout: none
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -12,9 +11,9 @@ layout: none
       <item>
         <title>{{ article.title | xml_escape }}</title>
         <description>{{ article.content | xml_escape }}</description>
-        <pubDate>{{ article.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <pubDate>{{ article.date | date: "%A, %d %B %Y" }}</pubDate>
         <link>{{ site.url }}{{ article.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}/{{ article.url }}</guid>
+        <guid isPermaLink="true">{{ site.url }}{{ article.url }}</guid>
       </item>
     {% endfor %}
   </channel>
