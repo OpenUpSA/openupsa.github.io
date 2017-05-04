@@ -2,7 +2,7 @@
 layout: article
 author: jennifer
 title: "Customer support glee - who would have thought?!"
-date: 2017-04-19
+date: 2017-05-04
 short: "Unpacking the joy of doing live customer support at OpenUp"
 image: cust-support.jpg
 types:
