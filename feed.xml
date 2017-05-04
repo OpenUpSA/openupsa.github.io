@@ -11,7 +11,7 @@
       <item>
         <title>{{ article.title | xml_escape }}</title>
         <description>{{ article.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <pubDate>{{ article.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>{{ site.url }}{{ article.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ article.url }}</guid>
       </item>
