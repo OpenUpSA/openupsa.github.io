@@ -11,6 +11,7 @@
 $green: #9ed421;
 $green-light: lighten($green, 10%);
 $green-dark: darken($green, 10%);
+$green-darker: darken($green, 20%);
 
 $trace: #0f77bc;
 $trace-lighter: lighten($trace, 20%);
@@ -21,7 +22,7 @@ $shortcourse: #911ccc;
 $shortcourse-light: lighten($shortcourse, 10%);
 $shortcourse-dark: darken($shortcourse, 10%);
 
-$activecitizenry: red;
+$activecitizenry: #a32c53;
 $activecitizenry-light: lighten($activecitizenry, 10%);
 $activecitizenry-dark: darken($activecitizenry, 10%);
 
@@ -96,6 +97,21 @@ body {
   img {
     width: 100%;
     padding-top: 5px;
+  }
+  .article-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: $green-darker;
+    font-size: 18px;
+    font-family: 'News Cycle', 'Open Sans', sans-serif;
+    a, a:hover {
+      color: #fff;
+    }
+  }
+  .title-image-wrap {
+    position: relative;
   }
 }
 
@@ -318,13 +334,6 @@ body {
     background-color:#f8f8f8;
     padding: 50px 0;
     margin-bottom:20px;
-    .article-title {
-      padding: 10px;
-      background-color: $green;
-      a, a:hover {
-        color: #fff;
-      }
-    }
     .article-author {
       padding: 10px 0px;
     }
@@ -530,17 +539,6 @@ body {
     img {
       width: 100%;
     }
-    .article-title {
-      position: absolute;
-      bottom: 0;
-      left: 15px;
-      width: calc(100% - 30px);
-      padding: 10px;
-      background-color: $green;
-      a, a:hover {
-        color: #fff;
-      }
-    }
     .one-article {
       margin-bottom: 25px;
     }
@@ -650,12 +648,6 @@ p {
     margin: 40px 0;
   }
   .theme-articles {
-    .article-title {
-      padding: 10px;
-      a, a:hover {
-        color: #fff;
-      }
-    }
     .article-author {
       padding: 10px 0px;
     }
@@ -669,7 +661,7 @@ p {
       color: $activecitizenry;  
     }
     .article-title {
-      background-color: $activecitizenry;
+      background-color: $activecitizenry !important;
     }
   }
   &.tech {
@@ -677,7 +669,7 @@ p {
       color: $tech;  
     }
     .article-title {
-      background-color: $tech;
+      background-color: $tech !important;
     }
   }
   &.cogovernance {
@@ -685,7 +677,7 @@ p {
       color: $cogovernance;  
     }
     .article-title {
-      background-color: $cogovernance;
+      background-color: $cogovernance !important;
     }
   }
   &.education {
@@ -693,7 +685,7 @@ p {
       color: $education;  
     }
     .article-title {
-      background-color: $education;
+      background-color: $education !important;
     }
   }
   &.opendata {
@@ -701,10 +693,52 @@ p {
       color: $opendata;  
     }
     .article-title {
-      background-color: $opendata;
+      background-color: $opendata !important;
     }
+  } 
+}
+
+.activecitizenry {
+  .author {
+    color: $activecitizenry;  
+  }
+  .article-title {
+    background-color: $activecitizenry !important;
   }
 }
+.tech {
+  .author {
+    color: $tech;  
+  }
+  .article-title {
+    background-color: $tech !important;
+  }
+}
+.cogovernance {
+  .author {
+    color: $cogovernance;  
+  }
+  .article-title {
+    background-color: $cogovernance !important;
+  }
+}
+.education {
+  .author {
+    color: $education;  
+  }
+  .article-title {
+    background-color: $education !important;
+  }
+}
+.opendata {
+  .author {
+    color: $opendata;  
+  }
+  .article-title {
+    background-color: $opendata !important;
+  }
+}
+
 
 .individual-type {
   .header {
@@ -723,13 +757,6 @@ p {
     margin: 40px 0;
   }
   .type-articles {
-    .article-title {
-      padding: 10px;
-      background-color: $green;
-      a, a:hover {
-        color: #fff;
-      }
-    }
     .article-author {
       padding: 10px 0px;
     }
@@ -789,13 +816,6 @@ p {
   .conversation {
     h4 {
       margin-bottom: 40px;
-    }
-    .article-title {
-      padding: 10px;
-      background-color: $green;
-      a, a:hover {
-        color: #fff;
-      }
     }
     .article-author {
       padding: 10px 0px;
@@ -1044,18 +1064,6 @@ footer {
     }
   }
   .article-list {
-    .article-title {
-      position: absolute;
-      bottom: 0;
-      left: 15px;
-      width: calc(100% - 30px);
-      bottom: 0;
-      padding: 10px;
-      background-color: $green;
-      a, a:hover {
-        color: #fff;
-      }
-    }
     .article-author {
       padding: 10px 0px;
     }
