@@ -2,9 +2,9 @@
 layout: article
 author: jennifer
 title: "Customer support glee - who would have thought?!"
-date: 2017-04-19
+date: 2017-05-04
 short: "Unpacking the joy of doing live customer support at OpenUp"
-image: CustSupport.jpg
+image: cust-support.jpg
 types:
 - name: other
 themes:
@@ -31,3 +31,7 @@ Well, the products we build have no commercial funnel to them. We are not trying
 I realised my satisfaction in providing support to people who use our products is because they have a real-life problem that we could potentially help them to solve. 
 
 It also provided me with a great opportunity to encourage users to be more active in their communities - to seek out and understand what democratic, participative processes are available to them and how using them can make a difference in their own lives.
+
+If you manage a product and are feeling a little out of touch with your users, I strongly encourage you to get closer to them, to really listen to how they use your product, what pain points they experience and what they would like to see in the future. There are a host of tools and techniques at your disposal (often the hardest part, once deciding to understand your users a bit better, is picking a tool to get started with) ranging from spending a bit of time with analytics on your site, this is especially valuable if you have set up conversion goals, to hosting focus group sessions, in-person usability testing, surveys, competitions and speaking to non-users to understand what it would take for them to become users.
+
+Product management might seem like a dark art, but with the right tools and attitude it can be a more precise science.

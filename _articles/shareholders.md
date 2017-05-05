@@ -27,7 +27,7 @@ This includes access to the following: memorandum of incorporation, records pert
 The standard procedure for acquiring company-related information, according to the Act, is for interested members of the public to fill in a - relatively simple - form asking companies for the opportunity to inspect their shareholder registers and the response time, from the companies, is only meant to take up to about three weeks. On average, you’re looking at approximately R40 per request made, but the full cost depends on what and how many records you’re requesting. 
 
 
-##The state of corporate transparency in South Africa
+## The state of corporate transparency in South Africa
 
 But a 2014 High Court [judgment](http://www.saflii.org/za/cases/ZAGPPHC/2014/836.pdf) is seriously threatening the entire process. The case involves a battle between Moneyweb and Nova Property group, which owns properties originally acquired by Sharemax, an alleged shell company (or ponzi scheme). Moneyweb, an online financial news service, has been trying to access Nova’s shareholder registers since 2013. 
 
@@ -37,7 +37,7 @@ Investigative journalism unit _amaBhungane_, who entered into the subsequent app
 
 The Promotion of Access to Information Act (PAIA) is a process that allows anyone to [access information](http://www.justice.gov.za/legislation/acts/2000-002.pdf) that “is held by another person and that is required for the exercise or protection of any rights”. But PAIA works both ways, and allows for a private body (or company) to refuse access to records for various reasons. In many instances, accessing company records first time can be quite tough and an applicant can be forced to jump through multiple hoops to get the information they want. 
 
-##Corporate governance in the extractives sector
+## Corporate governance in the extractives sector
 
 Corporate governance deals with the framework in which companies are directed and controlled. Here in South Africa, it is regulated by legislation and the common law, and in the past decade or so, the concept of corporate social responsibility has also emerged as a part of both the private and public sectors’ code of governance. 
 

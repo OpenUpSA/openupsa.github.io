@@ -71,7 +71,7 @@ layout: base
                 {% for theme in site.themes %}
                   {% for articletheme in article.themes %}
                     {% if theme.name == articletheme.name %}
-                      <span class="tags"><a class="badge theme" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></span>
+                      <span class="tags"><a class="badge theme {{ theme.name }}" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></span>
                     {% endif %}
                   {% endfor %}
                 {% endfor %}
