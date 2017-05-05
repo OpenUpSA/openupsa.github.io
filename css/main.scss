@@ -6,6 +6,7 @@
 ;
 
 @import url('https://fonts.googleapis.com/css?family=News+Cycle|Libre+Franklin:300,300i,400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
 
 // Fonts for testing typography
 $green: #9ed421;
@@ -22,25 +23,36 @@ $shortcourse: #911ccc;
 $shortcourse-light: lighten($shortcourse, 10%);
 $shortcourse-dark: darken($shortcourse, 10%);
 
-$activecitizenry: #a32c53;
+$activecitizenry: #b21114;
 $activecitizenry-light: lighten($activecitizenry, 10%);
 $activecitizenry-dark: darken($activecitizenry, 10%);
 
-$tech: blue;
+$tech: #4b1c96;
 $tech-light: lighten($tech, 10%);
 $tech-dark: darken($tech, 10%);
 
-$cogovernance: orange;
+$cogovernance: #009ec1;
 $cogovernance-light: lighten($cogovernance, 10%);
 $cogovernance-dark: darken($cogovernance, 10%);
 
-$education: purple;
+$education: #d3af1f;
 $education-light: lighten($education, 10%);
 $education-dark: darken($education, 10%);
 
-$opendata: cyan;
+$opendata: #138e08;
 $opendata-light: lighten($opendata, 10%);
 $opendata-dark: darken($opendata, 10%);
+
+$tool: #707070;
+$tool-light: lighten($tool, 10%);
+$tool-dark: darken($tool, 10%);
+$tool-darker: darken($tool, 20%);
+
+$type: #707070;
+$type-light: lighten($type, 10%);
+$type-dark: darken($type, 10%);
+$type-darker: darken($type, 20%);
+
 
 html {
   height: 100%;
@@ -104,8 +116,8 @@ body {
     width: 100%;
     padding: 10px;
     background-color: $green-darker;
-    font-size: 18px;
-    font-family: 'News Cycle', 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-family: 'Bitter', serif;
     a, a:hover {
       color: #fff;
     }
@@ -117,23 +129,26 @@ body {
 
 .tags {
   text-transform: uppercase;
+  .badge {
+  font-size: 11px;
+  }
   a {
-    padding:5px 10px;
+    padding: 5px 10px 6px 10px;
     border-radius: 0;
   }
   .tool {
-    background-color: #999;
+    background-color: $tool;
     transition: background-color 150ms ease-out;
     &:hover {
-      background-color: #777;
+      background-color: $tool-dark;
       color: #fff;
     }
   }
   .type {
-    background-color: #3c763d;
+    background-color: $type;
     transition: background-color 150ms ease-out;
     &:hover {
-      background-color: #2a592a;
+      background-color: $type-dark;
       color: #fff;
     }
   }
@@ -338,7 +353,7 @@ body {
       padding: 10px 0px;
     }
     .one-article {
-      min-height: 500px;
+      min-height: 450px;
       margin-bottom: 30px;
     }
   }
@@ -409,10 +424,12 @@ body {
         margin-bottom: 20px;
       }
       .title {
-        text-transform: uppercase;
         font-size: 1.2em;
         margin-bottom: 5px;
         width: 90%;
+        font-family: 'Bitter', serif;
+        font-size: 22px;
+        padding-top: 10px;
         a {
           color: #000;
         }
@@ -652,7 +669,7 @@ p {
       padding: 10px 0px;
     }
     .one-article {
-      min-height: 500px;
+      min-height: 450px;
       margin-bottom: 30px;
     }
   }
@@ -663,6 +680,9 @@ p {
     .article-title {
       background-color: $activecitizenry !important;
     }
+    .title .title-text {
+      border-bottom: 4px solid $activecitizenry;
+    }
   }
   &.tech {
     .author {
@@ -670,6 +690,9 @@ p {
     }
     .article-title {
       background-color: $tech !important;
+    }
+    .title .title-text {
+      border-bottom: 4px solid $tech;
     }
   }
   &.cogovernance {
@@ -679,6 +702,9 @@ p {
     .article-title {
       background-color: $cogovernance !important;
     }
+    .title .title-text {
+      border-bottom: 4px solid $cogovernance;
+    }
   }
   &.education {
     .author {
@@ -686,6 +712,9 @@ p {
     }
     .article-title {
       background-color: $education !important;
+    }
+    .title .title-text {
+      border-bottom: 4px solid $education;
     }
   }
   &.opendata {
@@ -695,50 +724,11 @@ p {
     .article-title {
       background-color: $opendata !important;
     }
+    .title .title-text {
+      border-bottom: 4px solid $opendata;
+    }
   } 
 }
-
-.activecitizenry {
-  .author {
-    color: $activecitizenry;  
-  }
-  .article-title {
-    background-color: $activecitizenry !important;
-  }
-}
-.tech {
-  .author {
-    color: $tech;  
-  }
-  .article-title {
-    background-color: $tech !important;
-  }
-}
-.cogovernance {
-  .author {
-    color: $cogovernance;  
-  }
-  .article-title {
-    background-color: $cogovernance !important;
-  }
-}
-.education {
-  .author {
-    color: $education;  
-  }
-  .article-title {
-    background-color: $education !important;
-  }
-}
-.opendata {
-  .author {
-    color: $opendata;  
-  }
-  .article-title {
-    background-color: $opendata !important;
-  }
-}
-
 
 .individual-type {
   .header {
@@ -761,7 +751,7 @@ p {
       padding: 10px 0px;
     }
     .one-article {
-      min-height: 500px;
+      min-height: 450px;
       margin-bottom: 30px;
     }
   }
@@ -821,7 +811,7 @@ p {
       padding: 10px 0px;
     }
     .one-article {
-      min-height: 500px;
+      min-height: 450px;
       margin-bottom: 30px;
     }
   }
@@ -987,7 +977,7 @@ p {
 footer {
   position:relative;
   width: 100%;
-  background-color: $green;
+  background-color: $green-darker;
   margin-top: 30px;
 
   a {
