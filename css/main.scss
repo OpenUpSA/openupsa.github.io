@@ -9,35 +9,37 @@
 
 // Fonts for testing typography
 $green: #9ed421;
-$green-dark: #8ab91d;
+$green-light: lighten($green, 10%);
+$green-dark: darken($green, 10%);
 
 $trace: #0f77bc;
-$trace-light: #8cc9f2;
-$trace-dark: #04609e;
+$trace-lighter: lighten($trace, 20%);
+$trace-light: lighten($trace, 10%);
+$trace-dark: darken($trace, 10%);
 
 $shortcourse: #911ccc;
-$shortcourse-light: #f9f5fd;
-$shortcourse-dark: #511c87;
+$shortcourse-light: lighten($shortcourse, 10%);
+$shortcourse-dark: darken($shortcourse, 10%);
 
 $activecitizenry: red;
-$activecitizenry-light: #9ed421;
-$activecitizenry-dark: #8ab91d;
+$activecitizenry-light: lighten($activecitizenry, 10%);
+$activecitizenry-dark: darken($activecitizenry, 10%);
 
 $tech: blue;
-$tech-light: #9ed421;
-$tech-dark: #8ab91d;
+$tech-light: lighten($tech, 10%);
+$tech-dark: darken($tech, 10%);
 
 $cogovernance: orange;
-$cogovernance-light: #9ed421;
-$cogovernance-dark: #8ab91d;
+$cogovernance-light: lighten($cogovernance, 10%);
+$cogovernance-dark: darken($cogovernance, 10%);
 
 $education: purple;
-$education-light: #9ed421;
-$education-dark: #8ab91d;
+$education-light: lighten($education, 10%);
+$education-dark: darken($education, 10%);
 
 $opendata: cyan;
-$opendata-light: #9ed421;
-$opendata-dark: #8ab91d;
+$opendata-light: lighten($opendata, 10%);
+$opendata-dark: darken($opendata, 10%);
 
 html {
   height: 100%;
@@ -1235,7 +1237,7 @@ footer {
     display: none;
     padding-top: 40px;
     mark {
-      background-color: $trace-light;
+      background-color: $trace-lighter;
       padding: 0em;
     }
 
