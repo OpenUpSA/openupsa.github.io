@@ -13,6 +13,7 @@ $green: #9ed421;
 $green-light: lighten($green, 10%);
 $green-dark: darken($green, 10%);
 $green-darker: darken($green, 20%);
+$green-darkest: darken($green, 30%);
 
 $trace: #0f77bc;
 $trace-lighter: lighten($trace, 20%);
@@ -70,9 +71,9 @@ body {
   position: relative;
   min-height: 100%;
   a {
-    color: $green-dark;
+    color: $green-darker;
     &:hover {
-      color: $green;
+      color: $green-dark;
     }
   }
   .btn {
@@ -243,6 +244,10 @@ body {
         margin: 12px 5px;
         color: #fff;
         transition: background-color 150ms ease-out;
+        @media (max-width:970px) {
+          margin: 1px 0;
+          padding: 20px;
+        }
         &.activecitizenry {
           background-color: $activecitizenry;
           &:hover {
@@ -302,7 +307,7 @@ body {
   }
   .banner-notice {
     margin-top: -20px;
-    background-color: $green-dark;
+    background-color: $green-darker;
     .announcement {
       padding: 10px 0;
       color: #fff;
@@ -312,7 +317,7 @@ body {
     }
   }
   .banner {
-    background-color: $green;
+    background-color: $green-dark;
     padding: 20px;
     padding-bottom: 180px;
     h1 {

@@ -81,7 +81,7 @@ layout: base
                               <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
                             </div>
                           </div>
-                          <div class="tags"><a class="badge tool" href="{% if sitetool.skip-own-page %}{{ sitetool.external-url }}{% else %}{{ sitetool.url | prepend: site.baseurl }}{% endif %}">{{ sitetool.title }} hello</a></div>
+                          <div class="tags"><a class="badge tool" href="{% if sitetool.skip-own-page %}{{ sitetool.external-url }}{% else %}{{ sitetool.url | prepend: site.baseurl }}{% endif %}">{{ sitetool.title }}</a></div>
                         </div>
                         {% assign sameToolCount = sameToolCount | plus: 1 %}
                       {% endunless %}
