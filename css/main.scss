@@ -121,7 +121,7 @@ body {
     width: 100%;
     padding: 10px;
     background-color: $green-darker;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Bitter', serif;
     a, a:hover {
       color: #fff;
@@ -345,17 +345,12 @@ body {
   }
   .moretools {
     margin: 30px 0;
-    text-align:right;
-    a {
-      color: $green;
-      &:hover {
-        color: $green-dark;
-      }
-    }
-    p {
-      font-size: 24px;
-      font-weight: 600;
-      font-family: 'open sans', sans-serif;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    a:hover {
+      text-decoration: none;
     }
   }
   .articles {
@@ -411,7 +406,7 @@ body {
     .bubble {
       pointer-events: none;
       border-radius: 100px;
-      background-color: #ababab;
+      background-color: $green-dark;
       bottom: 45%;
       left: -30px;
       height: 90px;
@@ -422,6 +417,7 @@ body {
       line-height: 90px;
       position: absolute;
       font-weight: bold;
+      font-size: 14px;
       @media (max-width:1240px) {
         bottom: -45px;
         left: 55%;
@@ -441,7 +437,7 @@ body {
         margin-bottom: 5px;
         width: 90%;
         font-family: 'Bitter', serif;
-        font-size: 22px;
+        font-size: 20px;
         padding-top: 10px;
         a {
           color: #000;
