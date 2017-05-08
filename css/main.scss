@@ -125,10 +125,12 @@ body {
     font-size: 18px;
     font-family: 'Bitter', serif;
     height: 75px;
+    pointer-events: none;
     a, a:hover {
       color: #fff;
       position: absolute;
       bottom: 10px;
+      width: calc(100% - 20px);
     }
   }
   .title-image-wrap {
@@ -316,7 +318,7 @@ body {
       padding: 10px 0;
       color: #fff;
       a {
-        color: white;
+        color: #fff;
       }
     }
   }
@@ -324,14 +326,13 @@ body {
     background-color: $green-dark;
     padding: 20px;
     padding-bottom: 180px;
+    color: #fff;
     h1 {
-      color: #fff;
       font-size: 42px;
     }
     h3 {
       font-family: 'News Cycle', sans-serif;
       font-size: 26px;
-      color: #e8ffda;
     }
   }
   .tools {
@@ -904,7 +905,7 @@ p {
     margin-bottom: 30px;
   }
   .theory-of-change {
-    background-color: $green;
+    background-color: $green-dark;
     color: #fff;
     padding: 20px;
     margin-top: -20px;
