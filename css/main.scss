@@ -1292,4 +1292,17 @@ footer {
   section {
     margin-bottom: 60px;
   }
+
+  .big-icon {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 56px;
+    color: #666;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  .big-icon + h3 {
+    margin-top: 10px;
+  }
 }
