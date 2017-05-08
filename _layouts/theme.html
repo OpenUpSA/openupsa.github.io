@@ -1,18 +1,16 @@
 ---
 layout: base
 ---
-<div class="container individual-theme {{ page.name }}">
+<div class="individual-theme {{ page.name }}">
 
-  <section class="header">
-    <h1 class="title"><span class="title-text">{{ page.title }}</span></h1>
+  <section class="hero">
+    <div class="container">
+      <h1 class="title">{{ page.title }}</h1>
+      <p class="description">{{ page.description }}</p>
+    </div>
   </section>
 
-  <section class="theme-info">
-    <p>{{ page.description }}</p>
-    {{ page.content }}
-  </section>
-
-  <section class="theme-articles article-list">
+  <section class="theme-articles article-list container">
     <div class="row">
       {% for article in site.articles reversed %}
         {% for theme in article.themes %}

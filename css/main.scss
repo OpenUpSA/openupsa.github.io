@@ -15,7 +15,8 @@ $green-dark: darken($green, 10%);
 $green-darker: darken($green, 20%);
 $green-darkest: darken($green, 30%);
 
-$trace: #0f77bc;
+$trace: #138e08;
+$trace-opaque: rgba($trace, .05);
 $trace-lighter: lighten($trace, 20%);
 $trace-light: lighten($trace, 10%);
 $trace-dark: darken($trace, 10%);
@@ -32,11 +33,11 @@ $tech: #4b1c96;
 $tech-light: lighten($tech, 10%);
 $tech-dark: darken($tech, 10%);
 
-$cogovernance: #009ec1;
+$cogovernance: #0f77bc;
 $cogovernance-light: lighten($cogovernance, 10%);
 $cogovernance-dark: darken($cogovernance, 10%);
 
-$education: #d3af1f;
+$education: #edc515;
 $education-light: lighten($education, 10%);
 $education-dark: darken($education, 10%);
 
@@ -120,11 +121,14 @@ body {
     bottom: 0;
     width: 100%;
     padding: 10px;
-    background-color: $green-darker;
+    background-image: linear-gradient(transparent,#000 100%);
     font-size: 18px;
     font-family: 'Bitter', serif;
+    height: 75px;
     a, a:hover {
       color: #fff;
+      position: absolute;
+      bottom: 10px;
     }
   }
   .title-image-wrap {
@@ -244,7 +248,7 @@ body {
         margin: 12px 5px;
         color: #fff;
         transition: background-color 150ms ease-out;
-        @media (max-width:970px) {
+        @media (max-width:767px) {
           margin: 1px 0;
           padding: 20px;
         }
@@ -658,18 +662,6 @@ p {
 }
 
 .individual-theme {
-  .header {
-    margin-bottom: 30px;
-    .title {
-      font-family: 'Open Sans', sans-serif;
-      text-transform: uppercase;
-      margin-top: 30px;
-      font-weight: 600;
-      img {
-        height: 35px;
-      }
-    }
-  }
   .theme-info {
     margin: 40px 0;
   }
@@ -682,59 +674,58 @@ p {
       margin-bottom: 30px;
     }
   }
+  .hero {
+    color: #fff;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    .title {
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      margin-top: 30px;
+      font-weight: 600;
+    }
+    .description {
+      margin-bottom: 30px;
+    }
+  }
   &.activecitizenry {
     .author {
       color: $activecitizenry;  
     }
-    .article-title {
-      background-color: $activecitizenry !important;
-    }
-    .title .title-text {
-      border-bottom: 4px solid $activecitizenry;
+    .hero {
+      background-color: $activecitizenry;
     }
   }
   &.tech {
     .author {
       color: $tech;  
     }
-    .article-title {
-      background-color: $tech !important;
-    }
-    .title .title-text {
-      border-bottom: 4px solid $tech;
+    .hero {
+      background-color: $tech;
     }
   }
   &.cogovernance {
     .author {
       color: $cogovernance;  
     }
-    .article-title {
-      background-color: $cogovernance !important;
-    }
-    .title .title-text {
-      border-bottom: 4px solid $cogovernance;
+    .hero {
+      background-color: $cogovernance;
     }
   }
   &.education {
     .author {
       color: $education;  
     }
-    .article-title {
-      background-color: $education !important;
-    }
-    .title .title-text {
-      border-bottom: 4px solid $education;
+    .hero {
+      background-color: $education;
     }
   }
   &.opendata {
     .author {
       color: $opendata;  
     }
-    .article-title {
-      background-color: $opendata !important;
-    }
-    .title .title-text {
-      border-bottom: 4px solid $opendata;
+    .hero {
+      background-color: $opendata;
     }
   } 
 }
@@ -1197,7 +1188,7 @@ footer {
   }
   h2 {
     font-weight: 600;
-    color: #0f77bc;
+    color: $trace;
   }
   .hero {
     background-color: $trace;
@@ -1223,7 +1214,7 @@ footer {
     p {
       font-family: 'Open Sans', sans-serif;
       font-size: 21px;
-      color: #c6e8ff;
+      color: #fff;
       text-align: center;
       font-weight: 300;
     }
@@ -1250,7 +1241,7 @@ footer {
     display: none;
     padding-top: 40px;
     mark {
-      background-color: $trace-lighter;
+      background-color: $trace-light;
       padding: 0em;
     }
 
@@ -1323,7 +1314,7 @@ footer {
     }
   }
   .mission-requests {
-    background-color: #f5fafd;
+    background-color: $trace-opaque;
     padding-top: 30px;
     padding-bottom:30px;
   }
@@ -1352,7 +1343,7 @@ footer {
   }
   .corporate-articles {
     padding: 30px 0px;
-    background-color: #f5fafd;
+    background-color: $trace-opaque;
     .article-list {
       .article {
         margin-bottom: 40px;
