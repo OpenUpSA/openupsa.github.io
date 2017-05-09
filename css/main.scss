@@ -8,6 +8,9 @@
 @import url('https://fonts.googleapis.com/css?family=News+Cycle|Libre+Franklin:300,300i,400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 
+@import url('https://fonts.googleapis.com/css?family=Brawler|Roboto+Slab');
+
+
 // Fonts for testing typography
 $green: #82b900;
 $green-light: lighten($green, 10%);
@@ -399,6 +402,25 @@ body {
 }
 
 .tools-page {
+
+  .hero {
+    background-color: $green;
+    color: #fff;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    .title {
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      margin-top: 30px;
+      font-weight: 600;
+    }
+    .description {
+      font-family: 'Bitter', 'Libre Franklin', 'Open Sans', sans-serif;
+      margin-bottom: 30px;
+    }
+  }
+
+
   h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -875,6 +897,29 @@ p {
 }
 
 .contact-page {
+
+.hero {
+    background-color: $green;
+    color: #fff;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    .title {
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      margin-top: 30px;
+      font-weight: 600;
+    }
+    .description {
+      font-family: 'Bitter', 'Libre Franklin', 'Open Sans', sans-serif;
+      margin-bottom: 30px;
+    }
+    .contact-icons {
+      li {
+        display: inline;
+      }
+    }
+  }
+
   h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
