@@ -1284,9 +1284,15 @@ footer {
 
 .indigo-page {
   .hero {
-    padding: 60px 0px;
+    margin-top: -20px;
+    padding: 20px 0px;
+    margin-bottom: 40px;
     background-color: #144588;
     color: white;
+    
+    .buttons {
+      margin: 20px 0px;
+    }
   }
 
   section {
