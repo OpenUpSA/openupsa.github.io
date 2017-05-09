@@ -119,8 +119,11 @@ body {
     border-bottom: none;
     display: inline-block;
     width: 100%;
-    font-size: 15px;
+    font-size: 16px;
+    height: 80px;
+
     .navbar-nav li a {
+      margin-top: 20px;
       color: #777;
       font-family: 'Open Sans', sans-serif;
       padding: 15px 18px;
@@ -131,7 +134,7 @@ body {
       max-height:60px;
       padding: 0 30px 0 15px;
       img {
-        max-height:50px;
+        max-height: 80px;
         margin-top: 2px;
       }
     }
@@ -173,6 +176,7 @@ body {
   }
 
   .search-form {
+    margin-top: 30px;
     input[name=q]:focus {
       min-width: 300px;
     }
