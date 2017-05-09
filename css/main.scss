@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 
 // Fonts for testing typography
-$green: #9ed421;
+$green: #82b900;
 $green-light: lighten($green, 10%);
 $green-dark: darken($green, 10%);
 $green-darker: darken($green, 20%);
@@ -317,7 +317,7 @@ body {
   }
   .banner-notice {
     margin-top: -20px;
-    background-color: $green-darker;
+    background-color: $green-dark;
     .announcement {
       padding: 10px 0;
       color: #fff;
@@ -327,7 +327,7 @@ body {
     }
   }
   .banner {
-    background-color: $green-dark;
+    background-color: $green;
     padding: 20px;
     padding-bottom: 180px;
     color: #fff;
@@ -982,7 +982,7 @@ p {
 footer {
   position:relative;
   width: 100%;
-  background-color: $green-darker;
+  background-color: $green-dark;
   margin-top: 30px;
 
   a {
