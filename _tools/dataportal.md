@@ -10,7 +10,7 @@ opener: Our data portal is home to orphaned or esoteric datasets that you might 
 tool-info:
 - bullet: Search for datasets by category, keyword or type
 - bullet: Explore, analyse, visualise and download data
-- bullet: Add new datasets by emailing info@openup.org.za
+- bullet: Add new datasets by emailing <a href="mailto:info@openup.org.za">info@openup.org.za</a>
 slideshow:
 - image: dataportal1.png
 - image: dataportal2.png

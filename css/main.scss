@@ -6,17 +6,54 @@
 ;
 
 @import url('https://fonts.googleapis.com/css?family=News+Cycle|Libre+Franklin:300,300i,400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
 
 // Fonts for testing typography
-$green: #9ed421;
-$green-darker: #8ab91d;
-$trace: #0f77bc;
-$trace-darker: #04609e;
-$trace-lighter: #8cc9f2;
-$shortcourse: #911ccc;
-$shortcourse-light: #f9f5fd;
-$shortcourse-darker: #511c87;
+$green: #82b900;
+$green-light: lighten($green, 10%);
+$green-dark: darken($green, 10%);
+$green-darker: darken($green, 20%);
+$green-darkest: darken($green, 30%);
 
+$trace: #138e08;
+$trace-opaque: rgba($trace, .05);
+$trace-lighter: lighten($trace, 20%);
+$trace-light: lighten($trace, 10%);
+$trace-dark: darken($trace, 10%);
+
+$shortcourse: #911ccc;
+$shortcourse-light: lighten($shortcourse, 10%);
+$shortcourse-dark: darken($shortcourse, 10%);
+
+$activecitizenry: #b21114;
+$activecitizenry-light: lighten($activecitizenry, 10%);
+$activecitizenry-dark: darken($activecitizenry, 10%);
+
+$tech: #591c96;
+$tech-light: lighten($tech, 10%);
+$tech-dark: darken($tech, 10%);
+
+$cogovernance: #0f77bc;
+$cogovernance-light: lighten($cogovernance, 10%);
+$cogovernance-dark: darken($cogovernance, 10%);
+
+$education: #dcc102;
+$education-light: lighten($education, 10%);
+$education-dark: darken($education, 10%);
+
+$opendata: #138e08;
+$opendata-light: lighten($opendata, 10%);
+$opendata-dark: darken($opendata, 10%);
+
+$tool: #707070;
+$tool-light: lighten($tool, 10%);
+$tool-dark: darken($tool, 10%);
+$tool-darker: darken($tool, 20%);
+
+$type: #707070;
+$type-light: lighten($type, 10%);
+$type-dark: darken($type, 10%);
+$type-darker: darken($type, 20%);
 
 html {
   height: 100%;
@@ -37,7 +74,7 @@ body {
   a {
     color: $green-darker;
     &:hover {
-      color: $green;
+      color: $green-dark;
     }
   }
   .btn {
@@ -48,15 +85,20 @@ body {
     font-weight: 700;
     transition: background-color 150ms ease-out;
     &:hover {
-      background-color: $green-darker;
+      background-color: $green-dark;
       color: #fff;
     }
   }
   .btn-default {
-      background: transparent;
-      border: 1px solid black;
-      color: #333;
-      font-weight: 500;
+    background: transparent;
+    border: 1px solid black;
+    color: #333;
+    font-weight: 500;
+  }
+  .form-control:focus {
+    border-color: $green;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(158,212,33,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(158,212,33,.6);
   }
 }
 
@@ -74,37 +116,91 @@ body {
     width: 100%;
     padding-top: 5px;
   }
+  .article-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(transparent,#333 116%);
+    font-size: 18px;
+    font-family: 'Bitter', serif;
+    height: 75px;
+    pointer-events: none;
+    a, a:hover {
+      color: #fff;
+      position: absolute;
+      bottom: 10px;
+      width: calc(100% - 20px);
+    }
+  }
+  .title-image-wrap {
+    position: relative;
+  }
 }
 
 .tags {
   text-transform: uppercase;
+  .badge {
+  font-size: 11px;
+  }
   a {
-    padding:5px 10px;
+    padding: 5px 10px 6px 10px;
     border-radius: 0;
   }
   .tool {
-    background-color: #999;
+    background-color: $tool;
     transition: background-color 150ms ease-out;
     &:hover {
-      background-color: #777;
+      background-color: $tool-dark;
       color: #fff;
     }
   }
   .type {
-    background-color: #3c763d;
+    background-color: $type;
     transition: background-color 150ms ease-out;
     &:hover {
-      background-color: #2a592a;
+      background-color: $type-dark;
       color: #fff;
     }
   }
   .theme {
-    background-color: $green;
     transition: background-color 150ms ease-out;
-    &:hover {
-      background-color: $green-darker;
-      color: #fff;
+    &.activecitizenry {
+      background-color: $activecitizenry;
+      &:hover {
+        background-color: $activecitizenry-dark;
+        color: #fff;
+      }
     }
+    &.tech {
+      background-color: $tech;
+      &:hover {
+        background-color: $tech-dark;
+        color: #fff;
+      }
+    }
+    &.cogovernance {
+      background-color: $cogovernance;
+      &:hover {
+        background-color: $cogovernance-dark;
+        color: #fff;
+      }
+    }
+    &.education {
+      background-color: $education;
+      &:hover {
+        background-color: $education-dark;
+        color: #fff;
+      }
+    }
+    &.opendata {
+      background-color: $opendata;
+      &:hover {
+        background-color: $opendata-dark;
+        color: #fff;
+      }
+    }
+
   }
 }
 
@@ -115,17 +211,22 @@ body {
     border-bottom: none;
     display: inline-block;
     width: 100%;
+    font-size: 16px;
+    height: 80px;
+
     .navbar-nav li a {
-      color: #777;
+      margin-top: 20px;
       font-family: 'Open Sans', sans-serif;
+      color: #777;
+      padding: 15px 18px;
     }
     .navbar-brand {
       font-family: 'Open Sans', sans-serif;
       color: #777;
-      max-height:50px;
-      padding: 0 15px;
+      max-height:60px;
+      padding: 0 30px 0 15px;
       img {
-        max-height:50px;
+        max-height: 80px;
         margin-top: 2px;
       }
     }
@@ -133,7 +234,7 @@ body {
       a {
         color: #fff;
         &:hover {
-          color: #ddd;
+          color: $green;
         }
       }
     }
@@ -148,23 +249,60 @@ body {
       a {
         border-radius: 0;
         text-transform: uppercase;
-        background-color: $green;
         padding: 5px 10px;
         margin: 12px 5px;
         color: #fff;
         transition: background-color 150ms ease-out;
-        &:hover {
-          background-color: $green-darker;
-          color: #fff;
+        @media (max-width:767px) {
+          margin: 1px 0;
+          padding: 20px;
+        }
+        &.activecitizenry {
+          background-color: $activecitizenry;
+          &:hover {
+            background-color: $activecitizenry-dark;
+            color: #fff;
+          }
+        }
+        &.tech {
+          background-color: $tech;
+          &:hover {
+            background-color: $tech-dark;
+            color: #fff;
+          }
+        }
+        &.cogovernance {
+          background-color: $cogovernance;
+          &:hover {
+            background-color: $cogovernance-dark;
+            color: #fff;
+          }
+        }
+        &.education {
+          background-color: $education;
+          &:hover {
+            background-color: $education-dark;
+            color: #fff;
+          }
+        }
+        &.opendata {
+          background-color: $opendata;
+          &:hover {
+            background-color: $opendata-dark;
+            color: #fff;
+          }
         }
       }
     }
     .navbar-brand {
       font-family: 'Libre Franklin', sans-serif;
+      font-size: 15px;
+      font-weight: bold;
     }
   }
 
   .search-form {
+    margin-top: 30px;
     input[name=q]:focus {
       min-width: 300px;
     }
@@ -179,12 +317,12 @@ body {
   }
   .banner-notice {
     margin-top: -20px;
-    background-color: $green-darker;
+    background-color: $green-dark;
     .announcement {
       padding: 10px 0;
       color: #fff;
       a {
-        color: white;
+        color: #fff;
       }
     }
   }
@@ -192,14 +330,13 @@ body {
     background-color: $green;
     padding: 20px;
     padding-bottom: 180px;
+    color: #fff;
     h1 {
-      color: #fff;
       font-size: 42px;
     }
     h3 {
       font-family: 'News Cycle', sans-serif;
       font-size: 26px;
-      color: #e8ffda;
     }
   }
   .tools {
@@ -217,35 +354,23 @@ body {
   }
   .moretools {
     margin: 30px 0;
-    text-align:right;
-    a {
-      color: $green;
-      &:hover {
-        color: $green-darker;
-      }
-    }
-    p {
-      font-size: 24px;
-      font-weight: 600;
-      font-family: 'open sans', sans-serif;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    a:hover {
+      text-decoration: none;
     }
   }
   .articles {
     background-color:#f8f8f8;
     padding: 50px 0;
     margin-bottom:20px;
-    .article-title {
-      padding: 10px;
-      background-color: $green;
-      a, a:hover {
-        color: #fff;
-      }
-    }
     .article-author {
       padding: 10px 0px;
     }
     .one-article {
-      min-height: 500px;
+      min-height: 450px;
       margin-bottom: 30px;
     }
   }
@@ -290,7 +415,7 @@ body {
     .bubble {
       pointer-events: none;
       border-radius: 100px;
-      background-color: #ababab;
+      background-color: $green-dark;
       bottom: 45%;
       left: -30px;
       height: 90px;
@@ -301,6 +426,7 @@ body {
       line-height: 90px;
       position: absolute;
       font-weight: bold;
+      font-size: 14px;
       @media (max-width:1240px) {
         bottom: -45px;
         left: 55%;
@@ -316,10 +442,12 @@ body {
         margin-bottom: 20px;
       }
       .title {
-        text-transform: uppercase;
         font-size: 1.2em;
         margin-bottom: 5px;
         width: 90%;
+        font-family: 'Bitter', serif;
+        font-size: 20px;
+        padding-top: 10px;
         a {
           color: #000;
         }
@@ -446,17 +574,6 @@ body {
     img {
       width: 100%;
     }
-    .article-title {
-      position: absolute;
-      bottom: 0;
-      left: 15px;
-      width: calc(100% - 30px);
-      padding: 10px;
-      background-color: $green;
-      a, a:hover {
-        color: #fff;
-      }
-    }
     .one-article {
       margin-bottom: 25px;
     }
@@ -550,37 +667,73 @@ p {
 }
 
 .individual-theme {
-  .header {
-    margin-bottom: 30px;
+  .theme-info {
+    margin: 40px 0;
+  }
+  .theme-articles {
+    .article-author {
+      padding: 10px 0px;
+    }
+    .one-article {
+      min-height: 450px;
+      margin-bottom: 30px;
+    }
+  }
+  .hero {
+    color: #fff;
+    margin-top: -20px;
+    margin-bottom: 40px;
     .title {
       font-family: 'Open Sans', sans-serif;
       text-transform: uppercase;
       margin-top: 30px;
       font-weight: 600;
-      img {
-        height: 35px;
-      }
     }
-  }
-  .theme-info {
-    margin: 40px 0;
-  }
-  .theme-articles {
-    .article-title {
-      padding: 10px;
-      background-color: $green;
-      a, a:hover {
-        color: #fff;
-      }
-    }
-    .article-author {
-      padding: 10px 0px;
-    }
-    .one-article {
-      min-height: 500px;
+    .description {
+      font-family: 'Bitter', 'Libre Franklin', 'Open Sans', sans-serif;
       margin-bottom: 30px;
     }
   }
+  &.activecitizenry {
+    .author {
+      color: $activecitizenry;  
+    }
+    .hero {
+      background-color: $activecitizenry;
+    }
+  }
+  &.tech {
+    .author {
+      color: $tech;  
+    }
+    .hero {
+      background-color: $tech;
+    }
+  }
+  &.cogovernance {
+    .author {
+      color: $cogovernance;  
+    }
+    .hero {
+      background-color: $cogovernance;
+    }
+  }
+  &.education {
+    .author {
+      color: $education;  
+    }
+    .hero {
+      background-color: $education;
+    }
+  }
+  &.opendata {
+    .author {
+      color: $opendata;  
+    }
+    .hero {
+      background-color: $opendata;
+    }
+  } 
 }
 
 .individual-type {
@@ -600,18 +753,11 @@ p {
     margin: 40px 0;
   }
   .type-articles {
-    .article-title {
-      padding: 10px;
-      background-color: $green;
-      a, a:hover {
-        color: #fff;
-      }
-    }
     .article-author {
       padding: 10px 0px;
     }
     .one-article {
-      min-height: 500px;
+      min-height: 450px;
       margin-bottom: 30px;
     }
   }
@@ -667,18 +813,11 @@ p {
     h4 {
       margin-bottom: 40px;
     }
-    .article-title {
-      padding: 10px;
-      background-color: $green;
-      a, a:hover {
-        color: #fff;
-      }
-    }
     .article-author {
       padding: 10px 0px;
     }
     .one-article {
-      min-height: 500px;
+      min-height: 450px;
       margin-bottom: 30px;
     }
   }
@@ -771,7 +910,7 @@ p {
     margin-bottom: 30px;
   }
   .theory-of-change {
-    background-color: $green;
+    background-color: $green-dark;
     color: #fff;
     padding: 20px;
     margin-top: -20px;
@@ -844,7 +983,7 @@ p {
 footer {
   position:relative;
   width: 100%;
-  background-color: $green;
+  background-color: $green-dark;
   margin-top: 30px;
 
   a {
@@ -921,18 +1060,6 @@ footer {
     }
   }
   .article-list {
-    .article-title {
-      position: absolute;
-      bottom: 0;
-      left: 15px;
-      width: calc(100% - 30px);
-      bottom: 0;
-      padding: 10px;
-      background-color: $green;
-      a, a:hover {
-        color: #fff;
-      }
-    }
     .article-author {
       padding: 10px 0px;
     }
@@ -949,19 +1076,18 @@ footer {
 }
 
 .shortcourse-page {
-
  .btn {
     background-color: $shortcourse;
     color: #fff;
     &:hover {
-      background-color: $shortcourse-darker;
+      background-color: $shortcourse-dark;
       color: #fff;
     }
   }
   a {
     color: $trace;
     &:hover {
-      color: $trace-darker;
+      color: $trace-dark;
     }
   }
   h2 {
@@ -1040,28 +1166,35 @@ footer {
       color: #999;
     }
   }
-
 }
 
 .trace-page {
+  .form-control {
+    border-color: #fff;
+    &:focus {
+      border-color: #fff;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,255,255,.6);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,255,255,.6);
+    }
+  }
   .btn {
     border: 1px solid #fff;
     background-color: $trace;
     color: #fff;
     &:hover {
-      background-color: $trace-darker;
+      background-color: $trace-dark;
       color: #fff;
     }
   }
   a {
     color: $trace;
     &:hover {
-      color: $trace-darker;
+      color: $trace-dark;
     }
   }
   h2 {
     font-weight: 600;
-    color: #0f77bc;
+    color: $trace;
   }
   .hero {
     background-color: $trace;
@@ -1087,7 +1220,7 @@ footer {
     p {
       font-family: 'Open Sans', sans-serif;
       font-size: 21px;
-      color: #c6e8ff;
+      color: #fff;
       text-align: center;
       font-weight: 300;
     }
@@ -1114,7 +1247,7 @@ footer {
     display: none;
     padding-top: 40px;
     mark {
-      background-color: $trace-lighter;
+      background-color: $trace-light;
       padding: 0em;
     }
 
@@ -1187,7 +1320,7 @@ footer {
     }
   }
   .mission-requests {
-    background-color: #f5fafd;
+    background-color: $trace-opaque;
     padding-top: 30px;
     padding-bottom:30px;
   }
@@ -1216,7 +1349,7 @@ footer {
   }
   .corporate-articles {
     padding: 30px 0px;
-    background-color: #f5fafd;
+    background-color: $trace-opaque;
     .article-list {
       .article {
         margin-bottom: 40px;
