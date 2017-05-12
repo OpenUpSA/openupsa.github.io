@@ -13,6 +13,7 @@ types:
 themes:
 - name: tech
 - name: opendata
+featured: true
 ---
 
 In 2016, 29 municipalities in South Africa were created, 40 were disestablished and many more experienced boundary changes. This creates challenges for presenting historical and up-to-date statistics and data for the places that change. At OpenUp, we handle this challenge for [Wazimap.co.za](https://wazimap.co.za) and [Municipal Money](https://municipalmoney.gov.za) by following the principle of “making the common easy, and making the not-so-common possible”.
