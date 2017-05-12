@@ -12,6 +12,8 @@ types:
 themes:
 - name: opendata
 - name: tech
+featured: true
+homepage: true
 ---
 
 [Wazimap.co.za](https://wazimap.co.za) now supports the updated municipal and ward boundaries used for the 2016 Municipal Elections. This means you can explore 2011 census data for the 29 municipalities that were created for the elections, and all the other municipalities and wards which experienced boundary changes.
