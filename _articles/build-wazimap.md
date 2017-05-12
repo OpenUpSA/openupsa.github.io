@@ -12,6 +12,7 @@ types:
 - name: howto
 themes:
 - name: tech
+featured: true
 ---
 
 We're excited to share that you can now install [Wazimap as a Django project using pip](http://wazimap.readthedocs.org/en/latest/). This makes it much simpler to re-use Wazimap and build out a Wazimap website for your country or city. This will help many more people use Wazimap to find the story behind the data.

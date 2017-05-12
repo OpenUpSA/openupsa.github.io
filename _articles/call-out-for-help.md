@@ -3,7 +3,6 @@ layout: article
 author: adi
 title: "Open Gazettes: We'd really appreciate some help."
 date: 2017-02-06
-homepage: true
 short: |
     Code for South Africa and SAFLII need your help to build the largest digital collection of freely available gazettes.
 image: old-gazettes.jpg
