@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Tools
-featured-tool: opengazettes
+featured-tool: wazimap
 ---
 <div class="container tools-page">
 	<section class="page-intro">
@@ -37,7 +37,7 @@ featured-tool: opengazettes
 											{% for article-theme in site.themes %}
 											  {% for theme in article.themes %}
 											    {% if article-theme.name == theme.name %}
-											      <a class="badge theme" href="{{ article-theme.url | prepend: site.baseurl }}">{{ article-theme.title }}</a>
+											      <a class="badge theme {{ theme.name }}" href="{{ article-theme.url | prepend: site.baseurl }}">{{ article-theme.title }}</a>
 											    {% endif %}
 											  {% endfor %}
 											{% endfor %}

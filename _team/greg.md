@@ -6,7 +6,7 @@ position: Head of Technology
 current: currently working on
 email: greg@openup.org.za
 biography:
-- highlight: Honours degree at UCT in Computer Science
+- highlight: Honours degree from Wits in Computer Science
 - highlight: Master's degree in Computer Science from University of British Columbia, Vancouver, Canada
 - highlight: Spent six years helping to build <a href="http://ec2.amazonaws.com">Amazon EC2</a>
 - highlight: First got involved in civic technology when I wondered how by-laws worked, and ended up building <a href="http://openbylaws.org.za">openbylaws.org.za</a>
