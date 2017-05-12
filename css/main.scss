@@ -126,6 +126,7 @@ body {
     font-family: 'Bitter', serif;
     height: 75px;
     pointer-events: none;
+    text-shadow: 2px 2px black;
     a, a:hover {
       color: #fff;
       position: absolute;
@@ -696,7 +697,7 @@ p {
   }
   &.activecitizenry {
     .author {
-      color: $activecitizenry;  
+      color: $activecitizenry;
     }
     .hero {
       background-color: $activecitizenry;
@@ -704,7 +705,7 @@ p {
   }
   &.tech {
     .author {
-      color: $tech;  
+      color: $tech;
     }
     .hero {
       background-color: $tech;
@@ -712,7 +713,7 @@ p {
   }
   &.cogovernance {
     .author {
-      color: $cogovernance;  
+      color: $cogovernance;
     }
     .hero {
       background-color: $cogovernance;
@@ -720,7 +721,7 @@ p {
   }
   &.education {
     .author {
-      color: $education;  
+      color: $education;
     }
     .hero {
       background-color: $education;
@@ -728,12 +729,12 @@ p {
   }
   &.opendata {
     .author {
-      color: $opendata;  
+      color: $opendata;
     }
     .hero {
       background-color: $opendata;
     }
-  } 
+  }
 }
 
 .individual-type {
@@ -939,7 +940,7 @@ p {
       padding-bottom: 10px;
     }
     blockquote small {
-      padding-top: 10px; 
+      padding-top: 10px;
     }
   }
   .team {
@@ -1137,7 +1138,7 @@ footer {
       img {
         width: 100%;
       }
-    } 
+    }
   }
 
   .courses {
