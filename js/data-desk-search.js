@@ -72,25 +72,6 @@ $(function() {
       self.total_hits = resp.length;
       self.hits = [];
 
-      if (self.id == "cipc") {
-        // clump the same companies together with multiple director entries
-        resp = _.map(_.groupBy(resp, 'regno'), function(hits) {
-          var company = {};
-
-          // core company info from first entry
-          _.each(hits[0], function(value, key) {
-            if (key.slice(0, 8) != "director") {
-              company[key] = value;
-            }
-          });
-
-          // directors
-          company.directors = _.filter(hits, function(hit) { return !!hit.director_status; });
-
-          return company;
-        });
-      }
-
       resp = resp.slice(0, 5);
       resp.forEach(function(hit) {
         self.hits.push({
@@ -195,29 +176,7 @@ $(function() {
     };
   };
 
-  var cipcHint = function(query) {
-    var SAIDMatches = /(\d{6})\d{4}(\d{2})\d/.exec(query);
-    var CIDMatches = /(\d{4})\/?(\d{6})\/?(\d{2})/.exec(query);
-    var hint = "";
-    if (SAIDMatches) {
-      hint += ["It looks like you're trying to search for an SA ID ",
-               SAIDMatches[0],
-               ". SA IDs in this dataset are usually written like ",
-               SAIDMatches[1], " XXXX ", SAIDMatches[2], " X or just the date of birth ",
-               SAIDMatches[1], ". Try also searching for those. "].join('');
-    }
-    if (CIDMatches) {
-      hint += ["It looks like you're trying to search for a company number ",
-               CIDMatches[0],
-               ". Company numbers in this dataset are usually written like ",
-               CIDMatches[1], " / ", CIDMatches[2], " / ", CIDMatches[3],
-               ". Try also searching with spaces and slashes in that form. "].join('');
-    }
-    return hint;
-  };
-
   var datasets = [
-    new Dataset("socrata_private", "CIPC", "5erp-fahs", null, Handlebars.compile($("#cipc-hit-template").html()), cipcHint),
     new Dataset("socrata", "Tender Awards 2015-2016", "9vmn-5tnb", "Government/Tender-Awards-2015-2016/kvv2-xrvr"),
     new Dataset("socrata", "Restricted Suppliers", "rvqa-n6ju", "Government/Database-of-Restricted-Suppliers/rvqa-n6ju"),
     new Dataset("sourceafrica", "SENS", "404-sens"),
