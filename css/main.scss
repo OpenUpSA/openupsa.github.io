@@ -1169,6 +1169,79 @@ footer {
   }
 }
 
+
+.careers-page {
+    
+    .hero {
+    background-color: $green;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    color: #fff;
+    h1.header {
+      color: #fff;
+      font-size: 42px;
+      font-weight: 600;
+    }
+    h2.header {
+      color: #fff;
+      font-weight: 500;
+      margin-top:10px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 21px;
+      color: #fff;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+
+  .line {
+    padding: 5px 0px;
+  }
+
+  .current-careers {
+    h2 {
+      font-weight: 600;
+    }
+    h3 {
+      font-weight: 600;
+    }
+    margin-top: 20px;
+    .career-motivation {
+      font-size: 21px;
+      font-weight: 300;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+    .how-to-apply {
+      font-weight: 300;
+      line-height: 1.4;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .career-view {
+    h2 {
+      font-weight: 600;
+      padding: 10px 0;
+    }
+    .removemargin {
+      margin-top:0px;
+    }
+    .apply {
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+
+
+
 .trace-page {
   .form-control {
     border-color: #fff;
