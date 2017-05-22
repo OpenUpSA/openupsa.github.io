@@ -1,9 +1,14 @@
 ---
-layout: post
+layout: article
+author: roxanne
 title: Opening up corporate data
 date: 2017-05-22
-excerpt: In this next article we’re going back to the beginning and will look at why we’re branching out to corporate data. 
+short: In this next article we’re going back to the beginning and will look at why we’re branching out to corporate data. 
 image: open-data.jpg
+types: 
+- name: opinion
+themes:
+- name: opendata
 tools:
 - name: trace
 ---
