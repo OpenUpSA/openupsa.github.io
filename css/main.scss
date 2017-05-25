@@ -72,7 +72,7 @@ body {
   position: relative;
   min-height: 100%;
   a {
-    color: $green-darker;
+    color: $green;
     &:hover {
       color: $green-dark;
     }
@@ -126,6 +126,7 @@ body {
     font-family: 'Bitter', serif;
     height: 75px;
     pointer-events: none;
+    text-shadow: 2px 2px black;
     a, a:hover {
       color: #fff;
       position: absolute;
@@ -696,7 +697,7 @@ p {
   }
   &.activecitizenry {
     .author {
-      color: $activecitizenry;  
+      color: $activecitizenry;
     }
     .hero {
       background-color: $activecitizenry;
@@ -704,7 +705,7 @@ p {
   }
   &.tech {
     .author {
-      color: $tech;  
+      color: $tech;
     }
     .hero {
       background-color: $tech;
@@ -712,7 +713,7 @@ p {
   }
   &.cogovernance {
     .author {
-      color: $cogovernance;  
+      color: $cogovernance;
     }
     .hero {
       background-color: $cogovernance;
@@ -720,7 +721,7 @@ p {
   }
   &.education {
     .author {
-      color: $education;  
+      color: $education;
     }
     .hero {
       background-color: $education;
@@ -728,12 +729,12 @@ p {
   }
   &.opendata {
     .author {
-      color: $opendata;  
+      color: $opendata;
     }
     .hero {
       background-color: $opendata;
     }
-  } 
+  }
 }
 
 .individual-type {
@@ -939,7 +940,7 @@ p {
       padding-bottom: 10px;
     }
     blockquote small {
-      padding-top: 10px; 
+      padding-top: 10px;
     }
   }
   .team {
@@ -1137,7 +1138,7 @@ footer {
       img {
         width: 100%;
       }
-    } 
+    }
   }
 
   .courses {
@@ -1166,6 +1167,76 @@ footer {
       color: #999;
     }
   }
+}
+
+
+.careers-page {
+    
+  .hero {
+    background-color: $green;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    color: #fff;
+    h1.header {
+      color: #fff;
+      font-size: 42px;
+      font-weight: 600;
+    }
+    h2.header {
+      color: #fff;
+      font-weight: 500;
+      margin-top:10px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 21px;
+      color: #fff;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+
+  .line {
+    padding: 5px 0px;
+  }
+
+  .current-careers {
+    h2 {
+      font-weight: 600;
+    }
+    h3 {
+      font-weight: 600;
+    }
+    margin-top: 20px;
+    .career-motivation {
+      font-size: 21px;
+      font-weight: 300;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+    .how-to-apply {
+      font-weight: 300;
+      line-height: 1.4;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .career-view {
+    h2 {
+      font-weight: 600;
+      padding: 10px 0;
+    }
+    .removemargin {
+      margin-top:0px;
+    }
+    .apply {
+      margin-bottom: 10px;
+    }
+  }
+
 }
 
 .trace-page {
@@ -1358,10 +1429,6 @@ footer {
     }
   }
   .external-articles {
-    img {
-      border: 1px solid #ddd;
-      padding: 10px;
-    }
     p {
       margin-bottom: 0;
     }
@@ -1412,5 +1479,45 @@ footer {
 .attribution {
   img {
     max-width: 150px;
+  }
+}
+
+.indigo-page {
+  .hero {
+    margin-top: -20px;
+    margin-bottom: 40px;
+    background-color: #144588;
+    color: white;
+    
+    .buttons {
+      margin: 20px 0px;
+    }
+  }
+
+  section {
+    margin-bottom: 20px;
+    padding: 20px 0px;
+  }
+
+  .section-with-bg {
+    background-color: lighten(#144588, 60%);
+  }
+
+  .big-icon {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 56px;
+    color: #666;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  .big-icon + h3 {
+    margin-top: 10px;
+  }
+
+  .using-indigo-logo {
+    height: 60px;
+    width: auto;
   }
 }
