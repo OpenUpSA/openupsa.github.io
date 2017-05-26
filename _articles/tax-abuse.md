@@ -2,7 +2,7 @@
 layout: article
 author: roxanne
 title: "Corporate tax: a balancing act"
-date: 2017-05-29
+date: 2017-05-26
 short: In this next article we look at how the Corporate Tax Income rate affects the average taxpayer, and ways in which we can start to curb tax evasion.
 image: piggy-bank.jpg
 tools:
@@ -12,7 +12,6 @@ types:
 themes:
 - name: opendata
 ---
-
 _This year, OpenUp launched a project that interrogates transparency within the private sector, “Transparent Corporates” (TRACE). Our mission is to make corporate data freely and publicly available, and to empower everyone living in South Africa to hold the right people in the private sector accountable when they do things that affect everyday life. Over the next few weeks, we’ll be publishing a series of pieces that highlight some of the work we do, from looking at international shareholding to tax evasion, Trump to “paid Twitter” and much, much more. In this next article we look at how the Corporate Tax Income rate affects the average taxpayer, and ways in which we can start to curb tax evasion._
 
 “The most reported about form of tax abuse, is the immoral behaviour of companies who do not pay their fair share of taxes within the societies they operate.” This is according to the [Organisation Undoing Tax Abuse (OUTA)](https://www.outa.co.za/knowledge-center/understanding-tax-abuse/). Tax evasion by corporates is nothing new and as OUTA points out, Corporate Tax Policies should be interrogated in relation to their obligation to human rights and sustainable development. In other words, the more unlawful companies are when it comes to tax, the more their employees and surrounding communities (who likely make up their employees) are the ones who suffer most. Here in South Africa, we have a bit of a catch-22 when it comes to tax: the higher the Corporate Tax Income (CIT) rate, the more likely companies are to set up tax haven subsidiaries. So, it would make sense to say that in lowering the CIT, the risk of companies, particularly multinational enterprises, dodging paying tax, would be lowered. 
