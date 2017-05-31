@@ -11,6 +11,7 @@ themes:
 - name: opendata
 tools:
 - name: trace
+featured: true
 ---
 
 _This year, OpenUp launched a project that interrogates transparency within the private sector, “Transparent Corporates” (TRACE). Our mission is to make corporate data freely and publicly available, and to empower everyone living in South Africa to hold the right people in the private sector accountable when they do things that affect everyday life. Over the next few weeks, we’ll be publishing a series of pieces that highlight some of the work we do, from looking at international shareholding to tax evasion, Trump to “paid Twitter” and much, much more. In this next article we’re going back to the beginning and will look at why we’re doing all of this._

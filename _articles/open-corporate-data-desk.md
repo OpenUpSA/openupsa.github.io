@@ -13,7 +13,6 @@ types:
 - name: launch
 themes:
 - name: opendata
-featured: true
 ---
 
 Welcome to OpenUp’s Data Desk. Our mission is simple: To make corporate data freely and publically available, and to empower you to hold the right people in the corporate sector accountable when they do things that affect your everyday life. 
