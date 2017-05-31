@@ -496,6 +496,26 @@ body {
 
 }
 .single-article {
+  .page-sharing {
+    color: #B0B0B0;
+    a {
+      border: none;
+      color: $green;
+      &:hover {
+        color: #fff;
+        background-color: $green;
+        border: none;
+        border-color: $green-dark;
+      }
+    }
+  }
+  .top-share {
+      text-align: right;
+    @media (max-width: 767px) {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
   article {
     .header {
       margin-bottom: 25px;
@@ -610,6 +630,10 @@ body {
         }
       }
     }
+  }
+
+  .article-footer {
+    background-color: $green-light;
   }
 }
 
