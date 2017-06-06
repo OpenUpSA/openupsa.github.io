@@ -1126,7 +1126,7 @@ footer {
     padding: 40px 0;
     .details {
       padding: 20px; 
-      background-color: $shortcourse-opaque;
+      background-color: rgba($shortcourse, .2);
       margin-bottom: 10px;
       .row {
         margin-bottom: 10px;
@@ -1138,9 +1138,6 @@ footer {
         color: #fff;
         background-color: $shortcourse-dark;
       }
-    }
-    &:last-child {
-      margin-bottom: -30px;
     }
   }
 
@@ -1185,11 +1182,20 @@ footer {
       padding: 5px 20px 20px 20px;
       margin-bottom: 30px;
       background-color: $shortcourse-opaque;
+      @media (min-width:767px) {
+        min-height: 255px;
+      }
     }
     .number-of-modules {
       font-size: 12px;
       font-weight: bold;
       color: #999;
+    }
+  }
+  a {
+    color: $shortcourse;
+    &:hover {
+      color: $shortcourse-dark;
     }
   }
 }

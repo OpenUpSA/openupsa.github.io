@@ -1,6 +1,6 @@
 ---
 title: Analysing data for storytelling
-intro: 
+intro: Understand how to analyse data in order to discover new issues, gain a better understanding of the reality, and to be able to verify facts from sources
 outcomes: 
 - outcome: Identify data analysis as a distinct stage in the data pipeline
 - outcome: Explore data and navigate spreadsheets
@@ -10,11 +10,10 @@ outcomes:
 - outcome: Compose basic overviews of data utilising pivot tables
 - outcome: Combine different sources of data in order to enrich a dataset
 - outcome: Perform comprehensive spreadsheet functionality
-audience: 
-level: Introductory
+audience: Anyone who uses data or would like to use data to find new insights, spot patterns, trends or anomalies, or communicate effectively using data to their intended audience.
+level: Basic to intermediate
 length: Two days
-comments: Very little data is ready for analysis without some cleaning required. It's therefore important to ensure that data cleaning is understood before data analysis is learnt. Participants must also have access to their own laptop, Excel / Open (Libre) Office, an activated google account, and a google chrome web browser installed on their laptops
-modules: 
+comments: Very little data is ready for analysis without some cleaning required. It's therefore important to ensure that <a href="#cleaningdataforstorytelling">data cleaning</a> is understood before data analysis is learnt. Participants must also have access to their own laptop, an activated Google account, and a Google Chrome web browser installed on their laptops
 order: 4
 ---
 In today’s world, information is being transformed into data. Journalists need to understand how to analyse this data in order to discover new issues, gain a better understanding of the reality, and to be able to verify facts from sources.
