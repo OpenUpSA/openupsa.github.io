@@ -51,7 +51,7 @@ $type-light: lighten($type, 10%);
 $type-dark: darken($type, 10%);
 $type-darker: darken($type, 20%);
 
-$shortcourse: #B29C00;
+$shortcourse: $education;
 $shortcourse-opaque: rgba($shortcourse, .05);
 $shortcourse-lightest: lighten($shortcourse, 60%);
 $shortcourse-lighter: lighten($shortcourse, 20%);
