@@ -133,8 +133,8 @@ extra_js:
 
 				<div class="col-sm-8 col-md-6">
 					<div class="item">
-						<h3>More</h3>
-						<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfC7tVCXIDjQzOF54MsUsdG4zJQIzka9PT7rnfRXXZG9lBTuw/viewform">Get in touch</a> to chat about what else can help your investigation.</p>
+						<a href="#search-query-input"><h3>CIPC</h3></a>
+						<p>Companies and Intellectual Property Commission database, including company names, registration numbers and director details.</p>
 					</div>
 				</div>
 
@@ -144,13 +144,13 @@ extra_js:
 
 	<section class="corporate-articles">
   <div class="container">
-
+		
     <div class="row">
 			<div class="col-sm-10">
 				<h2>Why corporate data matters</h2>
 			</div>
 		</div>
-
+    
     <div class="row">
 			<div class="col-sm-6 what">
 			  <p>We have datasets and have done work around tender information, beneficial ownership, company shareholder registries, illicit financial flows, potential conflicts of interest in the private sector, and the environmental and social impacts that the decisions corporates make have on everyday life. Read more about our work and the work other organisations are doing to improve corporate transparency and accountability here:</p>
@@ -246,6 +246,20 @@ extra_js:
 			</div>
 		</div>
 	</section>
+
+  <script id="cipc-hit-template" type="text/x-handlebars-template">
+    {% raw %}
+
+    <div class="name">{{ name }}</div>
+    <div class="regno">{{ regno }} ({{ type }}) - {{ status }}</div>
+    <div class="addr">{{ physaddress }}</div>
+    <div class="addr">{{ postaddress }}</div>
+    {{#each directors}}
+    <div class="director"><strong>{{ director_position }}</strong>: {{ director_first_names }} {{ director_last_name }} {{ director_id }}</div>
+    {{/each}}
+
+    {% endraw %}
+  </script>
 
   <script id="deceased-estate-hit-template" type="text/x-handlebars-template">
     {% raw %}
