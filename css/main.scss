@@ -1123,7 +1123,8 @@ footer {
   }
 
   .single-course {
-    padding: 40px 0;
+    padding: 40px 0 60px 0;
+    box-shadow: inset 0px 3px 4px rgba(230,230,230,0.8);
     .details {
       padding: 20px; 
       background-color: rgba($shortcourse, .2);
@@ -1178,18 +1179,16 @@ footer {
     h2 {
       margin-bottom: 30px;
     }
-    .course-box {
-      padding: 5px 20px 20px 20px;
-      margin-bottom: 30px;
-      background-color: $shortcourse-opaque;
-      @media (min-width:767px) {
-        min-height: 255px;
+    .boxes {
+      padding-bottom: 30px;
+      .course-box {
+        padding: 5px 20px 20px 20px;
+        margin-bottom: 30px;
+        background-color: $shortcourse-opaque;
+        @media (min-width:767px) {
+          min-height: 255px;
+        }
       }
-    }
-    .number-of-modules {
-      font-size: 12px;
-      font-weight: bold;
-      color: #999;
     }
   }
   a {
