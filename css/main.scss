@@ -21,10 +21,6 @@ $trace-lighter: lighten($trace, 20%);
 $trace-light: lighten($trace, 10%);
 $trace-dark: darken($trace, 10%);
 
-$shortcourse: #911ccc;
-$shortcourse-light: lighten($shortcourse, 10%);
-$shortcourse-dark: darken($shortcourse, 10%);
-
 $activecitizenry: #b21114;
 $activecitizenry-light: lighten($activecitizenry, 10%);
 $activecitizenry-dark: darken($activecitizenry, 10%);
@@ -54,6 +50,12 @@ $type: #707070;
 $type-light: lighten($type, 10%);
 $type-dark: darken($type, 10%);
 $type-darker: darken($type, 20%);
+
+$shortcourse: #B29C00;
+$shortcourse-opaque: rgba($shortcourse, .05);
+$shortcourse-lightest: lighten($shortcourse, 60%);
+$shortcourse-lighter: lighten($shortcourse, 20%);
+$shortcourse-dark: darken($shortcourse, 10%);
 
 html {
   height: 100%;
@@ -1115,9 +1117,31 @@ footer {
       color: $trace-dark;
     }
   }
-  h2 {
+  h2, h3 {
     font-weight: 600;
     color: $shortcourse;
+  }
+
+  .single-course {
+    padding: 40px 0;
+    .details {
+      padding: 20px; 
+      background-color: $shortcourse-opaque;
+      margin-bottom: 10px;
+      .row {
+        margin-bottom: 10px;
+      }
+    }
+    &:nth-child(even) {
+      background: $shortcourse-opaque;
+    .details {
+        color: #fff;
+        background-color: $shortcourse-dark;
+      }
+    }
+    &:last-child {
+      margin-bottom: -30px;
+    }
   }
 
   .hero {
@@ -1147,22 +1171,9 @@ footer {
   }
 
   .shortcourse-intro {
-    background-color: $shortcourse-light;
+    background-color: $shortcourse-opaque;
     padding-top: 30px;
     padding-bottom:30px;
-  }
-
-  .facilitators {
-    background-color: $shortcourse-light;
-    padding-top: 30px;
-    padding-bottom:30px;
-    .image {
-      margin-bottom: 15px;
-      padding-right: 5px;
-      img {
-        width: 100%;
-      }
-    }
   }
 
   .courses {
@@ -1171,19 +1182,9 @@ footer {
       margin-bottom: 30px;
     }
     .course-box {
+      padding: 5px 20px 20px 20px;
       margin-bottom: 30px;
-      background-color: #efefef;
-      p {
-        padding: 0px 15px;
-      }
-      a {
-        margin-bottom: 15px;
-        margin-left: 15px;
-      }
-      h4 {
-        padding: 15px;
-        background-color: #efefef;
-      }
+      background-color: $shortcourse-opaque;
     }
     .number-of-modules {
       font-size: 12px;
