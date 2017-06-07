@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Short Courses
-short: OpenUp offers short courses in data-driven storytelling for newsrooms, full-time and freelance journalists, activists, and people working in non-profit and non-governmental organisations.
+short: OpenUp offers short courses in data-driven storytelling for anyone who uses data or would like to use data to find new insights, spot patterns, trends or anomalies, or communicate effectively using data to their intended audience.
 ---
 
 <div class="shortcourse-page">
@@ -23,12 +23,10 @@ short: OpenUp offers short courses in data-driven storytelling for newsrooms, fu
 				<div class="col-md-6">
 					<h2>What we offer</h2>
 					<p>OpenUp offers short courses in data-driven storytelling for newsrooms, full-time and freelance journalists, activists, and people working in non-profit and non-governmental organisations.</p>
-					<p>We also offer data-driven storytelling training for people working in the public and private sectors who need to communicate information in an effective and easy-to-understand way.</p>
 				</div>
-				<div class="col-md-5 col-md-offset-1">
-					<h2>Request a course</h2>
-					<p>Are our existing courses not exactly what you're looking for? Get in touch so we can work together to create a tailored made course for you or your organisation.</p>
-					<a class="btn btn-primary" href="mailto:training@openup.org.za">Request a course</a>
+				<div class="col-md-6">
+					<h2 class="hidden-sm hidden-xs">&nbsp;</h2>
+					<p>We also offer data-driven storytelling training for people working in the public and private sectors who need to communicate information in an effective and easy-to-understand way.</p>
 				</div>
 			</div>
 		</div>
@@ -37,7 +35,7 @@ short: OpenUp offers short courses in data-driven storytelling for newsrooms, fu
 	<section class="courses">
 		<div class="container">
 			<h2>Our courses</h2>
-			<div class="row">
+			<div class="row boxes">
 				{% assign courses = site.courses | sort: 'order' %}
 				{% for course in courses %}
 					<div class="col-sm-6 col-md-4">
@@ -48,6 +46,13 @@ short: OpenUp offers short courses in data-driven storytelling for newsrooms, fu
 						</div>
 					</div>
 				{% endfor %}
+					<div class="col-sm-6 col-md-4">
+						<div class="course-box">
+							<h3>Request a course</h3>
+							<p>Interested in learning how to work with your own organisation's data? Get in touch so we can shape our curriculum around your internal datasets</p>
+							<a class="btn btn-primary" href="mailto:training@openup.org.za">training@openup.org.za</a>
+						</div>
+					</div>
 			</div>
 		</div>
 
@@ -85,7 +90,7 @@ short: OpenUp offers short courses in data-driven storytelling for newsrooms, fu
 							</div>
 							<div class="row">
 								<div class="col-sm-3">
-									<small><i class="fa fa-fw fa-laptop" aria-hidden="true"></i> Comments</small>
+									<small><i class="fa fa-fw fa-laptop" aria-hidden="true"></i> Requirements</small>
 								</div>
 								<div class="col-sm-9">
 									{{ course.comments }}
@@ -107,10 +112,13 @@ short: OpenUp offers short courses in data-driven storytelling for newsrooms, fu
 		</div>
 		{% endfor %}
 		<div class="container">
-			<h2>Request a course</h2>
-			<p>Interested in learning other data related skills?<br>
-			Get in touch so we can work together to create a tailored made course for you or your organisation.</p>
-			<a class="btn btn-primary" href="mailto:training@openup.org.za">Request a course</a>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Request a course</h3>
+					<p>Interested in learning how to work with your own organisation's data? Get in touch so we can shape our curriculum around your internal datasets</p>
+					<a class="btn btn-primary" href="mailto:training@openup.org.za">training@openup.org.za</a>
+				</div>
+			</div>
 		</div>
 	</section>
 
