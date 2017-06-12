@@ -1,6 +1,6 @@
 ---
 layout: article
-author: Greg
+author: greg
 title: "Youth Explorer goes national"
 date: 2017-06-16
 short: Youth Explorer is an indispensible tool for youth-oriented municipalities, government departments and civil society organisations.
