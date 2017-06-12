@@ -12,28 +12,24 @@ themes:
 - name: education
 ---
 
-We're excited to announce that [Youth Explorer](https://youthexplorer.org.za) has grow beyond the Western Cape and now covers the entire country.
+We're excited to announce that [Youth Explorer](https://youthexplorer.org.za) has graduated from the Western Cape and now has data on youth across the whole of South Africa. Friday 16 June 2017 is [Youth Day](https://en.wikipedia.org/wiki/Youth_Day), a fitting day to expand this invaluable tool to the national level, giving unprecedented access to data and statistics on South Africans aged 15 to 24.
 
-Data focusing specifically on young people is hard to come by. What are the challenges our youth are experiencing? What are the realities that shape their lives? And how do these differ from one community to another? This lack of information severely limits the ability of programmes and policies to effectively support young people in their specific contexts.
+Youth Explorer ([youthexplorer.org.za](https://youthexplorer.org.za)) is a critical tool for anyone planning for or working with youth -- those aged 15 to 24 -- in South Africa. Working together with [UCT’s Poverty and Inequality Initiative](http://www.povertyandinequality.uct.ac.za/) we've broadened the scope of Youth Explorer to include national data on demographics, education, economic opportunities, family and living environment, poverty levels, and health and wellbeing.
 
-Now, the [Western Cape Youth Explorer](http://youthexplorer.org.za/) gives you access to data on demographics, education, unemployment, health, access to basic services and more, down to ward level, across the Western Cape, all in one easily-accessible place. 
+> “Youth-centred data at the small area - or community - level is scarce. Yet it is exactly at this level that programmes and policies need to be implemented. Too often provincial or municipal averages hide the stark differences that exist between communities.” -- Emily Frame, Research Officer, Poverty and Inequality Initiative at the University of Cape Town.
 
-The data is extremely useful for identifying what the pressing needs for youth are in different communities, by providing a real-world context around the issues that young people face on a daily basis. An added feature allows you to compare two different communities to each other, and see how different socio-economic conditions affect youth. 
+The data, taken from the [2011 national census](http://www.statssa.gov.za/?page_id=3839) provides deep insight into the issues facing youth today, at the national, provincial, municipality and ward levels.
 
-<img style="width: 100%" src="/img/articles/youth-explorer-1.jpg">
+## How to use Youth Explorer
 
-“Youth-centred data at the small area - or community - level is scarce,” says Emily Frame, Research Officer, Poverty and Inequality Initiative at the University of Cape Town. “Yet it is exactly at this level that programmes and policies need to be implemented. Too often provincial or municipal averages hide the stark differences that exist between communities.” 
+If you're a municipality, government department, civil society organisation or in the private sector, Youth Explorer is an indispensible tool for policies, planning and decision-making.
 
-Take for example, youth unemployment. In 2011, the overall unemployment rate for youth aged 15-24 was 41% for the Western Cape and 46% for the City of Cape Town. However, within the Metro itself, this rate ranged from below 20% in parts of the Northern and Southern Suburbs to over 65% in parts of the Cape Flats. Similarly, in 2014, the average score in the Grade 9 systemic language test for the Province and City was 50% but within the Metro these scores dropped to below 35% in parts of Khayelitsha and Nomzamo, and registered above 75% in the areas around Claremont and Constantia.
+To help you get started, we've published a series of [explainer videos to help you](https://youthexplorer.org.za/help) get the most out of Youth Explorer.
 
-The information is relevant to everyone from citizens to government officials. Within the unemployment context, communities are able to view a snapshot of their youth unemployment rate, including discouraged workseekers. Youth organisations and government can identify the various constraints that young people face while trying to get an education or look for work, and can then adapt their programmes and resources to address these.
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/do5XexPJhDc?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx" frameborder="0" allowfullscreen=""></iframe>
 
-<img style="width: 100%" src="/img/articles/youth-explorer-2.jpg">
+## The story behind the data
 
-“Youth Explorer was built to start to fill some of these gaps,” says Frame. “Having information about young people’s education, their economic opportunities, health, family and living environment, etc, all in one place, encourages us to see how the different aspects of young people’s lives are often connected,” says Frame.
+Youth Explorer builds on the simplicity, power and familiarity of [Wazimap.co.za](https://wazimap.co.za/) to make the rich datasets around youth in South Africa approachable, understandable and useful.
 
-Youth Explorer uses the same technology behind [Wazimap.co.za](https://wazimap.co.za/), which hosts election, demographic and census data for South Africa down to ward level. The [Wazimap](http://wazimap.readthedocs.io/en/latest/) platform was built in collaboration with [Media Monitoring Africa](http://www.mediamonitoringafrica.org/) and builds on [Censusreporter.org](http://censusreporter.org) which was funded by a Knight News Challenge grant.  
-
-Youth Explorer builds on the simplicity, power and familiarity of Wazimap to make the rich datasets around youth in the Western Cape approachable, understandable and useful.
-
-Western Cape Youth Explorer was developed in partnership with [UCT’s Poverty and Inequality Initiative](http://www.povertyandinequality.uct.ac.za/), [Western Cape Government](https://www.westerncape.gov.za/), [City of Cape Town](http://www.capetown.gov.za/), [Stats SA](http://www.statssa.gov.za/) and [Code for South Africa](http://code4sa.org/). 
+Youth Explorer was developed in partnership with [UCT’s Poverty and Inequality Initiative](http://www.povertyandinequality.uct.ac.za/), [Western Cape Government](https://www.westerncape.gov.za/), [City of Cape Town](http://www.capetown.gov.za/), [Stats SA](http://www.statssa.gov.za/) and [OpenUp](https://openup.org.za/). 
