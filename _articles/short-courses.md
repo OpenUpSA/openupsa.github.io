@@ -20,4 +20,4 @@ We believe that an equal society starts with equal access to information, and to
 
 One of these data literacy programmes offers training in the form of short 1- to 3-day courses.  Our curriculum covers the different (often) sequential stages of the data processing pipeline, and has recently experienced an overhaul to provide a more concentrated focus on each of the stages of the Data Pipeline.
 
-[Check out our new course offering](https://openup.org.za/courses.html)and contact us at <training@openup.org.za> - we look forward to consulting with you on the training solution that would best suit your organisation’s needs.
+[Check out our new course offering](https://openup.org.za/courses.html)and contact us at [training@openup.org.za](mailto:training@openup.org.za) - we look forward to consulting with you on the training solution that would best suit your organisation’s needs.
