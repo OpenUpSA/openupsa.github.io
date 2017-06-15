@@ -2,7 +2,7 @@
 layout: article
 author: greg
 title: "Youth Explorer goes national"
-date: 2017-06-13
+date: 2017-06-15
 short: Youth Explorer is an indispensible tool for youth-oriented municipalities, government departments and civil society organisations.
 image: youth-explorer-national.jpg
 tools:
@@ -34,7 +34,7 @@ We also have other videos that cover:
 
 * [the table view and downloading data](https://www.youtube.com/watch?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx&v=bynx320D5kY),
 * [exploring data on a map](https://www.youtube.com/watch?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx&v=IHVWdv-Yuos),
-* [comparing the distrubition of data between different places](https://www.youtube.com/watch?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx&v=jhzGFGSAJ9o), and
+* [comparing the distribution of data between different places](https://www.youtube.com/watch?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx&v=jhzGFGSAJ9o), and
 * [comparing places side-by-side](https://www.youtube.com/watch?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx&v=1I8RPPJ0g1c).
 
 ## The story behind the data
