@@ -133,8 +133,8 @@ extra_js:
 
 				<div class="col-sm-8 col-md-6">
 					<div class="item">
-						<h3>More</h3>
-						<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfC7tVCXIDjQzOF54MsUsdG4zJQIzka9PT7rnfRXXZG9lBTuw/viewform">Get in touch</a> to chat about what else can help your investigation.</p>
+                                          <h3>More</h3>
+                                          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfC7tVCXIDjQzOF54MsUsdG4zJQIzka9PT7rnfRXXZG9lBTuw/viewform">Get in touch</a> to chat about what else can help your investigation.</p>
 					</div>
 				</div>
 
@@ -246,6 +246,20 @@ extra_js:
 			</div>
 		</div>
 	</section>
+
+  <script id="cipc-hit-template" type="text/x-handlebars-template">
+    {% raw %}
+
+    <div class="name">{{ name }}</div>
+    <div class="regno">{{ regno }} ({{ type }}) - {{ status }}</div>
+    <div class="addr">{{ physaddress }}</div>
+    <div class="addr">{{ postaddress }}</div>
+    {{#each directors}}
+    <div class="director"><strong>{{ director_position }}</strong>: {{ director_first_names }} {{ director_last_name }} {{ director_id }}</div>
+    {{/each}}
+
+    {% endraw %}
+  </script>
 
   <script id="deceased-estate-hit-template" type="text/x-handlebars-template">
     {% raw %}

@@ -34,18 +34,23 @@ layout: base
         <h1>{{ page.title }}</h1>
         <p class="short">{{ page.short }}</p>
 
-        <div class="author-date">
-          <small>
-            {% if page.author-external %}
-              by <a href="{{ page.author-external-url }}">{{ page.author-external }}</a>, {{ page.date | date: "%-d %B %Y" }}
-            {% else %}
-              {% for member in site.team %}
-                {% if page.author == member.name %}
-                  by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a>, {{ page.date | date: "%-d %B %Y" }}
-                {% endif %}
-              {% endfor %}
-            {% endif %}
-          </small>
+        <div class="row">
+          <div class="col-sm-6 author-date">
+            <small>
+              {% if page.author-external %}
+                by <a href="{{ page.author-external-url }}">{{ page.author-external }}</a>, {{ page.date | date: "%-d %B %Y" }}
+              {% else %}
+                {% for member in site.team %}
+                  {% if page.author == member.name %}
+                    by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a>, {{ page.date | date: "%-d %B %Y" }}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            </small>
+          </div>
+          <div class="col-sm-6 top-share">
+            {% include social_sharing.html %}
+          </div>
         </div>
 
         {% unless page.hide-image %}
@@ -60,10 +65,18 @@ layout: base
     </div>
   </article>
 
+  <section class="sharing row">
+    <div class="col-md-8 col-md-offset-2">
+      {% include social_sharing.html %}
+    </div>
+  </section>
+
   <section class="related-articles article-list">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <h2>Related articles</h2>
+        {% if page.tools or page.themes or page.types %}
+          <h2>Related articles</h2>
+        {% endif %}
         <div class="tool row">
           {% assign sameToolCount = 0 %}
 

@@ -3,7 +3,7 @@ layout: article
 author-external: Lenina Rassool
 author-external-url: https://twitter.com/Nina_210
 title: "Data explores the story of Western Cape Youth"
-date: 2012-11-03
+date: 2016-11-03
 short: |
     The Western Cape Youth Explorer provides data on demographics, education, unemployment, health, access to basic services and more, down to ward level, for youth across the Western Cape.
 image: youth-explorer-0.jpg
