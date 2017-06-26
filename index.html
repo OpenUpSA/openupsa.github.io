@@ -16,38 +16,43 @@ name: home
 	</div>
 
 	<div class="container themes">
-		<h1 style="color: #fff;">The work we focus on</h1>
+		<h1 style="color: #fff;">Our focus</h1>
 		<div class="row">
 			{% assign alphabetical = site.themes | sort: 'title' %}
 			{% for theme in alphabetical %}
 				<div class="col-sm-4">
 					<div class="single-theme {{ theme.name }}">
 						<a class="title" href="{{ theme.url }}">{{ theme.title }}</a>
-						<p>{{ theme.description }}</p>
+						<p>{{ theme.description | truncate: 200 }}</p>
 					</div>
 				</div>
 			{% endfor %}
+				<div class="col-sm-4">
+					<div class="single-theme about">
+						<a class="title" href="/about.html">About OpenUp</a>
+						<p>Read about our mission, our theory of change, our principles, and who works at OpenUp</p>
+					</div>
+				</div>
 		</div>
 	</div>
 
-
-	<div class="container">
-		<div class="tools row">
+	<div class="container tools">
+		<h1>Our tools</h1>
+		<div class="row">
 			{% for tool in site.tools %}
 				{% if tool.homepage %}
-					<div class="col-sm-4">
-						<a href="{% if tool.skip-own-page %}{{ tool.external-url }}{% else %}{{ tool.url | prepend: site.baseurl }}{% endif %}"><img src="{{ site.baseurl }}/img/tools/{{ tool.image }}"></a>
-						<p>{{ tool.oneliner }}</p>			
+					<div class="col-sm-3">
+						<a href="{% if tool.skip-own-page %}{{ tool.external-url }}{% else %}{{ tool.url | prepend: site.baseurl }}{% endif %}"><img src="/img/tools/{{ tool.image }}"></a>
+						<p style="padding: 4px;">{{ tool.oneliner }}</p>			
 					</div>
 				{% endif %}
 			{% endfor %}
-		</div>
+			<div class="col-sm-3">
+				<a href="/tools"><img src="/img/tools/more-tools.svg"></a>
 
-		<div class="moretools">
-			<a href="{{ site.baseurl }}/tools">see all our tools <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+			</div>
 		</div>
 	</div>
-
 
 	<div class="articles article-list">
 		<div class="container">

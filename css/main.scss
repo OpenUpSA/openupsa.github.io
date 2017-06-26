@@ -322,7 +322,7 @@ body {
     margin-top: -20px;
     background-color: $green;
     padding: 20px;
-    padding-bottom: 380px;
+    padding-bottom: 270px;
     color: #fff;
     h1 {
       font-size: 42px;
@@ -341,12 +341,12 @@ body {
 
 
   .themes {
-    margin-top: -330px;
+    margin-top: -250px;
     .single-theme {
       border: 4px solid #fff;
       padding: 10px;
       color: #fff;
-      min-height: 200px;
+      min-height: 210px;
       margin-bottom: 15px;
       .title {
         color: #fff;
@@ -370,6 +370,9 @@ body {
     }
     .opendata {
       background-color: $opendata;
+    }
+    .about {
+      background-color: $green;
     }
   }
   .tools {
