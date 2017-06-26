@@ -318,21 +318,11 @@ body {
     font-weight: 600;
     margin-bottom: 30px;
   }
-  .banner-notice {
-    margin-top: -20px;
-    background-color: $green-dark;
-    .announcement {
-      padding: 10px 0;
-      color: #fff;
-      a {
-        color: #fff;
-      }
-    }
-  }
   .banner {
+    margin-top: -20px;
     background-color: $green;
     padding: 20px;
-    padding-bottom: 180px;
+    padding-bottom: 380px;
     color: #fff;
     h1 {
       font-size: 42px;
@@ -340,6 +330,46 @@ body {
     h3 {
       font-family: 'News Cycle', sans-serif;
       font-size: 26px;
+    }
+  }
+
+  $activecitizenry: #b21114;
+  $tech: #591c96;
+  $cogovernance: #0f77bc;
+  $education: #dcc102;
+  $opendata: #138e08;
+
+
+  .themes {
+    margin-top: -330px;
+    .single-theme {
+      border: 4px solid #fff;
+      padding: 10px;
+      color: #fff;
+      min-height: 200px;
+      margin-bottom: 15px;
+      .title {
+        color: #fff;
+        font-size: 24px;
+        font-family: 'Libre Franklin', sans-serif;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+    .activecitizenry {
+      background-color: $activecitizenry;
+    }
+    .tech {
+      background-color: $tech;
+    }
+    .cogovernance {
+      background-color: $cogovernance;
+    }
+    .education {
+      background-color: $education;
+    }
+    .opendata {
+      background-color: $opendata;
     }
   }
   .tools {
@@ -353,7 +383,6 @@ body {
       width: 100%;
       border: 4px solid #fff;
     }
-    margin-top: -130px;
   }
   .moretools {
     margin: 30px 0;
