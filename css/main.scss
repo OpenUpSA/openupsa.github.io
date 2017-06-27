@@ -719,6 +719,14 @@ p {
     .description {
       font-family: 'Bitter', 'Libre Franklin', 'Open Sans', sans-serif;
       margin-bottom: 30px;
+      a {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
   }
   &.activecitizenry {
