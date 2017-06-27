@@ -16,21 +16,21 @@ name: home
 	</div>
 
 	<div class="container themes">
-		<h1 style="color: #fff;">Our focus</h1>
+		<h2>Our focus</h2>
 		<div class="row">
 			{% assign alphabetical = site.themes | sort: 'title' %}
 			{% for theme in alphabetical %}
 				<div class="col-sm-4">
 					<div class="single-theme {{ theme.name }}">
 						<a class="title" href="{{ theme.url }}">{{ theme.title }}</a>
-						<p>{{ theme.description | truncate: 200 }}</p>
+						<p>{{ theme.description | truncate: 200 }} <a href="{{ theme.url }}"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
 					</div>
 				</div>
 			{% endfor %}
 				<div class="col-sm-4">
 					<div class="single-theme about">
 						<a class="title" href="/about.html">About OpenUp</a>
-						<p>Read about our mission, our theory of change, our principles, and who works at OpenUp</p>
+						<p>Read about our mission, our theory of change, our principles, and who works at OpenUp <a href="/about.html"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
 					</div>
 				</div>
 		</div>
