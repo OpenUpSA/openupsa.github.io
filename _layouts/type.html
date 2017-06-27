@@ -1,13 +1,20 @@
 ---
 layout: base
 ---
-<div class="container individual-type">
+<div class="individual-type {{ page.name }}">
 
-  <section class="header">
-    <h1 class="title">{{ page.title }} articles</h1>
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="title">{{ page.title }} articles</h1>
+          <!-- <p class="description">{{ page.description }}</p> -->
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="type-articles article-list">
+  <section class="type-articles article-list container">
     <div class="row">
       {% for article in site.articles reversed %}
         {% for type in article.types %}
@@ -24,11 +31,11 @@ layout: base
 
               <div class="article-author">
                 {% if article.author-external %}
-                  <div>by <a href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
+                  <div>by <a class="author" href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
                 {% else %}
                   {% for member in site.team %}
                     {% if member.name == article.author %}
-                      <div>by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></div>
+                      <div>by <a class="author" href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></div>
                     {% endif %}
                   {% endfor %}
                 {% endif %}
@@ -45,7 +52,7 @@ layout: base
                   {% endfor %}
                 {% endfor %}
               {% endif %}
-              {% if article.types %}
+              {% if article.themes %}
                 {% for theme in site.themes %}
                   {% for articletheme in article.themes %}
                     {% if theme.name == articletheme.name %}

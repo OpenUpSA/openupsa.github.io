@@ -41,7 +41,7 @@ $opendata: #138e08;
 $opendata-light: lighten($opendata, 10%);
 $opendata-dark: darken($opendata, 10%);
 
-$tool: #707070;
+$tool: #495940;
 $tool-light: lighten($tool, 10%);
 $tool-dark: darken($tool, 10%);
 $tool-darker: darken($tool, 20%);
@@ -771,21 +771,25 @@ p {
   }
 }
 
+
+
 .individual-type {
-  .header {
-    margin-bottom: 30px;
+  .hero {
+    color: #fff;
+    background-color: $green;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
     .title {
       font-family: 'Open Sans', sans-serif;
       text-transform: uppercase;
       margin-top: 30px;
       font-weight: 600;
-      img {
-        height: 35px;
-      }
     }
-  }
-  .type-info {
-    margin: 40px 0;
+    .description {
+      font-family: 'Bitter', 'Libre Franklin', 'Open Sans', sans-serif;
+      margin-bottom: 30px;
+    }
   }
   .type-articles {
     .article-author {
