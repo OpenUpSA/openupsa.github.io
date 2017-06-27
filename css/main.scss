@@ -104,15 +104,6 @@ body {
   }
 }
 
-.page-intro {
-  h1 {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    padding-bottom: 25px;
-    font-weight: 600;
-  }
-}
-
 .article-list {
   img {
     width: 100%;
@@ -402,16 +393,27 @@ body {
 }
 
 .tools-page {
-  h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+  .hero {
+    background-color: $green;
+    color: #fff;
+    margin-top: -20px;
+    .title {
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      margin-top: 30px;
+      font-weight: 600;
+    }
+    .description {
+      font-family: 'Bitter', 'Libre Franklin', 'Open Sans', sans-serif;
+      margin-bottom: 30px;
+    }
   }
   .tool-intro {
     font-family: 'Open Sans', sans-serif;
     margin-bottom:30px;
   }
   .featured-tool {
-    margin-top: 20px;
+    padding-top: 40px;
     img {
       width: 100%;
     }
