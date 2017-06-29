@@ -4,92 +4,115 @@ name: home
 ---
 <div class="homepage">
 
-	<div class="banner">
-		<div class="container">
+  <div class="banner">
+    <div class="container">
 
-			<div class="row"><div class="col-md-8">
-				<h1>We empower citizens to improve their lives and communities.</h1>
-				<h3>We build tools, open up data, and provide training that support active citizenry and help communities and government work together.</h3>
-			</div></div>
+      <div class="row">
+        <div class="col-md-8">
+        <h1>We empower citizens to improve their lives and communities.</h1>
+        <h3>We build tools, open up data, and provide training that support active citizenry and help communities and government work together.</h3>
+        </div>
+      </div>
 
-		</div>
-	</div>
+    </div>
+  </div>
 
-	<div class="container themes">
-		<h2>Our focus</h2>
-		<div class="row">
-			{% assign alphabetical = site.themes | sort: 'title' %}
-			{% for theme in alphabetical %}
-				<div class="col-sm-4">
-					<div class="single-theme {{ theme.name }}">
-						<a class="title" href="{{ theme.url }}">{{ theme.title }}</a>
-						<p>{{ theme.description | truncate: 200 }} <a href="{{ theme.url }}"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
-					</div>
-				</div>
-			{% endfor %}
-				<div class="col-sm-4">
-					<div class="single-theme about">
-						<a class="title" href="/about.html">About OpenUp</a>
-						<p>Read about our mission, our theory of change, our principles, and who works at OpenUp <a href="/about.html"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
-					</div>
-				</div>
-		</div>
-	</div>
+  <div class="container work">
+    <h1>Our work</h1>
+    <div class="row">
+      <div class="col-sm-6 col-md-3 single-item">
+        <div class="text">
+          <div class="title">Liberate</div>
+          <div class="description">We make <span class="highlight">data available and easily accessible</span> so journalists, governments, and everyday people can better understand the world around them</div>
+        </div>
+        <a href="/tools/opengazettes.html"><img class="img-responsive" src="/img/tools/opengazettes.png"></a>
+        <a href="/tools/opengazettes.html"><img class="img-responsive" src="/img/tools/og1.jpg"></a>
+        <div class="description bottom">The biggest collection of freely available gazettes in South Africa</div>
+      </div>
+      <div class="col-sm-6 col-md-3 single-item">
+        <div class="text">
+          <div class="title">Educate</div>
+          <div class="description">Through our <a href="/courses.html">short courses</a> we <span class="highlight">teach young and old</span> about data; understanding, sourcing, cleaning, analysing, and visualising it</div>
+        </div>
+        <a href="/tools/openbylaws.html"><img class="img-responsive" src="/img/tools/openbylaws.png"></a>
+        <a href="/tools/openbylaws.html"><img class="img-responsive" src="/img/tools/obl2.jpg"></a>
+        <div class="description bottom">By-laws for Cape Town, JHB and Durban - online and searchable</div>
+      </div>
+      <div class="col-sm-6 col-md-3 single-item">
+        <div class="text">
+          <div class="title">Cooperate</div>
+          <div class="description">We work with <span class="highlight">governments</span> to make their <span class="highlight">data freely available</span> so the people they serve can more easily hold them <span class="highlight">accountable</span></div>
+        </div>
+        <a href="/tools/municipalmoney.html"><img class="img-responsive" src="/img/tools/municipalmoney.png"></a>
+        <a href="/tools/municipalmoney.html"><img class="img-responsive" src="/img/tools/mm3.jpg"></a>
+        <div class="description bottom">How is your municipality managing your money?</div>
+      </div>
+      <div class="col-sm-6 col-md-3 single-item">
+        <div class="text">
+          <div class="title">Empower</div>
+          <div class="description">Through our tools, training, and other work, we want to empower people to <span class="highlight">improve their lives and their communities</span></div>
+        </div>
+        <a href="/tools/mpr.html"><img class="img-responsive" src="/img/tools/mpr.png"></a>
+        <a href="/tools/mpr.html"><img class="img-responsive" src="/img/tools/mpr3.jpg"></a>
+        <div class="description bottom">What should your medicines cost?</div>
+      </div>
+    </div>
+  </div>
 
-	<div class="container tools">
-		<h1>Our tools</h1>
-		<div class="row">
-			{% for tool in site.tools %}
-				{% if tool.homepage %}
-					<div class="col-sm-3">
-						<a href="{% if tool.skip-own-page %}{{ tool.external-url }}{% else %}{{ tool.url | prepend: site.baseurl }}{% endif %}"><img src="/img/tools/{{ tool.image }}"></a>
-						<p style="padding: 4px;">{{ tool.oneliner }}</p>			
-					</div>
-				{% endif %}
-			{% endfor %}
-			<div class="col-sm-3">
-				<a href="/tools"><img src="/img/tools/more-tools.svg"></a>
+  <div class="container tools">
+    <h1>Our tools</h1>
+    <div class="row">
+      {% for tool in site.tools %}
+        {% if tool.homepage %}
+          <div class="col-sm-3">
+            <a href="{% if tool.skip-own-page %}{{ tool.external-url }}{% else %}{{ tool.url | prepend: site.baseurl }}{% endif %}"><img src="/img/tools/{{ tool.image }}"></a>
+            <p style="padding: 4px;">{{ tool.oneliner }}</p>      
+          </div>
+        {% endif %}
+      {% endfor %}
+      <div class="col-sm-3">
+        <a href="/tools"><img src="/img/tools/more-tools.svg"></a>
 
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 
-	<div class="articles article-list">
-		<div class="container">
+  <div class="articles article-list">
+    <div class="container">
 
-			<div class="row">
+      <div class="row">
       {% assign cntr = 0 %}
-			{% for article in site.articles reversed %}
-		    {% if cntr == 3 %}
+      {% for article in site.articles reversed %}
+        {% if cntr == 3 %}
           {% break %}
         {% endif %}
         {% if article.homepage %}
           {% assign cntr = cntr | plus:1 %}
-			    <div class="col-sm-4 one-article">
+          <div class="col-sm-4 one-article">
             
             <div class="title-image-wrap">
-					    <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+              <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
 
-					    <div class="article-title">
-						    <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
-						  </div>
-					  </div>
+              <div class="article-title">
+                <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+              </div>
+            </div>
 
-				    <div class="article-author">
-					    {% if article.author-external %}
-		            <div>by <a href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
-		          {% else %}
-		            {% for member in site.team %}
-		              {% if member.name == article.author %}
-		                <div>by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></div>
-		              {% endif %}
-		            {% endfor %}
-		          {% endif %}
-		        </div>
+            <div class="article-author">
+              {% if article.author-external %}
+                <div>by <a href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
+              {% else %}
+                {% for member in site.team %}
+                  {% if member.name == article.author %}
+                    <div>by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></div>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            </div>
 
-		        <p>{{ article.short }}</p>
+            <p>{{ article.short }}</p>
 
-		        {% if article.tools %}
+            {% if article.tools %}
               {% for tool in site.tools %}
                 {% for articletool in article.tools %}
                   {% if tool.name == articletool.name %}
@@ -117,10 +140,10 @@ name: home
               {% endfor %}
             {% endif %}
 
-			    </div>
-		    {% endif %}
-			{% endfor %}
-			</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+      </div>
 
       <div class="row">
       {% assign cntr-chron = 0 %}
@@ -188,50 +211,50 @@ name: home
       {% endfor %}
       </div>
 
-		</div>
-	</div>
+    </div>
+  </div>
 
-	<div class="contact">
-		<div class="container">
+  <div class="contact">
+    <div class="container">
 
-			<div class="row">
+      <div class="row">
 
-				<div class="contact-box col-sm-6">
-					<div class="row">
-						<div class="col-xs-4">
-							<img src="{{ site.baseurl }}/img/graphics/email.png" />
-						</div>
-						<div class="col-xs-8">
-							<p class="contact-title">Work with us</p>
-							<p>We work with data and technology to help South Africans. If you’d like to partner with us, <a href="{{ site.baseurl }}/contact">please get in touch</a>.</p>
-						</div>
-					</div>
-				</div>
+        <div class="contact-box col-sm-6">
+          <div class="row">
+            <div class="col-xs-4">
+              <img src="{{ site.baseurl }}/img/graphics/email.png" />
+            </div>
+            <div class="col-xs-8">
+              <p class="contact-title">Work with us</p>
+              <p>We work with data and technology to help South Africans. If you’d like to partner with us, <a href="{{ site.baseurl }}/contact">please get in touch</a>.</p>
+            </div>
+          </div>
+        </div>
 
-				<div class="contact-box col-sm-6">
-					<div class="row">
-						<div class="col-xs-4">
-							<img src="{{ site.baseurl }}/img/graphics/reunion.png" />
-						</div>
-						<div class="col-xs-8">
-							<p class="contact-title">Support our efforts</p>
-							<p>We are a non-profit organisation and rely on funding to continue our work. You can help by <a href="{{ site.baseurl }}/tools">using our tools</a> and spreading the word on <a href="https://www.facebook.com/openupsa" target="_blank">Facebook</a> and <a href="https://twitter.com/openupsa" target="_blank">Twitter</a>.</p>
-						</div>
-					</div>
-					
-				</div>
+        <div class="contact-box col-sm-6">
+          <div class="row">
+            <div class="col-xs-4">
+              <img src="{{ site.baseurl }}/img/graphics/reunion.png" />
+            </div>
+            <div class="col-xs-8">
+              <p class="contact-title">Support our efforts</p>
+              <p>We are a non-profit organisation and rely on funding to continue our work. You can help by <a href="{{ site.baseurl }}/tools">using our tools</a> and spreading the word on <a href="https://www.facebook.com/openupsa" target="_blank">Facebook</a> and <a href="https://twitter.com/openupsa" target="_blank">Twitter</a>.</p>
+            </div>
+          </div>
+          
+        </div>
 
 
-			</div>
+      </div>
 
-		</div>
-	</div>
+    </div>
+  </div>
 
-	<div class="funders">
-		<div class="container">
+  <div class="funders">
+    <div class="container">
 
-			<h1>Our funders</h1>
-			<div class="row">
+      <h1>Our funders</h1>
+      <div class="row">
         <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="http://www.omidyar.com/"><img src="{{ site.baseurl }}/img/collaborators/omidyar.png"></a>  
         <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="https://indigotrust.org.uk/"><img src="{{ site.baseurl }}/img/collaborators/indigo.png"></a>  
         <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="http://www.makingallvoicescount.org/"><img src="{{ site.baseurl }}/img/collaborators/mavc.svg"></a>  
@@ -241,7 +264,7 @@ name: home
         <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="http://www.trustafrica.org/"><img src="{{ site.baseurl }}/img/collaborators/trustafrica.png"></a>
       </div>
 
-		</div>
-	</div>
+    </div>
+  </div>
 
 </div>
