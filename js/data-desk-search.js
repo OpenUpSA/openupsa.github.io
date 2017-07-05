@@ -1,4 +1,7 @@
 $(function() {
+  var uri = URI(window.location.href);
+  var authorised = 'access_control' in uri.search(true)
+
   Handlebars.registerHelper("debug", function(optionalValue) {
 
     if (optionalValue) {
@@ -217,7 +220,6 @@ $(function() {
   };
 
   var datasets = [
-    new Dataset("socrata_private", "CIPC", "5erp-fahs", null, Handlebars.compile($("#cipc-hit-template").html()), cipcHint),
     new Dataset("socrata", "Tender Awards 2015-2016", "9vmn-5tnb", "Government/Tender-Awards-2015-2016/kvv2-xrvr"),
     new Dataset("socrata", "Restricted Suppliers", "rvqa-n6ju", "Government/Database-of-Restricted-Suppliers/rvqa-n6ju"),
     new Dataset("sourceafrica", "SENS", "404-sens"),
@@ -226,6 +228,8 @@ $(function() {
     new Dataset("socrata", "UK Land Registry", "qxgb-avr5", "Business/UK-Land-Registry/n7gy-as2q"),
     new Dataset("aleph", "Open Gazettes", "https://search.opengazettes.org.za", null, Handlebars.compile($("#aleph-hit-template").html())),
   ];
+  if (authorised)
+    datasets.unshift(new Dataset("socrata_private", "CIPC", "5erp-fahs", null, Handlebars.compile($("#cipc-hit-template").html()), cipcHint));
 
   var resultsContainer = $('#search-results');
   var datasetTemplate = Handlebars.compile($('#search-dataset-template').html());
@@ -255,8 +259,9 @@ $(function() {
   $form.on('submit', function(e) {
     e.preventDefault();
     var q = queryInput.val();
-    if ('pushState' in history)
-      history.pushState(q, "TRACE search: " + q, "trace.html?q=" + encodeURIComponent(q));
+    if ('pushState' in history) {
+      history.pushState(q, "TRACE search: " + q, uri.setQuery("q", q).toString());
+    }
     startSearch(q);
     if ('ga' in window) ga('send', 'event', 'corporate-data-search', 'request', q);
   });
