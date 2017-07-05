@@ -1,9 +1,5 @@
 $(function() {
-  var uri = URI(window.location.href);
-  var authorised = 'access_control' in uri.search(true)
-
   Handlebars.registerHelper("debug", function(optionalValue) {
-
     if (optionalValue) {
       console.log("Value");
       console.log("====================");
@@ -14,6 +10,19 @@ $(function() {
       console.log(this);
     }
   });
+
+  /* Access control */
+  var uri = URI(window.location.href);
+  var authorised = false;
+  if ('access_control' in uri.search(true)) {
+    var password = window.prompt("Please enter the password");
+    if (password == "CIPC public information") {
+      authorised = true;
+      alert("Success");
+    } else {
+      alert("Incorrect password. Please reload to try again.");
+    }
+  }
 
   var Dataset = function(type, name, code, extra, hitTemplate, hintFun) {
     var self = this;
