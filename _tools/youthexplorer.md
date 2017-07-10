@@ -2,7 +2,7 @@
 layout: tool
 name: youthexplorer
 title: Youth Explorer
-image: youthexplorer.jpg
+image: youthexplorer.png
 logo: youthexplorer-logo.png
 external-url: https://youthexplorer.org.za
 oneliner: Detailed demographics for youth aged 15 to 24 years.
