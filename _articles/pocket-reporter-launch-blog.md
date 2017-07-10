@@ -59,6 +59,6 @@ Pocket Reporter is inspired by Virtual Reporter, a website originally developed 
 
 [Click here](https://play.google.com/store/apps/details?id=com.phonegap.pocketreporter) to download Pocket Reporter or search for "Pocket Reporter" in the Google Play store. It is currently only available for Android mobile devices.
 
-Pocket Reporter was developed as a partnership between [Code for South Africa](http://code4sa.org/) and the [Association of Independent Publishers](http://www.aip.org.za/). 
+Pocket Reporter was developed as a partnership between [OpenUp](https://openup.org.za/) and the [Association of Independent Publishers](http://www.aip.org.za/). 
 
 What stories will you write?

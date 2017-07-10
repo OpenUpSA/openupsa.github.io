@@ -19,7 +19,7 @@ featured: true
 
 We've launched a new website, [opengazettes.org.za](http://opengazettes.org.za/), which makes the official government gazettes available online and for the first time, searchable, for free. This means  you no longer have to sift through or download heaps of publications to source legal notices, calls for comments on national and provincial matters, and updates on civic issues. 
  
-The project is a collaboration between [Code for South Africa](http://code4sa.org), the [Southern African Legal Information Institute](http://www.saflii.org) (SAFLII), and the [African Networks of Centers for Investigative Reporting](https://www.investigativecenters.org), with support from [The Indigo Trust](http://www.indigotrust.org.uk) and [Code for Africa](https://codeforafrica.org). The initiative aims to promote citizen access to government information and increase civic participation in government processes.
+The project is a collaboration between [OpenUp](https://openup.org.za), the [Southern African Legal Information Institute](http://www.saflii.org) (SAFLII), and the [African Networks of Centers for Investigative Reporting](https://www.investigativecenters.org), with support from [The Indigo Trust](http://www.indigotrust.org.uk) and [Code for Africa](https://codeforafrica.org). The initiative aims to promote citizen access to government information and increase civic participation in government processes.
  
 According to Parliament's website, "Government uses [the Gazette] to publish acts and bills, regulations and notices in terms of acts, changes of names, company registrations and deregistrations, financial statements, land restitution notices, liquor license applications and transport permits. Board and legal notices are also published in the Gazette; these cover insolvencies, liquidation and estate notices."
 
@@ -50,8 +50,8 @@ Do not hesitate to [contact us](http://opengazettes.org.za/about#contact-us) if 
 
 ### Partner contacts:
 
-[Code for South Africa](http://code4sa.org/)<br>
-Lenina Rassool - [lenina@code4sa.org](mailto:lenina@code4sa.org)   
+[OpenUp](https://openup.org.za/)<br>
+[info@openup.org.za](mailto:info@openup.org.za)   
 
 [Southern African Legal Information Institute](http://www.saflii.org/)<br>
 [ceo@saflii.org](mailto:ceo@saflii.org)
