@@ -1,64 +1,47 @@
 <footer>
 
-	<section class="footer-top">
-		<div class="container">
-			<div class="row">
+  <section class="footer-top">
+    <div class="container">
+      <div class="row">
 
-				<div class="col-md-3 col-sm-3 col-xs-6 footer-item">
-					<!--<p class="footer-title">Thought Leadership</p>-->
-					<ul>
-						{% assign alphabetical = site.themes | sort: 'title' %}
-							{% for theme in alphabetical %}
-								<li><a href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></li>
-							{% endfor %}
-					</ul>
-				</div>
+        <div class="col-sm-3 col-xs-6 footer-item">
+          <ul>
+            {% assign alphabetical = site.themes | sort: 'title' %}
+              {% for theme in alphabetical %}
+                <li><a href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></li>
+              {% endfor %}
+          </ul>
+        </div>
 
-				<div class="col-md-3 col-sm-3 col-xs-6 footer-item">
-					<!--<p class="footer-title">Sitemap</p>-->
-					<ul>
-						<li><a href="/about.html">About us</a></li>
-						<li><a href="/contact.html">Contact us</a></li>
-						<li><a href="/tools">Tools</a></li>
-						<li><a href="/tools/dataportal.html">Data Portal</a></li>
-						<li><a href="/attribution.html">Attribution</a></li>
-						<li><a href="/careers.html">Careers</a></li>
-					</ul>
-				</div>
+        <div class="col-sm-3 col-xs-6 footer-item">
+          <ul>
+            <li><a href="/about.html">About us</a></li>
+            <li><a href="/contact.html">Contact us</a></li>
+            <li><a href="/tools">Tools</a></li>
+            <li><a href="/tools/dataportal.html">Data Portal</a></li>
+            <li><a href="/attribution.html">Attribution</a></li>
+            <li><a href="/careers.html">Careers</a></li>
+          </ul>
+        </div>
 
-				<div class="col-md-3 col-sm-3 col-xs-6 footer-item">
-					<p class="footer-title">NakedData</p>
-					<p>Our weekly newsletter, every Friday.<br>
-					<a href="{{ site.baseurl }}/nakeddata.html">Sign up now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
-				</div>
+        <div class="col-sm-3 col-xs-6 footer-item">
+          <p class="footer-title">NakedData</p>
+          <p>Our weekly newsletter, every Friday.<br>
+          <a href="{{ site.baseurl }}/nakeddata.html">Sign up now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
+        </div>
 
-				<div class="col-md-3 col-sm-3 col-xs-6 footer-item">
-					<p class="footer-title">Follow us</p>
-					<p><a href="https://twitter.com/openupsa" target="_blank"><i class="fa fa-twitter fa-2x smicon" aria-hidden="true"></i></a><a href="https://www.facebook.com/openupsa" target="_blank"><i class="fa fa-facebook fa-2x smicon" aria-hidden="true"></i></a><a href="https://github.com/Code4SA" target="_blank"><i class="fa fa-github-alt fa-2x smicon" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company/code-for-south-africa" target="_blank"><i class="fa fa-linkedin-square fa-2x smicon" aria-hidden="true"></i></a></p>
-				</div>
+        <div class="col-sm-3 col-xs-6 footer-item">
+          <p class="footer-title">Follow us</p>
+          <p><a href="https://twitter.com/openupsa" target="_blank"><i class="fa fa-twitter fa-2x smicon" aria-hidden="true"></i></a><a href="https://www.facebook.com/openupsa" target="_blank"><i class="fa fa-facebook fa-2x smicon" aria-hidden="true"></i></a><a href="https://github.com/Code4SA" target="_blank"><i class="fa fa-github-alt fa-2x smicon" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company/code-for-south-africa" target="_blank"><i class="fa fa-linkedin-square fa-2x smicon" aria-hidden="true"></i></a></p>
+        </div>
 
-			</div>
-		</div>
-	</section>
+      </div>
+    </div>
+  </section>
 
-
-	<section class="footer-copyright">
-		<div class="container">
-			<div class="row">
-
-				<!--<div class="col-md-4 col-xs-12">
-
-				</div>-->
-
-				<!--<div class="col-md-8 col-xs-12">-->
-				<div class="col-xs-12">
-					<p>
-					OpenUp is a project of Code for South Africa, a non-profit organisation registered with the South African Department of Social Development, number 133-850NPO.<br>
-					Licensed under a Creative Commons Attribution 4.0 International License.</p>
-				</div>
-
-			</div>
-		</div>
-	</section>
+  <section class="footer-copyright container">
+    OpenUp is a non-profit organisation registered with the <a target="_blank" href="http://www.dsd.gov.za/npo/index.php?option=com_content&task=view&id=66&Itemid=114">South African Department of Social Development</a>, number 133-850NPO.<br>
+    Licensed under a <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+  </section>
 
 </footer>
