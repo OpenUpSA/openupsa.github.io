@@ -36,5 +36,5 @@ Youth Explorer uses the same technology behind [Wazimap.co.za](https://wazimap.c
 
 Youth Explorer builds on the simplicity, power and familiarity of Wazimap to make the rich datasets around youth in the Western Cape approachable, understandable and useful.
 
-Western Cape Youth Explorer was developed in partnership with [UCT’s Poverty and Inequality Initiative](http://www.povertyandinequality.uct.ac.za/), [Western Cape Government](https://www.westerncape.gov.za/), [City of Cape Town](http://www.capetown.gov.za/), [Stats SA](http://www.statssa.gov.za/) and [Code for South Africa](http://code4sa.org/). 
+Western Cape Youth Explorer was developed in partnership with [UCT’s Poverty and Inequality Initiative](http://www.povertyandinequality.uct.ac.za/), [Western Cape Government](https://www.westerncape.gov.za/), [City of Cape Town](http://www.capetown.gov.za/), [Stats SA](http://www.statssa.gov.za/) and [OpenUp](https://openup.org.za/). 
 

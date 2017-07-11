@@ -37,7 +37,7 @@ Small Areas only partially overlap a district. For instance, if only half a
 Small Area overlaps with a Police District, then we only count half of that
 Small Area's population towards the population of the Police District.
 
-You can [read through the code on GitHub](https://github.com/Code4SA/crime-stats-demystifed/blob/master/refit.py).
+You can [read through the code on GitHub](https://github.com/OpenUpSA/crime-stats-demystifed/blob/master/refit.py).
 
 ## Mapping crimes to other shapes
 

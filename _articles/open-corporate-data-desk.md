@@ -18,7 +18,7 @@ themes:
 Welcome to OpenUp’s Data Desk. Our mission is simple: To make corporate data freely and publically available, and to empower you to hold the right people in the corporate sector accountable when they do things that affect your everyday life. 
 
 
-Think of it as a corporate data hotline. Email us on <a href="mailto:datadesk@openup.org.za">datadesk@code4sa.org</a>, and ask us for the corporate data you’re after, and we’ll do whatever we can to help you out. We believe that you should not have to pay for information about companies that’s held by the state, affects your life, and should legitimately be public. 
+Think of it as a corporate data hotline. Email us on <a href="mailto:datadesk@openup.org.za">datadesk@openup.org.za</a>, and ask us for the corporate data you’re after, and we’ll do whatever we can to help you out. We believe that you should not have to pay for information about companies that’s held by the state, affects your life, and should legitimately be public. 
 
 
 What do we mean by corporate data? This is data that empowers you with the information you need to hold the private sector accountable. You could be a community member, wanting to know who owns the company that is developing a piece of land near your house. Or perhaps there’s a mine near your house and there seems to be some opacity around who its shareholders are. 
