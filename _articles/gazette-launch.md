@@ -9,11 +9,8 @@ short: |
 image: gazette-launch.png
 tools:
 - name: opengazettes
-types:
-- name: launch
 themes:
-- name: opendata
-- name: cogovernance
+- name: liberation
 featured: true
 ---
 

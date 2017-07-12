@@ -33,13 +33,17 @@ $cogovernance: #0f77bc;
 $cogovernance-light: lighten($cogovernance, 10%);
 $cogovernance-dark: darken($cogovernance, 10%);
 
-$education: #dcc102;
-$education-light: lighten($education, 10%);
-$education-dark: darken($education, 10%);
+$literacy: #dcc102;
+$literacy-light: lighten($literacy, 10%);
+$literacy-dark: darken($literacy, 10%);
 
-$opendata: #138e08;
-$opendata-light: lighten($opendata, 10%);
-$opendata-dark: darken($opendata, 10%);
+$liberation: #138e08;
+$liberation-light: lighten($liberation, 10%);
+$liberation-dark: darken($liberation, 10%);
+
+$empowerment: #db9027;
+$empowerment-light: lighten($empowerment, 10%);
+$empowerment-dark: darken($empowerment, 10%);
 
 $tool: #707070;
 $tool-light: lighten($tool, 10%);
@@ -51,7 +55,7 @@ $type-light: lighten($type, 10%);
 $type-dark: darken($type, 10%);
 $type-darker: darken($type, 20%);
 
-$shortcourse: $education;
+$shortcourse: $literacy;
 $shortcourse-opaque: rgba($shortcourse, .05);
 $shortcourse-lightest: lighten($shortcourse, 60%);
 $shortcourse-lighter: lighten($shortcourse, 20%);
@@ -180,21 +184,27 @@ body {
         color: #fff;
       }
     }
-    &.education {
-      background-color: $education;
+    &.literacy {
+      background-color: $literacy;
       &:hover {
-        background-color: $education-dark;
+        background-color: $literacy-dark;
         color: #fff;
       }
     }
-    &.opendata {
-      background-color: $opendata;
+    &.liberation {
+      background-color: $liberation;
       &:hover {
-        background-color: $opendata-dark;
+        background-color: $liberation-dark;
         color: #fff;
       }
     }
-
+    &.empowerment {
+      background-color: $empowerment;
+      &:hover {
+        background-color: $empowerment-dark;
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -272,17 +282,24 @@ body {
             color: #fff;
           }
         }
-        &.education {
-          background-color: $education;
+        &.literacy {
+          background-color: $literacy;
           &:hover {
-            background-color: $education-dark;
+            background-color: $literacy-dark;
             color: #fff;
           }
         }
-        &.opendata {
-          background-color: $opendata;
+        &.liberation {
+          background-color: $liberation;
           &:hover {
-            background-color: $opendata-dark;
+            background-color: $liberation-dark;
+            color: #fff;
+          }
+        }
+        &.empowerment {
+          background-color: $empowerment;
+          &:hover {
+            background-color: $empowerment-dark;
             color: #fff;
           }
         }
@@ -755,20 +772,28 @@ p {
       background-color: $cogovernance;
     }
   }
-  &.education {
+  &.literacy {
     .author {
-      color: $education;
+      color: $literacy;
     }
     .hero {
-      background-color: $education;
+      background-color: $literacy;
     }
   }
-  &.opendata {
+  &.liberation {
     .author {
-      color: $opendata;
+      color: $liberation;
     }
     .hero {
-      background-color: $opendata;
+      background-color: $liberation;
+    }
+  }
+  &.empowerment {
+    .author {
+      color: $empowerment;
+    }
+    .hero {
+      background-color: $empowerment;
     }
   }
 }
@@ -1481,6 +1506,9 @@ footer {
   }
   .featured-article {
     padding-top: 20px;
+  }
+  .btn-more {
+    margin-bottom: 20px;
   }
 }
 

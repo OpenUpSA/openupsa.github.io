@@ -9,11 +9,8 @@ short: |
 image: pocket-reporter.png
 tools:
 - name: pocketreporter
-types:
-- name: launch
 themes:
-- name: tech
-- name: education
+- name: empowerment
 featured: true
 ---
 

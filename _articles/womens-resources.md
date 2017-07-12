@@ -9,7 +9,7 @@ image: womens-resources.jpg
 tools:
 - name: dataportal
 themes:
-- name: opendata
+- name: liberation
 ---
 I once heard South Africa described as a country with a legacy of disrespect for women.  Without debating the validity of that, it is certainly true that we have a high incidence of abuse of women, and given poverty and education levels, how easy is it for South African women to find resources in a time of crisis? 
 
