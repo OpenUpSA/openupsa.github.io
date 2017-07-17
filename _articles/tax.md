@@ -8,6 +8,7 @@ image: tax.jpg
 tools:
 - name: trace
 themes:
+- name: literacy
 ---
 
 _This year, Code for South Africa launched a project that interrogates transparency within the private sector, “Transparent Corporates” (Trace). Our mission is to make corporate data freely and publicly available, and to empower everyone living in South Africa to hold the right people in the private sector accountable when they do things that affect everyday life. Over the next few weeks, we’ll be publishing a series of pieces that highlight some of the work we do, from looking at international shareholding to tax evasion, Trump to “paid Twitter” and much, much more. In the second article of our series, we look at tax evasion; what is it and what does it actually mean to call somewhere a tax haven?_

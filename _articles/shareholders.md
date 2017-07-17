@@ -3,11 +3,12 @@ layout: article
 author: roxanne
 title: Shareholder requests and the access battle
 date: 2017-03-07
-short: In this piece, we look at the state of transparency within company ownership and how the law facilitates access to this type of information.
+short: The state of transparency within company ownership and how the law facilitates access to this type of information.
 image: shareholders.jpg
 tools:
 - name: trace
 themes:
+- name: literacy
 ---
 _This year, Code for South Africa launched a project that interrogates transparency within the private sector, “Transparent Corporates” (Trace). Our mission is to make corporate data freely and publicly available, and to empower everyone living in South Africa to hold the right people in the private sector accountable when they do things that affect everyday life. Over the next few weeks, we’ll be publishing a series of blogs that highlights some of the work we do, from looking at international shareholding to tax evasion, Trump to paid Twitter and much, much more. In the first of our series, we look at the state of transparency within company ownership and how the law facilitates access to this type of information._
  
@@ -22,7 +23,6 @@ The Act says that, “A person who holds or has a beneficial interest in any sec
 This includes access to the following: memorandum of incorporation, records pertaining to company directors, reports pertaining to annual meetings and financial statements, securities register and meeting minutes, just to name a few. 
 
 The standard procedure for acquiring company-related information, according to the Act, is for interested members of the public to fill in a - relatively simple - form asking companies for the opportunity to inspect their shareholder registers and the response time, from the companies, is only meant to take up to about three weeks. On average, you’re looking at approximately R40 per request made, but the full cost depends on what and how many records you’re requesting. 
-
 
 ## The state of corporate transparency in South Africa
 
