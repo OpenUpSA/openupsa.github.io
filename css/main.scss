@@ -1040,17 +1040,16 @@ footer {
 
     .footer-item {
       border-left: 1px solid #f3f3f3;
-        padding-right: 20px;
-        height: 96px;
-        .smicon {
-          padding-right: 15px;
-        }
-        .footer-title {
-          font-size: 21px;
-        }
-        a:hover {
-          text-decoration: none;
-        }
+      padding-right: 20px;
+      .smicon {
+        padding-right: 15px;
+      }
+      .footer-title {
+        font-size: 21px;
+      }
+      a:hover {
+        text-decoration: none;
+      }
     }
 
     ul {
@@ -1522,6 +1521,20 @@ footer {
 .attribution {
   img {
     max-width: 150px;
+  }
+}
+
+.legal-terms {
+  @media (min-width: 992px) {
+    .privacy-policy {
+      border-left: 1px solid #ccc;
+    }
+  }
+  .table-of-content {
+    a {
+      font-size: 14px;
+      display: block;
+    }
   }
 }
 
