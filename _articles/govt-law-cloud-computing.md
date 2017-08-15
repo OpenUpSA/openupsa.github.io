@@ -1,12 +1,13 @@
 ---
 layout: article
 author: greg
-title: What Government and the Law can Learn from Cloud Computing’s Success
+title: "What Government and the Law can Learn from Cloud Computing’s Success"
 date: 2017-08-15
-short: The enormous impact of cloud computing on the pace of business innovation over the last ten years bears an important lesson for the law and the government: the significant value of shared, re-usable resources.
-image: youth-explorer-national.jpg
+short: "The enormous impact of cloud computing on the pace of business innovation over the last ten years bears an important lesson for the law and the government: the significant value of shared, re-usable resources."
+image: bulldozer.jpg
 tools:
 - name: indigo
+- name: openbylaws
 themes:
 - name: cogovernance
 ---
@@ -56,7 +57,7 @@ There's also the additional concern that everyone must and should have access to
 
 Here’s what we can learn from cloud computing: **we must stop spending money on undifferentiated heavy lifting when it comes to the law**. 
 
-Each country needs a collection of its laws that is:
+Every country needs a collection of its laws that is:
 
 * available to all, for free
 * openly-licensed for commercial and non-commercial use
