@@ -60,7 +60,7 @@ Here’s what we can learn from cloud computing: **we must stop spending money o
 Every country needs a collection of its laws that is:
 
 * available to all, for free
-* openly-licensed for commercial and non-commercial use
+* [openly-licensed](http://opendefinition.org/) for commercial and non-commercial use
 * machine-friendly with rich metadata
 * up-to-date
 * consolidated, and available as it was at a particular point in time
