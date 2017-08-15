@@ -309,21 +309,11 @@ body {
     font-weight: 600;
     margin-bottom: 30px;
   }
-  .banner-notice {
-    margin-top: -20px;
-    background-color: $green-dark;
-    .announcement {
-      padding: 10px 0;
-      color: #fff;
-      a {
-        color: #fff;
-      }
-    }
-  }
   .banner {
+    margin-top: -20px;
     background-color: $green;
     padding: 20px;
-    padding-bottom: 180px;
+    padding-bottom: 420px;
     color: #fff;
     h1 {
       font-size: 42px;
@@ -331,6 +321,87 @@ body {
     h3 {
       font-family: 'News Cycle', sans-serif;
       font-size: 26px;
+    }
+  }
+
+  $activecitizenry: #b21114;
+  $tech: #591c96;
+  $cogovernance: #0f77bc;
+  $education: #dcc102;
+  $opendata: #138e08;
+
+  .work {
+    margin-top: -400px;
+    img {
+      width: 100%;
+    }
+    h1 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 25px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      padding: 15px 0;
+      text-align: center;
+      background-color: #fff;
+    }
+    .description {
+      background-color: #fff;
+      padding: 0 10px;
+      padding-bottom: 10px;
+      &.bottom {
+        font-family: 'News Cycle', 'Open Sans', sans-serif;
+        font-size: 21px;
+      }
+    }
+    .highlight {
+      background-color: $green;
+      color: #fff;
+      padding: 0 3px;
+    }
+    img {
+      border: 4px solid #fff;
+    }
+  }
+
+  .themes {
+    color: #fff;
+    .single-theme {
+      border: 4px solid #fff;
+      padding: 10px;
+      color: #fff;
+      min-height: 174px;
+      margin-bottom: 15px;
+      a {
+        color: #fff;
+      }
+      .title {
+        color: #fff;
+        font-size: 24px;
+        font-family: 'Libre Franklin', sans-serif;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+    .activecitizenry {
+      background-color: $activecitizenry;
+    }
+    .tech {
+      background-color: $tech;
+    }
+    .cogovernance {
+      background-color: $cogovernance;
+    }
+    .education {
+      background-color: $education;
+    }
+    .opendata {
+      background-color: $opendata;
+    }
+    .about {
+      background-color: $green;
     }
   }
   .tools {
@@ -344,7 +415,6 @@ body {
       width: 100%;
       border: 4px solid #fff;
     }
-    margin-top: -130px;
   }
   .moretools {
     margin: 30px 0;
