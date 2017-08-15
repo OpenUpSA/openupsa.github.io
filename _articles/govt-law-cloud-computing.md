@@ -63,7 +63,7 @@ Every country needs a collection of its laws that is:
 * openly-licensed for commercial and non-commercial use
 * machine-friendly with rich metadata
 * up-to-date
-* consolidated, and available as it was a particular point in time
+* consolidated, and available as it was at a particular point in time
 * trusted
 
 Such a collection will free up the private sector to differentiate themselves from their competition. It will lower costs for companies, the government and end users. It will lower the barrier to entry and promote innovation in the legal and justice domains.
