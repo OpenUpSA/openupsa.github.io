@@ -37,7 +37,7 @@ So what does that mean for the law and the government?
 
 In South Africa, as in almost every other African country and many others around the world, there is no source of freely accessible, openly licensed, consolidated legislation. In many instances, the government itself does not own a full digital collection of consolidated legislation.
 
-Companies such as Lexis Nexis, Sabinet and Juta make a business out of taking the original acts from the Government Gazettes, re-capturing and typesetting them, consolidating them by applying amendments, and publishing them. A public function--disseminating the law--has been privatised.
+Companies such as Lexis Nexis, Sabinet and Juta make a business out of taking the original acts from the Government Gazettes, re-capturing and typesetting them, consolidating them by applying amendments, and publishing them. A public function—disseminating the law—has been privatised.
 
 To work with and use the law, civil society, the government and the private sector must either perform these same laborious tasks or pay others who have performed them. 
 
