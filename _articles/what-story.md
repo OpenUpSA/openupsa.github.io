@@ -1,23 +1,10 @@
 ---
 layout: article
 author: julia
-title: "Whats your (data) story?"
+title: "What's your (data) story?"
 date: 2017-08-17
-short: OpenUp's short training courses teach Learners the value and impact numbers have, once contextualised in the situations that affect our daily living.
-image: facebook-photo.jpg
-types:
-- name: howto
-themes:
-- name: education
-featured: true
----
----
-layout: article
-author: julia
-title: "Whats your (data) story?"
-date: 2017-08-17
-short: OpenUp's short training courses teach Learners the value and impact numbers have, once contextualised in the situations that affect our daily living.
-image: facebook-photo.jpg
+short: OpenUp's short training courses teach Learners the value and impact numbers have, once contextualised in the situations that affect our daily living
+image: what-story.jpg
 types:
 - name: howto
 themes:
