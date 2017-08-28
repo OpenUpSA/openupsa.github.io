@@ -2,7 +2,7 @@
 layout: article
 author: roxanne
 title: "Investigating private entities with open data"
-date: 2017-09-28
+date: 2017-08-28
 short: "As part of OpenUp's Transparent Corporates project, we've got some tips on how to investigate private entities using open data."
 image: polize.jpg
 tools:
