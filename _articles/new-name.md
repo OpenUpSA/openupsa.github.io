@@ -6,7 +6,6 @@ date: 2017-03-13
 short: |
   Dear friends, I want to share an important announcement with you.
 image: adi-letter.png
-homepage: true
 ---
 
 Dear friends, 

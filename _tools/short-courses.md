@@ -1,10 +1,9 @@
 ---
 layout: tool
-name: trace
-title: TRACE
-image: trace.jpg
-external-url: /trace
+name: short-courses
+title: Short courses
+image: short-courses.jpg
+external-url: /courses.html
 oneliner: Making corporate data freely available to empower people and institute accountability
-homepage: true
 skip-own-page: true
 ---
