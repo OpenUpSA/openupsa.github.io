@@ -8,11 +8,8 @@ image: ostrich-fence.jpg
 tools:
 - name: wazimap
 - name: municipalmoney
-types:
-- name: howwedidit
 themes:
 - name: tech
-- name: opendata
 featured: true
 ---
 

@@ -8,8 +8,6 @@ short: |
 image: build-wazimap.jpg
 tools:
 - name: wazimap
-types:
-- name: howto
 themes:
 - name: tech
 featured: true

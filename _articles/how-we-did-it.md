@@ -8,8 +8,6 @@ short: |
 image: how-gazette-0.jpg
 tools:
 - name: opengazettes
-types:
-- name: howwedidit
 themes:
 - name: tech
 featured: true

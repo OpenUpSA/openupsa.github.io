@@ -7,7 +7,7 @@ short: |
     People legally change their names all the time. Sometimes what they choose for themselves is very amusing.
 image: name-change.jpg
 tools:
-- name: opengazettes
+- name: other
 themes:
 - name: opendata
 ---

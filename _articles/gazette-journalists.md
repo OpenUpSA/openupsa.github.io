@@ -8,11 +8,8 @@ short: |
 image: gazette-journalists.jpg
 tools:
 - name: opengazettes
-types:
-- name: howto
 themes:
-- name: activecitizenry
-- name: education
+- name: empowerment
 featured: true
 ---
  
