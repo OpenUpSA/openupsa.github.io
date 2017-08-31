@@ -6,9 +6,8 @@ date: 2017-08-17
 short: OpenUp's short training courses teach Learners the value and impact numbers have, once contextualised in the situations that affect our daily living
 image: what-story.jpg
 types:
-- name: howto
 themes:
-- name: education
+- name: literacy
 featured: true
 ---
 We all have stories to tell, and we all use data to tell our stories.  Whether it’s highlighting excessive expenditure on fast foods in our household budget, or the story we tell our employers when building a case for a pay increase.  It could be the story we tell our colleagues about organisational or departmental performance, or even the stories we wish to blog about concerning issues that plague our communities.

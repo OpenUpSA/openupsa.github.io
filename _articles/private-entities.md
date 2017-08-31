@@ -8,9 +8,8 @@ image: polize.jpg
 tools:
 - name: trace
 types:
-- name: opinion
 themes:
-- name: education
+- name: literacy
 ---
 
 In South Africa, and around the world, the use of open data in criminal investigations is quite new and although data has been around for centuries, even the mere existence of it in its current form is something of an enigma (although this is fast changing). When it comes to the fight against corruption, there is still a big discussion to be had around the use of data, including how to effectively communicate what it is used for. 
