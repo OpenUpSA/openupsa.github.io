@@ -9,7 +9,6 @@ short: |
   All too often powerful, simple-to-use data tools for journalists are built and, after an initial buzz, they end up hardly being used by the very users they target.
 image: building-not-enough.jpg
 types:
-- name: opinion
 themes:
 - name: activecitizenry
 ---
