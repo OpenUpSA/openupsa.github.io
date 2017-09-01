@@ -1,49 +1,24 @@
-<!DOCTYPE html>
-<html>
+---
+layout: raw
+---
+<!-- schema -->
+<span class="hidden" itemscope itemtype="http://schema.org/NGO">
+  <span itemprop="name">OpenUp</span>
+  <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <span itemprop="streetAddress">1 Thicket St, Newlands</span>
+    <span itemprop="addressLocality">Cape Town</span>,
+    <span itemprop="addressRegion">Western Cape</span>
+    <span itemprop="postalCode">7725</span>
+  </span>
+  <span itemprop="telephone">+27216716306</span>
+  <span itemprop="email">info@openup.org.za</span>
+  <span itemprop="url">https://openup.org.za</span>
+  <span itemprop="description">We empower citizens to improve their lives and communities.</span>
+  <img itemprop="logo" src="https://openup.org.za/img/logo.png"/>
+</span>
 
-  {% include head.html %}
+{% include header.html %}
 
-  <body>
+{{ content }}
 
-    <!-- schema -->
-    <span class="hidden" itemscope itemtype="http://schema.org/NGO">
-      <span itemprop="name">OpenUp</span>
-      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        <span itemprop="streetAddress">1 Thicket St, Newlands</span>
-        <span itemprop="addressLocality">Cape Town</span>,
-        <span itemprop="addressRegion">Western Cape</span>
-        <span itemprop="postalCode">7725</span>
-      </span>
-      <span itemprop="telephone">+27216716306</span>
-      <span itemprop="email">info@openup.org.za</span>
-      <span itemprop="url">https://openup.org.za</span>
-      <span itemprop="description">We empower citizens to improve their lives and communities.</span>
-      <img itemprop="logo" src="https://openup.org.za/img/logo.png"/>
-    </span>
-
-    {% include header.html %}
-
-    {{ content }}
-
-    {% include footer.html %}
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      {% if jekyll.environment == "production" %}
-      ga('create', 'UA-93649482-1', 'auto');
-      {% endif %}
-      ga('send', 'pageview');
-    </script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="{{ site.baseurl }}/js/site.js"></script>
-
-    {% for js in page.extra_js %}
-    <script src="{{ js }}"></script>
-    {% endfor %}
-  </body>
-</html>
+{% include footer.html %}
