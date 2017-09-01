@@ -356,8 +356,12 @@ body {
       font-size: 26px;
     }
   }
-  .value-adds, .partners {
-    padding: 70px 0 50px 0;
+  .value-adds, .partners, .openness {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .what {
+      padding-bottom: 50px;
+    }
     .block {
       background-color: $gray-light;
       padding: 25px;
@@ -378,12 +382,18 @@ body {
         text-align: center;
         margin-bottom: 20px;
       }
+      &.contact {
+        min-height: 165px;
+        max-height: 220px;
+        p {
+          margin-top: 10px;
+        } 
+      }
     }
   }
   .articles {
-    background-color:#f8f8f8;
-    padding: 50px 0 70px 0;
-    margin-bottom:20px;
+    background-color: $gray-light;
+    padding: 70px 0;
     .article-author {
       padding: 10px 0px;
     }
@@ -393,28 +403,68 @@ body {
     }
   }
   .partners {
-    padding: 50px 0 70px 0;
-  }
-  .contact {
-    padding-top: 50px;
-      img {
-        width:100%;
-      }
-    .contact-box {
-      margin-bottom: 50px;
-    }
-    .contact-title {
-      font-size: 21px;
-      font-weight: 600;
-    }
-  }
-  .funders {
-    padding: 50px 0;
+    padding: 70px 0;
     img {
       width: 100%;
-      border: 1px solid #ddd;
-      padding: 10px;
-      margin-bottom: 30px;
+    }
+  }
+  .short-courses {
+    padding: 70px 0;
+    background-color: $gray-light;
+    .icons {
+      text-align: center;
+      i {
+        font-size: 60px;
+        vertical-align: middle;
+        &.fa-arrow-right {
+          font-size: 40px;
+          line-height: 60px;
+          margin: 0 15px;
+        }
+      }
+    }
+    .quotes {
+      i {
+        font-size: 40px;
+        margin-top: 10px;
+      }
+      .short-line {
+
+      }
+      .quote {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $gray-dark;
+        &:last-of-type {
+          border-bottom-width: 0px;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+        .text {
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+  .openness {
+    .link {
+      color: $green;
+    }
+  }
+  .newsletter {
+    padding: 70px 0;
+    background-color: $gray-light;
+    #mc_embed_signup {
+      form {
+        padding: 0;
+        margin-top: 30px;
+      }
+      input {
+        border: none;
+      }
+    }
+    #mc-embedded-subscribe {
+      margin: 0;
     }
   }
 }
