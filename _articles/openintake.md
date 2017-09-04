@@ -6,7 +6,7 @@ date: 2017-09-04
 short: Dates confirmed for Introduction to Data Storytelling in Durban & Applications close today for Johannesburg Intake!
 image: facebook-photo.jpg
 themes:
-- name: education
+- name: dataliteracy
 featured: true
 ---
 Exciting news: we can confirm our Durban intake for 9 - 10 October.  The dates and locations for [Introduction to Data Storytelling](https://openup.org.za/img/resources/Open-Intake-Invite-Sept17.pdf) short course are:
