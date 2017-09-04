@@ -6,7 +6,7 @@ layout: base
 	<div class="banner-notice">
 		<div class="container">
 			<div class="row announcement">
-				<div class="col-md-10 col-sm-10 col-xs-12">
+				<div class="col-sm-10 col-xs-12">
 					<a href="{{ site.baseurl }}/careers.html">Interested in working at OpenUp? See what positions are available. <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 				</div>
 			</div>
@@ -16,152 +16,317 @@ layout: base
 	<div class="banner">
 		<div class="container">
 
-			<div class="row"><div class="col-md-8">
-				<h1>We empower citizens to improve their lives and communities.</h1>
-				<h3>We build tools, open up data, and provide training that support active citizenry and help communities and government work together.</h3>
-			</div></div>
+			<div class="row">
+        <div class="col-md-8">
+  				<h1>We empower citizens to improve their lives and communities.</h1>
+  				<h3>We build tools, open up data, and provide training that support active citizenry and help communities and government work together.</h3>
+  			</div>
+      </div>
 
 		</div>
 	</div>
 
 	<div class="container">
-		<div class="tools row">
+		<div class="value-adds row">
 		
-			{% for tool in site.tools %}
-				{% if tool.homepage %}
-					<div class="col-sm-4">
-						<a href="{% if tool.skip-own-page %}{{ tool.external-url }}{% else %}{{ tool.url | prepend: site.baseurl }}{% endif %}"><img src="{{ site.baseurl }}/img/tools/{{ tool.image }}"></a>
-						<p>{{ tool.oneliner }}</p>			
-					</div>
-				{% endif %}
-			{% endfor %}
+      <div class="col-md-4">
+        <a href="/tools" class="block">
+          <i class="fa fa-wrench" aria-hidden="true"></i>
+          <p>We build <b>open source tools</b> with our partners that inform, empower and activate citizens to improve their lives</p>
+          <div class="btn btn-block">Explore our tools</div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#short-courses" class="block">
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          <p>Our <b>short courses</b> teach people the power of working with data and how to tell impactful, data-driven stories</p>
+          <div class="btn btn-block">Learn about our short courses</div>
+        </a>
+      </div>
+			<div class="col-md-4">
+        <a href="#partners" class="block">
+          <i class="fa fa-handshake-o" aria-hidden="true"></i>
+          <p>We <b>advise government and civil society</b> on effectively using open data and technology for real impact</p>
+          <div class="btn btn-block">Read about our partnerships</div>
+        </a>
+      </div>
 
-		</div>
-		<div class="moretools">
-			<a href="{{ site.baseurl }}/tools">see all our tools <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 		</div>
 	</div>
 
 
 	<div class="articles article-list">
 		<div class="container">
-
+      <h1>Latest news</h1>
 			<div class="row">
-			{% for article in site.articles reversed %}
-		    {% if article.homepage %}
-			    
-			    <div class="col-md-3 col-sm-6 col-xs-12 one-article">
-            
-            <div class="title-image-wrap">
-					    <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+      {% assign orderedArticles = site.articles | sort: 'date' | reverse %}
 
-					    <div class="article-title">
-						    <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
-						  </div>
+			{% for article in orderedArticles limit:3 %}
+			    
+		    <div class="col-md-4 col-sm-6 col-xs-12 one-article">
+          
+          <div class="title-image-wrap">
+				    <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+
+				    <div class="article-title">
+					    <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
 					  </div>
+				  </div>
 
-				    <div class="article-author">
-					    {% if article.author-external %}
-		            <div>by <a href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
-		          {% else %}
-		            {% for member in site.team %}
-		              {% if member.name == article.author %}
-		                <div>by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></div>
-		              {% endif %}
-		            {% endfor %}
-		          {% endif %}
-		        </div>
+			    <div class="article-author">
+				    {% if article.author-external %}
+	            <div>by <a href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
+	          {% else %}
+	            {% for member in site.team %}
+	              {% if member.name == article.author %}
+	                <div>by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></div>
+	              {% endif %}
+	            {% endfor %}
+	          {% endif %}
+	        </div>
 
-		        <p>{{ article.short }}</p>
+	        <p>{{ article.short }}</p>
 
-		        {% if article.tools %}
-              {% for tool in site.tools %}
-                {% for articletool in article.tools %}
-                  {% if tool.name == articletool.name %}
-                    <span class="tags"><a class="badge tool" href="{{ tool.url | prepend: site.baseurl }}">{{ tool.title }}</a></span>
-                  {% endif %}
-                {% endfor %}
+	        {% if article.tools %}
+            {% for tool in site.tools %}
+              {% for articletool in article.tools %}
+                {% if tool.name == articletool.name %}
+                  <span class="tags"><a class="badge tool" href="{% if tool.skip-own-page %}{{ tool.external-url }}{% else %}{{ tool.url | prepend: site.baseurl }}{% endif %}">{{ tool.title }}</a></span>
+                {% endif %}
               {% endfor %}
-            {% endif %}
-            {% if article.themes %}
-              {% for theme in site.themes %}
-                {% for articletheme in article.themes %}
-                  {% if theme.name == articletheme.name %}
-                    <span class="tags"><a class="badge theme {{ theme.name }}" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></span>
-                  {% endif %}
-                {% endfor %}
+            {% endfor %}
+          {% endif %}
+          {% if article.themes %}
+            {% for theme in site.themes %}
+              {% for articletheme in article.themes %}
+                {% if theme.name == articletheme.name %}
+                  <span class="tags"><a class="badge theme {{ theme.name }}" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></span>
+                {% endif %}
               {% endfor %}
-            {% endif %}
-            {% if article.types %}
-              {% for type in site.types %}
-                {% for articletype in article.types %}
-                  {% if type.name == articletype.name %}
-                    <span class="tags"><a class="badge type" href="{{ type.url | prepend: site.baseurl }}">{{ type.title }}</a></span>
-                  {% endif %}
-                {% endfor %}
+            {% endfor %}
+          {% endif %}
+          {% if article.types %}
+            {% for type in site.types %}
+              {% for articletype in article.types %}
+                {% if type.name == articletype.name %}
+                  <span class="tags"><a class="badge type" href="{{ type.url | prepend: site.baseurl }}">{{ type.title }}</a></span>
+                {% endif %}
               {% endfor %}
-            {% endif %}
+            {% endfor %}
+          {% endif %}
 
-			    </div>
+		    </div>
 			    
-		    {% endif %}
 			{% endfor %}
 			</div>
 
 		</div>
 	</div>
 
-	<div class="contact">
-		<div class="container">
-
-			<div class="row">
-
-				<div class="contact-box col-xs-12 col-sm-6">
-					<div class="row">
-						<div class="col-xs-4">
-							<img src="{{ site.baseurl }}/img/graphics/email.png" />
-						</div>
-						<div class="col-xs-8">
-							<p class="contact-title">Work with us</p>
-							<p>We work with data and technology to help South Africans. If you’d like to partner with us, <a href="{{ site.baseurl }}/contact">please get in touch</a>.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="contact-box col-xs-12 col-sm-6">
-					<div class="row">
-						<div class="col-xs-4">
-							<img src="{{ site.baseurl }}/img/graphics/reunion.png" />
-						</div>
-						<div class="col-xs-8">
-							<p class="contact-title">Support our efforts</p>
-							<p>We are a non-profit organisation and rely on funding to continue our work. You can help by <a href="{{ site.baseurl }}/tools">using our tools</a> and spreading the word on <a href="https://www.facebook.com/openupsa" target="_blank">Facebook</a> and <a href="https://twitter.com/openupsa" target="_blank">Twitter</a>.</p>
-						</div>
-					</div>
-					
-				</div>
-
-
-			</div>
-
-		</div>
-	</div>
-
-	<div class="funders">
-		<div class="container">
-
-			<h1>Our funders</h1>
-			<div class="row">
-        <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="http://www.omidyar.com/"><img src="{{ site.baseurl }}/img/collaborators/omidyar.png"></a>  
-        <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="https://indigotrust.org.uk/"><img src="{{ site.baseurl }}/img/collaborators/indigo.png"></a>  
-        <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="http://www.makingallvoicescount.org/"><img src="{{ site.baseurl }}/img/collaborators/mavc.svg"></a>  
-        <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="https://codeforafrica.org/"><img src="{{ site.baseurl }}/img/collaborators/c4a.png"></a>
-        <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="http://www.innovationedge.org.za/"><img src="{{ site.baseurl }}/img/collaborators/innovationedge.png"></a>
-        <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="http://www.osf.org.za/"><img src="{{ site.baseurl }}/img/collaborators/osf.png"></a>
-        <a class="col-xs-6 col-sm-4 col-md-3 col-lg-2" href="http://www.trustafrica.org/"><img src="{{ site.baseurl }}/img/collaborators/trustafrica.png"></a>
+  <div id="partners" class="container">
+    <div class="partners">
+      <h1>We value collaboration</h1>
+      <div class="row what">
+        <div class="col-md-4">
+          <div class="block">
+            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+            <p><b>We help civil society and government use data and simple technology, effectively.</b> Societies are successful when communities and governments work together. With our partners, we’re creating an ecosystem that supports informed, empowered and active citizens.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="block">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <p><b>We provide technical advice, guidance for releasing and using open data, and build civic technology platforms</b> that bridge communities and governments and solve people’s problems. Technology is not our focus, but rather a means to achieve our goals.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <a href="/contact.html" class="block">
+            <i class="fa fa-comments-o" aria-hidden="true"></i>
+            <p><b>Are you interested in working with us?</b> We are always interested in partnering up with companies, organisations, and governments who share our goal of creating an informed and empowered society. </p>
+            <div class="btn btn-block">Get in touch with us</div>
+          </a>
+        </div>
       </div>
+      
+      <h2>We're incredibly proud to work with these organisations</h2>
+      <div class="row who">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <a class="block" href="http://www.blacksash.org.za">
+            <img src="/img/collaborators/black-sash.png">
+          </a>
+        </div>  
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <a class="block" href="http://pmg.org.za/">
+            <img src="/img/collaborators/pmg.png">
+          </a>
+        </div>  
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <a class="block" href="https://africanlii.org/">
+            <img src="/img/collaborators/africanlii-square.png">
+          </a>
+        </div>  
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <a class="block" href="http://www.saflii.org/">
+            <img src="/img/collaborators/saflii.png">
+          </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <a class="block" href="http://www.povertyandinequality.uct.ac.za/">
+            <img src="/img/collaborators/pii.png">
+          </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <a class="block" href="http://www.treasury.gov.za/">
+            <img src="/img/collaborators/treasury.png">
+          </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <a class="block" href="http://www.salga.org.za/">
+            <img src="/img/collaborators/salga.png">
+          </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <a class="block" href="http://news24.com/">
+            <img src="/img/collaborators/news24.png">
+          </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <a class="block" href="http://amabhungane.co.za/">
+            <img src="/img/collaborators/amabhungane.png">
+          </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <a class="block" href="https://www.dailymaverick.co.za/">
+            <img src="/img/collaborators/daily-maverick.png">
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
+          <a class="block contact" href="/contact.html">
+            <p><b>Does your organisation share our vision of an empowered and informed society?</b></p>
+            <div class="btn btn-block">Work with us</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-		</div>
-	</div>
+  <div id="short-courses" class="short-courses">
+    <div class="container">
+      <h1>We teach people the power of data</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="subheader">Our short courses teach people and organisations how to use data to find trends, spot stories and communicate effectively using information</h3>
+          <p>Our courses are taught over one, two or three days. We’ll tailor them to fit your needs and we can integrate your organisation’s own datasets into the course.</p>
+          <a class="btn btn-block" href="/courses.html">Explore our short courses</a>
+        </div>
+        <div class="col-md-6 col-lg-5 col-lg-offset-1 icons">
+          <i class="fa fa-fw fa-table" aria-hidden="true"></i><br>
+          <i class="fa fa-fw fa-arrow-down first" aria-hidden="true"></i>
+          <i class="fa fa-fw fa-arrow-down" aria-hidden="true"></i>
+          <i class="fa fa-fw fa-arrow-down last" aria-hidden="true"></i><br>
+          <i class="fa fa-fw fa-line-chart" aria-hidden="true"></i>
+          <i class="fa fa-fw fa-newspaper-o" aria-hidden="true"></i>
+          <i class="fa fa-fw fa-comments" aria-hidden="true"></i>
+        </div>
+        <!-- <div class="col-md-6 col-lg-5 col-lg-offset-1 quotes">
+          <div class="row">
+            <div class="col-xs-2">
+              <i class="fa fa-fw fa-pie-chart" aria-hidden="true"></i>
+            </div>
+            <div class="col-xs-10 quote">
+              <div class="text">"OpenUp's course on data visualisation helped us enhance our articles and engage our readers more than we could before"</div>
+              <div class="author">— <a href="#">Jimmy Jones, news24</a></div>
+            </div>
+
+            <div class="col-xs-2">
+              <i class="fa fa-fw fa-database" aria-hidden="true"></i>
+            </div>
+            <div class="col-xs-10 quote">
+              <div class="text">"Our organisation now has the capacity to clean, analyse, and present data effectively"</div>
+              <div class="author">— <a href="#">Janet Johnson, Black Sash</a></div>
+            </div>
+
+            <div class="col-xs-2">
+              <i class="fa fa-fw fa-file-excel-o" aria-hidden="true"></i>
+            </div>
+            <div class="col-xs-10 quote">
+              <div class="text">"I'm no longer intimidated by spreadsheets and datasets; I'm saving time and money after taking OpenUp's intro to data driven storytelling course"</div>
+              <div class="author">— <a href="">JayJay Jackson, freelance journalist</a></div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="openness container">
+    <h1>We value openness</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="https://github.com/openupsa/" class="block">
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <p>All our work is licensed under open source licenses and available on <span class="link">GitHub</span>. Pull requests welcome!</p>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://data.code4sa.org/" class="block">
+          <i class="fa fa-creative-commons" aria-hidden="true"></i>
+          <p>Our <span class="link">open data portal</span> is a home for orphaned datasets.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsletter">
+    <div class="container">
+      <h1>Naked Data Newsletter</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h3><b>Our weekly newsletter</b> on data, journalism, civic tech and everything in between. Every Friday, to get your weekend started.</h3>
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+            <form action="//code4sa.us8.list-manage.com/subscribe/post?u=11977a67604b965526b63ee6e&amp;id=0852ce7e74" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL">Email Address
+                  </label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response alert alert-danger" id="mce-error-response" style="display:none; padding: 20px"></div>
+                  <div class="response alert alert-success" id="mce-success-response" style="display:none; padding: 20px"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_11977a67604b965526b63ee6e_0852ce7e74" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-block"></div>
+              </div>
+            </form>
+          </div>
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+          <!--End mc_embed_signup-->
+        </div>
+        <div class="col-md-6">
+          <h3>The latest five issues</h3>
+          <script src="//code4sa.us8.list-manage.com/generate-js/?u=11977a67604b965526b63ee6e&fid=3913&show=5"></script>
+          <a href="/nakeddata-archive.html">Our full archive</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="who-we-are container">
+    <h1>Who we are</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <p>We are a group of post-corporate, tech and media professionals who cut our teeth in the commercial sector and now use our skills for social good</p>
+        <p><b>Are you interested in joining our team and doing work that matters?</b> <a href="/careers.html">Check out our job openings</a></p>
+      </div>
+      <div class="col-md-6">
+        <p>Our founding principles are guided by section 32 of the South African consitution:</p>
+        <blockquote>Everyone has the right of access to any information held by the state; and any information that is held by another person and that is required for the exercise or protection of any rights</blockquote>
+        <a class="btn btn-block" href="/about.html">Read more about us</a>
+      </div>
+    </div>
+  </div>
 
 </div>
