@@ -224,7 +224,9 @@ body {
     width: 100%;
     font-size: 16px;
     height: 80px;
-
+    .navbar-collapse {
+      border: none;
+    }
     .navbar-nav li a {
       margin-top: 20px;
       font-family: 'Open Sans', sans-serif;
@@ -411,15 +413,25 @@ body {
   .short-courses {
     padding: 70px 0;
     background-color: $gray-light;
+    .subheader {
+      margin-top: 0;
+    }
     .icons {
       text-align: center;
+      padding-top: 30px;
       i {
-        font-size: 60px;
+        font-size: 50px;
         vertical-align: middle;
-        &.fa-arrow-right {
-          font-size: 40px;
-          line-height: 60px;
-          margin: 0 15px;
+        margin: 0 15px;
+        &.fa-arrow-down {
+          font-size: 20px;
+          line-height: 50px;
+          &.first {
+            transform: rotate(35deg);
+          }
+          &.last {
+            transform: rotate(-35deg);
+          }
         }
       }
     }
@@ -457,22 +469,12 @@ body {
   .newsletter {
     padding: 70px 0;
     background-color: $gray-light;
-    #mc_embed_signup {
-      form {
-        padding: 0;
-        margin-top: 30px;
-      }
-      input {
-        border: none;
-      }
-    }
-    #mc-embedded-subscribe {
-      margin: 0;
-    }
   }
   .who-we-are {
-    padding: 70px 0;
-    
+    padding-top: 70px;
+    blockquote {
+      font-size: 16px;
+    }
   }
 }
 
@@ -745,7 +747,6 @@ body {
   }
 
   .services-info {
-    margin: 30px 0px;
     .service-subhead {
     font-size: 21px;
     font-weight: 300;
@@ -1670,5 +1671,146 @@ footer {
   .using-indigo-logo {
     height: 60px;
     width: auto;
+  }
+}
+
+/* MailChimp Form */
+#mc_embed_signup {
+  form {
+    display:block; 
+    position:relative; 
+    text-align:left; 
+    padding: 0;
+    margin-top: 30px;
+  }
+  h2 {
+    font-weight: bold;
+    padding: 0;
+    margin: 15px 0;
+    font-size: 1.4em;
+  }
+  input {
+    border: 1px solid $gray;
+    -webkit-appearance:none;
+    &[type=checkbox]{
+      -webkit-appearance:checkbox;
+    }
+    &[type=radio]{ 
+      -webkit-appearance:radio;
+    }
+    &:focus {
+      border-color:$gray-dark;
+    }
+    &.btn {
+      border: none;
+    }
+  }
+  #mc-embedded-subscribe {
+    margin: 0;
+    clear:both;
+    width:auto;
+    display:block;
+  }
+  .mc-field-group {
+    clear:left; 
+    position:relative; 
+    width:96%; 
+    padding-bottom:3%; 
+    min-height:50px;
+    label {
+      display:block;
+      margin-bottom:3px;
+    }
+    input {
+      display:block;
+      width:100%;
+      padding:8px 0; 
+      text-indent:2%;
+    }
+    select {
+      display:inline-block; 
+      width:99%; 
+      padding:5px 0; 
+      margin-bottom:2px;
+    }
+    .asterisk {
+      position:absolute;
+      top:34px; 
+      right:10px;
+    }
+  }
+  .asterisk {
+    color: $empowerment-light; 
+  }
+  .clear {
+    clear:both;
+  }
+  &.input-group {
+    ul {
+      margin:0; 
+      padding:5px 0; 
+      list-style:none;
+      li {
+        display:block; 
+        padding:3px 0; 
+        margin:0;
+      }
+    }
+    label {
+      display:inline;
+    }
+    input {
+      display:inline; 
+      width:auto; 
+      border:none;
+    }
+  }
+  div#mce-responses {
+    float:left; 
+    top:-1.4em; 
+    padding:0em .5em 0em .5em; 
+    overflow:hidden; 
+    width:90%;
+    margin: 0 5%; 
+    clear: both;
+  }
+  div.response {
+    margin:1em 0; 
+    padding:1em .5em .5em 0; 
+    font-weight:bold; 
+    float:left; 
+    top:-1.5em; 
+    z-index:1; 
+    width:80%;
+  }
+  #mce-error-response {
+    display:none;
+  }
+  #mce-success-response {
+    color:#529214; 
+    display:none;
+  }
+  label.error {
+    display:block; 
+    float:none; 
+    width:auto; 
+    margin-left:1.05em; 
+    text-align:left; 
+    padding:.5em 0;
+  }
+}
+
+.display_archive {
+  margin-bottom: 20px;
+}
+
+.nakeddata-archive {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .campaign {
+    font-family: monospace;
+    a {
+      font-family: 'Libre Franklin', sans-serif;
+    }
   }
 }
