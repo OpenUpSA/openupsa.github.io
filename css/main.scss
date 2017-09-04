@@ -449,6 +449,9 @@ body {
   .openness {
     .link {
       color: $green;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .newsletter {
