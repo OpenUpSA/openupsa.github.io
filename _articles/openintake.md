@@ -11,7 +11,9 @@ featured: true
 ---
 Exciting news: we can confirm our Durban intake for 9 - 10 October.  The dates and locations for [Introduction to Data Storytelling](https://openup.org.za/img/resources/Open-Intake-Invite-Sept17.pdf) short course are:
 
-*Johannesburg - 19 & 20 September, Cape Town - 3 & 4 October, and Durban 9 & 10 October*
+* Johannesburg - 19 & 20 September
+* Cape Town - 3 & 4 October
+* Durban 9 & 10 October
 
 Get your [applications](https://docs.google.com/forms/d/e/1FAIpQLSdPXvaJFTekl4XfaJmxlSUz2cGcGnNwpPW8pa0wP945Ih82lg/viewform) in now to secure your spot!
 
