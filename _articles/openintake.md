@@ -3,7 +3,7 @@ layout: article
 author: julia
 title: "Open Up's Open Intake"
 date: 2017-09-01
-short: Dates confirmed for Introduction to Data Storytelling in Durban!
+short: Dates confirmed for Introduction to Data Storytelling in Durban & Applications close today for Johannesburg Intake!
 image: facebook-photo.jpg
 themes:
 - name: education
