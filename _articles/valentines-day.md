@@ -56,9 +56,9 @@ If you want to play around with the data yourself, you can find it [here](https:
 Feel free to embed the marriage visualisation on your own site. Copy and paste the code below into your webpage. 
 
     <div id="graph"></div>
-    <script src="http://www.openup.org.za/js/pym.js"></script>
+    <script src="https://www.openup.org.za/js/pym.js"></script>
     <script>
-        var pymParent = new pym.Parent('graph', 'http://www.openup.org.za/embeds/marriages.html', {});
+        var pymParent = new pym.Parent('graph', 'https://www.openup.org.za/embeds/marriages.html', {});
     </script>
 
 <script>
