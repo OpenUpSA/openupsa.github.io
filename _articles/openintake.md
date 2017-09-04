@@ -32,7 +32,7 @@ We are excited to introduce our instructor for the 2 days:
 
 [Lailah Ryklief](https://openup.org.za/team/lailah.html) is a digital storyteller at Open Up, and has trained journalists from media houses across the country in the creation of data visualisations through the Data Journalism Academy. She has trained interactive media production students at the University of Cape Town and has worked closely with GetSmarter on the development of online course material and quality-assurance in front-end development, graphic design and digital photography. She has also worked as a freelance front-end developer, print and graphic designer.
 
-![](Lailah.png)
+![](/img/articles/Lailah.png)
 
 [Apply now](https://docs.google.com/forms/d/e/1FAIpQLSdPXvaJFTekl4XfaJmxlSUz2cGcGnNwpPW8pa0wP945Ih82lg/viewform) -  applications close Monday 4th September.
 [Read more about our other short courses](https://openup.org.za/courses.html) which cover the various aspects of data processing from a storytelling and communications perspective.
