@@ -1692,12 +1692,6 @@ footer {
   input {
     border: 1px solid $gray;
     -webkit-appearance:none;
-    &[type=checkbox]{
-      -webkit-appearance:checkbox;
-    }
-    &[type=radio]{ 
-      -webkit-appearance:radio;
-    }
     &:focus {
       border-color:$gray-dark;
     }
