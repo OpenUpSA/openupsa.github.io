@@ -43,7 +43,7 @@
 
       <div id="theme-navbar-collapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          {% assign alphabetical = site.themes | sort: 'title' %}
+          {% assign alphabetical = site.themes | sort: 'order' %}
           {% for theme in alphabetical %}
             <li><a class="badge {{ theme.name }}" href="{{ theme.url }}">{{ theme.title }}</a></li>
           {% endfor %}

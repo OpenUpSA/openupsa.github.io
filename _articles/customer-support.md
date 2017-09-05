@@ -5,13 +5,9 @@ title: "Customer support glee - who would have thought?!"
 date: 2017-05-04
 short: "Unpacking the joy of doing live customer support at OpenUp"
 image: cust-support.jpg
-types:
-- name: other
 themes:
-- name: tech
+- name: literacy
 ---
-
-
 Something strange has happened to me - I caught myself enjoying and actually looking forward to doing online customer support.
 
 Let’s take a few steps back and allow me paint the full picture for you. 

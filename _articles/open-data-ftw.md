@@ -8,11 +8,8 @@ short: |
 image: open-data-ftw.jpg
 tools:
 - name: mpr
-types:
-- name: howto
 themes:
-- name: opendata
-- name: activecitizenry
+- name: empowerment
 featured: true
 ---
 

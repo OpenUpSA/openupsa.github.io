@@ -7,7 +7,7 @@ short: |
     For Open Data Day 2017, we asked the OpenUp staff to weigh in on why Open Data is important and what it means to them. 
 image: why-care-about-open-data.jpg
 themes:
-- name: opendata
+- name: literacy
 homepage: true
 hide-image: true
 ---

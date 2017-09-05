@@ -10,8 +10,7 @@ image: youth-explorer-0.jpg
 tools:
 - name: youthexplorer
 themes:
-- name: opendata
-- name: education
+- name: liberation
 ---
 
 Data focusing specifically on young people is hard to come by. What are the challenges our youth are experiencing? What are the realities that shape their lives? And how do these differ from one community to another? This lack of information severely limits the ability of programmes and policies to effectively support young people in their specific contexts.

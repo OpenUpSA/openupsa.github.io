@@ -7,11 +7,8 @@ short: Wazimap now has 2016 Municipal Election results and uses the municipaliti
 image: nye-2016.jpg
 tools:
 - name: wazimap
-types:
-- name: update
 themes:
-- name: opendata
-- name: tech
+- name: liberation
 featured: true
 homepage: true
 ---
@@ -42,9 +39,9 @@ We wanted to make these changes as transparent as possible to our users -- you s
 
 ## Wazimap Tips and Tricks
 
-There’s a lot more to Wazimap than just the profile page. Did you know you can download data, [draw maps](http://localhost:8888/data/map/?table=ACCESSTOINTERNET&geo_ids=province%7Ccountry-ZA&primary_geo_id=country-ZA), and [compare values across many places at once](http://localhost:8888/data/table/?table=ACCESSTOINTERNET&geo_ids=province%7Ccountry-ZA&primary_geo_id=country-ZA)?
+There’s a lot more to Wazimap than just the profile page. Did you know you can download data, [draw maps](https://wazimap.co.za/data/map/?table=ACCESSTOINTERNET&geo_ids=province%7Ccountry-ZA&primary_geo_id=country-ZA), and [compare values across many places at once](https://wazimap.co.za/data/table/?table=ACCESSTOINTERNET&geo_ids=province%7Ccountry-ZA&primary_geo_id=country-ZA)?
 
-We’ve recorded some videos to help you get the most of out Wazimap, [be sure to check them out on the Wazimap Help Page](http://wazimap.co.za/help).
+We’ve recorded some videos to help you get the most of out Wazimap, [be sure to check them out on the Wazimap Help Page](https://wazimap.co.za/help).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH" frameborder="0" allowfullscreen></iframe>
 

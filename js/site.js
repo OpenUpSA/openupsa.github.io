@@ -35,3 +35,6 @@ $(function() {
     ga('send', 'social', 'email', 'share', url);
   });
 });
+
+$(".homepage .partners .who .block.contact").height( $(".homepage .partners .who .block").first().height() );
+$(".homepage .openness .block").height( $(".homepage .openness .block").first().height() );

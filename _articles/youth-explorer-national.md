@@ -8,8 +8,7 @@ image: youth-explorer-national.jpg
 tools:
 - name: youthexplorer
 themes:
-- name: opendata
-- name: education
+- name: liberation
 ---
 
 We're excited to announce that [Youth Explorer](https://youthexplorer.org.za) has graduated from the Western Cape and now has data on youth for the whole of South Africa.

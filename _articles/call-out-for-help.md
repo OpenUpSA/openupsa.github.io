@@ -8,10 +8,7 @@ short: |
 image: old-gazettes.jpg
 tools:
 - name: opengazettes
-types:
-- name: opinion
 themes:
-- name: opendata
 featured: true
 ---
 

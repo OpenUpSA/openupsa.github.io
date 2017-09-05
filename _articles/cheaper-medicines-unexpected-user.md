@@ -7,10 +7,7 @@ short: Sometimes you can't anticipate how your work is going to be used. Here is
 image: mpr-user.jpg
 tools:
 - name: mpr
-types:
-- name: casestudy
 themes:
-- name: opendata
 - name: activecitizenry
 featured: true
 ---

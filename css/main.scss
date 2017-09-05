@@ -8,7 +8,10 @@
 @import url('https://fonts.googleapis.com/css?family=News+Cycle|Libre+Franklin:300,300i,400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 
-// Fonts for testing typography
+$gray: #ddd;
+$gray-light: #f8f8f8;
+$gray-dark: #bababa;
+
 $green: #82b900;
 $green-light: lighten($green, 10%);
 $green-dark: darken($green, 10%);
@@ -33,13 +36,17 @@ $cogovernance: #0f77bc;
 $cogovernance-light: lighten($cogovernance, 10%);
 $cogovernance-dark: darken($cogovernance, 10%);
 
-$education: #dcc102;
-$education-light: lighten($education, 10%);
-$education-dark: darken($education, 10%);
+$literacy: #dcc102;
+$literacy-light: lighten($literacy, 10%);
+$literacy-dark: darken($literacy, 10%);
 
-$opendata: #138e08;
-$opendata-light: lighten($opendata, 10%);
-$opendata-dark: darken($opendata, 10%);
+$liberation: #138e08;
+$liberation-light: lighten($liberation, 10%);
+$liberation-dark: darken($liberation, 10%);
+
+$empowerment: #db9027;
+$empowerment-light: lighten($empowerment, 10%);
+$empowerment-dark: darken($empowerment, 10%);
 
 $tool: #707070;
 $tool-light: lighten($tool, 10%);
@@ -51,7 +58,7 @@ $type-light: lighten($type, 10%);
 $type-dark: darken($type, 10%);
 $type-darker: darken($type, 20%);
 
-$shortcourse: $education;
+$shortcourse: $literacy;
 $shortcourse-opaque: rgba($shortcourse, .05);
 $shortcourse-lightest: lighten($shortcourse, 60%);
 $shortcourse-lighter: lighten($shortcourse, 20%);
@@ -86,7 +93,7 @@ body {
     color: #fff;
     font-weight: 700;
     transition: background-color 150ms ease-out;
-    &:hover {
+    &:hover, &:active, &:focus {
       background-color: $green-dark;
       color: #fff;
     }
@@ -107,24 +114,28 @@ body {
 .article-list {
   img {
     width: 100%;
-    padding-top: 5px;
+    &:hover {
+      transition: box-shadow .2s ease-in-out;
+      box-shadow: 0 5px 10px rgba(0,0,0,.15)
+    }
   }
   .article-title {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 10px;
-    background-image: linear-gradient(transparent,#333 116%);
     font-size: 18px;
     font-family: 'Bitter', serif;
     height: 75px;
     pointer-events: none;
-    text-shadow: 2px 2px black;
-    a, a:hover {
-      color: #fff;
+    a {
+      color: #333;
       position: absolute;
-      bottom: 10px;
-      width: calc(100% - 20px);
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(240,240,240,0.85);
+      padding: 10px;
     }
   }
   .title-image-wrap {
@@ -180,21 +191,27 @@ body {
         color: #fff;
       }
     }
-    &.education {
-      background-color: $education;
+    &.literacy {
+      background-color: $literacy;
       &:hover {
-        background-color: $education-dark;
+        background-color: $literacy-dark;
         color: #fff;
       }
     }
-    &.opendata {
-      background-color: $opendata;
+    &.liberation {
+      background-color: $liberation;
       &:hover {
-        background-color: $opendata-dark;
+        background-color: $liberation-dark;
         color: #fff;
       }
     }
-
+    &.empowerment {
+      background-color: $empowerment;
+      &:hover {
+        background-color: $empowerment-dark;
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -207,7 +224,9 @@ body {
     width: 100%;
     font-size: 16px;
     height: 80px;
-
+    .navbar-collapse {
+      border: none;
+    }
     .navbar-nav li a {
       margin-top: 20px;
       font-family: 'Open Sans', sans-serif;
@@ -272,17 +291,24 @@ body {
             color: #fff;
           }
         }
-        &.education {
-          background-color: $education;
+        &.literacy {
+          background-color: $literacy;
           &:hover {
-            background-color: $education-dark;
+            background-color: $literacy-dark;
             color: #fff;
           }
         }
-        &.opendata {
-          background-color: $opendata;
+        &.liberation {
+          background-color: $liberation;
           &:hover {
-            background-color: $opendata-dark;
+            background-color: $liberation-dark;
+            color: #fff;
+          }
+        }
+        &.empowerment {
+          background-color: $empowerment;
+          &:hover {
+            background-color: $empowerment-dark;
             color: #fff;
           }
         }
@@ -322,8 +348,7 @@ body {
   }
   .banner {
     background-color: $green;
-    padding: 20px;
-    padding-bottom: 180px;
+    padding: 30px 0 50px 0;
     color: #fff;
     h1 {
       font-size: 42px;
@@ -333,33 +358,44 @@ body {
       font-size: 26px;
     }
   }
-  .tools {
-    padding-bottom: 30px;
-    p {
-      font-family: 'News Cycle', 'Open Sans', sans-serif;
-      font-size: 21px;
-      padding: 5px 10px 5px 0px;
+  .value-adds, .partners, .openness {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .what {
+      padding-bottom: 50px;
     }
-    img {
-      width: 100%;
-      border: 4px solid #fff;
-    }
-    margin-top: -130px;
-  }
-  .moretools {
-    margin: 30px 0;
-    text-align: right;
-    font-size: 24px;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    a:hover {
-      text-decoration: none;
+    .block {
+      background-color: $gray-light;
+      padding: 25px;
+      text-align: center;
+      display: block;
+      color: #333;
+      margin-bottom: 20px;
+      &:hover {
+        text-decoration: none;
+        transition: box-shadow .2s ease-in-out;
+        box-shadow: 0 5px 10px rgba(0,0,0,.15)
+      }
+      i {
+        font-size: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      &.contact {
+        min-height: 165px;
+        max-height: 220px;
+        p {
+          margin-top: 10px;
+        } 
+      }
     }
   }
   .articles {
-    background-color:#f8f8f8;
-    padding: 50px 0;
-    margin-bottom:20px;
+    background-color: $gray-light;
+    padding: 70px 0;
     .article-author {
       padding: 10px 0px;
     }
@@ -368,26 +404,76 @@ body {
       margin-bottom: 30px;
     }
   }
-  .contact {
-    padding-top: 50px;
-      img {
-        width:100%;
-      }
-    .contact-box {
-      margin-bottom: 50px;
-    }
-    .contact-title {
-      font-size:21px;
-      font-weight: 600;
-    }
-  }
-  .funders {
-    padding: 50px 0;
+  .partners {
+    padding: 70px 0;
     img {
       width: 100%;
-      border: 1px solid #ddd;
-      padding: 10px;
-      margin-bottom: 30px;
+    }
+  }
+  .short-courses {
+    padding: 70px 0;
+    background-color: $gray-light;
+    .subheader {
+      margin-top: 0;
+    }
+    .icons {
+      text-align: center;
+      padding-top: 30px;
+      i {
+        font-size: 50px;
+        vertical-align: middle;
+        margin: 0 15px;
+        &.fa-arrow-down {
+          font-size: 20px;
+          line-height: 50px;
+          &.first {
+            transform: rotate(35deg);
+          }
+          &.last {
+            transform: rotate(-35deg);
+          }
+        }
+      }
+    }
+    .quotes {
+      i {
+        font-size: 40px;
+        margin-top: 10px;
+      }
+      .short-line {
+
+      }
+      .quote {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $gray-dark;
+        &:last-of-type {
+          border-bottom-width: 0px;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+        .text {
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+  .openness {
+    .link {
+      color: $green;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .newsletter {
+    padding: 70px 0;
+    background-color: $gray-light;
+  }
+  .who-we-are {
+    padding-top: 70px;
+    blockquote {
+      font-size: 16px;
     }
   }
 }
@@ -661,7 +747,6 @@ body {
   }
 
   .services-info {
-    margin: 30px 0px;
     .service-subhead {
     font-size: 21px;
     font-weight: 300;
@@ -755,20 +840,28 @@ p {
       background-color: $cogovernance;
     }
   }
-  &.education {
+  &.literacy {
     .author {
-      color: $education;
+      color: $literacy;
     }
     .hero {
-      background-color: $education;
+      background-color: $literacy;
     }
   }
-  &.opendata {
+  &.liberation {
     .author {
-      color: $opendata;
+      color: $liberation;
     }
     .hero {
-      background-color: $opendata;
+      background-color: $liberation;
+    }
+  }
+  &.empowerment {
+    .author {
+      color: $empowerment;
+    }
+    .hero {
+      background-color: $empowerment;
     }
   }
 }
@@ -1481,6 +1574,9 @@ footer {
   .featured-article {
     padding-top: 20px;
   }
+  .btn-more {
+    margin-bottom: 20px;
+  }
 }
 
 #search-results {
@@ -1575,5 +1671,140 @@ footer {
   .using-indigo-logo {
     height: 60px;
     width: auto;
+  }
+}
+
+/* MailChimp Form */
+#mc_embed_signup {
+  form {
+    display:block; 
+    position:relative; 
+    text-align:left; 
+    padding: 0;
+    margin-top: 30px;
+  }
+  h2 {
+    font-weight: bold;
+    padding: 0;
+    margin: 15px 0;
+    font-size: 1.4em;
+  }
+  input {
+    border: 1px solid $gray;
+    -webkit-appearance:none;
+    &:focus {
+      border-color:$gray-dark;
+    }
+    &.btn {
+      border: none;
+    }
+  }
+  #mc-embedded-subscribe {
+    margin: 0;
+    clear:both;
+    width:auto;
+    display:block;
+  }
+  .mc-field-group {
+    clear:left; 
+    position:relative; 
+    width:96%; 
+    padding-bottom:3%; 
+    min-height:50px;
+    label {
+      display:block;
+      margin-bottom:3px;
+    }
+    input {
+      display:block;
+      width:100%;
+      padding:8px 0; 
+      text-indent:2%;
+    }
+    select {
+      display:inline-block; 
+      width:99%; 
+      padding:5px 0; 
+      margin-bottom:2px;
+    }
+    .asterisk {
+      position:absolute;
+      top:34px; 
+      right:10px;
+    }
+  }
+  .asterisk {
+    color: $empowerment-light; 
+  }
+  .clear {
+    clear:both;
+  }
+  &.input-group {
+    ul {
+      margin:0; 
+      padding:5px 0; 
+      list-style:none;
+      li {
+        display:block; 
+        padding:3px 0; 
+        margin:0;
+      }
+    }
+    label {
+      display:inline;
+    }
+    input {
+      display:inline; 
+      width:auto; 
+      border:none;
+    }
+  }
+  div#mce-responses {
+    float:left; 
+    top:-1.4em; 
+    padding:0em .5em 0em .5em; 
+    overflow:hidden; 
+    width:90%;
+    margin: 0 5%; 
+    clear: both;
+  }
+  div.response {
+    margin:1em 0; 
+    padding:1em .5em .5em 0; 
+    font-weight:bold; 
+    float:left; 
+    top:-1.5em; 
+    z-index:1; 
+    width:80%;
+  }
+  #mce-error-response {
+    display:none;
+  }
+  #mce-success-response {
+    color:#529214; 
+    display:none;
+  }
+  label.error {
+    display:block; 
+    float:none; 
+    width:auto; 
+    margin-left:1.05em; 
+    text-align:left; 
+    padding:.5em 0;
+  }
+}
+
+.display_archive {
+  margin-bottom: 20px;
+}
+
+.nakeddata-archive {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .campaign {
+    font-family: monospace;
+    a {
+      font-family: 'Libre Franklin', sans-serif;
+    }
   }
 }

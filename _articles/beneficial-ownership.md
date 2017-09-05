@@ -7,10 +7,8 @@ short: In this next article we look at beneficial ownership and the need for glo
 image: beneficial-owner.jpg
 tools:
 - name: trace 
-types:
-- name: opinion
 themes:
-- name: opendata
+- name: literacy
 ---
 
 _This year, OpenUp launched a project that interrogates transparency within the private sector, “Transparent Corporates” (TRACE). Our mission is to make corporate data freely and publicly available, and to empower everyone living in South Africa to hold the right people in the private sector accountable when they do things that affect everyday life. Over the next few weeks, we’ll be publishing a series of pieces that highlight some of the work we do, from looking at international shareholding to tax evasion, Trump to “paid Twitter” and much, much more. In this next article we look at beneficial ownership and the need for global improved transparency, as well as a registry here in South Africa._

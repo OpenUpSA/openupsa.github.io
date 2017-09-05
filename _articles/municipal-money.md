@@ -9,11 +9,9 @@ short: |
 image: munimoney-1.jpg
 tools:
 - name: municipalmoney
-types:
-- name: launch
 themes:
 - name: cogovernance
-- name: opendata
+- name: liberation
 ---
 
 Most citizens have a reasonable idea of the basic services municipalities should provide and don’t look too closely at their municipality, its budget and spending until something goes wrong. Even then, finding the necessary information could take many hours of analysing complicated reports, financial statements, and other documents, and would only be possible for someone who has a certain level of financial literacy.

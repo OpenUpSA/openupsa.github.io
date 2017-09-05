@@ -9,10 +9,9 @@ image: cost-of-medicine.jpg
 tools:
 - name: mpr
 types:
-- name: launch
-- name: howto
 themes:
-- name: opendata
+- name: liberation
+- name: empowerment
 featured: true
 ---
 
