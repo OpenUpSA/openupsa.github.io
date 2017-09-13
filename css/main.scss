@@ -476,6 +476,13 @@ body {
       font-size: 16px;
     }
   }
+
+  #mc_embed_signup {
+    .lname,
+    .fname {
+      display: none;
+    }
+  }
 }
 
 .tools-page {
@@ -1120,25 +1127,36 @@ footer {
     color: #999;
   }
 
+  #mc_embed_signup {
+    .lname,
+    .fname {
+      display: none;
+    }
+  }
+
   .footer-top {
     padding: 20px 0px;
-    background-color: #f8f8f8;
+    background-color: $gray-light;
     color: #999;
-    font-size: 12px;
+    font-size: 14px;
 
     -webkit-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
     -moz-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
     box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
 
+    h3 {
+      margin-top: 0px;
+    }
+
 
     .footer-item {
-      border-left: 1px solid #f3f3f3;
+      border-left: 1px solid $gray;
+      &:first-child {
+        border-left: none;
+      }
       padding-right: 20px;
       .smicon {
         padding-right: 15px;
-      }
-      .footer-title {
-        font-size: 21px;
       }
       a:hover {
         text-decoration: none;

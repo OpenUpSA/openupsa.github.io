@@ -5,15 +5,17 @@
       <div class="row">
 
         <div class="col-sm-3 col-xs-6 footer-item">
+          <h3>Focus Areas</h3>
           <ul>
             {% assign alphabetical = site.themes | sort: 'title' %}
-              {% for theme in alphabetical %}
-                <li><a href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></li>
-              {% endfor %}
+            {% for theme in alphabetical %}
+              <li><a href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></li>
+            {% endfor %}
           </ul>
         </div>
 
         <div class="col-sm-3 col-xs-6 footer-item">
+          <h3>Site</h3>
           <ul>
             <li><a href="/about.html">About us</a></li>
             <li><a href="/attribution.html">Attribution</a></li>
@@ -26,13 +28,14 @@
         </div>
 
         <div class="col-sm-3 col-xs-6 footer-item">
-          <p class="footer-title">NakedData</p>
+          <h3>NakedData</h3>
           <p>Our weekly newsletter, every Friday.<br>
-          <a href="{{ site.baseurl }}/nakeddata.html">Sign up now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
+          <a href="/nakeddata.html">Sign up now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
+          {% include newsletter-signup.html %}
         </div>
 
         <div class="col-sm-3 col-xs-6 footer-item">
-          <p class="footer-title">Follow us</p>
+          <h3>Follow us</h3>
           <p><a href="https://twitter.com/openupsa" target="_blank"><i class="fa fa-twitter fa-2x smicon" aria-hidden="true"></i></a><a href="https://www.facebook.com/openupsa" target="_blank"><i class="fa fa-facebook fa-2x smicon" aria-hidden="true"></i></a><a href="https://github.com/Code4SA" target="_blank"><i class="fa fa-github-alt fa-2x smicon" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company/code-for-south-africa" target="_blank"><i class="fa fa-linkedin-square fa-2x smicon" aria-hidden="true"></i></a></p>
         </div>
 
