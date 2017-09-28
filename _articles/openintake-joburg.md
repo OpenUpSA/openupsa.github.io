@@ -2,7 +2,7 @@
 layout: article
 author: lailah
 title: "Open intake: Johannesburg"
-date: 2017-09-27
+date: 2017-09-28
 short: "As part of our open intake, we've  concluded our training in Johannesburg. Hear what participants had to say about their experience of learning how to begin telling stories with data."
 image: what-story.jpg
 tools:
@@ -10,7 +10,7 @@ tools:
 themes:
 - name: literacy
 ---
-We recently ran our first open intake in Johannesburg for our [Introduction to Data Storytelling](https://openup.org.za/img/resources/OI-Invite-Update.pdf) course, one of five [courses](https://openup.org.za/courses.html) run by [OpenUp](https://openup.org.za/) in order to promote [data literacy](https://openup.org.za/themes/dataliteracy.html).
+We recently ran our first open intake in Johannesburg for our [Introduction to Data Storytelling](https://openup.org.za/img/resources/OI-Invite-Update.pdf) course, one of five [courses](/courses.html) run by OpenUp in order to promote [data literacy](/themes/dataliteracy.html).
 
 This course introduces participants to data journalism as a model for data storytelling. It focuses on defining and establishing the right combination of literacies necessary for participants to begin to talk about data. 
 
