@@ -9,7 +9,6 @@ themes:
 - name: literacy
 tools:
 - name: short-courses
-featured: true
 ---
 Exciting news: we can confirm our Durban intake for 9 - 10 October.  The dates and locations for [Introduction to Data Storytelling](https://openup.org.za/img/resources/Open-Intake-Invite-Sept17.pdf) short course are:
 
