@@ -327,6 +327,38 @@ body {
       min-width: 300px;
     }
   }
+
+  .courses-nav {
+    background-color: #f8f8f8;
+    -webkit-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+    -moz-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+    box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+
+    .nav {
+      a {
+        border-radius: 0;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        margin: 12px 5px;
+        color: #fff;
+        transition: background-color 150ms ease-out;
+        background-color: $literacy;
+        @media (max-width:767px) {
+          margin: 1px 0;
+          padding: 20px;
+        }
+        &:hover {
+          background-color: $literacy-dark;
+          color: #fff;
+        }
+      }
+    }
+    .navbar-brand {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
 }
 
 .homepage {
