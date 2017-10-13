@@ -58,7 +58,7 @@ $type-light: lighten($type, 10%);
 $type-dark: darken($type, 10%);
 $type-darker: darken($type, 20%);
 
-$shortcourse: $literacy;
+$shortcourse: #a04e8c;
 $shortcourse-opaque: rgba($shortcourse, .05);
 $shortcourse-lightest: lighten($shortcourse, 60%);
 $shortcourse-lighter: lighten($shortcourse, 20%);
@@ -342,13 +342,13 @@ body {
         margin: 12px 5px;
         color: #fff;
         transition: background-color 150ms ease-out;
-        background-color: $literacy;
+        background-color: $shortcourse;
         @media (max-width:767px) {
           margin: 1px 0;
           padding: 20px;
         }
         &:hover {
-          background-color: $literacy-dark;
+          background-color: $shortcourse-dark;
           color: #fff;
         }
       }
@@ -1266,34 +1266,26 @@ footer {
       color: #fff;
     }
   }
-  a {
-    color: $trace;
-    &:hover {
-      color: $trace-dark;
-    }
-  }
-  h2, h3 {
-    font-weight: 600;
-    color: $shortcourse;
-  }
 
-  .single-course {
-    padding: 40px 0 60px 0;
-    box-shadow: inset 0px 3px 4px rgba(230,230,230,0.8);
-    .details {
-      padding: 20px; 
-      background-color: rgba($shortcourse, .2);
-      margin-bottom: 10px;
-      .row {
-        margin-bottom: 10px;
-      }
+  .block {
+    background-color: $gray-light;
+    padding: 25px;
+    text-align: center;
+    display: block;
+    color: #333;
+    margin-bottom: 20px;
+    &:hover {
+      text-decoration: none;
+      transition: box-shadow .2s ease-in-out;
+      box-shadow: 0 5px 10px rgba(0,0,0,.15)
     }
-    &:nth-child(even) {
-      background: $shortcourse-opaque;
-    .details {
-        color: #fff;
-        background-color: $shortcourse-dark;
-      }
+    i {
+      font-size: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 20px;
     }
   }
 
@@ -1320,36 +1312,6 @@ footer {
       color: #fff;
       text-align: center;
       font-weight: 300;
-    }
-  }
-
-  .shortcourse-intro {
-    background-color: $shortcourse-opaque;
-    padding-top: 30px;
-    padding-bottom:30px;
-  }
-
-  .courses {
-    margin-top: 30px;
-    h2 {
-      margin-bottom: 30px;
-    }
-    .boxes {
-      padding-bottom: 30px;
-      .course-box {
-        padding: 5px 20px 20px 20px;
-        margin-bottom: 30px;
-        background-color: $shortcourse-opaque;
-        @media (min-width:767px) {
-          min-height: 255px;
-        }
-      }
-    }
-  }
-  a {
-    color: $shortcourse;
-    &:hover {
-      color: $shortcourse-dark;
     }
   }
 }
