@@ -729,6 +729,7 @@ body {
       width: 100%;
     }
     .one-article {
+      min-height: 0;
       margin-bottom: 25px;
     }
     .tags {
@@ -1207,14 +1208,12 @@ footer {
 }
 
 .team-member {
-
   .split {
     margin-bottom:50px;
     img {
       width: 100%;
     }
   }
-
   .tools {
     margin-top: 25px;
     &.row {
@@ -1297,12 +1296,24 @@ footer {
   .courses {
     margin-bottom: 80px;
     .title {
-      margin: 40px 0;
+      margin: 60px 0;
       text-align: center;
+    }
+  }
+  .single-course {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &:nth-child(odd) {
+      background-color: $gray-light;
     }
   }
   .articles {
     margin-bottom: 80px;
+  }
+  .academy {
+    .title-image-wrap {
+      margin-bottom: 10px;
+    }
   }
 }
 
