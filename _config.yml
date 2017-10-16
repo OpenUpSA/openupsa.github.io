@@ -30,7 +30,8 @@ collections:
     permalink: /articles/:name.html
   themes:
     output: true
-  courses:
+  academy:
+    output: true
 
 defaults:
   -

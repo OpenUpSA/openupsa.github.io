@@ -138,6 +138,13 @@ body {
       padding: 10px;
     }
   }
+  .article-author {
+    padding: 10px 0px;
+  }
+  .one-article {
+    min-height: 450px;
+    margin-bottom: 30px;
+  }
   .title-image-wrap {
     position: relative;
   }
@@ -428,9 +435,6 @@ body {
   .articles {
     background-color: $gray-light;
     padding: 70px 0;
-    .article-author {
-      padding: 10px 0px;
-    }
     .one-article {
       min-height: 450px;
       margin-bottom: 30px;
@@ -824,9 +828,6 @@ p {
     margin: 40px 0;
   }
   .theme-articles {
-    .article-author {
-      padding: 10px 0px;
-    }
     .one-article {
       min-height: 450px;
       margin-bottom: 30px;
@@ -921,15 +922,6 @@ p {
   .type-info {
     margin: 40px 0;
   }
-  .type-articles {
-    .article-author {
-      padding: 10px 0px;
-    }
-    .one-article {
-      min-height: 450px;
-      margin-bottom: 30px;
-    }
-  }
 }
 
 .individual-tool {
@@ -981,13 +973,6 @@ p {
   .conversation {
     h4 {
       margin-bottom: 40px;
-    }
-    .article-author {
-      padding: 10px 0px;
-    }
-    .one-article {
-      min-height: 450px;
-      margin-bottom: 30px;
     }
   }
 
@@ -1242,12 +1227,6 @@ footer {
     }
   }
   .article-list {
-    .article-author {
-      padding: 10px 0px;
-    }
-    .one-article {
-      margin-bottom: 30px;
-    }
     .tag-wrapper {
       position: absolute;
       top: 15px;
@@ -1313,6 +1292,17 @@ footer {
       text-align: center;
       font-weight: 300;
     }
+  }
+
+  .courses {
+    margin-bottom: 80px;
+    .title {
+      margin: 40px 0;
+      text-align: center;
+    }
+  }
+  .articles {
+    margin-bottom: 80px;
   }
 }
 
