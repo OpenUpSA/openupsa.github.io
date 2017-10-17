@@ -1278,8 +1278,6 @@ footer {
 
   .hero {
     background-color: $shortcourse;
-    padding: 20px;
-    padding-bottom: 20px;
     margin-top: -20px;
     color: #fff;
     h1.header {
@@ -1314,6 +1312,9 @@ footer {
     .title {
       margin-bottom: 60px;
       text-align: center;
+    }
+    .course-title {
+      font-size: 28px;
     }
   }
   .single-course {
