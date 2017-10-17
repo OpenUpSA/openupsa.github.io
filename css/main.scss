@@ -1245,6 +1245,15 @@ footer {
     }
   }
 
+  a, a:hover {
+    color: $shortcourse;
+  }
+
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .block {
     background-color: $gray-light;
     padding: 25px;
@@ -1294,25 +1303,71 @@ footer {
   }
 
   .courses {
-    margin-bottom: 80px;
+    .block {
+      &:hover {
+        color: #333;
+      }
+    }
+    .btn {
+      margin-top: 15px;
+    }
     .title {
-      margin: 60px 0;
+      margin-bottom: 60px;
       text-align: center;
     }
   }
   .single-course {
-    padding-top: 60px;
-    padding-bottom: 60px;
     &:nth-child(odd) {
       background-color: $gray-light;
     }
+    img {
+      width: 100%;
+    }
+    .btn {
+      margin-top: 25px;
+    }
   }
   .articles {
-    margin-bottom: 80px;
+    padding-bottom: 15px;
+    .one-article {
+      min-height: 0px;
+    }
   }
   .academy {
+    padding-top: 15px;
     .title-image-wrap {
       margin-bottom: 10px;
+    }
+    .one-article {
+      min-height: 0px;
+    }
+  }
+  @media (max-width: 992px) {
+    .article-list {
+      .one-article:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+  .contact {
+    background-color: lighten($shortcourse, 40%);
+    text-align: center;
+    .container {
+      max-width: 600px;
+    }
+    .title {
+      margin: 15px 0;
+    }
+    p {
+      margin: 15px 0;
+      font-size: 20px;
+    }
+  }
+  .faq {
+    background-color: $gray-light;
+    .question {
+      margin-top: 25px;
+      font-weight: bold;
     }
   }
 }
