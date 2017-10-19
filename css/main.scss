@@ -58,11 +58,18 @@ $type-light: lighten($type, 10%);
 $type-dark: darken($type, 10%);
 $type-darker: darken($type, 20%);
 
+$trainup: #a04e8c;
+$trainup-opaque: rgba($trainup, .05);
+$trainup-lightest: lighten($trainup, 60%);
+$trainup-lighter: lighten($trainup, 20%);
+$trainup-dark: darken($trainup, 10%);
+
 $shortcourse: $literacy;
 $shortcourse-opaque: rgba($shortcourse, .05);
 $shortcourse-lightest: lighten($shortcourse, 60%);
 $shortcourse-lighter: lighten($shortcourse, 20%);
 $shortcourse-dark: darken($shortcourse, 10%);
+
 
 html {
   height: 100%;
@@ -137,6 +144,13 @@ body {
       background-color: rgba(240,240,240,0.85);
       padding: 10px;
     }
+  }
+  .article-author {
+    padding: 10px 0px;
+  }
+  .one-article {
+    min-height: 450px;
+    margin-bottom: 30px;
   }
   .title-image-wrap {
     position: relative;
@@ -327,6 +341,38 @@ body {
       min-width: 300px;
     }
   }
+
+  .courses-nav {
+    background-color: #f8f8f8;
+    -webkit-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+    -moz-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+    box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+
+    .nav {
+      a {
+        border-radius: 0;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        margin: 12px 5px;
+        color: #fff;
+        transition: background-color 150ms ease-out;
+        background-color: $trainup;
+        @media (max-width:767px) {
+          margin: 1px 0;
+          padding: 20px;
+        }
+        &:hover {
+          background-color: $trainup-dark;
+          color: #fff;
+        }
+      }
+    }
+    .navbar-brand {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
 }
 
 .homepage {
@@ -396,9 +442,6 @@ body {
   .articles {
     background-color: $gray-light;
     padding: 70px 0;
-    .article-author {
-      padding: 10px 0px;
-    }
     .one-article {
       min-height: 450px;
       margin-bottom: 30px;
@@ -693,6 +736,7 @@ body {
       width: 100%;
     }
     .one-article {
+      min-height: 0;
       margin-bottom: 25px;
     }
     .tags {
@@ -792,9 +836,6 @@ p {
     margin: 40px 0;
   }
   .theme-articles {
-    .article-author {
-      padding: 10px 0px;
-    }
     .one-article {
       min-height: 450px;
       margin-bottom: 30px;
@@ -889,15 +930,6 @@ p {
   .type-info {
     margin: 40px 0;
   }
-  .type-articles {
-    .article-author {
-      padding: 10px 0px;
-    }
-    .one-article {
-      min-height: 450px;
-      margin-bottom: 30px;
-    }
-  }
 }
 
 .individual-tool {
@@ -949,13 +981,6 @@ p {
   .conversation {
     h4 {
       margin-bottom: 40px;
-    }
-    .article-author {
-      padding: 10px 0px;
-    }
-    .one-article {
-      min-height: 450px;
-      margin-bottom: 30px;
     }
   }
 
@@ -1101,7 +1126,6 @@ p {
   .col-belief-bottom {
     border-bottom: 1px solid #ededed;
   }
-
   @media (min-width: 0px) and (max-width: 992px) {
     .col-belief-right, .col-belief-bottom {
       border: none;
@@ -1126,7 +1150,6 @@ footer {
   a {
     color: #999;
   }
-
   #mc_embed_signup {
     .lname,
     .fname {
@@ -1147,8 +1170,6 @@ footer {
     h3 {
       margin-top: 0px;
     }
-
-
     .footer-item {
       border-left: 1px solid $gray;
       &:first-child {
@@ -1176,7 +1197,6 @@ footer {
       }
     }
   }
-
   .footer-copyright {
     padding: 20px 0px;
     font-size: 14px;
@@ -1186,18 +1206,15 @@ footer {
       color: #fff;
     }
   }
-
 }
 
 .team-member {
-
   .split {
     margin-bottom:50px;
     img {
       width: 100%;
     }
   }
-
   .tools {
     margin-top: 25px;
     &.row {
@@ -1210,12 +1227,6 @@ footer {
     }
   }
   .article-list {
-    .article-author {
-      padding: 10px 0px;
-    }
-    .one-article {
-      margin-bottom: 30px;
-    }
     .tag-wrapper {
       position: absolute;
       top: 15px;
@@ -1225,50 +1236,49 @@ footer {
   }
 }
 
-.shortcourse-page {
+.trainup {
  .btn {
-    background-color: $shortcourse;
+    background-color: $trainup;
     color: #fff;
     &:hover {
-      background-color: $shortcourse-dark;
+      background-color: $trainup-dark;
       color: #fff;
     }
   }
-  a {
-    color: $trace;
-    &:hover {
-      color: $trace-dark;
-    }
-  }
-  h2, h3 {
-    font-weight: 600;
-    color: $shortcourse;
+
+  a, a:hover {
+    color: $trainup;
   }
 
-  .single-course {
-    padding: 40px 0 60px 0;
-    box-shadow: inset 0px 3px 4px rgba(230,230,230,0.8);
-    .details {
-      padding: 20px; 
-      background-color: rgba($shortcourse, .2);
-      margin-bottom: 10px;
-      .row {
-        margin-bottom: 10px;
-      }
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .block {
+    background-color: $gray-light;
+    padding: 25px;
+    text-align: center;
+    display: block;
+    color: #333;
+    margin-bottom: 20px;
+    &:hover {
+      text-decoration: none;
+      transition: box-shadow .2s ease-in-out;
+      box-shadow: 0 5px 10px rgba(0,0,0,.15)
     }
-    &:nth-child(even) {
-      background: $shortcourse-opaque;
-    .details {
-        color: #fff;
-        background-color: $shortcourse-dark;
-      }
+    i {
+      font-size: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 20px;
     }
   }
 
   .hero {
-    background-color: $shortcourse;
-    padding: 20px;
-    padding-bottom: 20px;
+    background-color: $trainup;
     margin-top: -20px;
     color: #fff;
     h1.header {
@@ -1284,47 +1294,156 @@ footer {
     }
     p {
       font-family: 'Open Sans', sans-serif;
-      font-size: 21px;
+      font-size: 25px;
       color: #fff;
       text-align: center;
       font-weight: 300;
     }
   }
 
-  .shortcourse-intro {
-    background-color: $shortcourse-opaque;
-    padding-top: 30px;
-    padding-bottom:30px;
-  }
-
   .courses {
-    margin-top: 30px;
-    h2 {
-      margin-bottom: 30px;
+    .block {
+      &:hover {
+        color: #333;
+      }
     }
-    .boxes {
-      padding-bottom: 30px;
-      .course-box {
-        padding: 5px 20px 20px 20px;
-        margin-bottom: 30px;
-        background-color: $shortcourse-opaque;
-        @media (min-width:767px) {
-          min-height: 255px;
-        }
+    .btn {
+      margin-top: 15px;
+    }
+    .title {
+      margin-bottom: 60px;
+      text-align: center;
+    }
+    .course-title {
+      font-size: 28px;
+    }
+  }
+  .single-course {
+    &:nth-child(odd) {
+      background-color: $gray-light;
+    }
+    img {
+      width: 100%;
+    }
+    .btn {
+      margin-top: 25px;
+    }
+  }
+  .articles {
+    padding-bottom: 15px;
+    .one-article {
+      min-height: 0px;
+    }
+  }
+  .academy {
+    padding-top: 15px;
+    .title-image-wrap {
+      margin-bottom: 10px;
+    }
+    .one-article {
+      min-height: 0px;
+    }
+  }
+  @media (max-width: 992px) {
+    .article-list {
+      .one-article:nth-child(3) {
+        display: none;
       }
     }
   }
-  a {
-    color: $shortcourse;
-    &:hover {
-      color: $shortcourse-dark;
+  .contact {
+    background-color: lighten($trainup, 40%);
+    text-align: center;
+    .container {
+      max-width: 600px;
     }
+    .title {
+      margin: 15px 0;
+    }
+    p {
+      margin: 15px 0;
+      font-size: 20px;
+    }
+  }
+  .faq {
+    background-color: $gray-light;
+    .question {
+      margin-top: 25px;
+      font-weight: bold;
+    }
+  }
+  &:last-of-type {
+    margin-bottom: -30px;
   }
 }
 
+.trainup-course {
+  .btn {
+    background-color: $trainup;
+    color: #fff;
+    &:hover {
+      background-color: $trainup-dark;
+      color: #fff;
+    }
+  }
+  a, a:hover {
+    color: $trainup;
+  }
+  img {
+    width: 100%;
+  }
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .section-title {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+  }
+  .hero {
+    background-color: $trainup;
+    margin-top: -20px;
+    color: #fff;
+    h1.header {
+      color: #fff;
+      font-size: 42px;
+      font-weight: 600;
+    }
+    p {
+      text-align: center;
+    }
+  }.description {
+    .interested {
+      margin-top: 15px;
+      font-weight: bold;
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+  .objectives, .prerequisites {
+    background-color: $gray-light;
+  }
+  .contact {
+    background-color: lighten($trainup, 40%);
+    text-align: center;
+    .container {
+      max-width: 600px;
+    }
+    .title {
+      margin: 15px 0;
+    }
+    p {
+      margin: 15px 0;
+      font-size: 20px;
+    }
+  }
+  &:last-of-type {
+    margin-bottom: -30px;
+  }
+}
 
 .careers-page {
-    
   .hero {
     background-color: $green;
     padding: 20px;
@@ -1350,11 +1469,9 @@ footer {
       font-weight: 300;
     }
   }
-
   .line {
     padding: 5px 0px;
   }
-
   .current-careers {
     h2 {
       font-weight: 600;
@@ -1376,7 +1493,6 @@ footer {
       margin-bottom: 20px;
     }
   }
-
   .career-view {
     h2 {
       font-weight: 600;
@@ -1389,7 +1505,6 @@ footer {
       margin-bottom: 10px;
     }
   }
-
 }
 
 .trace-page {
@@ -1465,7 +1580,6 @@ footer {
         border-radius: 0;
       }
     }
-
   }
   #search-results {
     display: none;
@@ -1474,26 +1588,21 @@ footer {
       background-color: $trace-light;
       padding: 0em;
     }
-
     .panel-default {
       border-color: #ddd;
     }
-
     .panel-title {
-        display: inline;
+      display: inline;
     }
-
     .updated-date {
-        float: right;
-        color: #777;
+      float: right;
+      color: #777;
     }
-
     .panel .hint, .panel .error {
-        background-color: #edf8d3;
-        font-size: 13px;
-        padding: 3px;
+      background-color: #edf8d3;
+      font-size: 13px;
+      padding: 3px;
     }
-
     .panel.searching {
       .panel-body {
         padding: 30px;
@@ -1502,7 +1611,6 @@ footer {
         background-position: 50%;
       }
     }
-
     ul.hits {
       padding-left: 20px;
       font-size: 14px;
@@ -1512,7 +1620,6 @@ footer {
         margin-bottom: 5px;
       }
     }
-
     #cipc {
       .hits > li {
         list-style: none;
@@ -1600,11 +1707,9 @@ footer {
 #search-results {
   padding-top: 20px;
   min-height: 80px;
-
   ul {
     padding-left: 0px;
   }
-
   li {
     list-style: none;
     margin-left: 0px;
@@ -1617,15 +1722,12 @@ footer {
       width: auto;
       margin-bottom: 10px;
     }
-
     &.hit-tool img {
       margin-left: 57px;
     }
-
     .info {
       margin-left: 160px;
     }
-
     h4 {
       margin-bottom: 0px;
     }
@@ -1658,21 +1760,17 @@ footer {
     margin-bottom: 40px;
     background-color: #144588;
     color: white;
-    
     .buttons {
       margin: 20px 0px;
     }
   }
-
   section {
     margin-bottom: 20px;
     padding: 20px 0px;
   }
-
   .section-with-bg {
     background-color: lighten(#144588, 60%);
   }
-
   .big-icon {
     display: block;
     margin-top: 30px;
@@ -1681,11 +1779,9 @@ footer {
     color: #666;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
   }
-
   .big-icon + h3 {
     margin-top: 10px;
   }
-
   .using-indigo-logo {
     height: 60px;
     width: auto;
@@ -1823,6 +1919,103 @@ footer {
     font-family: monospace;
     a {
       font-family: 'Libre Franklin', sans-serif;
+    }
+  }
+}
+
+.shortcourse-page {
+ .btn {
+    background-color: $shortcourse;
+    color: #fff;
+    &:hover {
+      background-color: $shortcourse-dark;
+      color: #fff;
+    }
+  }
+  a {
+    color: $trace;
+    &:hover {
+      color: $trace-dark;
+    }
+  }
+  h2, h3 {
+    font-weight: 600;
+    color: $shortcourse;
+  }
+
+  .single-course {
+    padding: 40px 0 60px 0;
+    box-shadow: inset 0px 3px 4px rgba(230,230,230,0.8);
+    .details {
+      padding: 20px; 
+      background-color: rgba($shortcourse, .2);
+      margin-bottom: 10px;
+      .row {
+        margin-bottom: 10px;
+      }
+    }
+    &:nth-child(even) {
+      background: $shortcourse-opaque;
+    .details {
+        color: #fff;
+        background-color: $shortcourse-dark;
+      }
+    }
+  }
+
+  .hero {
+    background-color: $shortcourse;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    color: #fff;
+    h1.header {
+      color: #fff;
+      font-size: 42px;
+      font-weight: 600;
+    }
+    h2.header {
+      color: #fff;
+      font-weight: 500;
+      margin-top:10px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 21px;
+      color: #fff;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+
+  .shortcourse-intro {
+    background-color: $shortcourse-opaque;
+    padding-top: 30px;
+    padding-bottom:30px;
+  }
+
+  .courses {
+    margin-top: 30px;
+    h2 {
+      margin-bottom: 30px;
+    }
+    .boxes {
+      padding-bottom: 30px;
+      .course-box {
+        padding: 5px 20px 20px 20px;
+        margin-bottom: 30px;
+        background-color: $shortcourse-opaque;
+        @media (min-width:767px) {
+          min-height: 255px;
+        }
+      }
+    }
+  }
+  a {
+    color: $shortcourse;
+    &:hover {
+      color: $shortcourse-dark;
     }
   }
 }
