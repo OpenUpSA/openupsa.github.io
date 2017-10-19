@@ -58,11 +58,11 @@ $type-light: lighten($type, 10%);
 $type-dark: darken($type, 10%);
 $type-darker: darken($type, 20%);
 
-$shortcourse: #a04e8c;
-$shortcourse-opaque: rgba($shortcourse, .05);
-$shortcourse-lightest: lighten($shortcourse, 60%);
-$shortcourse-lighter: lighten($shortcourse, 20%);
-$shortcourse-dark: darken($shortcourse, 10%);
+$trainup: #a04e8c;
+$trainup-opaque: rgba($trainup, .05);
+$trainup-lightest: lighten($trainup, 60%);
+$trainup-lighter: lighten($trainup, 20%);
+$trainup-dark: darken($trainup, 10%);
 
 html {
   height: 100%;
@@ -349,13 +349,13 @@ body {
         margin: 12px 5px;
         color: #fff;
         transition: background-color 150ms ease-out;
-        background-color: $shortcourse;
+        background-color: $trainup;
         @media (max-width:767px) {
           margin: 1px 0;
           padding: 20px;
         }
         &:hover {
-          background-color: $shortcourse-dark;
+          background-color: $trainup-dark;
           color: #fff;
         }
       }
@@ -1119,7 +1119,6 @@ p {
   .col-belief-bottom {
     border-bottom: 1px solid #ededed;
   }
-
   @media (min-width: 0px) and (max-width: 992px) {
     .col-belief-right, .col-belief-bottom {
       border: none;
@@ -1144,7 +1143,6 @@ footer {
   a {
     color: #999;
   }
-
   #mc_embed_signup {
     .lname,
     .fname {
@@ -1165,8 +1163,6 @@ footer {
     h3 {
       margin-top: 0px;
     }
-
-
     .footer-item {
       border-left: 1px solid $gray;
       &:first-child {
@@ -1194,7 +1190,6 @@ footer {
       }
     }
   }
-
   .footer-copyright {
     padding: 20px 0px;
     font-size: 14px;
@@ -1204,7 +1199,6 @@ footer {
       color: #fff;
     }
   }
-
 }
 
 .team-member {
@@ -1235,18 +1229,18 @@ footer {
   }
 }
 
-.shortcourse-page {
+.trainup {
  .btn {
-    background-color: $shortcourse;
+    background-color: $trainup;
     color: #fff;
     &:hover {
-      background-color: $shortcourse-dark;
+      background-color: $trainup-dark;
       color: #fff;
     }
   }
 
   a, a:hover {
-    color: $shortcourse;
+    color: $trainup;
   }
 
   section {
@@ -1277,7 +1271,7 @@ footer {
   }
 
   .hero {
-    background-color: $shortcourse;
+    background-color: $trainup;
     margin-top: -20px;
     color: #fff;
     h1.header {
@@ -1293,7 +1287,7 @@ footer {
     }
     p {
       font-family: 'Open Sans', sans-serif;
-      font-size: 21px;
+      font-size: 25px;
       color: #fff;
       text-align: center;
       font-weight: 300;
@@ -1351,7 +1345,7 @@ footer {
     }
   }
   .contact {
-    background-color: lighten($shortcourse, 40%);
+    background-color: lighten($trainup, 40%);
     text-align: center;
     .container {
       max-width: 600px;
@@ -1371,11 +1365,78 @@ footer {
       font-weight: bold;
     }
   }
+  &:last-of-type {
+    margin-bottom: -30px;
+  }
 }
 
+.trainup-course {
+  .btn {
+    background-color: $trainup;
+    color: #fff;
+    &:hover {
+      background-color: $trainup-dark;
+      color: #fff;
+    }
+  }
+  a, a:hover {
+    color: $trainup;
+  }
+  img {
+    width: 100%;
+  }
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .section-title {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+  }
+  .hero {
+    background-color: $trainup;
+    margin-top: -20px;
+    color: #fff;
+    h1.header {
+      color: #fff;
+      font-size: 42px;
+      font-weight: 600;
+    }
+    p {
+      text-align: center;
+    }
+  }.description {
+    .interested {
+      margin-top: 15px;
+      font-weight: bold;
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+  .objectives, .prerequisites {
+    background-color: $gray-light;
+  }
+  .contact {
+    background-color: lighten($trainup, 40%);
+    text-align: center;
+    .container {
+      max-width: 600px;
+    }
+    .title {
+      margin: 15px 0;
+    }
+    p {
+      margin: 15px 0;
+      font-size: 20px;
+    }
+  }
+  &:last-of-type {
+    margin-bottom: -30px;
+  }
+}
 
 .careers-page {
-    
   .hero {
     background-color: $green;
     padding: 20px;
@@ -1401,11 +1462,9 @@ footer {
       font-weight: 300;
     }
   }
-
   .line {
     padding: 5px 0px;
   }
-
   .current-careers {
     h2 {
       font-weight: 600;
@@ -1427,7 +1486,6 @@ footer {
       margin-bottom: 20px;
     }
   }
-
   .career-view {
     h2 {
       font-weight: 600;
@@ -1440,7 +1498,6 @@ footer {
       margin-bottom: 10px;
     }
   }
-
 }
 
 .trace-page {
@@ -1516,7 +1573,6 @@ footer {
         border-radius: 0;
       }
     }
-
   }
   #search-results {
     display: none;
@@ -1525,26 +1581,21 @@ footer {
       background-color: $trace-light;
       padding: 0em;
     }
-
     .panel-default {
       border-color: #ddd;
     }
-
     .panel-title {
-        display: inline;
+      display: inline;
     }
-
     .updated-date {
-        float: right;
-        color: #777;
+      float: right;
+      color: #777;
     }
-
     .panel .hint, .panel .error {
-        background-color: #edf8d3;
-        font-size: 13px;
-        padding: 3px;
+      background-color: #edf8d3;
+      font-size: 13px;
+      padding: 3px;
     }
-
     .panel.searching {
       .panel-body {
         padding: 30px;
@@ -1553,7 +1604,6 @@ footer {
         background-position: 50%;
       }
     }
-
     ul.hits {
       padding-left: 20px;
       font-size: 14px;
@@ -1563,7 +1613,6 @@ footer {
         margin-bottom: 5px;
       }
     }
-
     #cipc {
       .hits > li {
         list-style: none;
@@ -1651,11 +1700,9 @@ footer {
 #search-results {
   padding-top: 20px;
   min-height: 80px;
-
   ul {
     padding-left: 0px;
   }
-
   li {
     list-style: none;
     margin-left: 0px;
@@ -1668,15 +1715,12 @@ footer {
       width: auto;
       margin-bottom: 10px;
     }
-
     &.hit-tool img {
       margin-left: 57px;
     }
-
     .info {
       margin-left: 160px;
     }
-
     h4 {
       margin-bottom: 0px;
     }
@@ -1709,21 +1753,17 @@ footer {
     margin-bottom: 40px;
     background-color: #144588;
     color: white;
-    
     .buttons {
       margin: 20px 0px;
     }
   }
-
   section {
     margin-bottom: 20px;
     padding: 20px 0px;
   }
-
   .section-with-bg {
     background-color: lighten(#144588, 60%);
   }
-
   .big-icon {
     display: block;
     margin-top: 30px;
@@ -1732,11 +1772,9 @@ footer {
     color: #666;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
   }
-
   .big-icon + h3 {
     margin-top: 10px;
   }
-
   .using-indigo-logo {
     height: 60px;
     width: auto;

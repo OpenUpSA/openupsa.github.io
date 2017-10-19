@@ -1,9 +1,8 @@
 ---
 layout: tool
 name: short-courses
-title: Short courses
+title: TrainUp
 image: short-courses.jpg
-external-url: /courses
-oneliner: Making corporate data freely available to empower people and institute accountability
+external-url: /trainup
 skip-own-page: true
 ---

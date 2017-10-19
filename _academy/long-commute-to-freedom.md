@@ -1,11 +1,11 @@
 ---
-layout: courses
+layout: trainup
 title: Long Commute to Freedom
 image: commute.jpg
 short: Apartheid city planning hasn’t ended quickly enough, which means black South Africans still spend too much time and money travelling to work because they live on the outskirts of cities.
 embed: true
 ---
-<div class="container shortcourse-page">
+<div class="container trainup">
   <a class="btn" href="../courses"><i class="fa fa-fw fa-arrow-left" aria-hidden="true"></i> Back to courses</a>
   <br>
   <br>

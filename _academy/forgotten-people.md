@@ -1,11 +1,11 @@
 ---
-layout: courses
+layout: trainup
 title: The Forgotten People
 image: forgotten.jpg
 short: Thousands of people, who have been living in dire poverty for years, “forgotten” by the authorities because they are missing from census data.
 embed: true
 ---
-<div class="container shortcourse-page">
+<div class="container trainup">
   <a class="btn" href="../courses"><i class="fa fa-fw fa-arrow-left" aria-hidden="true"></i> Back to courses</a>
   <br>
   <br>
