@@ -1375,6 +1375,14 @@ footer {
   &:last-of-type {
     margin-bottom: -30px;
   }
+  .taught {
+    img {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .trainup-course {
