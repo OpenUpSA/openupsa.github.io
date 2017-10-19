@@ -6,7 +6,7 @@ short: Los Angeles, like most other informal settlements scattered across South 
 embed: true
 ---
 <div class="container trainup">
-  <a class="btn" href="../courses"><i class="fa fa-fw fa-arrow-left" aria-hidden="true"></i> Back to courses</a>
+  <a class="btn" href="../trainup"><i class="fa fa-fw fa-arrow-left" aria-hidden="true"></i> Back to TrainUp page</a>
   <br>
   <br>
   <iframe src="https://static.code4sa.org/welcome-to-los-angeles/index.html?initialWidth=843&amp;childId=code4sa-welcome-to-los-angeles-index" scrolling="no" marginheight="0" style="height: 6127px;" width="100%" height="6127px" frameborder="0"></iframe>
