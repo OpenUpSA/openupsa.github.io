@@ -64,6 +64,13 @@ $trainup-lightest: lighten($trainup, 60%);
 $trainup-lighter: lighten($trainup, 20%);
 $trainup-dark: darken($trainup, 10%);
 
+$shortcourse: $literacy;
+$shortcourse-opaque: rgba($shortcourse, .05);
+$shortcourse-lightest: lighten($shortcourse, 60%);
+$shortcourse-lighter: lighten($shortcourse, 20%);
+$shortcourse-dark: darken($shortcourse, 10%);
+
+
 html {
   height: 100%;
   box-sizing: border-box;
@@ -1912,6 +1919,103 @@ footer {
     font-family: monospace;
     a {
       font-family: 'Libre Franklin', sans-serif;
+    }
+  }
+}
+
+.shortcourse-page {
+ .btn {
+    background-color: $shortcourse;
+    color: #fff;
+    &:hover {
+      background-color: $shortcourse-dark;
+      color: #fff;
+    }
+  }
+  a {
+    color: $trace;
+    &:hover {
+      color: $trace-dark;
+    }
+  }
+  h2, h3 {
+    font-weight: 600;
+    color: $shortcourse;
+  }
+
+  .single-course {
+    padding: 40px 0 60px 0;
+    box-shadow: inset 0px 3px 4px rgba(230,230,230,0.8);
+    .details {
+      padding: 20px; 
+      background-color: rgba($shortcourse, .2);
+      margin-bottom: 10px;
+      .row {
+        margin-bottom: 10px;
+      }
+    }
+    &:nth-child(even) {
+      background: $shortcourse-opaque;
+    .details {
+        color: #fff;
+        background-color: $shortcourse-dark;
+      }
+    }
+  }
+
+  .hero {
+    background-color: $shortcourse;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    color: #fff;
+    h1.header {
+      color: #fff;
+      font-size: 42px;
+      font-weight: 600;
+    }
+    h2.header {
+      color: #fff;
+      font-weight: 500;
+      margin-top:10px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 21px;
+      color: #fff;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+
+  .shortcourse-intro {
+    background-color: $shortcourse-opaque;
+    padding-top: 30px;
+    padding-bottom:30px;
+  }
+
+  .courses {
+    margin-top: 30px;
+    h2 {
+      margin-bottom: 30px;
+    }
+    .boxes {
+      padding-bottom: 30px;
+      .course-box {
+        padding: 5px 20px 20px 20px;
+        margin-bottom: 30px;
+        background-color: $shortcourse-opaque;
+        @media (min-width:767px) {
+          min-height: 255px;
+        }
+      }
+    }
+  }
+  a {
+    color: $shortcourse;
+    &:hover {
+      color: $shortcourse-dark;
     }
   }
 }
