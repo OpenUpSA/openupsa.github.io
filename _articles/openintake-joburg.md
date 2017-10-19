@@ -3,8 +3,8 @@ layout: article
 author: lailah
 title: "Open intake: Johannesburg"
 date: 2017-09-28
-short: "As part of our open intake, we've  concluded our training in Johannesburg. Hear what participants had to say about their experience of learning how to begin telling stories with data."
-image: what-story.jpg
+short: "As part of our open intake, we've concluded our training in Johannesburg. Hear what participants had to say about their experience of learning how to begin telling stories with data."
+image: intake-joburg.jpg
 tools:
 - name: short-courses
 themes:
@@ -40,3 +40,5 @@ Here’s what some of our Learners had to say about the course:
 > Learning how to structure a story including practical elements, and structured thinking around how to layout a good story was useful
 
 On the 3rd and 4th of October, OpenUp will be hosting the  Cape Town intake. While the signups for this intake have closed, applications for our Durban intake have been extended til Monday 1st October. Interested? [Apply now!](https://docs.google.com/forms/d/e/1FAIpQLSdPXvaJFTekl4XfaJmxlSUz2cGcGnNwpPW8pa0wP945Ih82lg/viewform)
+
+<small><a href="https://commons.wikimedia.org/wiki/File:Joburg_at_night.jpg">Photo by Nico Roets</a></small>
