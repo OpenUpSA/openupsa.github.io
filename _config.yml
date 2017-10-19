@@ -32,6 +32,7 @@ collections:
     output: true
   academy:
     output: true
+  courses:
 
 defaults:
   -
