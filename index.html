@@ -3,32 +3,32 @@ layout: base
 ---
 <div class="homepage">
 
-	<div class="banner-notice">
-		<div class="container">
-			<div class="row announcement">
-				<div class="col-sm-10 col-xs-12">
-					<a href="{{ site.baseurl }}/careers.html">Interested in working at OpenUp? See what positions are available. <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="banner-notice">
+    <div class="container">
+      <div class="row announcement">
+        <div class="col-sm-10 col-xs-12">
+          <a href="{{ site.baseurl }}/careers.html">Interested in working at OpenUp? See what positions are available. <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<div class="banner">
-		<div class="container">
+  <div class="banner">
+    <div class="container">
 
-			<div class="row">
+      <div class="row">
         <div class="col-md-8">
-  				<h1>We empower citizens to improve their lives and communities.</h1>
-  				<h3>We build tools, open up data, and provide training that support active citizenry and help communities and government work together.</h3>
-  			</div>
+          <h1>We empower citizens to improve their lives and communities.</h1>
+          <h3>We build tools, open up data, and provide training that support active citizenry and help communities and government work together.</h3>
+        </div>
       </div>
 
-		</div>
-	</div>
+    </div>
+  </div>
 
-	<div class="container">
-		<div class="value-adds row">
-		
+  <div class="container">
+    <div class="value-adds row">
+    
       <div class="col-md-4">
         <a href="/tools" class="block">
           <i class="fa fa-wrench" aria-hidden="true"></i>
@@ -37,13 +37,13 @@ layout: base
         </a>
       </div>
       <div class="col-md-4">
-        <a href="#short-courses" class="block">
+        <a href="#trainup" class="block">
           <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-          <p>Our <b>short courses</b> teach people the power of working with data and how to tell impactful, data-driven stories</p>
-          <div class="btn btn-block">Learn about our short courses</div>
+          <p>Our <b>data training courses</b> teach people the power of working with data and how to tell impactful, data-driven stories</p>
+          <div class="btn btn-block">Learn about our data training</div>
         </a>
       </div>
-			<div class="col-md-4">
+      <div class="col-md-4">
         <a href="#partners" class="block">
           <i class="fa fa-handshake-o" aria-hidden="true"></i>
           <p>We <b>advise government and civil society</b> on effectively using open data and technology for real impact</p>
@@ -51,43 +51,43 @@ layout: base
         </a>
       </div>
 
-		</div>
-	</div>
+    </div>
+  </div>
 
 
-	<div class="articles article-list">
-		<div class="container">
+  <div class="articles article-list">
+    <div class="container">
       <h1>Latest news</h1>
-			<div class="row">
+      <div class="row">
       {% assign orderedArticles = site.articles | sort: 'date' | reverse %}
 
-			{% for article in orderedArticles limit:3 %}
-			    
-		    <div class="col-md-4 col-sm-6 col-xs-12 one-article">
+      {% for article in orderedArticles limit:3 %}
+          
+        <div class="col-md-4 col-sm-6 col-xs-12 one-article">
           
           <div class="title-image-wrap">
-				    <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+            <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
 
-				    <div class="article-title">
-					    <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
-					  </div>
-				  </div>
+            <div class="article-title">
+              <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+            </div>
+          </div>
 
-			    <div class="article-author">
-				    {% if article.author-external %}
-	            <div>by <a href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
-	          {% else %}
-	            {% for member in site.team %}
-	              {% if member.name == article.author %}
-	                <div>by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></div>
-	              {% endif %}
-	            {% endfor %}
-	          {% endif %}
-	        </div>
+          <div class="article-author">
+            {% if article.author-external %}
+              <div>by <a href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
+            {% else %}
+              {% for member in site.team %}
+                {% if member.name == article.author %}
+                  <div>by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></div>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </div>
 
-	        <p>{{ article.short }}</p>
+          <p>{{ article.short }}</p>
 
-	        {% if article.tools %}
+          {% if article.tools %}
             {% for tool in site.tools %}
               {% for articletool in article.tools %}
                 {% if tool.name == articletool.name %}
@@ -115,13 +115,13 @@ layout: base
             {% endfor %}
           {% endif %}
 
-		    </div>
-			    
-			{% endfor %}
-			</div>
+        </div>
+          
+      {% endfor %}
+      </div>
 
-		</div>
-	</div>
+    </div>
+  </div>
 
   <div id="partners" class="container">
     <div class="partners">
@@ -210,14 +210,14 @@ layout: base
     </div>
   </div>
 
-  <div id="short-courses" class="short-courses">
+  <div id="trainup" class="trainup">
     <div class="container">
       <h1>We teach people the power of data</h1>
       <div class="row">
         <div class="col-md-6">
-          <h3 class="subheader">Our short courses teach people and organisations how to use data to find trends, spot stories and communicate effectively using information</h3>
-          <p>Our courses are taught over one, two or three days. We’ll tailor them to fit your needs and we can integrate your organisation’s own datasets into the course.</p>
-          <a class="btn btn-block" href="/courses.html">Explore our short courses</a>
+          <h3 class="subheader"><b>TrainUp</b>, our data training programme, teaches people and organisations how to use data to find trends, spot stories and communicate effectively using information</h3>
+          <p>Our standard courses are taught over two days, but we can tailor them to fit your needs and we can integrate your organisation’s own datasets into the course.</p>
+          <a class="btn btn-block" href="/trainup">Read more about TrainUp</a>
         </div>
         <div class="col-md-6 col-lg-5 col-lg-offset-1 icons">
           <i class="fa fa-fw fa-table" aria-hidden="true"></i><br>
@@ -228,33 +228,6 @@ layout: base
           <i class="fa fa-fw fa-newspaper-o" aria-hidden="true"></i>
           <i class="fa fa-fw fa-comments" aria-hidden="true"></i>
         </div>
-        <!-- <div class="col-md-6 col-lg-5 col-lg-offset-1 quotes">
-          <div class="row">
-            <div class="col-xs-2">
-              <i class="fa fa-fw fa-pie-chart" aria-hidden="true"></i>
-            </div>
-            <div class="col-xs-10 quote">
-              <div class="text">"OpenUp's course on data visualisation helped us enhance our articles and engage our readers more than we could before"</div>
-              <div class="author">— <a href="#">Jimmy Jones, news24</a></div>
-            </div>
-
-            <div class="col-xs-2">
-              <i class="fa fa-fw fa-database" aria-hidden="true"></i>
-            </div>
-            <div class="col-xs-10 quote">
-              <div class="text">"Our organisation now has the capacity to clean, analyse, and present data effectively"</div>
-              <div class="author">— <a href="#">Janet Johnson, Black Sash</a></div>
-            </div>
-
-            <div class="col-xs-2">
-              <i class="fa fa-fw fa-file-excel-o" aria-hidden="true"></i>
-            </div>
-            <div class="col-xs-10 quote">
-              <div class="text">"I'm no longer intimidated by spreadsheets and datasets; I'm saving time and money after taking OpenUp's intro to data driven storytelling course"</div>
-              <div class="author">— <a href="">JayJay Jackson, freelance journalist</a></div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
