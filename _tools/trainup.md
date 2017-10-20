@@ -2,7 +2,7 @@
 layout: tool
 name: trainup
 title: TrainUp
-image: short-courses.jpg
+image: trainup.jpg
 external-url: /trainup
 skip-own-page: true
 ---
