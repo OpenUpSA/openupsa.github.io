@@ -6,8 +6,7 @@ date: 2017-08-17
 short: OpenUp's short training courses teach Learners the value and impact numbers have, once contextualised in the situations that affect our daily living
 image: what-your-story.jpg
 tools:
-- name: short-courses
-types:
+- name: trainup
 themes:
 - name: literacy
 featured: true
