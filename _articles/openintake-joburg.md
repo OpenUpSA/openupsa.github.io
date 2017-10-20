@@ -6,7 +6,7 @@ date: 2017-09-28
 short: "As part of our open intake, we've concluded our training in Johannesburg. Hear what participants had to say about their experience of learning how to begin telling stories with data."
 image: intake-joburg.jpg
 tools:
-- name: short-courses
+- name: trainup
 themes:
 - name: literacy
 ---

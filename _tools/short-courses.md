@@ -1,8 +1,8 @@
 ---
 layout: tool
-name: short-courses
-title: Short courses
+name: trainup
+title: TrainUp
 image: short-courses.jpg
-external-url: /courses.html
+external-url: /trainup
 skip-own-page: true
 ---

@@ -6,7 +6,7 @@ date: 2017-06-09
 short: "OpenUp re-structures short course training offering"
 image: short-courses.jpg
 tools:
-- name: short-courses
+- name: trainup
 themes:
 - name: literacy
 featured: true
