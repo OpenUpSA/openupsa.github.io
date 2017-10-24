@@ -1238,7 +1238,6 @@ footer {
       color: #fff;
     }
   }
-
   a, a:hover {
     color: $trainup;
   }
@@ -1247,7 +1246,10 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
+  ul > li {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
   .block {
     background-color: $gray-light;
     padding: 25px;
@@ -1361,8 +1363,21 @@ footer {
   .faq {
     background-color: $gray-light;
     .question {
-      margin-top: 25px;
+      margin-top: 15px;
       font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      color: $trainup;
+      i {
+        color: #333;
+        margin-left: 15px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .answer {
+      margin-bottom: 25px;
     }
   }
   &:last-of-type {
@@ -1401,6 +1416,10 @@ footer {
       margin-bottom: 25px;
     }
   }
+  ul > li {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
   .hero {
     background-color: $trainup;
     margin-top: -20px;
@@ -1420,6 +1439,10 @@ footer {
       a {
         margin-left: 10px;
       }
+    }
+    ul > li {
+      font-size: 21px;
+      margin-bottom: 10px;
     }
   }
   .objectives, .prerequisites {

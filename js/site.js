@@ -38,3 +38,9 @@ $(function() {
 
 $(".homepage .partners .who .block.contact").height( $(".homepage .partners .who .block").first().height() );
 $(".homepage .openness .block").height( $(".homepage .openness .block").first().height() );
+
+$(".trainup-page .faq .answer").hide();
+$(".trainup-page .faq .question").on("click", function(){
+  $(this).next().toggle();
+  $("i", this).toggleClass("fa-caret-up");
+});
