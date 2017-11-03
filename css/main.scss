@@ -1260,7 +1260,8 @@ footer {
     &:hover {
       text-decoration: none;
       transition: box-shadow .2s ease-in-out;
-      box-shadow: 0 5px 10px rgba(0,0,0,.15)
+      box-shadow: 0 5px 10px rgba(0,0,0,.15);
+      color: #333;
     }
     i {
       font-size: 60px;
@@ -1297,11 +1298,6 @@ footer {
   }
 
   .courses {
-    .block {
-      &:hover {
-        color: #333;
-      }
-    }
     .btn {
       margin-top: 15px;
     }
@@ -1324,7 +1320,16 @@ footer {
       margin-top: 25px;
     }
   }
+  .free-content {
+    .free-content-title {
+      font-size: 28px;
+    }
+    .btn {
+      margin-top: 15px;
+    }
+  }
   .articles {
+    background-color: $gray-light;
     padding-bottom: 15px;
     .one-article {
       min-height: 0px;
