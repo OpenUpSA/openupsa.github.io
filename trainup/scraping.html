@@ -1,292 +1,404 @@
 ---
 layout: trainup
-title: Analyse for storytelling - TrainUp
+title: Techniques for scraping data
+short: Extract data hidden in PDFs, images, and web pages
 ---
-<div class="trainup-course">
+<div class="trainup-course free">
 
   <section class="hero">
     <div class="container">
       <h1 class="text-center header">Techniques for scraping data</h1>
-      <p>Part of <a href="../index.html#">our collection</a> of basic data literacy content</p>
+      <p>Part of our collection of <a href="./index.html#free-content">basic data literacy content</a></p>
     </div>
   </section>
 
   <section class="content">
     <div class="container">
-      <p><strong>Techniques for scraping data</strong></p>
-      <p>Imagine you get the data you have been waiting for. But the data you have sourced is stored in a format that cannot be opened using spreadsheet software and thus you are unable to process it in any way. What do you do? </p>
+      <p>Imagine you get the data you have been waiting for. But the data you have sourced is stored in a format that cannot be opened using spreadsheet software and thus you are unable to process it in any way. What do you do?</p>
+
       <p>The answer is: you <em>scrape</em> it.</p>
-      <p>But wait, what is scraping?</p>
-      <p>Scraping describes the method to extract data hidden in documents &ndash; such as web pages, PDFs, or images and make it useable for further processing.</p>
-      <p>It is among the most useful skills to have if you set out to investigate data &ndash; and most of the time it is not especially challenging.</p>
+
+      <h3>But wait, what is scraping?</h3>
+
+      <p>Scraping describes the method to extract data hidden in documents – such as web pages, PDFs, or images and make it useable for further processing.</p>
+
+      <p>It is among the most useful skills to have if you set out to investigate data – and most of the time it is not especially challenging.</p>
+
       <p>For the most simple methods of scraping you do not even need to know how to write code. And it is these methods that you will learn in this module.</p>
-      <p>How do I begin?</p>
+
+      <h3>How do I begin?</h3>
+
       <p>Before we can get started we first need to understand the three basic methods for scraping data:</p>
-      <table>
-      <tbody>
-      <tr>
-      <td>
-      <p><strong>Data scraping</strong></p>
-      </td>
-      <td>
-      <p>This describes the extraction of data from documents or images.</p>
-      </td>
-      </tr>
-      <tr>
-      <td>
-      <p><strong>Web Scraping</strong></p>
-      <p>(also referred to as <em>screen scraping</em>)</p>
-      </td>
-      <td>
-      <p>This describes the extraction of data from websites via the user interface.</p>
-      <br />
-      <p>This form of scraping relies on the coding structure of a website i.e. HTML and XHTML.</p>
-      </td>
-      </tr>
-      <tr>
-      <td>
-      <p><strong>Programmatic scraping</strong></p>
-      </td>
-      <td>
-      <p>This describes the extraction of data from documents, images or websites, using a scripted computer program.</p>
-      <br />
-      <p>To use this method of scraping, you will need to know how to code.</p>
-      </td>
-      </tr>
-      </tbody>
+
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>
+              <p><strong>Data scraping</strong></p>
+            </td>
+            <td>
+              <p>This describes the extraction of data from documents or images.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><strong>Web Scraping</strong><br>(also referred to as <em>screen scraping</em>)</p>
+            </td>
+            <td>
+              <p>This describes the extraction of data from websites via the user interface.</p>
+              <p>This form of scraping relies on the coding structure of a website i.e. HTML and XHTML.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><strong>Programmatic scraping</strong></p>
+            </td>
+            <td>
+              <p>This describes the extraction of data from documents, images or websites, using a scripted computer program.</p>
+              <p>To use this method of scraping, you will need to know how to code.</p>
+            </td>
+          </tr>
+        </tbody>
       </table>
+
       <p>The two methods we will address in this module are <em>data scraping</em> and <em>web scraping</em>.</p>
-      <p>Remember, scraped data is often dirty</p>
-      <p>It doesn&rsquo;t matter which method of scraping you end up using, you will probably find that there is no guarantee when it comes to accuracy. After scraping, when opening the data in your spreadsheet or other processing tool, the data will need to be cleaned and possibly restructured. </p>
-      <p>Remember the <a href="https://docs.google.com/document/d/1XV7ikcAcfjjQLcb6JTn6tUNWmajKweOim8Uquf1U9bY/edit?ts=59f077c8">data pipeline</a>? <em>link to data pipeline basic literacy module</em></p>
-      <p><br /><br /></p>
-      <p>In order to visualise data, we need to analyse it. And we cannot analyse it if it is dirty, data first needs to be cleaned. The first aspect of cleaning data is fixing data capture errors, and other anomalies. However, the second is very often the reshaping of &lsquo;scraped&rsquo; data. Data that exists in table format on websites or documents is often structured quite differently to the way that &lsquo;clean&rsquo; or analysable data would need to be structured.</p>
-      <p>This is particularly the case with pdf scraping, where a pdf scraper may misinterpret column or even row boundaries. We teach these data cleaning processes in our <a href="https://openup.org.za/trainup/clean.html">Source &amp; Clean course</a>.</p>
-      <p><br /><br /></p>
-      <p><strong>Open Source tools for scraping</strong></p>
-      <p>Index</p>
+
+      <h3>Remember, scraped data is often dirty</h3>
+      <div class="col-xs-6 col-sm-3 col-md-2" style="float:right">
+        <img src="/img/trainup/basic-literacy/scraping/data-pipeline.png">
+        <p><small>Image by <a href="https://schoolofdata.org">School of Data</a></small></p>
+      </div>
+      
+      <p>It doesn't matter which method of scraping you end up using, you will probably find that there is no guarantee when it comes to accuracy. After scraping, when opening the data in your spreadsheet or other processing tool, the data will need to be cleaned and possibly restructured. </p>
+      
+
+      <p>In order to visualise data, we need to analyse it. And we cannot analyse it if it is dirty, data first needs to be cleaned. The first aspect of cleaning data is fixing data capture errors, and other anomalies. However, the second is very often the reshaping of 'scraped' data. Data that exists in table format on websites or documents is often structured quite differently to the way that 'clean' or analysable data would need to be structured.</p>
+      
+      <p>This is particularly the case with pdf scraping, where a pdf scraper may misinterpret column or even row boundaries. We teach these data cleaning processes in our <a href="clean.html">Source & Clean course</a>.</p>
+      
+      <h2>Open Source tools for scraping</h2>
       <ul>
-      <li>Data scraping</li>
-      <ul>
-      <li>Extracting data from a PDF</li>
-      <li>Extracting data from images</li>
+        <li><a href="#extract-pdf">Extracting data from a PDF</a></li>
+        <li><a href="#extract-image">Extracting data from images</a></li>
+        <li><a href="#extract-web">Extracting data from the web</a></li>
       </ul>
-      <li>Web scraping</li>
-      <ul>
-      <li>Extracting data from the web</li>
-      </ul>
-      </ul>
-      <p><br /><br /></p>
-      <p><strong>Extracting data from a PDF</strong></p>
-      <p>What you need to know about extracting data from PDFs</p>
+
+      <h3 id="extract-pdf">Extracting data from a PDF</h3>
+      
+      <h4>What you need to know about extracting data from PDFs</h4>
+      
       <p>Data stored in a PDF document is as useful as information written on a piece of paper. There is not much you can do with it until it has been extracted in a way that allows you to open it up in a spreadsheet software where it can be explored and processed.</p>
+      
       <p>PDFs present two challenges for data extraction.</p>
+      
       <p>Firstly, before we can make an assessment of which tool would best clear the obstacles preventing us from exploring or processing our data, we have to determine the format of the content within our PDF. This content can range between:</p>
+      
       <ul>
-      <li>Paragraphs of text</li>
-      <li>Tabular data (tables and lists)</li>
-      <li>Images</li>
+        <li>Paragraphs of text</li>
+        <li>Tabular data (tables and lists)</li>
+        <li>Images</li>
       </ul>
+      
       <p>Secondly, we need to have a good idea of the different methods and tools readily available for extracting either of these formats.</p>
+      
       <p>Scraping from PDFs when the format of the content is either text or tabular data is much easier as the PDF contains content that can be easily identified and scraped.</p>
+      
       <p>The tool we would use to extract text or tabular data from a pdf is <a href="http://tabula.technology/">Tabula</a>.</p>
-      <p><br /><br /></p>
-      <p><strong>Welcome to Tabula</strong></p>
-      <p>Tabula is a tool for liberating data tables locked inside PDF files.</p>
-      <p><br /><br /></p>
-      <p>Download and install Tabula</p>
-      <p>Select the download option supported by your computer&rsquo;s operating system. Currently <a href="http://tabula.technology/">Tabula</a> has only been developed to support <a href="https://github.com/tabulapdf/tabula/releases/download/v1.1.1/tabula-win-1.1.1.zip">Windows</a>, <a href="https://github.com/tabulapdf/tabula/releases/download/v1.1.1/tabula-mac-1.1.1.zip">Mac</a> and <a href="https://github.com/tabulapdf/tabula/releases/download/v1.1.1/tabula-jar-1.1.1.zip">Linux</a> machines.<br /><br />In order for Tabula to run, you will need a recent copy of Java installed. You can <a href="https://www.java.com/download/">download Java here</a>. Tabula requires a Java Runtime Environment compatible with Java 7 (i.e. Java 7, 8 or higher).</p>
-      <p>Please do follow <a href="http://tabula.technology/">installation instructions</a> on the website or read the <a href="https://github.com/tabulapdf/tabula#using-tabula">documentation</a> for Tabula.</p>
-      <p>Getting started</p>
-      <p>To get Tabula up and running, as with any software program once installed, you will have to double-click the program icon on your computer. Usually when starting up Tabula, your web browser will automatically open. If it does not, open your web browser, and go to http://localhost:8080. Tabula works both online and offline.</p>
-      <p><em>For Windows users:</em></p>
+      
+      <h3>Tabula</h3>
+
+      <img class="border" src="/img/trainup/basic-literacy/scraping/tabula-main.jpg">
+      
+      <p>Tabula is a tool for liberating data tables locked inside PDF files. You can download it from the <a href="http://tabula.technology/">offical website</a>.</p>
+      
+      <p>Please follow the <a href="http://tabula.technology/">installation instructions</a> on the website or read the <a href="https://github.com/tabulapdf/tabula#using-tabula">documentation</a> for Tabula.</p>
+      
+      <h4>Getting started</h4>
+      
+      <p>Usually when starting up Tabula, your web browser will automatically open. If it does not, open your web browser, and go to <a href="http://localhost:8080">http://localhost:8080</a>. Tabula works both online and offline.</p>
+      
+      <h5>For Windows users</h5>
+      
       <p>Tabula runs by establishing a local server environment, which means that in order for it to run a terminal box will open up. The terminal box is the little black screen that pops up when running Tabula on a computer running on a Windows operating system. As long as the terminal is open, the program will be running. If you close this, your stop the program.</p>
-      <p>Using Tabula</p>
+      
+      <h4>Using Tabula</h4>
+      
       <p>Tabula is really easy to use and make sense of. But before you can begin extracting data from your PDF, you need to upload the document from which you are extracting your data. </p>
+      
       <p>After uploading your PDF, using the click-drag method, select the border of the tables you want to extract.</p>
-      <p><br /><br /></p>
-      <p>Tabula presents users with two methods for extracting tabulated data from a PDF. The first identifies individual columns based on white spaces while the second identifies columns based on borders or boundary lines. These methods are called &ldquo;Stream&rdquo; (whitespace) and &ldquo;Lattice&rdquo; (borders).</p>
-      <p>Make sure you have tested both of them to see which one presents your data the best. Double-check to see if you have selected all the information you wanted. Thereafter, you can export your document. You will be able to export your scraped data into CSV, XLS (excel spreadsheet), and JSON file formats. Once you have selected the format of your choice, click &ldquo;Export&rdquo;.</p>
-      <p><br /><br /></p>
+      
+      <img src="/img/trainup/basic-literacy/scraping/tabula-select.jpg">
+            
+      <p>Tabula presents users with two methods for extracting tabulated data from a PDF. The first identifies individual columns based on white spaces while the second identifies columns based on borders or boundary lines. These methods are called "Stream" (whitespace) and "Lattice" (borders).</p>
+      
+      <p>Make sure you have tested both of them to see which one presents your data the best. Double-check to see if you have selected all the information you wanted. Thereafter, you can export your document. You will be able to export your scraped data into CSV, XLS (excel spreadsheet), and JSON file formats. Once you have selected the format of your choice, click "Export".</p>
+      
+      <img src="/img/trainup/basic-literacy/scraping/tabula-export.jpg">
+      
       <p>Once you have downloaded your document, open it up in a spreadsheet software to verify that everything you require has actually been scraped from the pdf.</p>
-      <p>Some tips for use</p>
+      
+      <h4>Some tips for use</h4>
+      
       <ul>
-      <li>Tabula will have some problems with merged cells so be careful of the extraction method you chose. One simple workaround is not to select the headlines when you have merged cells.</li>
-      <li>Tabula, or any such tool, will be unable to scrape tabulated data when tables are rotated at a 90 degree angle. It is necessary to rotate the tables back to a normal orientation before any conversion tool will be able to identify them as text.</li>
-      <li>When a PDF has been scanned, the information stored within the PDF is formatted as an image rather than text. In order to extract the data from such as document you first need to convert it to text with a tool that supports optical character recognition (OCR). Tabula will not be able to do this.</li>
+        <li>Tabula will have some problems with merged cells so be careful of the extraction method you chose. One simple workaround is not to select the headlines when you have merged cells.</li>
+        <li>Tabula, or any such tool, will be unable to scrape tabulated data when tables are rotated at a 90 degree angle. It is necessary to rotate the tables back to a normal orientation before any conversion tool will be able to identify them as text.</li>
+        <li>When a PDF has been scanned, the information stored within the PDF is formatted as an image rather than text. In order to extract the data from such as document you first need to convert it to text with a tool that supports optical character recognition (OCR). Tabula will not be able to do this.</li>
       </ul>
+      
       <p>Scraping data from a PDF when the format is an image will require an optical character recognition tool. The tool we will use to scrape image content from PDFs and other image formats is <a href="https://www.onlineocr.net/">OnlineOCR</a>. You will learn about this in the next section.</p>
-      <p><br /><br /></p>
-      <p><strong>Extracting data from images / scanned PDF&rsquo;s</strong></p>
-      <p>To extract data from images we need a tool that supports optical character recognition. Optical character recognition can be defined as <a href="http://www.dictionary.com/browse/optical-character-recognition?s=t">the process or technology of reading data in printed form by a device (optical character reader) that scans and identifies characters</a>. <br /><br /></p>
+      
+      <h3 id="extract-image">Extracting data from images / scanned PDF's</h3>
+      
+      <p>To extract data from images we need a tool that supports optical character recognition. Optical character recognition can be defined as <a href="http://www.dictionary.com/browse/optical-character-recognition?s=t">the process or technology of reading data in printed form by a device (optical character reader) that scans and identifies characters</a>.</p>
+      
       <p>What you need to know about extracting data using optical character recognition</p>
+      
       <ul>
-      <li>Depending on the engine used and the quality of image, you may get some inaccuracy in the data.</li>
-      <li>Some documents are difficult or impossible to automate with OCR. For example, documents with non-standard layouts or very poor scan quality.</li>
-      <li>Pre-processing can improve the possibility of having the text recognized in the OCR process. De-skewing is one of the most used techniques, and layout analysis to target zones of the PDF is also important to consider when extracting text with a high degree of accuracy. Additionally, converting grey-scale and color to black and white allows the process to focus on just two options, and increases the opportunity for a successful extraction of the text, from the source.</li>
-      <li>Some online tools, like OnlineOCR, may also store your converted files in the cloud.</li>
+        <li>Depending on the engine used and the quality of image, you may get some inaccuracy in the data.</li>
+        <li>Some documents are difficult or impossible to automate with OCR. For example, documents with non-standard layouts or very poor scan quality.</li>
+        <li>Pre-processing can improve the possibility of having the text recognized in the OCR process. De-skewing is one of the most used techniques, and layout analysis to target zones of the PDF is also important to consider when extracting text with a high degree of accuracy. Additionally, converting grey-scale and color to black and white allows the process to focus on just two options, and increases the opportunity for a successful extraction of the text, from the source.</li>
+        <li>Some online tools, like OnlineOCR, may also store your converted files in the cloud.</li>
       </ul>
+      
       <p>The tool we will use to scrape from images or scanned PDFs is <a href="https://www.onlineocr.net/">OnlineOCR</a>.</p>
-      <p><br /><br /></p>
-      <p><strong>OnlineOCR</strong></p>
+      
+      <h4>OnlineOCR</h4>
+      
       <p>Extract text from PDF and images (JPG, BMP, TIFF, GIF) and convert into editable Word, Excel and Text output formats.</p>
-      <p><br /><br /></p>
-      <ol>
-      <li>Go to <a href="http://www.onlineocr.net">www.onlineOCR.net</a></li>
-      <li>Sign up for the service, the process is quick and simple, merely requiring a user name, password and email address.<br /><br />3. Once you have signed up you can login<br /><br />4. Step 1: Choose the language that the document is in, the required format data output, and the number of pages or the page range that you wish to scrape<br />5. Step 2: Click select file, and browse to the file location, select the file you want scraped and wait for the file to load<br /><br />6. Step 3: Click &lsquo;Convert&rsquo;<br />7. The tool will provide you with an output file, simply click to download<br /></li>
-      </ol>
-      <p><br /><br /></p>
-      <p><strong>Extracting data from the web</strong></p>
-      <p>Index</p>
+      
+      <img src="/img/trainup/basic-literacy/scraping/onlineocr-main.jpg">
+
       <ul>
-      <li>Google Sheets: importHTML</li>
-      <li>Portia by Scrapinghub</li>
+        <li>Go to <a href="http://www.onlineocr.net">www.onlineOCR.net</a></li>
+        <li>Sign up for the service, the process is quick and simple, merely requiring a user name, password and email address.</li>
+        <li>Once you have signed up you can login</li>
+        <img src="/img/trainup/basic-literacy/scraping/onlineocr-dashboard.jpg">
+        <li>Step 1: Choose the language that the document is in, the required format data output, and the number of pages or the page range that you wish to scrape</li>
+        <li>Step 2: Click select file, and browse to the file location, select the file you want scraped and wait for the file to load</li>
+        <img src="/img/trainup/basic-literacy/scraping/onlineocr-select.jpg">
+        <li>Step 3: Click 'Convert'</li>
+        <li>The tool will provide you with an output file, simply click to download</li>
+        <img src="/img/trainup/basic-literacy/scraping/onlineocr-documents.jpg">
       </ul>
+
+      <h3 id="extract-web">Extracting data from the web</h3>
+      <ul>
+        <li><a href="#sheets">Google Sheets: importHTML</a></li>
+        <li><a href="#portia">Portia by Scrapinghub</a></li>
+      </ul>
+      
       <p>There are two methods we will cover for extracting data from the web, one is using the <a href="https://www.google.com/sheets/about/">Google Sheets</a> formula ImportHTML, while the other is using a visual scraping tool by <a href="https://scrapinghub.com/">Scrapinghub</a> called Portia.</p>
+      
       <p>What you need to know about extracting data from the web</p>
+      
       <ul>
-      <li>The success of a web scraping tool is often influenced by the complexity of site structure, and the user&rsquo;s understanding thereof.</li>
-      <li>When in doubt, turn to the web scraping tools for help, most provide detailed tutorials.</li>
-      <li>If you wish to learn more advanced web scraping, start with some basic programming knowledge like XPath, AJAX and Regular expression.</li>
-      <li>If you have knowledge of Python, here is a handy<a href="https://blog.hartleybrody.com/web-scraping-cheat-sheet/"> Cheat Sheet</a>.</li>
+        <li>The success of a web scraping tool is often influenced by the complexity of site structure, and the user's understanding thereof.</li>
+        <li>When in doubt, turn to the web scraping tools for help, most provide detailed tutorials.</li>
+        <li>If you wish to learn more advanced web scraping, start with some basic programming knowledge like XPath, AJAX and Regular expression.</li>
+        <li>If you have knowledge of Python, here is a handy<a href="https://blog.hartleybrody.com/web-scraping-cheat-sheet/"> Cheat Sheet</a>.</li>
       </ul>
-      <p><br /><br /></p>
-      <p><strong>Google Sheets</strong></p>
+      
+      <h4 id="sheets">Google Sheets</h4>
+
+      <img src="/img/trainup/basic-literacy/scraping/sheets-main.jpg">
+      
       <p>Using the ImportHTML formula, you are able to import data from a table or list within an HTML page.</p>
-      <p><br /><br /></p>
+      
       <p>Google spreadsheet has many functionalities to import data, the most common would be: ImportHTML. </p>
-      <p>Getting started</p>
+      
+      <h5>Getting started</h5>
+      
       <p>In order to make use of this <a href="https://www.google.com/sheets/about/">Google Sheets</a> formula, you require an activated <a href="https://accounts.google.com/SignUp?hl=en">Google account</a>.</p>
-      <p>For the purposes of this tutorial, we are going to try to import the data for Western Cape province land sales <a href="http://land.agrids.co.za/Statistics?Province=&amp;Calculate=Calculate">using the following website</a>.</p>
-      <p>Using Google Sheets for ImportHTML</p>
-      <p>Open a new Google Sheet and enter an equals sign &ldquo;=&rdquo; to activate the formulas field. </p>
-      <p>After the equals sign type &ldquo;importhtml&rdquo;. As with the use of all formulas entered in the formula field, it will be followed by a string of comma separated parameters contained within brackets.</p>
-      <p>The formula for ImportHTML is: <a href="https://support.google.com/docs/answer/3093339?hl=en-GB&amp;rd=1">IMPORTHTML(url, query, index)</a></p>
-      <p><br />Each of the parameters requires:</p>
-      <table>
-      <tbody>
-      <tr>
-      <td>
-      <p>URL</p>
-      </td>
-      <td>
-      <p>http://land.agrids.co.za/Statistics?Province=&amp;Calculate=Calculate</p>
-      </td>
-      </tr>
-      <tr>
-      <td>
-      <p>Query</p>
-      </td>
-      <td>
-      <p>The type of object where the data is contained: a table in this case</p>
-      </td>
-      </tr>
-      <tr>
-      <td>
-      <p>Index</p>
-      </td>
-      <td>
-      <p>Which table are you going to scrape? First table, second table?</p>
-      </td>
-      </tr>
-      </tbody>
+      
+      <p>For the purposes of this tutorial, we are going to try to import the data for Western Cape province land sales <a href="http://land.agrids.co.za/Statistics?Province=&Calculate=Calculate">using the following website</a>.</p>
+      
+      <h5>Using Google Sheets for ImportHTML</h5>
+      
+      <img class="border" src="/img/trainup/basic-literacy/scraping/sheets-using.png">
+
+      <p>Open a new Google Sheet and enter an equals sign <code>=</code> to activate the formulas field. </p>
+      
+      <p>After the equals sign type <code>importhtml</code>. As with the use of all formulas entered in the formula field, it will be followed by a string of comma separated parameters contained within brackets.</p>
+      
+      <p>The formula for ImportHTML is: <a href="https://support.google.com/docs/answer/3093339?hl=en-GB&rd=1"><code>IMPORTHTML(url, query, index)</code></a></p>
+      
+      <p>Each of the parameters requires:</p>
+      
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>
+              <p>URL</p>
+            </td>
+            <td>
+              <p><code>http://land.agrids.co.za/Statistics?Province=&Calculate=Calculate</code></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Query</p>
+            </td>
+            <td>
+              <p>The type of object where the data is contained: a table in this case</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Index</p>
+            </td>
+            <td>
+              <p>Which table are you going to scrape? First table, second table?</p>
+            </td>
+          </tr>
+        </tbody>
       </table>
-      <p>&nbsp;&nbsp;&nbsp; <br />Make sure you house the URL and Query parameters using inverted commas &ldquo; &ldquo; as in the following example:</p>
+      
+      <p>Make sure you house the URL and Query parameters using double quotation marks <code>" "</code> as in the following example:</p>
+      
+      <img src="/img/trainup/basic-literacy/scraping/sheets-formula.png">
+      
       <p>Once you have completed the formula with the correct information, hit enter. The data from the website will be imported into your Google Sheet.</p>
+      
+      <img src="/img/trainup/basic-literacy/scraping/sheets-import.png">
+
       <p>Disclaimer: Despite the data being visible in your Google Sheet, it is still attached to the original source.</p>
-      <p>In order to detach this data from its original source we need to highlight the data. You can highlight the data by clicking in the top left corner of our spreadsheet between A column in 1 row. Once you have clicked this block, a drop down will appear. Select &ldquo;Copy&rdquo;.</p>
-      <p>Thereafter, click the same block and then select &ldquo;Paste&rdquo; and choose &ldquo;Paste special: Paste values only&rdquo;. The data you just copied will overwrite the imported data in the same place.</p>
-      <p>How can you confirm that your data has been detached from its original source? When the data is still attached to the original source, when selecting any cell for example &ldquo;District&rdquo; pictured below, the formula field will contain the ImportHTML formula.</p>
-      <p><br /><br /></p>
-      <p>Once the data has been detached, if you select the same &ldquo;District&rdquo; field. The formula field will now display the complete content of the cell you have selected.</p>
-      <p><br /><br /></p>
+      
+      <p>In order to detach this data from its original source we need to highlight the data. You can highlight the data by clicking in the top left corner of our spreadsheet between A column in 1 row. Once you have clicked this block, a drop down will appear. Select "Copy".</p>
+      
+      <img src="/img/trainup/basic-literacy/scraping/sheets-copy.png">
+
+      <p>Thereafter, click the same block and then select "Paste" and choose "Paste special: Paste values only". The data you just copied will overwrite the imported data in the same place.</p>
+
+      <img src="/img/trainup/basic-literacy/scraping/sheets-paste.png">
+      
+      <p>How can you confirm that your data has been detached from its original source? When the data is still attached to the original source, when selecting any cell for example "District" pictured below, the formula field will contain the ImportHTML formula.</p>
+      
+      <img src="/img/trainup/basic-literacy/scraping/sheets-calculate.png">
+
+      <p>Once the data has been detached, if you select the same "District" field. The formula field will now display the complete content of the cell you have selected.</p>
+
+      <img src="/img/trainup/basic-literacy/scraping/sheets-district.png">
+            
       <p>For more information on the ImportHTML formula, read the <a href="https://support.google.com/docs/answer/3093339?hl=en">documentation</a>.</p>
+      
       <p>The next tool we will explore for scraping data from the web is the visual scraper by <a href="https://scrapinghub.com/">Scrapinghub</a> called <a href="https://scrapinghub.com/portia">Portia</a>.</p>
-      <p><br /><br /></p>
-      <p><strong>Portia</strong></p>
+            
+      <h4 id="portia">Portia</h4>
+      
       <p>Portia lets you scrape web sites without any programming knowledge required.</p>
-      <p><br /><br /></p>
-      <p>Getting started</p>
+            
+      <h5>Getting started</h5>
+      
       <p>Create a template by defining elements on the pages you would like to scrape, and Portia will create a spider to scrape similar pages from the website. There is no need to download or install Portia as it conveniently runs in your web browser.</p>
+      
       <p>Visit the documentation for <a href="http://portia.readthedocs.org/en/2.0-docs/">Portia 2.0</a>. Portia is a product of <a href="https://scrapinghub.com/">Scrapinghub</a>.</p>
+      
       <p>A step-by-step guide to scraping pagination with Portia</p>
-      <p>For the purposes of this tutorial, visit the <a href="https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&amp;LastWardSequenceNo=10">City of Cape Town</a> website pictured below.</p>
-      <p><br /><br /></p>
+      
+      <p>For the purposes of this tutorial, visit the <a href="https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&LastWardSequenceNo=10">City of Cape Town</a> website pictured below.</p>
+            
       <p>Now that you have access to the website you will be scraping, in a different browser tab or window navigate back to the <a href="https://scrapinghub.com/">scrapinghub</a> website. In order to proceed, you need to <a href="https://app.scrapinghub.com/account/login/">register for a free account</a>. You can sign-up easily using your Google account.</p>
-      <p><br /><br /></p>
-      <p>Once you have registered, login to your account. You will be using the Portia scraper to scrape a list of ward councillors from the City of Cape Town&rsquo;s website. On the top menu bar, navigate to the Portia dropdown menu and choose &ldquo;Create Project&rdquo;.</p>
-      <p><br /><br /></p>
-      <p>Once selected a popup titled &ldquo;Create a new project&rdquo; will appear. It will prompt you to enter the name of your spider and to select which platform you will use to build the spider. Make sure you have selected &ldquo;Portia&rdquo;. Thereafter select &ldquo;Create&rdquo;.</p>
-      <p><br /><br /></p>
+            
+      <p>Once you have registered, login to your account. You will be using the Portia scraper to scrape a list of ward councillors from the City of Cape Town's website. On the top menu bar, navigate to the Portia dropdown menu and choose "Create Project".</p>
+            
+      <p>Once selected a popup titled "Create a new project" will appear. It will prompt you to enter the name of your spider and to select which platform you will use to build the spider. Make sure you have selected "Portia". Thereafter select "Create".</p>
+            
       <p>Now that your project has been created, before you can begin you will have to enter in a starting URL. </p>
-      <p>Navigate to the <a href="https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&amp;LastWardSequenceNo=10">list of ward councillors</a> on the City of Cape Town website. Copy the URL and paste it into the address bar within Portia as pictured in the example below. Most importantly, once you have pasted it be sure to hit the &ldquo;enter&rdquo; key on your keyboard.</p>
-      <p><br /><br /></p>
-      <p>After hitting &ldquo;enter&rdquo; a window will appear displaying the contents of the URL you have entered in. Make sure the page you are on is the page you would like the spider to begin its crawl. Once you are happy, locate and click the &ldquo;New Spider&rdquo; button positioned alongside the address bar wherein you entered the URL.</p>
-      <p><br /><br /></p>
-      <p>After creating the new spider you will have to define a sample on which the spider can base its scraping activity. You can do this by selecting the &ldquo;New sample&rdquo; button located below the address bar wherein you entered the URL.</p>
-      <p><br /><br /></p>
-      <p>Once this has been selected it should automatically create the sample and access the &ldquo;Edit Sample&rdquo; area. The &ldquo;Edit Sample&rdquo; area consists of a menu bar with the following tools:<br /><br /> &nbsp;&nbsp;&nbsp;Select the most appropriate tool when clicking on an element</p>
+      
+      <p>Navigate to the <a href="https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&LastWardSequenceNo=10">list of ward councillors</a> on the City of Cape Town website. Copy the URL and paste it into the address bar within Portia as pictured in the example below. Most importantly, once you have pasted it be sure to hit the "enter" key on your keyboard.</p>
+            
+      <p>After hitting "enter" a window will appear displaying the contents of the URL you have entered in. Make sure the page you are on is the page you would like the spider to begin its crawl. Once you are happy, locate and click the "New Spider" button positioned alongside the address bar wherein you entered the URL.</p>
+            
+      <p>After creating the new spider you will have to define a sample on which the spider can base its scraping activity. You can do this by selecting the "New sample" button located below the address bar wherein you entered the URL.</p>
+            
+      <p>Once this has been selected it should automatically create the sample and access the "Edit Sample" area. The "Edit Sample" area consists of a menu bar with the following tools:<br /><br /> &nbsp;&nbsp;&nbsp;Select the most appropriate tool when clicking on an element</p>
+      
       <p> &nbsp;&nbsp;&nbsp;Select an element</p>
+      
       <p> &nbsp;&nbsp;&nbsp;Add an element</p>
+      
       <p> &nbsp;&nbsp;&nbsp;Remove an element</p>
+      
       <p> &nbsp;&nbsp;&nbsp;Add repeating element</p>
+      
       <p>You will be selecting the sample areas you would like the spider to scrape. To do so you need to use the magic  tool.</p>
-      <p><br /><br /></p>
-      <p>With the magic tool  selected you are able to annotate your first data sample. Using the magic tool, hover over the first row in the first column in the ward councilor list table. This column is titled &ldquo;Ward&rdquo;. You need to highlight the first cell below the heading cells. In this example the first cell contains the text: &ldquo;Ward 1&rdquo;. </p>
-      <p>Upon hovering, the block&rsquo;s appearance will become highlighted. Click on it when in a highlighted state. As you click on it in this state, in the left toolbar you will be prompted to give this selected block of content a title. Type &ldquo;wardnumber&rdquo; then hit &ldquo;enter&rdquo; on your keyboard.</p>
-      <p><br /><br /></p>
-      <p>Because you are scraping a list you will need to make sure that you set the sample to include multiple entries. After naming your block &ldquo;wardnumber&rdquo; you can hover over the block below your originally selected block in your &ldquo;Ward&rdquo; column. </p>
-      <p>In doing so, Portia will give you the option of selecting multiple entries in this table. We recognise this by acknowledging the appearance of the &ldquo;add repeat element&rdquo; icon . Once this appears, you need to click on it.</p>
-      <p><br />You know it has been set when the number that appears alongside our &ldquo;wardnumber&rdquo; title is changed from 1 to 10. This way we know it acknowledges all 10 entries displayed in the tabulated list on the City of Cape Town webpage. You can check this by locating &ldquo;Items&rdquo; on the left panel as pictured below:</p>
-      <p><br /><br /></p>
-      <p>Note: Always make it a habit to double-check the quantity of entries displayed on the sample page so that you are sure information you don&rsquo;t want to be excluded is left out during the scraping.</p>
-      <p><br /><br /></p>
+            
+      <p>With the magic tool  selected you are able to annotate your first data sample. Using the magic tool, hover over the first row in the first column in the ward councilor list table. This column is titled "Ward". You need to highlight the first cell below the heading cells. In this example the first cell contains the text: "Ward 1". </p>
+      
+      <p>Upon hovering, the block's appearance will become highlighted. Click on it when in a highlighted state. As you click on it in this state, in the left toolbar you will be prompted to give this selected block of content a title. Type "wardnumber" then hit "enter" on your keyboard.</p>
+            
+      <p>Because you are scraping a list you will need to make sure that you set the sample to include multiple entries. After naming your block "wardnumber" you can hover over the block below your originally selected block in your "Ward" column. </p>
+      
+      <p>In doing so, Portia will give you the option of selecting multiple entries in this table. We recognise this by acknowledging the appearance of the "add repeat element" icon . Once this appears, you need to click on it.</p>
+      
+      <p><br />You know it has been set when the number that appears alongside our "wardnumber" title is changed from 1 to 10. This way we know it acknowledges all 10 entries displayed in the tabulated list on the City of Cape Town webpage. You can check this by locating "Items" on the left panel as pictured below:</p>
+            
+      <p>Note: Always make it a habit to double-check the quantity of entries displayed on the sample page so that you are sure information you don't want to be excluded is left out during the scraping.</p>
+            
       <p>Duplicate your above activity for the next two columns.</p>
-      <p><br /><br /></p>
-      <p>Once you are happy with your annotated sample, be sure to click &ldquo;Close sample&rdquo; located below the address bar wherein you entered the URL.</p>
-      <p><br /><br /></p>
+            
+      <p>Once you are happy with your annotated sample, be sure to click "Close sample" located below the address bar wherein you entered the URL.</p>
+            
       <p>Now that you have defined the sample for scraping, you need to make sure that the spider knows what to crawl. The information is stored over a collection of pages that is navigated using the pagination links.</p>
-      <p><br /><br /></p>
-      <p>In order for the spider to crawl each of the links, you have to define a &ldquo;generation URL&rdquo;. You can set this up by clicking on the &ldquo;START PAGES&rdquo; settings button located on the left panel. </p>
-      <p>Then select &ldquo;Add generation URL&rdquo;.</p>
-      <p><br /><br /></p>
-      <p>After selecting &ldquo;Add generation URL&rdquo;, the URL Generation display box will appear. We make use of this by defining the URL structure to generate multiple URLs based on the structure of the paginated URLs.</p>
+            
+      <p>In order for the spider to crawl each of the links, you have to define a "generation URL". You can set this up by clicking on the "START PAGES" settings button located on the left panel. </p>
+      
+      <p>Then select "Add generation URL".</p>
+            
+      <p>After selecting "Add generation URL", the URL Generation display box will appear. We make use of this by defining the URL structure to generate multiple URLs based on the structure of the paginated URLs.</p>
+      
       <p>In our example, the URL you will use is:</p>
-      <p><em>https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&amp;LastWardSequenceNo=10</em></p>
-      <p>To define the structure, start by first defining the part of the URL that does not change. This would be everything preceding the number &ldquo;10&rdquo; in the above URL. But how do you know this? After browsing a few of the paginated links and comparing URLs, this segment remains unchanged, or rather, fixed.</p>
-      <p><em>https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&amp;LastWardSequenceNo=</em></p>
-      <p>Now that you have added the &ldquo;Fixed&rdquo; fragment of your URL, in order to finish constructing the URL, you have to add an additional fragment.</p>
-      <p><br /><br /></p>
+      
+      <p><em>https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&LastWardSequenceNo=10</em></p>
+      
+      <p>To define the structure, start by first defining the part of the URL that does not change. This would be everything preceding the number "10" in the above URL. But how do you know this? After browsing a few of the paginated links and comparing URLs, this segment remains unchanged, or rather, fixed.</p>
+      
+      <p><em>https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&LastWardSequenceNo=</em></p>
+      
+      <p>Now that you have added the "Fixed" fragment of your URL, in order to finish constructing the URL, you have to add an additional fragment.</p>
+            
       <p>The next part of the URL to define is the fragment that does change from link to link.</p>
+      
       <p>The pagination follows a numbering system whose count ascends at intervals of 10 each time. For example: 1-10 | 11-20 | 21-30 etc.</p>
-      <p>After browsing a few of the paginated links, you know that the pagination begins at &ldquo;0-10&rdquo; and ends at &ldquo;&gt;100 &rdquo;, and that 10 to 20 to 30 is not consecutive numbering i.e. it is not 10, 11, 12 etc. it jumps at intervals of 10.</p>
-      <p><br /><br /></p>
-      <p>As a result of this, you cannot select the &ldquo;Range&rdquo; option for the next segment of the URL but will have to use the &ldquo;List&rdquo; function. The &ldquo;Range&rdquo; option only works for consecutive numbering or lettering i.e. if the pagination uses the alphabet for navigation.</p>
-      <p>The list function works by defining individual values to be added onto the end of the fixed fragment of the URL. The list function&rsquo;s structure requires that each value is separated by a single blank space, and should be written as follows:</p>
+      
+      <p>After browsing a few of the paginated links, you know that the pagination begins at "0-10" and ends at "&gt;100 ", and that 10 to 20 to 30 is not consecutive numbering i.e. it is not 10, 11, 12 etc. it jumps at intervals of 10.</p>
+            
+      <p>As a result of this, you cannot select the "Range" option for the next segment of the URL but will have to use the "List" function. The "Range" option only works for consecutive numbering or lettering i.e. if the pagination uses the alphabet for navigation.</p>
+      
+      <p>The list function works by defining individual values to be added onto the end of the fixed fragment of the URL. The list function's structure requires that each value is separated by a single blank space, and should be written as follows:</p>
+      
       <p><em>Value1</em> <em>Value2</em> <em>Value3</em></p>
+      
       <p>For the example, your values would be:</p>
+      
       <p><em>10 20 30 40 50 60 70 80 90 100 &nbsp;</em></p>
-      <p>After checking what the URL looks like for the &ldquo;&gt;100&rdquo; page, we notice that it does not have a number but rather is a blank space. So I will add an additional blank space after the 100 value in my list so I can accommodate for the final &ldquo;&gt;100&rdquo; page to be included in the scraping process.</p>
-      <p>Be sure to browse the box titled &ldquo;Generation List&rdquo; to assess whether a complete list of paginated URLs has been generated.</p>
-      <p><br /><br /></p>
-      <p>Next you will have to remove the original start page while retaining the newly added start page you have just created through the &ldquo;Generation URL&rdquo; function.</p>
-      <p>You can achieve this by locating &ldquo;START PAGES&rdquo; in the left panel. Next to the original start page, titled by its URL, will be a red circular disc with a negative (-) sign in it. Click on this red disc to remove the start URL item you no longer need.</p>
-      <p><br /><br /></p>
-      <p>Now that you have defined the URLs that need to be scraped and you have removed the original start page URL, you must deactivate any automated link crawling. You do not need this because you have already clearly defined every URL your spider has to crawl to extract the data you are scraping. In order to deactivate any automated link crawling, locate &ldquo;LINK CRAWLING&rdquo; on the left panel. Expand the dropdown menu and choose the setting: &ldquo;Don&rsquo;t follow links&rdquo;.</p>
-      <p><br /><br /></p>
-      <p>Once you have set the spider to not follow links be sure to click the project menu (project currently titled &ldquo;Ward Councillors&rdquo;) on the left panel and select &ldquo;Publish Project&rdquo;. </p>
-      <p>You will not be able to run the spider if the project has not been published. After the project has been published, navigate to the top bar and select &ldquo;Scrapinghub Dashboard&rdquo;.</p>
-      <p><br /><br /></p>
-      <p>On the far right there will be a green button titled &ldquo;Run&rdquo;. Select &ldquo;Run&rdquo; and wait for a popup to appear. Under the heading &ldquo;Spiders&rdquo; select the spider you just created. Once you are happy, click &ldquo;Run&rdquo;.</p>
-      <p><br /><br /></p>
-      <p>The popup will disappear once you have clicked &ldquo;Run&rdquo; and a new job will be added to your dashboard. You can track the progress for the new job under the heading &ldquo;Running Jobs&rdquo;.</p>
-      <p><br /><br /></p>
-      <p>You can access the scraped data by clicking on the hyperlinked number appearing below &ldquo;Items&rdquo; located as a heading under the &ldquo;Running Jobs&rdquo; panel. Here you can access all job-related details, progress, and settings pertaining to your spiders scraping activity.</p>
-      <p>Once the job has completed, you can navigate to the far right of the screen and download your data in CSV, JSON or XML formats by selecting the green button labelled &ldquo;Export&rdquo;.</p>
-      <p><br /><br /></p>
+      
+      <p>After checking what the URL looks like for the "&gt;100" page, we notice that it does not have a number but rather is a blank space. So I will add an additional blank space after the 100 value in my list so I can accommodate for the final "&gt;100" page to be included in the scraping process.</p>
+      
+      <p>Be sure to browse the box titled "Generation List" to assess whether a complete list of paginated URLs has been generated.</p>
+            
+      <p>Next you will have to remove the original start page while retaining the newly added start page you have just created through the "Generation URL" function.</p>
+      
+      <p>You can achieve this by locating "START PAGES" in the left panel. Next to the original start page, titled by its URL, will be a red circular disc with a negative (-) sign in it. Click on this red disc to remove the start URL item you no longer need.</p>
+            
+      <p>Now that you have defined the URLs that need to be scraped and you have removed the original start page URL, you must deactivate any automated link crawling. You do not need this because you have already clearly defined every URL your spider has to crawl to extract the data you are scraping. In order to deactivate any automated link crawling, locate "LINK CRAWLING" on the left panel. Expand the dropdown menu and choose the setting: "Don't follow links".</p>
+            
+      <p>Once you have set the spider to not follow links be sure to click the project menu (project currently titled "Ward Councillors") on the left panel and select "Publish Project". </p>
+      
+      <p>You will not be able to run the spider if the project has not been published. After the project has been published, navigate to the top bar and select "Scrapinghub Dashboard".</p>
+            
+      <p>On the far right there will be a green button titled "Run". Select "Run" and wait for a popup to appear. Under the heading "Spiders" select the spider you just created. Once you are happy, click "Run".</p>
+            
+      <p>The popup will disappear once you have clicked "Run" and a new job will be added to your dashboard. You can track the progress for the new job under the heading "Running Jobs".</p>
+            
+      <p>You can access the scraped data by clicking on the hyperlinked number appearing below "Items" located as a heading under the "Running Jobs" panel. Here you can access all job-related details, progress, and settings pertaining to your spiders scraping activity.</p>
+      
+      <p>Once the job has completed, you can navigate to the far right of the screen and download your data in CSV, JSON or XML formats by selecting the green button labelled "Export".</p>
+            
       <p>Thereafter you can open it up in the spreadsheet software you will be using to process your data.</p>
-      <p><br /><br /></p>
+            
       <p>Credit</p>
+      
       <p>This curriculum has been developed by OpenUp in collaboration with School of Data.</p>
     </div>
   </section>
