@@ -1327,6 +1327,12 @@ footer {
     .btn {
       margin-top: 15px;
     }
+    .pending {
+      color: #ccc;
+      .btn {
+        background-color: $trainup-lighter;
+      }
+    }
   }
   .articles {
     background-color: $gray-light;
