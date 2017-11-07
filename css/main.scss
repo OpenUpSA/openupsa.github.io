@@ -1483,6 +1483,8 @@ footer {
   .contact {
     background-color: lighten($trainup, 40%);
     text-align: center;
+    z-index: 2;
+    position: relative;
     .container {
       max-width: 600px;
     }
@@ -1502,6 +1504,26 @@ footer {
     background-color: $trainup-opaque;
   }
   &.free {
+    .toc-list {
+      margin-top: 20px;
+      li {
+        padding-bottom: 5px;
+        padding-left: 5px;
+        border-left: 3px solid $gray;
+      }
+    }
+    .fixed-to-top {
+      position: fixed;
+      top: 0;
+      padding: 0 15px;
+      width: 390px;
+      z-index: 1;
+    }
+    @media (max-width: 1200px) {
+      .fixed-to-top {
+        width: 323.33px;
+      }
+    }
     h2 {
       margin-top: 50px;
     }
