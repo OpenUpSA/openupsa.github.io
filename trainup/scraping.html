@@ -7,7 +7,7 @@ short: Extract data hidden in PDFs, images, and web pages
 
   <section class="hero">
     <div class="container">
-      <h1 class="text-center header">Techniques for scraping data</h1>
+      <h1 id="hero-title" class="text-center header">Techniques for scraping data</h1>
       <p>Part of our collection of <a href="./index.html#free-content">basic data literacy content</a></p>
     </div>
   </section>
@@ -17,7 +17,7 @@ short: Extract data hidden in PDFs, images, and web pages
       <div class="col-md-4 table-of-contents hidden-xs hidden-sm">
         <ul class="list-unstyled toc-list">
         </ul>
-        <a class="btn btn-trainup" href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Back to top</a>
+        <a class="btn" href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Back to top</a>
       </div>
       <div id="chapter-content" class="col-md-8">
         <p>Imagine you get the data you have been waiting for. But the data you have sourced is stored in a format that cannot be opened using spreadsheet software and thus you are unable to process it in any way. What do you do?</p>
@@ -69,8 +69,8 @@ short: Extract data hidden in PDFs, images, and web pages
 
         <p>The two methods we will address in this module are <em>data scraping</em> and <em>web scraping</em>.</p>
 
-        <h3 id="remember">Remember, scraped data is often dirty</h3>
-        <div class="col-xs-6 col-sm-3 col-md-2" style="float:right">
+        <h4 id="remember">Remember, scraped data is often dirty</h4>
+        <div class="col-xs-6 col-sm-4 col-md-3" style="float:right">
           <img src="/img/trainup/basic-literacy/scraping/data-pipeline.png">
           <p><small>Image by <a href="https://schoolofdata.org">School of Data</a></small></p>
         </div>
@@ -111,7 +111,7 @@ short: Extract data hidden in PDFs, images, and web pages
         
         <p>The tool we would use to extract text or tabular data from a pdf is <a href="http://tabula.technology/">Tabula</a>.</p>
         
-        <h3 id="tabula">Tabula</h3>
+        <h4 id="tabula">Tabula</h4>
 
         <img class="border" src="/img/trainup/basic-literacy/scraping/tabula-main.jpg">
         
@@ -119,15 +119,15 @@ short: Extract data hidden in PDFs, images, and web pages
         
         <p>Please follow the <a href="http://tabula.technology/">installation instructions</a> on the website or read the <a href="https://github.com/tabulapdf/tabula#using-tabula">documentation</a> for Tabula.</p>
         
-        <h4 id="start-tabula">Getting started</h4>
+        <h5 id="start-tabula">Getting started</h5>
         
         <p>Usually when starting up Tabula, your web browser will automatically open. If it does not, open your web browser, and go to <a href="http://localhost:8080">http://localhost:8080</a>. Tabula works both online and offline.</p>
         
-        <h5 id="tabula-windows">For Windows users</h5>
+        <h6 id="tabula-windows">For Windows users</h6>
         
         <p>Tabula runs by establishing a local server environment, which means that in order for it to run a terminal box will open up. The terminal box is the little black screen that pops up when running Tabula on a computer running on a Windows operating system. As long as the terminal is open, the program will be running. If you close this, your stop the program.</p>
         
-        <h4 id="using-tabula">Using Tabula</h4>
+        <h5 id="using-tabula">Using Tabula</h5>
         
         <p>Tabula is really easy to use and make sense of. But before you can begin extracting data from your PDF, you need to upload the document from which you are extracting your data. </p>
         
@@ -143,7 +143,7 @@ short: Extract data hidden in PDFs, images, and web pages
         
         <p>Once you have downloaded your document, open it up in a spreadsheet software to verify that everything you require has actually been scraped from the pdf.</p>
         
-        <h4 id="tips-tabula">Some tips for use</h4>
+        <h5 id="tips-tabula">Some tips for use</h5>
         
         <ul>
           <li>Tabula will have some problems with merged cells so be careful of the extraction method you chose. One simple workaround is not to select the headlines when you have merged cells.</li>
@@ -323,99 +323,148 @@ short: Extract data hidden in PDFs, images, and web pages
         
         <p>Navigate to the <a href="https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&LastWardSequenceNo=10">list of ward councillors</a> on the City of Cape Town website. Copy the URL and paste it into the address bar within Portia as pictured in the example below. Most importantly, once you have pasted it be sure to hit the "enter" key on your keyboard.</p>
               
+        <img src="/img/trainup/basic-literacy/scraping/portia-6.png">
+
         <p>After hitting "enter" a window will appear displaying the contents of the URL you have entered in. Make sure the page you are on is the page you would like the spider to begin its crawl. Once you are happy, locate and click the "New Spider" button positioned alongside the address bar wherein you entered the URL.</p>
+        
+        <img src="/img/trainup/basic-literacy/scraping/portia-7.png">
               
         <p>After creating the new spider you will have to define a sample on which the spider can base its scraping activity. You can do this by selecting the "New sample" button located below the address bar wherein you entered the URL.</p>
               
-        <p>Once this has been selected it should automatically create the sample and access the "Edit Sample" area. The "Edit Sample" area consists of a menu bar with the following tools:<br /><br /> &nbsp;&nbsp;&nbsp;Select the most appropriate tool when clicking on an element</p>
+        <img src="/img/trainup/basic-literacy/scraping/portia-8.png">
+
+        <p>Once this has been selected it should automatically create the sample and access the "Edit Sample" area. The "Edit Sample" area consists of a menu bar with the following tools:</p>
+
+        <ul class="list-unstyled">
+          <li><img style="margin-right: 10px;" src="/img/trainup/basic-literacy/scraping/portia-icon-wand.png">Select the most appropriate tool when clicking on an element</li>
+          <li><img style="margin-right: 10px;" src="/img/trainup/basic-literacy/scraping/portia-icon-pointer.png">Select an element</li>
+          <li><img style="margin-right: 10px;" src="/img/trainup/basic-literacy/scraping/portia-icon-add.png">Add an element</li>
+          <li><img style="margin-right: 10px;" src="/img/trainup/basic-literacy/scraping/portia-icon-sub.png">Remove an element</li>
+          <li><img style="margin-right: 10px;" src="/img/trainup/basic-literacy/scraping/portia-icon-add-repeat.png">Add repeating element</li>
+        </ul>
         
-        <p> &nbsp;&nbsp;&nbsp;Select an element</p>
+        <p>You will be selecting the sample areas you would like the spider to scrape. To do so you need to use the magic tool <img src="/img/trainup/basic-literacy/scraping/portia-icon-wand.png">.</p>
         
-        <p> &nbsp;&nbsp;&nbsp;Add an element</p>
+        <img src="/img/trainup/basic-literacy/scraping/portia-9.png">
+
+        <p>With the magic tool <img src="/img/trainup/basic-literacy/scraping/portia-icon-wand.png"> selected you are able to annotate your first data sample. Using the magic tool, hover over the first row in the first column in the ward councilor list table. This column is titled "Ward". You need to highlight the first cell below the heading cells. In this example the first cell contains the text: "Ward 1".</p>
         
-        <p> &nbsp;&nbsp;&nbsp;Remove an element</p>
+        <p>Upon hovering, the block's appearance will become highlighted. Click on it when in a highlighted state. As you click on it in this state, in the left toolbar you will be prompted to give this selected block of content a title. Type <code>wardnumber</code> then hit "enter" on your keyboard.</p>
+
+        <img src="/img/trainup/basic-literacy/scraping/portia-10.png">
+
+        <p>Because you are scraping a list you will need to make sure that you set the sample to include multiple entries. After naming your block <code>wardnumber</code> you can hover over the block below your originally selected block in your "Ward" column. </p>
         
-        <p> &nbsp;&nbsp;&nbsp;Add repeating element</p>
+        <p>In doing so, Portia will give you the option of selecting multiple entries in this table. We recognise this by acknowledging the appearance of the "add repeat element" icon <img src="/img/trainup/basic-literacy/scraping/portia-icon-add-repeat.png">. Once this appears, you need to click on it.</p>
         
-        <p>You will be selecting the sample areas you would like the spider to scrape. To do so you need to use the magic  tool.</p>
-              
-        <p>With the magic tool  selected you are able to annotate your first data sample. Using the magic tool, hover over the first row in the first column in the ward councilor list table. This column is titled "Ward". You need to highlight the first cell below the heading cells. In this example the first cell contains the text: "Ward 1". </p>
+        <p>You know it has been set when the number that appears alongside our "wardnumber" title is changed from 1 to 10. This way we know it acknowledges all 10 entries displayed in the tabulated list on the City of Cape Town webpage. You can check this by locating "Items" on the left panel as pictured below:</p>
         
-        <p>Upon hovering, the block's appearance will become highlighted. Click on it when in a highlighted state. As you click on it in this state, in the left toolbar you will be prompted to give this selected block of content a title. Type "wardnumber" then hit "enter" on your keyboard.</p>
-              
-        <p>Because you are scraping a list you will need to make sure that you set the sample to include multiple entries. After naming your block "wardnumber" you can hover over the block below your originally selected block in your "Ward" column. </p>
-        
-        <p>In doing so, Portia will give you the option of selecting multiple entries in this table. We recognise this by acknowledging the appearance of the "add repeat element" icon . Once this appears, you need to click on it.</p>
-        
-        <p><br />You know it has been set when the number that appears alongside our "wardnumber" title is changed from 1 to 10. This way we know it acknowledges all 10 entries displayed in the tabulated list on the City of Cape Town webpage. You can check this by locating "Items" on the left panel as pictured below:</p>
+        <img src="/img/trainup/basic-literacy/scraping/portia-11.png">
               
         <p>Note: Always make it a habit to double-check the quantity of entries displayed on the sample page so that you are sure information you don't want to be excluded is left out during the scraping.</p>
+        
+        <img src="/img/trainup/basic-literacy/scraping/portia-12.png">
               
         <p>Duplicate your above activity for the next two columns.</p>
+        
+        <img src="/img/trainup/basic-literacy/scraping/portia-13.png">
               
         <p>Once you are happy with your annotated sample, be sure to click "Close sample" located below the address bar wherein you entered the URL.</p>
               
+        <img src="/img/trainup/basic-literacy/scraping/portia-14.png">
+
         <p>Now that you have defined the sample for scraping, you need to make sure that the spider knows what to crawl. The information is stored over a collection of pages that is navigated using the pagination links.</p>
+        
+        <img src="/img/trainup/basic-literacy/scraping/portia-15.png">
               
         <p>In order for the spider to crawl each of the links, you have to define a "generation URL". You can set this up by clicking on the "START PAGES" settings button located on the left panel. </p>
         
         <p>Then select "Add generation URL".</p>
+
+        <img src="/img/trainup/basic-literacy/scraping/portia-16.png">
               
         <p>After selecting "Add generation URL", the URL Generation display box will appear. We make use of this by defining the URL structure to generate multiple URLs based on the structure of the paginated URLs.</p>
         
         <p>In our example, the URL you will use is:</p>
         
-        <p><em>https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&LastWardSequenceNo=10</em></p>
+        <p><code>https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&LastWardSequenceNo=10</code></p>
         
         <p>To define the structure, start by first defining the part of the URL that does not change. This would be everything preceding the number "10" in the above URL. But how do you know this? After browsing a few of the paginated links and comparing URLs, this segment remains unchanged, or rather, fixed.</p>
         
-        <p><em>https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&LastWardSequenceNo=</em></p>
+        <p><code>https://www.capetown.gov.za/Family%20and%20home/meet-the-city/city-council/find-your-councillor-ward-or-subcouncil/show-wards?FirstWardSequenceNo=1&LastWardSequenceNo=</code></p>
         
         <p>Now that you have added the "Fixed" fragment of your URL, in order to finish constructing the URL, you have to add an additional fragment.</p>
               
+        <img src="/img/trainup/basic-literacy/scraping/portia-17.png">
+
         <p>The next part of the URL to define is the fragment that does change from link to link.</p>
         
         <p>The pagination follows a numbering system whose count ascends at intervals of 10 each time. For example: 1-10 | 11-20 | 21-30 etc.</p>
         
-        <p>After browsing a few of the paginated links, you know that the pagination begins at "0-10" and ends at "&gt;100 ", and that 10 to 20 to 30 is not consecutive numbering i.e. it is not 10, 11, 12 etc. it jumps at intervals of 10.</p>
+        <p>After browsing a few of the paginated links, you know that the pagination begins at <code>0-10</code> and ends at <code>>100</code>, and that 10 to 20 to 30 is not consecutive numbering i.e. it is not 10, 11, 12 etc. it jumps at intervals of 10.</p>
               
+        <img src="/img/trainup/basic-literacy/scraping/portia-18.png">
+
         <p>As a result of this, you cannot select the "Range" option for the next segment of the URL but will have to use the "List" function. The "Range" option only works for consecutive numbering or lettering i.e. if the pagination uses the alphabet for navigation.</p>
         
         <p>The list function works by defining individual values to be added onto the end of the fixed fragment of the URL. The list function's structure requires that each value is separated by a single blank space, and should be written as follows:</p>
         
-        <p><em>Value1</em> <em>Value2</em> <em>Value3</em></p>
+        <p><code>Value1 Value2 Value3</code></p>
         
         <p>For the example, your values would be:</p>
         
-        <p><em>10 20 30 40 50 60 70 80 90 100 &nbsp;</em></p>
+        <p><code>10 20 30 40 50 60 70 80 90 100</code></p>
         
-        <p>After checking what the URL looks like for the "&gt;100" page, we notice that it does not have a number but rather is a blank space. So I will add an additional blank space after the 100 value in my list so I can accommodate for the final "&gt;100" page to be included in the scraping process.</p>
+        <p>After checking what the URL looks like for the <code>>100</code> page, we notice that it does not have a number but rather is a blank space. So I will add an additional blank space after the 100 value in my list so I can accommodate for the final <code>>100</code> page to be included in the scraping process.</p>
         
         <p>Be sure to browse the box titled "Generation List" to assess whether a complete list of paginated URLs has been generated.</p>
-              
+        
+        <img src="/img/trainup/basic-literacy/scraping/portia-19.png">
+
         <p>Next you will have to remove the original start page while retaining the newly added start page you have just created through the "Generation URL" function.</p>
         
-        <p>You can achieve this by locating "START PAGES" in the left panel. Next to the original start page, titled by its URL, will be a red circular disc with a negative (-) sign in it. Click on this red disc to remove the start URL item you no longer need.</p>
-              
+        <p>You can achieve this by locating "START PAGES" in the left panel. Next to the original start page, titled by its URL, will be a red circular disc with a negative <code>-</code> sign in it. Click on this red disc to remove the start URL item you no longer need.</p>
+
+        <img src="/img/trainup/basic-literacy/scraping/portia-20.png">
+
         <p>Now that you have defined the URLs that need to be scraped and you have removed the original start page URL, you must deactivate any automated link crawling. You do not need this because you have already clearly defined every URL your spider has to crawl to extract the data you are scraping. In order to deactivate any automated link crawling, locate "LINK CRAWLING" on the left panel. Expand the dropdown menu and choose the setting: "Don't follow links".</p>
               
+        <img src="/img/trainup/basic-literacy/scraping/portia-21.png">
+
         <p>Once you have set the spider to not follow links be sure to click the project menu (project currently titled "Ward Councillors") on the left panel and select "Publish Project". </p>
         
         <p>You will not be able to run the spider if the project has not been published. After the project has been published, navigate to the top bar and select "Scrapinghub Dashboard".</p>
+        
+        <img src="/img/trainup/basic-literacy/scraping/portia-22.png">
               
         <p>On the far right there will be a green button titled "Run". Select "Run" and wait for a popup to appear. Under the heading "Spiders" select the spider you just created. Once you are happy, click "Run".</p>
+        
+        <img src="/img/trainup/basic-literacy/scraping/portia-23.png">
               
         <p>The popup will disappear once you have clicked "Run" and a new job will be added to your dashboard. You can track the progress for the new job under the heading "Running Jobs".</p>
+        
+        <img src="/img/trainup/basic-literacy/scraping/portia-24.png">
               
         <p>You can access the scraped data by clicking on the hyperlinked number appearing below "Items" located as a heading under the "Running Jobs" panel. Here you can access all job-related details, progress, and settings pertaining to your spiders scraping activity.</p>
         
+        <img src="/img/trainup/basic-literacy/scraping/portia-25.png">
+
         <p>Once the job has completed, you can navigate to the far right of the screen and download your data in CSV, JSON or XML formats by selecting the green button labelled "Export".</p>
               
+        <img src="/img/trainup/basic-literacy/scraping/portia-26.png">
+
         <p>Thereafter you can open it up in the spreadsheet software you will be using to process your data.</p>
               
-        <p>Credit</p>
-        
+        <h3 id="credit">Credit</h3>
         <p>This curriculum has been developed by OpenUp in collaboration with School of Data.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="https://schoolofdata.org"><img src="/img/trainup/basic-literacy/scraping/school-of-data.png"></a>
+          </div>
+          <div class="col-md-4">
+            <img src="/img/logo.png">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -423,7 +472,7 @@ short: Extract data hidden in PDFs, images, and web pages
   <section class="contact">
     <div class="container">
       <h1 class="title">Get in touch</h1>
-      <p><b>Interested in this course?</b> <a href="mailto:training@openup.org.za">Get in touch with us</a>.<br>You can also <b>request a course</b>. We can shape our curriculum around your internal datasets.</p>
+      <p><b>Was this content useful to you?</b> <a href="mailto:training@openup.org.za">Let us know!</a><br>Please <b>share or even use it to teach others</b>, you are free to share and adapt it to your needs (<a href="https://creativecommons.org/licenses/by/4.0/">full license</a>).</p>
       <a class="btn" href="mailto:training@openup.org.za">training@openup.org.za</a>
     </div>
   </section>

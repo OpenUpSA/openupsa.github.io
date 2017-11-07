@@ -1233,7 +1233,7 @@ footer {
  .btn {
     background-color: $trainup;
     color: #fff;
-    &:hover {
+    &:hover, &:active {
       background-color: $trainup-dark;
       color: #fff;
     }
@@ -1507,9 +1507,33 @@ footer {
     .toc-list {
       margin-top: 20px;
       li {
+        padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 5px;
         border-left: 3px solid $gray;
+        &.H1 {
+          background-color: $trainup;
+          font-weight: bold;
+          border-left-width: 0px;
+          a {
+            color: #fff;
+          }
+        }
+        &.H2 {
+          background-color: $trainup-lighter;
+          margin-top: 15px;
+          font-weight: bold;
+          border-left-width: 0px;
+          a {
+            color: #fff;
+          }
+        }
+        &.H3 {
+          font-weight: bold;
+        }
+        &.H4 {
+          margin-left: 10px;
+        }
       }
     }
     .fixed-to-top {
@@ -1530,10 +1554,10 @@ footer {
     h3 {
       margin-top: 40px;
     }
-    h4, h5 {
+    h4, h5, h6 {
       margin-top: 30px;
     }
-    h2, h3, h4, h5 {
+    h2, h3, h4, h5, h6 {
       font-weight: bold;
     }
     img {
