@@ -1136,10 +1136,10 @@ p {
 
 footer {
   position:relative;
+  z-index: 2;
   width: 100%;
   background-color: $green-dark;
   margin-top: 30px;
-
   a {
     color: #999;
   }
