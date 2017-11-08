@@ -1241,7 +1241,15 @@ footer {
   a, a:hover {
     color: $trainup;
   }
-
+  .page-sharing {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    a {
+      border-width: 0;
+    }
+  }
   section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1502,6 +1510,15 @@ footer {
   code {
     color: $trainup-dark;
     background-color: $trainup-opaque;
+  }
+  .page-sharing {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    a {
+      border-width: 0;
+    }
   }
   &.free {
     .toc-list {
