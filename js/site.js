@@ -52,7 +52,7 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function() {
-  if ($(this).scrollTop() > 430){  
+  if ($(this).scrollTop() > 461){  
     $('.table-of-contents').addClass("fixed-to-top");
     $('#chapter-content').addClass("col-md-offset-4");
   }
