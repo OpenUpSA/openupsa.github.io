@@ -1136,10 +1136,10 @@ p {
 
 footer {
   position:relative;
+  z-index: 2;
   width: 100%;
   background-color: $green-dark;
   margin-top: 30px;
-
   a {
     color: #999;
   }
@@ -1233,7 +1233,7 @@ footer {
  .btn {
     background-color: $trainup;
     color: #fff;
-    &:hover {
+    &:hover, &:active {
       background-color: $trainup-dark;
       color: #fff;
     }
@@ -1241,7 +1241,15 @@ footer {
   a, a:hover {
     color: $trainup;
   }
-
+  .page-sharing {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    a {
+      border-width: 0;
+    }
+  }
   section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1260,7 +1268,8 @@ footer {
     &:hover {
       text-decoration: none;
       transition: box-shadow .2s ease-in-out;
-      box-shadow: 0 5px 10px rgba(0,0,0,.15)
+      box-shadow: 0 5px 10px rgba(0,0,0,.15);
+      color: #333;
     }
     i {
       font-size: 60px;
@@ -1297,11 +1306,6 @@ footer {
   }
 
   .courses {
-    .block {
-      &:hover {
-        color: #333;
-      }
-    }
     .btn {
       margin-top: 15px;
     }
@@ -1324,7 +1328,36 @@ footer {
       margin-top: 25px;
     }
   }
+  .free-content {      
+    .explainer {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .free-content-title {
+      font-size: 28px;
+    }
+    .free-content-description {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .btn {
+      margin-top: 15px;
+    }
+    .pending {
+      color: #888;
+      .btn {
+        background-color: $trainup-lighter;
+      }
+    }
+    @media (min-width: 992px) {
+      .boxes {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
   .articles {
+    background-color: $gray-light;
     padding-bottom: 15px;
     .one-article {
       min-height: 0px;
@@ -1416,7 +1449,7 @@ footer {
       margin-bottom: 25px;
     }
   }
-  ul > li {
+  &.paid ul > li {
     font-size: 18px;
     margin-bottom: 5px;
   }
@@ -1431,6 +1464,13 @@ footer {
     }
     p {
       text-align: center;
+    }
+    a {
+      color: #fff;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }.description {
     .interested {
@@ -1451,6 +1491,8 @@ footer {
   .contact {
     background-color: lighten($trainup, 40%);
     text-align: center;
+    z-index: 2;
+    position: relative;
     .container {
       max-width: 600px;
     }
@@ -1464,6 +1506,87 @@ footer {
   }
   &:last-of-type {
     margin-bottom: -30px;
+  }
+  code {
+    color: $trainup-dark;
+    background-color: $trainup-opaque;
+  }
+  .page-sharing {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    a {
+      border-width: 0;
+    }
+  }
+  &.free {
+    .toc-list {
+      margin-top: 20px;
+      li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        border-left: 3px solid $gray;
+        &.H1 {
+          background-color: $trainup;
+          font-weight: bold;
+          border-left-width: 0px;
+          a {
+            color: #fff;
+          }
+        }
+        &.H2 {
+          background-color: $trainup-lighter;
+          margin-top: 15px;
+          font-weight: bold;
+          border-left-width: 0px;
+          a {
+            color: #fff;
+          }
+        }
+        &.H3 {
+          font-weight: bold;
+        }
+        &.H4 {
+          margin-left: 10px;
+        }
+      }
+    }
+    .fixed-to-top {
+      position: fixed;
+      top: 0;
+      padding: 0 15px;
+      width: 390px;
+      z-index: 1;
+    }
+    @media (max-width: 1200px) {
+      .fixed-to-top {
+        width: 323.33px;
+      }
+    }
+    h2 {
+      margin-top: 50px;
+    }
+    h3 {
+      margin-top: 40px;
+    }
+    h4, h5, h6 {
+      margin-top: 30px;
+    }
+    h2, h3, h4, h5, h6 {
+      font-weight: bold;
+    }
+    img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: auto;
+      max-width: 100%;
+      max-height: 350px;
+      &.border {
+        border: 1px solid $gray;
+      }
+    }
   }
 }
 
