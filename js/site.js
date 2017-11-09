@@ -46,7 +46,7 @@ $(".trainup-page .faq .question").on("click", function(){
 });
 
 $(document).ready(function() {
-  $(".trainup-course .hero h1, .trainup-course.free .content h2, .trainup-course.free .content h3, .trainup-course.free .content h4").each(function() {
+  $(".trainup-course .hero h1, .trainup-course.open .content h2, .trainup-course.open .content h3, .trainup-course.open .content h4").each(function() {
     $(".toc-list").append("<li class="+$(this).get(0).nodeName+"><a href='#"+$(this).attr("id")+"'>"+$(this).text()+"</a></li>");
   });
 });
@@ -60,4 +60,27 @@ $(window).scroll(function() {
     $('.table-of-contents').removeClass("fixed-to-top ");
     $('#chapter-content').removeClass("col-md-offset-4");
   }
+});
+
+// TrainUp open content feedback, shows message on thumbs up / down
+$(".trainup-course.open .contact .fa-thumbs-up").click(function(){
+  $(".trainup-course.open .contact .fa-thumbs-down").removeClass("selected");
+  $(".feedback .thumbs-down").hide();
+
+  $(".trainup-course.open .contact .fa-thumbs-up").addClass("selected");
+  $(".feedback .thumbs-up").show();
+
+  url = window.location.href;
+  ga('send', 'event', 'trainup-feedback', 'positive', url);
+});
+
+$(".trainup-course.open .contact .fa-thumbs-down").click(function(){
+  $(".trainup-course.open .contact .fa-thumbs-up").removeClass("selected");
+  $(".feedback .thumbs-up").hide();
+  
+  $(".trainup-course.open .contact .fa-thumbs-down").addClass("selected");
+  $(".feedback .thumbs-down").show();
+
+  url = window.location.href;
+  ga('send', 'event', 'trainup-feedback', 'negative', url);
 });
