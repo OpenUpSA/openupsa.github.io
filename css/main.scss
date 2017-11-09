@@ -1427,6 +1427,23 @@ footer {
 }
 
 .trainup-course {
+  .alert-trainup {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: $trainup-lighter;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0;
+    a {
+      color: #fff;
+      text-decoration: underline;
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
   .btn {
     background-color: $trainup;
     color: #fff;
