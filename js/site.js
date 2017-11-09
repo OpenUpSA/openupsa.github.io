@@ -46,7 +46,7 @@ $(".trainup-page .faq .question").on("click", function(){
 });
 
 $(document).ready(function() {
-  $(".trainup-course .hero h1, .trainup-course.free .content h2, .trainup-course.free .content h3, .trainup-course.free .content h4").each(function() {
+  $(".trainup-course .hero h1, .trainup-course.open .content h2, .trainup-course.open .content h3, .trainup-course.open .content h4").each(function() {
     $(".toc-list").append("<li class="+$(this).get(0).nodeName+"><a href='#"+$(this).attr("id")+"'>"+$(this).text()+"</a></li>");
   });
 });

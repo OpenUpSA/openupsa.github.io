@@ -1328,15 +1328,15 @@ footer {
       margin-top: 25px;
     }
   }
-  .free-content {      
+  .open-content {      
     .explainer {
       font-size: 18px;
       margin-bottom: 15px;
     }
-    .free-content-title {
+    .open-content-title {
       font-size: 28px;
     }
-    .free-content-description {
+    .open-content-description {
       margin-top: 10px;
       margin-bottom: 10px;
     }
@@ -1520,7 +1520,7 @@ footer {
       border-width: 0;
     }
   }
-  &.free {
+  &.open {
     .toc-list {
       margin-top: 20px;
       li {
@@ -2023,10 +2023,10 @@ footer {
   div#mce-responses {
     float:left; 
     top:-1.4em; 
-    padding:0em .5em 0em .5em; 
+    padding: 0; 
     overflow:hidden; 
-    width:90%;
-    margin: 0 5%; 
+    width: 100%;
+    margin: 0; 
     clear: both;
   }
   div.response {
@@ -2040,6 +2040,7 @@ footer {
   }
   #mce-error-response {
     display:none;
+    
   }
   #mce-success-response {
     color:#529214; 
@@ -2069,3 +2070,4 @@ footer {
     }
   }
 }
+
