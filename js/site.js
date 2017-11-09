@@ -11,28 +11,28 @@ $(function() {
     e.preventDefault();
     window.open("https://www.facebook.com/sharer/sharer.php?u="+url,
       "share", "width=600, height=400, scrollbars=no");
-      ga('send', 'social', 'facebook', 'share', url);
+      ga('send', 'event', 'share', 'facebook', url);
   });
 
   $(".page-share.twitter").on("click", function(e) {
     e.preventDefault();
     window.open("https://twitter.com/intent/tweet?&url="+url,
       "share", "width=600, height=400, scrollbars=no");
-      ga('send', 'social', 'twitter', 'share', url);
+      ga('send', 'event', 'share', 'twitter', url);
   });
 
   $(".page-share.linkedin").on("click", function(e) {
     e.preventDefault();
     window.open("https://www.linkedin.com/shareArticle?mini=true&source=OpenUp&url="+url,
       "share", "width=600, height=400, scrollbars=no");
-      ga('send', 'social', 'linkedin', 'share', url);
+      ga('send', 'event', 'share', 'linkedin', url);
   });
 
   $(".page-share.email").on("click", function(e) {
     e.preventDefault();
     var emailTitle = encodeURIComponent(document.title).replace(/&/g, '%26');
     window.location = 'mailto:?subject=' + emailTitle + '&body=I saw this OpenUp article and thought it might interest you: ' + url;
-    ga('send', 'social', 'email', 'share', url);
+    ga('send', 'event', 'share', 'email', url);
   });
 });
 
@@ -60,4 +60,27 @@ $(window).scroll(function() {
     $('.table-of-contents').removeClass("fixed-to-top ");
     $('#chapter-content').removeClass("col-md-offset-4");
   }
+});
+
+// TrainUp open content feedback, shows message on thumbs up / down
+$(".trainup-course.open .contact .fa-thumbs-up").click(function(){
+  $(".trainup-course.open .contact .fa-thumbs-down").removeClass("selected");
+  $(".feedback .thumbs-down").hide();
+
+  $(".trainup-course.open .contact .fa-thumbs-up").addClass("selected");
+  $(".feedback .thumbs-up").show();
+
+  url = window.location.href;
+  ga('send', 'event', 'trainup-feedback', 'positive', url);
+});
+
+$(".trainup-course.open .contact .fa-thumbs-down").click(function(){
+  $(".trainup-course.open .contact .fa-thumbs-up").removeClass("selected");
+  $(".feedback .thumbs-up").hide();
+  
+  $(".trainup-course.open .contact .fa-thumbs-down").addClass("selected");
+  $(".feedback .thumbs-down").show();
+
+  url = window.location.href;
+  ga('send', 'event', 'trainup-feedback', 'negative', url);
 });

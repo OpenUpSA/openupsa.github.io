@@ -1587,6 +1587,28 @@ footer {
         border: 1px solid $gray;
       }
     }
+    .contact {
+      .useful i {
+        font-size: 48px;
+        cursor: pointer;
+        margin: 0 15px;
+        &.selected {
+          &.fa-thumbs-up {
+            color: $liberation-dark;
+          }
+          &.fa-thumbs-down {
+            color: $activecitizenry-dark;
+          }
+        }
+      }
+      .feedback {
+        margin-top: 20px;
+        font-size: 32px;
+        .thumbs-up, .thumbs-down {
+          display: none;
+        }
+      }
+    }
   }
 }
 
