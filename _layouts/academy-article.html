@@ -1,0 +1,44 @@
+---
+layout: trainup
+---
+<div class="container single-article single-academy-article">
+
+  <article>
+    <div class="row header">
+      <div class="col-md-8 col-md-offset-2">
+
+        <div class="alert alert-trainup">This article was written by a student of OpenUp's former Data Journalism Academy</div>
+
+        <h1>{{ page.title }}</h1>
+        <p class="short">{{ page.short }}</p>
+
+        <div class="row">
+          <div class="col-sm-6 author-date">
+            <small>
+              by {% if page.author-url %}<a href="{{ page.author-url }}">{{ page.author }}</a>{% else %}{{ page.author }}{% endif %} for <a href="{{ page.original-url }}">{{ page.original }}</a>
+            </small>
+          </div>
+          <div class="col-sm-6 top-share">
+            {% include social_sharing.html %}
+          </div>
+        </div>
+        <img class="featured-image" src="{{ site.baseurl }}/img/trainup/academy-articles/{{ page.image }}">
+      </div>
+    </div>
+    <div class="row article-content">
+      <div class="col-md-8 col-md-offset-2">
+        {{ content }}
+      </div>
+    </div>
+  </article>
+
+  <section class="sharing row">
+    <div class="col-md-4 col-md-offset-2">
+      <a class="btn btn-home" href="../trainup"><i class="fa fa-fw fa-arrow-left" aria-hidden="true"></i> Back to TrainUp home</a>
+    </div>
+    <div class="col-md-4">
+      {% include social_sharing.html %}
+    </div>
+  </section>
+
+</div>
