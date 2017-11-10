@@ -1226,7 +1226,11 @@ footer {
       left: 25px;
       width: calc(100% - 50px);
     }
+    .one-article {
+      min-height: 0;
+    }
   }
+
 }
 
 .trainup-page {
