@@ -93,14 +93,14 @@ layout: base
 
 					<div class="row current">
 						{% for member in site.team %}
-							{% unless member.external or member.alumni %}
+							{% unless member.alumni %}
 								<div class="col-sm-6 col-md-4">
 									<div class="row">
 										<div class="col-xs-6 image">
-											<a href="{{ member.url }}"><img src="/img/team/{{ member.name }}.jpg"></a>
+											<a href="{% if member.external %}{{ member.external-url }}{% else %}{{ member.url }}{% endif %}""><img src="/img/team/{{ member.name }}.jpg"></a>
 										</div>
 										<div class="col-xs-6 name-title">
-											<a href="{{ member.url }}"><div class="member-name">{{ member.full-name }}</div></a>
+											<a href="{% if member.external %}{{ member.external-url }}{% else %}{{ member.url }}{% endif %}"><div class="member-name">{{ member.full-name }}</div></a>
 											<div class="member-position">{{ member.position }}</div>
 										</div>
 									</div>
@@ -112,47 +112,6 @@ layout: base
 					<p class="lead">
 						Would you like to join our team? See if <a href="/careers.html">we have an open position for you</a>.
 					</p>
-
-					<h3>People we work with</h3>
-					<div class="row external">
-						{% for member in site.team %}
-							{% if member.external %}
-								<div class="col-sm-6 col-md-4">
-									<div class="row">
-										<div class="col-xs-6 image">
-											<a href="{{ member.external-url }}"><img src="/img/team/{{ member.name }}.jpg"></a>
-										</div>
-										<div class="col-xs-6 name-title">
-											<a href="{{ member.external-url }}"><div class="member-name">{{ member.full-name }}</div></a>
-											<div class="member-position">{{ member.position }}</div>
-										</div>
-									</div>
-								</div>
-							{% endif %}
-						{% endfor %}
-					</div>
-
-					<h3>People we used to work with</h3>
-					<div class="row alumni">
-						{% for member in site.team %}
-							{% if member.alumni %}
-								<div class="col-sm-6 col-md-4">
-									<div class="row">
-										<div class="col-xs-6 image">
-											<a href="{{ member.external-url }}"><img src="/img/team/{{ member.name }}.jpg"></a>
-										</div>
-										<div class="col-xs-6 name-title">
-											<a href="{{ member.external-url }}"><div class="member-name">{{ member.full-name }}</div></a>
-											<div class="member-position">{{ member.position }}</div>
-										</div>
-									</div>
-								</div>
-							{% endif %}
-						{% endfor %}
-					</div>
-
-
-				</section>
 
 				<section class="funders">
 					<h2>Our funders</h2>
