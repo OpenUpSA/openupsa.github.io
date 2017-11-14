@@ -2,7 +2,7 @@
 layout: trainup
 title: The Forgotten People
 image: forgotten.jpg
-short: 
+short: Thousands of people, who have been living in dire poverty for years, “forgotten” by the authorities because they are missing from census data
 embed: true
 ---
 <div class="container single-article single-academy-article">
