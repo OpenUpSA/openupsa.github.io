@@ -84,3 +84,12 @@ $(".trainup-course.open .contact .fa-thumbs-down").click(function(){
   url = window.location.href;
   ga('send', 'event', 'trainup-feedback', 'negative', url);
 });
+
+// TrainUp academy stories, three shown by default, buttons shows three more
+$(".trainup-page .academy.article-list .one-article.hidden").slice(0,3).removeClass("hidden");
+$(".trainup-page .academy.article-list .btn.show-more").click(function (){
+  $(".trainup-page .academy.article-list .one-article.hidden").slice(0,3).removeClass("hidden");
+  if ( $(".trainup-page .academy.article-list .one-article.hidden").length == 0 ) {
+    $(".trainup-page .academy.article-list .btn.show-more").hide()
+  };
+});

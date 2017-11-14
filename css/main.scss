@@ -723,7 +723,6 @@ body {
       margin-bottom: 30px;
     }
   }
-
   .related-articles {
     img {
       width: 100%;
@@ -738,7 +737,6 @@ body {
       left: 25px;
     }
   }
-
   .social-sharing {
     ul {
       &.share-buttons{
@@ -765,9 +763,42 @@ body {
       }
     }
   }
-
   .article-footer {
     background-color: $green-light;
+  }
+  &.single-academy-article {
+    a {
+      color: $trainup;
+    }
+    article {
+      margin-bottom: 30px;
+    }
+    .alert-trainup {
+      background-color: $trainup-opaque;
+      color: #333;
+      font-weight: bold;
+      border-radius: 0;
+    }
+    .btn {
+      background-color: $trainup;
+      color: #fff;
+      &:hover {
+        background-color: $trainup-dark;
+      }
+    }
+    .btn-home {
+      margin-bottom: 20px;
+    }
+    .page-sharing {
+      .btn {
+        color: $trainup;
+        background-color: #fff;
+        &:hover {
+          background-color: $trainup;
+          color: #fff;
+        }
+      }
+    }
   }
 }
 
@@ -1374,6 +1405,15 @@ footer {
     }
     .one-article {
       min-height: 0px;
+    }
+    .show-more {
+      cursor: pointer;
+    }
+    @media (min-width: 992px) {
+      .article-row {
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
   }
   @media (max-width: 992px) {
