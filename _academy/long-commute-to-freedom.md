@@ -1,8 +1,8 @@
 ---
 layout: trainup
-title: The Forgotten People
-image: forgotten.jpg
-short: 
+title: Long Commute to Freedom
+image: long-commute-to-freedom.jpg
+short: Black people in particular bear the brunt of a decade-long focus on building houses instead of cities "at whatever cost"
 embed: true
 ---
 <div class="container single-article single-academy-article">
@@ -13,7 +13,7 @@ embed: true
 </div>
 <div class="row article-content">
   <div class="col-md-8 col-md-offset-2">
-  <iframe src="https://static.code4sa.org/forgotten-people/index.html?initialWidth=843&amp;childId=code4sa-forgotten-people-index" scrolling="no" marginheight="0" style="height: 7489px;" width="100%" height="7489px" frameborder="0"></iframe>
+    <script type="text/javascript" src="https://static.code4sa.org/apartheid/embed-story.js"></script>
   </div>
 </div>
 <section class="sharing row">

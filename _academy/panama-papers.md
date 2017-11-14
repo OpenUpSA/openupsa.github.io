@@ -4,7 +4,7 @@ title: "The Panama Papers in Africa: How tax avoidance is robbing Africa of bill
 author: Sarah Evans
 author-url: https://twitter.com/SarahPeace6
 image: panama-papers.jpg
-short: From 2003 to 2012, developing nations around the world lost $6.6-trillion due to illicit outflows. Sub-Saharan Africa lost the most  – 5.5% of GDP
+short: From 2003 to 2012, developing nations around the world lost $6.6-trillion due to illicit outflows. Sub-Saharan Africa lost the most – 5.5% of GDP
 ---
 <small>Image by VectorOpenStock [<a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>], <a href="https://commons.wikimedia.org/wiki/File%3APanama-papers.jpg">via Wikimedia Commons</a></small>
 

@@ -1406,6 +1406,15 @@ footer {
     .one-article {
       min-height: 0px;
     }
+    .show-more {
+      cursor: pointer;
+    }
+    @media (min-width: 992px) {
+      .article-row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
   }
   @media (max-width: 992px) {
     .article-list {

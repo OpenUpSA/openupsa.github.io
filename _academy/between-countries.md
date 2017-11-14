@@ -1,12 +1,12 @@
 ---
 layout: academy-article
-title: Between countries
+title: Between Countries
 author: Farren Collins
 author-url: https://twitter.com/Farren_Collins
 original: TimesLive
 original-url: http://www.timeslive.co.za/africa/2016/03/22/Between-countries%E2%80%9A-Ghislain-is-stuck-in-limbo
 image: between-countries.jpg
-short: South Africa is the third-most popular destination for refugees, but it rejects more refugee applications than any other country.
+short: South Africa is the third-most popular destination for refugees, but it rejects more refugee applications than any other country
 ---
 <p>When Ghislain’s father died in Congo Brazzaville last year, the threat of either prison or death meant the 35 year old father of one could not go home to bury him. Instead, he wept alone in his room in the house he takes care of in Cape Town.</p>
 
