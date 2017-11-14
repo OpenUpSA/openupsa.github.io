@@ -1559,7 +1559,7 @@ footer {
         }
         &.H2 {
           background-color: $trainup-lighter;
-          margin-top: 15px;
+          margin-top: 5px;
           font-weight: bold;
           border-left-width: 0px;
           a {
@@ -1607,6 +1607,12 @@ footer {
       &.border {
         border: 1px solid $gray;
       }
+    }
+    .well, pre {
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+      background-color: $gray-light;
     }
     .contact {
       .useful i {
