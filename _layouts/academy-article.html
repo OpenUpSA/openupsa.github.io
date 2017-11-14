@@ -15,7 +15,7 @@ layout: trainup
         <div class="row">
           <div class="col-sm-6 author-date">
             <small>
-              by {% if page.author-url %}<a href="{{ page.author-url }}">{{ page.author }}</a>{% else %}{{ page.author }}{% endif %} for <a href="{{ page.original-url }}">{{ page.original }}</a>
+              by {% if page.author-url %}<a href="{{ page.author-url }}">{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}{% if page.original %} for <a href="{{ page.original-url }}">{{ page.original }}{% endif %}</a>
             </small>
           </div>
           <div class="col-sm-6 top-share">
