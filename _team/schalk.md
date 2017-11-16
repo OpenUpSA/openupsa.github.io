@@ -2,7 +2,7 @@
 layout: team
 full-name: Schalk Venter
 name: schalk
-position: Front-end Developer
+position: Developer
 email: schalk@openup.org.za
 biography:
 - highlight: Received Master of Philosophy Degree in Visual Arts at Stellenbosch University

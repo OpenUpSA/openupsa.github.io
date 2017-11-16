@@ -2,7 +2,7 @@
 layout: team
 full-name: Jameelah Parker
 name: jameelah
-position: Financial Manager
+position: General Manager
 current: currently working on
 email: jameelah@openup.org.za
 biography:
