@@ -2,7 +2,6 @@
 layout: team
 full-name: Naeelah Samsodien
 name: naeelah
-position: Administrative Assistant
-external: true
-external-url: #
+position: Office and Logistics administrator
+external-url: 
 ---

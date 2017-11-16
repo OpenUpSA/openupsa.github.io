@@ -2,7 +2,7 @@
 layout: team
 full-name: Julia Renouprez
 name: julia
-position: Data Wrangler / Project Manager
+position: Project Manager
 current: currently working on
 email: julia@openup.org.za
 facilitator: true

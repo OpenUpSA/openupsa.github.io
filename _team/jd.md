@@ -2,7 +2,7 @@
 layout: team
 full-name: JD Bothma
 name: jd
-position: Software Developer
+position: Senior Developer
 current: currently working on
 email: jd@openup.org.za
 biography:

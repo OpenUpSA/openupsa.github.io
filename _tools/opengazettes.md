@@ -21,6 +21,7 @@ creators:
 - name: greg
 - name: roxanne
 - name: lailah
+- name: guus
 external-creators:
 - name: Lion Summerbell
   image: lion.jpg
