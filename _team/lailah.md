@@ -2,7 +2,7 @@
 layout: team
 full-name: Lailah Ryklief
 name: lailah
-position: Data Trainer
+position: "Digital Storyteller / Data Trainer"
 current: currently working on
 email: lailah@openup.org.za
 facilitator: true
