@@ -398,6 +398,33 @@ body {
       font-family: 'News Cycle', sans-serif;
       font-size: 26px;
     }
+    .tagline {
+      @media (min-width: $screen-md) {
+        border-right: 1px solid #fff;
+        h3 {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .signup {
+      @media (min-width: $screen-md) {
+        padding-left: 40px;
+      }
+      padding-top: 30px;
+      input.email {
+        color: #333;
+        border: none !important;
+      }
+      .btn {
+        background-color: $green-dark;
+        &:hover {
+          background-color: $green-darker;
+        }
+      }
+      #mc_embed_signup form {
+        margin-top: 10px;
+      }
+    }
   }
   .value-adds, .partners, .openness {
     padding-top: 70px;
