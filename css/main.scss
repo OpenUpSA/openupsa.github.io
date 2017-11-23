@@ -264,7 +264,6 @@ body {
     -webkit-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
     -moz-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
     box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
-
     .nav {
       a {
         border-radius: 0;
@@ -325,6 +324,9 @@ body {
       font-family: 'Libre Franklin', sans-serif;
       font-size: 15px;
       font-weight: bold;
+      @media (min-width: 992px) and (max-width: 1199px) {
+        display: none;
+      }
     }
   }
 
@@ -2158,4 +2160,3 @@ footer {
     }
   }
 }
-
