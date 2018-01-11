@@ -51,6 +51,6 @@ This two day short course will be hosted in Johannesburg and in Cape Town, click
 
 # CSOs, book your free seats!
 
-As part of our Open Intake, we will be offering two free seats in our Source & Clean for data storytelling short course. If you work for a non-profit organisation, [complete the application](https://docs.google.com/forms/d/e/1FAIpQLSeMKT63Fi8DqPo-Ivil9TBaqh53VbslgH0jsk3ld1z8z8fg0A/viewform) to qualify for a free seat in Johannesburg or Cape Town.
+As part of our Open Intake, we will be offering two free seats in our Source & Clean for data storytelling short course. If you work for a non-profit organisation, [complete this application](https://docs.google.com/forms/d/e/1FAIpQLSeMKT63Fi8DqPo-Ivil9TBaqh53VbslgH0jsk3ld1z8z8fg0A/viewform) to qualify for a free seat in Johannesburg or Cape Town.
 
 For any further questions, please get in touch with us via email at training@openup.org.za
