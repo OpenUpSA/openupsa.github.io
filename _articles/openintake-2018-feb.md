@@ -38,7 +38,7 @@ In order to identify the trends, patterns or anomalies that provide us with fact
 
 # About the course
 
-In February 2018, TrainUp, OpenUp’s training arm, will be running a two day short course on how to Source and Clean data for storytelling. This course is comprised on the following modules:
+In February 2018, TrainUp, OpenUp’s training arm, will be running a two day short course on how to Source and Clean data for storytelling. This course is comprised of the following modules:
 
 * Mastering Google-Fu (how to conduct advanced google searches)
 * Metadata & the Data Biography
