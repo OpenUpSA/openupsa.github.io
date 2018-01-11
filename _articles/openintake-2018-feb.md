@@ -4,7 +4,7 @@ author: lailah
 title: "Learn how to Source & Clean data"
 date: 2018-01-11
 short: A key ability for anyone who wants to communicate insights through data storytelling is to be able to find, extract and transform relevant data into machine readable format.
-image: what-story.jpg
+image: oi-2018-feb.jpg
 themes:
 - name: literacy
 tools:
