@@ -1,0 +1,27 @@
+---
+layout: trainup
+title: Welcome to Los Angeles, Cape Town
+image: la.jpg
+short: Los Angeles, like most other informal settlements scattered across South Africa, has no electricity, not enough toilets and too few taps. Residents have taken it upon themselves to look after their settlement.
+embed: true
+---
+<div class="container single-article single-academy-article">
+<div class="row header">
+<div class="col-md-8 col-md-offset-2">
+<div class="alert alert-trainup">This article was written by a student of OpenUp's former Data Journalism Academy</div>
+</div>
+</div>
+<div class="row article-content">
+  <div class="col-md-8 col-md-offset-2">
+  <iframe src="https://static.code4sa.org/welcome-to-los-angeles/index.html?initialWidth=843&amp;childId=code4sa-welcome-to-los-angeles-index" scrolling="no" marginheight="0" style="height: 6127px;" width="100%" height="6127px" frameborder="0"></iframe>
+  </div>
+</div>
+<section class="sharing row">
+  <div class="col-md-4 col-md-offset-2">
+    <a class="btn btn-home" href="../trainup"><i class="fa fa-fw fa-arrow-left" aria-hidden="true"></i> Back to TrainUp home</a>
+  </div>
+  <div class="col-md-4">
+    {% include social_sharing.html %}
+  </div>
+</section>
+</div>

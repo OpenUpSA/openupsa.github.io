@@ -2,11 +2,9 @@
 layout: team
 full-name: Julia Renouprez
 name: julia
-position: Data Wrangler / Project Manager
+position: Project Manager / Data Trainer
 current: currently working on
 email: julia@openup.org.za
-external: true
-external-url: https://twitter.com/julia_renouprez
 facilitator: true
 biography:
 - highlight: B Comm Industrial Psychology (UNISA)

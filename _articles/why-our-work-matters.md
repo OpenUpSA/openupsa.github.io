@@ -8,10 +8,8 @@ short: |
 image: our-work-matters.jpg
 tools:
 - name: openbylaws
-types:
-- name: opinion
 themes:
-- name: activecitizenry
+- name: empowerment
 featured: true
 ---
 

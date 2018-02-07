@@ -5,6 +5,7 @@ name: roxanne
 position: Corporate Data Researcher
 current: currently working on
 email: roxanne@openup.org.za
+alumni: true
 biography:
 - highlight: In my previous life I worked in education activism and research, where I spent a lot of time marching, mobilising and learning how it's done from the youth
 - highlight: BA at UCT, where I did a triple major in subjects completely unrelated to anything I do now, then Journalism at Wits, where I worked in the Wits Vuvuzela newsroom

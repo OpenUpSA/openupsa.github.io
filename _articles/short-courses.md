@@ -5,10 +5,10 @@ title: "Learn how to work with data"
 date: 2017-06-09
 short: "OpenUp re-structures short course training offering"
 image: short-courses.jpg
-types:
-- name: launch
+tools:
+- name: trainup
 themes:
-- name: education
+- name: literacy
 featured: true
 ---
 

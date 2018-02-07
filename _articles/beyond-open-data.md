@@ -6,11 +6,10 @@ date: 2017-07-12
 short: "When it comes to open data we have learnt that data just being open, available and accessible is not enough. Whilst we don’t have all the answers, we do have some learnings to share."
 image: OpenData.jpg
 types:
-- name: other
 themes:
 - name: tech
 - name: activecitizenry
-- name: opendata
+- name: liberation
 ---
 
 ## In the Beginning

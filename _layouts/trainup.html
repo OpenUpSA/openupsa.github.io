@@ -1,0 +1,82 @@
+---
+layout: raw
+---
+<!-- schema -->
+<span class="hidden" itemscope itemtype="http://schema.org/NGO">
+  <span itemprop="name">OpenUp</span>
+  <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <span itemprop="streetAddress">1 Thicket St, Newlands</span>
+    <span itemprop="addressLocality">Cape Town</span>,
+    <span itemprop="addressRegion">Western Cape</span>
+    <span itemprop="postalCode">7725</span>
+  </span>
+  <span itemprop="telephone">+27216716306</span>
+  <span itemprop="email">info@openup.org.za</span>
+  <span itemprop="url">https://openup.org.za</span>
+  <span itemprop="description">We empower citizens to improve their lives and communities.</span>
+  <img itemprop="logo" src="https://openup.org.za/img/logo.png"/>
+</span>
+
+<header class="site-header">
+  <nav class="navbar navbar-default navbar-static-top global-nav" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#global-navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ site.baseurl }}/">
+          <img src="/img/logo.svg" />
+        </a>
+      </div>
+
+      <div id="global-navbar-collapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/tools">Tools</a></li>
+          <li><a href="/trace">TRACE</a></li>
+          <li><a href="/trainup">Data training</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="http://codebridge.org.za">Community</a></li>
+        </ul>
+
+        <form class="navbar-form navbar-right search-form" action="/search.html" method="get">
+          <input type="text" class="form-control" name="q" placeholder="Search..." autocomplete="off">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-default navbar-static-top courses-nav" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#theme-navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="navbar-brand">TrainUp</span>
+      </div>
+
+      <div id="theme-navbar-collapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a class="badge" href="/trainup/#courses">Our courses</a></li>
+          <li><a class="badge" href="/trainup/#open-content">Open content</a></li>
+          <li><a class="badge" href="/trainup/#articles">Latest news</a></li>
+          <li><a class="badge" href="/trainup/#stories">Data stories</a></li>
+          <li><a class="badge" href="/trainup/#faq">FAQ</a></li>
+          <li><a class="badge" href="/trainup/#taught">Who we've taught</a></li>
+          <li><a class="badge" href="mailto:training@openup.org.za">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+{{ content }}
+
+{% include footer.html %}

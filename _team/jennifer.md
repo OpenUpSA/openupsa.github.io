@@ -2,7 +2,7 @@
 layout: team
 full-name: Jennifer Walker
 name: jennifer
-position: Head of Operations
+position: Accountability Stack Lead
 current: currently working on
 email: jennifer@openup.org.za
 biography:

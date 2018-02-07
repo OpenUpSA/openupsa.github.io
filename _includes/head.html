@@ -14,13 +14,13 @@
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
   <meta name="twitter:description" content="{% if page.short %}{{ page.short }}{% elsif page.oneliner %}{{ page.oneliner }}{% else %}{{ site.description }}{% endif %}">
   <meta name="twitter:creator" content="@openupsa">
-  <meta name="twitter:image" content="{% if page.layout == 'article' %}{{ site.url }}/img/articles/{{ page.image }}{% elsif page.layout == 'tool' %}{{ site.url }}/img/tools/{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}">
+  <meta name="twitter:image" content="{% if page.layout == 'article' %}{{ site.url }}/img/articles/{{ page.image }}{% elsif page.layout == 'tool' %}{{ site.url }}/img/tools/{{ page.image }}{% elsif page.layout == 'trainup' %}{{ site.url }}/img/tools/{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}">
 
   <!-- Open Graph data -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
   <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}" />
   <meta property="og:url" content="https://openup.org.za{{ page.url }}" />
-  <meta property="og:image" content="{% if page.layout == 'article' %}{{ site.url }}/img/articles/{{ page.image }}{% elsif page.layout == 'tool' %}{{ site.url }}/img/tools/{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}" />
+  <meta property="og:image" content="{% if page.layout == 'article' %}{{ site.url }}/img/articles/{{ page.image }}{% elsif page.layout == 'tool' %}{{ site.url }}/img/tools/{{ page.image }}{% elsif page.layout == 'trainup' %}{{ site.url }}/img/tools/{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}" />
   <meta property="og:description" content="{% if page.short %}{{ page.short }}{% elsif page.oneliner %}{{ page.oneliner }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}" />
 
@@ -33,6 +33,6 @@
     <link rel="stylesheet" href="{{ css }}"></script>
   {% endfor %}
 
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 </head>

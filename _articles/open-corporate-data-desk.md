@@ -9,10 +9,8 @@ short: |
 image: open-corporates.jpg
 tools:
 - name: trace
-types:
-- name: launch
 themes:
-- name: opendata
+- name: liberation
 ---
 
 Welcome to OpenUp’s Data Desk. Our mission is simple: To make corporate data freely and publically available, and to empower you to hold the right people in the corporate sector accountable when they do things that affect your everyday life. 

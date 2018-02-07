@@ -8,11 +8,8 @@ short: |
 image: bylaws-indigo.jpg
 tools:
 - name: openbylaws
-types:
-- name: launch
 themes:
-- name: cogovernance
-- name: activecitizenry
+- name: tech
 featured: true
 ---
 
@@ -33,4 +30,3 @@ Indigo has made it significantly easier and faster to publish new by-laws to Ope
 We're looking for community volunteers to help keep the by-laws on OpenBylaws.org.za updated and to add more municipalities to reach our goal of all by-laws for the whole of South Africa. If you're interested, please get in touch by emailing [info@openup.org.za](mailto:info@openup.org.za).
 
 Both Open By-laws and the Indigo Platform are open source projects that anyone can re-use. You can read about installing and using the Indigo Platform at [indigo.readthedocs.org](http://indigo.readthedocs.org/en/latest/) and you can find the OpenBylaws.org.za [website on GitHub](https://github.com/longhotsummer/openbylaws.org.za).
-

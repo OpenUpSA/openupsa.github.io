@@ -9,9 +9,8 @@ short: |
   All too often powerful, simple-to-use data tools for journalists are built and, after an initial buzz, they end up hardly being used by the very users they target.
 image: building-not-enough.jpg
 types:
-- name: opinion
 themes:
-- name: opendata
+- name: activecitizenry
 ---
 
 “If you build it, they will come” is the classic line uttered by the character played by Kevin Costner in the 1989 hit movie “Field of Dreams.” It tells the story of an Iowa farmer who keeps hearing voices telling him to plough up his corn fields and build a baseball stadium in the middle of nowhere.
