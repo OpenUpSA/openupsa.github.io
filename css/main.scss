@@ -1567,7 +1567,8 @@ footer {
         text-decoration: none;
       }
     }
-  }.description {
+  }
+  .description {
     .interested {
       margin-top: 15px;
       font-weight: bold;
@@ -1710,6 +1711,9 @@ footer {
         }
       }
     }
+  }
+  .benefits {
+      text-align: center;
   }
 }
 
