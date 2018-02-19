@@ -1395,11 +1395,29 @@ footer {
   .enroll {
     h1 {
       text-align: center;
+      padding-bottom: 25px;
     }
-    .benefits {
+    h2 {
+      font-weight: bold;
       text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .benefits-grid {
+      margin: 50px 0px;
+      .benefits {
+        text-align: center;
+        img {
+          width: 150px;
+        }
+      }
+    }
+    .published {
       img {
-        width: 175px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
       }
     }
   }
