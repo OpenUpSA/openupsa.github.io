@@ -1371,7 +1371,7 @@ footer {
 
   .courses {
     .btn {
-      margin-top: 15px;
+      margin-top: 25px;
     }
     .title {
       margin-bottom: 60px;
@@ -1379,6 +1379,28 @@ footer {
     }
     .course-title {
       font-size: 28px;
+    }
+    .learn-bullets {
+      text-align: left;
+      padding-top: 25px;
+      ul {
+        margin-left: -40px;
+        li {
+          font-size: 14px;
+          list-style-type: none;
+        }
+      }
+    }
+  }
+  .enroll {
+    h1 {
+      text-align: center;
+    }
+    .benefits {
+      text-align: center;
+      img {
+        width: 175px;
+      }
     }
   }
   .single-course {
