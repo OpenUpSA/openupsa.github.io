@@ -1678,6 +1678,16 @@ footer {
       font-size: 20px;
     }
   }
+  .open-content {
+    .trainup-section-annotation {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    h1 {
+      text-align: center;
+    }
+  }
   &:last-of-type {
     margin-bottom: -30px;
   }
