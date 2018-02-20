@@ -1380,6 +1380,11 @@ footer {
     .course-title {
       font-size: 28px;
     }
+    .trainup-section-annotation {
+      font-weight: bold;
+      text-align: center;
+      font-size: 18px;
+    }
     .learn-bullets {
       text-align: left;
       padding-top: 25px;
@@ -1414,6 +1419,11 @@ footer {
           width: 150px;
         }
       }
+    }
+    .trainup-section-annotation {
+      text-align:center;
+      font-weight:bold;
+      font-size:18px;
     }
     .published {
       img {
@@ -1491,7 +1501,7 @@ footer {
     background-color: #f8f8f8;
     padding-top: 20px;
     padding-bottom: 20px;
-    .trainup-calendar {
+    .trainup-section-annotation {
       font-weight: bold;
       font-size: 18px;
       text-align: center;
@@ -1516,6 +1526,27 @@ footer {
     p {
       margin: 15px 0;
       font-size: 20px;
+    }
+    .trainup-section-annotation {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    #mc_embed_signup {
+      background-color: transparent;
+      input.button {
+        background-color: $trainup;
+        color: #fff;
+        font-weight:bold;
+        font-family: 'Libre Franklin', sans-serif;
+        border-radius: 0px;
+        :hover, :active {
+          background-color: $trainup-dark;
+        }
+      }
+      input.email {
+        border: 1px solid $trainup;
+        border-radius: 0px;
+      }
     }
   }
   .faq {
