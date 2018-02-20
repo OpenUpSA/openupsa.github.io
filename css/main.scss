@@ -1475,12 +1475,20 @@ footer {
   .articles {
     background-color: $gray-light;
     padding-bottom: 15px;
+    h1 {
+      text-align: center;
+    }
     .one-article {
       min-height: 0px;
     }
+    .trainup-section-annotation {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
   }
   .academy {
-    padding-top: 15px;
+    margin-top: 15px;
     .title-image-wrap {
       margin-bottom: 10px;
     }
@@ -1489,6 +1497,14 @@ footer {
     }
     .show-more {
       cursor: pointer;
+    }
+    h1 {
+      text-align: center;
+    }
+    .trainup-section-annotation {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
     }
     @media (min-width: 992px) {
       .article-row {
@@ -1515,7 +1531,7 @@ footer {
     }
   }
   .contact {
-    background-color: lighten($trainup, 40%);
+    background-color: #e2d4df;
     text-align: center;
     .container {
       max-width: 600px;
@@ -1549,8 +1565,26 @@ footer {
       }
     }
   }
+  .open-content {
+    .trainup-section-annotation {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    h1 {
+      text-align: center;
+    }
+  }
   .faq {
     background-color: $gray-light;
+    .trainup-section-annotation {
+      text-align:center;
+      font-weight:bold;
+      font-size:18px;
+    }
+    h1 {
+      text-align:center;
+    }
     .question {
       margin-top: 15px;
       font-weight: bold;
@@ -1676,16 +1710,6 @@ footer {
     p {
       margin: 15px 0;
       font-size: 20px;
-    }
-  }
-  .open-content {
-    .trainup-section-annotation {
-      text-align: center;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    h1 {
-      text-align: center;
     }
   }
   &:last-of-type {
