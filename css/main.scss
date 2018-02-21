@@ -1371,7 +1371,7 @@ footer {
 
   .courses {
     .btn {
-      margin-top: 25px;
+      margin-top: 15px;
     }
     .title {
       margin-bottom: 60px;
@@ -1379,59 +1379,6 @@ footer {
     }
     .course-title {
       font-size: 28px;
-    }
-    .trainup-section-annotation {
-      font-weight: bold;
-      text-align: center;
-      font-size: 18px;
-    }
-    .learn-bullets {
-      text-align: left;
-      padding-top: 25px;
-      ul {
-        margin-left: -40px;
-        li {
-          font-size: 16px;
-          list-style-type: none;
-        }
-      }
-    }
-  }
-  .enroll {
-    padding-top: 0px;
-    h1 {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    h2 {
-      font-weight: bold;
-      text-align:center;
-      margin-bottom: 25px;
-    }
-    p {
-      text-align: center;
-      margin-bottom: 25px;
-    }
-    .benefits-grid {
-      margin: 25px 0px;
-      .benefits {
-        text-align: center;
-        img {
-          width: 150px;
-        }
-      }
-    }
-    .trainup-section-annotation {
-      text-align:center;
-      font-weight:bold;
-      font-size:18px;
-    }
-    .published {
-      img {
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-      }
     }
   }
   .single-course {
@@ -1476,20 +1423,12 @@ footer {
   .articles {
     background-color: $gray-light;
     padding-bottom: 15px;
-    h1 {
-      text-align: center;
-    }
     .one-article {
       min-height: 0px;
     }
-    .trainup-section-annotation {
-      font-size: 18px;
-      font-weight: bold;
-      text-align: center;
-    }
   }
   .academy {
-    margin-top: 15px;
+    padding-top: 15px;
     .title-image-wrap {
       margin-bottom: 10px;
     }
@@ -1498,14 +1437,6 @@ footer {
     }
     .show-more {
       cursor: pointer;
-    }
-    h1 {
-      text-align: center;
-    }
-    .trainup-section-annotation {
-      text-align: center;
-      font-weight: bold;
-      font-size: 18px;
     }
     @media (min-width: 992px) {
       .article-row {
@@ -1518,11 +1449,6 @@ footer {
     background-color: #f8f8f8;
     padding-top: 20px;
     padding-bottom: 20px;
-    .trainup-section-annotation {
-      font-weight: bold;
-      font-size: 18px;
-      text-align: center;
-    }
   }
   @media (max-width: 992px) {
     .article-list {
@@ -1532,7 +1458,7 @@ footer {
     }
   }
   .contact {
-    background-color: #e2d4df;
+    background-color: lighten($trainup, 40%);
     text-align: center;
     .container {
       max-width: 600px;
@@ -1544,48 +1470,9 @@ footer {
       margin: 15px 0;
       font-size: 20px;
     }
-    .trainup-section-annotation {
-      font-weight: bold;
-      font-size: 18px;
-    }
-    #mc_embed_signup {
-      background-color: transparent;
-      input.button {
-        background-color: $trainup;
-        color: #fff;
-        font-weight:bold;
-        font-family: 'Libre Franklin', sans-serif;
-        border-radius: 0px;
-        :hover, :active {
-          background-color: $trainup-dark;
-        }
-      }
-      input.email {
-        border: 1px solid $trainup;
-        border-radius: 0px;
-      }
-    }
-  }
-  .open-content {
-    .trainup-section-annotation {
-      text-align: center;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    h1 {
-      text-align: center;
-    }
   }
   .faq {
     background-color: $gray-light;
-    .trainup-section-annotation {
-      text-align:center;
-      font-weight:bold;
-      font-size:18px;
-    }
-    h1 {
-      text-align:center;
-    }
     .question {
       margin-top: 15px;
       font-weight: bold;
@@ -1608,14 +1495,6 @@ footer {
     margin-bottom: -30px;
   }
   .taught {
-  h1 {
-    text-align:center;
-  }
-  .trainup-section-annotation {
-      text-align:center;
-      font-weight:bold;
-      font-size:18px;
-    }
     img {
       width: 100%;
       padding-left: 10px;
@@ -1688,8 +1567,7 @@ footer {
         text-decoration: none;
       }
     }
-  }
-  .description {
+  }.description {
     .interested {
       margin-top: 15px;
       font-weight: bold;
@@ -1832,9 +1710,6 @@ footer {
         }
       }
     }
-  }
-  .benefits {
-      text-align: center;
   }
 }
 
