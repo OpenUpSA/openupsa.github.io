@@ -9,7 +9,7 @@ oneliner: The South African National Budget
 opener: vulekamali is a project by the South African National Treasury and Imali Yethu with the goal of making government budget data and processes accessible to all citizens & interested parties
 tool-info:
 - bullet: Explore a breakdown of the government budget by sphere, department and programme
-- bullet: Find official treasury or contributed third-party datasets on expenditure
+- bullet: Find official treasury and contributed third-party datasets on expenditure
 - bullet: Collaborate with others by submitting your own data or starting discussions
 slideshow:
 - image: vulekamali1.png
