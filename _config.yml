@@ -21,6 +21,8 @@ logo: /img/logo.png
 collections:
   tools:
     output: true
+  visualisations:
+    output: true
   team:
     output: true
   articles:
