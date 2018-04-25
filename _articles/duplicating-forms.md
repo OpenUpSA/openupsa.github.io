@@ -4,7 +4,7 @@ author: lailah
 title: "Populating and duplicating application forms: a non-technical solution"
 date: 2018-04-25
 short: When our TrainUp team was contacted by a journalist in need of assistance, we sought to find the best (and most comfortable) way for anyone to be able to replicate our efforts.
-image: OpenData.jpg
+image: duplicate-forms.jpg
 themes:
 - name: literacy
 featured: true
@@ -90,4 +90,4 @@ Please note, the same can be achieved using [Google Sheets](https://www.google.c
 
 We mailed this four step solution to our journalist and received the following response:
 
-> I have been completely blown away that this is this simple. I was already planning on getting the tech guys to figure out how to automate this. I have used Tabula before, actually I already have it installed, but because I don't use it in my daily work I forget that it can do so much. Mail Merge is the one I had to figure out but that took me 30 minutes or less as well. I'm so glad that I know how to do this now. This is amazing because I have always steered clear of sending bulk PAIA's because of the admin, but with Mail Merge, it seems a whole lot easier. I am truly excited about this, you have no idea.
+_I have been completely blown away that this is this simple. I was already planning on getting the tech guys to figure out how to automate this. I have used Tabula before, actually I already have it installed, but because I don't use it in my daily work I forget that it can do so much. Mail Merge is the one I had to figure out but that took me 30 minutes or less as well. I'm so glad that I know how to do this now. This is amazing because I have always steered clear of sending bulk PAIA's because of the admin, but with Mail Merge, it seems a whole lot easier. I am truly excited about this, you have no idea._
