@@ -236,14 +236,10 @@ body {
     }
     .navbar-nav li {
       margin-top: 20px;
-      border-right: 1px solid $gray;
-      &:last-of-type {
-        border-right-width: 0px
-      }
       a {
         font-family: 'Open Sans', sans-serif;
         color: #777;
-        padding: 15px 10px;
+        padding: 15px;
       }
     }
     .navbar-brand {
@@ -1023,7 +1019,6 @@ p {
       font-weight: bold;
       }
   }
-
   .slideshow {
     .full-image {
       width: 100%;
@@ -1042,13 +1037,34 @@ p {
       }
     }
   }
-
-  .conversation {
+  .videos {
+    margin-top: 40px;
     h4 {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
+    }
+    .video-wrap {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        &:hover {
+          transition: box-shadow .2s ease-in-out;
+          box-shadow: 0 5px 10px rgba(0,0,0,.15)
+        }
+      }
     }
   }
-
+  .conversation {
+    margin-top: 40px;
+    h4 {
+      margin-bottom: 20px;
+    }
+  }
   .creators {
     img {
       width: 100%;
@@ -1057,7 +1073,6 @@ p {
       margin-bottom: 30px;
     }
   }
-
   .collaborators {
     img {
       width: 100%;
@@ -1068,7 +1083,6 @@ p {
       margin-bottom: 30px;
     }
   }
-
   .contact {
     @media (min-width: 970px) {
 
@@ -1089,13 +1103,11 @@ p {
       }
     }
   }
-
   label {
     text-transform: uppercase;
     color: #bbb;
     font-size: 11px;
   }
-
   .form-control {
     border-radius: 0;
   }
