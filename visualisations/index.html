@@ -29,7 +29,7 @@ title: Data visualisations
 						{{ visualisation.summary }}
 						<div class="links">
 							<a class="btn" href="{{ visualisation.external-url }}">Explore</a>
-							<a class="btn" href="{{ visualisation.source-url }}">Source</a>
+							{% if visualisation.source-url %}<a class="btn" href="{{ visualisation.source-url }}">Source</a>{% endif %}
 						</div>
 					</div>
 				</div>
