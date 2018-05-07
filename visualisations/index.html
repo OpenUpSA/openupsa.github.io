@@ -8,7 +8,8 @@ title: Data visualisations
 			<div class="row">
 				<div class="col-md-8">
 					<h1 class="title">Data visualisations</h1>
-					<p class="description">...</p>
+					<p class="description">We've created a lot of data visualisations over the years. Often to supplement stories, sometimes as a visually appealing starting point for discussions. Below you'll find some of our visualisations that may pique your interest or inspire you to create one yourself.</p>
+					<p class="description"><strong>Some of these visualisations can be updated using more recent data.</strong> Check out the sources to get started!</p>
 				</div>
 			</div>
 		</div>
@@ -20,7 +21,7 @@ title: Data visualisations
 			<div class="col-xs-12 col-md-6 visualiation-box">
 				<div class="row">
 					<div class="col-xs-12 col-sm-6">
-						<a href="{{ visualisation.external-url }}">
+						<a target="_blank" href="{{ visualisation.external-url }}">
 							<img alt="{{ visualisation.title }}" src="{{ site.baseurl }}/img/visualisation/{{ visualisation.image }}">
 						</a>
 					</div>
@@ -28,8 +29,8 @@ title: Data visualisations
 						<h3 class="visualisation-title">{{ visualisation.title }}</h3>
 						{{ visualisation.summary }}
 						<div class="links">
-							<a class="btn" href="{{ visualisation.external-url }}">Explore</a>
-							{% if visualisation.source-url %}<a class="btn" href="{{ visualisation.source-url }}">Source</a>{% endif %}
+							<a target="_blank" class="btn" href="{{ visualisation.external-url }}">Explore</a>
+							{% if visualisation.source-url %}<a target="_blank" class="btn" href="{{ visualisation.source-url }}">Source</a>{% endif %}
 						</div>
 					</div>
 				</div>
