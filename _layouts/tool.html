@@ -8,7 +8,7 @@ layout: base
     <h2 class="oneliner">{{ page.oneliner }}</h2>
     <h1 class="title">{% if page.logo %}<img src="{{ site.baseurl }}/img/tools/{{ page.logo }}">{% endif %} {{ page.title }}</h1>
   </section>
-    
+
   <section class="tool-info">
     <p>{{ page.opener }}</p>
     <ul>
@@ -39,6 +39,21 @@ layout: base
     </div>
   </section>
 
+  {% if page.videos %}
+  <section class="videos">
+    <h4>Watch how {{ page.title }} works</h4>
+    <div class="row">
+      {% for video in page.videos %}
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube-nocookie.com/embed/{{ video.id }}?rel=0&color=white&iv_load_policy=3" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
   <section class="conversation article-list">
     <h4>Explore the <b>conversation</b></h4>
     <div class="row">
@@ -47,13 +62,14 @@ layout: base
           {% if tool.name == page.name %}
             <div class="one-article col-md-4 col-sm-6 col-xs-12">
 
-            <div class="title-image-wrap">
-              <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
-              
-              <div class="article-title">
-                <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+              <div class="title-image-wrap">
+                <a href="{{ article.url | prepend: site.baseurl }}">
+                  <img src="{{ site.baseurl }}/img/articles/{{ article.image}}">
+                </a>
+                <div class="article-title">
+                  <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+                </div>
               </div>
-            </div>
 
               <div class="article-author">
                 {% if article.author-external %}
@@ -91,9 +107,8 @@ layout: base
 
           {% endif %}
         {% endfor %}
-      {% endfor %}      
+      {% endfor %}
     </div>
-
   </section>
 
   <section class="creators">

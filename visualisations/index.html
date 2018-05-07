@@ -1,0 +1,42 @@
+---
+layout: base
+title: Data visualisations
+---
+<div class="visualisations-page">
+	<section class="hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h1 class="title">Data visualisations</h1>
+					<p class="description">We've created a lot of data visualisations over the years. Often to supplement stories, sometimes as a visually appealing starting point for discussions. Below you'll find some of our visualisations that may pique your interest or inspire you to create one yourself.</p>
+					<p class="description"><strong>Some of these visualisations can be updated using more recent data.</strong> Check out the sources to get started!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="all-visualisations container">
+		<div class="row">
+			{% for visualisation in site.visualisations %}
+			<div class="col-xs-12 col-md-6 visualiation-box">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<a target="_blank" href="{{ visualisation.external-url }}">
+							<img alt="{{ visualisation.title }}" src="{{ site.baseurl }}/img/visualisation/{{ visualisation.image }}">
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h3 class="visualisation-title">{{ visualisation.title }}</h3>
+						{{ visualisation.summary }}
+						<div class="links">
+							<a target="_blank" class="btn" href="{{ visualisation.external-url }}">Explore</a>
+							{% if visualisation.source-url %}<a target="_blank" class="btn" href="{{ visualisation.source-url }}">Source</a>{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+
+</div>

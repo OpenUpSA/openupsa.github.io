@@ -15,6 +15,8 @@ slideshow:
 - image: wm1.jpg
 - image: wm2.jpg
 - image: wm3.jpg
+videos:
+- id: lXKDBoRSqxo
 creators:
 - name: greg
 - name: jd
