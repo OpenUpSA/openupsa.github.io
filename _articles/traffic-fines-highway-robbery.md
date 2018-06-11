@@ -76,8 +76,7 @@ I don't have a real conclusion here. Hopefully these graphics, at the very least
 
 <strong>UPDATE: 9 Jan 2015</strong> - You can find the raw data <a href="/traffic-fines/times/documents/2015%20Q4.xlsx">here</a>.
 
-<script src="http://www.openupsa.org/traffic-fines/times/libs/fines.js"></script>
-
+<script src="/traffic-fines/times/libs/fines.js"></script>
 
 ## The technical stuff
 
