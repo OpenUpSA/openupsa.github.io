@@ -11,6 +11,8 @@ extra_js:
   - /js/gender-roles-doctors.js
 extra_stylesheets:
   - /css/c3.css
+themes:
+  - name: liberation
 ---
 <style>
   .chart {
