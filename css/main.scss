@@ -2343,3 +2343,41 @@ footer {
     }
   }
 }
+
+.whats-your-story {
+  img, iframe {
+    width: 100%;
+  }
+  .panel-group {
+    .panel {
+      border-radius: 0;
+    }
+  }
+  .team-infobox {
+    img {
+      margin-top: 20px;
+    }
+    margin-bottom: 30px;
+  }
+  #discourse-comments {
+    margin-top: 30px;
+  }
+  &.index {
+    margin-top: -20px;
+    .btn-winner {
+      margin-top: 30px;
+    }
+    .col-team {
+      background-color: $gray-light;
+      padding: 15px;
+      display: block;
+      color: #333;
+      margin-bottom: 20px;
+      &:hover {
+        text-decoration: none;
+        transition: box-shadow .2s ease-in-out;
+        box-shadow: 0 5px 10px rgba(0,0,0,.15)
+      }
+    }
+  }
+}

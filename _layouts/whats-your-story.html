@@ -1,0 +1,89 @@
+---
+layout: base
+---
+<section class="whats-your-story single-story">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+
+        <div class="row team-infobox">
+          <div class="col-xs-4 team-image-page">
+            {% if page.iconalt %}
+            <img src="/img/whats-your-story/{{ page.iconalt }}">
+            {% else %}
+            <img src="/img/whats-your-story/{{ page.icon }}.jpg">
+            {% endif %}
+          </div>
+          <div class="col-xs-8 team-detail-page">
+            <h2>
+              {{ page.name }}
+            </h2>
+            <p>
+              <i class="fa fa-fw fa-users" aria-hidden="true"></i> {{ page.members }}
+            </p>
+            <p>
+              <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ page.location }}
+            </p>
+            <p>
+              {{ page.summary }}
+            </p>
+          </div>
+        </div>
+
+        <div id="updates">
+          {% for update in page.updates %}
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" href="#{{ update.date }}" aria-expanded="true" aria-controls="{{ update.date }}">
+                    {{ update.title }} <small>{{ update.date | date_to_long_string }}</small>
+                  </a>
+                </h4>
+              </div>
+              <div id="{{ update.date }}" class="panel-collapse collapse {% if forloop.first %} in {% endif %}" role="tabpanel" aria-labelledby="update-accordion">
+                <div class="panel-body panel-body-storytelling">
+                  {{ update.body }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div id="discourse-comments"></div>
+
+        <h3>With support from:</h3>
+
+        <div class="row">
+          <div class="col-xs-6 col-sm-3 col-donor">
+            <a href="/" target="_blank"><img src="/img/logo.svg"></a>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-donor">
+            <a href="https://www.facebook.com/HacksHackersAfrica" target="_blank"><img src="/img/whats-your-story/hh.png"></a>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-donor">
+          <a href="http://www.makingallvoicescount.org/" target="_blank"><img src="/img/whats-your-story/mavc.png"></a>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-donor">
+          <a href="http://opendata.durban/" target="_blank"><img src="/img/whats-your-story/opendatadurban.jpg"></a>
+          </div>
+        </div>
+
+        <h3><small>We thank our donors for making this storytelling challenge possible</small></h3>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  DiscourseEmbed = { discourseUrl: 'http://discuss.codebridge.org.za/',
+           topicId: {{ page.discuss }} };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>

@@ -1,0 +1,18 @@
+---
+layout: whats-your-story
+image: rezishome-logo.png
+name: RezIsHome
+icon: rezishome
+iconalt: rezishome-logo.png
+members: Amanda O Mathe and Smangele Rantsoabe
+location: Durban
+tagline: A collaborative approach to solving UKZN's student housing issues
+description: This team aims to find a solution to high costs and a lack of safe university student housing.
+summary: Amanda and Smangele want to raise awareness about the variety of issues surrounding student accommodation, with a focus on the country’s biggest university, the University of KwaZulu-Natal.
+discuss: 43
+updates:
+- date: 2016-11-23
+  title: "The Melting pot that is student accommodation"
+  excerpt: "It can be very easy to assume or disregard the current student uprising when put in context of the violence exhibited, however there are septic issues that are the cause of the protests. One of these is the challenge of student housing for major universities in Southern Africa. We take a comparative look at how communities, parents and students respond to the student housing crisis as one of the critical issues to #FeesMustFall."
+  body: <p>The continued pressure or lack of management of student housing plays a crucial point in causing flare up’s in the wound, with many students being subjected to finding a pillow or bed in spaces that entice criminal activity, unsafe to live in and in many cases not in the location of the institute they are registered at.</p><p>Join us a we attempt to find the cause of this wound through a comparative analysis of University of KwaZulu Natal and University of Zululand. Two large universities sharing a similar make-up of design and positioning. We take into account UKZN Howard College campus and UniZulu Ongoye campus.</p><img class="ctupdate-image" src="/img/whats-your-story/rezishome-1.1.jpg"><i>Photo by Themba Hadebe/Associated Press</i><h4>Vuyi’s story</h4><p>A Chemistry student, Vuyi shares how as a local finding accommodation on and off campus can be challenging. She also shares the impact of the recent protest action on life on-campus. In Vuyi’s word the upkeep of off-campus residence is a critical issue for the past two years, with many students lodging complaints with the Department of Student Housing.</p><p>Listen to the full interview here&#58;</p><iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/294212899&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe><h4>A parent and her daughter</h4><p>As parent Mrs. Mkhwanazi (not her real name) stated that she discussed her preferred choice of studies for her daughter and reasoning as to her staying at home for the duration of her studies. Relying heavily on approval from NSFAS Zanele has kept to this request and though she doesn’t stay on campus or in any off-campus residence, her insight into her friends’ challenges brings light into the recent protests the university faced.</p><p>Listen to the full interview here&#58;</p><iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/294210347&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe><br><br><p><a class="btn btn-primary btn-lg" href="https://resizhome.wordpress.com/">RezIsHome's story <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+---
