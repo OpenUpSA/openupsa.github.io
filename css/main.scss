@@ -2344,6 +2344,15 @@ footer {
   }
 }
 
+.alert {
+  border-radius: 0;
+  &.alert-info {
+    border-color: $green;
+    background-color: #a6ec001a;
+    color: #333;
+  }
+}
+
 .whats-your-story {
   img, iframe {
     width: 100%;
@@ -2379,5 +2388,3 @@ footer {
         box-shadow: 0 5px 10px rgba(0,0,0,.15)
       }
     }
-  }
-}
