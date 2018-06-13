@@ -2340,3 +2340,12 @@ footer {
     }
   }
 }
+
+.alert {
+  border-radius: 0;
+  &.alert-info {
+    border-color: $green;
+    background-color: #a6ec001a;
+    color: #333;
+  }
+}
