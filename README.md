@@ -14,7 +14,7 @@ The site should then be running on http://localhost:4000/ and will reflect chang
 
 ## Deployment
 
-The site is served by github pages, so to deploy to production simply:
+The site is served by GitHub Pages, so to deploy to production simply:
 
     git push
 
@@ -133,3 +133,13 @@ The image for a visualisation has to be squared and placed in `img/visualisation
 | `source-url`     | Any valid URL                                                                                                                    | The URL of the source of the visualisation, usually the GitHub repository                            |
 | `image` *        | The name and extension of the file (`image.jpg`). The file itself should be placed in `/img/visualisations`                      | The image used for the visualisation                                                                 |
 | `summary` *      | Any string, preferably limited to 150 characters. If you use any special characters wrap it in double quotation marks `"string"` | A summary of what the visualisation is about                                                         |
+
+### Other content
+
+Stylesheets that won't change can be placed in `_sass`. `main.scss`, in `css`, is the principal file for style changes.
+
+The plumbing for `types` of articles exists. It works exactly the same way as `themes`. You can create a `_types` directory, add some markdown to it for each type, and replicate the tags like they're done for `themes`. It was removed because it turned out we didn't really need it, but it's there in case it's useful in the future.
+
+`_academy` is a directory with stories from the old journalism academy.
+
+`_miscellaneous` is a directory where you can put orphaned (mini)sites. It's a good place for OpenUp projects that for one reason or another no longer have a home, yet are still something we want to show people. If possible, it's probably better if these projects have a repository of their own, but using this directory can be a big time saver.
