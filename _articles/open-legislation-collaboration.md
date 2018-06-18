@@ -17,8 +17,6 @@ tools:
 
 **By: Greg Kempe (OpenUp), Olivia Vereha (Code for Romania), Jan Zankowski & Daniel Macyszyn (ePanstwo Foundation)**
 
-![](https://openup.org.za/img/articles/open-legislation-collaboration/team.jpg)
-
 In May 2018, members of three Code for All organisations - [OpenUp (South Africa)](https://openup.org.za), [Code for Romania](https://code4.ro/) and [ePaństwo Foundation (Poland)](http://epf.org.pl/) spent time at the Code for Romania offices in Bucharest to collaborate on access to law and open legislation. This blog post talks about what we did, what we learnt, what we produced (and what we ate).
 
 We are very grateful to the National Endowment for Democracy (NED) for the grant that supported this collaboration, and to the organisers and volunteers that helped make it happen and welcomed us into their organisations.
