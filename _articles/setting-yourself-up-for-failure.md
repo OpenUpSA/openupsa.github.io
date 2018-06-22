@@ -171,8 +171,3 @@ It’s tempting to assume that the outcome will inevitable point in favour of th
 The irony being that (according to Lean) I should expect my first implementation of Lean itself to be a failure! This means that I’m heading into the experiment not with expectations of wild success, but of spectacular failure and learning from that failure.
 
 Stay tuned for my next check-in where I’ll hopefully be able to share some of the lessons learned and takeaways gathered from putting Lean to the test.
-
-_I would love to hear whether you found the above useful, or have feedback!. Please send me an email to [venterschalk@gmail.com](mailto:venterschalk@gmail.com) or create a pull request to this [article on my Github account](https://github.com/schalkventer/workshops-and-presentations)_
-
-- _Originally published on the OpenUp website: [https://openup.org.za/](https://openup.org.za/)_
-- _Also published on my personal Medium account: [https://medium.com/@venterschalk_dev](hhttps://medium.com/@venterschalk_dev)_
