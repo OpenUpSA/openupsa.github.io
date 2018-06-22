@@ -4,7 +4,7 @@ author: schalk
 title: "Setting yourself up for failure"
 date: 2018-06-18
 short: Scary, crazy, upside-down truths for the insecure and perfectionistic, found in the practice of Lean UX.
-image: /img/articles/setting-yourself-up-for-failure/lean-workflow-1.png
+image: setting-yourself-up-for-failure.png
 themes:
 - name: tech
 featured: true
@@ -15,7 +15,7 @@ _Scary, crazy, upside-down truths for the insecure and perfectionistic, found in
 
 ![](/img/articles/setting-yourself-up-for-failure/lean-workflow-1.png)
 
-**I’ve recently borrowed _[The Lean Startup (2011)](https://en.wikipedia.org/wiki/The_Lean_Startup)_ from a colleague. It rattled some rusty cogs (long overdue for some Q20 introspection!) in [my daily workflow as an interface designer](https://openup.org.za/team/schalk.html).** 
+**I’ve recently borrowed _[The Lean Startup (201g1)](https://en.wikipedia.org/wiki/The_Lean_Startup)_ from a colleague. It rattled some rusty cogs (long overdue for some Q20 introspection!) in [my daily workflow as an interface designer](https://openup.org.za/team/schalk.html).** 
 
 I thought it might be worthwhile to reflect on some of the following areas:
 
