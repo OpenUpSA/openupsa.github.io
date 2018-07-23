@@ -130,7 +130,7 @@ button:hover {
 
 **The above example generally falls under the broader approach of [Progressive Enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement). If you’re interested in learning more about Progressive Enhancement check out [Aaron Gustafson](https://www.aaron-gustafson.com/)’s second edition of his stellar book on the subject, titled [Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement](https://www.amazon.com/Adaptive-Web-Design-Experiences-Progressive/dp/098358950X). (2016)**
 
-![](![](/img/articles/cross-browser-css-with-feature-detection/cross-browser-css-with-feature-detection-3.png))
+![](/img/articles/cross-browser-css-with-feature-detection/cross-browser-css-with-feature-detection-3.png)
 
 If you’re new to front-end development you might wonder how on earth does one know the support level of specific CSS properties. The short answer is that the more you work with CSS the more you will learn these by heart. However there are a couple of tools that are able to help us along the way:
 
