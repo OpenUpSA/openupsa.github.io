@@ -21,8 +21,12 @@ title: Data visualisations
 			<div class="col-xs-12 col-md-6 visualiation-box">
 				<div class="row">
 					<div class="col-xs-12 col-sm-6">
-						<a target="_blank" href="{{ visualisation.external-url }}">
-							<img alt="{{ visualisation.title }}" src="{{ site.baseurl }}/img/visualisation/{{ visualisation.image }}">
+						<a
+							class="viz-featured-image"
+							target="_blank"
+							href="{{ visualisation.external-url }}"
+							style="background-image: url('{{ {{ site.baseurl }}/img/visualisation/{{ visualisation.image }}')"
+						>
 						</a>
 					</div>
 					<div class="col-xs-12 col-sm-6">
