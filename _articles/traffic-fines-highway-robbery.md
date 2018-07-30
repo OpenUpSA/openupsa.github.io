@@ -76,7 +76,7 @@ I don't have a real conclusion here. Hopefully these graphics, at the very least
 
 <strong>UPDATE: 9 Jan 2015</strong> - You can find the raw data <a href="/traffic-fines/times/documents/2015%20Q4.xlsx">here</a>.
 
-<script src="/traffic-fines/times/libs/fines.js"></script>
+<script src="/js/traffic-fines/fines.js"></script>
 
 ## The technical stuff
 
@@ -90,6 +90,6 @@ Place any of these anywhere on the page.
 
 Place at the bottom of the page
 
-    <script src="http://www.openup.org.za/traffic-fines/times/libs/fines.js"></script>
+    <script src="https://www.openup.org.za/traffic-fines/times/libs/fines.js"></script>
 
 The embeds are responsive and will resize according to the screen size. They are especially suited to mobile viewing.

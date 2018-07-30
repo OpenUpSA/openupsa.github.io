@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="base.css">
+    </head>
+
+<body>
+    <div id="route" class="roadmap"></div>
+            
+    <script src="lib.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="pym.js"></script>
+
+    <script type="text/html" id="tt_template">
+    <h3><%=Name%></h3>
+    <table>
+        <tr><th>Population:</th><td><%=fpopulation%></td></tr>
+        <tr><th>Fine revenue (2014):</th><td><%=ftotal_fines%></td></tr>
+        <tr><th>Overall revenue:</th><td><%=ftotal_budget%></td></tr>
+        <tr><th>Fines as % of revenue:</th><td><%=fperc_fines%></td></tr>
+        <tr><th>Fine revenue <br/>per capita:</th><td><%=ffines_per_capita%></td></tr>
+        <tr><td colspan="2"><h4>Compared with national average</h4></td></tr>
+        <tr><th>Per capita:</th><td><%=fnat_per_capita%> </td></tr>
+        <tr><th>% of revenue:</th><td><%=fnat_perc_budget%> </td></tr>
+    </table>
+    </script>
+
+
+    <script>
+    var route = trafficfines.getQueryVariable("route")
+    if (route) {
+        var pymChild = new pym.Child();
+        var load_data = trafficfines.FinesViz({
+            buttons_enabled : true,
+            onload : function() {
+                pymChild.sendHeight();
+            }
+        });
+        load_data(d3.select("#route.roadmap"), "" + route + ".svg", "data.csv");
+    }
+    </script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-48399585-31', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
