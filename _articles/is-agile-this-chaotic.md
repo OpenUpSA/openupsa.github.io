@@ -12,6 +12,14 @@ themes:
 
 _The bell that calls us to standup every morning_
 
+-----
+
+This post assumes a working knowledge of [Agile](http://agilemanifesto.org/principles.html) and [Scrum](http://www.scrumguides.org/scrum-guide.html).
+
+I'd suggest familiarising oneself with these to get the most out of this review of our experiences.
+
+-----
+
 OpenUp consists of software developers, government experts, mappers, data mungers and visualisers, and people who just make things happen. We use scrum and believe in agile principles. But as the non-tech side of the organisation has grown, we haven’t always ensured they understand agile. This has caused frustration, confusion, and a feeling of chaos. We tried to address this with simple agile introductions for all staff, with mixed results.
 
 While we’ve gotten a lot done over the last two years, we realised we can do much better if we all understand what it means to work using agile methodologies, and how the agile tools and processes can help us. Some of the issues that have come up at all-hands and water-cooler conversations include feeling:
