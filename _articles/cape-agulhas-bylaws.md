@@ -18,6 +18,8 @@ to find and use. Together with Cape Agulhas Municipality, we have launched a new
 
 [capeagulhas.openbylaws.org.za](https://capeagulhas.openbylaws.org.za/)
 
+[![](/img/articles/bylaws-screenshot.jpg)](https://capeagulhas.openbylaws.org.za/)
+
 The new website has a number of benefits:
 
 * readers can find up-to-date versions of the Cape Agulhas by-laws online;
@@ -28,7 +30,7 @@ The by-laws are available in official English and Afrikaans versions (where avai
 
 <p><img style="width: 400px; margin: auto" class="img-responsive" src="/img/articles/bylaw-language.gif"></p>
 
-In addition, many by-laws define specific terms that have a particular meaning in the context of the by-law. We show these terms in bold and provide popup definitions wherever they appear. 
+In addition, many by-laws define specific terms that have a particular meaning in the context of the by-law. We show these terms in bold and provide popup definitions wherever they are used. 
 
 <p><img style="width: 400px; margin: auto" class="img-responsive" src="/img/articles/bylaw-houseshop.gif"></p>
 
