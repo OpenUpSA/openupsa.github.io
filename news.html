@@ -24,44 +24,44 @@ layout: base
 
           <div class="article-author">
             {% if article.author-external %}
-            <div>by <a href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
+              <div>by <a href="{{ article.author-external-url }}">{{ article.author-external }}</a></div>
             {% else %}
-            {% for member in site.team %}
-            {% if member.name == article.author %}
-            <div>by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></div>
-            {% endif %}
-            {% endfor %}
+              {% for member in site.team %}
+                {% if member.name == article.author %}
+                  <div>by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a></div>
+                {% endif %}
+              {% endfor %}
             {% endif %}
           </div>
 
           <p>{{ article.short }}</p>
 
           {% if article.tools %}
-          {% for tool in site.tools %}
-          {% for articletool in article.tools %}
-          {% if tool.name == articletool.name %}
-          <span class="tags"><a class="badge tool" href="{% if tool.skip-own-page %}{{ tool.external-url }}{% else %}{{ tool.url | prepend: site.baseurl }}{% endif %}">{{ tool.title }}</a></span>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
+            {% for tool in site.tools %}
+              {% for articletool in article.tools %}
+                {% if tool.name == articletool.name %}
+                  <span class="tags"><a class="badge tool" href="{% if tool.skip-own-page %}{{ tool.external-url }}{% else %}{{ tool.url | prepend: site.baseurl }}{% endif %}">{{ tool.title }}</a></span>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
           {% endif %}
           {% if article.themes %}
-          {% for theme in site.themes %}
-          {% for articletheme in article.themes %}
-          {% if theme.name == articletheme.name %}
-          <span class="tags"><a class="badge theme {{ theme.name }}" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></span>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
+            {% for theme in site.themes %}
+              {% for articletheme in article.themes %}
+                {% if theme.name == articletheme.name %}
+                  <span class="tags"><a class="badge theme {{ theme.name }}" href="{{ theme.url | prepend: site.baseurl }}">{{ theme.title }}</a></span>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
           {% endif %}
           {% if article.types %}
-          {% for type in site.types %}
-          {% for articletype in article.types %}
-          {% if type.name == articletype.name %}
-          <span class="tags"><a class="badge type" href="{{ type.url | prepend: site.baseurl }}">{{ type.title }}</a></span>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
+            {% for type in site.types %}
+              {% for articletype in article.types %}
+                {% if type.name == articletype.name %}
+                  <span class="tags"><a class="badge type" href="{{ type.url | prepend: site.baseurl }}">{{ type.title }}</a></span>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
           {% endif %}
 
         </div>
