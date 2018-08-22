@@ -1,7 +1,7 @@
 ---
 layout: tool
 name: trainup
-title: TrainUp
+title: Data training
 image: trainup.jpg
 external-url: /trainup
 skip-own-page: true
