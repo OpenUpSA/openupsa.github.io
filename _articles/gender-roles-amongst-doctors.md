@@ -2,7 +2,7 @@
 layout: article
 author: adi
 date: 2015-01-15
-title: Genders roles in different fields of medicine
+title: Gender roles in different fields of medicine
 short: In this day and age, gender should be completely irrelevant. But is it?
 image: gender-roles-doctors.jpg
 extra_js:
