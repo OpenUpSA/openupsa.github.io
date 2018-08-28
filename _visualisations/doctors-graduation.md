@@ -1,7 +1,7 @@
 ---
 name: doctors-graduation
 title: Exploring graduations of doctors (MB ChB) in South Africa is fascinating.
-external-url: https://www.facebook.com/photo.php?fbid=10155802582468312&set=pcb.10155802623218312&type=3&theaterv
+external-url: /articles/doctors-graduation.html
 image: doctors-graduation.jpg
-summary: ""
+summary: "This graph includes all South African doctors who are currently registere to practice in South Africa and graduated with an MB ChB. degree."
 ---

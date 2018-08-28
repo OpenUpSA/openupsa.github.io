@@ -3,7 +3,7 @@ layout: article
 author: lailah
 title: Youth Day Timeline - The day that ignited the flames of freedom
 date: 2016-07-19
-short:
+image: youth-day.jpg
 ---
 
-<script type="text/javascript" src="https://static.code4sa.org/youthday/youthday.js"></script>
+<iframe src="https://static.code4sa.org/youthday/" width="100%" height="800px"></iframe>
