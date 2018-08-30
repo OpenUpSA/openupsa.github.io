@@ -1,9 +1,8 @@
 ---
 ---
+
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-  "bootstrap"
-;
+@import "bootstrap";
 
 @import url('https://fonts.googleapis.com/css?family=News+Cycle|Libre+Franklin:300,300i,400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Bitter');
@@ -106,8 +105,8 @@ body {
   }
   .form-control:focus {
     border-color: $green;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(158,212,33,.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(158,212,33,.6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(158, 212, 33, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(158, 212, 33, .6);
   }
 }
 
@@ -116,7 +115,7 @@ body {
     width: 100%;
     &:hover {
       transition: box-shadow .2s ease-in-out;
-      box-shadow: 0 5px 10px rgba(0,0,0,.15)
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
     }
   }
   .article-title {
@@ -134,7 +133,7 @@ body {
       bottom: 0;
       left: 0;
       width: 100%;
-      background-color: rgba(240,240,240,0.85);
+      background-color: rgba(240, 240, 240, 0.85);
       padding: 10px;
     }
   }
@@ -153,7 +152,7 @@ body {
 .tags {
   text-transform: uppercase;
   .badge {
-  font-size: 11px;
+    font-size: 11px;
   }
   a {
     padding: 5px 10px 6px 10px;
@@ -245,7 +244,7 @@ body {
     .navbar-brand {
       font-family: 'Open Sans', sans-serif;
       color: #777;
-      max-height:60px;
+      max-height: 60px;
       padding: 0 30px 0 15px;
       img {
         max-height: 80px;
@@ -257,68 +256,6 @@ body {
         color: #fff;
         &:hover {
           color: $green;
-        }
-      }
-    }
-  }
-  .theme-nav {
-    background-color: #f8f8f8;
-    -webkit-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
-    -moz-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
-    box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
-    .nav {
-      a {
-        border-radius: 0;
-        text-transform: uppercase;
-        padding: 5px 10px;
-        margin: 12px 5px;
-        color: #fff;
-        transition: background-color 150ms ease-out;
-        @media (max-width:767px) {
-          margin: 1px 0;
-          padding: 20px;
-        }
-        &.activecitizenry {
-          background-color: $activecitizenry;
-          &:hover {
-            background-color: $activecitizenry-dark;
-            color: #fff;
-          }
-        }
-        &.tech {
-          background-color: $tech;
-          &:hover {
-            background-color: $tech-dark;
-            color: #fff;
-          }
-        }
-        &.cogovernance {
-          background-color: $cogovernance;
-          &:hover {
-            background-color: $cogovernance-dark;
-            color: #fff;
-          }
-        }
-        &.literacy {
-          background-color: $literacy;
-          &:hover {
-            background-color: $literacy-dark;
-            color: #fff;
-          }
-        }
-        &.liberation {
-          background-color: $liberation;
-          &:hover {
-            background-color: $liberation-dark;
-            color: #fff;
-          }
-        }
-        &.empowerment {
-          background-color: $empowerment;
-          &:hover {
-            background-color: $empowerment-dark;
-            color: #fff;
-          }
         }
       }
     }
@@ -341,9 +278,9 @@ body {
 
   .courses-nav {
     background-color: #f8f8f8;
-    -webkit-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
-    -moz-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
-    box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+    -webkit-box-shadow: inset 0px 5px 17px -1px rgba(230, 230, 230, 0.63);
+    -moz-box-shadow: inset 0px 5px 17px -1px rgba(230, 230, 230, 0.63);
+    box-shadow: inset 0px 5px 17px -1px rgba(230, 230, 230, 0.63);
 
     .nav {
       a {
@@ -354,7 +291,7 @@ body {
         color: #fff;
         transition: background-color 150ms ease-out;
         background-color: $trainup;
-        @media (max-width:767px) {
+        @media (max-width: 767px) {
           margin: 1px 0;
           padding: 20px;
         }
@@ -444,7 +381,7 @@ body {
       &:hover {
         text-decoration: none;
         transition: box-shadow .2s ease-in-out;
-        box-shadow: 0 5px 10px rgba(0,0,0,.15)
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
       }
       i {
         font-size: 60px;
@@ -570,7 +507,7 @@ body {
   }
   .tool-intro {
     font-family: 'Open Sans', sans-serif;
-    margin-bottom:30px;
+    margin-bottom: 30px;
   }
   .featured-tool {
     padding-top: 40px;
@@ -592,13 +529,13 @@ body {
       position: absolute;
       font-weight: bold;
       font-size: 14px;
-      @media (max-width:1240px) {
+      @media (max-width: 1240px) {
         bottom: -45px;
         left: 55%;
       }
     }
     .featured-article {
-      @media (max-width:970px) {
+      @media (max-width: 970px) {
         margin-top: 50px;
       }
       ul {
@@ -664,6 +601,7 @@ body {
     }
   }
 }
+
 .single-article {
   .page-sharing {
     color: #B0B0B0;
@@ -679,7 +617,7 @@ body {
     }
   }
   .top-share {
-      text-align: right;
+    text-align: right;
     @media (max-width: 767px) {
       text-align: left;
       margin-bottom: 20px;
@@ -738,15 +676,15 @@ body {
     }
     figure img {
       max-width: 100%;
-      margin-left:auto!important;
-      margin-right:auto!important;
+      margin-left: auto !important;
+      margin-right: auto !important;
     }
     figcaption {
       font-style: italic;
       font-style: normal;
       font-size: 10px;
       color: #B0B0B0;
-      margin-top:15px
+      margin-top: 15px
     }
     .collapse-box {
       background-color: #f7f7f7;
@@ -775,10 +713,10 @@ body {
   }
   .social-sharing {
     ul {
-      &.share-buttons{
+      &.share-buttons {
         list-style: none;
         padding: 0;
-        margin-bottom:30px;
+        margin-bottom: 30px;
         li {
           display: inline;
         }
@@ -862,20 +800,20 @@ body {
 
   .services-info {
     .service-subhead {
-    font-size: 21px;
-    font-weight: 300;
+      font-size: 21px;
+      font-weight: 300;
       line-height: 1.3em;
-   }
-   .nakeddata-archive {
+    }
+    .nakeddata-archive {
 
-   }
+    }
   }
 
   .service-boxes {
     a {
       margin-top: 30px;
       padding: 100px;
-      text-align:center;
+      text-align: center;
       font-size: 24px;
     }
     .service-box-1 {
@@ -1019,7 +957,7 @@ p {
     .external-url {
       margin: 40px 0;
       font-weight: bold;
-      }
+    }
   }
   .slideshow {
     .full-image {
@@ -1056,7 +994,7 @@ p {
         height: 100%;
         &:hover {
           transition: box-shadow .2s ease-in-out;
-          box-shadow: 0 5px 10px rgba(0,0,0,.15)
+          box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
         }
       }
     }
@@ -1156,19 +1094,19 @@ p {
     padding: 20px;
     margin-top: -20px;
     margin-bottom: 30px;
-      h2 {
-        font-family: 'News Cycle', sans-serif;
-        margin-bottom: 30px;
-        font-weight: 400;
-        line-height: 1.3em;
-      }
-      .fa-quote-left {
-        padding-right: 15px;
-      }
-      .theory-credit {
-        text-transform:uppercase;
-        font-size: 21px;
-      }
+    h2 {
+      font-family: 'News Cycle', sans-serif;
+      margin-bottom: 30px;
+      font-weight: 400;
+      line-height: 1.3em;
+    }
+    .fa-quote-left {
+      padding-right: 15px;
+    }
+    .theory-credit {
+      text-transform: uppercase;
+      font-size: 21px;
+    }
   }
   .mission {
     h2 {
@@ -1221,7 +1159,7 @@ p {
 }
 
 footer {
-  position:relative;
+  position: relative;
   z-index: 2;
   width: 100%;
   background-color: $green-dark;
@@ -1242,9 +1180,9 @@ footer {
     color: #999;
     font-size: 14px;
 
-    -webkit-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
-    -moz-box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
-    box-shadow: inset 0px 5px 17px -1px rgba(230,230,230,0.63);
+    -webkit-box-shadow: inset 0px 5px 17px -1px rgba(230, 230, 230, 0.63);
+    -moz-box-shadow: inset 0px 5px 17px -1px rgba(230, 230, 230, 0.63);
+    box-shadow: inset 0px 5px 17px -1px rgba(230, 230, 230, 0.63);
 
     h3 {
       margin-top: 0px;
@@ -1289,7 +1227,7 @@ footer {
 
 .team-member {
   .split {
-    margin-bottom:50px;
+    margin-bottom: 50px;
     img {
       width: 100%;
     }
@@ -1320,7 +1258,7 @@ footer {
 }
 
 .trainup-page {
- .btn {
+  .btn {
     background-color: $trainup;
     color: #fff;
     &:hover, &:active {
@@ -1358,7 +1296,7 @@ footer {
     &:hover {
       text-decoration: none;
       transition: box-shadow .2s ease-in-out;
-      box-shadow: 0 5px 10px rgba(0,0,0,.15);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
       color: #333;
     }
     i {
@@ -1383,7 +1321,7 @@ footer {
     h2.header {
       color: #fff;
       font-weight: 500;
-      margin-top:10px;
+      margin-top: 10px;
       margin-bottom: 20px;
     }
     p {
@@ -1431,7 +1369,7 @@ footer {
     }
     h2 {
       font-weight: bold;
-      text-align:center;
+      text-align: center;
       margin-bottom: 25px;
     }
     p {
@@ -1448,9 +1386,9 @@ footer {
       }
     }
     .trainup-section-annotation {
-      text-align:center;
-      font-weight:bold;
-      font-size:18px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
     }
     .published {
       img {
@@ -1579,7 +1517,7 @@ footer {
       input.button {
         background-color: $trainup;
         color: #fff;
-        font-weight:bold;
+        font-weight: bold;
         font-family: 'Libre Franklin', sans-serif;
         border-radius: 0px;
         :hover, :active {
@@ -1605,12 +1543,12 @@ footer {
   .faq {
     background-color: $gray-light;
     .trainup-section-annotation {
-      text-align:center;
-      font-weight:bold;
-      font-size:18px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
     }
     h1 {
-      text-align:center;
+      text-align: center;
     }
     .question {
       margin-top: 15px;
@@ -1634,13 +1572,13 @@ footer {
     margin-bottom: -30px;
   }
   .taught {
-  h1 {
-    text-align:center;
-  }
-  .trainup-section-annotation {
-      text-align:center;
-      font-weight:bold;
-      font-size:18px;
+    h1 {
+      text-align: center;
+    }
+    .trainup-section-annotation {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
     }
     img {
       width: 100%;
@@ -1860,7 +1798,7 @@ footer {
     }
   }
   .benefits {
-      text-align: center;
+    text-align: center;
   }
 }
 
@@ -1879,7 +1817,7 @@ footer {
     h2.header {
       color: #fff;
       font-weight: 500;
-      margin-top:10px;
+      margin-top: 10px;
       margin-bottom: 20px;
     }
     p {
@@ -1920,7 +1858,7 @@ footer {
       padding: 10px 0;
     }
     .removemargin {
-      margin-top:0px;
+      margin-top: 0px;
     }
     .apply {
       margin-bottom: 10px;
@@ -1933,8 +1871,8 @@ footer {
     border-color: #fff;
     &:focus {
       border-color: #fff;
-      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,255,255,.6);
-      box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255,255,255,.6);
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
     }
   }
   .btn {
@@ -1970,7 +1908,7 @@ footer {
     h2.header {
       color: #fff;
       font-weight: 500;
-      margin-top:10px;
+      margin-top: 10px;
       margin-bottom: 20px;
     }
     h3.header {
@@ -2074,7 +2012,7 @@ footer {
   .mission-requests {
     background-color: $trace-opaque;
     padding-top: 30px;
-    padding-bottom:30px;
+    padding-bottom: 30px;
   }
   .collection {
     margin-top: 50px;
@@ -2212,9 +2150,9 @@ footer {
 /* MailChimp Form */
 #mc_embed_signup {
   form {
-    display:block;
-    position:relative;
-    text-align:left;
+    display: block;
+    position: relative;
+    text-align: left;
     padding: 0;
     margin-top: 30px;
   }
@@ -2226,9 +2164,9 @@ footer {
   }
   input {
     border: 1px solid $gray;
-    -webkit-appearance:none;
+    -webkit-appearance: none;
     &:focus {
-      border-color:$gray-dark;
+      border-color: $gray-dark;
     }
     &.btn {
       border: none;
@@ -2236,96 +2174,96 @@ footer {
   }
   #mc-embedded-subscribe {
     margin: 0;
-    clear:both;
-    width:auto;
-    display:block;
+    clear: both;
+    width: auto;
+    display: block;
   }
   .mc-field-group {
-    clear:left;
-    position:relative;
-    width:96%;
-    padding-bottom:3%;
-    min-height:50px;
+    clear: left;
+    position: relative;
+    width: 96%;
+    padding-bottom: 3%;
+    min-height: 50px;
     label {
-      display:block;
-      margin-bottom:3px;
+      display: block;
+      margin-bottom: 3px;
     }
     input {
-      display:block;
-      width:100%;
-      padding:8px 0;
-      text-indent:2%;
+      display: block;
+      width: 100%;
+      padding: 8px 0;
+      text-indent: 2%;
     }
     select {
-      display:inline-block;
-      width:99%;
-      padding:5px 0;
-      margin-bottom:2px;
+      display: inline-block;
+      width: 99%;
+      padding: 5px 0;
+      margin-bottom: 2px;
     }
     .asterisk {
-      position:absolute;
-      top:34px;
-      right:10px;
+      position: absolute;
+      top: 34px;
+      right: 10px;
     }
   }
   .asterisk {
     color: $empowerment-light;
   }
   .clear {
-    clear:both;
+    clear: both;
   }
   &.input-group {
     ul {
-      margin:0;
-      padding:5px 0;
-      list-style:none;
+      margin: 0;
+      padding: 5px 0;
+      list-style: none;
       li {
-        display:block;
-        padding:3px 0;
-        margin:0;
+        display: block;
+        padding: 3px 0;
+        margin: 0;
       }
     }
     label {
-      display:inline;
+      display: inline;
     }
     input {
-      display:inline;
-      width:auto;
-      border:none;
+      display: inline;
+      width: auto;
+      border: none;
     }
   }
   div#mce-responses {
-    float:left;
-    top:-1.4em;
+    float: left;
+    top: -1.4em;
     padding: 0;
-    overflow:hidden;
+    overflow: hidden;
     width: 100%;
     margin: 0;
     clear: both;
   }
   div.response {
-    margin:1em 0;
-    padding:1em .5em .5em 0;
-    font-weight:bold;
-    float:left;
-    top:-1.5em;
-    z-index:1;
-    width:80%;
+    margin: 1em 0;
+    padding: 1em .5em .5em 0;
+    font-weight: bold;
+    float: left;
+    top: -1.5em;
+    z-index: 1;
+    width: 80%;
   }
   #mce-error-response {
-    display:none;
+    display: none;
   }
   #mce-success-response {
-    color:#529214;
-    display:none;
+    color: #529214;
+    display: none;
   }
   label.error {
-    display:block;
-    float:none;
-    width:auto;
-    margin-left:1.05em;
-    text-align:left;
-    padding:.5em 0;
+    display: block;
+    float: none;
+    width: auto;
+    margin-left: 1.05em;
+    text-align: left;
+    padding: .5em 0;
   }
 }
 
@@ -2376,7 +2314,7 @@ footer {
       &:hover {
         text-decoration: none;
         transition: box-shadow .2s ease-in-out;
-        box-shadow: 0 5px 10px rgba(0,0,0,.15)
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
       }
     }
   }
@@ -2387,4 +2325,69 @@ footer {
   height: 270px;
   background-position: center;
   background-size: cover;
+}
+
+.news-page {
+  .theme-nav {
+    background-color: #f8f8f8;
+    -webkit-box-shadow: inset 0px 5px 17px -1px rgba(230, 230, 230, 0.63);
+    -moz-box-shadow: inset 0px 5px 17px -1px rgba(230, 230, 230, 0.63);
+    box-shadow: inset 0px 5px 17px -1px rgba(230, 230, 230, 0.63);
+    .nav {
+      a {
+        border-radius: 0;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        margin: 12px 5px;
+        color: #fff;
+        transition: background-color 150ms ease-out;
+        @media (max-width: 767px) {
+          margin: 1px 0;
+          padding: 20px;
+        }
+        &.activecitizenry {
+          background-color: $activecitizenry;
+          &:hover {
+            background-color: $activecitizenry-dark;
+            color: #fff;
+          }
+        }
+        &.tech {
+          background-color: $tech;
+          &:hover {
+            background-color: $tech-dark;
+            color: #fff;
+          }
+        }
+        &.cogovernance {
+          background-color: $cogovernance;
+          &:hover {
+            background-color: $cogovernance-dark;
+            color: #fff;
+          }
+        }
+        &.literacy {
+          background-color: $literacy;
+          &:hover {
+            background-color: $literacy-dark;
+            color: #fff;
+          }
+        }
+        &.liberation {
+          background-color: $liberation;
+          &:hover {
+            background-color: $liberation-dark;
+            color: #fff;
+          }
+        }
+        &.empowerment {
+          background-color: $empowerment;
+          &:hover {
+            background-color: $empowerment-dark;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
 }
