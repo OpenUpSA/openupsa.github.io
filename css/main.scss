@@ -491,7 +491,7 @@ body {
   }
 }
 
-.tools-page, .visualisations-page {
+.tools-page, .visualisations-page, .news-page {
   .hero {
     background-color: $green;
     margin-top: -20px;
@@ -2364,10 +2364,10 @@ footer {
 
 .news-page {
   .theme-nav {
-    background-color: #f8f8f8;
-    -webkit-box-shadow: inset 0px 5px 17px -1px rgba(230, 230, 230, 0.63);
-    -moz-box-shadow: inset 0px 5px 17px -1px rgba(230, 230, 230, 0.63);
-    box-shadow: inset 0px 5px 17px -1px rgba(230, 230, 230, 0.63);
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
     .nav {
       a {
         border-radius: 0;
