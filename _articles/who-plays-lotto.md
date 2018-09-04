@@ -3,7 +3,7 @@ layout: article
 author: roxanne
 title: Infographic - Who play's the lottery
 short: The lottery in South Africa is hugely supported by poor and low income earners, with 73% of players earning less than R5,000 a month - and of those 33% earn R1,000 a month or less.
-image: lotto/lotto.jpg
+image: lotto/lottery.jpg
 ---
  
  The lottery in South Africa is hugely supported by poor and low income earners, with 73% of players earning less than R5,000 a month - and of those 33% earn R1,000 a month or less.
@@ -14,7 +14,7 @@ image: lotto/lotto.jpg
  
  The findings on the extent that poor and low income earners play the lottery in South Africa is largely in line with most countries where the poor, hoping to become rich-quick, are major supporters of lotteries.
  
- <img style="margin-bottom: 15px; border: 1px solid #ddd;" src="{{ site.baseurl }}/img/articles/lotto/whoplays.jpg"/>
+ <img style="margin-bottom: 15px; border: 1px solid #ddd;" src="{{ site.baseurl }}/img/articles/lotto/whoplayslotto.jpg"/>
  
  The research was conducted among a sample of 2,500 respondents over 18-years-old, over three months, in 2010. The sample comprised of 800 randomly selected households who took part over the phone and a further 1,700 households living in townships, informal settlements and rural villages, who took part in face-to-face interviews.
  
