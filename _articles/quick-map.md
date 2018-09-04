@@ -5,7 +5,7 @@ title: Quick and Dirty Map Viz
 date: 2016-05-11
 short: |
   Taking shortcuts and outright cheating is the hallmark of a great developer. I like creating graphics, both visualisations and pretty maps but I often don’t have the time to spend hours making one from scratch.
-image: quick_lines.png
+image: quick-lines.png
 ---
  
 Taking shortcuts and outright cheating is the hallmark of a great developer. I like creating graphics, both visualisations and pretty maps but I often don’t have the time to spend hours making one from scratch. In this blog I’m going to explain the process that I took to create a quick and dirty map navigation tool.
@@ -45,7 +45,7 @@ The _data-name_ attribute is where we store the human-readable version of the co
 
 The cheating part is here. Rather than writing complex code to dynamically add lines and the infobox, I simply created it all in Inkscape:
 
-<img style="margin-bottom: 15px; border: 1px solid #ddd;" src="{{ site.baseurl }}/img/articles/quick_lines.png"/>
+<img style="margin-bottom: 15px; border: 1px solid #ddd;" src="{{ site.baseurl }}/img/articles/quick-lines.png"/>
 
 Notice that all the lines are visible which means it’s going to look messy. We’ll fix that in the javascript.
 
