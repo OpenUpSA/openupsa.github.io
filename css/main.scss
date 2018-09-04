@@ -519,7 +519,15 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
+  .page-sharing {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    a {
+      border-width: 0;
+    }
+  }
   .btn {
     background-color: $green;
     color: #fff;
@@ -530,15 +538,6 @@ body {
   }
   a, a:hover {
     color: $green;
-  }
-  .page-sharing {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    a {
-      border-width: 0;
-    }
   }
   .tool-intro {
     font-family: 'Open Sans', sans-serif;
@@ -878,26 +877,39 @@ p {
     }
   }
   .hero {
-    color: #fff;
+    background-color: $green;
     margin-top: -20px;
-    margin-bottom: 40px;
-    .title {
-      font-family: 'Open Sans', sans-serif;
-      text-transform: uppercase;
-      margin-top: 30px;
+    color: #fff;
+    h1.header {
+      color: #fff;
+      font-size: 42px;
       font-weight: 600;
     }
-    .description {
-      font-family: 'Bitter', 'Libre Franklin', 'Open Sans', sans-serif;
-      margin-bottom: 30px;
-      a {
-        color: #fff;
-        font-weight: bold;
-        text-decoration: underline;
-        &:hover {
-          text-decoration: none;
-        }
-      }
+    h2.header {
+      color: #fff;
+      font-weight: 500;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 25px;
+      color: #fff;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .page-sharing {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    a {
+      border-width: 0;
     }
   }
   &.activecitizenry {
