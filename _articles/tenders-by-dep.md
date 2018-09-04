@@ -4,7 +4,7 @@ author: adi
 title: Tenders by department
 date: 2015-02-04
 short: The response to this blog post has been very positive. However, I don’t think that I was very clear about the overall message. The City’s data portal has a long way to go but that doesn’t mean that they have failed. For it to improve, we need to give the City feedback about what works and what doesn’t work. Hopefully this blog encourages others to do just that.
-image: tenders.png
+image: tenders-dep.png
 ---
 
 ## Is Cape Town’s new open data portal any good?
