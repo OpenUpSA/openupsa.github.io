@@ -1,7 +1,7 @@
 ---
-name: africa-biggest-country
+name: africa-biggest-continent
 title: No Mr President. Africa is not the biggest continent.
-external-url: https://africacheck.org/spot-check/it-would-take-at-least-4-africas-to-fit-all-the-worlds-continents-president-zuma/
-image: africa-biggest-country.png
+external-url: /articles/africa-biggest-continent.html
+image: africa-biggest-continent.png
 summary: "In 2015, President Zuma stated that all of the countries in the world would fit into Africa. Here is a visual proof that this is not true."
----
+--- 
