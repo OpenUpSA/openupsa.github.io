@@ -4,7 +4,7 @@ author: adi
 title: ANALYSIS - Why Africa’s larger than maps cause us to think it is 
 date: 2016-01-19
 short: Maps influence the way we understand the world. The most common map projection is a relic from the Euro-centric colonial days - and as a result Africa appears smaller than it actually is.
-image: africa-maps/africa-maps.png
+image: africa-maps.png
 ---
 
  A few weeks ago President Jacob Zuma [stated that all the continents in the world would fit into Africa](http://www.timeslive.co.za/politics/2015/12/10/watch-zuma-fails-at-geography---claims-africa-is-the-largest-continent).
