@@ -1,7 +1,7 @@
 ---
 layout: article
 author: adi
-title: Directors by race
+title: Directors by race 
 date:  2017-12-09
 short: Has there been any racial transformation in the economy? This preliminary visualisation helps explore this question.
 image: directors.png
