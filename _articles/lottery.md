@@ -22,7 +22,7 @@ image: lottery.png
  
  So we’ve made it simple to check who received funding, when and how much using a simple tool built by [OpenUp](https://openup.org.za/), a Cape Town-based civic tech organisation dedicated to transparency. All the data in the tool was [scraped](https://en.wikipedia.org/wiki/Data_scraping) from the official NLC annual reports. 
  
- <img style="margin-bottom: 15px; border: 1px solid #ddd;" src="{{ site.baseurl }}/img/articles/lottery_tool.jpg"/>
+ <img style="margin-bottom: 15px; border: 1px solid #ddd;" src="{{ site.baseurl }}/img/articles/lottery_tool.png"/>
  
  We’ve dug through the data to find stories about the lottery and some recipients. We invite you to do the same – and if you find anything you think we should follow-up on please send a mail to [newsroom@enca.com](mailto:newsroom@enca.com).
  
