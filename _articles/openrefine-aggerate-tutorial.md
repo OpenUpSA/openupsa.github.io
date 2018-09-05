@@ -20,66 +20,66 @@ If this table were in a relational database, I could ask the following questions
 - What is the total value of all property in a specific city?
 - What is the average square metre value in each city?
 
-<img src="/img/articles/openrefine-blog/openrefine1.png"/>
+<img src="/img/articles/openrefine-blog/openrefine1.png" style="width:60%"/>
 
 The first step to calculating the total value of property per city is to sort all the rows by the city name.
 
-<img src="/img/articles/openrefine-blog/openrefine2.png"/>
+<img src="/img/articles/openrefine-blog/openrefine2.png" style="width:60%"/>
 <br/>
 <br/>
-<img src="/img/articles/openrefine-blog/openrefine3.png"/>
+<img src="/img/articles/openrefine-blog/openrefine3.png" style="width:60%"/>
 
 Simply sorting gives us a view of the data. The underlying dataset has not yet been sorted. We need to change the underlying order before moving onto the next step. At the top of the screen you will see an option for permanently reording the dataset.
 
-<img src="/img/articles/openrefine-blog/openrefine4.png"/>
+<img src="/img/articles/openrefine-blog/openrefine4.png" style="width:60%"/>
 
 This now sets us up to convert the rows into records. You will notice two links at the top of the screen named *rows* and *records*. Rows is currently selected, showing 229 separate rows. Records represent multi-row values. A record is defined by a group of sequential sorted rows where the first column contains a single value, followed by a number of rows with blank values in the first column. To achieve this we use the *blank down* function.
 
-<img src="/img/articles/openrefine-blog/openrefine5.png"/>
+<img src="/img/articles/openrefine-blog/openrefine5.png" style="width:60%"/>
 
 Now select the record function.
 
-<img src="/img/articles/openrefine-blog/openrefine6.png"/>
+<img src="/img/articles/openrefine-blog/openrefine6.png" style="width:60%"/>
 
 We now have only 8 records, one per city. Buffalo City for example is a single record with 24 rows.
 
 We can now apply functions to all of the values in this record. To calculate the total value we first make sure that our value column is a number (it is stored as text by default).
 
-<img src="/img/articles/openrefine-blog/openrefine10.png"/>
+<img src="/img/articles/openrefine-blog/openrefine10.png" style="width:60%"/>
 
 Then create a new column and calculate the sum of all the value cells in that record.
 
-<img src="/img/articles/openrefine-blog/openrefine7.png"/>
+<img src="/img/articles/openrefine-blog/openrefine7.png" style="width:60%"/>
 <br/>
 <br/>
-<img src="/img/articles/openrefine-blog/openrefine8.png"/>
+<img src="/img/articles/openrefine-blog/openrefine8.png" style="width:60%"/>
 
 This column now contains the total value that we want. 
 
 We can now remove the old *value* column
 
-<img src="/img/articles/openrefine-blog/openrefine9.png"/>
+<img src="/img/articles/openrefine-blog/openrefine9.png" style="width:60%"/>
 <br/>
 <br/>
 
 Unfortunately it is duplicated a number of times per record. We can easily remove the duplicates by changing back to rows and faceting the City column by blanks and select only the blank rows.
 
-<img src="/img/articles/openrefine-blog/openrefine12.png"/>
+<img src="/img/articles/openrefine-blog/openrefine12.png" style="width:60%"/>
 
 
 <br/>
 <br/>
-<img src="/img/articles/openrefine-blog/openrefine13.png"/>
+<img src="/img/articles/openrefine-blog/openrefine13.png" style="width:60%"/>
 <br/>
 <br/>
 
 Remove all the matching rows and reset the facet
 
-<img src="/img/articles/openrefine-blog/openrefine14.png"/>
+<img src="/img/articles/openrefine-blog/openrefine14.png" style="width:60%"/>
 
 and voilà
 
-<img src="/img/articles/openrefine-blog/openrefine16.png"/>
+<img src="/img/articles/openrefine-blog/openrefine16.png" style="width:60%"/>
 <br/>
 
 This technique is quite useful for cleaning duplicate rows in general. I hope this brief tutorial is valuable to someone.
