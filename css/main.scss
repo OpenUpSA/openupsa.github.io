@@ -223,6 +223,8 @@ body {
 }
 
 .site-header {
+  margin-bottom: 20px;
+
   .global-nav {
     margin-bottom: 0;
     background-color: #fff;
@@ -552,21 +554,53 @@ body {
   }
 }
 
-.tools-page, .visualisations-page {
+.tools-page, .visualisations-page, .news-page {
   .hero {
     background-color: $green;
-    color: #fff;
     margin-top: -20px;
-    .title {
-      font-family: 'Open Sans', sans-serif;
-      text-transform: uppercase;
-      margin-top: 30px;
+    color: #fff;
+    h1.header {
+      color: #fff;
+      font-size: 42px;
       font-weight: 600;
     }
-    .description {
-      font-family: 'Bitter', 'Libre Franklin', 'Open Sans', sans-serif;
-      margin-bottom: 30px;
+    h2.header {
+      color: #fff;
+      font-weight: 500;
+      margin-top: 10px;
+      margin-bottom: 20px;
     }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 25px;
+      color: #fff;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .page-sharing {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    a {
+      border-width: 0;
+    }
+  }
+  .btn {
+    background-color: $green;
+    color: #fff;
+    &:hover, &:active {
+      background-color: $green-dark;
+      color: #fff;
+    }
+  }
+  a, a:hover {
+    color: $green;
   }
   .tool-intro {
     font-family: 'Open Sans', sans-serif;
@@ -905,26 +939,39 @@ p {
     }
   }
   .hero {
-    color: #fff;
+    background-color: $green;
     margin-top: -20px;
-    margin-bottom: 40px;
-    .title {
-      font-family: 'Open Sans', sans-serif;
-      text-transform: uppercase;
-      margin-top: 30px;
+    color: #fff;
+    h1.header {
+      color: #fff;
+      font-size: 42px;
       font-weight: 600;
     }
-    .description {
-      font-family: 'Bitter', 'Libre Franklin', 'Open Sans', sans-serif;
-      margin-bottom: 30px;
-      a {
-        color: #fff;
-        font-weight: bold;
-        text-decoration: underline;
-        &:hover {
-          text-decoration: none;
-        }
-      }
+    h2.header {
+      color: #fff;
+      font-weight: 500;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 25px;
+      color: #fff;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .page-sharing {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    a {
+      border-width: 0;
     }
   }
   &.activecitizenry {
@@ -2392,4 +2439,69 @@ footer {
 .visualisation-holder {
   display: flex;
   flex-wrap: wrap;
+}
+
+.news-page {
+  .theme-nav {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    .nav {
+      a {
+        border-radius: 0;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        margin: 12px 5px;
+        color: #fff;
+        transition: background-color 150ms ease-out;
+        @media (max-width: 767px) {
+          margin: 1px 0;
+          padding: 20px;
+        }
+        &.activecitizenry {
+          background-color: $activecitizenry;
+          &:hover {
+            background-color: $activecitizenry-dark;
+            color: #fff;
+          }
+        }
+        &.tech {
+          background-color: $tech;
+          &:hover {
+            background-color: $tech-dark;
+            color: #fff;
+          }
+        }
+        &.cogovernance {
+          background-color: $cogovernance;
+          &:hover {
+            background-color: $cogovernance-dark;
+            color: #fff;
+          }
+        }
+        &.literacy {
+          background-color: $literacy;
+          &:hover {
+            background-color: $literacy-dark;
+            color: #fff;
+          }
+        }
+        &.liberation {
+          background-color: $liberation;
+          &:hover {
+            background-color: $liberation-dark;
+            color: #fff;
+          }
+        }
+        &.empowerment {
+          background-color: $empowerment;
+          &:hover {
+            background-color: $empowerment-dark;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
 }
