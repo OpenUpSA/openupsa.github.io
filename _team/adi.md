@@ -6,8 +6,8 @@ position: Director
 current: currently working on
 email: adi@openup.org.za
 biography:
-- highlight: Honours Degree in Computer Science from Wits
-- highlight: Masters coursework in Computer Science at the Hebrew University in Jerusalem
+- highlight: Honours Degree in Computer Science from the University of Cape Town
+- highlight: Two-year masters programme in Computer Science at the Hebrew University in Jerusalem
 - highlight: Joined a tiny start-up in the early days of the dot com boom.
 - highlight: Led a special projects hit squad at a machine learning company
 - highlight: Ran a project that promoted access to medicines in southern Africa by injecting procurement data into the pharmaceutical marketplace.
