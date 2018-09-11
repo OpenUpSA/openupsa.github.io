@@ -8,12 +8,12 @@ image: openrefine-unpivot/main.png
 tools:
  - name: trainup
 themes:
-- name: tec
+- name: tech
 ---
 
 The National Crime statistics for 2017 - 2018 were just [released](https://www.saps.gov.za/newsroom/selnewsdetails.php?nid=17348). This eagerly awaited dataset often paints a disturbing picture of crime in South Africa. According to the data, 57 people are murdered in South Africa everyday, the majority in the Western Cape. Ignoring the seriousness of the data, I am going to use it to demonstrate a useful technique that can help make your dataset more machine-friendly.
 
-You can download the data [here](https://www.saps.gov.za/services/2017_18_financial_year_statistics_re_drawn_unfoundeds_deducted_release_RSA.xlsx) if you want to follow along. I'm using LibreOffice so the first few steps might be different in Excel (actually, there is a chance you can do this in Excel anyway but I'm not sure). In the .xlsx file you will see three sheets with summary information. The data contains information on crimes for years between 2008 and 2017. Looking at the **station statistics** sheet, you see raw figures per police station. Nice, but not useful for analysis across police stations or geographical areas.
+You can download the raw data [here](https://www.saps.gov.za/services/2017_18_financial_year_statistics_re_drawn_unfoundeds_deducted_release_RSA.xlsx) if you want to follow along. I'm using LibreOffice so the first few steps might be different in Excel (actually, there is a chance you can do this in Excel anyway but I'm not sure). In the .xlsx file you will see three sheets with summary information. The data contains information on crimes for years between 2008 and 2017. Looking at the **station statistics** sheet, you see raw figures per police station. Nice, but not useful for analysis across police stations or geographical areas.
 
 Luckily you can find the complete raw data in a hidden tab. Right click on the tabs at the bottom and you get an option **Show Sheet...**.
 
@@ -83,3 +83,5 @@ If we tick that box and apply this procedure correctly, you'll get this dataset.
 <img src="/img/articles/openrefine-unpivot/unpivot_1.png"/>
 <br/><br/>
 Done.
+
+*Note: you can download a clean dataset that I maintain [here](https://data.code4sa.org/Government/Police-Statistics-2005-2018/8d9f-f6rq).*
