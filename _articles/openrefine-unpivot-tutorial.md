@@ -6,7 +6,7 @@ date: 2018-09-09
 short: "Learning how to use pivot tables is a milestone in your ability to wrangle data. It is a key tool for basic analysis of data. What happens if your data has already been pivoted and you want to unpivot? This brief tutorial shows you how using OpenRefine."
 image: openrefine-unpivot/main.png
 tools:
- - name: trainup openrefine
+ - name: trainup
 themes:
 - name: tec
 ---
