@@ -425,7 +425,7 @@ body {
           background-color: $green-darker;
         }
       }
-      #mc_embed_signup form {
+      #mc_embed_signup_footer form {
         margin-top: 10px;
       }
     }
@@ -546,7 +546,7 @@ body {
     }
   }
 
-  #mc_embed_signup {
+  #mc_embed_signup_footer {
     .lname,
     .fname {
       display: none;
@@ -1276,7 +1276,7 @@ footer {
   a {
     color: #999;
   }
-  #mc_embed_signup {
+  #mc_embed_signup_footer {
     .lname,
     .fname {
       display: none;
@@ -2257,7 +2257,7 @@ footer {
 }
 
 /* MailChimp Form */
-#mc_embed_signup {
+#mc_embed_signup_footer {
   form {
     display:block;
     position:relative;
