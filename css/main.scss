@@ -111,6 +111,11 @@ body {
   }
 }
 
+.article-holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .article-list {
   img {
     width: 100%;
@@ -2527,6 +2532,11 @@ footer {
           }
         }
       }
+    }
+  }
+  .tags {
+    a {
+      color: $gray-light;
     }
   }
 }
