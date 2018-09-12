@@ -463,6 +463,13 @@ body {
           margin-top: 10px;
         }
       }
+      &-noHover {
+        &:hover {
+          text-decoration: none;
+          transition: none;
+          box-shadow: none;
+        }
+      }
     }
   }
   .articles {
