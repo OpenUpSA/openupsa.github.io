@@ -290,16 +290,16 @@ short: Data-driven storytelling training for people working in the public and pr
               {% endif %}
               <div class="one-article col-md-4 col-sm-6">
 
-              <div class="title-image-wrap">
-                <a class="viz-featured-image"
-                   href="{{ article.url | prepend: site.baseurl }}"
-                   style="background-image: url('{{ site.baseurl }}/img/articles/{{ article.image}}')"
-                ></a>
+                <div class="title-image-wrap">
+                  <a class="viz-featured-image"
+                     href="{{ article.url | prepend: site.baseurl }}"
+                     style="background-image: url('{{ site.baseurl }}/img/articles/{{ article.image}}')"
+                  ></a>
 
-                <div class="article-title">
-                  <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+                  <div class="article-title">
+                    <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+                  </div>
                 </div>
-              </div>
 
                 <div class="article-author">
                   {% if article.author-external %}
