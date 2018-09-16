@@ -14,7 +14,10 @@
    version="1.1"
    id="svg108767"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="Drug-related crime.svg">
+   sodipodi:docname="Drug-related crime.svg"
+   inkscape:export-filename="/Users/adi/Development/openupsa.github.io/img/articles/crimestats/Drug-related crime.png"
+   inkscape:export-xdpi="328.26001"
+   inkscape:export-ydpi="328.26001">
   <metadata
      id="metadata113711">
     <rdf:RDF>
@@ -23,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -175,9 +178,9 @@
      fit-margin-right="5"
      fit-margin-bottom="5"
      fit-margin-left="5"
-     inkscape:zoom="1.0631484"
-     inkscape:cx="758.44593"
-     inkscape:cy="261.04911"
+     inkscape:zoom="1.5035189"
+     inkscape:cx="395.2045"
+     inkscape:cy="236.17601"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -259,35 +262,38 @@
   <text
      xml:space="preserve"
      style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.49999905px;line-height:125%;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-     x="240.6165"
-     y="147.83876"
+     x="265.22543"
+     y="138.52727"
      id="text117651"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       x="240.6165"
-       y="147.83876"
-       id="tspan117653"><tspan
-         x="240.6165"
-         y="147.83876"
-         id="tspan117655">All the dots in blue are</tspan><tspan
-         dx="0"
-         x="382.16919"
-         y="147.83876"
-         id="tspan117657" /></tspan><tspan
+       x="265.22543"
+       y="138.52727"
+       id="tspan117653"
+       style="font-size:10px"><tspan
+         x="265.22543"
+         y="138.52727"
+         id="tspan117655"
+         style="font-size:10px"
+         dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0">All the dots in blue are</tspan></tspan><tspan
        sodipodi:role="line"
-       x="240.6165"
-       y="163.46376"
-       id="tspan117659"><tspan
-         x="240.6165"
-         y="163.46376"
-         id="tspan117661">in the Cape Town, mostly in </tspan></tspan><tspan
+       x="265.22543"
+       y="154.15227"
+       id="tspan117659"
+       style="font-size:10px"><tspan
+         x="265.22543"
+         y="154.15227"
+         id="tspan117661"
+         style="font-size:10px">in the Cape Town, mostly in </tspan></tspan><tspan
        sodipodi:role="line"
-       x="240.6165"
-       y="179.08875"
-       id="tspan117663"><tspan
-         x="240.6165"
-         y="179.08875"
-         id="tspan117665">the Cape Flats.</tspan></tspan></text>
+       x="265.22543"
+       y="169.77725"
+       id="tspan117663"
+       style="font-size:10px"><tspan
+         x="265.22543"
+         y="169.77725"
+         id="tspan117665"
+         style="font-size:10px">the Cape Flats.</tspan></tspan></text>
   <g
      id="g9164-2"
      transform="translate(152.60196,157.90691)">
@@ -366,53 +372,6 @@
          sodipodi:role="line"
          id="tspan117406-0-8">  1,852</tspan></text>
   </g>
-  <text
-     xml:space="preserve"
-     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.49999905px;line-height:125%;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-     x="654.97119"
-     y="238.04477"
-     id="text117683"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       x="654.97119"
-       y="238.04477"
-       id="tspan117685"><tspan
-         x="654.97119"
-         y="238.04477"
-         style="text-align:start;text-anchor:start"
-         id="tspan117687">1,852 incidents for 20,441 residents in </tspan></tspan><tspan
-       sodipodi:role="line"
-       x="654.97119"
-       y="253.66977"
-       id="tspan117689"><tspan
-         x="654.97119"
-         y="253.66977"
-         style="text-align:start;text-anchor:start"
-         id="tspan117691">Pietermartizburg, that's 9,060 per </tspan></tspan><tspan
-       sodipodi:role="line"
-       x="654.97119"
-       y="269.29477"
-       id="tspan117693"><tspan
-         x="654.97119"
-         y="269.29477"
-         style="text-align:start;text-anchor:start"
-         id="tspan117695">100,000 residents, per capita the </tspan></tspan><tspan
-       sodipodi:role="line"
-       x="654.97119"
-       y="284.91977"
-       id="tspan117697"><tspan
-         x="654.97119"
-         y="284.91977"
-         style="text-align:start;text-anchor:start"
-         id="tspan117699">highest rate of drug-related crimes in </tspan></tspan><tspan
-       sodipodi:role="line"
-       x="654.97119"
-       y="300.54477"
-       id="tspan117701"><tspan
-         x="654.97119"
-         y="300.54477"
-         style="text-align:start;text-anchor:start"
-         id="tspan117703">the country.</tspan></tspan></text>
   <path
      inkscape:connector-curvature="0"
      id="path108775"
@@ -14783,4 +14742,16 @@
       </g>
     </g>
   </g>
-</svg>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot271666"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.49999905px;line-height:125%;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     transform="translate(31.925106,149.64893)"><flowRegion
+       id="flowRegion271668"><rect
+         id="rect271670"
+         width="220.15019"
+         height="99.765968"
+         x="593.94"
+         y="62.55975" /></flowRegion><flowPara
+       id="flowPara271680"
+       style="font-size:10px">1,852 incidents in Pietermartizburg, a police station servicing 20,441 residents. That's 9,060 incidents per 100,000 residents, per capita the highest rate of drug-related crimes in the country.</flowPara></flowRoot></svg>
