@@ -8,9 +8,9 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    class="marks"
-   width="1005.522"
-   height="393.0787"
-   viewBox="0 0 1005.522 393.0787"
+   width="1018.7058"
+   height="411.0787"
+   viewBox="0 0 1018.7058 411.0787"
    version="1.1"
    id="svg26778"
    inkscape:version="0.91 r13725"
@@ -204,8 +204,8 @@
      id="namedview31694"
      showgrid="false"
      inkscape:zoom="1.6218203"
-     inkscape:cx="686.57293"
-     inkscape:cy="179.05048"
+     inkscape:cx="558.5574"
+     inkscape:cy="253.04141"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -215,7 +215,7 @@
      fit-margin-right="5"
      fit-margin-left="5" />
   <g
-     transform="translate(51.521973,56.374602)"
+     transform="translate(64.705813,74.374602)"
      id="g26780">
     <g
        class="mark-group role-frame root"
@@ -14570,14 +14570,14 @@
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13px;line-height:normal;font-family:sans-serif;text-anchor:start;opacity:1;fill:#000000"
      id="text4910"
      y="19.833984"
-     x="198.14548">
+     x="211.32932">
     <tspan
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'"
        id="tspan9044">2017/2018 reported crimes by police station: Commercial Crime</tspan>
   </text>
   <g
      id="g9164"
-     transform="translate(173.60273,4.6620795)">
+     transform="translate(186.78657,22.66208)">
     <rect
        y="54.555965"
        x="105.9166"
@@ -14610,7 +14610,7 @@
   </g>
   <g
      id="g9164-8"
-     transform="translate(168.37078,70.933437)">
+     transform="translate(181.55462,88.933437)">
     <rect
        y="54.555965"
        x="105.9166"
@@ -14643,7 +14643,7 @@
   </g>
   <g
      id="g9164-8-2"
-     transform="translate(-103.69059,-31.96157)">
+     transform="translate(-90.50675,-13.96157)">
     <rect
        y="54.555965"
        x="105.9166"
@@ -14676,7 +14676,7 @@
   </g>
   <g
      id="g9164-8-4"
-     transform="translate(600.92673,49.957505)">
+     transform="translate(614.11057,67.957505)">
     <rect
        y="54.555965"
        x="105.9166"
@@ -14710,7 +14710,7 @@
            id="tspan9160-6-1"
            style="font-weight:bold"> Incidents:</tspan><tspan
            style="font-size:10px"
-           id="tspan32477"></tspan></tspan><tspan
+           id="tspan32477" /></tspan><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica"
          y="114.05679"
          x="113.98642"
@@ -14721,7 +14721,7 @@
   </g>
   <g
      id="g9164-8-1"
-     transform="translate(636.87479,165.77023)">
+     transform="translate(650.05863,183.77023)">
     <rect
        y="54.555965"
        x="105.9166"

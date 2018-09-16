@@ -8,9 +8,9 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    class="marks"
-   width="1004.208"
-   height="399.5062"
-   viewBox="0 0 1004.208 399.5062"
+   width="1001.5752"
+   height="413.55453"
+   viewBox="0 0 1001.5752 413.55454"
    version="1.1"
    id="svg2"
    inkscape:version="0.91 r13725"
@@ -240,14 +240,14 @@
      fit-margin-left="5"
      fit-margin-right="5"
      inkscape:zoom="1.0330718"
-     inkscape:cx="638.20612"
-     inkscape:cy="210.31456"
+     inkscape:cx="416.53711"
+     inkscape:cy="210.36289"
      inkscape:window-x="124"
      inkscape:window-y="58"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <g
-     transform="translate(48.857422,62.850422)"
+     transform="translate(48.857422,76.850422)"
      id="g4">
     <g
        class="mark-group role-frame root"
@@ -7218,7 +7218,7 @@
                            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11px;line-height:normal;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
                            id="text2378">
                           <tspan
-                             style="-inkscape-font-specification:'Helvetica Bold';font-family:Helvetica;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+                             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'"
                              id="tspan9348">median household income</tspan>
                         </text>
                       </g>
@@ -14310,7 +14310,7 @@
                            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11px;line-height:normal;font-family:sans-serif;text-anchor:middle;opacity:1;fill:#000000"
                            id="text4796">
                           <tspan
-                             style="-inkscape-font-specification:'Helvetica Bold';font-family:Helvetica;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+                             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'"
                              id="tspan9350">median household income</tspan>
                         </text>
                       </g>
@@ -14581,7 +14581,7 @@
                      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11px;line-height:normal;font-family:sans-serif;text-anchor:start;opacity:1;fill:#000000"
                      id="text4900">
                     <tspan
-                       style="-inkscape-font-specification:'Helvetica Bold';font-family:Helvetica;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'"
                        id="tspan9344">households</tspan>
                   </text>
                 </g>
@@ -14606,7 +14606,7 @@
   </text>
   <g
      id="g9164"
-     transform="translate(-50.5403,-42.429232)">
+     transform="translate(-50.5403,-28.429232)">
     <rect
        y="54.555965"
        x="105.9166"
@@ -14639,7 +14639,7 @@
   </g>
   <g
      id="g9164-5"
-     transform="translate(-23.964065,30.154597)">
+     transform="translate(-23.964065,44.154597)">
     <rect
        y="54.555965"
        x="105.9166"
@@ -14672,7 +14672,7 @@
   </g>
   <g
      id="g9164-5-7"
-     transform="translate(167.95344,138.37705)">
+     transform="translate(167.95344,152.37705)">
     <rect
        y="54.555965"
        x="105.9166"
@@ -14705,7 +14705,7 @@
   </g>
   <g
      id="g9164-5-7-7"
-     transform="translate(165.04948,256.47145)">
+     transform="translate(165.04948,270.47145)">
     <rect
        y="54.555965"
        x="105.9166"
@@ -14738,7 +14738,7 @@
   </g>
   <g
      id="g9164-5-3"
-     transform="translate(439.95776,6.7308327)">
+     transform="translate(439.95776,20.730833)">
     <rect
        y="54.555965"
        x="105.9166"
@@ -14771,7 +14771,7 @@
   </g>
   <g
      id="g9164-5-1"
-     transform="translate(648.65877,170.32062)">
+     transform="translate(648.65877,184.32062)">
     <rect
        y="54.555965"
        x="105.9166"
