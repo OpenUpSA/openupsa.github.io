@@ -58,7 +58,7 @@ layout: base
             {% if article.author == page.name %}
               {% assign articleheadercounter = articleheadercounter | plus:1 %}
               {% if articleheadercounter == 1 %}
-                <h3>Articles I've written</h3>
+                <h3>Recent articles I've written</h3>
               {% endif %}
             {% endif %}
           {% endfor %}
@@ -66,6 +66,9 @@ layout: base
             {% assign articlecounter = 0 %}
             {% for article in site.articles reversed %}
               {% if article.author == page.name %}
+                {% if articlecounter == 4 %}
+                  {% break %}
+                {% endif %}
                 {% assign articlecounter = articlecounter | plus:1 %}
                 <div class="one-article col-sm-6 col-xs-12">
 
