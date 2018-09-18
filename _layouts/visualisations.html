@@ -1,0 +1,153 @@
+---
+layout: base
+---
+<div class="container single-article">
+
+  <article>
+    <div class="row header">
+      <div class="col-md-8 col-md-offset-2">
+
+        <h1>{{ page.title }}</h1>
+        <p class="short">{{ page.short }}</p>
+
+        <div class="row">
+          <div class="col-sm-6 author-date">
+            <small>
+              {% if page.author-external %}
+              by <a href="{{ page.author-external-url }}">{{ page.author-external }}</a>, {{ page.date | date: "%-d %B %Y" }}
+              {% else %}
+              {% for member in site.team %}
+              {% if page.author == member.name %}
+              by <a href="{{ member.url | prepend: site.baseurl }}">{{ member.full-name }}</a>, {{ page.date | date: "%-d %B %Y" }}
+              {% endif %}
+              {% endfor %}
+              {% endif %}
+            </small>
+          </div>
+          <div class="col-sm-6 top-share">
+            {% include social_sharing.html %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row article-content">
+      <div class="col-md-8 col-md-offset-2">
+        {{ content }}
+      </div>
+    </div>
+  </article>
+
+  <section class="sharing row">
+    <div class="col-md-8 col-md-offset-2">
+      {% include social_sharing.html %}
+    </div>
+  </section>
+
+  <section class="related-articles article-list">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        {% if page.tools or page.themes or page.types %}
+        <h2>Related articles</h2>
+        {% endif %}
+        <div class="tool row">
+          {% assign sameToolCount = 0 %}
+
+          {% for article in site.articles reversed %}
+          {% for sitetool in site.tools %}
+          {% for tool in article.tools %}
+          {% for articletool in page.tools %}
+          {% if articletool.name == tool.name %}
+          {% if sitetool.name == tool.name %}
+          {% unless article.url == page.url %}
+          <div class="col-sm-6 col-xs-12 one-article">
+            <div class="title-image-wrap">
+              <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+              <div class="article-title">
+                <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+              </div>
+            </div>
+            <div class="tags"><a class="badge tool" href="{% if sitetool.skip-own-page %}{{ sitetool.external-url }}{% else %}{{ sitetool.url | prepend: site.baseurl }}{% endif %}">{{ sitetool.title }}</a></div>
+          </div>
+          {% assign sameToolCount = sameToolCount | plus: 1 %}
+          {% endunless %}
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+          {% endfor %}
+          {% if sameToolCount == 2 %}
+          {% break %}
+          {% endif %}
+          {% endfor %}
+        </div>
+
+        <div class="theme row">
+          {% assign sameThemeCount = 0 %}
+
+          {% for article in site.articles reversed %}
+          {% for sitetheme in site.themes %}
+          {% for theme in article.themes %}
+          {% for articletheme in page.themes %}
+          {% if articletheme.name == theme.name %}
+          {% if sitetheme.name == theme.name %}
+          {% unless article.url == page.url %}
+          <div class="col-sm-6 col-xs-12 one-article">
+            <div class="title-image-wrap">
+              <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+              <div class="article-title">
+                <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+              </div>
+            </div>
+            <div class="tags"><a class="badge theme {{ theme.name }}" href="{{ sitetheme.url | prepend: site.baseurl }}">{{ sitetheme.title }}</a></div>
+          </div>
+          {% assign sameThemeCount = sameThemeCount | plus: 1 %}
+          {% endunless %}
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+          {% endfor %}
+          {% if sameThemeCount == 2 %}
+          {% break %}
+          {% endif %}
+          {% endfor %}
+        </div>
+
+        <div class="type row">
+          {% assign sameTypeCount = 0 %}
+
+          {% for article in site.articles reversed %}
+          {% for sitetype in site.types %}
+          {% for type in article.types %}
+          {% for articletype in page.types %}
+          {% if articletype.name == type.name %}
+          {% if sitetype.name == type.name %}
+          {% unless article.url == page.url %}
+          <div class="col-sm-6 col-xs-12 one-article">
+            <div class="title-image-wrap">
+              <a href="{{ article.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/img/articles/{{ article.image}}"></a>
+              <div class="article-title">
+                <a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+              </div>
+            </div>
+            <div class="tags"><a class="badge type" href="{{ sitetype.url | prepend: site.baseurl }}">{{ sitetype.title }}</a></div>
+          </div>
+          {% assign sameTypeCount = sameTypeCount | plus: 1 %}
+          {% endunless %}
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+          {% endfor %}
+          {% if sameTypeCount == 2 %}
+          {% break %}
+          {% endif %}
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
