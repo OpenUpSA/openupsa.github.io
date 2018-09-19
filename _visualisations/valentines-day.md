@@ -1,15 +1,17 @@
 ---
-layout: article
-title: Valentine's Day Edition - Love knows no age
+layout: visualisations
 author: adi
-short: They say that love knows no age. Does the data agree? Have a look at a weird cross-section of our society as seen through the 2012 civil marriages dataset.
+title: Love knows no age
 date: 2015-02-13
+name: marriages
+short: They say that love knows no age. Does the data agree? Have a look at a weird cross-section of our society as seen through the 2012 civil marriages dataset.
+summary: They say that love knows no age. Does the data agree? Have a look at a weird cross-section of our society as seen through the 2012 civil marriages dataset.
+image: marriages.jpg
 extra_js:
     - /js/d3.v3.min.js
     - /js/c3.min.js
     - /js/pym.js
 extra_stylesheets: /css/c3.css
-image: valentines-day.jpg
 themes:
 - name: literacy
 ---
