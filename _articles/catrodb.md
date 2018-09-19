@@ -3,7 +3,7 @@ layout: article
 author: guus
 title: Creating an interactive story with CartoDB and Leaflet.js
 date: 2016-06-22
-short: Tis blog post will cover the technical side of creating an online map visualisation of Cape Town’s informal settlements. 
+short: This blog post will cover the technical side of creating an online map visualisation of Cape Town’s informal settlements. 
 image: carto.png
 ---
 
@@ -11,7 +11,7 @@ In April, Code for South Africa was approached by [Ndifuna Ukwazi](http://nu.org
 
 ## First steps
 
-For reasons discussed in this [blog](http://code4sa.org/2016/06/22/mapping-sanitation.html), we decided to use [CartoDB](https://carto.com/), with which we were able to easily map the data and build features on top of it. More specifically, we used the `createLayer` option so we could easily switch between layers and also take advantage of [Leaflet](https://leafletjs.com/), an open-source JavaScript library for interactive maps.
+For reasons discussed in this [blog]({{ site.baseurl }}/articles/mapping-sanitation.html), we decided to use [CartoDB](https://carto.com/), with which we were able to easily map the data and build features on top of it. More specifically, we used the `createLayer` option so we could easily switch between layers and also take advantage of [Leaflet](https://leafletjs.com/), an open-source JavaScript library for interactive maps.
 
 Before any real dev work started, the data was geocoded and uploaded to CartoDB. The dataset contained the boundaries of the informal settlements in [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON) format, which CartoDB automatically recognises and plots on a map.
 
