@@ -1,11 +1,10 @@
 ---
-layout: visualisations
+layout: article
 author: adi
 title: A deep dive into the medical profession
 date: 2017-02-16
-name: doctors
+name: data-driven-medical
 short: A data-driven journey through the medical profession using age, gender, and education.
-summary: A data-driven journey through the medical profession using age, gender, and education.
 image: doctors.png
 themes:
   - name: liberation
