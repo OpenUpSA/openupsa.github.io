@@ -3,7 +3,7 @@ layout: article
 author: greg
 title: "Cape Agulhas's by-laws are now easier to find, read and share"
 date: 2018-08-13
-short: OpenUp has partnered with Cape Agulhas Municiaplity to put the municipality's by-laws online, helping to make them easier to find, read and share.
+short: OpenUp has partnered with Cape Agulhas Municipality to put the municipality's by-laws online, helping to make them easier to find, read and share.
 image: capeagulhas.jpg
 tools:
 - name: openbylaws
