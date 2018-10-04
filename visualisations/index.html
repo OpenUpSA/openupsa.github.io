@@ -9,7 +9,7 @@ layout: base
 			<h1 class="text-center header">Data visualisations</h1>
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<p>We've created a lot of data visualisations over the years. Often to supplement stories, sometimes as a visually appealing starting point for discussions. Below you'll find some of our visualisations that may pique your interest or inspire you to create one yourself.</p>
+					<p>We've created many data visualisations over the years. Often to supplement stories, sometimes as a visually appealing starting point for discussions. Below you'll find some of our visualisations that may pique your interest or inspire you to create one yourself.</p>
 					<p><strong>Some of these visualisations can be updated using more recent data.</strong> Check out the sources to get started!</p>
 					<span class="page-sharing">
 						<small>Share:</small>
@@ -27,7 +27,7 @@ layout: base
 
 	<section class="all-visualisations container">
 		<div class="row visualisation-holder">
-			{% assign orderedVisualisations = site.visualisations | sort: 'title' %}
+			{% assign orderedVisualisations = site.visualisations | sort: 'date' | reverse %}
 			{% for visualisation in orderedVisualisations %}
 			<div class="col-xs-12 col-md-6 visualiation-box">
 				<div class="row">
