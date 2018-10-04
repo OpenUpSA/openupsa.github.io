@@ -2,6 +2,7 @@
 layout: visualisations
 author-external: Lynne O'Connor
 title: TOOL - About the South African Lottery
+date: 2017-10-01
 name: lottery
 short: A lottery search tool, created by OpenUp, gives readers the opportunity to look at the data used in the Gaming the lottery expose.
 summary: The National Lottery Commission assesses all applications for funding from the lottery. Use this tool to see who has received funding, and how much.
