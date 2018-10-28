@@ -9,4 +9,4 @@ summary: Cardio-vascular surgery is a field dominated by men. This graphic shows
 image: cardiovascular.png
 ---
 
-<img style="margin-bottom: 15px; border: 1px solid #ddd;" src="{{ site.baseurl }}/img/visualisation/cardiovascular.png"/>
+<iframe src="https://static.code4sa.org/hpcsa-women/cardiothoracic.html" style="border:0; height:800px; width:120%; margin-left:-20%"></iframe>
