@@ -1,7 +1,7 @@
 ---
 layout: team
 full-name: Sandy Jooste
-name: Sandy
+name: sandy
 position: 
 current: currently working on
 email: sandy@openup.org.za
