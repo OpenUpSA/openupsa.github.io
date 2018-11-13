@@ -2482,8 +2482,7 @@ footer {
 
 .team-row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .viz-featured-image {
