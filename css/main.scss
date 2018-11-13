@@ -2480,6 +2480,12 @@ footer {
   }
 }
 
+.team-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .viz-featured-image {
   display: block;
   height: 270px;

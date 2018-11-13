@@ -95,9 +95,9 @@ layout: base
 						{% for member in site.team %}
 							{% unless member.alumni %}
 								<div class="col-sm-6 col-md-4">
-									<div class="row">
+									<div class="row team-row">
 										<div class="col-xs-6 image">
-											<a href="{% if member.external %}{{ member.external-url }}{% else %}{{ member.url }}{% endif %}"><img src="/img/team/{{ member.name }}.jpg" style="max-height: 142px"></a>
+											<a href="{% if member.external %}{{ member.external-url }}{% else %}{{ member.url }}{% endif %}"><img src="/img/team/{{ member.name }}.jpg"></a>
 										</div>
 										<div class="col-xs-6 name-title">
 											<a href="{% if member.external %}{{ member.external-url }}{% else %}{{ member.url }}{% endif %}"><div class="member-name">{{ member.full-name }}</div></a>
