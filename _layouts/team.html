@@ -13,13 +13,14 @@ layout: base
           </div>
         </h1>
 
-        <h3>Bio</h3>
-        <ul>
-          {% for item in page.biography %}
-          <li>{{ item.highlight }}</li>
-          {% endfor %}
-        </ul>
-
+        {% if page.biography %}
+          <h3>Bio</h3>
+          <ul>
+            {% for item in page.biography %}
+            <li>{{ item.highlight }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
         <p>You can email me at <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
 
       </div>
