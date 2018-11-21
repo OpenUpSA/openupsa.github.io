@@ -91,11 +91,11 @@ layout: base
 						We're a group of passionate people trying to make our vision for an informed and empowered society a reality
 					</p>
 
-					<div class="row current">
+					<div class="row current team-row">
 						{% for member in site.team %}
 							{% unless member.alumni %}
 								<div class="col-sm-6 col-md-4">
-									<div class="row team-row">
+									<div class="row">
 										<div class="col-xs-6 image">
 											<a href="{% if member.external %}{{ member.external-url }}{% else %}{{ member.url }}{% endif %}"><img src="/img/team/{{ member.name }}.jpg"></a>
 										</div>
