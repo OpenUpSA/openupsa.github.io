@@ -2,6 +2,6 @@
 layout: team
 full-name: Nicole Erasmus
 name: nicole
-position: Office and Logistics Administrator
+position: Stakeholder Engagement Coordinator
 email: nicole@openup.org.za
 ---
