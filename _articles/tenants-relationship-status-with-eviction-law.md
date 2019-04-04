@@ -6,8 +6,10 @@ date: 2019-04-03
 short: By understanding how complex legal processes play out in the real world (not just in a textbook) we can design tools and systems that empower ordinary people to access justice in our courts.
 image: tenants-relationship-status-with-eviction-law.png
 tools:
-- name: research
-featured: true
+- name: openbylaws
+themes:
+- name: empowerment
+- name: activecitizenry
 ---
 
 Cape Town is one of the most unequal cities in the world. A history of colonialism and apartheid has created an economic divide that runs largely along racial lines. The same divide is true for access to land and adequate housing. There is very little security of tenure for millions of Capetonians, who are predominantly low-income black, coloured, and immigrant (often refugee) families. We have seen this play out in the courts, where large numbers of evictions are causing the displacement of low-income families renting in the last few mixed-race, mixed-income inner-city suburbs, to slums on the City’s outskirts.
