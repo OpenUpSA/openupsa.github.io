@@ -1,12 +1,11 @@
 ---
 layout: article
-author: Shaun Russell
+author: shaun
 title: "Tenants’ Relationship Status with Eviction Law: It’s complicated."
 date: 2019-04-03
 short: By understanding how complex legal processes play out in the real world (not just in a textbook) we can design tools and systems that empower ordinary people to access justice in our courts.
 image: tenants-relationship-status-with-eviction-law.png
 tools:
-- name: openbylaws
 themes:
 - name: empowerment
 - name: activecitizenry
