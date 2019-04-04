@@ -14,7 +14,7 @@ Cape Town is one of the most unequal cities in the world. A history of coloniali
 
 The major problems facing these families are the complexity of the legal eviction process and access to legal representation. Most cannot afford to hire a private lawyer and are left with the option of using lawyers provided by the under-resourced and overburdened state (Legal Aid), or pro bono lawyers provided through the Legal Practice Council (formerly the Cape Law Society). Pro bono lawyers are not experienced in eviction law and don’t always exhaust their legal options, which could secure a better outcome for their client. They just “go through the motions” and because the law is so inaccessible, tenants are unaware that more could have been done. 
 
-To address the root causes of eviction, we need to understand **why** people are being evicted and what the stumbling blocks in the legal process that stop tenants from securing the best possible outcome for themselves are. If we have detailed data on the problems, activist-organisations such as (<a href="http://nu.org.za/" target="_blank">Ndifuna Ukwazi</a>) (NU) and movements like (<a href="http://reclaimthecity.org.za/" target="_blank">Reclaim the City</a>) (RTC) could be more effective in their eviction work. 
+To address the root causes of eviction, we need to understand **why** people are being evicted and what the stumbling blocks in the legal process that stop tenants from securing the best possible outcome for themselves are. If we have detailed data on the problems, activist-organisations such as <a href="http://nu.org.za/" target="_blank">Ndifuna Ukwazi</a> (NU) and movements like <a href="http://reclaimthecity.org.za/" target="_blank">Reclaim the City</a> (RTC) could be more effective in their eviction work. 
 
 In search of this information, we embarked on the Eviction Research Project, which collected, analysed, and presented eviction data to relevant civic-organisations working in the evictions space, with the aim of fostering more effective action. The project was a collaboration between Ndifuna Ukwazi and OpenUp, consisting of interviews that covered the entire eviction process with tenants going through an eviction, or who had recently gone through an eviction. We analysed the patterns in the data to pinpoint commonly recurring problem areas and made suggested solutions.
 
@@ -47,11 +47,11 @@ Tenants who are unable to secure a lawyer need, at the very least, a judge or ma
 
 ### SUGGESTED SOLUTIONS
 
-Organisations like [OpenUp](https://openup.org.za/) can provide tenants with information about the lawful eviction process, where they can get help, and what their rights are. We can also create tools that make the confusing administrative process much simpler. These are the critical first steps towards providing them with access to justice. Current examples of efforts (which have been heavily influenced by the Research Project) include an [Eviction Guide](https://evictions.org.za/) and the [Advice Assembly](http://reclaimthecity.org.za/transitional-housing/), hosted by Reclaim the City.
+Organisations like <a href="https://openup.org.za/" target="_blank">OpenUp</a> can provide tenants with information about the lawful eviction process, where they can get help, and what their rights are. We can also create tools that make the confusing administrative process much simpler. These are the critical first steps towards providing them with access to justice. Current examples of efforts (which have been heavily influenced by the Research Project) include an <a href="https://evictions.org.za/" target="_blank">Eviction Guide</a> and the <a href="http://reclaimthecity.org.za/transitional-housing/" target="_blank">Advice Assembly</a>, hosted by Reclaim the City.
 
 A number of additional tools have been identified, such as:
 
-- a document assembly system [(Affidavit Assistant)](http://affidavit.evictions.org.za/) which could help tenants create a basic affidavit, and speed up the securing of legal representation as well as allow tenants to defend themselves in court in an emergency; 
+- a document assembly system <a href="http://affidavit.evictions.org.za/" target="_blank">(Affidavit Assistant)</a> which could help tenants create a basic affidavit, and speed up the securing of legal representation as well as allow tenants to defend themselves in court in an emergency; 
 - an SMS reminder for court dates; 
 - and asking Sheriffs to offer Eviction Guides when serving a Notice of Motion (like an eviction court summons) on tenants. 
 
