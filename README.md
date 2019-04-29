@@ -19,6 +19,14 @@ vagrant up
 vagrant ssh -c 'cd /vagrant && bundle exec jekyll serve --force_polling --host 0.0.0.0'
 ```
 
+### Using Docker
+
+```shell
+docker run -it --rm -v "$PWD:/srv/jekyll" -p 127.0.0.1:4000:4000 -v 'openupsa-bundle-cache:/usr/local/bundle' jekyll/jekyll jekyll serve
+```
+
+More info: https://github.com/envygeeks/jekyll-docker
+
 ## Deployment
 
 The site is served by GitHub Pages, so to deploy to production simply:
