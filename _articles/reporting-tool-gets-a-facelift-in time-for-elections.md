@@ -12,7 +12,8 @@ types:
 themes:
 - name: tech
 ---
-[Pocket Reporter](https://app.pocketreporter.co.za/eng/folders/index.html)
+[Pocket Reporter](https://app.pocketreporter.co.za/eng/folders/index.html), your personal “news editor in your pocket”, has been given a makeover that includes lots of new election reporting templates and resources, just in time for South Africa’s General Election.
+
 While the election resources are specific to South Africa, the reporting templates are relevant to any country where elections are being held. Other templates in the tool include health services, hard news and service delivery.
 
 
