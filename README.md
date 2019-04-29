@@ -12,6 +12,13 @@ Then run the Jekyll server with
 
 The site should then be running on http://localhost:4000/ and will reflect changes as you make them.
 
+### Using Vagrant
+
+```shell
+vagrant up
+vagrant ssh -c 'cd /vagrant && bundle exec jekyll serve --force_polling --host 0.0.0.0'
+```
+
 ## Deployment
 
 The site is served by GitHub Pages, so to deploy to production simply:
