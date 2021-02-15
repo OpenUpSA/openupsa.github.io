@@ -4,3 +4,4 @@ _site
 docs/
 unify/
 assets/
+/.vagrant/
